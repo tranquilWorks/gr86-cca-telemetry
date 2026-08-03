@@ -1,0 +1,16 @@
+[submodule "libraries/RC-BLE"]
+	path = libraries/RC-BLE
+	url = https://github.com/aollin/racechrono-ble-diy-device.git
+	branch = master
+[submodule "libraries/RaceChronoDiyBleDevice"]
+	path = libraries/RaceChronoDiyBleDevice
+	url = https://github.com/timurrrr/RaceChronoDiyBleDevice.git
+	branch = master
+[submodule "libraries/arduino-CAN"]
+	path = libraries/arduino-CAN
+	url = https://github.com/sandeepmistry/arduino-CAN.git
+	branch = master
+[submodule "libraries/arduino-RaceChrono"]
+	path = libraries/arduino-RaceChrono
+	url = https://github.com/timurrrr/arduino-RaceChrono.git
+	branch = master
