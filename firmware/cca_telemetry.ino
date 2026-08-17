@@ -32,7 +32,6 @@
 #endif
 #include "nimble/porting/nimble/include/os/os_mempool.h"
 #include <Preferences.h>
-#include <esp_gatt_defs.h>
 #include <esp_random.h>
 #include <cstdio>
 #include <cstring>
@@ -64,6 +63,18 @@
 #define DEV_TRUST_FIL 0
 #endif
 
+#ifndef BLE_REQUIRE_PAIRING
+#define BLE_REQUIRE_PAIRING 0
+#endif
+
+#ifndef BLE_REQUEST_FAST_CONN_PARAMS
+#define BLE_REQUEST_FAST_CONN_PARAMS 0
+#endif
+
+#ifndef CCA_ENABLE_CAN_TX_TEST
+#define CCA_ENABLE_CAN_TX_TEST 0
+#endif
+
 // ---------- Version ----------
 #ifndef FW_VERSION
 #define FW_VERSION "0.6.1"
@@ -76,6 +87,10 @@ static const char FW_VERSION_STRING[] = FW_VERSION " (" FW_GITHASH ")";
 // ===== Pins (S3 <-> SN65HVD230) =====
 #define CAN_TX 5
 #define CAN_RX 4
+
+static_assert((BAUD_RATE % 1000L) == 0, "BAUD_RATE must be an integer number of kbps");
+static constexpr uint16_t CAN_BITRATE_KBPS =
+    static_cast<uint16_t>(BAUD_RATE / 1000L);
 
 // ===== GPS pins (UART1) =====
 #define GPS_RX_GPIO 18   // GPS TX -> ESP RX
@@ -199,6 +214,8 @@ static bool pendingBleRestart = false;
 static constexpr uint32_t BLE_DISCONNECT_GRACE_MS = 750;
 static bool     bleDisconnectGraceActive = false;
 static uint32_t bleDisconnectGraceDeadlineMs = 0;
+static bool     bleConnectionSeen = false;
+static bool     bleDisconnectHandled = true;
 
 static constexpr int TASK_WDT_TIMEOUT_SECONDS = 5;
 
@@ -271,6 +288,13 @@ static uint32_t gpsInitFallbackBaud = 9600;
 static size_t gpsInitProbeIndex = 0;
 static uint32_t gpsInitCurrentBaud = 9600;
 static uint8_t gpsInit115200Attempt = 0;
+static uint32_t gpsRuntimeBaud = 0;
+static uint32_t gpsRxByteCount = 0;
+static uint32_t gpsSentenceCount = 0;
+static uint32_t gpsRmcSentenceCount = 0;
+static uint32_t gpsGgaSentenceCount = 0;
+static uint32_t gpsLineOverflowCount = 0;
+static uint32_t gpsLastByteMs = 0;
 
 // ====== BLE objects we own (we create the full 0x1FF8 service) ======
 static NimBLEServer*         g_server = nullptr;
@@ -290,7 +314,7 @@ static constexpr uint16_t BLE_LINK_PRI_TIMEOUT_UNITS         = 200; // 2.0 s
 static constexpr uint32_t BLE_LINK_PRI_RETRY_DELAY_MS        = 4000;
 static constexpr uint8_t  BLE_LINK_PRI_RETRY_MAX_ATTEMPTS    = 3;
 
-static bool     g_bleLinkPriEnabled           = true;
+static bool     g_bleLinkPriEnabled           = (BLE_REQUEST_FAST_CONN_PARAMS != 0);
 static bool     g_bleLinkPriCallbacksAttached = false;
 static uint16_t g_bleLinkPriConnHandle        = BLE_LINK_PRI_INVALID_HANDLE;
 static bool     g_bleLinkPriRetryPending      = false;
@@ -421,7 +445,12 @@ static void bleLinkPri_considerRetry(uint16_t intervalUnits, uint32_t now) {
 }
 
 static void bleLinkPri_onConnect(NimBLEConnInfo& connInfo) {
+  bleConnectionSeen = true;
+  bleDisconnectHandled = false;
   bleDisconnectGraceActive = false;
+  pendingBleRestart = false;
+  pendingBleRestartReason[0] = '\0';
+
   g_bleLinkPriConnHandle = connInfo.getConnHandle();
   g_bleLinkPriRetryCount = 0;
   g_bleLinkPriRetryPending = false;
@@ -438,8 +467,14 @@ static void bleLinkPri_onConnect(NimBLEConnInfo& connInfo) {
 
 static void bleLinkPri_onDisconnect() {
   bleLinkPri_resetState();
-  bleDisconnectGraceActive = true;
-  bleDisconnectGraceDeadlineMs = millis() + BLE_DISCONNECT_GRACE_MS;
+
+  if (bleConnectionSeen) {
+    bleDisconnectGraceActive = true;
+    bleDisconnectGraceDeadlineMs = millis() + BLE_DISCONNECT_GRACE_MS;
+    bleDisconnectHandled = false;
+  }
+  bleConnectionSeen = false;
+
   resetStatusIndicatorsForDisconnect();
   refreshBleLed();
   led_service(millis());
@@ -662,26 +697,29 @@ static esp_err_t init_task_wdt_backend() {
 }
 
 static void init_task_watchdog() {
-  esp_err_t err = init_task_wdt_backend();
-  if (err == ESP_ERR_INVALID_STATE) {
-    // Already initialized with a different timeout; reset and try again.
-    esp_task_wdt_deinit();
-    err = init_task_wdt_backend();
-  }
-  if (err != ESP_OK && err != ESP_ERR_INVALID_STATE) {
-    Serial.printf("WARN: esp_task_wdt_init failed: %d\n", (int)err);
-    return;
-  }
-
-  err = esp_task_wdt_add(NULL);
-  if (err == ESP_ERR_INVALID_STATE) {
+  // Arduino-ESP32 may initialize the TWDT before setup(). Query first so IDF does
+  // not emit a misleading "TWDT already initialized" error on every normal boot.
+  esp_err_t status = esp_task_wdt_status(NULL);
+  if (status == ESP_OK) {
     Serial.println("Task WDT already armed for loop task.");
     return;
   }
-  if (err != ESP_OK) {
-    Serial.printf("WARN: esp_task_wdt_add failed: %d\n", (int)err);
-  } else {
+
+  if (status == ESP_ERR_INVALID_STATE) {
+    esp_err_t initErr = init_task_wdt_backend();
+    if (initErr != ESP_OK && initErr != ESP_ERR_INVALID_STATE) {
+      Serial.printf("WARN: esp_task_wdt_init failed: %d\n", (int)initErr);
+      return;
+    }
+  }
+
+  esp_err_t err = esp_task_wdt_add(NULL);
+  if (err == ESP_OK) {
     Serial.printf("Task WDT armed (%ds).\n", TASK_WDT_TIMEOUT_SECONDS);
+  } else if (err == ESP_ERR_INVALID_STATE) {
+    Serial.println("WARN: Task WDT unavailable; loop task was not armed.");
+  } else {
+    Serial.printf("WARN: esp_task_wdt_add failed: %d\n", (int)err);
   }
 }
 
@@ -775,6 +813,7 @@ static const uint16_t OIL_SCALE_01PSI = 10;     // 0.1 psi/bit
 static uint16_t       OIL_TX_RATE_MS  = 40;     // persisted in flash
 
 // Runtime
+static float    oil_adc_volts_f = DEFAULT_V0_ADC;
 static float    oil_psi_f  = 0.0f;
 static uint8_t  oil_flags  = 0;      // bit0=open, bit1=short, bit2=oor
 static uint32_t lastOilTxMs = 0;
@@ -1339,15 +1378,19 @@ static inline bool bleIsConnected(){
 }
 
 static void bleStartAdvertising(){
-  if (!g_adv) return;
-  g_adv->start();
+  if (!g_adv || bleIsConnected()) return;
+  if (!g_adv->isAdvertising() && !g_adv->start()) {
+    Serial.println("ERROR: BLE advertising start failed");
+  }
   refreshBleLed();
   led_service(millis());
 }
 
 static void bleStopAdvertising(){
   if (!g_adv) return;
-  g_adv->stop();
+  if (g_adv->isAdvertising()) {
+    g_adv->stop();
+  }
   refreshBleLed();
   led_service(millis());
 }
@@ -1361,16 +1404,10 @@ static void refreshBleLed() {
 }
 
 static void resetStatusIndicatorsForDisconnect() {
-  have_seen_any_can = false;
-  lastCanMessageReceivedMs = 0;
-  gpsMarkSentenceStale();
-
+  // Losing the phone must not invalidate or restart independent CAN, GPS, or
+  // oil acquisition. Those subsystem LEDs continue to be serviced in loop().
   led_set_power(LedPattern::Solid);
   led_set_ble(LedPattern::BlinkFast);
-  led_set_can(LedPattern::BlinkSlow);
-  led_set_gps(LedPattern::BlinkSlow);
-  led_set_sys(LedPattern::Off);
-  led_set_oil(LedPattern::Off);
 }
 
 // ===== FIL (0x0002) handler to mirror RaceChrono DIY control =====
@@ -1643,7 +1680,7 @@ static void bleInit(){
   NimBLEDevice::init(DEVICE_NAME);
   NimBLEDevice::setPower(ESP_PWR_LVL_P9);
   NimBLEDevice::setMTU(185);
-#if !DEV_TRUST_FIL
+#if BLE_REQUIRE_PAIRING
   NimBLEDevice::setSecurityAuth(true, true, true);
   NimBLEDevice::setSecurityPasskey(PASSKEY_U32);
 #endif
@@ -1656,7 +1693,7 @@ static void bleInit(){
   g_can = g_svc->createCharacteristic(RC_CHAR_CAN_UUID,
             NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
   uint16_t filProps = NIMBLE_PROPERTY::WRITE;
-#if !DEV_TRUST_FIL
+#if BLE_REQUIRE_PAIRING
   filProps |= NIMBLE_PROPERTY::WRITE_ENC;
 #endif
   g_fil = g_svc->createCharacteristic(RC_CHAR_FIL_UUID, filProps);
@@ -1681,10 +1718,23 @@ static void bleInit(){
   g_svc->start();
 
   g_adv = NimBLEDevice::getAdvertising();
-  g_adv->addServiceUUID(RC_SERVICE_UUID);
+  g_adv->reset();
+
+  // NimBLE 2.x does not advertise the GAP name automatically. Keep discovery
+  // self-contained so a new phone does not need a LightBlue/nRF Connect priming
+  // connection. The short UUID also leaves enough room for the full name.
+  bool advNameOk = g_adv->setName(DEVICE_NAME);
+  bool advUuidOk = g_adv->addServiceUUID(NimBLEUUID(static_cast<uint16_t>(0x1FF8)));
+  if (!advNameOk || !advUuidOk) {
+    Serial.printf("WARN: BLE advertisement fields name=%s uuid=%s\n",
+                  advNameOk ? "ok" : "failed",
+                  advUuidOk ? "ok" : "failed");
+  }
   bleStartAdvertising();
 
-  Serial.println("BLE: advertising (RaceChrono DIY 0x1FF8)");
+  Serial.printf("BLE: advertising name='%s', service=0x1FF8, pairing=%s\n",
+                DEVICE_NAME,
+                BLE_REQUIRE_PAIRING ? "required" : "disabled");
 }
 
 // Pack & notify GPS frames on our g_gps/g_gtm
@@ -1784,6 +1834,8 @@ static bool gpsScanForNmea(size_t maxBytes = 96) {
   while (GPSSerial.available() && processed < maxBytes) {
     char c = static_cast<char>(GPSSerial.read());
     processed++;
+    gpsRxByteCount++;
+    gpsLastByteMs = millis();
     if (gpsInitPrevWasDollar) {
       gpsInitPrevWasDollar = (c == '$');
       if (c == 'G' || c == 'N') {
@@ -1801,6 +1853,8 @@ static void gpsDrainInput(size_t maxBytes = 128) {
   while (GPSSerial.available() && processed < maxBytes) {
     GPSSerial.read();
     processed++;
+    gpsRxByteCount++;
+    gpsLastByteMs = millis();
   }
 }
 
@@ -1902,6 +1956,7 @@ static void gpsBeginInitAttempt(uint32_t now, bool resetAttemptCounter) {
   gpsInitProbeIndex = 0;
   gpsInitCurrentBaud = GPS_INIT_PROBE_BAUDS[gpsInitProbeIndex];
   GPSSerial.begin(gpsInitCurrentBaud, SERIAL_8N1, GPS_RX_GPIO, GPS_TX_GPIO);
+  gpsRuntimeBaud = gpsInitCurrentBaud;
   gpsInitPrevWasDollar = false;
   gpsInitSawInitialNmea = false;
   gpsInitFallbackBaud = gpsInitCurrentBaud;
@@ -1968,6 +2023,7 @@ static void gpsInitStep(uint32_t now) {
           gpsInitCurrentBaud = GPS_INIT_PROBE_BAUDS[gpsInitProbeIndex];
           gpsDrainInput();
           GPSSerial.updateBaudRate(gpsInitCurrentBaud);
+          gpsRuntimeBaud = gpsInitCurrentBaud;
           gpsInitPrevWasDollar = false;
           gpsInitPhaseStartMs = now;
         } else {
@@ -2014,6 +2070,7 @@ static void gpsInitStep(uint32_t now) {
     case GpsInitPhase::WaitBefore115200:
       if (now - gpsInitPhaseStartMs >= GPS_WAIT_BEFORE_115200_MS) {
         GPSSerial.begin(115200, SERIAL_8N1, GPS_RX_GPIO, GPS_TX_GPIO);
+        gpsRuntimeBaud = 115200;
         gpsInitPrevWasDollar = false;
         gpsInitPhase = GpsInitPhase::Confirm115200;
         gpsInitPhaseStartMs = now;
@@ -2042,6 +2099,7 @@ static void gpsInitStep(uint32_t now) {
     case GpsInitPhase::BeginFallback:
       if (now - gpsInitPhaseStartMs >= 20) {
         GPSSerial.begin(gpsInitFallbackBaud, SERIAL_8N1, GPS_RX_GPIO, GPS_TX_GPIO);
+        gpsRuntimeBaud = gpsInitFallbackBaud;
         gpsInitPrevWasDollar = false;
         gpsInitPhase = GpsInitPhase::FinalizeFallback;
         gpsInitPhaseStartMs = now;
@@ -2057,8 +2115,10 @@ static void gpsInitStep(uint32_t now) {
 static void gpsProcessSentence(char *line) {
   if (!line || strlen(line) < 6) return;
   if (strstr(line, "GPRMC") || strstr(line, "GNRMC")) {
+    gpsRmcSentenceCount++;
     parseRmcSentence(line);
   } else if (strstr(line, "GPGGA") || strstr(line, "GNGGA")) {
+    gpsGgaSentenceCount++;
     parseGgaSentence(line);
   }
 }
@@ -2075,6 +2135,8 @@ static void gpsService(uint32_t now) {
   bool sentenceSeen = false;
   while (GPSSerial.available()) {
     char c = static_cast<char>(GPSSerial.read());
+    gpsRxByteCount++;
+    gpsLastByteMs = millis();
     if (c == '\r') continue;
     if (c == '\n') {
       gpsLineBuf[gpsLineLen] = 0;
@@ -2083,6 +2145,7 @@ static void gpsService(uint32_t now) {
         strncpy(work, gpsLineBuf, sizeof(work) - 1);
         work[sizeof(work) - 1] = 0;
         gpsProcessSentence(work);
+        gpsSentenceCount++;
         sentenceSeen = true;
       }
       gpsLineLen = 0;
@@ -2090,6 +2153,7 @@ static void gpsService(uint32_t now) {
       if (gpsLineLen < sizeof(gpsLineBuf) - 1) {
         gpsLineBuf[gpsLineLen++] = c;
       } else {
+        gpsLineOverflowCount++;
         gpsLineLen = 0;
       }
     }
@@ -2104,11 +2168,13 @@ static void gpsService(uint32_t now) {
   } else {
     uint32_t timeoutMs = gpsUsingRawStream ? 5000 : 2000;
     if (serviceNow - gpsLastSentenceMs > timeoutMs) {
-      if (gpsUsingRawStream) {
-        Serial.println("[GPS] Raw stream stalled -> retry config");
-      } else {
-        Serial.println("[GPS] Sentence timeout -> reinit");
-      }
+      uint32_t byteAge = gpsLastByteMs ? (serviceNow - gpsLastByteMs) : 0xFFFFFFFFu;
+      Serial.printf("[GPS] %s -> reinit (baud=%lu bytes=%lu sentences=%lu last-byte-age=%lu ms)\n",
+                    gpsUsingRawStream ? "Raw stream stalled" : "Sentence timeout",
+                    static_cast<unsigned long>(gpsRuntimeBaud),
+                    static_cast<unsigned long>(gpsRxByteCount),
+                    static_cast<unsigned long>(gpsSentenceCount),
+                    static_cast<unsigned long>(byteAge));
       gpsConfigured = false;
       gpsUsingRawStream = false;
       gpsWarnedNoNmea = false;
@@ -2165,7 +2231,17 @@ bool cfg_load_from_nvs() {
 
   bool anyLoaded = calibrationLoaded;
   bool needSaveToken = false;
-  if (!cfgPrefs.begin(CFG_NAMESPACE, true)) return anyLoaded;
+  if (!cfgPrefs.begin(CFG_NAMESPACE, true)) {
+    // A virgin NVS namespace cannot be opened read-only. Create the non-zero
+    // token now rather than booting indefinitely with FIL token 00000000.
+    CFG_TOKEN = generate_cfg_token();
+    if (!save_cfg_token_value(CFG_TOKEN)) {
+      Serial.println("CFG: failed to create NVS namespace/FIL token");
+    } else {
+      Serial.printf("CFG: generated FIL token %08lX\n", (unsigned long)CFG_TOKEN);
+    }
+    return anyLoaded;
+  }
 
   customDividerCount = 0;
 
@@ -2315,8 +2391,10 @@ static bool restartCanBusReader(const char *cause = nullptr, uint32_t backoffMs 
 static bool handleCanFault(const char *cause, uint32_t backoffMs = 50);
 static bool checkCanBusHealth(uint32_t now);
 static bool handleCanInactivityTimeout(uint32_t now);
-[[maybe_unused]] static void noteCanWriteResult(bool success);
-[[maybe_unused]] static bool writeFrameWithWatch(CanFrame &frame, uint32_t timeout = 1);
+#if CCA_ENABLE_CAN_TX_TEST
+static void noteCanWriteResult(bool success);
+static bool writeFrameWithWatch(CanFrame &frame, uint32_t timeout = 1);
+#endif
 static void setLastReconnectCause(const char *reason);
 
 static void bufferNewPacket(const CanFrame &frame, uint32_t t_us_rx);
@@ -2416,19 +2494,10 @@ void setup() {
 }
 
 static void recoverRaceChronoConnection(const char *reason) {
-  Serial.println("RC disconnected -> reset map + BLE (TWAI stays up).");
+  Serial.println("RC disconnected -> restart advertising (TWAI/GPS/oil stay up).");
   bleDisconnectGraceActive = false;
-  pidMap.reset();
-
   restartBle(reason);
   Serial.println("Advertising for new RaceChrono connection (non-blocking).");
-
-  gpsResetSyncState();
-
-  apply_profile_and_dividers();
-
-  lastCanDiagSendMs = 0;
-  sendCanDiagnostics(millis());
 }
 
 static void queueBleRestart(const char *reason) {
@@ -2451,11 +2520,19 @@ static void servicePendingBleRestart() {
 
 // ===== CAN bring-up/teardown =====
 static bool startCanBusReader() {
-  Serial.println("TWAI start...");
+  Serial.printf("TWAI start @ %u kbps (application TX %s)...\n",
+                static_cast<unsigned>(CAN_BITRATE_KBPS),
+                CCA_ENABLE_CAN_TX_TEST ? "ENABLED" : "disabled");
   ESP32Can.setPins(CAN_TX, CAN_RX);
-  ESP32Can.setSpeed(ESP32Can.convertSpeed(500));
+  ESP32Can.setSpeed(ESP32Can.convertSpeed(CAN_BITRATE_KBPS));
   ESP32Can.setRxQueueSize(64);
+#if CCA_ENABLE_CAN_TX_TEST
   ESP32Can.setTxQueueSize(16);
+#else
+  // Normal TWAI mode still ACKs valid traffic, which a two-node bench needs,
+  // but no application transmit queue or write helper is compiled in.
+  ESP32Can.setTxQueueSize(0);
+#endif
   twai_filter_config_t profileFilter = build_profile_twai_filter();
   if (!ESP32Can.begin(ESP32Can.getSpeed(), CAN_TX, CAN_RX, 0xFFFF, 0xFFFF, &profileFilter)) {
     Serial.println("ERROR: TWAI begin() failed. Check wiring/termination/RS.");
@@ -2729,7 +2806,8 @@ static bool handleCanInactivityTimeout(uint32_t now) {
   return restarted;
 }
 
-[[maybe_unused]] static void noteCanWriteResult(bool success) {
+#if CCA_ENABLE_CAN_TX_TEST
+static void noteCanWriteResult(bool success) {
   if (success) {
     canTxFailuresInWindow = 0;
     canTxFailureWindowStart = 0;
@@ -2756,11 +2834,12 @@ static bool handleCanInactivityTimeout(uint32_t now) {
   }
 }
 
-[[maybe_unused]] static bool writeFrameWithWatch(CanFrame &frame, uint32_t timeout) {
+static bool writeFrameWithWatch(CanFrame &frame, uint32_t timeout) {
   bool ok = ESP32Can.writeFrame(frame, timeout);
   noteCanWriteResult(ok);
   return ok;
 }
+#endif
 
 // ===== Helpers =====
 static inline float clampf(float x, float lo, float hi) {
@@ -3382,7 +3461,8 @@ static void apply_profile_and_dividers() {
 // ===== Oil publish =====
 static void oil_update_and_publish_if_due() {
   const uint32_t now = millis();
-  float v = filtered_adc_volts();
+  oil_adc_volts_f = filtered_adc_volts();
+  float v = oil_adc_volts_f;
   oil_flags = oil_health_flags_from_volts(v);
   oil_psi_f = volts_to_psi_exact(v);
 
@@ -3395,6 +3475,83 @@ static void oil_update_and_publish_if_due() {
     };
     bleSendCanData(OIL_CAN_ID, d, 8);
   }
+}
+
+static void show_can() {
+  twai_status_info_t status = lastTwaiStatus;
+  bool haveStatus = isCanBusReaderActive && (twai_get_status_info(&status) == ESP_OK);
+  if (haveStatus) lastTwaiStatus = status;
+
+  Serial.println("=== CAN Status ===");
+  Serial.printf("Configured:     %u kbps\n", static_cast<unsigned>(CAN_BITRATE_KBPS));
+  Serial.printf("Driver:         %s\n", isCanBusReaderActive ? "running" : "stopped");
+  Serial.printf("Application TX: %s\n", CCA_ENABLE_CAN_TX_TEST ? "ENABLED" : "disabled");
+  Serial.printf("State:          %s\n",
+                haveStatus ? twai_state_to_string(status.state)
+                           : twai_state_to_string(lastTwaiStatus.state));
+  if (haveStatus) {
+    Serial.printf("TEC/REC:        %u/%u\n",
+                  static_cast<unsigned>(status.tx_error_counter),
+                  static_cast<unsigned>(status.rx_error_counter));
+    Serial.printf("RX/TX queued:   %u/%u\n",
+                  static_cast<unsigned>(status.msgs_to_rx),
+                  static_cast<unsigned>(status.msgs_to_tx));
+    Serial.printf("Missed/failed:  %u/%u\n",
+                  static_cast<unsigned>(status.rx_missed_count),
+                  static_cast<unsigned>(status.tx_failed_count));
+    Serial.printf("Bus errors:     %u\n", static_cast<unsigned>(status.bus_error_count));
+  }
+  Serial.printf("RX frames:      %lu\n", static_cast<unsigned long>(rxCount));
+  Serial.printf("Restarts/off:   %lu/%lu\n",
+                static_cast<unsigned long>(canRestartCount),
+                static_cast<unsigned long>(canBusOffCount));
+  Serial.println("==================");
+}
+
+static void show_gps() {
+  uint32_t now = millis();
+  uint32_t byteAge = gpsLastByteMs ? (now - gpsLastByteMs) : 0xFFFFFFFFu;
+  uint32_t sentenceAge = gpsLastSentenceMs ? (now - gpsLastSentenceMs) : 0xFFFFFFFFu;
+
+  Serial.println("=== GPS Status ===");
+  Serial.printf("Configured:     %s\n", gpsConfigured ? "yes" : "no");
+  Serial.printf("Raw fallback:   %s\n", gpsUsingRawStream ? "yes" : "no");
+  Serial.printf("Runtime baud:   %lu\n", static_cast<unsigned long>(gpsRuntimeBaud));
+  Serial.printf("RX bytes:       %lu\n", static_cast<unsigned long>(gpsRxByteCount));
+  Serial.printf("Sentences:      %lu (RMC=%lu GGA=%lu)\n",
+                static_cast<unsigned long>(gpsSentenceCount),
+                static_cast<unsigned long>(gpsRmcSentenceCount),
+                static_cast<unsigned long>(gpsGgaSentenceCount));
+  Serial.printf("Line overflows: %lu\n", static_cast<unsigned long>(gpsLineOverflowCount));
+  Serial.printf("Last byte age:  %lu ms\n", static_cast<unsigned long>(byteAge));
+  Serial.printf("Sentence age:   %lu ms\n", static_cast<unsigned long>(sentenceAge));
+  Serial.printf("Fix/sats/HDOP:  %s/%d/%.1f\n",
+                rmc_valid ? "valid" : "no-fix",
+                gga_sats,
+                gga_hdop);
+  Serial.println("==================");
+}
+
+static void show_oil() {
+  uint16_t psi01 = static_cast<uint16_t>(oil_psi_f * OIL_SCALE_01PSI + 0.5f);
+
+  Serial.println("=== Oil Status ===");
+  Serial.printf("ADC filtered:   %.4f V\n", oil_adc_volts_f);
+  Serial.printf("Pressure:       %.1f psi\n", oil_psi_f);
+  Serial.printf("Flags:          0x%02X (open=%u short=%u oor=%u)\n",
+                oil_flags,
+                (oil_flags >> 0) & 1,
+                (oil_flags >> 1) & 1,
+                (oil_flags >> 2) & 1);
+  Serial.printf("Calibration:    %.4f V -> 0 psi, %.4f V -> 150 psi\n",
+                V0_ADC,
+                V1_ADC);
+  Serial.printf("Virtual frame:  ID=0x710 DLC=8 data=%02X %02X %02X 00 00 00 00 00\n",
+                static_cast<unsigned>((psi01 >> 8) & 0xFF),
+                static_cast<unsigned>(psi01 & 0xFF),
+                static_cast<unsigned>(oil_flags));
+  Serial.printf("Publish rate:   %u ms\n", static_cast<unsigned>(OIL_TX_RATE_MS));
+  Serial.println("==================");
 }
 
 // ===== Concise config print (SHOW) =====
@@ -3496,11 +3653,18 @@ static void process_cli_line(char *line) {
     Serial.println("SHOW subcommands:");
     Serial.println("  CFG   -> config summary");
     Serial.println("  STATS -> runtime counters");
+    Serial.println("  CAN   -> TWAI state/counters");
+    Serial.println("  GPS   -> UART/NMEA/fix diagnostics");
+    Serial.println("  OIL   -> ADC/calibration/0x710 payload");
     Serial.println("  MAP   -> enabled PID allow-list");
+    Serial.println("  DENY  -> runtime deny list");
     return;
   }
   if (up == "SHOW CFG")   { show_config(); return; }
   if (up == "SHOW STATS") { show_stats(); return; }
+  if (up == "SHOW CAN")   { show_can(); return; }
+  if (up == "SHOW GPS")   { show_gps(); return; }
+  if (up == "SHOW OIL")   { show_oil(); return; }
   if (up == "SHOW MAP")        { dumpMapToSerial(); return; }
   if (up == "SHOW DENY")       { dumpDenyToSerial(); return; }
 
@@ -3673,7 +3837,7 @@ static void process_cli_line(char *line) {
     return;
   }
 
-  Serial.println("Unknown cmd. Try: SHOW | SHOW CFG | SHOW STATS | SHOW MAP | SHOW DENY | CAL 0 | CAL 1 | CAL SHOW | RATE <ms> | PROFILE ON|OFF | ALLOW <pid> <div> | DENY <pid> | TOKEN <hex8> | FIL VERBOSE [ON|OFF] | SAVE | LOAD | RESETCFG");
+  Serial.println("Unknown cmd. Try: SHOW | SHOW CFG | SHOW STATS | SHOW CAN | SHOW GPS | SHOW OIL | SHOW MAP | SHOW DENY | CAL 0 | CAL 1 | CAL SHOW | RATE <ms> | PROFILE ON|OFF | ALLOW <pid> <div> | DENY <pid> | TOKEN <hex8> | FIL VERBOSE [ON|OFF] | SAVE | LOAD | RESETCFG");
 }
 
 // ===== Main loop =====
@@ -3689,23 +3853,20 @@ void loop() {
   servicePendingBleRestart();
   bleLinkPri_attachIfReady();
 
-  // Handle disconnect / reconnect
-  if ((loop_iteration % 100) == 0) {
-    if (bleIsConnected()) {
+  // Handle exactly one real connected -> disconnected transition. Merely being
+  // disconnected at boot is normal and must not cause an endless restart loop.
+  if (bleIsConnected()) {
+    bleDisconnectGraceActive = false;
+  } else if (bleDisconnectGraceActive && !bleDisconnectHandled) {
+    uint32_t nowMs = millis();
+    if (static_cast<int32_t>(nowMs - bleDisconnectGraceDeadlineMs) >= 0) {
       bleDisconnectGraceActive = false;
-    } else {
-      uint32_t nowMs = millis();
-      if (bleDisconnectGraceActive &&
-          static_cast<int32_t>(nowMs - bleDisconnectGraceDeadlineMs) < 0) {
-        // Still within grace window; skip heavy reset.
-      } else {
-        bleDisconnectGraceActive = false;
-        if (nvsWriteInProgress && !pendingBleRestart) {
-          Serial.println("RC disconnected during SAVE; deferring until NVS completes.");
-        }
-        queueBleRestart("RC disconnect");
-        servicePendingBleRestart();
+      bleDisconnectHandled = true;
+      if (nvsWriteInProgress && !pendingBleRestart) {
+        Serial.println("RC disconnected during SAVE; deferring BLE advertising restart.");
       }
+      queueBleRestart("RC disconnect");
+      servicePendingBleRestart();
     }
   }
 

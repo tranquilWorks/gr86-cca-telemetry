@@ -4,14 +4,14 @@ This document describes the CAN channels that the CCA Telemetry firmware exposes
 
 ## Virtual oil pressure (CAN 0x710)
 
-The firmware publishes the analog oil-pressure input as a virtual CAN frame on ID `0x710` with a 16-bit big-endian value that represents pressure in 0.1 psi units.【F:firmware/cca_telemetry.ino†L149-L168】 Copy the block below and use *Add channel → Import from clipboard* in RaceChrono to create a ready-to-use gauge:
+The firmware publishes the analog oil-pressure input as an 8-byte virtual CAN frame on ID `0x710`. Bytes 0-1 are a 16-bit big-endian pressure value in 0.1 psi units, byte 2 contains the open/short/out-of-range flags, and bytes 3-7 are reserved zeros.【F:firmware/cca_telemetry.ino†L149-L168】 Copy the block below and use *Add channel → Import from clipboard* in RaceChrono to create a ready-to-use gauge:
 
 ```
 RaceChrono CAN channel
 Name=Oil pressure (psi)
 Short name=OilP
 CAN ID=0x710
-Length=2
+Length=8
 Byte order=Motorola
 Signed=No
 Equation=(A*256+B)/10
@@ -28,7 +28,7 @@ RaceChrono CAN channel
 Name=Oil pressure (kPa)
 Short name=OilP_kPa
 CAN ID=0x710
-Length=2
+Length=8
 Byte order=Motorola
 Signed=No
 Equation=((A*256+B)/10)*6.89476

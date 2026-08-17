@@ -5,8 +5,15 @@
 #define DEVICE_NAME "CAN Telemetry"
 
 // Firmware metadata
-#define FW_VERSION "1.0.0"
-#define FW_GITHASH "abcdef1"
+#define FW_VERSION "1.1.0-rc1"
+#define FW_GITHASH "ble-twai-fix"
+
+// Consumer BLE defaults: RaceChrono should connect without an iOS pairing dialog.
+#define BLE_REQUIRE_PAIRING 0
+// Let iOS choose stable connection parameters unless bench testing explicitly enables this.
+#define BLE_REQUEST_FAST_CONN_PARAMS 0
+// Physical CAN writes are compiled out; the controller remains in normal mode to ACK bench traffic.
+#define CCA_ENABLE_CAN_TX_TEST 0
 
 // GPS PPS discipline (set to -1 to disable)
 #define GPS_PPS_GPIO 16
