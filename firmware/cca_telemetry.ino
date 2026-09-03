@@ -44,7 +44,7 @@ namespace cca {
 // Build identity
 // -----------------------------------------------------------------------------
 
-static constexpr const char* BUILD_ID = "2.0.0-stability-20260902";
+static constexpr const char* BUILD_ID = "2.0.1-racechrono-discovery-20260903";
 
 // -----------------------------------------------------------------------------
 // Hardware pins
@@ -62,16 +62,11 @@ static constexpr int OIL_ADC_PIN = 1;
 // RaceChrono DIY BLE UUIDs
 // -----------------------------------------------------------------------------
 
-static constexpr const char* RC_SERVICE_UUID =
-    "00001ff8-0000-1000-8000-00805f9b34fb";
-static constexpr const char* RC_CHAR_CAN_UUID =
-    "00000001-0000-1000-8000-00805f9b34fb";
-static constexpr const char* RC_CHAR_FILTER_UUID =
-    "00000002-0000-1000-8000-00805f9b34fb";
-static constexpr const char* RC_CHAR_GPS_UUID =
-    "00000003-0000-1000-8000-00805f9b34fb";
-static constexpr const char* RC_CHAR_GPS_TIME_UUID =
-    "00000004-0000-1000-8000-00805f9b34fb";
+static constexpr uint16_t RC_SERVICE_UUID = 0x1FF8;
+static constexpr uint16_t RC_CHAR_CAN_UUID = 0x0001;
+static constexpr uint16_t RC_CHAR_FILTER_UUID = 0x0002;
+static constexpr uint16_t RC_CHAR_GPS_UUID = 0x0003;
+static constexpr uint16_t RC_CHAR_GPS_TIME_UUID = 0x0004;
 
 // -----------------------------------------------------------------------------
 // General helpers
@@ -750,16 +745,18 @@ static void initBle() {
   g_bleServer->setCallbacks(&g_serverCallbacks, false);
   g_bleServer->advertiseOnDisconnect(true);
 
-  g_bleService = g_bleServer->createService(RC_SERVICE_UUID);
+  g_bleService = g_bleServer->createService(NimBLEUUID(RC_SERVICE_UUID));
 
   g_canCharacteristic = g_bleService->createCharacteristic(
-      RC_CHAR_CAN_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
+      NimBLEUUID(RC_CHAR_CAN_UUID),
+      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
   g_filterCharacteristic = g_bleService->createCharacteristic(
-      RC_CHAR_FILTER_UUID, NIMBLE_PROPERTY::WRITE);
+      NimBLEUUID(RC_CHAR_FILTER_UUID), NIMBLE_PROPERTY::WRITE);
   g_gpsCharacteristic = g_bleService->createCharacteristic(
-      RC_CHAR_GPS_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
+      NimBLEUUID(RC_CHAR_GPS_UUID),
+      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
   g_gpsTimeCharacteristic = g_bleService->createCharacteristic(
-      RC_CHAR_GPS_TIME_UUID,
+      NimBLEUUID(RC_CHAR_GPS_TIME_UUID),
       NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
 
   g_canCharacteristic->setCallbacks(&g_canSubscriptionCallbacks);
@@ -785,7 +782,7 @@ static void initBle() {
   g_bleAdvertising->setMinInterval(32);   // 20 ms
   g_bleAdvertising->setMaxInterval(160);  // 100 ms
   g_bleAdvertising->enableScanResponse(false);
-  g_bleAdvertising->addServiceUUID(RC_SERVICE_UUID);
+  g_bleAdvertising->addServiceUUID(NimBLEUUID(RC_SERVICE_UUID));
 
   g_nextAdvertisingCheckMs = 0;
   startAdvertisingIfNeeded(millis(), true);
