@@ -1,0 +1,1 @@
+Trigger the corrected validation workflow after replacing the missing repository test with an inline GPS parser smoke test.
