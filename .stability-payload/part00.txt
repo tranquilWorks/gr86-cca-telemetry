@@ -1,0 +1,626 @@
+// ===== GR86 CCA Telemetry: stability-first RaceChrono bridge =====
+//
+// This sketch intentionally favors deterministic recovery over aggressive retries:
+// - BLE advertising is event-driven and never stop/start-cycled from loop().
+// - RaceChrono uses its standard unencrypted 0x1FF8 protocol (no passkey/token shim).
+// - CAN is always accept-all at the controller; filtering happens in software.
+// - CAN silence is normal. Only an actual TWAI fault triggers recovery.
+// - CAN bring-up and recovery are non-blocking, so BLE/GPS/CLI stay alive.
+// - CAN frames are coalesced by ID before BLE transmission to prevent backlog storms.
+//
+// Board: ESP32-S3 Dev Module
+// Working regression toolchain: Arduino-ESP32 3.3.6 + NimBLE-Arduino 2.3.6
+
+#include <Arduino.h>
+#include <NimBLEDevice.h>
+#include <Preferences.h>
+
+#include <driver/twai.h>
+#include <esp_err.h>
+#include <esp_heap_caps.h>
+#include <esp_system.h>
+#include <esp_task_wdt.h>
+
+#if defined(__has_include)
+#  if __has_include(<esp_idf_version.h>)
+#    include <esp_idf_version.h>
+#  endif
+#endif
+
+#include <ctype.h>
+#include <math.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "config.h"
+#include "src/gps_nmea.h"
+#include "src/led_status.h"
+#include "src/nvs_cfg.h"
+
+namespace cca {
+
+// -----------------------------------------------------------------------------
+// Build identity
+// -----------------------------------------------------------------------------
+
+static constexpr const char* BUILD_ID = "2.0.0-stability-20260902";
+
+// -----------------------------------------------------------------------------
+// Hardware pins
+// -----------------------------------------------------------------------------
+
+static constexpr int CAN_TX_GPIO = 5;
+static constexpr int CAN_RX_GPIO = 4;
+
+static constexpr int GPS_RX_GPIO = 18;  // GPS TX -> ESP RX
+static constexpr int GPS_TX_GPIO = 17;  // GPS RX <- ESP TX
+
+static constexpr int OIL_ADC_PIN = 1;
+
+// -----------------------------------------------------------------------------
+// RaceChrono DIY BLE UUIDs
+// -----------------------------------------------------------------------------
+
+static constexpr const char* RC_SERVICE_UUID =
+    "00001ff8-0000-1000-8000-00805f9b34fb";
+static constexpr const char* RC_CHAR_CAN_UUID =
+    "00000001-0000-1000-8000-00805f9b34fb";
+static constexpr const char* RC_CHAR_FILTER_UUID =
+    "00000002-0000-1000-8000-00805f9b34fb";
+static constexpr const char* RC_CHAR_GPS_UUID =
+    "00000003-0000-1000-8000-00805f9b34fb";
+static constexpr const char* RC_CHAR_GPS_TIME_UUID =
+    "00000004-0000-1000-8000-00805f9b34fb";
+
+// -----------------------------------------------------------------------------
+// General helpers
+// -----------------------------------------------------------------------------
+
+static inline bool timeReached(uint32_t now, uint32_t deadline) {
+  return static_cast<int32_t>(now - deadline) >= 0;
+}
+
+static inline uint32_t elapsedMs(uint32_t now, uint32_t then) {
+  return now - then;
+}
+
+static inline float clampFloat(float value, float low, float high) {
+  if (value < low) return low;
+  if (value > high) return high;
+  return value;
+}
+
+static const char* resetReasonName(esp_reset_reason_t reason) {
+  switch (reason) {
+    case ESP_RST_UNKNOWN:   return "UNKNOWN";
+    case ESP_RST_POWERON:   return "POWERON";
+    case ESP_RST_EXT:       return "EXT";
+    case ESP_RST_SW:        return "SW";
+    case ESP_RST_PANIC:     return "PANIC";
+    case ESP_RST_INT_WDT:   return "INT_WDT";
+    case ESP_RST_TASK_WDT:  return "TASK_WDT";
+    case ESP_RST_WDT:       return "WDT";
+    case ESP_RST_DEEPSLEEP: return "DEEPSLEEP";
+    case ESP_RST_BROWNOUT:  return "BROWNOUT";
+    case ESP_RST_SDIO:      return "SDIO";
+#ifdef ESP_RST_USB
+    case ESP_RST_USB:       return "USB";
+#endif
+#ifdef ESP_RST_JTAG
+    case ESP_RST_JTAG:      return "JTAG";
+#endif
+#ifdef ESP_RST_CPU_LOCKUP
+    case ESP_RST_CPU_LOCKUP:return "CPU_LOCKUP";
+#endif
+    default:                return "OTHER";
+  }
+}
+
+static esp_reset_reason_t g_bootResetReason = ESP_RST_UNKNOWN;
+
+// -----------------------------------------------------------------------------
+// Watchdog
+// -----------------------------------------------------------------------------
+
+static void initWatchdog() {
+  esp_err_t initResult = ESP_OK;
+
+#if defined(ESP_IDF_VERSION_MAJOR) && (ESP_IDF_VERSION_MAJOR >= 5)
+  esp_task_wdt_config_t config = {};
+  config.timeout_ms = 5000;
+  config.idle_core_mask = 0;
+  config.trigger_panic = true;
+  initResult = esp_task_wdt_init(&config);
+#else
+  initResult = esp_task_wdt_init(5, true);
+#endif
+
+  if (initResult != ESP_OK && initResult != ESP_ERR_INVALID_STATE) {
+    Serial.printf("WARN: task watchdog init failed: %d\n",
+                  static_cast<int>(initResult));
+  }
+
+  const esp_err_t addResult = esp_task_wdt_add(nullptr);
+  if (addResult != ESP_OK && addResult != ESP_ERR_INVALID_STATE &&
+      addResult != ESP_ERR_INVALID_ARG) {
+    Serial.printf("WARN: task watchdog add failed: %d\n",
+                  static_cast<int>(addResult));
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Configuration and runtime filtering
+// -----------------------------------------------------------------------------
+
+static Preferences g_prefs;
+static constexpr const char* CFG_NAMESPACE = "cca_cfg";
+
+static bool g_profileEnabled = true;
+static uint16_t g_oilPublishPeriodMs = 40;
+
+struct __attribute__((packed)) StoredPidDivider {
+  uint16_t pid;
+  uint8_t divider;
+};
+
+static constexpr size_t MAX_CUSTOM_DIVIDERS = 64;
+
+struct __attribute__((packed)) StoredDividerBlob {
+  uint16_t count;
+  StoredPidDivider items[MAX_CUSTOM_DIVIDERS];
+};
+
+static StoredPidDivider g_customDividers[MAX_CUSTOM_DIVIDERS] = {};
+static uint16_t g_customDividerCount = 0;
+
+static int customDividerIndex(uint32_t pid) {
+  if (pid > 0xFFFFu) return -1;
+  for (uint16_t i = 0; i < g_customDividerCount; ++i) {
+    if (g_customDividers[i].pid == static_cast<uint16_t>(pid)) {
+      return static_cast<int>(i);
+    }
+  }
+  return -1;
+}
+
+static uint8_t customDividerFor(uint32_t pid) {
+  const int index = customDividerIndex(pid);
+  if (index < 0) return 0;
+  uint8_t divider = g_customDividers[index].divider;
+  return divider == 0 ? 1 : divider;
+}
+
+static bool setCustomDivider(uint32_t pid, uint8_t divider) {
+  if (pid > 0x7FFu) return false;
+  if (divider == 0) divider = 1;
+
+  const int existing = customDividerIndex(pid);
+  if (existing >= 0) {
+    g_customDividers[existing].divider = divider;
+    return true;
+  }
+
+  if (g_customDividerCount >= MAX_CUSTOM_DIVIDERS) return false;
+  g_customDividers[g_customDividerCount].pid = static_cast<uint16_t>(pid);
+  g_customDividers[g_customDividerCount].divider = divider;
+  ++g_customDividerCount;
+  return true;
+}
+
+static void clearCustomDividers() {
+  memset(g_customDividers, 0, sizeof(g_customDividers));
+  g_customDividerCount = 0;
+}
+
+static constexpr size_t MAX_DENIED_PIDS = 64;
+static uint32_t g_deniedPids[MAX_DENIED_PIDS] = {};
+static size_t g_deniedPidCount = 0;
+
+static bool isDenied(uint32_t pid) {
+  for (size_t i = 0; i < g_deniedPidCount; ++i) {
+    if (g_deniedPids[i] == pid) return true;
+  }
+  return false;
+}
+
+static void denyPid(uint32_t pid) {
+  if (isDenied(pid)) return;
+  if (g_deniedPidCount < MAX_DENIED_PIDS) {
+    g_deniedPids[g_deniedPidCount++] = pid;
+  }
+}
+
+static void undenyPid(uint32_t pid) {
+  for (size_t i = 0; i < g_deniedPidCount; ++i) {
+    if (g_deniedPids[i] != pid) continue;
+    for (size_t j = i + 1; j < g_deniedPidCount; ++j) {
+      g_deniedPids[j - 1] = g_deniedPids[j];
+    }
+    --g_deniedPidCount;
+    return;
+  }
+}
+
+static void clearDeniedPids() {
+  memset(g_deniedPids, 0, sizeof(g_deniedPids));
+  g_deniedPidCount = 0;
+}
+
+struct RequestedPid {
+  uint32_t pid;
+  uint16_t intervalMs;
+  bool used;
+};
+
+static constexpr size_t MAX_REQUESTED_PIDS = 128;
+static RequestedPid g_requestedPids[MAX_REQUESTED_PIDS] = {};
+static bool g_raceChronoFilterActive = false;
+static bool g_raceChronoAllowAll = false;
+static uint16_t g_raceChronoAllowAllIntervalMs = 0;
+static uint32_t g_filterCommandCount = 0;
+
+static void clearRaceChronoFilter() {
+  memset(g_requestedPids, 0, sizeof(g_requestedPids));
+  g_raceChronoFilterActive = false;
+  g_raceChronoAllowAll = false;
+  g_raceChronoAllowAllIntervalMs = 0;
+}
+
+static RequestedPid* findRequestedPid(uint32_t pid) {
+  for (size_t i = 0; i < MAX_REQUESTED_PIDS; ++i) {
+    if (g_requestedPids[i].used && g_requestedPids[i].pid == pid) {
+      return &g_requestedPids[i];
+    }
+  }
+  return nullptr;
+}
+
+static bool requestPid(uint32_t pid, uint16_t intervalMs) {
+  if (RequestedPid* existing = findRequestedPid(pid)) {
+    existing->intervalMs = intervalMs;
+    return true;
+  }
+
+  for (size_t i = 0; i < MAX_REQUESTED_PIDS; ++i) {
+    if (g_requestedPids[i].used) continue;
+    g_requestedPids[i].pid = pid;
+    g_requestedPids[i].intervalMs = intervalMs;
+    g_requestedPids[i].used = true;
+    return true;
+  }
+
+  return false;
+}
+
+static size_t requestedPidCount() {
+  size_t count = 0;
+  for (size_t i = 0; i < MAX_REQUESTED_PIDS; ++i) {
+    if (g_requestedPids[i].used) ++count;
+  }
+  return count;
+}
+
+static uint8_t profileDividerFor(uint32_t pid) {
+  const auto* map = ACTIVE_PID_MAP;
+  if (map != nullptr) {
+    for (size_t i = 0; i < map->ruleCount; ++i) {
+      if (map->rules[i].pid == pid) {
+        const uint8_t divider = map->rules[i].divider;
+        return divider == 0 ? 1 : divider;
+      }
+    }
+    if (map->policyDividerForId != nullptr) {
+      const uint8_t divider = map->policyDividerForId(pid);
+      if (divider != 0) return divider;
+    }
+  }
+
+  return DEFAULT_UPDATE_RATE_DIVIDER == 0 ? 1
+                                          : DEFAULT_UPDATE_RATE_DIVIDER;
+}
+
+static bool profileAllows(uint32_t pid) {
+  const auto* map = ACTIVE_PID_MAP;
+  if (map == nullptr || map->isCanIdWhitelisted == nullptr) return false;
+  return map->isCanIdWhitelisted(pid);
+}
+
+struct RouteDecision {
+  bool allowed;
+  uint16_t minimumIntervalMs;
+};
+
+static RouteDecision routeDecision(uint32_t pid) {
+  RouteDecision result = {false, 40};
+
+  if (isDenied(pid)) return result;
+
+  // A serial ALLOW command is an explicit operator override.
+  const uint8_t customDivider = customDividerFor(pid);
+  if (customDivider != 0) {
+    result.allowed = true;
+    uint32_t customInterval = static_cast<uint32_t>(customDivider) * 10u;
+    if (customInterval < 10u) customInterval = 10u;
+    if (customInterval > 2000u) customInterval = 2000u;
+    result.minimumIntervalMs = static_cast<uint16_t>(customInterval);
+    return result;
+  }
+
+  // PROFILE OFF is the deliberate bench/sniff mode. It ignores RaceChrono's
+  // requested PID set but still honors the deny list and the BLE global cap.
+  if (!g_profileEnabled) {
+    result.allowed = true;
+    result.minimumIntervalMs = 10;
+    return result;
+  }
+
+  // Once RaceChrono sends a filter command, follow the standard protocol.
+  if (g_raceChronoFilterActive) {
+    if (g_raceChronoAllowAll) {
+      result.allowed = true;
+      result.minimumIntervalMs =
+          g_raceChronoAllowAllIntervalMs == 0
+              ? 10
+              : g_raceChronoAllowAllIntervalMs;
+      return result;
+    }
+
+    if (RequestedPid* requested = findRequestedPid(pid)) {
+      result.allowed = true;
+      result.minimumIntervalMs =
+          requested->intervalMs == 0 ? 10 : requested->intervalMs;
+      return result;
+    }
+
+    return result;
+  }
+
+  // Before RaceChrono sends filters, use the compiled GR86 profile so the
+  // device still streams useful data in generic BLE clients.
+  if (!profileAllows(pid)) return result;
+
+  result.allowed = true;
+  if (pid == 0x710u) {
+    result.minimumIntervalMs = g_oilPublishPeriodMs;
+  } else if (pid == 0x777u) {
+    result.minimumIntervalMs = 2000;
+  } else {
+    const uint8_t divider = profileDividerFor(pid);
+    uint32_t interval = static_cast<uint32_t>(divider) * 10u;
+    // Cap per-ID output at 25 Hz even for profile entries with divider 1.
+    if (interval < 40u) interval = 40u;
+    if (interval > 2000u) interval = 2000u;
+    result.minimumIntervalMs = static_cast<uint16_t>(interval);
+  }
+
+  return result;
+}
+
+static void loadRuntimeConfig() {
+  g_profileEnabled = true;
+  g_oilPublishPeriodMs = 40;
+  clearCustomDividers();
+
+  if (!g_prefs.begin(CFG_NAMESPACE, true)) return;
+
+  if (g_prefs.isKey("profile")) {
+    g_profileEnabled = g_prefs.getUChar("profile", 1) != 0;
+  }
+
+  if (g_prefs.isKey("oil_rate")) {
+    const uint16_t storedRate = g_prefs.getUShort("oil_rate", 40);
+    if (storedRate >= 10 && storedRate <= 2000) {
+      g_oilPublishPeriodMs = storedRate;
+    }
+  }
+
+  const size_t blobLength = g_prefs.getBytesLength("dividers");
+  if (blobLength >= sizeof(uint16_t)) {
+    StoredDividerBlob blob = {};
+    const size_t readLength =
+        g_prefs.getBytes("dividers", &blob, sizeof(blob));
+    if (readLength >= sizeof(uint16_t)) {
+      uint16_t count = blob.count;
+      if (count > MAX_CUSTOM_DIVIDERS) count = MAX_CUSTOM_DIVIDERS;
+      for (uint16_t i = 0; i < count; ++i) {
+        if (blob.items[i].pid <= 0x7FFu) {
+          setCustomDivider(blob.items[i].pid, blob.items[i].divider);
+        }
+      }
+    }
+  }
+
+  g_prefs.end();
+}
+
+static bool saveRuntimeConfig() {
+  if (!g_prefs.begin(CFG_NAMESPACE, false)) return false;
+  ScopedNvsWrite writeGuard;
+
+  bool ok = true;
+  if (g_prefs.putUChar("profile", g_profileEnabled ? 1 : 0) !=
+      sizeof(uint8_t)) {
+    ok = false;
+  }
+  if (g_prefs.putUShort("oil_rate", g_oilPublishPeriodMs) !=
+      sizeof(uint16_t)) {
+    ok = false;
+  }
+
+  StoredDividerBlob blob = {};
+  blob.count = g_customDividerCount;
+  for (uint16_t i = 0; i < g_customDividerCount; ++i) {
+    blob.items[i] = g_customDividers[i];
+  }
+  if (g_prefs.putBytes("dividers", &blob, sizeof(blob)) != sizeof(blob)) {
+    ok = false;
+  }
+
+  g_prefs.end();
+  return ok;
+}
+
+// -----------------------------------------------------------------------------
+// BLE transport
+// -----------------------------------------------------------------------------
+
+static NimBLEServer* g_bleServer = nullptr;
+static NimBLEAdvertising* g_bleAdvertising = nullptr;
+static NimBLEService* g_bleService = nullptr;
+static NimBLECharacteristic* g_canCharacteristic = nullptr;
+static NimBLECharacteristic* g_filterCharacteristic = nullptr;
+static NimBLECharacteristic* g_gpsCharacteristic = nullptr;
+static NimBLECharacteristic* g_gpsTimeCharacteristic = nullptr;
+
+static volatile bool g_bleConnected = false;
+static volatile bool g_canSubscribed = false;
+static volatile bool g_gpsSubscribed = false;
+static volatile bool g_gpsTimeSubscribed = false;
+
+static uint16_t g_bleMtu = 23;
+static uint32_t g_bleConnectCount = 0;
+static uint32_t g_bleDisconnectCount = 0;
+static int g_lastBleDisconnectReason = 0;
+static uint32_t g_lastBleConnectMs = 0;
+static uint32_t g_lastBleDisconnectMs = 0;
+static uint32_t g_advertisingStartCount = 0;
+static uint32_t g_advertisingStartFailures = 0;
+static uint32_t g_nextAdvertisingCheckMs = 0;
+
+static uint32_t g_bleNotifySuccesses = 0;
+static uint32_t g_bleNotifyFailures = 0;
+static uint32_t g_bleNotifyRateDrops = 0;
+static uint32_t g_bleNotifyUnsubscribedDrops = 0;
+static uint32_t g_bleNotifyBackoffUntilMs = 0;
+static uint32_t g_lastBleNotifyFailureMs = 0;
+
+// Shared token bucket. GPS consumes ~11 notifications/s; the remaining budget
+// is available for CAN. This prevents a noisy bus from starving NimBLE.
+static constexpr uint16_t BLE_TOKEN_CAPACITY = 24;
+static constexpr uint16_t BLE_TOKEN_RATE_PER_SECOND = 120;
+static uint16_t g_bleTokens = BLE_TOKEN_CAPACITY;
+static uint32_t g_bleTokenLastRefillMs = 0;
+
+static bool isBleConnected() {
+  return g_bleConnected && g_bleServer != nullptr &&
+         g_bleServer->getConnectedCount() > 0;
+}
+
+static void refillBleTokens(uint32_t now) {
+  if (g_bleTokenLastRefillMs == 0) {
+    g_bleTokenLastRefillMs = now;
+    g_bleTokens = BLE_TOKEN_CAPACITY;
+    return;
+  }
+
+  const uint32_t elapsed = now - g_bleTokenLastRefillMs;
+  if (elapsed == 0) return;
+
+  const uint32_t add =
+      (elapsed * static_cast<uint32_t>(BLE_TOKEN_RATE_PER_SECOND)) / 1000u;
+  if (add == 0) return;
+
+  uint32_t next = static_cast<uint32_t>(g_bleTokens) + add;
+  if (next > BLE_TOKEN_CAPACITY) next = BLE_TOKEN_CAPACITY;
+  g_bleTokens = static_cast<uint16_t>(next);
+
+  const uint32_t consumedMs =
+      (add * 1000u) / static_cast<uint32_t>(BLE_TOKEN_RATE_PER_SECOND);
+  g_bleTokenLastRefillMs += consumedMs == 0 ? 1 : consumedMs;
+}
+
+static bool takeBleToken(uint32_t now) {
+  refillBleTokens(now);
+  if (g_bleTokens == 0) {
+    ++g_bleNotifyRateDrops;
+    return false;
+  }
+  --g_bleTokens;
+  return true;
+}
+
+static bool notifyCharacteristic(NimBLECharacteristic* characteristic,
+                                 bool subscribed,
+                                 const uint8_t* data,
+                                 size_t length,
+                                 uint32_t now) {
+  if (!isBleConnected() || characteristic == nullptr) return false;
+
+  if (!subscribed) {
+    ++g_bleNotifyUnsubscribedDrops;
+    return false;
+  }
+
+  if (!timeReached(now, g_bleNotifyBackoffUntilMs)) return false;
+  if (!takeBleToken(now)) return false;
+
+  characteristic->setValue(data, length);
+  if (characteristic->notify()) {
+    ++g_bleNotifySuccesses;
+    return true;
+  }
+
+  ++g_bleNotifyFailures;
+  g_lastBleNotifyFailureMs = now;
+  // A short quiet period is enough to let NimBLE drain. Do not restart BLE.
+  g_bleNotifyBackoffUntilMs = now + 100;
+  return false;
+}
+
+static void startAdvertisingIfNeeded(uint32_t now, bool forceCheck = false) {
+  if (g_bleAdvertising == nullptr || isBleConnected()) return;
+  if (!forceCheck && !timeReached(now, g_nextAdvertisingCheckMs)) return;
+
+  g_nextAdvertisingCheckMs = now + 3000;
+  if (g_bleAdvertising->isAdvertising()) return;
+
+  if (g_bleAdvertising->start()) {
+    ++g_advertisingStartCount;
+    Serial.println("BLE: advertising");
+  } else {
+    ++g_advertisingStartFailures;
+    Serial.println("WARN: BLE advertising start rejected; retry scheduled");
+  }
+}
+
+class ServerCallbacks final : public NimBLEServerCallbacks {
+ public:
+  void onConnect(NimBLEServer*, NimBLEConnInfo& connInfo) override {
+    g_bleConnected = true;
+    g_canSubscribed = false;
+    g_gpsSubscribed = false;
+    g_gpsTimeSubscribed = false;
+    g_bleMtu = connInfo.getMTU();
+    g_lastBleConnectMs = millis();
+    ++g_bleConnectCount;
+    g_bleNotifyBackoffUntilMs = 0;
+    g_bleTokens = BLE_TOKEN_CAPACITY;
+    g_bleTokenLastRefillMs = millis();
+
+    // RaceChrono sends a fresh filter set after connection.
+    clearRaceChronoFilter();
+
+    Serial.printf(
+        "BLE: connected handle=%u interval=%.2fms timeout=%.2fs mtu=%u\n",
+        static_cast<unsigned>(connInfo.getConnHandle()),
+        static_cast<double>(connInfo.getConnInterval()) * 1.25,
+        static_cast<double>(connInfo.getConnTimeout()) * 0.010,
+        static_cast<unsigned>(g_bleMtu));
+  }
+
+  void onDisconnect(NimBLEServer*, NimBLEConnInfo&, int reason) override {
+    g_bleConnected = false;
+    g_canSubscribed = false;
+    g_gpsSubscribed = false;
+    g_gpsTimeSubscribed = false;
+    g_lastBleDisconnectReason = reason;
+    g_lastBleDisconnectMs = millis();
+    ++g_bleDisconnectCount;
+    g_nextAdvertisingCheckMs = millis() + 1000;
+
+    // Do not touch TWAI, the PID cache, GPS, or the advertiser here.
+    // NimBLE's advertiseOnDisconnect handles the normal recovery path.
+    Serial.printf("BLE: disconnected reason=%d; state retained\n", reason);
+  }
+
