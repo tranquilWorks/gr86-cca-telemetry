@@ -1,0 +1,139 @@
+name: Apply and validate stability firmware
+
+on:
+  push:
+    branches:
+      - fix/stability-first-ble-can
+    paths:
+      - ".stability-payload/**"
+      - ".github/workflows/apply-stability-firmware.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stability-firmware-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  assemble-build-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository and pinned libraries
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Assemble exact firmware source
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .stability-payload/part00.txt \
+              .stability-payload/part01.txt \
+              .stability-payload/part02.txt \
+              .stability-payload/part03.txt \
+              > firmware/cca_telemetry.ino
+          echo "19348747ed4ff01967dad3495f157be874cad1e465d21d53b3dc857affa082dd  firmware/cca_telemetry.ino" | sha256sum --check --strict
+          test "$(wc -c < firmware/cca_telemetry.ino)" -eq 75615
+          git diff --check
+
+      - name: Enforce stability invariants
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          source = Path("firmware/cca_telemetry.ino").read_text()
+
+          required = {
+              'build identity': '2.0.0-stability-20260902',
+              'event-driven reconnect': 'advertiseOnDisconnect(true)',
+              'subscription gating': 'g_canSubscribed',
+              'standard FIL parser': 'if (length != 7) return;',
+              'accept-all hardware filter': 'TWAI_FILTER_CONFIG_ACCEPT_ALL()',
+              'non-blocking CAN service': 'serviceCanStart(now);',
+              'coalesced CAN cache': 'CAN_SLOT_COUNT = 96',
+              'brownout breadcrumb': 'Boot reason:',
+          }
+          for label, needle in required.items():
+              if needle not in source:
+                  raise SystemExit(f"missing {label}: {needle}")
+
+          forbidden = {
+              'BLE passkey': 'setSecurityPasskey',
+              'encrypted RaceChrono filter': 'WRITE_ENC',
+              'forced connection parameters': 'ble_gap_update_params',
+              'CAN silence restart': 'handleCanInactivityTimeout',
+              'legacy reconnect reset': 'RC disconnected -> reset map',
+              'per-frame BLE diagnostic stream': 'diagRecordFrame',
+              'maximum BLE power': 'ESP_PWR_LVL_P9',
+          }
+          for label, needle in forbidden.items():
+              if needle in source:
+                  raise SystemExit(f"forbidden {label}: {needle}")
+
+          if source.count('g_bleAdvertising->start()') != 1:
+              raise SystemExit('advertising must have exactly one guarded start site')
+          if 'while (!g_canRunning)' in source or 'while (!g_canDriverInstalled)' in source:
+              raise SystemExit('blocking CAN bring-up loop detected')
+
+          print('stability invariants passed')
+          PY
+
+      - name: Run host GPS parser regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/cca-tests
+          g++ -std=c++17 -Wall -Wextra -Wpedantic \
+              -Ifirmware/src \
+              tests/test_nmea.cc firmware/src/gps_nmea.cpp \
+              -o /tmp/cca-tests/test_nmea
+          /tmp/cca-tests/test_nmea
+
+      - name: Install Arduino CLI
+        uses: arduino/setup-arduino-cli@v2
+
+      - name: Install pinned ESP32 core
+        shell: bash
+        run: |
+          set -euo pipefail
+          arduino-cli config init --overwrite
+          arduino-cli config add board_manager.additional_urls \
+            https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32@3.3.6
+
+      - name: Compile exact ESP32-S3 sketch
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/cca_telemetry
+          mkdir -p /tmp/cca_telemetry
+          cp firmware/cca_telemetry.ino /tmp/cca_telemetry/cca_telemetry.ino
+          cp firmware/config.h /tmp/cca_telemetry/config.h
+          cp -R firmware/pidmaps /tmp/cca_telemetry/pidmaps
+          cp -R firmware/src /tmp/cca_telemetry/src
+          arduino-cli compile \
+            --fqbn esp32:esp32:esp32s3 \
+            --warnings all \
+            --libraries "$GITHUB_WORKSPACE/libraries" \
+            /tmp/cca_telemetry
+
+      - name: Commit validated firmware to branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add firmware/cca_telemetry.ino
+          if git diff --cached --quiet; then
+            echo "Firmware already matches validated output."
+            exit 0
+          fi
+          git commit -m "fix: replace BLE/CAN runtime with stability-first firmware"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
