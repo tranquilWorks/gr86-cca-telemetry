@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Assemble exact firmware source
+      - name: Assemble exact firmware source and apply discovery fix
         shell: bash
         run: |
           set -euo pipefail
@@ -36,11 +36,62 @@ jobs:
               .stability-payload/part02.txt \
               .stability-payload/part03.txt \
               > firmware/cca_telemetry.ino
-          echo "19348747ed4ff01967dad3495f157be874cad1e465d21d53b3dc857affa082dd  firmware/cca_telemetry.ino" | sha256sum --check --strict
-          test "$(wc -c < firmware/cca_telemetry.ino)" -eq 75615
+
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("firmware/cca_telemetry.ino")
+          source = path.read_text()
+
+          old_uuid_block = '''static constexpr const char* RC_SERVICE_UUID =
+              "00001ff8-0000-1000-8000-00805f9b34fb";
+          static constexpr const char* RC_CHAR_CAN_UUID =
+              "00000001-0000-1000-8000-00805f9b34fb";
+          static constexpr const char* RC_CHAR_FILTER_UUID =
+              "00000002-0000-1000-8000-00805f9b34fb";
+          static constexpr const char* RC_CHAR_GPS_UUID =
+              "00000003-0000-1000-8000-00805f9b34fb";
+          static constexpr const char* RC_CHAR_GPS_TIME_UUID =
+              "00000004-0000-1000-8000-00805f9b34fb";'''
+          new_uuid_block = '''static constexpr uint16_t RC_SERVICE_UUID = 0x1FF8;
+          static constexpr uint16_t RC_CHAR_CAN_UUID = 0x0001;
+          static constexpr uint16_t RC_CHAR_FILTER_UUID = 0x0002;
+          static constexpr uint16_t RC_CHAR_GPS_UUID = 0x0003;
+          static constexpr uint16_t RC_CHAR_GPS_TIME_UUID = 0x0004;'''
+
+          replacements = [
+              (old_uuid_block, new_uuid_block),
+              ('static constexpr const char* BUILD_ID = "2.0.0-stability-20260902";',
+               'static constexpr const char* BUILD_ID = "2.0.1-racechrono-discovery-20260903";'),
+              ('g_bleService = g_bleServer->createService(RC_SERVICE_UUID);',
+               'g_bleService = g_bleServer->createService(NimBLEUUID(RC_SERVICE_UUID));'),
+              ('RC_CHAR_CAN_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);',
+               'NimBLEUUID(RC_CHAR_CAN_UUID),\n      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);'),
+              ('RC_CHAR_FILTER_UUID, NIMBLE_PROPERTY::WRITE);',
+               'NimBLEUUID(RC_CHAR_FILTER_UUID), NIMBLE_PROPERTY::WRITE);'),
+              ('RC_CHAR_GPS_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);',
+               'NimBLEUUID(RC_CHAR_GPS_UUID),\n      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);'),
+              ('RC_CHAR_GPS_TIME_UUID,\n      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);',
+               'NimBLEUUID(RC_CHAR_GPS_TIME_UUID),\n      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);'),
+              ('g_bleAdvertising->addServiceUUID(RC_SERVICE_UUID);',
+               'g_bleAdvertising->addServiceUUID(NimBLEUUID(RC_SERVICE_UUID));'),
+          ]
+
+          for old, new in replacements:
+              count = source.count(old)
+              if count != 1:
+                  raise SystemExit(
+                      f"expected exactly one replacement target, got {count}: {old[:80]!r}"
+                  )
+              source = source.replace(old, new, 1)
+
+          path.write_text(source)
+          PY
+
+          sha256sum firmware/cca_telemetry.ino
           git diff --check
 
-      - name: Enforce stability invariants
+      - name: Enforce stability and RaceChrono discovery invariants
         shell: bash
         run: |
           set -euo pipefail
@@ -50,7 +101,13 @@ jobs:
           source = Path("firmware/cca_telemetry.ino").read_text()
 
           required = {
-              'build identity': '2.0.0-stability-20260902',
+              'build identity': '2.0.1-racechrono-discovery-20260903',
+              '16-bit RaceChrono service': 'static constexpr uint16_t RC_SERVICE_UUID = 0x1FF8;',
+              '16-bit advertised service': 'addServiceUUID(NimBLEUUID(RC_SERVICE_UUID))',
+              '16-bit CAN characteristic': 'NimBLEUUID(RC_CHAR_CAN_UUID)',
+              '16-bit filter characteristic': 'NimBLEUUID(RC_CHAR_FILTER_UUID)',
+              '16-bit GPS characteristic': 'NimBLEUUID(RC_CHAR_GPS_UUID)',
+              '16-bit GPS-time characteristic': 'NimBLEUUID(RC_CHAR_GPS_TIME_UUID)',
               'event-driven reconnect': 'advertiseOnDisconnect(true)',
               'subscription gating': 'g_canSubscribed',
               'standard FIL parser': 'if (length != 7) return;',
@@ -64,6 +121,7 @@ jobs:
                   raise SystemExit(f"missing {label}: {needle}")
 
           forbidden = {
+              'expanded RaceChrono service in discovery path': '00001ff8-0000-1000-8000-00805f9b34fb',
               'BLE passkey': 'setSecurityPasskey',
               'encrypted RaceChrono filter': 'WRITE_ENC',
               'forced connection parameters': 'ble_gap_update_params',
@@ -81,7 +139,7 @@ jobs:
           if 'while (!g_canRunning)' in source or 'while (!g_canDriverInstalled)' in source:
               raise SystemExit('blocking CAN bring-up loop detected')
 
-          print('stability invariants passed')
+          print('stability and RaceChrono discovery invariants passed')
           PY
 
       - name: Run host GPS parser smoke regression
@@ -158,5 +216,5 @@ jobs:
             echo "Firmware already matches validated output."
             exit 0
           fi
-          git commit -m "fix: replace BLE/CAN runtime with stability-first firmware"
+          git commit -m "fix: advertise native 16-bit RaceChrono UUIDs"
           git push origin "HEAD:${GITHUB_REF_NAME}"
