@@ -1,0 +1,618 @@
+  void onMTUChange(uint16_t mtu, NimBLEConnInfo&) override {
+    g_bleMtu = mtu;
+    Serial.printf("BLE: MTU=%u\n", static_cast<unsigned>(mtu));
+  }
+};
+
+static ServerCallbacks g_serverCallbacks;
+
+class SubscriptionCallbacks final : public NimBLECharacteristicCallbacks {
+ public:
+  explicit SubscriptionCallbacks(volatile bool* flag) : flag_(flag) {}
+
+  void onSubscribe(NimBLECharacteristic*,
+                   NimBLEConnInfo&,
+                   uint16_t subscriptionValue) override {
+    if (flag_ != nullptr) {
+      *flag_ = subscriptionValue != 0;
+    }
+  }
+
+  void onStatus(NimBLECharacteristic*, int code) override {
+    // Notifications report zero on completion. Any non-zero status is treated
+    // as backpressure; pause briefly instead of tearing down the connection.
+    if (code == 0) return;
+    ++g_bleNotifyFailures;
+    g_lastBleNotifyFailureMs = millis();
+    g_bleNotifyBackoffUntilMs = g_lastBleNotifyFailureMs + 100u;
+  }
+
+ private:
+  volatile bool* flag_;
+};
+
+static SubscriptionCallbacks g_canSubscriptionCallbacks(&g_canSubscribed);
+static SubscriptionCallbacks g_gpsSubscriptionCallbacks(&g_gpsSubscribed);
+static SubscriptionCallbacks g_gpsTimeSubscriptionCallbacks(
+    &g_gpsTimeSubscribed);
+
+static void handleRaceChronoFilterWrite(const uint8_t* data, size_t length) {
+  if (data == nullptr || length < 1) return;
+
+  ++g_filterCommandCount;
+
+  switch (data[0]) {
+    case 0:  // Deny all.
+      if (length != 1) return;
+      memset(g_requestedPids, 0, sizeof(g_requestedPids));
+      g_raceChronoFilterActive = true;
+      g_raceChronoAllowAll = false;
+      g_raceChronoAllowAllIntervalMs = 0;
+      Serial.println("FIL: deny all");
+      return;
+
+    case 1:  // Allow all, interval is big-endian.
+      if (length != 3) return;
+      memset(g_requestedPids, 0, sizeof(g_requestedPids));
+      g_raceChronoFilterActive = true;
+      g_raceChronoAllowAll = true;
+      g_raceChronoAllowAllIntervalMs =
+          (static_cast<uint16_t>(data[1]) << 8) |
+          static_cast<uint16_t>(data[2]);
+      Serial.printf("FIL: allow all interval=%ums\n",
+                    static_cast<unsigned>(g_raceChronoAllowAllIntervalMs));
+      return;
+
+    case 2: {  // Allow one PID; interval and PID are big-endian.
+      if (length != 7) return;
+      const uint16_t interval =
+          (static_cast<uint16_t>(data[1]) << 8) |
+          static_cast<uint16_t>(data[2]);
+      const uint32_t pid =
+          (static_cast<uint32_t>(data[3]) << 24) |
+          (static_cast<uint32_t>(data[4]) << 16) |
+          (static_cast<uint32_t>(data[5]) << 8) |
+          static_cast<uint32_t>(data[6]);
+
+      g_raceChronoFilterActive = true;
+      g_raceChronoAllowAll = false;
+      if (!requestPid(pid, interval)) {
+        Serial.printf("WARN: FIL PID table full; dropped 0x%03lX\n",
+                      static_cast<unsigned long>(pid));
+      }
+      return;
+    }
+
+    default:
+      return;
+  }
+}
+
+class FilterCallbacks final : public NimBLECharacteristicCallbacks {
+ public:
+  void onWrite(NimBLECharacteristic* characteristic,
+               NimBLEConnInfo&) override {
+    if (characteristic == nullptr) return;
+    const std::string value = characteristic->getValue();
+    handleRaceChronoFilterWrite(
+        reinterpret_cast<const uint8_t*>(value.data()), value.size());
+  }
+};
+
+static FilterCallbacks g_filterCallbacks;
+
+static void initBle() {
+  Serial.println("BLE: initializing stability profile");
+
+  NimBLEDevice::init(DEVICE_NAME);
+
+  // 3 dBm is ample inside a vehicle and materially reduces radio current peaks
+  // compared with the previous maximum-power setting.
+  NimBLEDevice::setPower(static_cast<int8_t>(3));
+
+  // RaceChrono's documented DIY service does not require pairing. The previous
+  // passkey/encrypted-filter layer caused iOS pairing churn and rejected the
+  // standard 1/3/7-byte filter packets.
+  NimBLEDevice::setSecurityAuth(false, false, false);
+  NimBLEDevice::setSecurityIOCap(BLE_HS_IO_NO_INPUT_OUTPUT);
+  if (NimBLEDevice::getNumBonds() > 0) {
+    NimBLEDevice::deleteAllBonds();
+    Serial.println("BLE: cleared obsolete bonds");
+  }
+
+  g_bleServer = NimBLEDevice::createServer();
+  g_bleServer->setCallbacks(&g_serverCallbacks, false);
+  g_bleServer->advertiseOnDisconnect(true);
+
+  g_bleService = g_bleServer->createService(RC_SERVICE_UUID);
+
+  g_canCharacteristic = g_bleService->createCharacteristic(
+      RC_CHAR_CAN_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
+  g_filterCharacteristic = g_bleService->createCharacteristic(
+      RC_CHAR_FILTER_UUID, NIMBLE_PROPERTY::WRITE);
+  g_gpsCharacteristic = g_bleService->createCharacteristic(
+      RC_CHAR_GPS_UUID, NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
+  g_gpsTimeCharacteristic = g_bleService->createCharacteristic(
+      RC_CHAR_GPS_TIME_UUID,
+      NIMBLE_PROPERTY::READ | NIMBLE_PROPERTY::NOTIFY);
+
+  g_canCharacteristic->setCallbacks(&g_canSubscriptionCallbacks);
+  g_filterCharacteristic->setCallbacks(&g_filterCallbacks);
+  g_gpsCharacteristic->setCallbacks(&g_gpsSubscriptionCallbacks);
+  g_gpsTimeCharacteristic->setCallbacks(
+      &g_gpsTimeSubscriptionCallbacks);
+
+  uint8_t initialCan[4] = {0, 0, 0, 0};
+  uint8_t initialGps[20];
+  memset(initialGps, 0xFF, sizeof(initialGps));
+  uint8_t initialGpsTime[3] = {0, 0, 0};
+
+  g_canCharacteristic->setValue(initialCan, sizeof(initialCan));
+  g_gpsCharacteristic->setValue(initialGps, sizeof(initialGps));
+  g_gpsTimeCharacteristic->setValue(initialGpsTime,
+                                    sizeof(initialGpsTime));
+
+  g_bleService->start();
+
+  g_bleAdvertising = NimBLEDevice::getAdvertising();
+  g_bleAdvertising->setName(DEVICE_NAME);
+  g_bleAdvertising->setMinInterval(32);   // 20 ms
+  g_bleAdvertising->setMaxInterval(160);  // 100 ms
+  g_bleAdvertising->enableScanResponse(false);
+  g_bleAdvertising->addServiceUUID(RC_SERVICE_UUID);
+
+  g_nextAdvertisingCheckMs = 0;
+  startAdvertisingIfNeeded(millis(), true);
+}
+
+// -----------------------------------------------------------------------------
+// TWAI/CAN
+// -----------------------------------------------------------------------------
+
+static bool g_canDriverInstalled = false;
+static bool g_canRunning = false;
+static uint32_t g_canNextStartMs = 0;
+static uint32_t g_canStartBackoffMs = 500;
+static uint32_t g_canStartAttempts = 0;
+static uint32_t g_canStartFailures = 0;
+static uint32_t g_canRestartCount = 0;
+static uint32_t g_canBusOffCount = 0;
+static uint32_t g_canFaultCount = 0;
+static uint32_t g_canRxCount = 0;
+static uint32_t g_canExtendedCount = 0;
+static uint32_t g_canRtrCount = 0;
+static uint32_t g_canInvalidDlcCount = 0;
+static uint32_t g_canRxQueueFullCount = 0;
+static uint32_t g_canRxMissedCount = 0;
+static uint32_t g_canSlotEvictions = 0;
+static uint32_t g_lastCanFrameMs = 0;
+static uint32_t g_lastCanHealthMs = 0;
+static twai_status_info_t g_lastTwaiStatus = {};
+
+static constexpr uint32_t TWAI_ALERTS =
+    TWAI_ALERT_ERR_PASS |
+    TWAI_ALERT_BUS_OFF |
+    TWAI_ALERT_BUS_RECOVERED |
+    TWAI_ALERT_RECOVERY_IN_PROGRESS |
+    TWAI_ALERT_ABOVE_ERR_WARN |
+    TWAI_ALERT_RX_QUEUE_FULL |
+    TWAI_ALERT_TX_FAILED |
+    TWAI_ALERT_ARB_LOST;
+
+struct CanSlot {
+  bool used;
+  bool dirty;
+  bool extended;
+  uint32_t pid;
+  uint8_t length;
+  uint8_t data[8];
+  uint8_t lastSentLength;
+  uint8_t lastSentData[8];
+  bool hasLastSent;
+  uint32_t lastRxMs;
+  uint32_t lastSentMs;
+  uint32_t receiveCount;
+};
+
+static constexpr size_t CAN_SLOT_COUNT = 96;
+static CanSlot g_canSlots[CAN_SLOT_COUNT] = {};
+static size_t g_canForwardCursor = 0;
+
+static CanSlot* findCanSlot(uint32_t pid, bool extended) {
+  for (size_t i = 0; i < CAN_SLOT_COUNT; ++i) {
+    if (g_canSlots[i].used && g_canSlots[i].pid == pid &&
+        g_canSlots[i].extended == extended) {
+      return &g_canSlots[i];
+    }
+  }
+  return nullptr;
+}
+
+static CanSlot* acquireCanSlot(uint32_t pid,
+                               bool extended,
+                               uint32_t now) {
+  if (CanSlot* existing = findCanSlot(pid, extended)) return existing;
+
+  for (size_t i = 0; i < CAN_SLOT_COUNT; ++i) {
+    if (g_canSlots[i].used) continue;
+    memset(&g_canSlots[i], 0, sizeof(g_canSlots[i]));
+    g_canSlots[i].used = true;
+    g_canSlots[i].pid = pid;
+    g_canSlots[i].extended = extended;
+    g_canSlots[i].lastRxMs = now;
+    return &g_canSlots[i];
+  }
+
+  // Preserve the newest bus state by replacing the least-recently-updated slot.
+  size_t oldestIndex = 0;
+  uint32_t oldestAge = 0;
+  for (size_t i = 0; i < CAN_SLOT_COUNT; ++i) {
+    const uint32_t age = now - g_canSlots[i].lastRxMs;
+    if (age >= oldestAge) {
+      oldestAge = age;
+      oldestIndex = i;
+    }
+  }
+
+  ++g_canSlotEvictions;
+  memset(&g_canSlots[oldestIndex], 0, sizeof(g_canSlots[oldestIndex]));
+  g_canSlots[oldestIndex].used = true;
+  g_canSlots[oldestIndex].pid = pid;
+  g_canSlots[oldestIndex].extended = extended;
+  g_canSlots[oldestIndex].lastRxMs = now;
+  return &g_canSlots[oldestIndex];
+}
+
+static void cacheCanFrame(uint32_t pid,
+                          bool extended,
+                          const uint8_t* data,
+                          uint8_t length,
+                          uint32_t now) {
+  CanSlot* slot = acquireCanSlot(pid, extended, now);
+  if (slot == nullptr) return;
+
+  slot->length = length > 8 ? 8 : length;
+  if (slot->length > 0 && data != nullptr) {
+    memcpy(slot->data, data, slot->length);
+  }
+  if (slot->length < sizeof(slot->data)) {
+    memset(slot->data + slot->length, 0,
+           sizeof(slot->data) - slot->length);
+  }
+
+  slot->lastRxMs = now;
+  slot->dirty = true;
+  if (slot->receiveCount != 0xFFFFFFFFu) ++slot->receiveCount;
+}
+
+static void publishVirtualCan(uint32_t pid,
+                              const uint8_t* data,
+                              uint8_t length,
+                              uint32_t now) {
+  cacheCanFrame(pid, false, data, length, now);
+}
+
+static void stopCanDriver() {
+  if (g_canDriverInstalled) {
+    (void)twai_stop();
+    (void)twai_driver_uninstall();
+  }
+
+  g_canDriverInstalled = false;
+  g_canRunning = false;
+  memset(&g_lastTwaiStatus, 0, sizeof(g_lastTwaiStatus));
+  g_lastTwaiStatus.state = TWAI_STATE_STOPPED;
+}
+
+static void scheduleCanRestart(uint32_t now, const char* reason) {
+  if (reason != nullptr) {
+    Serial.printf("CAN: recovery scheduled (%s)\n", reason);
+  }
+
+  stopCanDriver();
+  ++g_canFaultCount;
+  g_canNextStartMs = now + g_canStartBackoffMs;
+
+  if (g_canStartBackoffMs < 10000u) {
+    g_canStartBackoffMs *= 2u;
+    if (g_canStartBackoffMs > 10000u) g_canStartBackoffMs = 10000u;
+  }
+}
+
+static bool startCanDriver(uint32_t now) {
+  ++g_canStartAttempts;
+
+  twai_general_config_t general = TWAI_GENERAL_CONFIG_DEFAULT(
+      static_cast<gpio_num_t>(CAN_TX_GPIO),
+      static_cast<gpio_num_t>(CAN_RX_GPIO),
+      TWAI_MODE_NORMAL);
+  general.tx_queue_len = 4;
+  general.rx_queue_len = 128;
+  general.alerts_enabled = TWAI_ALERTS;
+
+  twai_timing_config_t timing = TWAI_TIMING_CONFIG_500KBITS();
+  twai_filter_config_t filter = TWAI_FILTER_CONFIG_ACCEPT_ALL();
+
+  esp_err_t installResult =
+      twai_driver_install(&general, &timing, &filter);
+
+  if (installResult == ESP_ERR_INVALID_STATE) {
+    // Clean up any stale driver state left by an interrupted recovery.
+    (void)twai_stop();
+    (void)twai_driver_uninstall();
+    installResult = twai_driver_install(&general, &timing, &filter);
+  }
+
+  if (installResult != ESP_OK) {
+    ++g_canStartFailures;
+    g_canRunning = false;
+    g_canDriverInstalled = false;
+    g_canNextStartMs = now + g_canStartBackoffMs;
+    Serial.printf("WARN: TWAI install failed: %d; retry in %lums\n",
+                  static_cast<int>(installResult),
+                  static_cast<unsigned long>(g_canStartBackoffMs));
+    if (g_canStartBackoffMs < 10000u) {
+      g_canStartBackoffMs *= 2u;
+      if (g_canStartBackoffMs > 10000u) g_canStartBackoffMs = 10000u;
+    }
+    return false;
+  }
+
+  g_canDriverInstalled = true;
+
+  const esp_err_t startResult = twai_start();
+  if (startResult != ESP_OK) {
+    ++g_canStartFailures;
+    Serial.printf("WARN: TWAI start failed: %d\n",
+                  static_cast<int>(startResult));
+    stopCanDriver();
+    g_canNextStartMs = now + g_canStartBackoffMs;
+    return false;
+  }
+
+  g_canRunning = true;
+  g_canStartBackoffMs = 500;
+  g_canNextStartMs = 0;
+  ++g_canRestartCount;
+  g_lastCanHealthMs = now;
+  memset(&g_lastTwaiStatus, 0, sizeof(g_lastTwaiStatus));
+  g_lastTwaiStatus.state = TWAI_STATE_RUNNING;
+
+  Serial.println("CAN: TWAI running, 500 kbit/s, accept-all");
+  return true;
+}
+
+static void serviceCanStart(uint32_t now) {
+  if (g_canRunning) return;
+  if (!timeReached(now, g_canNextStartMs)) return;
+  startCanDriver(now);
+}
+
+static void serviceCanHealth(uint32_t now) {
+  if (!g_canRunning || !g_canDriverInstalled) return;
+  if (now - g_lastCanHealthMs < 1000u) return;
+  g_lastCanHealthMs = now;
+
+  uint32_t alerts = 0;
+  const esp_err_t alertResult =
+      twai_read_alerts(&alerts, pdMS_TO_TICKS(0));
+  if (alertResult != ESP_OK && alertResult != ESP_ERR_TIMEOUT) {
+    Serial.printf("WARN: TWAI alert read failed: %d\n",
+                  static_cast<int>(alertResult));
+  }
+
+  twai_status_info_t status = {};
+  const esp_err_t statusResult = twai_get_status_info(&status);
+  if (statusResult != ESP_OK) {
+    scheduleCanRestart(now, "status read failed");
+    return;
+  }
+
+  g_lastTwaiStatus = status;
+  g_canRxMissedCount = status.rx_missed_count;
+
+  if ((alerts & TWAI_ALERT_RX_QUEUE_FULL) != 0) {
+    ++g_canRxQueueFullCount;
+  }
+
+  if (status.state == TWAI_STATE_BUS_OFF ||
+      (alerts & TWAI_ALERT_BUS_OFF) != 0) {
+    ++g_canBusOffCount;
+    scheduleCanRestart(now, "bus off");
+    return;
+  }
+
+  if (status.state == TWAI_STATE_STOPPED) {
+    scheduleCanRestart(now, "controller stopped");
+    return;
+  }
+
+  // CAN silence is not a fault. The bench generator may stop and the vehicle
+  // may enter quiet states; no timeout-based controller reset is performed.
+}
+
+static void serviceCanReceive(uint32_t now) {
+  if (!g_canRunning) return;
+
+  const uint32_t startUs = micros();
+  uint16_t framesThisPass = 0;
+
+  while (framesThisPass < 96 &&
+         static_cast<uint32_t>(micros() - startUs) < 2000u) {
+    twai_message_t frame = {};
+    if (twai_receive(&frame, pdMS_TO_TICKS(0)) != ESP_OK) break;
+
+    ++framesThisPass;
+    if (frame.rtr) {
+      ++g_canRtrCount;
+      continue;
+    }
+
+    if (frame.data_length_code > 8) {
+      ++g_canInvalidDlcCount;
+      continue;
+    }
+
+    ++g_canRxCount;
+    if (frame.extd) ++g_canExtendedCount;
+    g_lastCanFrameMs = now;
+
+    cacheCanFrame(frame.identifier, frame.extd != 0, frame.data,
+                  frame.data_length_code, now);
+  }
+}
+
+static bool sendCanSlot(CanSlot& slot, uint32_t now) {
+  uint8_t packet[12] = {};
+  packet[0] = static_cast<uint8_t>(slot.pid & 0xFFu);
+  packet[1] = static_cast<uint8_t>((slot.pid >> 8) & 0xFFu);
+  packet[2] = static_cast<uint8_t>((slot.pid >> 16) & 0xFFu);
+  packet[3] = static_cast<uint8_t>((slot.pid >> 24) & 0xFFu);
+  if (slot.length > 0) {
+    memcpy(packet + 4, slot.data, slot.length);
+  }
+
+  if (!notifyCharacteristic(g_canCharacteristic, g_canSubscribed,
+                            packet, 4u + slot.length, now)) {
+    return false;
+  }
+
+  slot.lastSentLength = slot.length;
+  memcpy(slot.lastSentData, slot.data, sizeof(slot.lastSentData));
+  slot.hasLastSent = true;
+  slot.lastSentMs = now;
+  slot.dirty = false;
+  slot.receiveCount = 0;
+  return true;
+}
+
+static void serviceCanForwarding(uint32_t now) {
+  if (!isBleConnected() || !g_canSubscribed) return;
+  if (!timeReached(now, g_bleNotifyBackoffUntilMs)) return;
+
+  uint8_t sentThisPass = 0;
+
+  for (size_t checked = 0;
+       checked < CAN_SLOT_COUNT && sentThisPass < 4;
+       ++checked) {
+    const size_t index = g_canForwardCursor % CAN_SLOT_COUNT;
+    g_canForwardCursor = (g_canForwardCursor + 1) % CAN_SLOT_COUNT;
+
+    CanSlot& slot = g_canSlots[index];
+    if (!slot.used || !slot.dirty) continue;
+
+    const RouteDecision decision = routeDecision(slot.pid);
+    if (!decision.allowed) {
+      slot.dirty = false;
+      slot.receiveCount = 0;
+      continue;
+    }
+
+    if (slot.hasLastSent &&
+        now - slot.lastSentMs < decision.minimumIntervalMs) {
+      continue;
+    }
+
+    if (sendCanSlot(slot, now)) {
+      ++sentThisPass;
+    } else {
+      // Keep the latest value dirty for a later pass; do not spin.
+      break;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// GPS
+// -----------------------------------------------------------------------------
+
+static HardwareSerial g_gpsSerial(1);
+
+static constexpr uint32_t MILLIS_PER_SECOND = 1000u;
+static constexpr uint32_t MILLIS_PER_MINUTE = 60u * MILLIS_PER_SECOND;
+static constexpr uint32_t MILLIS_PER_HOUR = 60u * MILLIS_PER_MINUTE;
+static constexpr uint32_t MILLIS_PER_DAY = 24u * MILLIS_PER_HOUR;
+static constexpr int64_t MICROS_PER_DAY =
+    static_cast<int64_t>(MILLIS_PER_DAY) * 1000LL;
+
+static constexpr const char* PMTK_RMC_GGA_ONLY =
+    "$PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*28\r\n";
+static constexpr const char* PMTK_10HZ =
+    "$PMTK220,100*2F\r\n";
+static constexpr const char* PMTK_115200 =
+    "$PMTK251,115200*1F\r\n";
+
+enum class GpsState : uint8_t {
+  Probe,
+  Configure,
+  SwitchTo115200,
+  Active,
+  RetryWait,
+};
+
+static constexpr uint32_t GPS_PROBE_BAUDS[] = {
+    115200, 9600, 38400, 57600
+};
+static constexpr size_t GPS_PROBE_BAUD_COUNT =
+    sizeof(GPS_PROBE_BAUDS) / sizeof(GPS_PROBE_BAUDS[0]);
+
+static GpsState g_gpsState = GpsState::Probe;
+static size_t g_gpsProbeIndex = 0;
+static uint32_t g_gpsCurrentBaud = 115200;
+static uint32_t g_gpsStateDeadlineMs = 0;
+static uint8_t g_gpsConfigCommandIndex = 0;
+static bool g_gpsSentenceSeenAtCurrentBaud = false;
+static bool g_gpsConfigured = false;
+static bool g_gpsValidFix = false;
+static uint32_t g_gpsSentenceCount = 0;
+static uint32_t g_gpsParseFailureCount = 0;
+static uint32_t g_gpsLastSentenceMs = 0;
+static uint32_t g_gpsLastValidFixMs = 0;
+static uint32_t g_gpsLastNotifyMs = 0;
+static uint32_t g_gpsLastTimeNotifyMs = 0;
+
+static char g_gpsLine[160] = {};
+static size_t g_gpsLineLength = 0;
+
+static int g_rmcHour = 0;
+static int g_rmcMinute = 0;
+static int g_rmcSecond = 0;
+static int g_rmcMillis = 0;
+static double g_rmcLatitudeDeg = 0.0;
+static double g_rmcLongitudeDeg = 0.0;
+static double g_rmcSpeedKmh = 0.0;
+static double g_rmcCourseDeg = 0.0;
+
+static int g_gpsYear = 2000;
+static int g_gpsMonth = 1;
+static int g_gpsDay = 1;
+static int g_ggaSatellites = 0;
+static double g_ggaHdop = 99.9;
+static double g_ggaAltitudeMeters = 0.0;
+
+static bool g_rmcTimeAvailable = false;
+static uint32_t g_rmcMillisSinceMidnight = 0;
+static uint32_t g_rmcCaptureMillis = 0;
+static uint32_t g_rmcCaptureMicros = 0;
+static int64_t g_gpsTimeCorrectionMicros = 0;
+static uint32_t g_gpsMonotonicMillis = 0;
+static uint8_t g_gpsSyncBits = 0;
+static int g_lastDateHourPacked = -1;
+
+#if GPS_PPS_GPIO >= 0
+static volatile uint32_t g_ppsEventMicros = 0;
+static volatile uint32_t g_ppsLastIsrMicros = 0;
+static volatile uint32_t g_ppsIntervalMicros = 0;
+static volatile uint32_t g_ppsPendingCount = 0;
+static uint32_t g_ppsProcessedCount = 0;
+static uint32_t g_ppsLastProcessedMs = 0;
+static bool g_ppsLocked = false;
+
+static void IRAM_ATTR onGpsPps() {
+  const uint32_t now = micros();
+  const uint32_t last = g_ppsLastIsrMicros;
+  if (last != 0 && static_cast<uint32_t>(now - last) < 200000u) return;
+
+  g_ppsLastIsrMicros = now;
+  g_ppsEventMicros = now;
+  g_ppsIntervalMicros = last == 0 ? 1000000u
