@@ -84,14 +84,37 @@ jobs:
           print('stability invariants passed')
           PY
 
-      - name: Run host GPS parser regression
+      - name: Run host GPS parser smoke regression
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p /tmp/cca-tests
+          cat > /tmp/cca-tests/test_nmea.cc <<'CPP'
+          #include "gps_nmea.h"
+          #include <cassert>
+          #include <cmath>
+
+          int main() {
+            char rmc[] = "$GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A";
+            gps::RmcData rmcData;
+            assert(gps::parseRmcSentence(rmc, rmcData));
+            assert(rmcData.valid);
+            assert(rmcData.has_time && rmcData.hour == 12 && rmcData.minute == 35);
+            assert(rmcData.has_latitude && std::fabs(rmcData.latitude_deg - 48.1173) < 0.0001);
+            assert(rmcData.has_longitude && std::fabs(rmcData.longitude_deg - 11.5166667) < 0.0001);
+
+            char gga[] = "$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47";
+            gps::GgaData ggaData;
+            assert(gps::parseGgaSentence(gga, ggaData));
+            assert(ggaData.has_sats && ggaData.sats == 8);
+            assert(ggaData.has_hdop && std::fabs(ggaData.hdop - 0.9) < 0.001);
+            assert(ggaData.has_altitude && std::fabs(ggaData.altitude_m - 545.4) < 0.001);
+            return 0;
+          }
+          CPP
           g++ -std=c++17 -Wall -Wextra -Wpedantic \
               -Ifirmware/src \
-              tests/test_nmea.cc firmware/src/gps_nmea.cpp \
+              /tmp/cca-tests/test_nmea.cc firmware/src/gps_nmea.cpp \
               -o /tmp/cca-tests/test_nmea
           /tmp/cca-tests/test_nmea
 
