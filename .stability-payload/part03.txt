@@ -1,0 +1,539 @@
+             now - g_lastCanFrameMs <= 1000u) {
+    led_set_can(LedPattern::Pulse2Every2s);
+  } else {
+    led_set_can(LedPattern::BlinkSlow);
+  }
+
+  if (g_gpsLastSentenceMs != 0 &&
+      now - g_gpsLastSentenceMs <= 1500u) {
+    led_set_gps(g_gpsValidFix ? LedPattern::Pulse3Every2s
+                              : LedPattern::Solid);
+  } else {
+    led_set_gps(LedPattern::BlinkSlow);
+  }
+
+  const bool systemFault =
+      (!g_canRunning && g_canStartFailures > 0) ||
+      (g_lastBleNotifyFailureMs != 0 &&
+       now - g_lastBleNotifyFailureMs < 2000u);
+  led_set_sys(systemFault ? LedPattern::BlinkSlow
+                          : LedPattern::Off);
+
+  if (g_oilFlags == 0) {
+    led_set_oil(LedPattern::Solid);
+  } else if ((g_oilFlags & (1u << 1)) != 0) {
+    led_set_oil(LedPattern::BlinkFast);
+  } else if ((g_oilFlags & (1u << 0)) != 0) {
+    led_set_oil(LedPattern::Pulse2Every2s);
+  } else {
+    led_set_oil(LedPattern::BlinkSlow);
+  }
+
+  led_service(now);
+}
+
+// -----------------------------------------------------------------------------
+// Serial CLI
+// -----------------------------------------------------------------------------
+
+static void showConfig() {
+  Serial.println("=== CCA Config ===");
+  Serial.printf("Build:          %s\n", BUILD_ID);
+  Serial.printf("Device:         %s\n", DEVICE_NAME);
+  Serial.printf("Profile:        %s\n",
+                g_profileEnabled ? "GR86 allow-list" : "sniff-all");
+  Serial.printf("Oil V0/V1:      %.4f / %.4f V\n",
+                g_oilV0Adc, g_oilV1Adc);
+  Serial.printf("Oil rate:       %u ms\n",
+                static_cast<unsigned>(g_oilPublishPeriodMs));
+  Serial.printf("Custom divs:    %u\n",
+                static_cast<unsigned>(g_customDividerCount));
+  Serial.println("==================");
+}
+
+static void showStats() {
+  const uint32_t now = millis();
+  Serial.println("=== CCA Stats ===");
+  Serial.printf("Uptime:         %lu ms\n",
+                static_cast<unsigned long>(now));
+  Serial.printf("Boot reason:    %s (%d)\n",
+                resetReasonName(g_bootResetReason),
+                static_cast<int>(g_bootResetReason));
+
+  Serial.printf(
+      "BLE: connected=%s can_sub=%s gps_sub=%s time_sub=%s mtu=%u\n",
+      isBleConnected() ? "yes" : "no",
+      g_canSubscribed ? "yes" : "no",
+      g_gpsSubscribed ? "yes" : "no",
+      g_gpsTimeSubscribed ? "yes" : "no",
+      static_cast<unsigned>(g_bleMtu));
+  Serial.printf(
+      "BLE events: connect=%lu disconnect=%lu last_reason=%d adv=%lu/%lu\n",
+      static_cast<unsigned long>(g_bleConnectCount),
+      static_cast<unsigned long>(g_bleDisconnectCount),
+      g_lastBleDisconnectReason,
+      static_cast<unsigned long>(g_advertisingStartCount),
+      static_cast<unsigned long>(g_advertisingStartFailures));
+  Serial.printf(
+      "BLE notify: ok=%lu fail=%lu rate_drop=%lu unsub_drop=%lu\n",
+      static_cast<unsigned long>(g_bleNotifySuccesses),
+      static_cast<unsigned long>(g_bleNotifyFailures),
+      static_cast<unsigned long>(g_bleNotifyRateDrops),
+      static_cast<unsigned long>(g_bleNotifyUnsubscribedDrops));
+  Serial.printf(
+      "FIL: active=%s allow_all=%s requested=%u commands=%lu\n",
+      g_raceChronoFilterActive ? "yes" : "no",
+      g_raceChronoAllowAll ? "yes" : "no",
+      static_cast<unsigned>(requestedPidCount()),
+      static_cast<unsigned long>(g_filterCommandCount));
+
+  Serial.printf(
+      "CAN: running=%s rx=%lu ext=%lu rtr=%lu last_age=%lums\n",
+      g_canRunning ? "yes" : "no",
+      static_cast<unsigned long>(g_canRxCount),
+      static_cast<unsigned long>(g_canExtendedCount),
+      static_cast<unsigned long>(g_canRtrCount),
+      static_cast<unsigned long>(
+          g_lastCanFrameMs == 0 ? 0 : now - g_lastCanFrameMs));
+  Serial.printf(
+      "CAN recovery: starts=%lu failures=%lu restarts=%lu busoff=%lu faults=%lu\n",
+      static_cast<unsigned long>(g_canStartAttempts),
+      static_cast<unsigned long>(g_canStartFailures),
+      static_cast<unsigned long>(g_canRestartCount),
+      static_cast<unsigned long>(g_canBusOffCount),
+      static_cast<unsigned long>(g_canFaultCount));
+  Serial.printf(
+      "CAN loss: invalid_dlc=%lu queue_full=%lu missed=%lu slot_evict=%lu\n",
+      static_cast<unsigned long>(g_canInvalidDlcCount),
+      static_cast<unsigned long>(g_canRxQueueFullCount),
+      static_cast<unsigned long>(g_canRxMissedCount),
+      static_cast<unsigned long>(g_canSlotEvictions));
+  Serial.printf(
+      "TWAI: state=%u TEC=%u REC=%u rx_q=%u tx_q=%u\n",
+      static_cast<unsigned>(g_lastTwaiStatus.state),
+      static_cast<unsigned>(g_lastTwaiStatus.tx_error_counter),
+      static_cast<unsigned>(g_lastTwaiStatus.rx_error_counter),
+      static_cast<unsigned>(g_lastTwaiStatus.msgs_to_rx),
+      static_cast<unsigned>(g_lastTwaiStatus.msgs_to_tx));
+
+  Serial.printf(
+      "GPS: configured=%s fix=%s baud=%lu sentences=%lu parse_fail=%lu age=%lums\n",
+      g_gpsConfigured ? "yes" : "no",
+      g_gpsValidFix ? "yes" : "no",
+      static_cast<unsigned long>(g_gpsCurrentBaud),
+      static_cast<unsigned long>(g_gpsSentenceCount),
+      static_cast<unsigned long>(g_gpsParseFailureCount),
+      static_cast<unsigned long>(
+          g_gpsLastSentenceMs == 0 ? 0 : now - g_gpsLastSentenceMs));
+  Serial.printf("GPS solution:   sats=%d hdop=%.1f lat=%.7f lon=%.7f\n",
+                g_ggaSatellites, g_ggaHdop,
+                g_rmcLatitudeDeg, g_rmcLongitudeDeg);
+#if GPS_PPS_GPIO >= 0
+  Serial.printf("PPS:            count=%lu locked=%s age=%lums\n",
+                static_cast<unsigned long>(g_ppsProcessedCount),
+                g_ppsLocked ? "yes" : "no",
+                static_cast<unsigned long>(
+                    g_ppsLastProcessedMs == 0
+                        ? 0
+                        : now - g_ppsLastProcessedMs));
+#else
+  Serial.println("PPS:            disabled");
+#endif
+
+  Serial.printf("Oil:            %.4f V %.1f psi flags=0x%02X\n",
+                g_oilFilteredVolts, g_oilPsi,
+                static_cast<unsigned>(g_oilFlags));
+  Serial.printf("Heap:           free=%u min=%u bytes\n",
+                static_cast<unsigned>(
+                    heap_caps_get_free_size(MALLOC_CAP_8BIT)),
+                static_cast<unsigned>(
+                    heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT)));
+  Serial.println("=================");
+}
+
+static void showMap() {
+  Serial.println("=== Routing ===");
+  Serial.printf("Profile mode: %s\n",
+                g_profileEnabled ? "ON" : "OFF");
+  Serial.printf("RaceChrono filter: active=%s allow_all=%s requested=%u\n",
+                g_raceChronoFilterActive ? "yes" : "no",
+                g_raceChronoAllowAll ? "yes" : "no",
+                static_cast<unsigned>(requestedPidCount()));
+
+  if (g_raceChronoFilterActive && !g_raceChronoAllowAll) {
+    size_t printed = 0;
+    for (size_t i = 0;
+         i < MAX_REQUESTED_PIDS && printed < 64;
+         ++i) {
+      if (!g_requestedPids[i].used) continue;
+      Serial.printf("  RC 0x%03lX @ %u ms\n",
+                    static_cast<unsigned long>(
+                        g_requestedPids[i].pid),
+                    static_cast<unsigned>(
+                        g_requestedPids[i].intervalMs));
+      ++printed;
+    }
+  }
+
+  for (uint16_t i = 0; i < g_customDividerCount; ++i) {
+    Serial.printf("  CLI 0x%03X div=%u\n",
+                  g_customDividers[i].pid,
+                  static_cast<unsigned>(
+                      g_customDividers[i].divider));
+  }
+
+  for (size_t i = 0; i < g_deniedPidCount; ++i) {
+    Serial.printf("  DENY 0x%03lX\n",
+                  static_cast<unsigned long>(g_deniedPids[i]));
+  }
+  Serial.println("===============");
+}
+
+static bool parsePidAndNumber(const char* input,
+                              uint32_t* pid,
+                              uint32_t* number) {
+  if (input == nullptr || pid == nullptr || number == nullptr) {
+    return false;
+  }
+
+  char* end = nullptr;
+  const unsigned long parsedPid = strtoul(input, &end, 0);
+  if (end == input) return false;
+  while (*end == ' ' || *end == '\t') ++end;
+  if (*end == '\0') return false;
+
+  char* numberEnd = nullptr;
+  const unsigned long parsedNumber = strtoul(end, &numberEnd, 0);
+  if (numberEnd == end) return false;
+  while (*numberEnd == ' ' || *numberEnd == '\t') ++numberEnd;
+  if (*numberEnd != '\0') return false;
+
+  *pid = static_cast<uint32_t>(parsedPid);
+  *number = static_cast<uint32_t>(parsedNumber);
+  return true;
+}
+
+static void processCliLine(char* line) {
+  if (line == nullptr) return;
+
+  while (*line == ' ' || *line == '\t') ++line;
+  size_t length = strlen(line);
+  while (length > 0 &&
+         (line[length - 1] == ' ' || line[length - 1] == '\t')) {
+    line[--length] = '\0';
+  }
+  if (length == 0) return;
+
+  String command(line);
+  command.toUpperCase();
+
+  if (command == "SHOW" || command == "SHOW CFG") {
+    showConfig();
+    return;
+  }
+  if (command == "SHOW STATS") {
+    showStats();
+    return;
+  }
+  if (command == "SHOW MAP" || command == "SHOW DENY") {
+    showMap();
+    return;
+  }
+  if (command == "BLE STATUS") {
+    Serial.printf(
+        "BLE connected=%s advertising=%s CAN_sub=%s GPS_sub=%s TIME_sub=%s\n",
+        isBleConnected() ? "yes" : "no",
+        (g_bleAdvertising != nullptr &&
+         g_bleAdvertising->isAdvertising())
+            ? "yes"
+            : "no",
+        g_canSubscribed ? "yes" : "no",
+        g_gpsSubscribed ? "yes" : "no",
+        g_gpsTimeSubscribed ? "yes" : "no");
+    return;
+  }
+  if (command == "CAN RESTART") {
+    scheduleCanRestart(millis(), "operator command");
+    g_canNextStartMs = millis() + 50u;
+    return;
+  }
+  if (command == "PROFILE ON") {
+    g_profileEnabled = true;
+    Serial.println("Profile=GR86 allow-list (not saved)");
+    return;
+  }
+  if (command == "PROFILE OFF") {
+    g_profileEnabled = false;
+    Serial.println("Profile=sniff-all (not saved)");
+    return;
+  }
+  if (command == "CLEAR FILTERS") {
+    clearRaceChronoFilter();
+    clearDeniedPids();
+    Serial.println("Runtime RaceChrono/deny filters cleared");
+    return;
+  }
+
+  if (command.startsWith("RATE ")) {
+    const uint32_t rate = static_cast<uint32_t>(
+        strtoul(line + 5, nullptr, 0));
+    if (rate < 10u || rate > 2000u) {
+      Serial.println("RATE range is 10..2000 ms");
+    } else {
+      g_oilPublishPeriodMs = static_cast<uint16_t>(rate);
+      Serial.printf("Oil rate=%u ms (not saved)\n",
+                    static_cast<unsigned>(g_oilPublishPeriodMs));
+    }
+    return;
+  }
+
+  if (command.startsWith("ALLOW ")) {
+    uint32_t pid = 0;
+    uint32_t divider = 0;
+    if (!parsePidAndNumber(line + 6, &pid, &divider) ||
+        pid > 0x7FFu || divider < 1u || divider > 255u) {
+      Serial.println("Usage: ALLOW <0x000..0x7FF> <1..255>");
+      return;
+    }
+
+    undenyPid(pid);
+    if (!setCustomDivider(pid, static_cast<uint8_t>(divider))) {
+      Serial.println("ALLOW failed: custom divider table full");
+    } else {
+      Serial.printf("ALLOW 0x%03lX div=%lu (not saved)\n",
+                    static_cast<unsigned long>(pid),
+                    static_cast<unsigned long>(divider));
+    }
+    return;
+  }
+
+  if (command.startsWith("DENY ")) {
+    char* end = nullptr;
+    const uint32_t pid =
+        static_cast<uint32_t>(strtoul(line + 5, &end, 0));
+    while (end != nullptr && (*end == ' ' || *end == '\t')) ++end;
+    if (end == line + 5 || (end != nullptr && *end != '\0') ||
+        pid > 0x1FFFFFFFu) {
+      Serial.println("Usage: DENY <pid>");
+      return;
+    }
+
+    denyPid(pid);
+    Serial.printf("DENY 0x%03lX (runtime only)\n",
+                  static_cast<unsigned long>(pid));
+    return;
+  }
+
+  if (command == "CAL SHOW") {
+    OilCalibrationRaw raw = {};
+    if (!oil_calibration_read_raw(&raw) || !raw.present) {
+      Serial.printf("Oil calibration: defaults %.4f / %.4f V\n",
+                    g_oilV0Adc, g_oilV1Adc);
+    } else {
+      Serial.printf(
+          "Oil calibration: version=%lu V0=%.4f V1=%.4f valid=%s "
+          "CRC=%08lX/%08lX\n",
+          static_cast<unsigned long>(raw.version),
+          raw.v0_adc, raw.v1_adc,
+          raw.valid ? "yes" : "no",
+          static_cast<unsigned long>(raw.stored_crc32),
+          static_cast<unsigned long>(raw.computed_crc32));
+    }
+    return;
+  }
+
+  if (command == "CAL 0") {
+    const float sample = readOilFilteredVolts();
+    if (!isfinite(sample) || sample >= g_oilV1Adc) {
+      Serial.println("CAL 0 refused: invalid/inverted endpoint");
+      return;
+    }
+
+    g_oilV0Adc = sample;
+    const bool saved =
+        oil_calibration_save(g_oilV0Adc, g_oilV1Adc);
+    Serial.printf("Oil V0=%.4f V (%s)\n",
+                  g_oilV0Adc, saved ? "saved" : "save failed");
+    return;
+  }
+
+  if (command == "CAL 1") {
+    const float sample = readOilFilteredVolts();
+    if (!isfinite(sample) || sample <= g_oilV0Adc) {
+      Serial.println("CAL 1 refused: invalid/inverted endpoint");
+      return;
+    }
+
+    g_oilV1Adc = sample;
+    const bool saved =
+        oil_calibration_save(g_oilV0Adc, g_oilV1Adc);
+    Serial.printf("Oil V1=%.4f V (%s)\n",
+                  g_oilV1Adc, saved ? "saved" : "save failed");
+    return;
+  }
+
+  if (command == "SAVE") {
+    Serial.println(saveRuntimeConfig()
+                       ? "Saved profile/rate/dividers."
+                       : "SAVE failed.");
+    showConfig();
+    return;
+  }
+
+  if (command == "LOAD") {
+    loadRuntimeConfig();
+    loadOilCalibration();
+    Serial.println("Reloaded persistent configuration.");
+    showConfig();
+    return;
+  }
+
+  if (command == "RESETCFG") {
+    if (g_prefs.begin(CFG_NAMESPACE, false)) {
+      ScopedNvsWrite writeGuard;
+      g_prefs.clear();
+      g_prefs.end();
+    }
+
+    g_profileEnabled = true;
+    g_oilPublishPeriodMs = 40;
+    clearCustomDividers();
+    clearDeniedPids();
+    clearRaceChronoFilter();
+    g_oilV0Adc = DEFAULT_OIL_V0_ADC;
+    g_oilV1Adc = DEFAULT_OIL_V1_ADC;
+    oil_calibration_save(g_oilV0Adc, g_oilV1Adc);
+    saveRuntimeConfig();
+    Serial.println("Configuration reset to stability defaults.");
+    showConfig();
+    return;
+  }
+
+  Serial.println(
+      "Commands: SHOW [CFG|STATS|MAP] | BLE STATUS | CAN RESTART | "
+      "PROFILE ON|OFF | CLEAR FILTERS | RATE <ms> | "
+      "ALLOW <pid> <div> | DENY <pid> | "
+      "CAL 0|1|SHOW | SAVE | LOAD | RESETCFG");
+}
+
+static void serviceSerialCli() {
+  static char buffer[192] = {};
+  static size_t length = 0;
+  static bool overflow = false;
+
+  while (Serial.available()) {
+    const int raw = Serial.read();
+    if (raw < 0) break;
+
+    if (raw == '\r' || raw == '\n') {
+      if (overflow) {
+        Serial.println("CLI line too long; ignored.");
+      } else if (length > 0) {
+        buffer[length] = '\0';
+        processCliLine(buffer);
+      }
+      length = 0;
+      overflow = false;
+      continue;
+    }
+
+    if (length < sizeof(buffer) - 1) {
+      buffer[length++] = static_cast<char>(raw);
+    } else {
+      overflow = true;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Arduino entry points
+// -----------------------------------------------------------------------------
+
+static void setupImpl() {
+  Serial.begin(115200);
+  const uint32_t serialStart = millis();
+  while (!Serial && millis() - serialStart < 1000u) {
+    delay(10);
+  }
+
+  g_bootResetReason = esp_reset_reason();
+
+  Serial.println();
+  Serial.println("==============================================");
+  Serial.println("GR86 CCA telemetry stability firmware");
+  Serial.printf("Build: %s\n", BUILD_ID);
+  Serial.printf("Boot reason: %s (%d)\n",
+                resetReasonName(g_bootResetReason),
+                static_cast<int>(g_bootResetReason));
+  Serial.println("==============================================");
+
+  initWatchdog();
+
+  led_init();
+  led_set_power(LedPattern::Solid);
+  led_set_ble(LedPattern::BlinkFast);
+  led_set_can(LedPattern::BlinkSlow);
+  led_set_gps(LedPattern::BlinkSlow);
+  led_set_sys(LedPattern::Off);
+  led_set_oil(LedPattern::Off);
+  led_service(millis());
+
+  analogReadResolution(12);
+  analogSetPinAttenuation(OIL_ADC_PIN, ADC_11db);
+  pinMode(OIL_ADC_PIN, INPUT);
+
+  loadRuntimeConfig();
+  loadOilCalibration();
+
+#if GPS_PPS_GPIO >= 0
+  pinMode(GPS_PPS_GPIO, INPUT_PULLDOWN);
+  attachInterrupt(GPS_PPS_GPIO, onGpsPps, RISING);
+  Serial.printf("GPS: PPS on GPIO %d\n", GPS_PPS_GPIO);
+#endif
+
+  initBle();
+
+  startGpsProbe(0, millis());
+
+  g_canNextStartMs = 0;
+  serviceCanStart(millis());
+
+  showConfig();
+}
+
+static void loopImpl() {
+  esp_task_wdt_reset();
+
+  const uint32_t now = millis();
+
+  // BLE service first: connection maintenance never waits on CAN/GPS.
+  startAdvertisingIfNeeded(now);
+
+  serviceCanStart(now);
+  serviceCanHealth(now);
+  serviceCanReceive(now);
+
+  serviceOil(now);
+  publishDiagnostics(now);
+
+  // GPS gets priority within the shared BLE budget; coalesced CAN uses the
+  // remainder. This prevents a busy CAN bus from starving lap-position data.
+  serviceGps(now);
+  serviceCanForwarding(now);
+
+  serviceStatusLeds(now);
+  serviceSerialCli();
+
+  // Yield to NimBLE/Arduino tasks without introducing a blocking recovery loop.
+  delay(1);
+}
+
+}  // namespace cca
+
+void setup() {
+  cca::setupImpl();
+}
+
+void loop() {
+  cca::loopImpl();
+}
