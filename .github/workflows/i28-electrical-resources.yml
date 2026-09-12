@@ -1,0 +1,48 @@
+name: I28 electrical simulation resources
+on:
+  push:
+    branches: [codex/rvb28-electrical-signoff]
+    paths: [.github/workflows/i28-electrical-resources.yml]
+permissions:
+  contents: read
+jobs:
+  resources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect source and manufacturer simulation models
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/i28-resources/models
+          git rev-parse HEAD > /tmp/i28-resources/commit.txt
+          git archive --format=tar.gz HEAD > /tmp/i28-resources/repository.tar.gz
+          python3 - <<'PY'
+          import urllib.request, pathlib, hashlib, json
+          root=pathlib.Path('/tmp/i28-resources')
+          sources={
+            'ngspice.deb':'https://deb.debian.org/debian/pool/main/n/ngspice/ngspice_39.3+ds-1_amd64.deb',
+            'models/lm5164_unencrypted.zip':'https://www.ti.com/lit/zip/snvmbp2',
+            'models/lm63615.zip':'https://www.ti.com/lit/zip/snv mbr6'.replace(' ','')
+          }
+          results={}
+          for name,url in sources.items():
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+                  data=urllib.request.urlopen(req,timeout=90).read()
+                  digest=hashlib.sha256(data).hexdigest()
+                  if name=='ngspice.deb' and digest!='710bc58f7a708c0813e33e19c115dc076a3749c18bbe1379cd9dba24c42d32f9':
+                      raise ValueError('Debian package checksum mismatch')
+                  (root/name).write_bytes(data)
+                  results[name]={'url':url,'bytes':len(data),'sha256':digest,'status':'retrieved'}
+              except Exception as exc:
+                  results[name]={'url':url,'status':'unavailable','error':str(exc)}
+          (root/'MODEL_ACQUISITION.json').write_text(json.dumps(results,indent=2)+'\n')
+          print(json.dumps(results,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: i28-electrical-resources
+          path: /tmp/i28-resources/
+          retention-days: 14
