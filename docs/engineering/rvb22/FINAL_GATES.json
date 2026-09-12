@@ -60,7 +60,7 @@
     {
       "id": "G22-09",
       "status": "BOUNDED_INFERENCE_CLOSED_RF_QUALIFICATION_ONLY",
-      "description": "Current RF/return/keepout and bounded coupling analyses are sufficient for prehardware geometry release. Radiated behavior, nonlinear clamp response and installed coexistence are not claimed.",
+      "description": "The PCB RF matching/reference/keepout model is bounded in its stated RF scope. This does not close the wider non-RF return-transfer criterion GND-02. Installed nonlinear clamp/radiated/coexistence behavior remains qualification.",
       "qualification": "Correlate installed GPS C/N0, BLE link behavior, ADC/CAN coupling and accessible-port ESD behavior.",
       "reopen": "Repeatable installed RF/EMC/ESD failure exceeds the controlled acceptance plan."
     },
@@ -77,8 +77,25 @@
       "description": "Actual oil response, GPS availability, phone/OS behavior, sustained operation and environmental performance are physical system observations; desktop modeling is exhausted for release design.",
       "qualification": "Execute the source-bound acceptance plan on fabricated hardware and vehicle/phone environment.",
       "reopen": "A failed physical gate demonstrates a design deficiency outside the bounded prediction."
+    },
+    {
+      "id": "G22-12",
+      "status": "BOUNDED_INFERENCE_CLOSED",
+      "criterion": "GND-02",
+      "description": "GND-02 desktop return-path analysis completed by I27; no pre-fabrication copper/stitching change justified.",
+      "evidence": "analyses/i26/GND02_DESKTOP_CLOSURE.json",
+      "qualification": "Retain fabricated continuity plus installed CAN/EMC/coexistence correlation; no physical pass is claimed."
+    },
+    {
+      "id": "G22-13",
+      "status": "QUALIFICATION_ONLY_LED_VISIBILITY",
+      "criterion": "WCA-07",
+      "description": "7actual paths electrically bounded; optical typical-curve inference retained without guaranteed hot minimum.",
+      "qualification": "analyses/i26/QUALIFICATION_GATES.json#I26-LED-01"
     }
   ],
-  "prehardware_design_statement": "No gate above currently recommends a schematic, PCB, firmware, mechanical or release-profile source change before fabrication. Remaining observations are fixed qualification gates or contingency-only work.",
-  "physical_claims_made": false
+  "prehardware_design_statement": "I27: zero actionable pre-hardware engineering items. Fabrication can proceed subject to supplier process acceptance and explicit as-built/install/environment qualification gates.",
+  "physical_claims_made": false,
+  "actionable_prehardware_actual": 0,
+  "actionable_prehardware_ids": []
 }

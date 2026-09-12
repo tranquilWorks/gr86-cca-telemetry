@@ -1,3 +1,13 @@
+# I27 pre-hardware engineering closure — fabrication request clear
+
+As of 2026-09-12, the controlled 290-row register contains **0 actionable pre-hardware engineering items**. Literal original criteria that require fabricated, supplier, installation, vehicle, environmental or visibility evidence remain open as qualification gates; no such physical evidence is claimed.
+
+Aggregate pre-hardware classification: **141 desktop/source/documentary, 31 bounded-model/inference, 114 hardware/supplier/installation qualification-only, 4 N/A, 0 desktop work remaining**. GND-02 is closed for desktop design by `analyses/i26/GND02_DESKTOP_CLOSURE.json`; no PCB/BOM/firmware change was required.
+
+This is authorization to proceed to fabrication/supplier review, not a claim that the finished assembly has passed qualification.
+
+---
+
 # I26 pre-hardware closure contract
 
 Date: 2026-09-11

@@ -1,8 +1,8 @@
 {
-  "checkpoint": "RVB22_I22_ACCESSORY_PACKAGE_MECHANICAL_REVIEW_I20_CAD",
-  "date": "2026-09-10",
-  "status": "I22_DESIGN_SCOPE_PROGRESS_THERMAL_AND_QUALIFICATION_OPEN",
-  "PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+  "checkpoint": "RVB22_I26A_PREHARDWARE_CLOSURE_PROGRESS",
+  "date": "2026-09-12",
+  "status": "ONE_ACTIONABLE_DESKTOP_CRITERION_REMAINS",
+  "PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
   "firmware_manifest_sha256": "3cc361dbe9ed9dd112bf889d5a3bece277ac45287a5348ebc2ab4255bf74a90f",
   "summary": {
     "criteria": 290,
@@ -77,12 +77,11 @@
       "CORRECTED_FULL_HEIGHT_STACK": 1
     },
     "desktop_status_counts": {
-      "HARDWARE_OR_INSTALLATION_ACCEPTANCE": 89,
+      "HARDWARE_OR_INSTALLATION_ACCEPTANCE": 90,
       "CURRENT_EVIDENCE_REVIEWED": 90,
       "COMPLETED_CURRENT_SOURCE_VERIFICATION": 25,
-      "COMPLETED_CONDITIONAL_MODEL": 28,
+      "COMPLETED_CONDITIONAL_MODEL": 31,
       "COMPLETED_I22_ORIGINAL_DESIGN_SCOPE": 6,
-      "DESKTOP_WORK_REMAINING": 4,
       "SUPPLIER_OR_RESPONSIBLE_ACCEPTANCE": 17,
       "CURRENT_NATIVE_COMPLETE_OTHER_EVIDENCE_REQUIRED": 7,
       "NOT_APPLICABLE": 4,
@@ -92,8 +91,8 @@
     "target_candidate_builds": 1,
     "native_findings": 0,
     "physical_tests": 0,
-    "actual_source_thermal_engineering_complete": false,
-    "release_status": "Six more design criteria closed; thermal engineering and qualification remain open",
+    "actual_source_thermal_engineering_complete": true,
+    "release_status": "I27: zero actionable pre-hardware engineering items; fabrication may proceed subject to supplier acceptance and retained hardware/install qualification gates.",
     "iterations": [
       {
         "id": "I06",
@@ -101,7 +100,7 @@
         "description": "Prior consolidated register; 110 closed, 176 open, 4 not applicable."
       },
       {
-        "id": "I07\u2013I17",
+        "id": "I07–I17",
         "status": "SUPERSEDED SOURCE",
         "description": "Native parser, electrical clearance, footprint variants, complete models, logo, RF reference and Tag-Connect corrections."
       },
@@ -134,6 +133,16 @@
           "analyses/review_i22/REVIEW_REPORT.md",
           "current/I22_SOURCE_VERIFICATION.json"
         ]
+      },
+      {
+        "id": "I26-A",
+        "status": "CURRENT_DESKTOP_RECONCILIATION",
+        "description": "7LED bound;54return findings reconciled; expanded60via scope;I25REG/THERM reconciliation;one actionable GND criterion remains."
+      },
+      {
+        "id": "I27",
+        "status": "PREHARDWARE_ENGINEERING_CLOSED",
+        "description": "GND-02 quantitatively bounded; zero actionable desktop engineering items; external qualification gates retained."
       }
     ],
     "prior_I21": {
@@ -152,7 +161,15 @@
     "reopened_since_I21": [],
     "I22_source_digest_checks": 282,
     "I22_physical_tests": 0,
-    "I22_native_executions": 0
+    "I22_native_executions": 0,
+    "actionable_prehardware_ids": [],
+    "prehardware_aggregate": {
+      "desktop_source_documentary": 141,
+      "conditional_model": 31,
+      "hardware_supplier_installation": 114,
+      "not_applicable": 4,
+      "desktop_work_remaining": 0
+    }
   },
   "rows": [
     {
@@ -1129,7 +1146,7 @@
       "native_candidate_pass_claimed": true,
       "previous_I06_disposition": {
         "closure": "closed",
-        "observation": "Classical500kbit/s11/29bit0\u20138byte contract remains explicit; stress acquisition is not a lossless BLE promise.",
+        "observation": "Classical500kbit/s11/29bit0–8byte contract remains explicit; stress acquisition is not a lossless BLE promise.",
         "remaining": "",
         "desktop_status": "CURRENT_EVIDENCE_REVIEWED",
         "evidence": [
@@ -1423,7 +1440,7 @@
       "native_candidate_pass_claimed": true,
       "previous_I06_disposition": {
         "closure": "closed",
-        "observation": "Normal9.5\u201316V, revised input sense thresholds,24V disconnect, startup degradation and dashboard thermal scope are distinguished.",
+        "observation": "Normal9.5–16V, revised input sense thresholds,24V disconnect, startup degradation and dashboard thermal scope are distinguished.",
         "remaining": "",
         "desktop_status": "CURRENT_EVIDENCE_REVIEWED",
         "evidence": [
@@ -3035,21 +3052,19 @@
       "prior_closure": "open",
       "closure": "open",
       "evidence_status": "CURRENT_SOURCE_OR_MODEL_WITH_REMAINING_CONDITIONS",
-      "observation": "Native pin route/polarity and LED current-loading calculations remain available. A guaranteed low-current/hot optical minimum and dashboard visibility are still absent.",
+      "observation": "All seven fitted APT1608SGC/1kohm paths, including D401 from U404, pass source/polarity/limiter checks. Per-LED current upper3.786302mA includes1percent initial,2percent temperature and2percent service-drift allowances. Six-GPIO total22.717807mA. Forty-eight typical-curve cases predict approximately0.999844..1.904399mA and a conditionally scaled minimum0.164849mcd axial; the guaranteed low-current/hot optical lower bound remains0mcd. 1kohm is retained; no BOM/PCB change. LED board neighborhoods plus I25 allowance are79.96..83.63C, not measured air/junction temperatures.",
       "evidence": [
-        "analyses/power_i19/SUMMARY.json",
-        "analyses/power_i19/EXTREMA_CONFIRMATION.json",
-        "analyses/thermal_i18/face_15.0/RESULTS.json",
-        "current/I22_SOURCE_VERIFICATION.json"
+        "analyses/i26/LED_BOUND.json",
+        "analyses/i26/LED_THERMAL_REGIONS.json",
+        "analyses/i26/QUALIFICATION_GATES.json"
       ],
       "evidence_sha256": {
-        "analyses/power_i19/SUMMARY.json": "7813e47c086c71862b56668128876a8d550e91d265f5250e1e6fea4ffc0f53c4",
-        "analyses/power_i19/EXTREMA_CONFIRMATION.json": "258dd2055e22d55504b3eb86ea383e9b197d9a0e8ebe4cffcadde3f186c969f4",
-        "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
-        "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e"
+        "analyses/i26/LED_BOUND.json": "6741f84026b96b6ab8f22139c0229221fde643851175789078e2af78e05edcb2",
+        "analyses/i26/LED_THERMAL_REGIONS.json": "ec1c549e6de4c3a7e9297d7c441f9c20e63cf30bd9ce278f67481b39b4388524",
+        "analyses/i26/QUALIFICATION_GATES.json": "f04c2783e4e9757aea60847dee2d7d95d57355afb0482bec17cf80cb81a87df3"
       },
-      "remaining": "Establish a guaranteed worst-case brightness/current bound for the exact LED operating point and required visibility; do not replace the original optical requirement with current limiting alone.",
-      "desktop_status": "DESKTOP_WORK_REMAINING",
+      "remaining": "Execute I26-LED-01 with the actual enclosure/angles/dashboard illumination. Confirm loaded output/current, local-air/junction limits and optical recognition. Prefer same-footprint/bin or optical/assembly corrections before PCB redesign.",
+      "desktop_status": "HARDWARE_OR_INSTALLATION_ACCEPTANCE",
       "redlines": [],
       "original_criterion_unchanged": true,
       "physical_test_claimed": false,
@@ -3066,7 +3081,7 @@
       "historical_missing_evidence": [
         "baseline/GR86_CCA_RevB/audit/online_resolution_rvb21/ONLINE_REVIEW_REGISTER.json"
       ],
-      "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "Current electrical finite bounds and independent numerical extrema are available. Native geometry is I20. The 0.125 mm thermal result remains mesh-sensitive and does not prove package temperatures.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",
@@ -3085,7 +3100,28 @@
         }
       },
       "I22_reassessment": "Original criterion and evidence scope reviewed against unchanged I20 source plus I22 results. Prior closure retained unless an explicit I22 change is recorded.",
-      "fresh_native_execution_claimed": false
+      "fresh_native_execution_claimed": false,
+      "pre_I26A_disposition": {
+        "closure": "open",
+        "desktop_status": "DESKTOP_WORK_REMAINING",
+        "observation": "Native pin route/polarity and LED current-loading calculations remain available. A guaranteed low-current/hot optical minimum and dashboard visibility are still absent.",
+        "remaining": "Establish a guaranteed worst-case brightness/current bound for the exact LED operating point and required visibility; do not replace the original optical requirement with current limiting alone.",
+        "evidence": [
+          "analyses/power_i19/SUMMARY.json",
+          "analyses/power_i19/EXTREMA_CONFIRMATION.json",
+          "analyses/thermal_i18/face_15.0/RESULTS.json",
+          "current/I22_SOURCE_VERIFICATION.json"
+        ],
+        "evidence_sha256": {
+          "analyses/power_i19/SUMMARY.json": "7813e47c086c71862b56668128876a8d550e91d265f5250e1e6fea4ffc0f53c4",
+          "analyses/power_i19/EXTREMA_CONFIRMATION.json": "258dd2055e22d55504b3eb86ea383e9b197d9a0e8ebe4cffcadde3f186c969f4",
+          "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
+          "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e"
+        },
+        "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c"
+      },
+      "prehardware_status": "qualification_only",
+      "I26_reassessment": "Original question, required evidence and literal closure retained. Desktop completion is separate from external acceptance."
     },
     {
       "row": 42,
@@ -4318,31 +4354,19 @@
       "prior_closure": "open",
       "closure": "open",
       "evidence_status": "OPEN_THERMAL_ENGINEERING",
-      "observation": "The existing finite regulator/current screens pass their model boxes. The retained 0.125 mm thermal model still reaches 143.800 Cmaximum board region and is mesh-sensitive; package/local-air margins are unresolved.",
+      "observation": "Desktop thermal/power engineering complete under I25/C04:2.940859375W coupled release heat, sustained main-profile<=0.45A and converter efficiency>=80percent or measured losses no greater than the modeled allocations. The stale4.815W residual-filled release interpretation is superseded; that envelope remains stress-only. The model does not establish measured efficiency/current or junction temperatures.",
       "evidence": [
-        "control/FINAL_I04_BRINGUP_BINDING.json",
-        "control/RVB22_BRING_UP_AND_MEASUREMENT_CONTRACT.md",
-        "control/BRINGUP_ACTUAL_NODE_INDEX.json",
-        "analyses/power_i19/SUMMARY.json",
-        "analyses/power_i19/EXTREMA_CONFIRMATION.json",
-        "analyses/thermal_i18/face_15.0/RESULTS.json",
-        "current/I22_SOURCE_VERIFICATION.json",
-        "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json",
-        "current/THERMAL_REVIEW.md"
+        "I25_THERMAL_MILESTONE.json",
+        "analyses/convergence_04/RELEASE_POWER_PROFILE.json",
+        "analyses/i26/QUALIFICATION_GATES.json"
       ],
       "evidence_sha256": {
-        "control/FINAL_I04_BRINGUP_BINDING.json": "0a51eb793074e6b5eafbf20002325289bdd1e1b3a5174ae63fd79b937a76fd3f",
-        "control/RVB22_BRING_UP_AND_MEASUREMENT_CONTRACT.md": "449d38b93d0d99ec35d3545af7b198e3430a19aa20cbf59b6de2b60b0215331f",
-        "control/BRINGUP_ACTUAL_NODE_INDEX.json": "a63b8b544d5707e4ec2c6dcced8a01f7b216c553052681a5fa9f46bc3d7af6f8",
-        "analyses/power_i19/SUMMARY.json": "7813e47c086c71862b56668128876a8d550e91d265f5250e1e6fea4ffc0f53c4",
-        "analyses/power_i19/EXTREMA_CONFIRMATION.json": "258dd2055e22d55504b3eb86ea383e9b197d9a0e8ebe4cffcadde3f186c969f4",
-        "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
-        "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
-        "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json": "3d6322079825e0468dd6c85c922e44ce836cce55a3776e6e387cede821644965",
-        "current/THERMAL_REVIEW.md": "164c7cd1fd2d1fa95ecc8af140923de6c01fcfbb094d95f1cd31ecdc941aa108"
+        "I25_THERMAL_MILESTONE.json": "504449e23b106644edaa0ef43b066af0bd2ee6f177345a017b0f7534478d9334",
+        "analyses/convergence_04/RELEASE_POWER_PROFILE.json": "3ccd7b624a5ca4bbd6c4affa3b2df7bdea13f80e40b1baf969b0535faddfe171",
+        "analyses/i26/QUALIFICATION_GATES.json": "f04c2783e4e9757aea60847dee2d7d95d57355afb0482bec17cf80cb81a87df3"
       },
-      "remaining": "Establish converged package-temperature margins at full 4.815W,65 Cair and 70 Clandings, or design and verify an enforceable coordinated power/cooling correction.",
-      "desktop_status": "DESKTOP_WORK_REMAINING",
+      "remaining": "Execute I26-PWR-01 and I26-THERM-01. Preserve160MHz,+3dBm,WiFi disabled and120notifications/s; failed current/loss/thermal gates reopen the coupled design. Do not imply measured confirmation.",
+      "desktop_status": "COMPLETED_CONDITIONAL_MODEL",
       "redlines": [
         "PWR22-R05"
       ],
@@ -4361,7 +4385,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "I19 finite rail model passes 3,456 circuit cases. Minimum local rail is 3.121029 V and the conservative zero-DC-credit release envelope is 3.594820 V. These are bounded simulations. Full-load thermal closure remains open. Converter current/electrical screens do not establish the thermal part of this criterion.",
@@ -4386,7 +4410,38 @@
         }
       },
       "I22_reassessment": "Original criterion and evidence scope reviewed against unchanged I20 source plus I22 results. Prior closure retained unless an explicit I22 change is recorded.",
-      "fresh_native_execution_claimed": false
+      "fresh_native_execution_claimed": false,
+      "pre_I26A_disposition": {
+        "closure": "open",
+        "desktop_status": "DESKTOP_WORK_REMAINING",
+        "observation": "The existing finite regulator/current screens pass their model boxes. The retained 0.125 mm thermal model still reaches 143.800 Cmaximum board region and is mesh-sensitive; package/local-air margins are unresolved.",
+        "remaining": "Establish converged package-temperature margins at full 4.815W,65 Cair and 70 Clandings, or design and verify an enforceable coordinated power/cooling correction.",
+        "evidence": [
+          "control/FINAL_I04_BRINGUP_BINDING.json",
+          "control/RVB22_BRING_UP_AND_MEASUREMENT_CONTRACT.md",
+          "control/BRINGUP_ACTUAL_NODE_INDEX.json",
+          "analyses/power_i19/SUMMARY.json",
+          "analyses/power_i19/EXTREMA_CONFIRMATION.json",
+          "analyses/thermal_i18/face_15.0/RESULTS.json",
+          "current/I22_SOURCE_VERIFICATION.json",
+          "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json",
+          "current/THERMAL_REVIEW.md"
+        ],
+        "evidence_sha256": {
+          "control/FINAL_I04_BRINGUP_BINDING.json": "0a51eb793074e6b5eafbf20002325289bdd1e1b3a5174ae63fd79b937a76fd3f",
+          "control/RVB22_BRING_UP_AND_MEASUREMENT_CONTRACT.md": "449d38b93d0d99ec35d3545af7b198e3430a19aa20cbf59b6de2b60b0215331f",
+          "control/BRINGUP_ACTUAL_NODE_INDEX.json": "a63b8b544d5707e4ec2c6dcced8a01f7b216c553052681a5fa9f46bc3d7af6f8",
+          "analyses/power_i19/SUMMARY.json": "7813e47c086c71862b56668128876a8d550e91d265f5250e1e6fea4ffc0f53c4",
+          "analyses/power_i19/EXTREMA_CONFIRMATION.json": "258dd2055e22d55504b3eb86ea383e9b197d9a0e8ebe4cffcadde3f186c969f4",
+          "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
+          "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
+          "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json": "3d6322079825e0468dd6c85c922e44ce836cce55a3776e6e387cede821644965",
+          "current/THERMAL_REVIEW.md": "164c7cd1fd2d1fa95ecc8af140923de6c01fcfbb094d95f1cd31ecdc941aa108"
+        },
+        "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c"
+      },
+      "prehardware_status": "bounded_inference_closed",
+      "I26_reassessment": "Original question, required evidence and literal closure retained. Desktop completion is separate from external acceptance."
     },
     {
       "row": 59,
@@ -4530,7 +4585,7 @@
       "native_candidate_pass_claimed": true,
       "previous_I06_disposition": {
         "closure": "closed",
-        "observation": "Minimum/maximum rail and load-step budget uses actual branched distribution, revised shunt and R15882m\u03a9 sensitivity.",
+        "observation": "Minimum/maximum rail and load-step budget uses actual branched distribution, revised shunt and R15882mΩ sensitivity.",
         "remaining": "Current source/evidence binding completed. The original documentary or calculation scope is satisfied; applicability and external acceptance conditions remain in the linked evidence and related open criteria.",
         "desktop_status": "COMPLETED_SOURCE_DOCUMENTARY_SCOPE",
         "evidence": [
@@ -5907,25 +5962,22 @@
       "prior_closure": "open",
       "closure": "open",
       "evidence_status": "CURRENT_SOURCE_OR_MODEL_WITH_REMAINING_CONDITIONS",
-      "observation": "All 12 RF segments retain adjacent ground after native antipad treatment. The independent reference map still contains 54 digital adjacent-plane interruptions, with zero simultaneous gaps across both ground planes. Alternate-plane availability does not prove acceptable return transfer.",
+      "observation": "I27 exhausts desktop return-path engineering. All54 historical findings are individually reconciled:48 removed by coordinated copper revision and6 retained only on the R301-DNP-isolated CAN_TX_MCU stub. Expanded review covers every critical-route adjacent interruption plus60 signal-via reference transfers. All active receive/timing transfers have explicit paired-plane corridors; the seven finite-search misses are four isolated TX-stub vias, two reset/programming EN vias, and one current-limited LED indicator via. Every critical signal via is within5.252mm of a through-ground via, inside a conservative7.5mm lambda/20 screen at a0.5ns edge. Treating each 0.20mm trace interruption as a full move from the0.203mm adjacent reference to the opposite plane gives <0.20V worst 50mA/0.5ns stress bounce and <0.05V on active CAN_RXD. No routing/stitching change is justified before fabrication.",
       "evidence": [
-        "runtime/final_I06_actual_preflight/RESULT.json",
-        "runtime/run_native_candidate.py",
-        "analyses/manufacturing_i20/RESULTS.json",
-        "current/SOURCE_EFFECTIVITY.json",
-        "current/I22_SOURCE_VERIFICATION.json",
-        "analyses/review_i22/RF_RETURN_REVIEW.json"
+        "analyses/i26/HISTORICAL_54_RETURN_FINDINGS.json",
+        "analyses/i26/EXPANDED_RETURN_SCOPE.json",
+        "analyses/i26/TRANSFER_SCREEN_EXPLORATORY.json",
+        "analyses/return_i24/NATIVE_REFERENCE_REVIEW.json",
+        "analyses/i26/GND02_DESKTOP_CLOSURE.json"
       ],
       "evidence_sha256": {
-        "runtime/final_I06_actual_preflight/RESULT.json": "47d1ac4057b92a6752abacf976768596bf4fa311d08c9fc08df2d276e8e1200f",
-        "runtime/run_native_candidate.py": "187d303cb103cef92143d53c099615a435ceef29c0458d7ac9521205d451f315",
-        "analyses/manufacturing_i20/RESULTS.json": "daa279f665dd6cad14f4ff36043abbce38c6ee51598e9ae7236d9974563476ac",
-        "current/SOURCE_EFFECTIVITY.json": "832fcdcc8cd7ebb9df2e169c8b9194011c37d138484da13fd5de05bd2657170d",
-        "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
-        "analyses/review_i22/RF_RETURN_REVIEW.json": "efaa0ba810bb4cb48237a939bdbf8789e6d9302f244346c598cccb8856397b08"
+        "analyses/i26/HISTORICAL_54_RETURN_FINDINGS.json": "7596adab1e735e4c49ee17a52add04ecb35f26ec47c4e70e64a286187986cadf",
+        "analyses/i26/EXPANDED_RETURN_SCOPE.json": "c0c70be318afb88995ee73bbcec9b491a2754c492f9380603c11477f620b3bf5",
+        "analyses/i26/TRANSFER_SCREEN_EXPLORATORY.json": "612efdb212a5fa055504fa4f153df36c8e9b9a874411dc5ffd16afd2a53231f8",
+        "analyses/return_i24/NATIVE_REFERENCE_REVIEW.json": "00554a964f2cd662a7c57b30a718e48a4ae43b84cb894b9e55a3ff1819ddcc2b"
       },
-      "remaining": "Bound affected transition source/return paths and reroute any path whose bound is not met; retain the explicit 54-finding map.",
-      "desktop_status": "DESKTOP_WORK_REMAINING",
+      "remaining": "Physical continuity, installed CAN waveform/error-count and EMC/coexistence correlation remain qualification gates. Reopen for copper/stackup/via changes, R301 population/CAN transmit enablement, or repeatable hardware failure attributable to return geometry.",
+      "desktop_status": "COMPLETED_CONDITIONAL_MODEL",
       "redlines": [
         "INT22-02-MOLEX-A1"
       ],
@@ -5943,7 +5995,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "All RF segments retain their adjacent ground reference. Some digital segments have adjacent-plane gaps with the alternate ground plane present. That is not an uninterrupted nearest reference.",
@@ -5964,7 +6016,33 @@
         }
       },
       "I22_reassessment": "Original criterion and evidence scope reviewed against unchanged I20 source plus I22 results. Prior closure retained unless an explicit I22 change is recorded.",
-      "fresh_native_execution_claimed": false
+      "fresh_native_execution_claimed": false,
+      "pre_I26A_disposition": {
+        "closure": "open",
+        "desktop_status": "DESKTOP_WORK_REMAINING",
+        "observation": "All 12 RF segments retain adjacent ground after native antipad treatment. The independent reference map still contains 54 digital adjacent-plane interruptions, with zero simultaneous gaps across both ground planes. Alternate-plane availability does not prove acceptable return transfer.",
+        "remaining": "Bound affected transition source/return paths and reroute any path whose bound is not met; retain the explicit 54-finding map.",
+        "evidence": [
+          "runtime/final_I06_actual_preflight/RESULT.json",
+          "runtime/run_native_candidate.py",
+          "analyses/manufacturing_i20/RESULTS.json",
+          "current/SOURCE_EFFECTIVITY.json",
+          "current/I22_SOURCE_VERIFICATION.json",
+          "analyses/review_i22/RF_RETURN_REVIEW.json"
+        ],
+        "evidence_sha256": {
+          "runtime/final_I06_actual_preflight/RESULT.json": "47d1ac4057b92a6752abacf976768596bf4fa311d08c9fc08df2d276e8e1200f",
+          "runtime/run_native_candidate.py": "187d303cb103cef92143d53c099615a435ceef29c0458d7ac9521205d451f315",
+          "analyses/manufacturing_i20/RESULTS.json": "daa279f665dd6cad14f4ff36043abbce38c6ee51598e9ae7236d9974563476ac",
+          "current/SOURCE_EFFECTIVITY.json": "832fcdcc8cd7ebb9df2e169c8b9194011c37d138484da13fd5de05bd2657170d",
+          "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
+          "analyses/review_i22/RF_RETURN_REVIEW.json": "efaa0ba810bb4cb48237a939bdbf8789e6d9302f244346c598cccb8856397b08"
+        },
+        "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c"
+      },
+      "prehardware_status": "bounded_inference_closed",
+      "I26_reassessment": "Original question, required evidence and literal closure retained. Desktop completion is separate from external acceptance.",
+      "I27_reassessment": "Desktop bounded-inference closure only; literal original closure remains unchanged because physical acceptance is still required."
     },
     {
       "row": 79,
@@ -7643,7 +7721,7 @@
       "native_candidate_pass_claimed": true,
       "previous_I06_disposition": {
         "closure": "closed",
-        "observation": "Executed14,400-case sectional AVSS/ASC/Molex/PCB/protector/receiver model replaces the old180-case family;25.4\u201330mm F1 free exit and\u226415mm ASC exit preserve\u22640.30m total path. Settling137.6ns,receiver minimum1.495510V at1.6us for1.5V drive,refined peak2.317995V;196 fast2ns-edge cases retain0.9V recrossings (minimum valley0.736652V,maximum duration5.2625ns), with no inferred RXD error or universal bus/die guarantee. Final349-object PCB CAN binding is unchanged.",
+        "observation": "Executed14,400-case sectional AVSS/ASC/Molex/PCB/protector/receiver model replaces the old180-case family;25.4–30mm F1 free exit and≤15mm ASC exit preserve≤0.30m total path. Settling137.6ns,receiver minimum1.495510V at1.6us for1.5V drive,refined peak2.317995V;196 fast2ns-edge cases retain0.9V recrossings (minimum valley0.736652V,maximum duration5.2625ns), with no inferred RXD error or universal bus/die guarantee. Final349-object PCB CAN binding is unchanged.",
         "remaining": "",
         "desktop_status": "CURRENT_EVIDENCE_REVIEWED",
         "evidence": [
@@ -9411,7 +9489,7 @@
       "B": "Oil sensor and analog acquisition",
       "C": "P1",
       "D": "G1 Schematic",
-      "E": "Is the nominal ratiometric 0.5\u20134.5 V on 5 V excitation translated into the actual firmware pressure equation?",
+      "E": "Is the nominal ratiometric 0.5–4.5 V on 5 V excitation translated into the actual firmware pressure equation?",
       "F": "Hardware divider, ADC calibration, excitation scaling and firmware units share a controlled transfer model.",
       "id": "ADC-02",
       "prior_closure": "closed",
@@ -11522,7 +11600,7 @@
       "prior_closure": "open",
       "closure": "open",
       "evidence_status": "CURRENT_SOURCE_OR_MODEL_WITH_REMAINING_CONDITIONS",
-      "observation": "The mated model now uses Adafruit 851,150\u00b13 mm cable,2.0 mm allocated maximumOD plus separate route uncertainty. All 776 mated checks pass and RF metal setback is 16.421 mm. The miniature 3.4 x 5.3 x 3.25 mm plug envelope is still an engineering allocation.",
+      "observation": "The mated model now uses Adafruit 851,150±3 mm cable,2.0 mm allocated maximumOD plus separate route uncertainty. All 776 mated checks pass and RF metal setback is 16.421 mm. The miniature 3.4 x 5.3 x 3.25 mm plug envelope is still an engineering allocation.",
       "evidence": [
         "lanes/mechanics/FINAL_COMPONENT_ENVELOPES.json",
         "lanes/mechanics/FINAL_SOURCE_BINDING.json",
@@ -14356,7 +14434,7 @@
       "native_candidate_pass_claimed": true,
       "previous_I06_disposition": {
         "closure": "closed",
-        "observation": "AVSS handling,0.30m total path,15\u201325mm twist,F1 relaxed25.4\u201330mm exit,ASC\u226415mm untwist and bend/strain relief are controlled; stale guaranteed120-ohm cable claim removed.",
+        "observation": "AVSS handling,0.30m total path,15–25mm twist,F1 relaxed25.4–30mm exit,ASC≤15mm untwist and bend/strain relief are controlled; stale guaranteed120-ohm cable claim removed.",
         "remaining": "",
         "desktop_status": "CURRENT_EVIDENCE_REVIEWED",
         "evidence": [
@@ -15807,35 +15885,17 @@
       "prior_closure": "open",
       "closure": "open",
       "evidence_status": "CURRENT_SOURCE_OR_MODEL_WITH_REMAINING_CONDITIONS",
-      "observation": "The completed 0.125 mm actual-copper solve gives 143.800 C maximum board region and 105.171 C near C206 at 4.815 W, 65 C bulk air and 70 C landings. Refinement changes the hotspot by 8.376 C. Local ambient and package paths remain unresolved.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",
+      "observation": "I25 desktop model complete to the documented conditional design limit: existing-cooling max101.650320C at0.50mm and107.266651C at0.25mm; one-step allowance5.616330C gives112.882981C board-region screen. Mesh convergence, semiconductor junction temperatures, measured hot spots and physical correlation are NOT claimed. C02 is contingency-only and not fitted.",
       "evidence": [
-        "lanes/mechanics/FINAL_COMPONENT_ENVELOPES.json",
-        "lanes/mechanics/FINAL_SOURCE_BINDING.json",
-        "lanes/mechanics/STRUCTURAL_SERVICE_MODEL.json",
-        "analyses/assembly_handling/PRIMARY_BODY_HEIGHT_ADDENDUM.json",
-        "lanes/mechanics/THERMAL_CONTACT_T01_MODEL.json",
-        "lanes/mechanics/THERMAL_CONTACT_T01_REVIEW.md",
-        "lanes/mechanics/THERMAL_CONTACT_T01_INVERSE_REQUIREMENTS.json",
-        "analyses/thermal_i18/face_15.0/RESULTS.json",
-        "current/THERMAL_REVIEW.md",
-        "current/I22_SOURCE_VERIFICATION.json",
-        "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json"
+        "I25_THERMAL_MILESTONE.json",
+        "analyses/i26/QUALIFICATION_GATES.json"
       ],
       "evidence_sha256": {
-        "lanes/mechanics/FINAL_COMPONENT_ENVELOPES.json": "e9b8c89e865f53a93ed458ce690dc310f3fd9df0b8eaf39658492fbd2b4bbbd1",
-        "lanes/mechanics/FINAL_SOURCE_BINDING.json": "4a607ecf994508b22f6099810cb7c5e4e778738782e1d7f7f64a47bf98eedce5",
-        "lanes/mechanics/STRUCTURAL_SERVICE_MODEL.json": "e701cb8641ebef7f6ddd35a96acff390868b686cd32018fd59213fa1f32c5ecc",
-        "analyses/assembly_handling/PRIMARY_BODY_HEIGHT_ADDENDUM.json": "7fdd606347fd74861dc3994a18d9bf8fe090e02b338c074a8d3502b6fb382bce",
-        "lanes/mechanics/THERMAL_CONTACT_T01_MODEL.json": "a5fc11981a3bca81c2dc343bd87a0b618e391770088be932934004bc68df4f88",
-        "lanes/mechanics/THERMAL_CONTACT_T01_REVIEW.md": "d3c23b6dc0e48a09471cc415981a3bfd6baa1235d81735f6085eb17c194bba4f",
-        "lanes/mechanics/THERMAL_CONTACT_T01_INVERSE_REQUIREMENTS.json": "bf381e8241a51ea9e2eaf098c0cd03e2bb6e5ba870fbe88e6daa010cbeda8df9",
-        "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
-        "current/THERMAL_REVIEW.md": "164c7cd1fd2d1fa95ecc8af140923de6c01fcfbb094d95f1cd31ecdc941aa108",
-        "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
-        "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json": "3d6322079825e0468dd6c85c922e44ce836cce55a3776e6e387cede821644965"
+        "I25_THERMAL_MILESTONE.json": "504449e23b106644edaa0ef43b066af0bd2ee6f177345a017b0f7534478d9334",
+        "analyses/i26/QUALIFICATION_GATES.json": "f04c2783e4e9757aea60847dee2d7d95d57355afb0482bec17cf80cb81a87df3"
       },
-      "remaining": "finish that engineering model or revise cooling/operating limits before sensor/IR correlation and actual hot-spot acceptance.",
-      "desktop_status": "DESKTOP_WORK_REMAINING",
+      "remaining": "Execute I26-THERM-01:<=85C immediate air outside U201 at65C bulk dashboard air; fixed release current/efficiency gates; record U201/U121/U151/PCB/enclosure temperatures with calibrated thermocouple/IR methods and component limits. Maintain851 accessory<=60C separately. Failure reopens I25.",
+      "desktop_status": "COMPLETED_CONDITIONAL_MODEL",
       "redlines": [
         "MECH22-06",
         "MECH22-11",
@@ -15865,7 +15925,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "The completed 0.125 mm actual-copper solve gives 143.800 C maximum board region and 105.171 C near C206 at 4.815 W, 65 C bulk air and 70 C landings. Refinement changes the hotspot by 8.376 C. Local ambient and package paths remain unresolved.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",
@@ -15896,7 +15956,42 @@
         }
       },
       "I22_reassessment": "Original criterion and evidence scope reviewed against unchanged I20 source plus I22 results. Prior closure retained unless an explicit I22 change is recorded.",
-      "fresh_native_execution_claimed": false
+      "fresh_native_execution_claimed": false,
+      "pre_I26A_disposition": {
+        "closure": "open",
+        "desktop_status": "DESKTOP_WORK_REMAINING",
+        "observation": "The completed 0.125 mm actual-copper solve gives 143.800 C maximum board region and 105.171 C near C206 at 4.815 W, 65 C bulk air and 70 C landings. Refinement changes the hotspot by 8.376 C. Local ambient and package paths remain unresolved.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",
+        "remaining": "finish that engineering model or revise cooling/operating limits before sensor/IR correlation and actual hot-spot acceptance.",
+        "evidence": [
+          "lanes/mechanics/FINAL_COMPONENT_ENVELOPES.json",
+          "lanes/mechanics/FINAL_SOURCE_BINDING.json",
+          "lanes/mechanics/STRUCTURAL_SERVICE_MODEL.json",
+          "analyses/assembly_handling/PRIMARY_BODY_HEIGHT_ADDENDUM.json",
+          "lanes/mechanics/THERMAL_CONTACT_T01_MODEL.json",
+          "lanes/mechanics/THERMAL_CONTACT_T01_REVIEW.md",
+          "lanes/mechanics/THERMAL_CONTACT_T01_INVERSE_REQUIREMENTS.json",
+          "analyses/thermal_i18/face_15.0/RESULTS.json",
+          "current/THERMAL_REVIEW.md",
+          "current/I22_SOURCE_VERIFICATION.json",
+          "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json"
+        ],
+        "evidence_sha256": {
+          "lanes/mechanics/FINAL_COMPONENT_ENVELOPES.json": "e9b8c89e865f53a93ed458ce690dc310f3fd9df0b8eaf39658492fbd2b4bbbd1",
+          "lanes/mechanics/FINAL_SOURCE_BINDING.json": "4a607ecf994508b22f6099810cb7c5e4e778738782e1d7f7f64a47bf98eedce5",
+          "lanes/mechanics/STRUCTURAL_SERVICE_MODEL.json": "e701cb8641ebef7f6ddd35a96acff390868b686cd32018fd59213fa1f32c5ecc",
+          "analyses/assembly_handling/PRIMARY_BODY_HEIGHT_ADDENDUM.json": "7fdd606347fd74861dc3994a18d9bf8fe090e02b338c074a8d3502b6fb382bce",
+          "lanes/mechanics/THERMAL_CONTACT_T01_MODEL.json": "a5fc11981a3bca81c2dc343bd87a0b618e391770088be932934004bc68df4f88",
+          "lanes/mechanics/THERMAL_CONTACT_T01_REVIEW.md": "d3c23b6dc0e48a09471cc415981a3bfd6baa1235d81735f6085eb17c194bba4f",
+          "lanes/mechanics/THERMAL_CONTACT_T01_INVERSE_REQUIREMENTS.json": "bf381e8241a51ea9e2eaf098c0cd03e2bb6e5ba870fbe88e6daa010cbeda8df9",
+          "analyses/thermal_i18/face_15.0/RESULTS.json": "16fdd49fe0c3a49d56b3db6a056d6bb87f7696816f4a0db9facd60c1f48fb141",
+          "current/THERMAL_REVIEW.md": "164c7cd1fd2d1fa95ecc8af140923de6c01fcfbb094d95f1cd31ecdc941aa108",
+          "current/I22_SOURCE_VERIFICATION.json": "439e707054473202080d1e7a96c4f52a394b26c6f820c906e25e284855227b6e",
+          "analyses/review_i22/THERMAL_ACCESSORY_BOUND.json": "3d6322079825e0468dd6c85c922e44ce836cce55a3776e6e387cede821644965"
+        },
+        "current_source_PCB_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c"
+      },
+      "prehardware_status": "bounded_inference_closed",
+      "I26_reassessment": "Original question, required evidence and literal closure retained. Desktop completion is separate from external acceptance."
     },
     {
       "row": 205,
@@ -22954,7 +23049,7 @@
       "lane": "power",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Missing local storage and manufacturer land/polarity",
-      "correction": "Added T598X477M006ATE025470\u00b5F/6.3V X case with explicit positive pad1 and manufacturer lands; exact capacitor/tap topology supplied to joint model.",
+      "correction": "Added T598X477M006ATE025470µF/6.3V X case with explicit positive pad1 and manufacturer lands; exact capacitor/tap topology supplied to joint model.",
       "evidence": [
         "lanes/power/POWER_SELECTED_PARTS.json",
         "lanes/power/POWER_ROUTING.json",
@@ -22972,7 +23067,7 @@
       "previous_I06_remaining": "EffectiveC/ESR/ESL and case/ambient limits remain explicit engineering/supplier conditions.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "EffectiveC/ESR/ESL and case/ambient limits remain explicit engineering/supplier conditions.",
-      "previous_I21_correction": "Added T598X477M006ATE025470\u00b5F/6.3V X case with explicit positive pad1 and manufacturer lands; exact capacitor/tap topology supplied to joint model.",
+      "previous_I21_correction": "Added T598X477M006ATE025470µF/6.3V X case with explicit positive pad1 and manufacturer lands; exact capacitor/tap topology supplied to joint model.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -22980,7 +23075,7 @@
       "lane": "power",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Insufficient guaranteed damping",
-      "correction": "Staged exactWSLP0603R0820FEA after recording failed22/47m\u03a9 comparisons; final82m\u03a9 actual-tap finite cases pass.",
+      "correction": "Staged exactWSLP0603R0820FEA after recording failed22/47mΩ comparisons; final82mΩ actual-tap finite cases pass.",
       "evidence": [
         "lanes/power/POWER_ECO_DELTA.json",
         "lanes/power/BULK_INTERCONNECT_RLC.json",
@@ -22995,7 +23090,7 @@
       "previous_I06_remaining": "3456 source-bound finite circuits and330800 eligible conditional-controller comparisons pass; unpublished actual silicon compensation and continuous parameter space are not proven.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "3456 source-bound finite circuits and330800 eligible conditional-controller comparisons pass; unpublished actual silicon compensation and continuous parameter space are not proven.",
-      "previous_I21_correction": "Staged exactWSLP0603R0820FEA after recording failed22/47m\u03a9 comparisons; final82m\u03a9 actual-tap finite cases pass.",
+      "previous_I21_correction": "Staged exactWSLP0603R0820FEA after recording failed22/47mΩ comparisons; final82mΩ actual-tap finite cases pass.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23055,7 +23150,7 @@
       "lane": "power",
       "status": "CONDITIONAL_BOUND",
       "finding": "Remote sensor supply budget missing hot-current condition",
-      "correction": "Bounded15mA/.2\u03a9-per-wire operating allocation and exact source/R507/TPS/path intervals; firmware owner subtracts6mV from local excitation lower bound.",
+      "correction": "Bounded15mA/.2Ω-per-wire operating allocation and exact source/R507/TPS/path intervals; firmware owner subtracts6mV from local excitation lower bound.",
       "evidence": [
         "lanes/power/POWER_BOUNDS.json"
       ],
@@ -23070,7 +23165,7 @@
       "previous_I06_remaining": "Honeywell consumption bound is specified at25C;15mA hot operation and TPS hotR allocation require correlation.",
       "previous_I21_status": "CONDITIONAL_BOUND",
       "previous_I21_remaining": "Honeywell consumption bound is specified at25C;15mA hot operation and TPS hotR allocation require correlation.",
-      "previous_I21_correction": "Bounded15mA/.2\u03a9-per-wire operating allocation and exact source/R507/TPS/path intervals; firmware owner subtracts6mV from local excitation lower bound.",
+      "previous_I21_correction": "Bounded15mA/.2Ω-per-wire operating allocation and exact source/R507/TPS/path intervals; firmware owner subtracts6mV from local excitation lower bound.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23078,11 +23173,11 @@
       "lane": "power",
       "status": "CONDITIONAL_BOUND",
       "finding": "Input-filter resonance and source-fuse cooling",
-      "correction": "Reexecuted\u22645\u00b5H CPL stability screen and isolated-wire cooling/fault-duration model; retained failing10\u00b5H and adiabatic cases.",
+      "correction": "Reexecuted≤5µH CPL stability screen and isolated-wire cooling/fault-duration model; retained failing10µH and adiabatic cases.",
       "evidence": [
         "lanes/power/POWER_BOUNDS.json"
       ],
-      "remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I\u00b2t are separate conditions.",
+      "remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I²t are separate conditions.",
       "criteria": [
         "PWR-02",
         "PWR-06",
@@ -23090,10 +23185,10 @@
         "PWR-09"
       ],
       "previous_I06_status": "CONDITIONAL_BOUND",
-      "previous_I06_remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I\u00b2t are separate conditions.",
+      "previous_I06_remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I²t are separate conditions.",
       "previous_I21_status": "CONDITIONAL_BOUND",
-      "previous_I21_remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I\u00b2t are separate conditions.",
-      "previous_I21_correction": "Reexecuted\u22645\u00b5H CPL stability screen and isolated-wire cooling/fault-duration model; retained failing10\u00b5H and adiabatic cases.",
+      "previous_I21_remaining": "Filter source L/R/C contract, input startup model, cooling installation and actual fuse clearing I²t are separate conditions.",
+      "previous_I21_correction": "Reexecuted≤5µH CPL stability screen and isolated-wire cooling/fault-duration model; retained failing10µH and adiabatic cases.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23101,23 +23196,23 @@
       "lane": "power",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Exact inductor hot/current bound and Eq8 interpretation",
-      "correction": "Recorded and implemented same-land XGL5030-153MEC15\u00b5H;8.4\u00b5H stackedfloor exceeds Eq8minimum6.946\u00b5H. Source-bound startup/current/ripple checks updated.",
+      "correction": "Recorded and implemented same-land XGL5030-153MEC15µH;8.4µH stackedfloor exceeds Eq8minimum6.946µH. Source-bound startup/current/ripple checks updated.",
       "evidence": [
         "lanes/power/POWER_BOUNDS.json",
         "lanes/power/COUPLED_STARTUP_RESULTS.json",
         "lanes/power/../power_limits/HOT_MAGNETIC_INVERSE_BOUNDS.json"
       ],
-      "remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15\u00b5H source is implemented.",
+      "remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15µH source is implemented.",
       "criteria": [
         "WCA-04",
         "REG-05",
         "REG-06"
       ],
       "previous_I06_status": "CORRECTED_SOURCE_MODEL",
-      "previous_I06_remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15\u00b5H source is implemented.",
+      "previous_I06_remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15µH source is implemented.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
-      "previous_I21_remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15\u00b5H source is implemented.",
-      "previous_I21_correction": "Recorded and implemented same-land XGL5030-153MEC15\u00b5H;8.4\u00b5H stackedfloor exceeds Eq8minimum6.946\u00b5H. Source-bound startup/current/ripple checks updated.",
+      "previous_I21_remaining": "Magnetic hot/current envelope and unpublished internal current-loop behavior remain explicit correlation conditions;15µH source is implemented.",
+      "previous_I21_correction": "Recorded and implemented same-land XGL5030-153MEC15µH;8.4µH stackedfloor exceeds Eq8minimum6.946µH. Source-bound startup/current/ripple checks updated.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23276,7 +23371,7 @@
       "lane": "power_limits",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Hotmagnetic/corelossboundsmissing andoldbroad5.6uHscreenomittedTI Eq8controlminimum",
-      "correction": "Recordcurrent-correlatedsource limitation;rootauthorizedsame-landXGL5030-153MEC15uH;recompute8.4\u201312uHretentioncases,currentripple/copperloss/Eq8 andnominalripple",
+      "correction": "Recordcurrent-correlatedsource limitation;rootauthorizedsame-landXGL5030-153MEC15uH;recompute8.4–12uHretentioncases,currentripple/copperloss/Eq8 andnominalripple",
       "evidence": [
         "lanes/power_limits/HOT_MAGNETIC_10UH_CURRENT_LIMIT_ONLY_HISTORY.json",
         "lanes/power_limits/MAGNETIC_CONTROL_CORRECTION.json",
@@ -23293,7 +23388,7 @@
       "previous_I06_remaining": "Power/loopowners rebindnew15uHstartupandcontrolmodels;hotLretention andcore/ACthermalbudgetsremainconditionalfactory/modelcorrelation",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "Power/loopowners rebindnew15uHstartupandcontrolmodels;hotLretention andcore/ACthermalbudgetsremainconditionalfactory/modelcorrelation",
-      "previous_I21_correction": "Recordcurrent-correlatedsource limitation;rootauthorizedsame-landXGL5030-153MEC15uH;recompute8.4\u201312uHretentioncases,currentripple/copperloss/Eq8 andnominalripple",
+      "previous_I21_correction": "Recordcurrent-correlatedsource limitation;rootauthorizedsame-landXGL5030-153MEC15uH;recompute8.4–12uHretentioncases,currentripple/copperloss/Eq8 andnominalripple",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23415,7 +23510,7 @@
       "lane": "firmware_oil",
       "status": "CONDITIONAL_BOUND",
       "finding": "Sensor interpretation needed exact sealed-gauge reference and current/response conditions.",
-      "correction": "Bind MIPAN2XX150PSAAX,150psi sealed gauge,14.7psia reference, ratiometric10\u201390%; retain no automatic key-on zero.",
+      "correction": "Bind MIPAN2XX150PSAAX,150psi sealed gauge,14.7psia reference, ratiometric10–90%; retain no automatic key-on zero.",
       "evidence": [
         "lanes/firmware_oil/OIL_ERROR_LEAKAGE_OFFPOWER_RECOVERED.json",
         "lanes/firmware_oil/candidate/PROGRAMMING_AND_CALIBRATION.md"
@@ -23429,7 +23524,7 @@
       "previous_I06_remaining": "TEB/1000h drift scopes remain distinct; underpressure transition, hot/startup current and hydraulic response have no invented guarantee.",
       "previous_I21_status": "CONDITIONAL_BOUND",
       "previous_I21_remaining": "TEB/1000h drift scopes remain distinct; underpressure transition, hot/startup current and hydraulic response have no invented guarantee.",
-      "previous_I21_correction": "Bind MIPAN2XX150PSAAX,150psi sealed gauge,14.7psia reference, ratiometric10\u201390%; retain no automatic key-on zero.",
+      "previous_I21_correction": "Bind MIPAN2XX150PSAAX,150psi sealed gauge,14.7psia reference, ratiometric10–90%; retain no automatic key-on zero.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23621,7 +23716,7 @@
       "lane": "firmware_oil",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Local excitation threshold alone could accept a sensor supply below4.75V.",
-      "correction": "Subtract6mV for conditional15mA\u00d70.4ohm loop from lower-confidence supply before validity decision.",
+      "correction": "Subtract6mV for conditional15mA×0.4ohm loop from lower-confidence supply before validity decision.",
       "evidence": [
         "lanes/firmware_oil/RECOVERED_FIRMWARE_TEST_RESULTS.json",
         "lanes/firmware_oil/OIL_ERROR_LEAKAGE_OFFPOWER_RECOVERED.json"
@@ -23636,7 +23731,7 @@
       "previous_I06_remaining": "15mA andeachwire<=0.2ohm are installation allocations, not a datasheet hot-current maximum.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "15mA andeachwire<=0.2ohm are installation allocations, not a datasheet hot-current maximum.",
-      "previous_I21_correction": "Subtract6mV for conditional15mA\u00d70.4ohm loop from lower-confidence supply before validity decision.",
+      "previous_I21_correction": "Subtract6mV for conditional15mA×0.4ohm loop from lower-confidence supply before validity decision.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -23839,7 +23934,7 @@
       "lane": "mechanics",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "F101/ESP incompatible whole-board profile",
-      "correction": "Remove globalF101paste/CPL; adopt laterfactory260C\u22643s localoperation",
+      "correction": "Remove globalF101paste/CPL; adopt laterfactory260C≤3s localoperation",
       "evidence": [
         "lanes/mechanics/ASSEMBLY_PROCESS_RVB22.md",
         "lanes/mechanics/CAD_PATCH_MANIFEST.json"
@@ -23854,7 +23949,7 @@
       "previous_I06_remaining": "ExactlocalSMDprocess requires assembler acceptance and executedprofile; fuse retained electrically.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "ExactlocalSMDprocess requires assembler acceptance and executedprofile; fuse retained electrically.",
-      "previous_I21_correction": "Remove globalF101paste/CPL; adopt laterfactory260C\u22643s localoperation",
+      "previous_I21_correction": "Remove globalF101paste/CPL; adopt laterfactory260C≤3s localoperation",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -24373,7 +24468,7 @@
         "MECH-03"
       ],
       "previous_I06_status": "CORRECTED_SOURCE_MODEL",
-      "previous_I06_remaining": "Nativeplug/cable/servicevolume stillrequired; routeUFLtoward\u2212Y.",
+      "previous_I06_remaining": "Nativeplug/cable/servicevolume stillrequired; routeUFLtoward−Y.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "Declared mated plug, full 150 mm cable and service volumes pass. Preserve negative-Y U.FL exit and exact dimensional/material assumptions.",
       "previous_I21_correction": "MovecontactY11.8..28.8 andrerunI03courtcheck",
@@ -24406,7 +24501,7 @@
       "lane": "mechanics",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Left slot webs inadequate for specified retained tension",
-      "correction": "Local8mmspines; primaryslotsX\u22124/rightX62.5;2.0mmnominal and1.8mmallocatedworstweb afteractualslotshape correction",
+      "correction": "Local8mmspines; primaryslotsX−4/rightX62.5;2.0mmnominal and1.8mmallocatedworstweb afteractualslotshape correction",
       "evidence": [
         "lanes/mechanics/C03_CARRIER_CHECKS.json",
         "lanes/mechanics/GR86_RVB_CARRIER_C03_THERMAL.scad"
@@ -24420,7 +24515,7 @@
       "previous_I06_remaining": "Actualhotpretension andlaminateshearallowance remainconditional.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "Actualhotpretension andlaminateshearallowance remainconditional.",
-      "previous_I21_correction": "Local8mmspines; primaryslotsX\u22124/rightX62.5;2.0mmnominal and1.8mmallocatedworstweb afteractualslotshape correction",
+      "previous_I21_correction": "Local8mmspines; primaryslotsX−4/rightX62.5;2.0mmnominal and1.8mmallocatedworstweb afteractualslotshape correction",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -24501,7 +24596,7 @@
       "lane": "emc",
       "status": "CONDITIONAL_BOUND",
       "finding": "New chassis thermal strip changes field/capacitance boundary",
-      "correction": "Re-extracted enlarged91.8mm\u00b2 strip geometry and small signal overlaps; calculated36 dielectric/fringe cases and16 adjacent-RF2D cases; additional2.2fF shunt network sensitivity retained separately.",
+      "correction": "Re-extracted enlarged91.8mm² strip geometry and small signal overlaps; calculated36 dielectric/fringe cases and16 adjacent-RF2D cases; additional2.2fF shunt network sensitivity retained separately.",
       "evidence": [
         "lanes/emc/EMC_SOURCE_GEOMETRY.json",
         "lanes/emc/RF_STRIP_CROSS_SECTION.json",
@@ -24522,7 +24617,7 @@
       "previous_I06_remaining": "Tape thickness/Er/fringe and reference plane are explicit allocations, final native fill and actual chassis resonance are not modeled guarantees.",
       "previous_I21_status": "CONDITIONAL_BOUND",
       "previous_I21_remaining": "Current native fill is verified. Tape thickness, dielectric constant, fringe field and actual chassis resonance remain explicit model/installation conditions.",
-      "previous_I21_correction": "Re-extracted enlarged91.8mm\u00b2 strip geometry and small signal overlaps; calculated36 dielectric/fringe cases and16 adjacent-RF2D cases; additional2.2fF shunt network sensitivity retained separately.",
+      "previous_I21_correction": "Re-extracted enlarged91.8mm² strip geometry and small signal overlaps; calculated36 dielectric/fringe cases and16 adjacent-RF2D cases; additional2.2fF shunt network sensitivity retained separately.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -24863,7 +24958,7 @@
       "lane": "rail_model",
       "status": "CORRECTED_INITIAL_CONDITION",
       "finding": "Reflected droop added tosource max withzeroinitialDCdrop overstates actual release initialcondition.",
-      "correction": "Model.5\u21920,.55\u2192.05,.7\u2192.2A releases with each node initialDCdrop; preserve oldextra-conservativeenvelope separately.",
+      "correction": "Model.5→0,.55→.05,.7→.2A releases with each node initialDCdrop; preserve oldextra-conservativeenvelope separately.",
       "evidence": [
         "analyses/loop_stability/FINAL_I04_82MOHM_DISPOSITION.json"
       ],
@@ -24877,7 +24972,7 @@
       "previous_I06_remaining": "Finite source-bound model and conditional controller families; see the original limitations.",
       "previous_I21_status": "CORRECTED_INITIAL_CONDITION",
       "previous_I21_remaining": "Finite source-bound model and conditional controller families; see the original limitations.",
-      "previous_I21_correction": "Model.5\u21920,.55\u2192.05,.7\u2192.2A releases with each node initialDCdrop; preserve oldextra-conservativeenvelope separately.",
+      "previous_I21_correction": "Model.5→0,.55→.05,.7→.2A releases with each node initialDCdrop; preserve oldextra-conservativeenvelope separately.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -24956,8 +25051,8 @@
       "id": "INT22-02-MOLEX-A1",
       "lane": "harness",
       "status": "CORRECTED_SOURCE_MODEL",
-      "finding": "F1.1 andF1.2 tied PCB GND plus two chassis leads split the same load. Full-current sizing does not remove current sharing. Prior15mm end-untwist conflicts with recommended25.4mm relaxed wire before bends,ties or twists for twelve circuits. Prior wire field spacing\u22642mm does not cover F1 CAN3mm cavity pitch and relaxed exit.",
-      "correction": "Populate one full-current power returnF1.1; F1.2 harness cavity empty while PCB pin remainsGND; no PCB edit. Seven populated leads, five empty harness cavities; preserve four original PCB NC positions. Adopt25.4\u201330mm relaxedF1exit, first bend/tie/twist after that; ASC\u226415mm untwist remains. Expand geometry/model envelope and coordinate parent complete CAN rerun. Require tin-to-tin mating, no double-wire crimp and no energized mating; no supplier waiver.",
+      "finding": "F1.1 andF1.2 tied PCB GND plus two chassis leads split the same load. Full-current sizing does not remove current sharing. Prior15mm end-untwist conflicts with recommended25.4mm relaxed wire before bends,ties or twists for twelve circuits. Prior wire field spacing≤2mm does not cover F1 CAN3mm cavity pitch and relaxed exit.",
+      "correction": "Populate one full-current power returnF1.1; F1.2 harness cavity empty while PCB pin remainsGND; no PCB edit. Seven populated leads, five empty harness cavities; preserve four original PCB NC positions. Adopt25.4–30mm relaxedF1exit, first bend/tie/twist after that; ASC≤15mm untwist remains. Expand geometry/model envelope and coordinate parent complete CAN rerun. Require tin-to-tin mating, no double-wire crimp and no energized mating; no supplier waiver.",
       "evidence": [
         "interfaces/MOLEX_A1_HARNESS_REDLINE.json",
         "interfaces/HARNESS_CHECKS.json",
@@ -24975,7 +25070,7 @@
       "previous_I06_remaining": "Single-return loss forfeits redundancy and invokes retained alternate-bond fault conditions. Original physical acceptance is not granted.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "Single-return loss forfeits redundancy and invokes retained alternate-bond fault conditions. Original physical acceptance is not granted.",
-      "previous_I21_correction": "Populate one full-current power returnF1.1; F1.2 harness cavity empty while PCB pin remainsGND; no PCB edit. Seven populated leads, five empty harness cavities; preserve four original PCB NC positions. Adopt25.4\u201330mm relaxedF1exit, first bend/tie/twist after that; ASC\u226415mm untwist remains. Expand geometry/model envelope and coordinate parent complete CAN rerun. Require tin-to-tin mating, no double-wire crimp and no energized mating; no supplier waiver.",
+      "previous_I21_correction": "Populate one full-current power returnF1.1; F1.2 harness cavity empty while PCB pin remainsGND; no PCB edit. Seven populated leads, five empty harness cavities; preserve four original PCB NC positions. Adopt25.4–30mm relaxedF1exit, first bend/tie/twist after that; ASC≤15mm untwist remains. Expand geometry/model envelope and coordinate parent complete CAN rerun. Require tin-to-tin mating, no double-wire crimp and no energized mating; no supplier waiver.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -24983,7 +25078,7 @@
       "lane": "CAN",
       "status": "CORRECTED_SOURCE_MODEL",
       "finding": "Molex43045 requires a25.4mm relaxed untwisted free exit;3mm cavity spacing with a4mm installation allocation gives local differential impedance up to277.999ohm, outside the prior uniform200ohm line sweep. The ASC-end free exit was not separately represented.",
-      "correction": "Replace the uniform full cable by an ASC0\u201315mm exit, remaining twisted section, and Molex25.4\u201330mm exit, with separate geometry-derived RLGC and preserved total conductor length0.30m. Retain existing twisted Z/delay, source, load and edge corner families; preserve actual0.03723ohm total wire-loop resistance and0.025ohm board/contact allocation.",
+      "correction": "Replace the uniform full cable by an ASC0–15mm exit, remaining twisted section, and Molex25.4–30mm exit, with separate geometry-derived RLGC and preserved total conductor length0.30m. Retain existing twisted Z/delay, source, load and edge corner families; preserve actual0.03723ohm total wire-loop resistance and0.025ohm board/contact allocation.",
       "evidence": [
         "analyses/can_branch/CAN22-02_REDLINE_BEFORE_CORRECTION.json",
         "analyses/can_branch/COMPLETE_CAN_BRANCH_RESULTS.json",
@@ -25000,7 +25095,7 @@
       "previous_I06_remaining": "Normal differential model under the stated installation and source assumptions; no full-vehicle fault or as-built acceptance.",
       "previous_I21_status": "CORRECTED_SOURCE_MODEL",
       "previous_I21_remaining": "Normal differential model under the stated installation and source assumptions; no full-vehicle fault or as-built acceptance.",
-      "previous_I21_correction": "Replace the uniform full cable by an ASC0\u201315mm exit, remaining twisted section, and Molex25.4\u201330mm exit, with separate geometry-derived RLGC and preserved total conductor length0.30m. Retain existing twisted Z/delay, source, load and edge corner families; preserve actual0.03723ohm total wire-loop resistance and0.025ohm board/contact allocation.",
+      "previous_I21_correction": "Replace the uniform full cable by an ASC0–15mm exit, remaining twisted section, and Molex25.4–30mm exit, with separate geometry-derived RLGC and preserved total conductor length0.30m. Retain existing twisted Z/delay, source, load and edge corner families; preserve actual0.03723ohm total wire-loop resistance and0.025ohm board/contact allocation.",
       "I22_reassessment": "Retained against unchanged I20 electrical source. Original frozen finding/history preserved; current criteria and gates control remaining scope."
     },
     {
@@ -35082,7 +35177,7 @@
         "GPS-14",
         "THERM-09"
       ],
-      "correction": "Bound the exact 851/960 links, replaced stale alternative-cable identity and adopted 150\u00b13 mm/2.0 mmOD envelope. Typical bias/detection applicability is quantified.",
+      "correction": "Bound the exact 851/960 links, replaced stale alternative-cable identity and adopted 150±3 mm/2.0 mmOD envelope. Typical bias/detection applicability is quantified.",
       "remaining": "851 temperature limit, contradictory linked contact drawing, actual bias and supplied plug/retention remain.",
       "evidence": [
         "analyses/review_i22/REDLINE_FREEZE.json",
@@ -35359,7 +35454,7 @@
     },
     {
       "item": "Mechanical construction",
-      "value": "C05 / W02 / T03; 200 unbonded 0.010\u20130.011 mm C110 laminae per flex member",
+      "value": "C05 / W02 / T03; 200 unbonded 0.010–0.011 mm C110 laminae per flex member",
       "basis": "iterations/I15_service_mechanics/candidate_mechanics/FLEX_CONSTRUCTION_W02_T03.json"
     },
     {
@@ -35415,7 +35510,7 @@
     {
       "item": "Adapter cable nominal length (mm)",
       "value": 150,
-      "basis": "851C934-001drawing, \u00b13mmtoSMAshoulder"
+      "basis": "851C934-001drawing, ±3mmtoSMAshoulder"
     },
     {
       "item": "Cable maximum OD allocation (mm)",
@@ -35453,5 +35548,155 @@
       "basis": "analyses/review_i22/VIA_CURRENT_THERMAL_BUDGET.json"
     }
   ],
-  "meaning_of_zero": "Zero native findings remains true for unchanged I20 CAD/target outputs. Overall zero is not reached:146 originalcriteria remain open. I22 adds 6 design-scope closures and preserves every physical, supplier and independent-human requirement."
+  "meaning_of_zero": "Target remains zero actionable prehardware work; current value is1 (GND-02). Literal open physical/supplier criteria and historical redlines are not reclassified as PCB defects or falsely passed.",
+  "pre_I26A_summary": {
+    "criteria": 290,
+    "user_baseline": {
+      "closed": 73,
+      "open": 213,
+      "na": 4
+    },
+    "prior_I06": {
+      "open": 176,
+      "closed": 110,
+      "na": 4
+    },
+    "current": {
+      "open": 146,
+      "closed": 140,
+      "na": 4
+    },
+    "newly_closed_since_I06": [
+      "CFG-08",
+      "LIB-04",
+      "LIB-06",
+      "SEQ-09",
+      "GND-01",
+      "GND-08",
+      "VIA-02",
+      "VIA-05",
+      "VIA-10",
+      "BLE-01",
+      "BLE-02",
+      "MCU-08",
+      "FW-02",
+      "LAY-02",
+      "LAY-08",
+      "LAY-09",
+      "LAY-10",
+      "DFM-03",
+      "DFM-10",
+      "DRW-01",
+      "DRW-02",
+      "DRW-08",
+      "DRW-09",
+      "DFT-02",
+      "CCB-06"
+    ],
+    "reopened_since_I06": [
+      "REG-02"
+    ],
+    "redline_status_counts": {
+      "CORRECTED_SOURCE_MODEL": 59,
+      "ACCESSORY_IDENTIFIED_APPLICABILITY_OPEN": 3,
+      "CORRECTED_NATIVE_I20": 225,
+      "CONDITIONAL_BOUND": 21,
+      "OPEN_ENGINEERING": 1,
+      "DOCUMENTED_SUPPLIER_CONDITIONS": 1,
+      "CORRECTED_DOCUMENT": 7,
+      "CORRECTED_IN_MODEL_AND_SOURCE_BOUND_GEOMETRY": 1,
+      "CORRECTED_WITHIN_DECLARED_CONTROLLER_FAMILY": 1,
+      "CORRECTED_BOUNDED_INPUT": 1,
+      "CORRECTED_INITIAL_CONDITION": 1,
+      "CORRECTED_DOCUMENT_AND_HOST_VECTORS": 1,
+      "CORRECTED_DECLARED_GEOMETRY": 7,
+      "OPEN_THERMAL_ENGINEERING": 11,
+      "SUPPLIER_MINIMUM_REQUIRED": 1,
+      "CORRECTED_CURRENT_REVIEW": 8,
+      "REFERENCE_CONDITION_RETAINED": 1,
+      "CORRECTED_FINITE_POWER_MODEL": 2,
+      "CORRECTED_PACKAGE_DRAWING_REVIEW": 1,
+      "OPEN_THERMAL_AND_RETURN_ENGINEERING": 1,
+      "CORRECTED_MODEL_DFM_AGREEMENT_OPEN": 1,
+      "RF_ANALYSIS_ACCEPTED_OPTICAL_BOUND_OPEN": 1,
+      "CORRECTED_FULL_HEIGHT_STACK": 1
+    },
+    "desktop_status_counts": {
+      "HARDWARE_OR_INSTALLATION_ACCEPTANCE": 89,
+      "CURRENT_EVIDENCE_REVIEWED": 90,
+      "COMPLETED_CURRENT_SOURCE_VERIFICATION": 25,
+      "COMPLETED_CONDITIONAL_MODEL": 28,
+      "COMPLETED_I22_ORIGINAL_DESIGN_SCOPE": 6,
+      "DESKTOP_WORK_REMAINING": 4,
+      "SUPPLIER_OR_RESPONSIBLE_ACCEPTANCE": 17,
+      "CURRENT_NATIVE_COMPLETE_OTHER_EVIDENCE_REQUIRED": 7,
+      "NOT_APPLICABLE": 4,
+      "COMPLETED_SOURCE_DOCUMENTARY_SCOPE": 20
+    },
+    "native_candidate_passes": 1,
+    "target_candidate_builds": 1,
+    "native_findings": 0,
+    "physical_tests": 0,
+    "actual_source_thermal_engineering_complete": false,
+    "release_status": "Six more design criteria closed; thermal engineering and qualification remain open",
+    "iterations": [
+      {
+        "id": "I06",
+        "status": "HISTORICAL",
+        "description": "Prior consolidated register; 110 closed, 176 open, 4 not applicable."
+      },
+      {
+        "id": "I07–I17",
+        "status": "SUPERSEDED SOURCE",
+        "description": "Native parser, electrical clearance, footprint variants, complete models, logo, RF reference and Tag-Connect corrections."
+      },
+      {
+        "id": "I18",
+        "status": "CURRENT GEOMETRY BASIS",
+        "description": "C206 thermal tab, copper/outline and mated/service geometry."
+      },
+      {
+        "id": "I19",
+        "status": "CURRENT ELECTRICAL BASIS",
+        "description": "Precision feedback divider and current hot-copper power model."
+      },
+      {
+        "id": "I20",
+        "status": "CURRENT CAD / TARGET IMAGE",
+        "description": "Controlled source notes, zero native findings, matching exports and target image."
+      },
+      {
+        "id": "I21",
+        "status": "PREVIOUS REVIEW / CURRENT THERMAL EVIDENCE",
+        "description": "Fresh 1,042 digest checks, independent copper/export recheck, completed 0.125 mm thermal solve and original-criterion reconciliation."
+      },
+      {
+        "id": "I22",
+        "status": "CURRENT REVIEW / MODEL CORRECTION",
+        "description": "User-confirmed851/960; independent12package overlays; full1.71mmstack and revised cable envelope;322via heating budget;6originalcriteria close. I20CAD/firmwareunchanged.",
+        "evidence": [
+          "analyses/review_i22/REDLINE_FREEZE.json",
+          "analyses/review_i22/REVIEW_REPORT.md",
+          "current/I22_SOURCE_VERIFICATION.json"
+        ]
+      }
+    ],
+    "prior_I21": {
+      "open": 152,
+      "closed": 134,
+      "na": 4
+    },
+    "newly_closed_since_I21": [
+      "LIB-02",
+      "LIB-08",
+      "VIA-06",
+      "SI-12",
+      "GPS-01",
+      "MECH-03"
+    ],
+    "reopened_since_I21": [],
+    "I22_source_digest_checks": 282,
+    "I22_physical_tests": 0,
+    "I22_native_executions": 0
+  }
 }

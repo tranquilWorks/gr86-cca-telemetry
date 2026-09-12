@@ -1,0 +1,41 @@
+{
+  "status": "I27_ZERO_ACTIONABLE_PREHARDWARE",
+  "source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "controlled_rows": 290,
+  "literal_closure_counts": {
+    "open": 146,
+    "closed": 140,
+    "na": 4
+  },
+  "desktop_status_counts": {
+    "HARDWARE_OR_INSTALLATION_ACCEPTANCE": 90,
+    "CURRENT_EVIDENCE_REVIEWED": 90,
+    "COMPLETED_CURRENT_SOURCE_VERIFICATION": 25,
+    "COMPLETED_CONDITIONAL_MODEL": 31,
+    "COMPLETED_I22_ORIGINAL_DESIGN_SCOPE": 6,
+    "SUPPLIER_OR_RESPONSIBLE_ACCEPTANCE": 17,
+    "CURRENT_NATIVE_COMPLETE_OTHER_EVIDENCE_REQUIRED": 7,
+    "NOT_APPLICABLE": 4,
+    "COMPLETED_SOURCE_DOCUMENTARY_SCOPE": 20
+  },
+  "prehardware_counts": {
+    "desktop_source_documentary": 141,
+    "conditional_model": 31,
+    "hardware_supplier_installation": 114,
+    "not_applicable": 4,
+    "desktop_work_remaining": 0
+  },
+  "actionable_prehardware_ids": [],
+  "rows_reconciled": [
+    "GND-02",
+    "REG-02",
+    "THERM-02",
+    "WCA-07"
+  ],
+  "all_original_questions_and_required_evidence_preserved": true,
+  "physical_tests_performed": 0,
+  "PCB_BOM_firmware_changes": false,
+  "C02_adopted": false,
+  "fabrication_release": true,
+  "fabrication_release_meaning": "Engineering release to request fabrication only; supplier acceptance and physical qualification remain open and no physical test is claimed."
+}

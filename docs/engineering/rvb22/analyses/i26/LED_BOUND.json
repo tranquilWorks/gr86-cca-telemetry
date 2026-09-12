@@ -1,0 +1,687 @@
+{
+  "status": "ELECTRICAL_DESKTOP_COMPLETE_OPTICAL_CONFIRMATION_REQUIRED",
+  "source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "date": "2026-09-12",
+  "fitted_LED_count": 7,
+  "GPIO_driven_LED_count": 6,
+  "buffer_driven_LED_count": 1,
+  "rows": [
+    {
+      "LED": "D601",
+      "resistor": "R601",
+      "driver_reference": "U201",
+      "driver_pad": "8",
+      "GPIO": "15",
+      "driver_net": "LED_PWR",
+      "anode_net": "LED_PWR_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D602",
+      "resistor": "R602",
+      "driver_reference": "U201",
+      "driver_pad": "6",
+      "GPIO": "6",
+      "driver_net": "LED_BLE",
+      "anode_net": "LED_BLE_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D603",
+      "resistor": "R603",
+      "driver_reference": "U201",
+      "driver_pad": "7",
+      "GPIO": "7",
+      "driver_net": "LED_CAN",
+      "anode_net": "LED_CAN_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D604",
+      "resistor": "R604",
+      "driver_reference": "U201",
+      "driver_pad": "12",
+      "GPIO": "8",
+      "driver_net": "LED_GPS",
+      "anode_net": "LED_GPS_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D605",
+      "resistor": "R605",
+      "driver_reference": "U201",
+      "driver_pad": "18",
+      "GPIO": "10",
+      "driver_net": "LED_SYS",
+      "anode_net": "LED_SYS_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D606",
+      "resistor": "R606",
+      "driver_reference": "U201",
+      "driver_pad": "17",
+      "GPIO": "9",
+      "driver_net": "LED_OIL",
+      "anode_net": "LED_OIL_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    },
+    {
+      "LED": "D401",
+      "resistor": "R405",
+      "driver_reference": "U404",
+      "driver_pad": "3",
+      "GPIO": null,
+      "driver_net": "GPS_SEARCH_BUFFER",
+      "anode_net": "GPS_SEARCH_LED_A",
+      "cathode_net": "GND",
+      "LED_MPN": "APT1608SGC",
+      "limiter_MPN": "CRCW06031K00FKEA",
+      "active_high": true,
+      "hard_current_upper_mA": 3.710575139146568,
+      "hard_current_upper_including_2pct_drift_mA": 3.786301162394457,
+      "limiter_power_upper_mW": 13.630684184620046,
+      "LED_power_upper_mW": 3.407671046155012,
+      "LED_power_equation": "Vf*(Vrail-Vf)/R <= Vrail^2/(4R), for 0<=Vf<=Vrail. GPIO voltage drop only reduces LED power."
+    }
+  ],
+  "all_seven_current_upper_with_drift_mA": 26.504108136761197,
+  "six_GPIO_total_current_upper_with_drift_mA": 22.71780697436674,
+  "hard_limit_assumptions": {
+    "rail_ceiling_V": 3.6,
+    "resistor_initial_tolerance": 0.01,
+    "additional_temperature_allowance": 0.02,
+    "optional_service_drift_allowance": 0.02,
+    "minimum_LED_Vf_for_current_stress_V": 0.0,
+    "source_output_cannot_exceed_rail": true
+  },
+  "manufacturer_limits": {
+    "LED_operating_ambient_max_C": 85,
+    "LED_junction_max_C": 110,
+    "LED_current_25C_max_mA": 25,
+    "LED_intensity_20mA_25C_min_mcd": 5,
+    "LED_intensity_20mA_25C_typ_mcd": 12,
+    "LED_full_half_intensity_angle_deg": 150,
+    "limiter_standard_power_70C_W": 0.1,
+    "limiter_film_limit_C": 155,
+    "limiter_power_at_112p883C_mW": 49.54943423309707
+  },
+  "electrical_interpretation": [
+    "The source current is hard bounded even for a shorted LED. This is not a guarantee of loaded ESP32 VOH at hot/cold.",
+    "ESP32 40mA source drive is TYPICAL at stated conditions; its VOH minimum is specified with high-impedance load. Neither is used as a guaranteed hot loaded-output specification.",
+    "The selected 1kohm resistor retains more hot-current margin than smaller values. No LED/resistor/BOM/CAD change is adopted.",
+    "The 5mA at85C comparison is a conservative engineering screen read from a typical thermal-derating graph, not an independently guaranteed assembled-board thermal limit. Actual local ambient and junction limits remain gates.",
+    "Published LED thermal resistance assumes >=16mm2 pad per terminal. That thermal resistance is not applied to this smaller footprint as a guaranteed junction prediction."
+  ],
+  "optical_prediction": {
+    "case_count": 48,
+    "typical_curve_only": true,
+    "voltage_driver_temperature_cases": [
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.152161493048943,
+        "conditional_scaled_5mcd_bin_mcd": 0.38885450390401827,
+        "conditional_scaled_12mcd_typ_mcd": 0.9332508093696439
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.2188154637211963,
+        "conditional_scaled_5mcd_bin_mcd": 0.3047038659302991,
+        "conditional_scaled_12mcd_typ_mcd": 0.7312892782327178
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.2949914302037708,
+        "conditional_scaled_5mcd_bin_mcd": 0.21691106455913162,
+        "conditional_scaled_12mcd_typ_mcd": 0.520586554941916
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.3330794134450579,
+        "conditional_scaled_5mcd_bin_mcd": 0.18996381641592072,
+        "conditional_scaled_12mcd_typ_mcd": 0.4559131593982097
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.0519909580942448,
+        "conditional_scaled_5mcd_bin_mcd": 0.35504694835680767,
+        "conditional_scaled_12mcd_typ_mcd": 0.8521126760563383
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.112849939141019,
+        "conditional_scaled_5mcd_bin_mcd": 0.27821248478525473,
+        "conditional_scaled_12mcd_typ_mcd": 0.6677099634846113
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.1824030603373328,
+        "conditional_scaled_5mcd_bin_mcd": 0.19805251260650325,
+        "conditional_scaled_12mcd_typ_mcd": 0.47532603025560777
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.21717962093549,
+        "conditional_scaled_5mcd_bin_mcd": 0.1734480959833073,
+        "conditional_scaled_12mcd_typ_mcd": 0.4162754303599375
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.0898937128445327,
+        "conditional_scaled_5mcd_bin_mcd": 0.36783912808502983,
+        "conditional_scaled_12mcd_typ_mcd": 0.8828139074040716
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.1529454152404974,
+        "conditional_scaled_5mcd_bin_mcd": 0.28823635381012436,
+        "conditional_scaled_12mcd_typ_mcd": 0.6917672491442984
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.2250045036930288,
+        "conditional_scaled_5mcd_bin_mcd": 0.20518825436858235,
+        "conditional_scaled_12mcd_typ_mcd": 0.49245181048459763
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.2610340479192943,
+        "conditional_scaled_5mcd_bin_mcd": 0.1796973518284994,
+        "conditional_scaled_12mcd_typ_mcd": 0.4312736443883986
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 0.9998437744102486,
+        "conditional_scaled_5mcd_bin_mcd": 0.3374472738634589,
+        "conditional_scaled_12mcd_typ_mcd": 0.8098734572723014
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.057676417121137,
+        "conditional_scaled_5mcd_bin_mcd": 0.26441910428028426,
+        "conditional_scaled_12mcd_typ_mcd": 0.6346058502726822
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.123781193191208,
+        "conditional_scaled_5mcd_bin_mcd": 0.18823334985952736,
+        "conditional_scaled_12mcd_typ_mcd": 0.45176003966286565
+      },
+      {
+        "rail_V": 3.0,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.1568335812262438,
+        "conditional_scaled_5mcd_bin_mcd": 0.16484878532473973,
+        "conditional_scaled_12mcd_typ_mcd": 0.39563708477937537
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.4378213673585982,
+        "conditional_scaled_5mcd_bin_mcd": 0.48526471148352696,
+        "conditional_scaled_12mcd_typ_mcd": 1.1646353075604647
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.5044753380308515,
+        "conditional_scaled_5mcd_bin_mcd": 0.3761188345077129,
+        "conditional_scaled_12mcd_typ_mcd": 0.902685202818511
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.580651304513426,
+        "conditional_scaled_5mcd_bin_mcd": 0.26475909350599885,
+        "conditional_scaled_12mcd_typ_mcd": 0.6354218244143974
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.6187392877547135,
+        "conditional_scaled_5mcd_bin_mcd": 0.23067034850504667,
+        "conditional_scaled_12mcd_typ_mcd": 0.5536088364121119
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.3128151625804207,
+        "conditional_scaled_5mcd_bin_mcd": 0.44307511737089206,
+        "conditional_scaled_12mcd_typ_mcd": 1.063380281690141
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.3736741436271953,
+        "conditional_scaled_5mcd_bin_mcd": 0.3434185359067988,
+        "conditional_scaled_12mcd_typ_mcd": 0.8242044861763173
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.4432272648235092,
+        "conditional_scaled_5mcd_bin_mcd": 0.2417405668579378,
+        "conditional_scaled_12mcd_typ_mcd": 0.5801773604590507
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.4780038254216659,
+        "conditional_scaled_5mcd_bin_mcd": 0.21061554512258737,
+        "conditional_scaled_12mcd_typ_mcd": 0.5054773082942097
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.360115294541524,
+        "conditional_scaled_5mcd_bin_mcd": 0.4590389119077644,
+        "conditional_scaled_12mcd_typ_mcd": 1.1016933885786346
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.4231669969374887,
+        "conditional_scaled_5mcd_bin_mcd": 0.3557917492343722,
+        "conditional_scaled_12mcd_typ_mcd": 0.8539001981624932
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.49522608539002,
+        "conditional_scaled_5mcd_bin_mcd": 0.2504503693028284,
+        "conditional_scaled_12mcd_typ_mcd": 0.6010808863267881
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.5312556296162856,
+        "conditional_scaled_5mcd_bin_mcd": 0.21820392722032067,
+        "conditional_scaled_12mcd_typ_mcd": 0.5236894253287696
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.2477276483225914,
+        "conditional_scaled_5mcd_bin_mcd": 0.4211080813088746,
+        "conditional_scaled_12mcd_typ_mcd": 1.0106593951412992
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.3055693273839037,
+        "conditional_scaled_5mcd_bin_mcd": 0.32639233184597594,
+        "conditional_scaled_12mcd_typ_mcd": 0.7833415964303423
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.3716741034539748,
+        "conditional_scaled_5mcd_bin_mcd": 0.2297554123285408,
+        "conditional_scaled_12mcd_typ_mcd": 0.5514129895884979
+      },
+      {
+        "rail_V": 3.3,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.40472649148901,
+        "conditional_scaled_5mcd_bin_mcd": 0.2001735250371839,
+        "conditional_scaled_12mcd_typ_mcd": 0.4804164600892415
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.723481241668254,
+        "conditional_scaled_5mcd_bin_mcd": 0.5816749190630357,
+        "conditional_scaled_12mcd_typ_mcd": 1.3960198057512858
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.7901352123405068,
+        "conditional_scaled_5mcd_bin_mcd": 0.4475338030851267,
+        "conditional_scaled_12mcd_typ_mcd": 1.074081127404304
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.8663111788230817,
+        "conditional_scaled_5mcd_bin_mcd": 0.3126071224528662,
+        "conditional_scaled_12mcd_typ_mcd": 0.7502570938868789
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.9043991620643688,
+        "conditional_scaled_5mcd_bin_mcd": 0.27137688059417253,
+        "conditional_scaled_12mcd_typ_mcd": 0.6513045134260141
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.5736393670665971,
+        "conditional_scaled_5mcd_bin_mcd": 0.5311032863849766,
+        "conditional_scaled_12mcd_typ_mcd": 1.2746478873239435
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.6344983481133717,
+        "conditional_scaled_5mcd_bin_mcd": 0.4086245870283429,
+        "conditional_scaled_12mcd_typ_mcd": 0.980699008868023
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.7040514693096855,
+        "conditional_scaled_5mcd_bin_mcd": 0.28542862110937234,
+        "conditional_scaled_12mcd_typ_mcd": 0.6850286906624935
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 970.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.7388280299078422,
+        "conditional_scaled_5mcd_bin_mcd": 0.24778299426186753,
+        "conditional_scaled_12mcd_typ_mcd": 0.5946791862284819
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.6303368762385158,
+        "conditional_scaled_5mcd_bin_mcd": 0.5502386957304991,
+        "conditional_scaled_12mcd_typ_mcd": 1.3205728697531978
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.6933885786344804,
+        "conditional_scaled_5mcd_bin_mcd": 0.42334714465862006,
+        "conditional_scaled_12mcd_typ_mcd": 1.0160331471806883
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.7654476670870118,
+        "conditional_scaled_5mcd_bin_mcd": 0.2957124842370745,
+        "conditional_scaled_12mcd_typ_mcd": 0.7097099621689789
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 0.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.8014772113132773,
+        "conditional_scaled_5mcd_bin_mcd": 0.25671050261214196,
+        "conditional_scaled_12mcd_typ_mcd": 0.6161052062691409
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": -10.0,
+        "predicted_current_mA": 1.4956205585853577,
+        "conditional_scaled_5mcd_bin_mcd": 0.5047719385225583,
+        "conditional_scaled_12mcd_typ_mcd": 1.2114526524541396
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 25.0,
+        "predicted_current_mA": 1.5534622376466705,
+        "conditional_scaled_5mcd_bin_mcd": 0.3883655594116676,
+        "conditional_scaled_12mcd_typ_mcd": 0.9320773425880023
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 65.0,
+        "predicted_current_mA": 1.6195670137167415,
+        "conditional_scaled_5mcd_bin_mcd": 0.2712774747975542,
+        "conditional_scaled_12mcd_typ_mcd": 0.6510659395141302
+      },
+      {
+        "rail_V": 3.6,
+        "limiter_ohm": 1030.2,
+        "assumed_driver_ohm": 100.0,
+        "temperature_C": 85.0,
+        "predicted_current_mA": 1.6526194017517768,
+        "conditional_scaled_5mcd_bin_mcd": 0.23549826474962818,
+        "conditional_scaled_12mcd_typ_mcd": 0.5651958353991077
+      }
+    ],
+    "conditional_current_min_mA": 0.9998437744102486,
+    "conditional_current_max_mA": 1.9043991620643688,
+    "conditional_scaled_bin_min_mcd": 0.16484878532473973,
+    "conditional_typical_intensity_max_mcd": 1.3960198057512858,
+    "conditional_45deg_view_min_mcd": 0.1153941497273178,
+    "guaranteed_low_current_hot_optical_min_mcd": 0.0,
+    "curve_method": "Approximate manufacturer typical plots digitized visually; piecewise-linear I-V and flux-temperature scaling. Driver0..100ohm, linear flux-current scaling, and angular factor0.7 are explicit inference assumptions. No source guarantees this constructed envelope.",
+    "no_cold_extrapolation_below_C": -10
+  },
+  "resistor_comparison": [
+    {
+      "resistance_ohm": 1000.0,
+      "worst_current_mA_with_drift": 3.786301162394457,
+      "nominal_current_mA": 1.4298642533936654,
+      "margin_to_allocated_85C_5mA_screen_mA": 1.213698837605543,
+      "passes_5mA_screen": true,
+      "is_adopted": true
+    },
+    {
+      "resistance_ohm": 820.0,
+      "worst_current_mA_with_drift": 4.61744044194446,
+      "nominal_current_mA": 1.7081081081081084,
+      "margin_to_allocated_85C_5mA_screen_mA": 0.3825595580555401,
+      "passes_5mA_screen": true,
+      "is_adopted": false
+    },
+    {
+      "resistance_ohm": 680.0,
+      "worst_current_mA_with_drift": 5.56808994469773,
+      "nominal_current_mA": 2.0136674259681095,
+      "margin_to_allocated_85C_5mA_screen_mA": -0.5680899446977303,
+      "passes_5mA_screen": false,
+      "is_adopted": false
+    },
+    {
+      "resistance_ohm": 470.0,
+      "worst_current_mA_with_drift": 8.055959919988206,
+      "nominal_current_mA": 2.824281150159745,
+      "margin_to_allocated_85C_5mA_screen_mA": -3.055959919988206,
+      "passes_5mA_screen": false,
+      "is_adopted": false
+    }
+  ],
+  "qualification_gate": "I26-LED-01 in QUALIFICATION_GATES.json",
+  "failure_disposition": "First tune same-footprint efficiency/bin, resistor within hot/current allocation, or enclosure/shroud/light-pipe. Reopen PCB only if optical/mechanical solution cannot meet the actual installed visibility requirement.",
+  "sources": [
+    {
+      "url": "https://www.kingbrightusa.com/images/catalog/spec/apt1608sgc.pdf",
+      "revision": "V.22B, Dec7 2023",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "used_for": "Exact part, pin polarity,20mA intensity, electrical/thermal limits, typical I-V/current/temperature/angle plots"
+    },
+    {
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "revision": "Apr14 2026",
+      "pages": [
+        2,
+        3,
+        6
+      ],
+      "used_for": "CRCW0603 rating, tolerance/TCR and power derating"
+    },
+    {
+      "url": "https://documentation.espressif.com/esp32-s3_datasheet_en.pdf",
+      "revision": "v2.2",
+      "pages": [
+        65
+      ],
+      "used_for": "High-impedance VOH footnote; typical drive current must not be treated as a guaranteed loaded specification"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf",
+      "revision": "SCES204Q Mar2017",
+      "pages": [
+        6,
+        7
+      ],
+      "used_for": "D401 buffer drive range and output limits"
+    }
+  ],
+  "original_literal_WCA07_closed": false,
+  "physical_tests_claimed": false
+}
