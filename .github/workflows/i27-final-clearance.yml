@@ -1,0 +1,64 @@
+name: I27 final pre-hardware clearance
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/i27-final-clearance.yml'
+      - 'docs/engineering/rvb22/analyses/i26/i27_finalize.py'
+permissions:
+  contents: write
+jobs:
+  finalize:
+    if: github.event.pull_request.number == 46 && github.head_ref == 'codex/rvb24-coordinated-closure' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Provision pinned analysis dependencies
+        run: |
+          python3 -m venv .i27-venv
+          .i27-venv/bin/pip install -r docs/engineering/rvb22/analyses/convergence_01/requirements.txt
+          echo "$PWD/.i27-venv/bin" >> "$GITHUB_PATH"
+      - name: Reproduce I26 source-bound evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python docs/engineering/rvb22/analyses/i26/prepare_publication.py verify
+      - name: Adjudicate GND-02 and finalize zero-actionable register
+        run: python docs/engineering/rvb22/analyses/i26/i27_finalize.py
+      - name: Verify release invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          w=Path('docs/engineering/rvb22')
+          r=json.loads((w/'FINAL_REVIEW_REGISTER.json').read_text())
+          a=json.loads((w/'analyses/i26/RECONCILIATION_AUDIT.json').read_text())
+          b=json.loads((w/'analyses/i26/GND02_DESKTOP_CLOSURE.json').read_text())
+          f=json.loads((w/'I27_FABRICATION_READINESS.json').read_text())
+          assert len(r['rows']) == 290
+          assert not [x for x in r['rows'] if x.get('desktop_status') == 'DESKTOP_WORK_REMAINING']
+          assert a['actionable_prehardware_ids'] == []
+          assert a['prehardware_counts'] == {'desktop_source_documentary':141,'conditional_model':31,'hardware_supplier_installation':114,'not_applicable':4,'desktop_work_remaining':0}
+          assert b['gnd02_desktop_complete'] is True
+          assert b['physical_tests_performed'] is False
+          assert b['expanded_adjacent_plane_findings']['worst_bounce_V'] < 0.20
+          assert b['expanded_adjacent_plane_findings']['CAN_RXD_worst_bounce_V'] < 0.05
+          assert b['signal_via_transfers']['maximum_nearest_through_ground_via_mm'] <= b['signal_via_transfers']['lambda_over_20_screen_mm_at_0p5ns']
+          assert f['actionable_prehardware_count'] == 0 and f['physical_tests_performed'] == 0
+          print(json.dumps(f,indent=2))
+          PY
+          python docs/engineering/rvb22/i26_audit_open_rows.py
+      - name: Publish verified I27 evidence to PR branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/engineering/rvb22
+          git diff --cached --check
+          git diff --cached --quiet && { echo 'No generated changes'; exit 0; }
+          git commit -m 'I27: close pre-hardware engineering and release fabrication request'
+          git push origin HEAD:${GITHUB_HEAD_REF}
