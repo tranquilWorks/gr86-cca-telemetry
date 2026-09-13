@@ -1,0 +1,69 @@
+{
+  "status": "SOURCE_BOUND_PCBA_QUOTE_AND_FIRST_ARTICLE_HANDOFF",
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "native_archive_sha256": "3515bd44911e4504a110269bbef8f567118ab8ab9223e47f2931ad9c5a307731",
+  "native_export_commit": "1aa1b2e880d94e36a8017087241ed954d2aa4f3f",
+  "source_files_verified": {
+    "cad": 101,
+    "firmware": 32
+  },
+  "native_outputs_verified": 774,
+  "fitted_parts": 153,
+  "factory_placement_rows": 151,
+  "local_assembly_parts": [
+    "F101",
+    "U401"
+  ],
+  "DNP": [
+    "C203",
+    "R301",
+    "R306"
+  ],
+  "filled_capped_vias": 49,
+  "unassigned_factory_LCSC_references": [
+    "C206",
+    "C532",
+    "L121",
+    "L151",
+    "L406",
+    "R102",
+    "R103",
+    "R153",
+    "R155",
+    "R156",
+    "R157",
+    "R158",
+    "U101",
+    "U202"
+  ],
+  "supplier_acceptance": false,
+  "physical_tests_performed": 0,
+  "CI_completion_required_to_build_package": false,
+  "manufacturing_order_placed": false,
+  "automatic_turnkey_PCBA_order_ready": false,
+  "full_product_qualified": false,
+  "package_file": "GR86_RevB_I29_Quote_And_Build_Package.zip",
+  "package_sha256": "7deb87d0bffdb736da30c598c192dd50d268d66ba6af6a207a0db59414bc6217",
+  "package_members": 199,
+  "local_package_checks": {
+    "passed": 15,
+    "checks": {
+      "every_member_manifested": true,
+      "every_member_hash_matches": true,
+      "complete_population_153": true,
+      "factory_BOM_CPL_one_to_one_151": true,
+      "manual_parts_retained_not_machine_placed": true,
+      "DNP_excluded": true,
+      "critical_MPNs_match": true,
+      "via_fill_unique_49": true,
+      "sourcing_gaps_exposed_14": true,
+      "standalone_fab_archive_14_exact_files": true,
+      "qualification_not_faked": true,
+      "current_PCB_identity": true,
+      "wrong_native_archive_rejected": true,
+      "changed_PCB_rejected": true,
+      "existing_output_preserved": true
+    },
+    "physical_testing": false
+  }
+}
