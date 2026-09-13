@@ -1,4 +1,5 @@
 name: RVB22 native engineering review
+# I28: Q1 U121 fitted metadata retains the verified LM5164 DDA symbol geometry; this run binds the repaired source.
 on:
   pull_request:
     types: [opened, synchronize, reopened]
