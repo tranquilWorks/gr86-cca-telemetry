@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/i27-final-clearance.yml'
       - 'docs/engineering/rvb22/analyses/i26/i27_finalize.py'
+      - 'docs/engineering/rvb22/analyses/i26/i27_publish_cleanup.py'
 permissions:
   contents: write
 jobs:
@@ -52,6 +53,8 @@ jobs:
           print(json.dumps(f,indent=2))
           PY
           python docs/engineering/rvb22/i26_audit_open_rows.py
+      - name: Normalize publication-only runtime state
+        run: python docs/engineering/rvb22/analyses/i26/i27_publish_cleanup.py
       - name: Publish verified I27 evidence to PR branch
         run: |
           set -euo pipefail
