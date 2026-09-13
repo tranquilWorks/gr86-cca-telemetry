@@ -1,0 +1,46 @@
+name: I28 manufacturer model availability
+on:
+  push:
+    branches: [codex/rvb28-electrical-signoff]
+    paths: [.github/workflows/i28-model-availability.yml]
+permissions:
+  contents: read
+jobs:
+  availability:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Inspect public TI attachment availability
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/i28-availability
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, pathlib, json, re, hashlib, html
+          base='https://e2e.ti.com/support/power-management-group/power-management/f/power-management-forum/1558319/lm63615-q1-lm636x5-q1-3-5v-to-36v'
+          result={'page':base,'model_content_published':False,'license_status':'Requires review of public supplier terms; do not redistribute supplier attachments.'}
+          try:
+              page=urllib.request.urlopen(urllib.request.Request(base,headers={'User-Agent':'Mozilla/5.0'}),timeout=60).read().decode('utf-8',errors='replace')
+              links=sorted(set(html.unescape(urllib.parse.urljoin(base,u)) for u in re.findall(r'href=[\"\x27]([^\"\x27]+)',page) if '.lib' in u.lower()))
+              result['links']=links
+              result['page_retrieved']=True
+              result['attachments']=[]
+              for url in links:
+                  if urllib.parse.urlsplit(url).hostname not in ['e2e.ti.com','www.ti.com']:continue
+                  try:
+                      data=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=60).read()
+                      txt=data.decode('latin1')
+                      signatures=re.findall(r'^\.SUBCKT[^\r\n]*(?:\r?\n\+[^\r\n]*)*',txt,re.M|re.I)
+                      result['attachments'].append({'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'encrypted':'$CDNENCSTART' in txt or '$ENCRYPTED_LIB' in txt,'subcircuit_signatures':signatures[:2]})
+                  except Exception as e:result['attachments'].append({'url':url,'error':str(e)})
+          except Exception as e:
+              result['page_retrieved']=False;result['error']=str(e)
+          text=json.dumps(result,indent=2)+'\n'
+          pathlib.Path('/tmp/i28-availability/AVAILABILITY.json').write_text(text)
+          print(text)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: i28-model-availability
+          path: /tmp/i28-availability/
+          retention-days: 14
