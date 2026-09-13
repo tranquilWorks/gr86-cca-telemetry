@@ -6,9 +6,8 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent / "support"))
 import sexpdata as sx
 
-SOURCE_HASH = "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8"
-REFERENCE_RAW = "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1"
-REFERENCE_CONTENT = "c8a95ea1f0b1a9e5075b57c921191d87f32fddd9e01818cad815e9ef91c5d045"
+SOURCE_HASH = "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936"
+SOURCE_PCB = Path(__file__).resolve().parents[2] / "candidate" / "cad" / "GR86_CCA_RevB.kicad_pcb"
 NON_ELECTRICAL_LAYERS = {"F.Fab", "B.Fab", "F.CrtYd", "B.CrtYd"}
 
 def canonicalize(node):
@@ -27,14 +26,21 @@ def content_hash(node):
     return hashlib.sha256(data).hexdigest()
 
 def verify_filled(path):
+    source_data = SOURCE_PCB.read_bytes()
+    source_raw = hashlib.sha256(source_data).hexdigest()
+    if source_raw != SOURCE_HASH:
+        raise ValueError("Controlled PCB source advanced: explicit engineering rebind required")
+    reference_content = content_hash(sx.loads(source_data.decode()))
+
     data = Path(path).read_bytes()
     raw = hashlib.sha256(data).hexdigest()
     stable = content_hash(sx.loads(data.decode()))
-    if stable != REFERENCE_CONTENT:
-        raise ValueError("Native board content differs: explicit engineering rebind required")
+    if stable != reference_content:
+        raise ValueError("Native board content differs from controlled source: explicit engineering rebind required")
     return {"raw_sha256": raw, "content_sha256": stable,
-            "reference_raw_sha256": REFERENCE_RAW,
-            "raw_equal_to_reference": raw == REFERENCE_RAW,
+            "controlled_source_raw_sha256": source_raw,
+            "controlled_source_content_sha256": reference_content,
+            "content_equal_to_controlled_source": True,
             "only_generated_non_electrical_ids_may_differ": True}
 
 if __name__ == "__main__":
