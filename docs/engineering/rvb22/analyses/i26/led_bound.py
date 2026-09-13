@@ -7,7 +7,7 @@ D=Path(__file__).resolve().parent; W=D.parents[1]
 sys.path.insert(0,str(W/'analyses/convergence_01/support'))
 import sexpdata as sx
 import check_combined_copper as c
-EXPECTED='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
+EXPECTED='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
 
 def require(ok, message):
     if not ok: raise ValueError(message)
