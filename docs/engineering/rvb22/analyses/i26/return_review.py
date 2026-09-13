@@ -10,7 +10,8 @@ D = Path(__file__).resolve().parent
 W = D.parents[1]
 sys.path.insert(0, str(W / 'analyses/convergence_01/support'))
 import check_combined_copper as copper
-SOURCE_SHA = '5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
+SOURCE_SHA = 'a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+REFERENCE_SOURCE_SHA = '5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
 FILLED_SHA = '11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1'
 CRITICAL = {
  'ADC_NODE','CANH','CANL','CAN_TX_MCU','CAN_RX_MCU','CAN_RXD','CAN_TXD',
@@ -58,7 +59,6 @@ def load_native(path):
         for fill in copper.child(zone,'filled_polygon'):
             pts = [p[1:] for p in copper.child(copper.child(fill,'pts')[0],'xy')]
             ground[copper.get(fill,'layer')[0]].append(shapely.make_valid(Polygon(pts)))
-    # The 2nm geometric roundoff allowance is not an etch/minimum-width allowance.
     return tree,items,names,{layer:unary_union(parts).buffer(.000002) for layer,parts in ground.items()}
 
 def nearest_vias(tree,names,line):
@@ -73,7 +73,7 @@ def review(native, out):
     tree,items,names,ground = load_native(native)
     nums = {name:num for num,name in names.items()}
     current = json.loads((W/'analyses/manufacturing_i24/RESULTS.json').read_text())
-    require(current['source_PCB_sha256']==SOURCE_SHA and current['filled_PCB_sha256']==FILLED_SHA,'Prior native reference provenance mismatch')
+    require(current['source_PCB_sha256']==REFERENCE_SOURCE_SHA and current['filled_PCB_sha256']==FILLED_SHA,'Prior native reference provenance mismatch')
     previous = {r['uuid']:r for r in current['reference']['all_checked_segment_results']}
     segments = {copper.get(s,'uuid')[0]:s for s in copper.child(tree,'segment')}
     provenance = json.loads((D/'HISTORICAL_REFERENCE_PROVENANCE.json').read_text())
@@ -132,16 +132,17 @@ def review(native, out):
               'signal_via_layers':copper.get(via,'layers'),'signal_via_drill_mm':copper.get(via,'drill')[0],
               'nearby_ground_vias':nearest_vias(tree,names,p),'source_scope':SOURCE_CLASSES.get(name,'Analog/differential/programming interface'),
               'current_return_transfer_status':'QUANTITATIVE_TRANSFER_VALIDATION_PENDING'})
-    historical_result={'source_report':provenance,'source_PCB_sha256':SOURCE_SHA,'filled_PCB_sha256':FILLED_SHA,'count':54,
+    historical_result={'source_report':provenance,'source_PCB_sha256':SOURCE_SHA,'reference_source_PCB_sha256':REFERENCE_SOURCE_SHA,'filled_PCB_sha256':FILLED_SHA,'count':54,
       'counts':dict(collections.Counter(r['current_disposition'] for r in rows)),'rows':rows,'gnd02_desktop_complete':False,'physical_test_claimed':False}
     require(historical_result['counts']=={'REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION':48,'ISOLATED_TX_STUB_NO_RECEIVE_PATH':6},'Changed historical reconciliation')
-    extended={'source_PCB_sha256':SOURCE_SHA,'filled_PCB_sha256':FILLED_SHA,'status':'EXPANDED_REFERENCE_SCOPE_NOT_FULL_RETURN_ACCEPTANCE',
+    extended={'source_PCB_sha256':SOURCE_SHA,'reference_source_PCB_sha256':REFERENCE_SOURCE_SHA,'filled_PCB_sha256':FILLED_SHA,'status':'EXPANDED_REFERENCE_SCOPE_NOT_FULL_RETURN_ACCEPTANCE',
       'critical_net_set':sorted(CRITICAL),'outer_segment_count':sum(counts.values()),'segments_by_net':dict(counts),'outer_length_mm_by_net':dict(totals),
       'finding_counts':dict(collections.Counter(r['net'] for r in findings)),'findings':findings,'signal_via_count':len(transfers),'signal_vias':transfers,
       'limitations':['Reference polygons and signal centerlines are nominal; no universal etched neck-width or RF-current-distribution proof.',
       'Own signal antipads are explicitly excluded, not credited as ground copper.',
       'CAN_RXD before R302, buffered GPS receive into GPIO18, EN, GPIO0 and indicator/control applicability now appear explicitly.',
       'A nearby through-ground-via is not accepted without a real copper path to both return planes.',
+      'The I26 native geometry reference predates I28; I28 changes only U121 fitted metadata, while exact current-source native ERC/DRC/manufacturing verification is performed separately.',
       'Existing RF matching, CAN receive-branch and private DC return models retain their separate scopes.'],
       'gnd02_desktop_complete':False,'physical_test_claimed':False}
     out.mkdir(parents=True,exist_ok=True)
