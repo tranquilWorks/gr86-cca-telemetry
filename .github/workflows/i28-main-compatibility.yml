@@ -1,0 +1,56 @@
+name: I28 main-model compatibility controls
+on:
+  push:
+    branches: [codex/rvb28-electrical-signoff]
+    paths: [.github/workflows/i28-main-compatibility.yml]
+permissions:
+  contents: read
+jobs:
+  controls:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y ngspice python3-numpy
+      - name: Run solver and load controls without modifying supplier equations
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/i28-compatibility
+          git rev-parse HEAD > /tmp/i28-compatibility/COMMIT.txt
+          ngspice --version > /tmp/i28-compatibility/SOLVER.txt
+          python3 - <<'PY'
+          import urllib.request,pathlib,hashlib,sys,json
+          sys.path.insert(0,'docs/engineering/rvb22/analyses/i28')
+          import run_ti_main_ephemeral as sim
+          from concurrent.futures import ThreadPoolExecutor
+          data=urllib.request.urlopen(urllib.request.Request('https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/LM63615_2D00_Q1_5F00_TRANS.lib',headers={'User-Agent':'Mozilla/5.0'}),timeout=60).read()
+          assert hashlib.sha256(data).hexdigest()=='c03acbd9fa52e710410abffd664c9a1a538ee19f643a06c95ddfe10056fc951b'
+          model=pathlib.Path('/tmp/i28-private-supplier.lib');model.write_bytes(data);model.chmod(0o600)
+          original=sim.circuit
+          def circuit(name,**p):
+              deck=original(name,**p)
+              if name=='U151_12V_smallcap_control':
+                  deck=deck.replace('200u 5)','200u 12)').replace('method=gear','method=trap rshunt=1e12')
+              else:
+                  deck=deck.replace('method=gear','method=trap rshunt=1e12').replace('.tran 25n 0.008 0 25n','.tran 1n 0.008 0 1n')
+              return deck
+          sim.circuit=circuit
+          cases={
+              'U151_12V_smallcap_control':dict(bulk=1e-12,ceramic=.5,preload=.05,runload=.2,stop=.004,delay=.003),
+              'U151_5V_nominal_solver_retry':dict(bulk=470e-6,ceramic=1.,preload=.05,runload=.45,stop=.008,delay=.004)
+          }
+          out=pathlib.Path('/tmp/i28-compatibility')
+          try:
+              with ThreadPoolExecutor(max_workers=2) as pool:
+                  futures=[pool.submit(sim.run,n,p,model,out) for n,p in cases.items()]
+                  results=[f.result() for f in futures]
+              (out/'SUMMARY.json').write_text(json.dumps({'results':results,'scope':'First case changes input/capacitors as compatibility control, NOT fitted board. Second changes solver only. Supplier equations unchanged. No release.'},indent=2)+'\n')
+          finally:model.unlink(missing_ok=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: i28-main-compatibility-derived
+          path: /tmp/i28-compatibility/
+          retention-days: 14
