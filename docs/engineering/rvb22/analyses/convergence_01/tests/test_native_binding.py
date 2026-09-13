@@ -7,6 +7,8 @@ class BindingTests(unittest.TestCase):
         self.board = ["kicad_pcb", ["generator","pcbnew"], ["generator_version","9.0"],
             ["footprint","TEST",["property","MPN","A",["uuid","p"]],
             ["fp_rect",["start",0,0],["end",1,1],["layer","B.CrtYd"],["uuid","f"]],
+            ["fp_line",["start",-1.48,0],["end",1.48,0],["layer","B.SilkS"],["uuid","silk"]],
+            ["fp_line",["start",0,0],["end",1,0],["layer","F.Cu"],["uuid","cu"]],
             ["pad","1","smd","rect",["at",0,0],["net",30,"GND"],["uuid","pad"]]],
             ["segment",["start",1,2],["end",3,4],["layer","F.Cu"],["uuid","s"]],
             ["zone",["net",30],["polygon",["pts",["xy",0,0],["xy",2,0],["xy",2,2]]],
@@ -23,11 +25,12 @@ class BindingTests(unittest.TestCase):
         other=copy.deepcopy(self.board);other[3:]=reversed(other[3:])
         self.assertEqual(content_hash(self.board),content_hash(other))
     def test_property_id(self):self.change([3,2,3,1],"new",True)
-    def test_courtyard_id(self):self.change([3,3,-1,1],"new",True)
+    def test_courtyard_geometry_ignored(self):self.change([3,3,1,1],.1,True)
+    def test_silkscreen_mirror_ignored(self):self.change([3,4,1,1],1.48,True)
+    def test_copper_fp_graphic_bound(self):self.change([3,5,2,1],1.1)
     def test_mpn(self):self.change([3,2,2],"B")
-    def test_courtyard_geometry(self):self.change([3,3,1,1],.1)
-    def test_pad_uuid(self):self.change([3,4,-1,1],"new")
-    def test_pad_net(self):self.change([3,4,-2,1],31)
+    def test_pad_uuid(self):self.change([3,6,-1,1],"new")
+    def test_pad_net(self):self.change([3,6,-2,1],31)
     def test_segment_geometry(self):self.change([4,1,1],1.1)
     def test_zone_outline(self):self.change([5,2,1,1,1],.1)
     def test_regenerated_filled_copper(self):self.change([5,3,2,1,1],1.1,True)
