@@ -1,0 +1,15 @@
+[
+  {"name":"cot_nominal_v2","maxstep":2e-8},
+  {"name":"cot_halfstep10ns_v2","maxstep":1e-8},
+  {"name":"cot_low8V","vin":8.0},
+  {"name":"cot_low7V","vin":7.0},
+  {"name":"cot_charging13V","vin":13.0},
+  {"name":"cot_upper17V","vin":17.0},
+  {"name":"cot_loadstep_0p1_to_0p75","load":0.1,"step_load":0.65},
+  {"name":"cot_C50_L80_R150","cap_scale":0.5,"lscale":0.8,"rscale":1.5},
+  {"name":"cot_slow_softstart","ss":0.00475},
+  {"name":"cot_fast_softstart","ss":0.00175},
+  {"name":"cot_low_reference","vref":1.176},
+  {"name":"cot_high_reference","vref":1.224},
+  {"name":"negative_control_wrong_feedback","negative_control":true,"stop":0.006,"maxstep":2e-8}
+]
