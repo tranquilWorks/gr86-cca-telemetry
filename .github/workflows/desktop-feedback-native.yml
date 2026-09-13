@@ -4,8 +4,9 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - '.github/workflows/desktop-feedback-native.yml'
-      - 'docs/engineering/rvb22/analyses/desktop_wave1/apply_feedback.py'
-      - 'docs/engineering/rvb22/analyses/desktop_wave1/thermal_access.py'
+      - 'docs/engineering/rvb22/analyses/desktop_wave1/**'
+      - 'docs/engineering/rvb22/candidate/cad/**'
+      - 'docs/engineering/rvb22/candidate/firmware/**'
 permissions:
   contents: read
 concurrency:
@@ -16,24 +17,38 @@ jobs:
     if: github.head_ref == 'codex/rvb24-coordinated-closure' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-24.04
     timeout-minutes: 20
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
-      - name: Build isolated exact-source coordinated candidate
+      - name: Bind adopted candidate and retire historical I24 trial replay
         run: |
           mkdir -p feedback_evidence
           git rev-parse HEAD > feedback_evidence/commit.txt
-          python3 docs/engineering/rvb22/analyses/desktop_wave1/apply_feedback.py --out feedback_evidence/cad
-          python3 docs/engineering/rvb22/analyses/desktop_wave1/thermal_access.py feedback_evidence/cad/GR86_CCA_RevB.kicad_pcb
+          cp -a docs/engineering/rvb22/candidate/cad feedback_evidence/cad
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          pcb=pathlib.Path('feedback_evidence/cad/GR86_CCA_RevB.kicad_pcb')
+          actual=hashlib.sha256(pcb.read_bytes()).hexdigest()
+          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+          assert actual==expected, (actual,expected)
+          record={
+            'status':'SUPERSEDED_BY_ADOPTED_SOURCE',
+            'adopted_source_sha256':actual,
+            'historical_trial_base_sha256':'5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8',
+            'historical_trial_scripts':['apply_feedback.py','thermal_access.py'],
+            'reason':'The I24 isolated feedback/thermal-window trial is archival and must not be replayed onto later adopted revisions. I28 directly native-verifies the controlled candidate instead.',
+            'fabrication_release':False
+          }
+          pathlib.Path('feedback_evidence/TRIAL_SUPERSESSION.json').write_text(json.dumps(record,indent=2)+'\n')
+          print(json.dumps(record))
+          PY
       - name: Provision pinned native CAD and firmware tools
         run: |
           bash docs/engineering/rvb22/runtime/hosted/setup_native.sh cad
           bash docs/engineering/rvb22/runtime/hosted/setup_native.sh firmware
-      - name: Verify the exact candidate, all fourteen native postconditions
+      - name: Verify adopted candidate, all fourteen native postconditions
         run: |
           xvfb-run -a /usr/bin/python3 docs/engineering/rvb22/candidate/run_native_candidate.py \
             --cad-dir feedback_evidence/cad \
@@ -44,12 +59,10 @@ jobs:
             --arduino-config "${RUNNER_TEMP}/rvb22-native-tools/config/arduino-cli.yaml" \
             --nimble-dir "${RUNNER_TEMP}/rvb22-native-tools/user/libraries/NimBLE-Arduino" \
             --component-step
-      - name: Preserve verified source as an unreferenced Git blob only
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Confirm source identity and complete native result
         run: |
           python3 - <<'PY'
-          import base64, hashlib, json, os, pathlib, urllib.request
+          import hashlib,json,pathlib
           root=pathlib.Path('feedback_evidence')
           result=json.loads((root/'native/RESULT.json').read_text())
           checks=result['output_postconditions']
@@ -57,14 +70,10 @@ jobs:
           assert result['inputs_unchanged'] is True
           assert len(checks)==14 and all(v['pass'] for v in checks.values()), checks
           source=(root/'cad/GR86_CCA_RevB.kicad_pcb').read_bytes()
-          expected='a5a7916f426f455736b02c3b7c4073b066417838758f50ebd199c354d08fb976'
+          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
           assert hashlib.sha256(source).hexdigest()==expected
-          url='https://api.github.com/repos/tranquilWorks/gr86-cca-telemetry/git/blobs'
-          payload=json.dumps({'encoding':'base64','content':base64.b64encode(source).decode()}).encode()
-          request=urllib.request.Request(url,data=payload,method='POST',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
-          with urllib.request.urlopen(request,timeout=30) as response: blob=json.load(response)
-          record={'source_sha256':expected,'git_blob_sha':blob['sha'],'native_postconditions':14,'branch_modified':False,'fabrication_release':False}
-          (root/'VERIFIED_SOURCE_BLOB.json').write_text(json.dumps(record,indent=2)+'\n')
+          record={'source_sha256':expected,'native_postconditions':14,'branch_modified':False,'fabrication_release':False}
+          (root/'ADOPTED_SOURCE_VERIFICATION.json').write_text(json.dumps(record,indent=2)+'\n')
           print(json.dumps(record))
           PY
       - name: Preserve source, native reports and failure evidence
