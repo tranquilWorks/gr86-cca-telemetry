@@ -9,7 +9,7 @@ class BindingTests(unittest.TestCase):
             ["fp_rect",["start",0,0],["end",1,1],["layer","B.CrtYd"],["uuid","f"]],
             ["fp_line",["start",-1.48,0],["end",1.48,0],["layer","B.SilkS"],["uuid","silk"]],
             ["fp_line",["start",0,0],["end",1,0],["layer","F.Cu"],["uuid","cu"]],
-            ["pad","1","smd","rect",["at",0,0],["net",30,"GND"],["uuid","pad"]]],
+            ["pad","1","smd","rect",["at",0,0],["layers","B.Cu","B.Paste","B.Mask"],["net",30,"GND"],["uuid","pad"]]],
             ["segment",["start",1,2],["end",3,4],["layer","F.Cu"],["uuid","s"]],
             ["zone",["net",30],["polygon",["pts",["xy",0,0],["xy",2,0],["xy",2,2]]],
              ["filled_polygon",["layer","In1.Cu"],["pts",["xy",1,1]]]],
@@ -31,6 +31,10 @@ class BindingTests(unittest.TestCase):
     def test_mpn(self):self.change([3,2,2],"B")
     def test_pad_uuid(self):self.change([3,6,-1,1],"new")
     def test_pad_net(self):self.change([3,6,-2,1],31)
+    def test_pad_layer_order_is_set_like(self):
+        other=copy.deepcopy(self.board);other[3][6][5][1:]=["B.Mask","B.Cu","B.Paste"]
+        self.assertEqual(content_hash(self.board),content_hash(other))
+    def test_pad_layer_membership_bound(self):self.change([3,6,5,2],"F.Paste")
     def test_segment_geometry(self):self.change([4,1,1],1.1)
     def test_zone_outline(self):self.change([5,2,1,1,1],.1)
     def test_regenerated_filled_copper(self):self.change([5,3,2,1,1],1.1,True)
