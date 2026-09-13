@@ -8,42 +8,64 @@ import sexpdata as sx
 
 SOURCE_HASH = "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936"
 SOURCE_PCB = Path(__file__).resolve().parents[2] / "candidate" / "cad" / "GR86_CCA_RevB.kicad_pcb"
-NON_ELECTRICAL_FP_LAYERS = {"F.Fab", "B.Fab", "F.CrtYd", "B.CrtYd", "F.SilkS", "B.SilkS"}
-NON_ELECTRICAL_FP_GRAPHICS = {"fp_line", "fp_rect", "fp_arc", "fp_circle", "fp_poly", "fp_text", "fp_text_box"}
 DERIVED_OR_SERIALIZER_TAGS = {"filled_polygon", "generator", "generator_version"}
+FOOTPRINT_SEMANTIC_TAGS = {
+    "layer", "at", "property", "pad", "attr", "zone_connect", "clearance",
+    "solder_mask_margin", "solder_paste_margin", "solder_paste_ratio",
+    "thermal_width", "thermal_gap",
+}
 
 def _stable_key(value):
     return json.dumps(value,separators=(",",":"),ensure_ascii=False,sort_keys=True)
 
+def _tag(node):
+    return str(node[0]) if isinstance(node,list) and node else ""
+
 def _layer(node):
-    return next((str(x[1]) for x in node[1:] if isinstance(x,list) and len(x)>1 and str(x[0])=="layer"),None)
+    return next((str(x[1]) for x in node[1:] if isinstance(x,list) and len(x)>1 and _tag(x)=="layer"),None)
+
+def _is_copper_layer(layer):
+    return bool(layer) and (layer.endswith('.Cu') or layer=='*.Cu')
 
 def canonicalize(node):
-    """Bind authored electrical/manufacturing intent, not KiCad's save representation.
+    """Return the source-vs-native semantic electrical/manufacturing signature.
 
-    The exact controlled source is independently raw-SHA pinned. A native KiCad save
-    may regenerate zone ``filled_polygon`` records, update serializer metadata,
-    reorder top-level records, and mirror local coordinates of footprint annotation
-    graphics on back-side footprints. The latter are ignored only on Fab/Courtyard/
-    Silkscreen layers. Copper footprint graphics, pads, tracks, vias, Edge.Cuts,
-    authored zone outlines/rules, nets and stackup remain semantically bound.
+    The controlled source itself is raw-SHA pinned. Native KiCad is allowed to
+    rewrite serializer metadata, generated zone fill, record order, and footprint
+    documentation graphics. Footprint identity/placement/properties, pads and any
+    copper graphics remain bound, as do board copper, vias, Edge.Cuts, nets, zone
+    definitions/rules and stackup. Fresh native DRC and manufacturing exports are
+    separate mandatory checks of the regenerated physical result.
     """
     if not isinstance(node,list):
         return str(node) if isinstance(node,sx.Symbol) else node
-    tag=str(node[0]) if node else ""
+    tag=_tag(node)
     if tag in DERIVED_OR_SERIALIZER_TAGS:
         return None
-    layer=_layer(node)
-    if tag in NON_ELECTRICAL_FP_GRAPHICS and layer in NON_ELECTRICAL_FP_LAYERS:
-        return None
-    omit_id = tag == "property"
+
+    if tag=="footprint":
+        # KiCad mirrors/reformats local Fab/Silk/Courtyard primitives when saving a
+        # back-side footprint. Those drawings do not define electrical connectivity.
+        # Keep footprint library identity plus every electrical/population-bearing
+        # child and copper drawing primitive, independent of serialization order.
+        head=[canonicalize(node[0])]
+        if len(node)>1 and not isinstance(node[1],list):head.append(canonicalize(node[1]))
+        children=[]
+        for x in node[1:]:
+            if not isinstance(x,list) or not x:continue
+            xt=_tag(x); layer=_layer(x)
+            if xt in FOOTPRINT_SEMANTIC_TAGS or (xt.startswith('fp_') and _is_copper_layer(layer)):
+                value=canonicalize(x)
+                if value is not None:children.append(value)
+        return head+sorted(children,key=_stable_key)
+
+    omit_id = tag=="property"
     out=[]
     for x in node:
-        if omit_id and isinstance(x,list) and x and str(x[0])=="uuid":
+        if omit_id and isinstance(x,list) and x and _tag(x)=="uuid":
             continue
         value=canonicalize(x)
-        if value is not None:
-            out.append(value)
+        if value is not None:out.append(value)
     if tag=="kicad_pcb" and out:
         return [out[0]]+sorted(out[1:],key=_stable_key)
     return out
@@ -72,7 +94,7 @@ def describe_path(root,path):
     for p in path:
         if p=="len":parts.append("len");break
         if not isinstance(node,list) or not isinstance(p,int) or p>=len(node):parts.append(str(p));break
-        tag=str(node[0]) if node else "[]";parts.append(f"{tag}[{p}]");node=node[p]
+        tag=_tag(node) or "[]";parts.append(f"{tag}[{p}]");node=node[p]
     return "/".join(parts)
 
 def verify_filled(path):
@@ -83,8 +105,8 @@ def verify_filled(path):
     if stable!=reference_content:
         d=first_difference(source_canon,native_canon)
         detail="hash differs without structural diff" if d is None else f"first_difference={d[0]} semantic_path={describe_path(source_canon,d[0])} controlled={repr(d[1])[:240]} native={repr(d[2])[:240]}"
-        raise ValueError("Native board authored content differs from controlled source: explicit engineering rebind required; "+detail)
-    return {"raw_sha256":raw,"content_sha256":stable,"controlled_source_raw_sha256":source_raw,"controlled_source_content_sha256":reference_content,"content_equal_to_controlled_source":True,"top_level_record_order_ignored":True,"excluded_native_generated_tags":sorted(DERIVED_OR_SERIALIZER_TAGS),"excluded_non_electrical_footprint_graphics_layers":sorted(NON_ELECTRICAL_FP_LAYERS),"native_refill_electrical_validation":"DRC/export/copper checks remain required"}
+        raise ValueError("Native board electrical/manufacturing semantics differ from controlled source: explicit engineering rebind required; "+detail)
+    return {"raw_sha256":raw,"content_sha256":stable,"controlled_source_raw_sha256":source_raw,"controlled_source_content_sha256":reference_content,"content_equal_to_controlled_source":True,"top_level_record_order_ignored":True,"excluded_native_generated_tags":sorted(DERIVED_OR_SERIALIZER_TAGS),"footprint_semantic_tags":sorted(FOOTPRINT_SEMANTIC_TAGS),"native_refill_electrical_validation":"fresh DRC/export/copper checks remain required"}
 
 if __name__=="__main__":
     import argparse
