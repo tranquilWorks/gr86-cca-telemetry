@@ -43,18 +43,46 @@ def content_hash(node):
     data = json.dumps(canonicalize(node), separators=(",", ":"), ensure_ascii=False).encode()
     return hashlib.sha256(data).hexdigest()
 
+def first_difference(a,b,path=()):
+    """Return a compact first structural difference for fail-closed CI diagnostics."""
+    if type(a) is not type(b):
+        return path, a, b
+    if isinstance(a,list):
+        if len(a) != len(b):
+            # Identify the first element that diverges before reporting list length.
+            for i,(x,y) in enumerate(zip(a,b)):
+                d=first_difference(x,y,path+(i,))
+                if d is not None:return d
+            return path+("len",),len(a),len(b)
+        for i,(x,y) in enumerate(zip(a,b)):
+            d=first_difference(x,y,path+(i,))
+            if d is not None:return d
+        return None
+    if a != b:return path,a,b
+    return None
+
 def verify_filled(path):
     source_data = SOURCE_PCB.read_bytes()
     source_raw = hashlib.sha256(source_data).hexdigest()
     if source_raw != SOURCE_HASH:
         raise ValueError("Controlled PCB source advanced: explicit engineering rebind required")
-    reference_content = content_hash(sx.loads(source_data.decode()))
+    source_tree=sx.loads(source_data.decode())
+    source_canon=canonicalize(source_tree)
+    reference_content = content_hash(source_tree)
 
     data = Path(path).read_bytes()
     raw = hashlib.sha256(data).hexdigest()
-    stable = content_hash(sx.loads(data.decode()))
+    native_tree=sx.loads(data.decode())
+    native_canon=canonicalize(native_tree)
+    stable = content_hash(native_tree)
     if stable != reference_content:
-        raise ValueError("Native board authored content differs from controlled source: explicit engineering rebind required")
+        d=first_difference(source_canon,native_canon)
+        if d is None:
+            detail="hash differs without structural diff"
+        else:
+            p,x,y=d
+            detail=f"first_difference={p} controlled={repr(x)[:240]} native={repr(y)[:240]}"
+        raise ValueError("Native board authored content differs from controlled source: explicit engineering rebind required; "+detail)
     return {"raw_sha256": raw, "content_sha256": stable,
             "controlled_source_raw_sha256": source_raw,
             "controlled_source_content_sha256": reference_content,
