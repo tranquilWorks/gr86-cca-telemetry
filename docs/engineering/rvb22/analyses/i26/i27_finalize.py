@@ -12,7 +12,7 @@ from pathlib import Path
 
 D=Path(__file__).resolve().parent
 W=D.parents[1]
-SOURCE='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
+SOURCE='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
 EXPECTED_FAILED={7:'CAN_TX_MCU',10:'CAN_TX_MCU',11:'CAN_TX_MCU',12:'CAN_TX_MCU',17:'ESP_EN',19:'ESP_EN',39:'GPS_SEARCH_BUFFER'}
 
 def load(p): return json.loads(p.read_text())
@@ -31,6 +31,7 @@ def build_bound():
     exp=load(D/'EXPANDED_RETURN_SCOPE.json')
     paths=load(D/'TRANSFER_SCREEN_PATHS_EXPLORATORY.json')
     hist=load(D/'HISTORICAL_54_RETURN_FINDINGS.json')
+    req(hist['source_PCB_sha256']==SOURCE and exp['source_PCB_sha256']==SOURCE,'I27 return evidence is not bound to current PCB source')
     req(hist['count']==54 and hist['counts']=={'REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION':48,'ISOLATED_TX_STUB_NO_RECEIVE_PATH':6},'historical return set changed')
     req(len(paths)==60 and {r['index'] for r in paths}==set(range(60)),'60-via inventory changed')
     failed={r['index']:r['net'] for r in paths if r['solution'] is None}
@@ -85,7 +86,7 @@ def finalize():
     reg=load(W/'FINAL_REVIEW_REGISTER.json')
     req(len(reg['rows'])==290,'register row count changed')
     row=next(r for r in reg['rows'] if r['id']=='GND-02')
-    req(row['desktop_status']=='DESKTOP_WORK_REMAINING','GND-02 not in expected I26 state')
+    req(row['desktop_status'] in ('DESKTOP_WORK_REMAINING','COMPLETED_CONDITIONAL_MODEL'),'GND-02 not in expected I26/I27 state')
     row['desktop_status']='COMPLETED_CONDITIONAL_MODEL'; row['prehardware_status']='bounded_inference_closed'
     row['observation']='I27 exhausts desktop return-path engineering. All54 historical findings are individually reconciled:48 removed by coordinated copper revision and6 retained only on the R301-DNP-isolated CAN_TX_MCU stub. Expanded review covers every critical-route adjacent interruption plus60 signal-via reference transfers. All active receive/timing transfers have explicit paired-plane corridors; the seven finite-search misses are four isolated TX-stub vias, two reset/programming EN vias, and one current-limited LED indicator via. Every critical signal via is within5.252mm of a through-ground via, inside a conservative7.5mm lambda/20 screen at a0.5ns edge. Treating each 0.20mm trace interruption as a full move from the0.203mm adjacent reference to the opposite plane gives <0.20V worst 50mA/0.5ns stress bounce and <0.05V on active CAN_RXD. No routing/stitching change is justified before fabrication.'
     row['remaining']='Physical continuity, installed CAN waveform/error-count and EMC/coexistence correlation remain qualification gates. Reopen for copper/stackup/via changes, R301 population/CAN transmit enablement, or repeatable hardware failure attributable to return geometry.'
@@ -118,7 +119,7 @@ def finalize():
     save(W/'FINAL_GATES.json',gates)
 
     audit=load(D/'RECONCILIATION_AUDIT.json')
-    audit['status']='I27_ZERO_ACTIONABLE_PREHARDWARE'; audit['desktop_status_counts']=counts; audit['prehardware_counts']=agg; audit['actionable_prehardware_ids']=[]; audit['rows_reconciled']=sorted(set(audit.get('rows_reconciled',[])+['GND-02'])); audit['physical_tests_performed']=0; audit['PCB_BOM_firmware_changes']=False; audit['fabrication_release']=True; audit['fabrication_release_meaning']='Engineering release to request fabrication only; supplier acceptance and physical qualification remain open and no physical test is claimed.'
+    audit['status']='I27_ZERO_ACTIONABLE_PREHARDWARE'; audit['source_PCB_sha256']=SOURCE; audit['desktop_status_counts']=counts; audit['prehardware_counts']=agg; audit['actionable_prehardware_ids']=[]; audit['rows_reconciled']=sorted(set(audit.get('rows_reconciled',[])+['GND-02'])); audit['physical_tests_performed']=0; audit['PCB_BOM_firmware_changes']=False; audit['fabrication_release']=True; audit['fabrication_release_meaning']='Engineering release to request fabrication only; supplier acceptance and physical qualification remain open and no physical test is claimed.'
     save(D/'RECONCILIATION_AUDIT.json',audit)
 
     md=W/'I26_PREHARDWARE_CLOSURE.md'
