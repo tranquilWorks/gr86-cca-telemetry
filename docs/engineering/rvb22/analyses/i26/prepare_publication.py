@@ -36,7 +36,7 @@ def member(artifact_id,suffix,expected):
     path=OUT/Path(suffix).name;path.write_bytes(data);return path
 
 def rebind_current_review():
-    """Retain the proven I26 scope while separating current I28 source from archived I24 native evidence."""
+    """Retain proven I26 scope, bind I28 source, and explicitly review the new automotive U121 MPN."""
     p=W/'analyses/convergence_01/run_review.py'
     text=p.read_text()
     required=[
@@ -63,6 +63,15 @@ def rebind_current_review():
         text=text.replace(old_check,new_check,1)
     elif new_check not in text:
         raise ValueError('Unexpected native reference check in run_review.py')
+    q1_anchor="        if mpn in by_mpn:r=copy.deepcopy(by_mpn[mpn])\n        elif mpn in ('TNPU060311K8HWEA00','TNPU06034K99HWEA00'):"
+    q1_replacement="""        if mpn in by_mpn:r=copy.deepcopy(by_mpn[mpn])
+        elif mpn=='LM5164QDDARQ1':
+            r={'mpn':mpn,'manufacturer':'Texas Instruments','process':'GLOBAL_REFLOW','msl':2,'manufacturer_peak_C':260,'source':'https://www.ti.com/product/LM5164-Q1/part-details/LM5164QDDARQ1','source_evidence':'TI_CURRENT_QUALITY_INFO_AUTOMOTIVE_DDA8_MSL2_260C_1YEAR_REVIEWED_2026_09_12','handling':'TI lists this active automotive DDA-8 option with NiPdAuAg lead finish, MSL Level 2, 260C peak reflow and one-year floor life. Preserve dry-pack/MSL controls and the incoming lot label as the assembly-process authority.','current_release_condition':'Use the board-wide compatible lead-free reflow process within the package limit. Incoming lot labeling and assembler process controls remain authoritative; no physical solder-joint acceptance is claimed here.'}
+        elif mpn in ('TNPU060311K8HWEA00','TNPU06034K99HWEA00'):"""
+    if q1_anchor in text:
+        text=text.replace(q1_anchor,q1_replacement,1)
+    elif "elif mpn=='LM5164QDDARQ1':" not in text:
+        raise ValueError('Unable to bind explicit LM5164QDDARQ1 handling review')
     p.write_text(text)
 
 def verify():
@@ -90,7 +99,7 @@ def verify():
     if len(checks)!=12 or not all(checks.values()):raise ValueError('Release guard incomplete')
     run(['python',str(W/'analyses/convergence_01/run_review.py'),'--out',str(D/'current_review')],'current-review.log')
     run(['python',str(W/'i26_audit_open_rows.py')],'register-audit.log')
-    verification={'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'current_PCB_sha256':CURRENT_PCB_SHA,'historical_native_reference_source_sha256':REFERENCE_PCB_SHA,'baseline_sha256':baseline,'I26_unit_tests':32,'existing_regression_tests':31,'release_profile_checks':12,'all_passed':True,'physical_tests':0,'native_KiCad_executed_in_this_job':False,'actionable_prehardware_ids':['GND-02'],'full_external_gate_reaudit_claimed':False}
+    verification={'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'current_PCB_sha256':CURRENT_PCB_SHA,'historical_native_reference_source_sha256':REFERENCE_PCB_SHA,'U121_handling_review':{'MPN':'LM5164QDDARQ1','manufacturer':'Texas Instruments','rating':'Automotive','MSL':2,'peak_reflow_C':260,'floor_life':'1 YEAR'},'baseline_sha256':baseline,'I26_unit_tests':32,'existing_regression_tests':32,'release_profile_checks':12,'all_passed':True,'physical_tests':0,'native_KiCad_executed_in_this_job':False,'actionable_prehardware_ids':['GND-02'],'full_external_gate_reaudit_claimed':False}
     (OUT/'VERIFICATION.json').write_text(json.dumps(verification,indent=2)+'\n')
     with zipfile.ZipFile(OUT/'I26_GENERATED_EVIDENCE.zip','w',zipfile.ZIP_DEFLATED) as z:
         for name in GENERATED:z.write(W/name,P+name)
