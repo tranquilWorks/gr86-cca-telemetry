@@ -1,0 +1,29 @@
+name: I32 isolated native toolchain
+on:
+  push:
+    branches: [codex/rvb24-coordinated-closure]
+    paths: [.github/workflows/i32-native-toolchain.yml]
+permissions:
+  contents: read
+jobs:
+  toolchain:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Collect Debian 13 native CAD dependencies
+        run: |
+          set -euo pipefail
+          mkdir -p "$PWD/i32-toolchain/debs"
+          docker run --rm -v "$PWD/i32-toolchain:/export" debian:trixie-slim bash -ec '
+            apt-get update
+            apt-get install --download-only --no-install-recommends -y kicad kicad-footprints kicad-symbols python3-numpy python3-wxgtk4.0
+            cp /var/cache/apt/archives/*.deb /export/debs/
+            apt-cache policy kicad kicad-footprints kicad-symbols > /export/packages.txt
+            cd /export; sha256sum debs/*.deb > SHA256SUMS
+          '
+      - uses: actions/upload-artifact@v4
+        with:
+          name: i32-native-toolchain
+          path: i32-toolchain/
+          retention-days: 7
+          if-no-files-found: error
