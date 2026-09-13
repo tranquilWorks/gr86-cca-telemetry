@@ -11,16 +11,18 @@ SOURCE_PCB = Path(__file__).resolve().parents[2] / "candidate" / "cad" / "GR86_C
 NON_ELECTRICAL_LAYERS = {"F.Fab", "B.Fab", "F.CrtYd", "B.CrtYd"}
 DERIVED_OR_SERIALIZER_TAGS = {"filled_polygon", "generator", "generator_version"}
 
-def canonicalize(node):
-    """Preserve authored electrical geometry/rules; omit only native-generated payloads.
+def _stable_key(value):
+    return json.dumps(value,separators=(",",":"),ensure_ascii=False,sort_keys=True)
 
-    KiCad's zone filler regenerates ``filled_polygon`` records from authored zone
-    outlines, nets, clearances and fill rules. Saving the refilled board may also
-    rewrite the serializer's ``generator``/``generator_version`` metadata. None of
-    those three records defines electrical intent, so source-vs-refill identity
-    excludes them. Authored zone polygons, layer stack, nets, tracks, vias, pads,
-    footprints and manufacturing geometry remain bound. Regenerated copper is
-    independently required to pass native DRC/export/copper analysis.
+def canonicalize(node):
+    """Preserve authored electrical geometry/rules while ignoring native serialization.
+
+    Native refill may regenerate filled zone polygons, update generator metadata and
+    reorder top-level PCB records when the board is saved. Those transformations do
+    not alter authored intent. The canonical form therefore excludes generated fill
+    payloads/serializer metadata and treats top-level PCB records as an unordered
+    multiset. Content inside every footprint, track, via, authored zone definition,
+    net, layer and manufacturing record remains bound byte-semantically.
     """
     if not isinstance(node, list):
         return str(node) if isinstance(node, sx.Symbol) else node
@@ -37,6 +39,10 @@ def canonicalize(node):
         value=canonicalize(x)
         if value is not None:
             out.append(value)
+    if tag == "kicad_pcb" and out:
+        # The leading symbol identifies the document; KiCad is free to reorder the
+        # remaining keyed/object records on save. Preserve every record and duplicate.
+        return [out[0]] + sorted(out[1:],key=_stable_key)
     return out
 
 def content_hash(node):
@@ -45,11 +51,9 @@ def content_hash(node):
 
 def first_difference(a,b,path=()):
     """Return a compact first structural difference for fail-closed CI diagnostics."""
-    if type(a) is not type(b):
-        return path, a, b
+    if type(a) is not type(b):return path,a,b
     if isinstance(a,list):
         if len(a) != len(b):
-            # Identify the first element that diverges before reporting list length.
             for i,(x,y) in enumerate(zip(a,b)):
                 d=first_difference(x,y,path+(i,))
                 if d is not None:return d
@@ -66,39 +70,26 @@ def verify_filled(path):
     source_raw = hashlib.sha256(source_data).hexdigest()
     if source_raw != SOURCE_HASH:
         raise ValueError("Controlled PCB source advanced: explicit engineering rebind required")
-    source_tree=sx.loads(source_data.decode())
-    source_canon=canonicalize(source_tree)
-    reference_content = content_hash(source_tree)
-
-    data = Path(path).read_bytes()
-    raw = hashlib.sha256(data).hexdigest()
-    native_tree=sx.loads(data.decode())
-    native_canon=canonicalize(native_tree)
-    stable = content_hash(native_tree)
+    source_tree=sx.loads(source_data.decode());source_canon=canonicalize(source_tree)
+    reference_content=content_hash(source_tree)
+    data=Path(path).read_bytes();raw=hashlib.sha256(data).hexdigest()
+    native_tree=sx.loads(data.decode());native_canon=canonicalize(native_tree)
+    stable=content_hash(native_tree)
     if stable != reference_content:
         d=first_difference(source_canon,native_canon)
-        if d is None:
-            detail="hash differs without structural diff"
-        else:
-            p,x,y=d
-            detail=f"first_difference={p} controlled={repr(x)[:240]} native={repr(y)[:240]}"
+        detail="hash differs without structural diff" if d is None else f"first_difference={d[0]} controlled={repr(d[1])[:240]} native={repr(d[2])[:240]}"
         raise ValueError("Native board authored content differs from controlled source: explicit engineering rebind required; "+detail)
-    return {"raw_sha256": raw, "content_sha256": stable,
-            "controlled_source_raw_sha256": source_raw,
-            "controlled_source_content_sha256": reference_content,
-            "content_equal_to_controlled_source": True,
-            "excluded_native_generated_tags": sorted(DERIVED_OR_SERIALIZER_TAGS),
-            "native_refill_electrical_validation": "DRC/export/copper checks remain required"}
+    return {"raw_sha256":raw,"content_sha256":stable,
+            "controlled_source_raw_sha256":source_raw,
+            "controlled_source_content_sha256":reference_content,
+            "content_equal_to_controlled_source":True,
+            "top_level_record_order_ignored":True,
+            "excluded_native_generated_tags":sorted(DERIVED_OR_SERIALIZER_TAGS),
+            "native_refill_electrical_validation":"DRC/export/copper checks remain required"}
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("pcb", type=Path)
-    parser.add_argument("--out", type=Path)
-    args = parser.parse_args()
-    result = verify_filled(args.pcb)
-    text = json.dumps(result, indent=2) + "\n"
-    if args.out:
-        args.out.parent.mkdir(parents=True, exist_ok=True)
-        args.out.write_text(text)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument("pcb",type=Path);parser.add_argument("--out",type=Path);args=parser.parse_args()
+    result=verify_filled(args.pcb);text=json.dumps(result,indent=2)+"\n"
+    if args.out:args.out.parent.mkdir(parents=True,exist_ok=True);args.out.write_text(text)
     print(text)
