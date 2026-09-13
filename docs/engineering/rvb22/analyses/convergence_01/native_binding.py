@@ -43,11 +43,12 @@ def canonicalize(node):
     if tag in DERIVED_OR_SERIALIZER_TAGS:
         return None
 
+    # KiCad omits an explicit zero rotation when rewriting `(at x y 0)` as
+    # `(at x y)`. These are identical placements; nonzero rotations remain bound.
+    if tag=="at" and len(node)==4 and isinstance(node[-1],(int,float)) and float(node[-1])==0.0:
+        node=node[:-1]
+
     if tag=="footprint":
-        # KiCad mirrors/reformats local Fab/Silk/Courtyard primitives when saving a
-        # back-side footprint. Those drawings do not define electrical connectivity.
-        # Keep footprint library identity plus every electrical/population-bearing
-        # child and copper drawing primitive, independent of serialization order.
         head=[canonicalize(node[0])]
         if len(node)>1 and not isinstance(node[1],list):head.append(canonicalize(node[1]))
         children=[]
@@ -106,7 +107,7 @@ def verify_filled(path):
         d=first_difference(source_canon,native_canon)
         detail="hash differs without structural diff" if d is None else f"first_difference={d[0]} semantic_path={describe_path(source_canon,d[0])} controlled={repr(d[1])[:240]} native={repr(d[2])[:240]}"
         raise ValueError("Native board electrical/manufacturing semantics differ from controlled source: explicit engineering rebind required; "+detail)
-    return {"raw_sha256":raw,"content_sha256":stable,"controlled_source_raw_sha256":source_raw,"controlled_source_content_sha256":reference_content,"content_equal_to_controlled_source":True,"top_level_record_order_ignored":True,"excluded_native_generated_tags":sorted(DERIVED_OR_SERIALIZER_TAGS),"footprint_semantic_tags":sorted(FOOTPRINT_SEMANTIC_TAGS),"native_refill_electrical_validation":"fresh DRC/export/copper checks remain required"}
+    return {"raw_sha256":raw,"content_sha256":stable,"controlled_source_raw_sha256":source_raw,"controlled_source_content_sha256":reference_content,"content_equal_to_controlled_source":True,"top_level_record_order_ignored":True,"zero_rotation_at_normalized":True,"excluded_native_generated_tags":sorted(DERIVED_OR_SERIALIZER_TAGS),"footprint_semantic_tags":sorted(FOOTPRINT_SEMANTIC_TAGS),"native_refill_electrical_validation":"fresh DRC/export/copper checks remain required"}
 
 if __name__=="__main__":
     import argparse
