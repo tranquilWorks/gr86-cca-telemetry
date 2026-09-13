@@ -48,9 +48,15 @@ def rebind_current_review():
     ]
     missing=[x for x in required if x not in text]
     if missing:raise ValueError('Expected adopted I26 scope is absent: '+str(missing))
-    closure=(W/'I26_PREHARDWARE_CLOSURE.md').read_text()
-    if 'I26-A current result: one actionable desktop criterion remains' not in closure:
-        raise ValueError('Expected I26-A closure contract is absent')
+    closure=json.loads((W/'I26_PREHARDWARE_CLOSURE.json').read_text())
+    if closure.get('original_290_literal_statuses_preserved') is not True:
+        raise ValueError('Original review statuses are not preserved')
+    if closure.get('next_reconciliation',{}).get('target_actionable_prehardware_rows') != 0:
+        raise ValueError('Prehardware closure target is not zero actionable rows')
+    if closure.get('physical_claims_made') is not False:
+        raise ValueError('Desktop closure must not claim physical qualification')
+    if closure.get('current_actionable_prehardware_count',0) not in (0,1):
+        raise ValueError('Unexpected actionable prehardware state')
     old="PCB_HASH='"+REFERENCE_PCB_SHA+"'"
     new="PCB_HASH='"+CURRENT_PCB_SHA+"'\nREFERENCE_PCB_HASH='"+REFERENCE_PCB_SHA+"'"
     if old in text:
