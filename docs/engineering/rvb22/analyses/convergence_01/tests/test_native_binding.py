@@ -26,7 +26,7 @@ class BindingTests(unittest.TestCase):
     def test_pad_uuid(self):self.change([3,4,-1,1],"new")
     def test_pad_net(self):self.change([3,4,-2,1],31)
     def test_segment_geometry(self):self.change([4,1,1],1.1)
-    def test_zone_outline(self):self.change([5,2,1,1,1,1],.1)
+    def test_zone_outline(self):self.change([5,2,1,1,1],.1)
     def test_regenerated_filled_copper(self):self.change([5,3,2,1,1],1.1,True)
     def test_drill(self):self.change([6,2,1],.3)
 if __name__=="__main__":unittest.main()
