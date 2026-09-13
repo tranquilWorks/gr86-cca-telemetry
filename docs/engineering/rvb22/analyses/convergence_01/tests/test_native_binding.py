@@ -19,6 +19,9 @@ class BindingTests(unittest.TestCase):
         self.assertEqual(content_hash(self.board)==content_hash(other),same)
     def test_generator(self):self.change([1,1],"pcbnew-refill",True)
     def test_generator_version(self):self.change([2,1],"9.0.9",True)
+    def test_top_level_record_order(self):
+        other=copy.deepcopy(self.board);other[3:]=reversed(other[3:])
+        self.assertEqual(content_hash(self.board),content_hash(other))
     def test_property_id(self):self.change([3,2,3,1],"new",True)
     def test_courtyard_id(self):self.change([3,3,-1,1],"new",True)
     def test_mpn(self):self.change([3,2,2],"B")
