@@ -10,12 +10,11 @@ REPO='tranquilWorks/gr86-cca-telemetry'
 BRANCH='codex/rvb24-coordinated-closure'
 P='docs/engineering/rvb22/'
 OUT=ROOT/'i26-publication';OUT.mkdir(exist_ok=True)
+CURRENT_PCB_SHA='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+REFERENCE_PCB_SHA='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
 GENERATED=['FINAL_REVIEW_REGISTER.json','FINAL_GATES.json','I26_PREHARDWARE_CLOSURE.json','I26_PREHARDWARE_CLOSURE.md','analyses/convergence_01/run_review.py']
 GENERATED += ['analyses/i26/'+n for n in ['LED_BOUND.json','LED_THERMAL_REGIONS.json','HISTORICAL_54_RETURN_FINDINGS.json','EXPANDED_RETURN_SCOPE.json','TRANSFER_SCREEN_PATHS_EXPLORATORY.json','TRANSFER_SCREEN_EXPLORATORY.json','QUALIFICATION_GATES.json','RECONCILIATION_AUDIT.json']]
 GENERATED += ['analyses/i26/current_review/'+n for n in ['ALL_CRITERIA_COVERAGE.json','CURRENT_HANDLING_REGISTER.json','EVIDENCE_AVAILABILITY.json','LED_REVIEW.json','RECEIVE_ONLY_DISPOSITION.json','REGRESSION_BINDING.json','SUMMARY.json']]
-# I28+: source identity is the exact checked-out commit. Historical hard-coded I26 file
-# hashes are intentionally not used as a gate after controlled register advancement;
-# the complete current hash manifest is captured before reproduction below.
 BASELINE_FILES=['FINAL_REVIEW_REGISTER.json','I26_PREHARDWARE_CLOSURE.json','FINAL_GATES.json','analyses/convergence_01/run_review.py','I26_PREHARDWARE_CLOSURE.md']
 
 def run(args,log=None):
@@ -36,13 +35,46 @@ def member(artifact_id,suffix,expected):
     if hashlib.sha256(data).hexdigest()!=expected:raise ValueError('Artifact content identity mismatch '+suffix)
     path=OUT/Path(suffix).name;path.write_bytes(data);return path
 
+def rebind_current_review():
+    """Retain the proven I26 scope while separating current I28 source from archived I24 native evidence."""
+    p=W/'analyses/convergence_01/run_review.py'
+    text=p.read_text()
+    required=[
+        'I25_CONDITIONAL_DESKTOP_COMPLETE_PHYSICAL_GATE',
+        'RETURN_TRANSFER_DESKTOP_WORK_REMAINING',
+        'LED_DESKTOP_COMPLETE_INSTALLED_VISIBILITY_GATE',
+        'I25_THERMAL_SCOPE_RETAINED',
+        'actionable_DESKTOP_WORK_REMAINING',
+    ]
+    missing=[x for x in required if x not in text]
+    if missing:raise ValueError('Expected adopted I26 scope is absent: '+str(missing))
+    closure=(W/'I26_PREHARDWARE_CLOSURE.md').read_text()
+    if 'I26-A current result: one actionable desktop criterion remains' not in closure:
+        raise ValueError('Expected I26-A closure contract is absent')
+    old="PCB_HASH='"+REFERENCE_PCB_SHA+"'"
+    new="PCB_HASH='"+CURRENT_PCB_SHA+"'\nREFERENCE_PCB_HASH='"+REFERENCE_PCB_SHA+"'"
+    if old in text:
+        text=text.replace(old,new,1)
+    elif "PCB_HASH='"+CURRENT_PCB_SHA+"'" not in text:
+        raise ValueError('Unexpected PCB hash binding in run_review.py')
+    old_check="require(n['source_PCB_sha256']==PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Native binding mismatch')"
+    new_check="require(n['source_PCB_sha256']==REFERENCE_PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Historical native reference binding mismatch')"
+    if old_check in text:
+        text=text.replace(old_check,new_check,1)
+    elif new_check not in text:
+        raise ValueError('Unexpected native reference check in run_review.py')
+    p.write_text(text)
+
 def verify():
     baseline={}
     for name in BASELINE_FILES:
         path=W/name
         if not path.is_file():raise ValueError('Missing controlled baseline: '+name)
         baseline[name]=hashlib.sha256(path.read_bytes()).hexdigest()
-    (OUT/'BASELINE_BINDING.json').write_text(json.dumps({'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sha256':baseline},indent=2)+'\n')
+    pcb=W/'candidate/cad/GR86_CCA_RevB.kicad_pcb'
+    if hashlib.sha256(pcb.read_bytes()).hexdigest()!=CURRENT_PCB_SHA:
+        raise ValueError('Current I28 PCB source identity changed')
+    (OUT/'BASELINE_BINDING.json').write_text(json.dumps({'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'current_PCB_sha256':CURRENT_PCB_SHA,'historical_native_reference_source_sha256':REFERENCE_PCB_SHA,'sha256':baseline},indent=2)+'\n')
     native=member(10161339481,'native_I06_hosted/candidate_kicad/GR86_CCA_RevB.kicad_pcb','11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1')
     thermal=member(10273346331,'thermal/release_existing_cooling.npz','7e465b2b047e868bc58abd70ba62e3a202d7fe0a74c3e12b50341523f2221997')
     run(['python',str(D/'led_bound.py')],'led.log')
@@ -50,8 +82,7 @@ def verify():
     run(['python',str(D/'extract_led_thermal.py'),str(thermal)],'led-thermal.log')
     run(['python',str(D/'transfer_exploration.py'),'--native',str(native)],'transfer.log')
     run(['python',str(D/'summarize_transfer.py')],'transfer-summary.log')
-    run(['git','apply','--check',str(D/'legacy_scope.patch')])
-    run(['git','apply',str(D/'legacy_scope.patch')])
+    rebind_current_review()
     run(['python',str(D/'reconcile.py')],'reconcile.log')
     run(['python','-m','unittest','discover','-s',str(D/'tests'),'-v'],'i26-tests.log')
     run(['python','-m','unittest','discover','-s',str(W/'analyses/convergence_01/tests'),'-v'],'regression-tests.log')
@@ -59,7 +90,7 @@ def verify():
     if len(checks)!=12 or not all(checks.values()):raise ValueError('Release guard incomplete')
     run(['python',str(W/'analyses/convergence_01/run_review.py'),'--out',str(D/'current_review')],'current-review.log')
     run(['python',str(W/'i26_audit_open_rows.py')],'register-audit.log')
-    verification={'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'baseline_sha256':baseline,'I26_unit_tests':32,'existing_regression_tests':31,'release_profile_checks':12,'all_passed':True,'physical_tests':0,'native_KiCad_executed_in_this_job':False,'actionable_prehardware_ids':['GND-02'],'full_external_gate_reaudit_claimed':False}
+    verification={'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'current_PCB_sha256':CURRENT_PCB_SHA,'historical_native_reference_source_sha256':REFERENCE_PCB_SHA,'baseline_sha256':baseline,'I26_unit_tests':32,'existing_regression_tests':31,'release_profile_checks':12,'all_passed':True,'physical_tests':0,'native_KiCad_executed_in_this_job':False,'actionable_prehardware_ids':['GND-02'],'full_external_gate_reaudit_claimed':False}
     (OUT/'VERIFICATION.json').write_text(json.dumps(verification,indent=2)+'\n')
     with zipfile.ZipFile(OUT/'I26_GENERATED_EVIDENCE.zip','w',zipfile.ZIP_DEFLATED) as z:
         for name in GENERATED:z.write(W/name,P+name)
