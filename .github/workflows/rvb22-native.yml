@@ -1,5 +1,5 @@
 name: RVB22 native engineering review
-# I28 temporary source synchronization: make the RevB library copy match the qualified Q1 U121 metadata, then native-verify the committed result.
+# I28: Q1 U121 fitted metadata retains the verified LM5164 DDA symbol geometry; this run binds the repaired source.
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -14,7 +14,7 @@ on:
       - 'docs/engineering/rvb22/analyses/convergence_01/**'
       - 'docs/engineering/rvb22/current/mechanics/I24_trial/THERMAL_PATHS.json'
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: rvb22-native-${{ github.event.pull_request.number }}
   cancel-in-progress: false
@@ -27,51 +27,8 @@ jobs:
       - id: checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          ref: ${{ github.head_ref }}
-          persist-credentials: true
-      - name: Synchronize U121 Q1 library metadata
-        run: |
-          python3 - <<'PYCODE'
-          from pathlib import Path
-          p=Path('docs/engineering/rvb22/candidate/cad/libraries/RevB.kicad_sym')
-          t=p.read_text()
-          marker='(symbol "LM5164DDAR"'
-          start=t.index(marker)
-          depth=0; quoted=False; escaped=False; end=None
-          for i,ch in enumerate(t[start:],start):
-              if quoted:
-                  if escaped: escaped=False
-                  elif ch=='\\': escaped=True
-                  elif ch=='"': quoted=False
-              else:
-                  if ch=='"': quoted=True
-                  elif ch=='(': depth+=1
-                  elif ch==')':
-                      depth-=1
-                      if depth==0:
-                          end=i+1
-                          break
-          assert end is not None
-          block=t[start:end]
-          old_value='(property "Value" "LM5164DDAR"'
-          new_value='(property "Value" "LM5164QDDARQ1"'
-          old_ds='(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5164.pdf"'
-          new_ds='(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5164-q1.pdf"'
-          if old_value in block:
-              block=block.replace(old_value,new_value,1)
-          assert new_value in block
-          if old_ds in block:
-              block=block.replace(old_ds,new_ds,1)
-          assert new_ds in block
-          p.write_text(t[:start]+block+t[end:])
-          PYCODE
-          if ! git diff --quiet -- docs/engineering/rvb22/candidate/cad/libraries/RevB.kicad_sym; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add docs/engineering/rvb22/candidate/cad/libraries/RevB.kicad_sym
-            git commit -m 'I28: synchronize LM5164-Q1 library metadata'
-            git push origin HEAD:${GITHUB_HEAD_REF}
-          fi
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
       - name: Record exact candidate revision
         run: |
           mkdir -p native_setup
