@@ -80,6 +80,18 @@ def rebind_current_review():
         raise ValueError('Unable to bind explicit LM5164QDDARQ1 handling review')
     p.write_text(text)
 
+def rebind_reconciliation():
+    """Bind the established 290-row reconciliation logic to the metadata-only I28 PCB revision."""
+    p=D/'reconcile.py'
+    text=p.read_text()
+    old="SOURCE='"+REFERENCE_PCB_SHA+"'"
+    new="SOURCE='"+CURRENT_PCB_SHA+"'"
+    if old in text:
+        text=text.replace(old,new,1)
+    elif new not in text:
+        raise ValueError('Unexpected PCB hash binding in reconcile.py')
+    p.write_text(text)
+
 def verify():
     baseline={}
     for name in BASELINE_FILES:
@@ -98,6 +110,7 @@ def verify():
     run(['python',str(D/'transfer_exploration.py'),'--native',str(native)],'transfer.log')
     run(['python',str(D/'summarize_transfer.py')],'transfer-summary.log')
     rebind_current_review()
+    rebind_reconciliation()
     run(['python',str(D/'reconcile.py')],'reconcile.log')
     run(['python','-m','unittest','discover','-s',str(D/'tests'),'-v'],'i26-tests.log')
     run(['python','-m','unittest','discover','-s',str(W/'analyses/convergence_01/tests'),'-v'],'regression-tests.log')
