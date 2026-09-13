@@ -364,8 +364,8 @@
     {
       "path": "analyses/i26/LED_BOUND.json",
       "exists": true,
-      "expected_historical_sha256": "6741f84026b96b6ab8f22139c0229221fde643851175789078e2af78e05edcb2",
-      "actual_sha256": "6741f84026b96b6ab8f22139c0229221fde643851175789078e2af78e05edcb2"
+      "expected_historical_sha256": "f639832f15b2799a47c4ede9b63b808effee9d72ce9746fe339aea67d26d0c96",
+      "actual_sha256": "f639832f15b2799a47c4ede9b63b808effee9d72ce9746fe339aea67d26d0c96"
     },
     {
       "path": "analyses/i26/LED_THERMAL_REGIONS.json",
@@ -472,14 +472,14 @@
     {
       "path": "analyses/i26/HISTORICAL_54_RETURN_FINDINGS.json",
       "exists": true,
-      "expected_historical_sha256": "7596adab1e735e4c49ee17a52add04ecb35f26ec47c4e70e64a286187986cadf",
-      "actual_sha256": "7596adab1e735e4c49ee17a52add04ecb35f26ec47c4e70e64a286187986cadf"
+      "expected_historical_sha256": "b4c095550770127f899b986df7edfc44c609e8c102313b5bd326c5b2815c927a",
+      "actual_sha256": "b4c095550770127f899b986df7edfc44c609e8c102313b5bd326c5b2815c927a"
     },
     {
       "path": "analyses/i26/EXPANDED_RETURN_SCOPE.json",
       "exists": true,
-      "expected_historical_sha256": "c0c70be318afb88995ee73bbcec9b491a2754c492f9380603c11477f620b3bf5",
-      "actual_sha256": "c0c70be318afb88995ee73bbcec9b491a2754c492f9380603c11477f620b3bf5"
+      "expected_historical_sha256": "6f6f0f8f947d1b801e00f265e97e133d89e89d2d9fb0956d5f36b794fe500b7c",
+      "actual_sha256": "6f6f0f8f947d1b801e00f265e97e133d89e89d2d9fb0956d5f36b794fe500b7c"
     },
     {
       "path": "analyses/i26/TRANSFER_SCREEN_EXPLORATORY.json",

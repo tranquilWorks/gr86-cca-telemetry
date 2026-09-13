@@ -433,17 +433,17 @@
       "current_release_condition": "Lotlabel/time/profile/cleaning acceptance remains unmeasured; use restrictive compatibleglobal envelope; unknownprofilepart mustnotenter oven until confirmed."
     },
     {
-      "mpn": "LM5164DDAR",
-      "references": "U121",
+      "mpn": "LM5164QDDARQ1",
       "manufacturer": "Texas Instruments",
-      "quantity": 1,
       "process": "GLOBAL_REFLOW",
       "msl": 2,
       "manufacturer_peak_C": 260,
-      "source": "https://www.ti.com/product/LM5164/part-details/LM5164DDAR",
-      "source_evidence": "EXACT_OR_APPLICABLE_PRIMARY_SOURCE",
-      "handling": "Exact TI manufacturer part page read2026-09-09; not borrowed from Q1/non-Q sibling.",
-      "current_release_condition": "Lotlabel/time/profile/cleaning acceptance remains unmeasured; use restrictive compatibleglobal envelope; unknownprofilepart mustnotenter oven until confirmed."
+      "source": "https://www.ti.com/product/LM5164-Q1/part-details/LM5164QDDARQ1",
+      "source_evidence": "TI_CURRENT_QUALITY_INFO_AUTOMOTIVE_DDA8_MSL2_260C_1YEAR_REVIEWED_2026_09_12",
+      "handling": "TI lists this active automotive DDA-8 option with NiPdAuAg lead finish, MSL Level 2, 260C peak reflow and one-year floor life. Preserve dry-pack/MSL controls and the incoming lot label as the assembly-process authority.",
+      "current_release_condition": "Use the board-wide compatible lead-free reflow process within the package limit. Incoming lot labeling and assembler process controls remain authoritative; no physical solder-joint acceptance is claimed here.",
+      "references": "U121",
+      "quantity": 1
     },
     {
       "mpn": "LM63615DQPWPRQ1",
@@ -1213,6 +1213,11 @@
   ],
   "corrected_references": [
     {
+      "reference": "U121",
+      "before": "LM5164DDAR",
+      "after": "LM5164QDDARQ1"
+    },
+    {
       "reference": "R155",
       "before": "TNPW060323K7BEEA",
       "after": "TNPU060311K8HWEA00"
@@ -1227,5 +1232,5 @@
   "numeric_MSL_primary_known_MPNs": 28,
   "unknown_msl_MPNs": 18,
   "physical_assembly_acceptance": false,
-  "pcb_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8"
+  "pcb_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936"
 }

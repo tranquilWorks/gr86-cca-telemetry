@@ -13,7 +13,8 @@ sys.path.insert(0,str(D/'support'))
 import sexpdata as sx
 import check_combined_copper as c
 W=D.parents[1]
-PCB_HASH='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
+PCB_HASH='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+REFERENCE_PCB_HASH='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
 FILLED_HASH='11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1'
 
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -75,6 +76,8 @@ def current_handling(tree,old):
     rows=[]
     for mpn,refs in sorted(groups.items()):
         if mpn in by_mpn:r=copy.deepcopy(by_mpn[mpn])
+        elif mpn=='LM5164QDDARQ1':
+            r={'mpn':mpn,'manufacturer':'Texas Instruments','process':'GLOBAL_REFLOW','msl':2,'manufacturer_peak_C':260,'source':'https://www.ti.com/product/LM5164-Q1/part-details/LM5164QDDARQ1','source_evidence':'TI_CURRENT_QUALITY_INFO_AUTOMOTIVE_DDA8_MSL2_260C_1YEAR_REVIEWED_2026_09_12','handling':'TI lists this active automotive DDA-8 option with NiPdAuAg lead finish, MSL Level 2, 260C peak reflow and one-year floor life. Preserve dry-pack/MSL controls and the incoming lot label as the assembly-process authority.','current_release_condition':'Use the board-wide compatible lead-free reflow process within the package limit. Incoming lot labeling and assembler process controls remain authoritative; no physical solder-joint acceptance is claimed here.'}
         elif mpn in ('TNPU060311K8HWEA00','TNPU06034K99HWEA00'):
             r={'mpn':mpn,'manufacturer':'Vishay','process':'GLOBAL_REFLOW','msl':None,'manufacturer_peak_C':None,'source':'https://www.vishay.com/docs/28779/tnpue3.pdf','source_evidence':'PRIMARY_FAMILY_DATASHEET_28779_REV_04_MAR_2025_REVIEWED','handling':'TNPU e3 manufacturer Assembly section permits automatic wave/reflow/vapor-phase processing and common electronics cleaning solvents. Coating/potting compatibility remains application-specific. Numeric MSL and a numeric production peak are not stated here and are not invented.','current_release_condition':'Use the board-wide compatible process and incoming lot label. TNPU film limit125C and power derating apply; part-family solvent compatibility does not authorize cleaning the full assembly.'}
         else:raise ValueError('New fitted MPN needs explicit handling review: '+mpn)
@@ -85,7 +88,7 @@ def current_handling(tree,old):
 def verify_regressions(pcb,firmware):
     n=read(D/'results/NATIVE_RECHECK.json');f=read(D/'results/FIRMWARE_REGRESSION.json')
     require(digest(pcb)==PCB_HASH,'Candidate PCB changed; invalidate/re-run affected evidence')
-    require(n['source_PCB_sha256']==PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Native binding mismatch')
+    require(n['source_PCB_sha256']==REFERENCE_PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Historical native reference binding mismatch')
     require(n['independent_manufacturing_status']=='PASS_INTENDED_COPPER_AND_EXPORTS','Independent native/export review failed')
     require(all(n[x]==0 for x in ['native_DRC','native_unconnected','native_parity','native_ERC']),'Native findings present')
     require(f['status']=='PASS' and len(f['results'])==9 and all(x['passed']for x in f['results']),'Firmware regression failure')

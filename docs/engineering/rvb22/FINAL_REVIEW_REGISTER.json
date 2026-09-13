@@ -2,7 +2,7 @@
   "checkpoint": "RVB22_I26A_PREHARDWARE_CLOSURE_PROGRESS",
   "date": "2026-09-12",
   "status": "ONE_ACTIONABLE_DESKTOP_CRITERION_REMAINS",
-  "PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
   "firmware_manifest_sha256": "3cc361dbe9ed9dd112bf889d5a3bece277ac45287a5348ebc2ab4255bf74a90f",
   "summary": {
     "criteria": 290,
@@ -3059,7 +3059,7 @@
         "analyses/i26/QUALIFICATION_GATES.json"
       ],
       "evidence_sha256": {
-        "analyses/i26/LED_BOUND.json": "6741f84026b96b6ab8f22139c0229221fde643851175789078e2af78e05edcb2",
+        "analyses/i26/LED_BOUND.json": "f639832f15b2799a47c4ede9b63b808effee9d72ce9746fe339aea67d26d0c96",
         "analyses/i26/LED_THERMAL_REGIONS.json": "ec1c549e6de4c3a7e9297d7c441f9c20e63cf30bd9ce278f67481b39b4388524",
         "analyses/i26/QUALIFICATION_GATES.json": "f04c2783e4e9757aea60847dee2d7d95d57355afb0482bec17cf80cb81a87df3"
       },
@@ -3081,7 +3081,7 @@
       "historical_missing_evidence": [
         "baseline/GR86_CCA_RevB/audit/online_resolution_rvb21/ONLINE_REVIEW_REGISTER.json"
       ],
-      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+      "current_source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "Current electrical finite bounds and independent numerical extrema are available. Native geometry is I20. The 0.125 mm thermal result remains mesh-sensitive and does not prove package temperatures.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",
@@ -4385,7 +4385,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+      "current_source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "I19 finite rail model passes 3,456 circuit cases. Minimum local rail is 3.121029 V and the conservative zero-DC-credit release envelope is 3.594820 V. These are bounded simulations. Full-load thermal closure remains open. Converter current/electrical screens do not establish the thermal part of this criterion.",
@@ -5971,8 +5971,8 @@
         "analyses/i26/GND02_DESKTOP_CLOSURE.json"
       ],
       "evidence_sha256": {
-        "analyses/i26/HISTORICAL_54_RETURN_FINDINGS.json": "7596adab1e735e4c49ee17a52add04ecb35f26ec47c4e70e64a286187986cadf",
-        "analyses/i26/EXPANDED_RETURN_SCOPE.json": "c0c70be318afb88995ee73bbcec9b491a2754c492f9380603c11477f620b3bf5",
+        "analyses/i26/HISTORICAL_54_RETURN_FINDINGS.json": "b4c095550770127f899b986df7edfc44c609e8c102313b5bd326c5b2815c927a",
+        "analyses/i26/EXPANDED_RETURN_SCOPE.json": "6f6f0f8f947d1b801e00f265e97e133d89e89d2d9fb0956d5f36b794fe500b7c",
         "analyses/i26/TRANSFER_SCREEN_EXPLORATORY.json": "612efdb212a5fa055504fa4f153df36c8e9b9a874411dc5ffd16afd2a53231f8",
         "analyses/return_i24/NATIVE_REFERENCE_REVIEW.json": "00554a964f2cd662a7c57b30a718e48a4ae43b84cb894b9e55a3ff1819ddcc2b"
       },
@@ -5995,7 +5995,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+      "current_source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "All RF segments retain their adjacent ground reference. Some digital segments have adjacent-plane gaps with the alternate ground plane present. That is not an uninterrupted nearest reference.",
@@ -15925,7 +15925,7 @@
         ]
       },
       "historical_missing_evidence": [],
-      "current_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+      "current_source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
       "previous_I21_disposition": {
         "closure": "open",
         "observation": "The completed 0.125 mm actual-copper solve gives 143.800 C maximum board region and 105.171 C near C206 at 4.815 W, 65 C bulk air and 70 C landings. Refinement changes the hotspot by 8.376 C. Local ambient and package paths remain unresolved.\nOriginal criterion disposition remains open. The prior detailed assessment is retained in previous_I06_disposition and the historical register; current evidence and remaining conditions govern this row.",

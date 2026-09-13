@@ -4,7 +4,7 @@ from __future__ import annotations
 import collections, copy, hashlib, json
 from pathlib import Path
 D=Path(__file__).resolve().parent; W=D.parents[1]
-SOURCE='5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8'
+SOURCE='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
 IDS={'WCA-07','REG-02','GND-02','THERM-02'}
 
 def require(ok,message):

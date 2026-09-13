@@ -1,6 +1,6 @@
 {
   "status": "PASS_EXECUTED_SOURCE_AND_REGRESSION_CHECKS_CONVERGENCE_REMAINS_OPEN",
-  "source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
   "original_criteria": {
     "open": 146,
     "closed": 140,
@@ -25,6 +25,11 @@
     "physical_testing": false
   },
   "corrected_handling_refs": [
+    {
+      "reference": "U121",
+      "before": "LM5164DDAR",
+      "after": "LM5164QDDARQ1"
+    },
     {
       "reference": "R155",
       "before": "TNPW060323K7BEEA",

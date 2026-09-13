@@ -1,5 +1,6 @@
 {
-  "source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "reference_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
   "filled_PCB_sha256": "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1",
   "status": "EXPANDED_REFERENCE_SCOPE_NOT_FULL_RETURN_ACCEPTANCE",
   "critical_net_set": [
@@ -5771,6 +5772,7 @@
     "Own signal antipads are explicitly excluded, not credited as ground copper.",
     "CAN_RXD before R302, buffered GPS receive into GPIO18, EN, GPIO0 and indicator/control applicability now appear explicitly.",
     "A nearby through-ground-via is not accepted without a real copper path to both return planes.",
+    "The I26 native geometry reference predates I28; I28 changes only U121 fitted metadata, while exact current-source native ERC/DRC/manufacturing verification is performed separately.",
     "Existing RF matching, CAN receive-branch and private DC return models retain their separate scopes."
   ],
   "gnd02_desktop_complete": false,
