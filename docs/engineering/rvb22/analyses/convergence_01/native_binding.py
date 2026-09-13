@@ -9,21 +9,23 @@ import sexpdata as sx
 SOURCE_HASH = "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936"
 SOURCE_PCB = Path(__file__).resolve().parents[2] / "candidate" / "cad" / "GR86_CCA_RevB.kicad_pcb"
 NON_ELECTRICAL_LAYERS = {"F.Fab", "B.Fab", "F.CrtYd", "B.CrtYd"}
-DERIVED_ZONE_PAYLOADS = {"filled_polygon"}
+DERIVED_OR_SERIALIZER_TAGS = {"filled_polygon", "generator", "generator_version"}
 
 def canonicalize(node):
-    """Preserve authored electrical geometry/rules; omit only regenerated payloads/IDs.
+    """Preserve authored electrical geometry/rules; omit only native-generated payloads.
 
-    KiCad's zone filler is expected to regenerate ``filled_polygon`` records from
-    the authored zone outline, net, clearance and fill rules.  Those derived
-    polygons are therefore excluded from source-vs-refill identity; the zone
-    definitions themselves remain fully bound and the regenerated copper is
-    independently checked by native DRC/export/copper analysis.
+    KiCad's zone filler regenerates ``filled_polygon`` records from authored zone
+    outlines, nets, clearances and fill rules. Saving the refilled board may also
+    rewrite the serializer's ``generator``/``generator_version`` metadata. None of
+    those three records defines electrical intent, so source-vs-refill identity
+    excludes them. Authored zone polygons, layer stack, nets, tracks, vias, pads,
+    footprints and manufacturing geometry remain bound. Regenerated copper is
+    independently required to pass native DRC/export/copper analysis.
     """
     if not isinstance(node, list):
         return str(node) if isinstance(node, sx.Symbol) else node
     tag = str(node[0]) if node else ""
-    if tag in DERIVED_ZONE_PAYLOADS:
+    if tag in DERIVED_OR_SERIALIZER_TAGS:
         return None
     layer = next((str(x[1]) for x in node[1:] if isinstance(x, list)
                   and len(x) > 1 and str(x[0]) == "layer"), None)
@@ -57,7 +59,7 @@ def verify_filled(path):
             "controlled_source_raw_sha256": source_raw,
             "controlled_source_content_sha256": reference_content,
             "content_equal_to_controlled_source": True,
-            "derived_zone_fill_excluded": sorted(DERIVED_ZONE_PAYLOADS),
+            "excluded_native_generated_tags": sorted(DERIVED_OR_SERIALIZER_TAGS),
             "native_refill_electrical_validation": "DRC/export/copper checks remain required"}
 
 if __name__ == "__main__":
