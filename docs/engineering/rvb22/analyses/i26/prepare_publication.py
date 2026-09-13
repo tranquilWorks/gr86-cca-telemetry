@@ -136,6 +136,8 @@ def prepare_commit():
     if api('GET','git/ref/heads/'+BRANCH)['object']['sha']!=head:raise ValueError('Branch advanced; do not overwrite')
     allowed={P+n for n in GENERATED}
     modified=set(subprocess.check_output(['git','diff','--name-only'],cwd=ROOT,text=True).splitlines())
+    runtime_only={x for x in modified if '/__pycache__/' in x or x.endswith('.pyc')}
+    modified-=runtime_only
     if modified-allowed:raise ValueError('Out-of-scope tracked mutations: '+str(modified-allowed))
     elements=[];manifest={}
     for name in GENERATED:
@@ -145,7 +147,7 @@ def prepare_commit():
     state=api('GET','git/commits/'+head)
     tree=api('POST','git/trees',{'base_tree':state['tree']['sha'],'tree':elements})
     commit=api('POST','git/commits',{'message':'Reconcile I26 LED and thermal criteria; retain explicit ground-return desktop work','tree':tree['sha'],'parents':[head]})
-    result={'parent':head,'prepared_commit':commit['sha'],'prepared_tree':tree['sha'],'branch_updated':False,'physical_tests':0,'verification':evidence,'sha256':manifest}
+    result={'parent':head,'prepared_commit':commit['sha'],'prepared_tree':tree['sha'],'branch_updated':False,'physical_tests':0,'verification':evidence,'sha256':manifest,'ignored_runtime_only_paths':sorted(runtime_only)}
     (OUT/'PUBLICATION_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
     print('I26_PREPARED_COMMIT '+commit['sha'])
 
