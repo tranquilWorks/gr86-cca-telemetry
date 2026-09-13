@@ -1,0 +1,29 @@
+{
+  "binding": {
+    "repository": "tranquilWorks/gr86-cca-telemetry",
+    "branch": "codex/rvb24-coordinated-closure",
+    "reviewed_head": "ccbf75e8da97895afa900d5a4ae53cc0641fc97c",
+    "PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+    "native_export_commit": "1aa1b2e880d94e36a8017087241ed954d2aa4f3f",
+    "netlist_sha256": "3cc5122bbbc2653570be75a87885d7bc0189e3a511f1c3c515fcf69feddeeedf"
+  },
+  "components": {
+    "U121": {"value":"LM5164QDDARQ1","mpn":"LM5164QDDARQ1","assembly":"FACTORY","pins":{"7":"5V_BST","3":"5V_EN","5":"5V_FB","6":"5V_PGOOD","4":"5V_RON","8":"5V_SW","2":"5V_VIN","1":"GND","9":"GND"}},
+    "R121": {"value":"31.6k /RON","mpn":"TNPW060331K6BEEA","assembly":"FACTORY","pins":{"1":"5V_RON","2":"GND"}},
+    "R122": {"value":"309k /0.1%","mpn":"TNPW0805309KBEEA","assembly":"FACTORY","pins":{"2":"5V_FB","1":"5V_SOURCE"}},
+    "R123": {"value":"100k /0.1%","mpn":"TNPW0603100KBEEA","assembly":"FACTORY","pins":{"1":"5V_FB","2":"GND"}},
+    "R124": {"value":"43.2k /RA","mpn":"TNPW060343K2BEEA","assembly":"FACTORY","pins":{"2":"5V_RIPPLE","1":"5V_SW"}},
+    "R125": {"value":"100k","mpn":"CRCW1206100KFKEA","assembly":"FACTORY","pins":{"2":"5V_EN","1":"5V_VIN"}},
+    "R126": {"value":"26.1k","mpn":"ERA3AEB2612V","assembly":"FACTORY","pins":{"1":"5V_EN","2":"GND"}},
+    "R128": {"value":"0R 5V ISOLATION","mpn":"CRCW12060000Z0EA","assembly":"FACTORY","pins":{"2":"+5V","1":"5V_SOURCE"}},
+    "C121": {"value":"2.2u /100V X7R","mpn":"CGA6N3X7R2A225K230AB","assembly":"FACTORY","pins":{"1":"5V_VIN","2":"GND"}},
+    "C122": {"value":"2.2u /100V X7R","mpn":"CGA6N3X7R2A225K230AB","assembly":"FACTORY","pins":{"1":"5V_VIN","2":"GND"}},
+    "C123": {"value":"100n /100V X7R","mpn":"CGA4J2X7R2A104K125AA","assembly":"FACTORY","pins":{"1":"5V_VIN","2":"GND"}},
+    "C129": {"value":"2.2u /100V X7R","mpn":"CGA6N3X7R2A225K230AB","assembly":"FACTORY","pins":{"1":"5V_VIN","2":"GND"}},
+    "C125": {"value":"3.3n /100V C0G 5%","mpn":"CGA3E2C0G2A332J080AA","assembly":"FACTORY","pins":{"1":"5V_RIPPLE","2":"5V_SOURCE"}},
+    "C126": {"value":"100p /50V C0G","mpn":"CGA3E2C0G1H101J080AA","assembly":"FACTORY","pins":{"2":"5V_FB","1":"5V_RIPPLE"}},
+    "C127": {"value":"22u /25V X7R 10%","mpn":"MCAST32MSB7226KPNA01","assembly":"FACTORY","pins":{"1":"5V_SOURCE","2":"GND"}},
+    "C128": {"value":"22u /25V X7R 10%","mpn":"MCAST32MSB7226KPNA01","assembly":"FACTORY","pins":{"1":"5V_SOURCE","2":"GND"}},
+    "L121": {"value":"47u /MSS1246T","mpn":"MSS1246T-473MLC","assembly":"FACTORY","pins":{"2":"5V_SOURCE","1":"5V_SW"}}
+  }
+}
