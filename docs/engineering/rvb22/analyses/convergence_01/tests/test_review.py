@@ -44,8 +44,10 @@ class ProductGuards(unittest.TestCase):
   with self.assertRaises(ValueError):r.led_review(b,self.header)
  def test_optical_guarantee_not_invented(self):
   x=r.led_review(self.b,self.header);self.assertTrue(all(v['brightness_lower_bound_mcd']==0 for v in x['rows']));self.assertFalse(x['original_WCA_07_closed'])
- def test_handling_updates_exact_two_parts(self):
-  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));self.assertEqual({v['reference']for v in x['corrected_references']},{'R155','R156'});self.assertEqual(x['fitted_references'],153)
+ def test_handling_updates_exact_intentional_parts(self):
+  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));self.assertEqual({v['reference']for v in x['corrected_references']},{'R155','R156','U121'});self.assertEqual(x['fitted_references'],153)
+ def test_Q1_buck_handling_is_explicit(self):
+  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));q=next(v for v in x['rows']if v['mpn']=='LM5164QDDARQ1');self.assertEqual(q['manufacturer'],'Texas Instruments');self.assertEqual(q['msl'],2);self.assertEqual(q['manufacturer_peak_C'],260)
  def test_unknown_new_MPN_fails_closed(self):
   b=copy.deepcopy(self.b);self.change_property(b,'R155','MPN','UNREVIEWED')
   with self.assertRaisesRegex(ValueError,'handling review'):r.current_handling(b,r.read(D/'support/HANDLING_I22.json'))
