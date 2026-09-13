@@ -1,0 +1,57 @@
+{
+  "source": {
+    "repository": "tranquilWorks/gr86-cca-telemetry",
+    "branch": "codex/rvb24-coordinated-closure",
+    "reviewed_head": "ccbf75e8da97895afa900d5a4ae53cc0641fc97c",
+    "PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+    "native_export_commit": "1aa1b2e880d94e36a8017087241ed954d2aa4f3f",
+    "netlist_sha256": "3cc5122bbbc2653570be75a87885d7bc0189e3a511f1c3c515fcf69feddeeedf"
+  },
+  "engine": "ngspice-39, Debian39.3+ds-1, XSPICE analog.cm explicitly loaded",
+  "completed_converter_cases": 13,
+  "full_board_spice_signoff": false,
+  "physical_tests": 0,
+  "production_ecad_changes": false,
+  "step_refinement": {
+    "20ns_to10ns_mean_output_difference_V": 9.497501845423528e-06,
+    "peak_inductor_difference_A": 4.7186999999948576e-05,
+    "max_output_difference_V": 2.349999999928798e-06
+  },
+  "unclosed_scopes": [
+    "Coupled 12V -> both rails -> ESP EN transient did not complete numerically.",
+    "Protection UV/OV/surge cases did not complete numerically. No survival/energy/SOA acceptance.",
+    "LM63615 internal compensation uncorrelated; proprietary vendor model remains encrypted.",
+    "PCB extracted parasitics, true capacitor derating, switching EMI, regulator thermal shutdown and five-minute endurance are not verified by this campaign."
+  ],
+  "model_type": "INDEPENDENT_ARCHITECTURE_DERIVED_SWITCHING_MODEL_NOT_VENDOR_MACROMODEL",
+  "fixture_input_V": 10.6877,
+  "fixture_scope": "U121 input only; prior conservative 12 V operating point, not a complete automotive power chain simulation",
+  "nominal_first_4p75V_s": 0.0029040843,
+  "loadstep": {
+    "first_4p75V_s": 0.00290053206,
+    "after_4ms_min_V": 4.85633173,
+    "after_4ms_max_V": 5.01754028,
+    "steady_ripple_Vpp": 0.0008813999999999211,
+    "rail": "5V",
+    "start_A": 0.1,
+    "end_A_approx": 0.75,
+    "rise_time_s": 1e-05
+  },
+  "cases": [
+    {"name":"cot_nominal_v2","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.997420669412825,"peak_inductor_A":0.598699256},
+    {"name":"cot_low8V","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.967638253353889,"peak_inductor_A":0.572934936},
+    {"name":"cot_low7V","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":7.501878017718978e-08,"peak_inductor_A":7.00574339e-09},
+    {"name":"cot_halfstep10ns_v2","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.997411171910979,"peak_inductor_A":0.598652069},
+    {"name":"cot_charging13V","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":5.013142406307043,"peak_inductor_A":0.612391388},
+    {"name":"cot_upper17V","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":5.0302771291769615,"peak_inductor_A":0.627585693},
+    {"name":"cot_loadstep_0p1_to_0p75","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.9930513009821595,"peak_inductor_A":0.964295187},
+    {"name":"cot_C50_L80_R150","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.994752955257199,"peak_inductor_A":0.576701665},
+    {"name":"cot_slow_softstart","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.997424045799976,"peak_inductor_A":0.574427927},
+    {"name":"cot_fast_softstart","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.997418417159597,"peak_inductor_A":0.645569586},
+    {"name":"cot_low_reference","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":4.900987362969051,"peak_inductor_A":0.589657096},
+    {"name":"cot_high_reference","completed":true,"requested_stop_s":0.008,"actual_stop_s":0.008,"mean_output_V":5.0938403610603125,"peak_inductor_A":0.607625262},
+    {"name":"negative_control_wrong_feedback","completed":true,"requested_stop_s":0.006,"actual_stop_s":0.006,"mean_output_V":8.653572423244281,"peak_inductor_A":0.931450961}
+  ],
+  "portable_entrypoint_nominal_replay": "Completed 8 ms; reproduced 4.997420669412825 V mean, 1249195 points; PORTABLE_REPLAY_VERIFIED.json in attached evidence archive",
+  "numeric_fidelity_note": "Numerical consistency is not physical accuracy. No bootstrap, thermal shutdown, saturation, extracted-layout parasitic or SOA signoff."
+}

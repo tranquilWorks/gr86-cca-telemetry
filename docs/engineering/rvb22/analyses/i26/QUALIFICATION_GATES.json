@@ -1,0 +1,110 @@
+{
+  "revision": "I26-A",
+  "date": "2026-09-12",
+  "physical_tests_performed": false,
+  "scope": "New deterministic gates for the three reconciled desktop rows plus their selected-accessory dependency. Other existing qualification procedures remain in force; this is not a claim that every external gate has been revalidated.",
+  "uncertainty_rule": "Pass upper limits only when measured value plus stated expanded uncertainty is within limit; pass lower limits only when value minus uncertainty is within limit. Record calibration, bandwidth, probe loading and ambient placement.",
+  "gates": [
+    {
+      "id": "I26-LED-01",
+      "criteria": [
+        "WCA-07"
+      ],
+      "status": "NOT_EXECUTED",
+      "predicted": "All seven actual 1kohm chains bounded at3.786302mA including specified allowances. Typical-curve optical inference is not a guaranteed minimum. Fine-mesh LED board neighborhoods plus mesh allowance are approximately79.96..83.63C, not junction or local-air results.",
+      "setup": [
+        "Fit final APT1608SGC population and final enclosure/viewing opening; include D401 GPS search and all six GPIO LEDs.",
+        "Measure resistor voltage and resistance using high-impedance probes; compute each LED current. Use a calibrated photometer/goniometer or equivalent luminous-intensity setup; do not substitute camera autoexposure.",
+        "Characterize at rail3.0/3.3/3.6V on a current-limited isolated component/rail fixture within device ratings. Do not backfeed the assembled regulator. Include cold design condition and65C bulk-air release hot case; record local LED air and pad/case temperature.",
+        "Install actual enclosure and evaluate observer position0.5m and0/plus-or-minus45deg at1000lux and10000lux ambient, then the maximum measured representative dashboard illumination if higher. Use final optical window/shroud, not bare LED."
+      ],
+      "numeric_acceptance": {
+        "per_LED_current_max_mA": 3.787,
+        "six_GPIO_total_max_mA": 22.718,
+        "all_seven_total_max_mA": 26.505,
+        "LED_local_air_max_C": 85,
+        "LED_junction_max_C": 110,
+        "minimum_intensity_at_required_angles_mcd": 0.1,
+        "randomized_on_off_trials_per_condition": 20,
+        "correct_identifications_min": 19,
+        "identification_time_max_s": 1
+      },
+      "allocation_note": "0.1mcd and19/20 recognition are explicit I26 engineering acceptance allocations, not manufacturer guarantees or newly claimed user-specified thresholds. Both radiometric and actual dashboard recognition tests must pass; passing0.1mcd alone does not prove daylight visibility.",
+      "junction_method": "Use a calibrated low-current forward-voltage thermometry method and uncertainty budget, or a validated assembled thermal model correlated to measured pad/case temperature. Do not use the datasheet510K/W figure for pads smaller than its stated16mm2 condition.",
+      "failure_implication": "Optical failure first requires same-footprint higher-efficiency/bin LED or shroud/light-pipe/assembly-value evaluation. Do not reduce resistance below the retained thermal/current envelope without reanalysis. Reopen PCB only if an acceptable assembly/enclosure solution cannot fit; current or temperature failure reopens component/thermal analysis."
+    },
+    {
+      "id": "I26-PWR-01",
+      "criteria": [
+        "REG-02"
+      ],
+      "status": "NOT_EXECUTED",
+      "predicted": "I25 power-flow-coupled allocation2.940859375W, U151loss0.3873375W and U121heat0.608171875W including0.025W magnetic allowance.",
+      "setup": [
+        "Use the controlled minimum, nominal and upper normal input-voltage corners from the existing power/harness contract; do not invent a new automotive input envelope.",
+        "Use simultaneous calibrated voltage/current measurements at input and output of each converter, including return offsets and sense insertion loss. Average instantaneous V*I for switching current; do not multiply unrelated asynchronous meter readings.",
+        "Exercise sustained CAN receive500kbit/s, GPS10Hz, oil processing and BLE120notifications/s,160MHz,+3dBm,WiFi disabled, all indicators on for current budgeting. Record current at>=1kS/s and compute sliding1s and60s means after thermal stabilization."
+      ],
+      "numeric_acceptance": {
+        "main_release_current_sliding_1s_and_60s_max_A": 0.45,
+        "each_converter_efficiency_min": 0.8,
+        "alternative_U151_loss_max_W": 0.3873375,
+        "alternative_U121_total_heat_max_W": 0.608171875,
+        "alternative_U121_conversion_loss_max_W": 0.583171875,
+        "main_profile_voltage_model_bound_V": 3.443
+      },
+      "logic": "Accept efficiency>=80percent OR a properly partitioned measured-loss result no greater than the corresponding C04 loss allocation. Do not count magnetic loss twice, and do not call a current allocation a hardware current limiter.",
+      "failure_implication": "Reopen coupled thermal/power analysis. First test workload/firmware duty and actual conversion loss; assembly/passive or converter/thermal-path changes may be needed. PCB respin is conditional on the corrected power-flow model, not automatic."
+    },
+    {
+      "id": "I26-THERM-01",
+      "criteria": [
+        "THERM-02",
+        "REG-02"
+      ],
+      "status": "NOT_EXECUTED",
+      "predicted": "Existing-cooling0.25mm board maximum107.26665C; screening allowance5.61633C gives112.88298C. Not mesh-converged, not a junction-temperature prediction. C02 is not adopted.",
+      "setup": [
+        "Use final enclosure, orientation, mounting/landing and representative harness in65C bulk-air chamber at upper controlled normal input and I26-PWR-01 workload.",
+        "Place calibrated fine-wire thermocouples in immediate air just outside U201 without touching shield/PCB or disturbing airflow; record at multiple exposed faces including the hottest sampled location. Instrument U201 shield, U121, U151, C206 region, PCB hot region and enclosure/landing.",
+        "For IR, establish emissivity/reflected-temperature correction using a calibrated reference spot; do not report shiny shield IR as true case temperature.",
+        "Continue until all monitored temperatures change by<0.1C/min for30consecutive minutes. A run that never stabilizes does not pass; a safety stop is a failed/aborted gate, not stable operation."
+      ],
+      "numeric_acceptance": {
+        "bulk_air_test_C": 65,
+        "U201_immediate_air_max_C": 85,
+        "main_release_current_max_A": 0.45,
+        "converter_efficiency_min_or_loss_alternative": 0.8,
+        "PCB_model_correlation_screen_max_C": 112.8829809018675,
+        "stability_slope_abs_max_C_per_min": 0.1,
+        "stable_interval_min": 30,
+        "unexpected_resets_or_latchups_max": 0,
+        "LED_local_air_max_C": 85,
+        "LED_junction_max_C": 110
+      },
+      "component_rule": "All component-specific ratings and derating limits in the controlled BOM/datasheet register remain mandatory. Board-region and shield temperatures cannot be relabeled as junction temperatures. Exceeding112.883C reopens model correlation even when a particular component has a higher absolute rating.",
+      "failure_implication": "Reopen I25 on any gate violation. Diagnose workload/loss, installation airflow/landing, assembly contact and measurement error before changing PCB. C02 may only be adopted after new evidence and its separate mechanical/insulation/RF qualification."
+    },
+    {
+      "id": "I26-GPS-ACCESSORY-01",
+      "criteria": [
+        "GPS-01",
+        "REG-02",
+        "THERM-02"
+      ],
+      "status": "NOT_EXECUTED",
+      "setup": [
+        "Instrument the supplied Adafruit851 body and representative cable section at the actual installed harness/accessory location during the same worst-case hot soak. Independently measure delivered bias at the antenna end with a suitable RF-safe bias fixture.",
+        "Test the controlled accessory operating/load corners, then open circuit, current-limited short, and hot plug on an isolated bench fixture before vehicle installation."
+      ],
+      "numeric_acceptance": {
+        "Adafruit851_local_environment_max_C": 60,
+        "delivered_bias_min_V": 2.3,
+        "complete_path_drop_budget_at_25mA_V": 0.7,
+        "complete_path_equivalent_resistance_budget_ohm": 28
+      },
+      "interpretation": "28ohm is the complete bias-path design budget, not a measured pigtail resistance. The approximately28mA module limit and9.8mA antenna draw are not new guaranteed hot/cold values. Apply the exact module fault/current criteria from the retained GPS procedure.",
+      "failure_implication": "Relocate/protect accessory into<=60C zone or approve a new correctly rated equivalent. Bias failure first requires harness/module/load investigation; PCB change only if board feed fails its separately bounded allocation."
+    }
+  ]
+}

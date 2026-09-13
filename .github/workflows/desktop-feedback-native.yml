@@ -1,0 +1,86 @@
+name: Desktop convergence candidate native verification
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/workflows/desktop-feedback-native.yml'
+      - 'docs/engineering/rvb22/analyses/desktop_wave1/**'
+      - 'docs/engineering/rvb22/candidate/cad/**'
+      - 'docs/engineering/rvb22/candidate/firmware/**'
+permissions:
+  contents: read
+concurrency:
+  group: desktop-feedback-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.head_ref == 'codex/rvb24-coordinated-closure' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Bind adopted candidate and retire historical I24 trial replay
+        run: |
+          mkdir -p feedback_evidence
+          git rev-parse HEAD > feedback_evidence/commit.txt
+          cp -a docs/engineering/rvb22/candidate/cad feedback_evidence/cad
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          pcb=pathlib.Path('feedback_evidence/cad/GR86_CCA_RevB.kicad_pcb')
+          actual=hashlib.sha256(pcb.read_bytes()).hexdigest()
+          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+          assert actual==expected, (actual,expected)
+          record={
+            'status':'SUPERSEDED_BY_ADOPTED_SOURCE',
+            'adopted_source_sha256':actual,
+            'historical_trial_base_sha256':'5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8',
+            'historical_trial_scripts':['apply_feedback.py','thermal_access.py'],
+            'reason':'The I24 isolated feedback/thermal-window trial is archival and must not be replayed onto later adopted revisions. I28 directly native-verifies the controlled candidate instead.',
+            'fabrication_release':False
+          }
+          pathlib.Path('feedback_evidence/TRIAL_SUPERSESSION.json').write_text(json.dumps(record,indent=2)+'\n')
+          print(json.dumps(record))
+          PY
+      - name: Provision pinned native CAD and firmware tools
+        run: |
+          bash docs/engineering/rvb22/runtime/hosted/setup_native.sh cad
+          bash docs/engineering/rvb22/runtime/hosted/setup_native.sh firmware
+      - name: Verify adopted candidate, all fourteen native postconditions
+        run: |
+          xvfb-run -a /usr/bin/python3 docs/engineering/rvb22/candidate/run_native_candidate.py \
+            --cad-dir feedback_evidence/cad \
+            --firmware-dir docs/engineering/rvb22/candidate/firmware \
+            --output feedback_evidence/native \
+            --kicad-cli kicad-cli --pcbnew-python /usr/bin/python3 \
+            --arduino-cli "${RUNNER_TEMP}/rvb22-native-tools/bin/arduino-cli" \
+            --arduino-config "${RUNNER_TEMP}/rvb22-native-tools/config/arduino-cli.yaml" \
+            --nimble-dir "${RUNNER_TEMP}/rvb22-native-tools/user/libraries/NimBLE-Arduino" \
+            --component-step
+      - name: Confirm source identity and complete native result
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('feedback_evidence')
+          result=json.loads((root/'native/RESULT.json').read_text())
+          checks=result['output_postconditions']
+          assert result['status']=='NATIVE_OUTPUTS_COMPLETE', result['status']
+          assert result['inputs_unchanged'] is True
+          assert len(checks)==14 and all(v['pass'] for v in checks.values()), checks
+          source=(root/'cad/GR86_CCA_RevB.kicad_pcb').read_bytes()
+          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+          assert hashlib.sha256(source).hexdigest()==expected
+          record={'source_sha256':expected,'native_postconditions':14,'branch_modified':False,'fabrication_release':False}
+          (root/'ADOPTED_SOURCE_VERIFICATION.json').write_text(json.dumps(record,indent=2)+'\n')
+          print(json.dumps(record))
+          PY
+      - name: Preserve source, native reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: desktop-feedback-${{ github.event.pull_request.head.sha }}
+          path: feedback_evidence/
+          retention-days: 14
+          if-no-files-found: error
