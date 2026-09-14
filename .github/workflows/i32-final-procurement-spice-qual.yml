@@ -1,0 +1,48 @@
+name: I32 final procurement SPICE qualification
+on:
+  push:
+    branches: [agent/i32-jlc-substitution-spice]
+    paths:
+      - .github/workflows/i32-final-procurement-spice-qual.yml
+      - docs/engineering/rvb22/analyses/i32/final_procurement_spice_qual.py
+permissions:
+  contents: read
+jobs:
+  spice:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/i32-jlc-substitution-spice
+          fetch-depth: 1
+      - name: Install ngspice and numerical runtime
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ngspice python3-numpy
+          ngspice --version
+          python3 --version
+      - name: Run final procurement-bound I32 transient suite
+        working-directory: docs/engineering/rvb22/analyses/i32
+        run: |
+          set -euo pipefail
+          python3 final_procurement_spice_qual.py 2>&1 | tee final_procurement_spice_results.log
+      - name: Pack final qualification evidence
+        if: always()
+        working-directory: docs/engineering/rvb22/analyses/i32
+        run: |
+          set -euo pipefail
+          tar -czf i32-final-procurement-spice-evidence.tar.gz substitution_spice_results final_procurement_spice_results.log substitution_spice_qual.py final_procurement_spice_qual.py
+          sha256sum i32-final-procurement-spice-evidence.tar.gz > i32-final-procurement-spice-evidence.sha256
+          cat substitution_spice_results/QUALIFICATION_SUMMARY.json || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: i32-final-procurement-spice-evidence
+          path: |
+            docs/engineering/rvb22/analyses/i32/i32-final-procurement-spice-evidence.tar.gz
+            docs/engineering/rvb22/analyses/i32/i32-final-procurement-spice-evidence.sha256
+            docs/engineering/rvb22/analyses/i32/substitution_spice_results/QUALIFICATION_SUMMARY.json
+          retention-days: 7
+          if-no-files-found: warn
