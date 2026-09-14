@@ -1,0 +1,62 @@
+{
+  "status": "FULLY_READY_FOR_REDLINE",
+  "date": "2026-09-14",
+  "scope": "Final procurement and electrical-function gate prior to CAD redline.",
+  "inventory_closed": true,
+  "unresolved_non_gps_procurement_choices": 0,
+  "cad_redline_started": false,
+  "pre_redline_cad_baseline": "e5ef8425dbe59c99e99eabb75c04342a47b27561",
+  "final_procurement_simulation": {
+    "repository": "tranquilWorks/gr86-cca-telemetry",
+    "baseline_pr": 46,
+    "qualification_branch": "agent/i32-jlc-substitution-spice",
+    "qualification_head": "f27f48357ae49480ce82f324f700159c732640ef",
+    "workflow_run_id": 34899316734,
+    "job_id": 104161159316,
+    "solver": "ngspice 42 / KLU",
+    "completed_cases": 32,
+    "normal_cases": 17,
+    "normal_sequence_ok": true,
+    "status": "PASS",
+    "main_normal_min_V": 3.12786634,
+    "reset_limit_V": 3.11605,
+    "reset_margin_mV": 11.81634,
+    "main_max_V": 3.57660977,
+    "upper_limit_V": 3.6,
+    "overshoot_margin_mV": 23.39023,
+    "VIN_minus_source_min_V": -0.06700731,
+    "reverse_margin_mV": 232.99269,
+    "L121_peak_A": 0.942206123,
+    "L121_Isat_A": 2.5,
+    "L121_Isat_margin_A": 1.557793877,
+    "L121_Isat_utilization_pct": 37.68824492,
+    "high_reference_1us_peak_V": 3.5766084,
+    "superstress_30p08uH_pass": true
+  },
+  "thermal_screen": {
+    "existing_I32_stacked_board_screen_C": 113.69713864995664,
+    "R156_R169_rating_C": 125,
+    "margin_to_125C_C": 11.30286135004336,
+    "physical_validation_remains": true
+  },
+  "inventory": [
+    {"refs":"C152,C154,C165","original":"CGA3E3X7R1H224K080AB","final_mpn":"CGA3E3X7R1H224KT0Y0N","jlc":"C342967","package":"0603","source":"JLC","simulation":"PASS_ALIAS"},
+    {"refs":"L121","original":"MSS1246T-473MLC","final_mpn":"BPCI00121280470M00","jlc":"C6471075","package":"12x12mm SMD","source":"JLC_PREORDER_PATH","simulation":"PASS_FULL_TRANSIENT_AND_SUPERSTRESS"},
+    {"refs":"R155","original":"TNPU060311K8HWEA00","final_mpn":"PTFR0603B11K8N9","jlc":"C19679768","package":"0603","source":"JLC_PREORDER_PATH","simulation":"PASS"},
+    {"refs":"R156","original":"TNPU06035K05HWEA00","final_mpn":"PLT1206Z5051LBTS","jlc":"C4074185","package":"1206","source":"JLC_PREORDER","simulation":"PASS_FINAL_EXACT"},
+    {"refs":"R160","original":"TNPU06036K34HWEA00","final_mpn":"RT0805BRB076K34L","jlc":"C864499","package":"0805","source":"JLC_PREORDER","simulation":"PASS_FINAL_EXACT"},
+    {"refs":"R161,R163,R170","original":"TNPU06031K00HWEA00","final_mpn":"PTFR0603Q1K00N9","jlc":"C23067434","package":"0603","source":"JLC","simulation":"PASS"},
+    {"refs":"R162","original":"TNPU06034K70HWEA00","final_mpn":"PTFR0603Q4K70N9","jlc":"C23067437","package":"0603","source":"JLC_PREORDER_PATH","simulation":"PASS"},
+    {"refs":"R169","original":"TNPU06033K01HWEA00","final_mpn":"PTFR0603B3K01N9","jlc":"C2692830","package":"0603","source":"JLC","simulation":"PASS_FINAL_EXACT"},
+    {"refs":"U101","original":"LTC4367HMS8#WTRPBF","final_mpn":"LTC4367HMS8#PBF","jlc":"C688370","package":"MSOP-8","source":"JLC","simulation":"PASS_FUNCTIONAL","qualification_note":"non-W controlled-manufacturing pedigree accepted by owner"},
+    {"refs":"F101","final_mpn":"UNCHANGED","source":"LOCAL_INSTALL","simulation":"RETAINED"},
+    {"refs":"U401","final_mpn":"PA1616D_UNCHANGED","source":"LOCAL_INSTALL","simulation":"OUTSIDE_SUBSTITUTION_SCOPE"}
+  ],
+  "redline_implementation": {
+    "R156_footprint": "0603_to_1206",
+    "R160_footprint": "0603_to_0805",
+    "L121": "adapt_and_verify_land_pattern_courtyard_placement",
+    "regenerate": ["BOM","PnP","manufacturing outputs"],
+    "rerun": ["ERC","DRC","unconnected","schematic-PCB parity","source binding","assembly checks","native CAD gates"]
+  }
+}
