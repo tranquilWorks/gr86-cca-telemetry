@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "name": "b330_r0.47_load",
+    "bulk": 330,
+    "damp": 0.47,
+    "mode": "load",
+    "slow": false
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60533,
+  "main_peak": 3.40907404,
+  "active_min": 3.23830124,
+  "final_main": 3.30000922,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 1.6043595300000004,
+  "input_switch_peak_A": 0.80318831,
+  "I151max": 0.958543663,
+  "I121max": 0.884342093,
+  "ready_rises": 1,
+  "load_release_peak": 3.40907404,
+  "waveform_sha256": "3ad02dd71dc3cc9f1428e6c215f528749df43bde842507078984ac5c944c22ce"
+}

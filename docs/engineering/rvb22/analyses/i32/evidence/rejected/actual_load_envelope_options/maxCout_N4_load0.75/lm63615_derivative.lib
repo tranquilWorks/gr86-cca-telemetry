@@ -1,0 +1,43 @@
+* I31 LM63615-family architecture derivative. ORIGINAL behavioral approximation.
+* No encrypted vendor content; no claimed match to the undisclosed TI compensator.
+* All external L/C/R and feedback divider are supplied by the calling circuit.
+.func clip(x,lo,hi) {min(max(x,lo),hi)}
+.func pos(x) {(x+sqrt(x*x+1e-16))/2}
+.model body_diode D(Is=1n N=1.3 Rs=.05 Cjo=100p)
+* ENABLE is normalized computational state, NOT a replacement physical EN pin.
+.subckt U151_DERIV VIN SW OUT FB ENABLE PARAMS: VREF=1 TSS=1.6m TDELAY=1m
++ TFPWM=8m KP=14.4 FZ=1000 FP=80000 TI=3u LNOM=15u
++ IPOS=1.7 INEG=.75 ETA=.8
+* Time since valid input. Discharge when UVLO asserts.
+Btime 0 age I={v(ENABLE)>.5 ? (v(age)<1 ? 1 : 0) : -v(age)/1u}
+Cage age 0 1 IC=0
+Rage age 0 1e12
+Bactive active 0 V={v(ENABLE)>.5 && v(age)>TDELAY ? 1 : 0}
+Bref ref 0 V={VREF*clip((v(age)-TDELAY)/TSS,0,1)}
+* FPWM negative current is NOT enabled during the documented startup interval.
+Bneg neg 0 V={v(age)>TFPWM ? INEG : 0}
+* Type-II outer loop, explicitly uncertain coefficients. Integrator back calculation
+* acts only at current saturation; it is not an output-voltage clamp.
+Breq req 0 V={KP*(v(ref)-v(FB))+v(integral)}
+Bcmd cmd 0 V={v(active)>.5 ? min(max(v(req),-v(neg)),IPOS) : 0}
+Bint 0 integral I={v(active)>.5 ? 6.28318530718*FZ*KP*(v(ref)-v(FB))+100000*(v(cmd)-v(req)) : -v(integral)/10u}
+Cint integral 0 1 IC=0
+Rint integral 0 1e12
+* Finite outer high-frequency pole and finite inner current response.
+Rpole cmd command 1
+Cpole command 0 {1/(6.28318530718*FP)} IC=0
+Bdrive drive 0 V={clip(v(OUT)+(LNOM/TI)*(v(command)-i(Vsense)),0,max(v(VIN),0))}
+* Smooth control switch, disabled high impedance plus explicit diode paths.
+Ractivate active active_f 1k
+Cactivate active_f 0 100p IC=0
+Bbridge drive sense I={v(drive,sense)*(1e-12+clip(v(active_f),0,1)/.005)}
+Vsense sense SW 0
+* Preserve signed power. Regenerative energy returns to VIN, unlike the old proxy.
+* Converter losses are assumed, not inferred from this reduced model.
+Binput VIN 0 I={v(active)>.5 ? (pos(v(drive)*i(Vsense))/ETA-ETA*pos(-v(drive)*i(Vsense)))/max(v(VIN),.5) : 0}
+Dlo 0 SW body_diode
+Dhi SW VIN body_diode
+* Documented approximate output discharge when disabled; actual discharge is not
+* a precision current clamp. Test the real hardware for power-down/backfeed.
+Bdis SW 0 I={v(active)<.5 ? max(v(SW),0)/2500 : 0}
+.ends U151_DERIV

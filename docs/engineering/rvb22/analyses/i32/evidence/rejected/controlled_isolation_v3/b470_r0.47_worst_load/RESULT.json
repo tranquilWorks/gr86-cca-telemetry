@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "name": "b470_r0.47_worst_load",
+    "bulk": 470,
+    "damp": 0.47,
+    "mode": "load",
+    "slow": true,
+    "highref": true,
+    "bulk_scale": 0.448,
+    "ceramic": 0.5,
+    "esr": 0.1
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60426,
+  "main_peak": 3.56267216,
+  "active_min": 3.2297392,
+  "final_main": 3.35155956,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 1.44574056,
+  "input_switch_peak_A": 0.674533235,
+  "I151max": 0.791178484,
+  "I121max": 0.753829472,
+  "ready_rises": 1,
+  "load_release_peak": 3.56267216,
+  "waveform_sha256": "681163408f076f8f90956daa1d0fdf5681e9b1631f87dd9d44ab87601c212ce9"
+}

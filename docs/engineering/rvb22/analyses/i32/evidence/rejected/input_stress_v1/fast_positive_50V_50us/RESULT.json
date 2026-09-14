@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "name": "fast_positive_50V_50us",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12",
+    "stop": 0.1,
+    "step": 2e-07,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "174ccbc15329eb5b8add89e017a3727649b6e355e7604731bfcb9185d641c5bb",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/fast_positive_50V_50us/waveform.tsv not found."
+}

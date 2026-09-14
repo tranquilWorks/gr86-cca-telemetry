@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "iso1_constant75",
+    "bulk_uF": 470,
+    "damp": 0.082,
+    "top": 11800,
+    "isolate": true,
+    "mode": "constant75",
+    "constant": 0.75
+  },
+  "returncode": 0,
+  "completed": true,
+  "samples": 71433,
+  "end_s": 0.12,
+  "main_peak": 2.67228879,
+  "main_final": 1.95761235,
+  "vin_min_output_delta": -1.8113576802742475e-18,
+  "ready_final": 0.0,
+  "u151_average_current_max": 1.67255013,
+  "u121_average_current_max": 1.03939853,
+  "active_min": 1.25783222,
+  "waveform_sha256": "61a344472bab1f43299bef264f6f99362d38026e738f013b1445b6322ab3c4a9"
+}

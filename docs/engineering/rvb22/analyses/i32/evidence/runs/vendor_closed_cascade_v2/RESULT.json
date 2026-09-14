@@ -1,0 +1,108 @@
+{
+  "status": "ABORTED_NOT_STARTUP_PROOF",
+  "requested_stop_s": 0.024,
+  "end_s": 0.021307739534347413,
+  "finite": true,
+  "samples": 14521189,
+  "columns": [
+    "time",
+    "v(vin5)",
+    "v(source5)",
+    "v(rail5)",
+    "v(vin)",
+    "v(source)",
+    "v(main)",
+    "i(l121)",
+    "i(l151)",
+    "i(vpass)",
+    "v(enable)",
+    "v(en151)",
+    "v(switchon)",
+    "v(snsevent)"
+  ],
+  "full_waveform_sha256": "1b78a48e8ee8e5b82f5c81eebd503f0f4972b0f61a2c8181e6f66c548125ad5b",
+  "extrema": {
+    "time": {
+      "min": 0.0,
+      "max": 0.021307739534347413,
+      "last": 0.021307739534347413
+    },
+    "v(vin5)": {
+      "min": -3.3108818840436866e-108,
+      "max": 10.687991524094569,
+      "last": 10.57766109809419
+    },
+    "v(source5)": {
+      "min": -3.3866527956664963e-97,
+      "max": 5.011671122732279,
+      "last": 4.939933167380865
+    },
+    "v(rail5)": {
+      "min": -3.388172581924431e-97,
+      "max": 5.010222803100369,
+      "last": 4.933097387053384
+    },
+    "v(vin)": {
+      "min": -2.3883695575795824e-18,
+      "max": 5.004060821628515,
+      "last": 4.873197858002211
+    },
+    "v(source)": {
+      "min": -2.2309806112067065e-18,
+      "max": 2.5432018510243117,
+      "last": 2.5432018510243117
+    },
+    "v(main)": {
+      "min": -2.115910087433174e-18,
+      "max": 2.523425909958215,
+      "last": 2.523425909958215
+    },
+    "i(l121)": {
+      "min": -6.703395547562822e-07,
+      "max": 1.5070286218780151,
+      "last": 1.3247898378099716
+    },
+    "i(l151)": {
+      "min": -3.605279499781309e-08,
+      "max": 2.164459315160779,
+      "last": 2.1644592056038823
+    },
+    "i(vpass)": {
+      "min": -0.004111994465318958,
+      "max": 1.3796334185462342,
+      "last": 1.3311170382763322
+    },
+    "v(enable)": {
+      "min": 9.99999997999e-10,
+      "max": 0.9999900000989889,
+      "last": 0.9999900000989889
+    },
+    "v(en151)": {
+      "min": -2.808954417973974e-97,
+      "max": 1.72214474277893,
+      "last": 1.72214474277893
+    },
+    "v(switchon)": {
+      "min": 0.0,
+      "max": 0.9999999999989999,
+      "last": 0.9999999999989999
+    },
+    "v(snsevent)": {
+      "min": 0.0,
+      "max": 0.0,
+      "last": 0.0
+    }
+  },
+  "failure_log_lines": [
+    "doAnalyses: TRAN:  Timestep too small; time = 0.0213077, timestep = 6.25e-20: trouble with node \"xu121.x_u1_u59.ch\"",
+    "tran simulation(s) aborted"
+  ],
+  "scope": "Historical I32 170-part, three-input-cap/330uF trial. Unmodified TI LM5164 library; downstream controller derivative. Not the selected177-part source.",
+  "files_sha256": {
+    "run.log": "053a47a19a16194b1d70b911f0253e1f11a8753e2827786b7c23bbbcd0c9ac28",
+    "lm63615_derivative.lib": "4f6a4e03df1ed2ffde2e171591b34728107e5ac444baba3c9c5afe4732a6ef90",
+    "LM5164-Q1_TRANS.LIB": "e11ddf6995163f98eda6205de6a7cb74c8a3982b7328467de8d806286e894b5d",
+    "case.cir": "fc51824dcdfbc0816cc08a473b86d7908bff4afc9623268e5b774ca63ee8cefa",
+    "completion.txt": "00f67e4ead944903d72eaab8e5206883fe30d5578459b9ca5ab900285aa86bd9"
+  }
+}

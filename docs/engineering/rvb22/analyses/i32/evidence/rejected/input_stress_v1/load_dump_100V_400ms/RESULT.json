@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "name": "load_dump_100V_400ms",
+    "pwl": "0 0 1m 0 2m 12 60m 12 65m 100 465m 100 470m 12",
+    "stop": 0.53,
+    "step": 2e-06,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.067,
+        0.01
+      ],
+      [
+        "reconnect",
+        0.47,
+        0.52,
+        0.05
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "2ec58c864b727c1b036390341fc807806f453892d57d3f07ee4fa46b01452dbe",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/load_dump_100V_400ms/waveform.tsv not found."
+}

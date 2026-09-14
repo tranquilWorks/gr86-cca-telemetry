@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "name": "external5",
+    "external5": true
+  },
+  "returncode": 0,
+  "deck_sha256": "c047f396bf616098494f1b55087f0a49bd159e114ef14e80ff919813ac23bc39",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60363,
+  "main_peak_V": 3.33654763,
+  "main_final_V": 3.25993028,
+  "active_min_V": 3.19791394,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 1.6342197900000004,
+  "input_switch_peak_A": 1.03514211,
+  "input_switch_reverse_A": -1.08682186e-74,
+  "I151_max_A": 1.22268427,
+  "I121_max_A": 0.0780574646,
+  "ready_rises": 1,
+  "sns_faults": 0,
+  "R158_peak_W": 0.43964337184505164,
+  "R158_energy_J": 0.0006028542968503566,
+  "R158_RMS_A": 0.10338716541488142,
+  "waveform_sha256": "21f8956a76ceb1afdd7ea05cb7c7d36b1eb080fb2c5ed64e7e2c03413a62b20b"
+}

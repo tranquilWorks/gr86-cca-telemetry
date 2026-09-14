@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "name": "I32_final_startup_load0",
+    "pwl": "0 0 1m 0 2m 12 ",
+    "stop": 0.08,
+    "load": 0,
+    "cap_scale": 1.265,
+    "events": [
+      [
+        "inrush",
+        0.02,
+        0.05,
+        0.03
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  "returncode": 0,
+  "deck_sha256": "0ba6990a2b1a4d3459bee4607e622e2f195249d81c4bee8e104aa5358e8b435d",
+  "completed": false,
+  "error": ""
+}

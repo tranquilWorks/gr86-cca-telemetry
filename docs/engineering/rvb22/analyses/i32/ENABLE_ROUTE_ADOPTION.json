@@ -1,0 +1,13 @@
+{
+  "removed_pg_dead_end_segments": [
+    "(segment (start 42.7 13.3) (end 40.4375 13.3) (width 0.15) (layer \"In2.Cu\") (net 136) (uuid \"2ae5befd-87fb-5ad3-a93d-8fa070942ca1\"))",
+    "(segment (start 40.4375 13.3) (end 39.1625 12.025) (width 0.15) (layer \"In2.Cu\") (net 136) (uuid \"97030c11-9ee1-5a23-9f9a-92ece1d7a432\"))",
+    "(segment (start 39.1625 12.025) (end 40.4375 13.3) (width 0.15) (layer \"In2.Cu\") (net 136) (uuid \"fdfbdd8a-b6de-59fd-82b3-89cc4ed3a7e8\"))",
+    "(segment (start 40.4375 13.3) (end 42.7 13.3) (width 0.15) (layer \"In2.Cu\") (net 136) (uuid \"ff2399a0-3099-5254-9528-0ce8140a3d5a\"))"
+  ],
+  "reassigned_via": [
+    39.1625,
+    12.025
+  ],
+  "reason": "Existing U151 EN escape via reused after PG-to-EN divider insertion. Removed only the duplicated dead-end PG spur; PG remains connected from C165/U152 to Q153 via42.7,13.3."
+}

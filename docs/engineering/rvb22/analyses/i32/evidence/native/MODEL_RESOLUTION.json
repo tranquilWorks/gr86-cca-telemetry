@@ -1,0 +1,1269 @@
+{
+  "source_pcb_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "export_copy_sha256": "58873009934ae0f6008b0e6f43245bb01d4bdfe094ef4b114f74a65f173f375d",
+  "model_entries": [
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "bytes": 40272
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "bytes": 40272
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "bytes": 52730
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S3-WROOM-1.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/RF_Module.3dshapes/ESP32-S3-WROOM-1.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+      "sha256": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "bytes": 1906878
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "sha256": "5b0d225bb2c29ee9132422fdcf2b1dfbc044cedcc181e102344f0d5dd34e274d",
+      "bytes": 15522
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMA.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "bytes": 70794
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "bytes": 87532
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "bytes": 52730
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-123F.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "bytes": 75616
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "sha256": "5b0d225bb2c29ee9132422fdcf2b1dfbc044cedcc181e102344f0d5dd34e274d",
+      "bytes": 15522
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_Fuse_Littelfuse-NANO2-885.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Fuse_Littelfuse-NANO2-885.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Fuse_Littelfuse-NANO2-885.step",
+      "sha256": "9d36a9abf86fe279bf6de0a69d7bd60e729853d406d1523e3406362177cb6003",
+      "bytes": 15534
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "bytes": 75616
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "sha256": "70e116f6b72779d9d18e13b3f39b807c8d55337d3b94d25107a7c972fe799330",
+      "bytes": 15528
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "bytes": 124982
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.step",
+      "sha256": "30dab4c2e22239b7e3694a4d45304e04255c6b70a79d28e9c34c6072ba647991",
+      "bytes": 70688
+    },
+    {
+      "source_reference": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "bytes": 52730
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.step",
+      "sha256": "30dab4c2e22239b7e3694a4d45304e04255c6b70a79d28e9c34c6072ba647991",
+      "bytes": 70688
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "bytes": 40272
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_DDA0008B_4214849B.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DDA0008B_4214849B.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DDA0008B_4214849B.step",
+      "sha256": "9ef46c4d078c5bbb9982618e3c80d58590fa2dbcb052185ee7728a010ad4d931",
+      "bytes": 15496
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "bytes": 124982
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step",
+      "sha256": "70e116f6b72779d9d18e13b3f39b807c8d55337d3b94d25107a7c972fe799330",
+      "bytes": 15528
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "bytes": 52730
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_KEMET_C1210_10u50V.step",
+      "sha256": "5b0d225bb2c29ee9132422fdcf2b1dfbc044cedcc181e102344f0d5dd34e274d",
+      "bytes": 15522
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_CDTop_PA1616D_20Pad_v06.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_CDTop_PA1616D_20Pad_v06.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_CDTop_PA1616D_20Pad_v06.step",
+      "sha256": "d3c27aeb3da18df56e080db9947eb015a1967d558c9aecd4dc6f93c79d42a8ca",
+      "bytes": 15530
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_Coilcraft_MSS1246T_12x12_RVB22_L121.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Coilcraft_MSS1246T_12x12_RVB22_L121.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Coilcraft_MSS1246T_12x12_RVB22_L121.step",
+      "sha256": "ddd6949e37a4949979fcbfd33b7194073cb8d9f20713a929af460e011db336ed",
+      "bytes": 15504
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "bytes": 77068
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMC.step",
+      "sha256": "30dab4c2e22239b7e3694a4d45304e04255c6b70a79d28e9c34c6072ba647991",
+      "bytes": 70688
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_R_0603_1608Metric_RVB22_R157.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R157.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R157.step",
+      "sha256": "24d98fde147dda86b6eaf5e60d7412babffba9fab808ba53cab12091fc09aabb",
+      "bytes": 15584
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TO-252-2.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/TO-252-2.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/TO-252-2.step",
+      "sha256": "3eb4c99603a4fe837c2fe9308bc174769ded87a785a0df48d2dc441432ee8b4c",
+      "bytes": 121428
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.step",
+      "sha256": "2243353fd26661c62429727755fdc6f236a303e3b37a78bfb77d7062a91ec91e",
+      "bytes": 15560
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XAL5030-XXX.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Inductor_SMD.3dshapes/L_Coilcraft_XAL5030-XXX.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Inductor_SMD.3dshapes/L_Coilcraft_XAL5030-XXX.step",
+      "sha256": "2422d17d23b0901ef6ec22efd68f29db821753e6e7e8cd66f7dcd75da9816462",
+      "bytes": 32218
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TDK_CGA4J1_33N_I32.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TDK_CGA4J1_33N_I32.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TDK_CGA4J1_33N_I32.step",
+      "sha256": "3f0cc244fadb333bd5f2920199b75927959fe7631b790fe337f43f97019e2d5a",
+      "bytes": 15552
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_DPY0002A_TPD1E05U06_SMDMask.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DPY0002A_TPD1E05U06_SMDMask.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DPY0002A_TPD1E05U06_SMDMask.step",
+      "sha256": "c9d865a8b06d5de7e49b609d88e16493b0842f8623eda2073718034e07a2e374",
+      "bytes": 15509
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_WSL2512_I32_R158.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_WSL2512_I32_R158.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_WSL2512_I32_R158.step",
+      "sha256": "a634eccea572b463a321f368eb39ee4bdba37d1907f60f5567cd9a34e34957b3",
+      "bytes": 15616
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_WSLP0603_MANUFACTURER_R153.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_WSLP0603_MANUFACTURER_R153.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_WSLP0603_MANUFACTURER_R153.step",
+      "sha256": "5d3ddd582dc72c78ad5910dd196a105247bfef40a94cd49eaad1a28116cfd740",
+      "bytes": 15526
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_R_0603_1608Metric_RVB22_R155.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R155.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R155.step",
+      "sha256": "9fa8ccd8941ac41b5cfcbfe19e4b8e011285245410a56c75a4f1b4916fcfc785",
+      "bytes": 15597
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TDK_CGA5L1_68N_I32.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TDK_CGA5L1_68N_I32.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TDK_CGA5L1_68N_I32.step",
+      "sha256": "4119dfcb505646dbbf35e24561821d78b1fe48c39f2976c2d720f4682f4fe0e0",
+      "bytes": 15496
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_R_0603_1608Metric_RVB22_R156.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R156.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R156.step",
+      "sha256": "34333acbfbf21749f6c9601043337101b7c1790e7a5a69842e37599ae3f07d2c",
+      "bytes": 15597
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_DRB0008J_TCAN3403.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DRB0008J_TCAN3403.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DRB0008J_TCAN3403.step",
+      "sha256": "c0ce404df93ae34fa583617fb70a787b163f8d3d2e0537580652a5badf4ff737",
+      "bytes": 15496
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "bytes": 40272
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_C_0603_1608Metric_RVB22_C205.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_C_0603_1608Metric_RVB22_C205.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_C_0603_1608Metric_RVB22_C205.step",
+      "sha256": "6f635d6a798f5b396801338bd09c561cb28c5ed77b3f3b28248ae6934f3ca326",
+      "bytes": 15584
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_Murata_LQW18AS_1608.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Murata_LQW18AS_1608.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_Murata_LQW18AS_1608.step",
+      "sha256": "8dc9860d48f1f310cbb4fedd0859e36f6b22350e2f1eb7ca433e5d2465fc130d",
+      "bytes": 15485
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "bytes": 40414
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+      "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+      "bytes": 125320
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_PWP0016A_TPS2660.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_PWP0016A_TPS2660.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_PWP0016A_TPS2660.step",
+      "sha256": "5f4c1b37c0a8362ddb61c8228a7233d601c78a2878029a100b67c8091b11d35c",
+      "bytes": 15498
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TPS3808_DBV0006A.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TPS3808_DBV0006A.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TPS3808_DBV0006A.step",
+      "sha256": "49c7af653bd28289a781dbc22e2974042c1ad314726f6d6ab4da24e6050d048d",
+      "bytes": 15485
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "sha256": "0e31d372d70b467870b210500d68efae39ab4210a8c369898da962a3db259cfb",
+      "bytes": 15522
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+      "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+      "bytes": 70713
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMA.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "bytes": 70794
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_R_0603_1608Metric_RVB22_R203.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R203.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_R_0603_1608Metric_RVB22_R203.step",
+      "sha256": "379bf1889a646b97bd6172624f5cb82ead3c68097b0693b15d2cca55e3ab3494",
+      "bytes": 15584
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step",
+      "sha256": "847c4c5023fe1603fbd36900a5dcc4bd3901ba473f71d42c9a469f0236eaadf3",
+      "bytes": 125469
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_TI_DQC0010A_I32.step",
+      "sha256": "0e31d372d70b467870b210500d68efae39ab4210a8c369898da962a3db259cfb",
+      "bytes": 15522
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "source_reference": "${KIPRJMOD}/models/ENVELOPE_HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.step",
+      "expanded": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.step",
+      "resolved": "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/models/ENVELOPE_HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.step",
+      "sha256": "b30c2bf603e43d6fd52a5532c80196e6ad8df4c1de639250321851f114fefc6f",
+      "bytes": 15498
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "source_reference": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "expanded": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl",
+      "resolved": "/usr/share/kicad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    }
+  ],
+  "resolved_entries": 180,
+  "unresolved_entries": 0,
+  "scope": "Only model file references differ. Missing footprint model entries and exact manufacturer envelope correctness remain separate checks."
+}

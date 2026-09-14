@@ -1,0 +1,367 @@
+{
+  "archives": [
+    {
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "archive_bytes": 830964288,
+      "archive_sha256": "8b4ecf3cd7ee3e47de2fbfc5ed7dcfe2dcdb3da6a8ddf7e058af371a70bd3d7a",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_01.zip.part01",
+          "bytes": 350000000,
+          "sha256": "5ec310c41dcee621223d555fe1428dc5dec839016656453eec6ae3306ab8a51a"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_01.zip.part02",
+          "bytes": 350000000,
+          "sha256": "1c999b3ff79126852a37e64a5139d60bf4740a1af1834ae704306b59355a167e"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_01.zip.part03",
+          "bytes": 130964288,
+          "sha256": "55906cc9476a62066b2619b68785eecef2e8804b6f9b9c6622ed00e9c4d14073"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_02.zip",
+      "archive_bytes": 305476180,
+      "archive_sha256": "dc4a5c2ac31b0f0c1524071047d1990b2d79c4d5bd91ad0f0aaccb97b46043f3",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_02.zip",
+          "bytes": 305476180,
+          "sha256": "dc4a5c2ac31b0f0c1524071047d1990b2d79c4d5bd91ad0f0aaccb97b46043f3"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_03.zip",
+      "archive_bytes": 902361230,
+      "archive_sha256": "fc4d3eed92d2e31a2b55c27510095ea7b438d10e84e7486fea02d8bad5c8bee5",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_03.zip.part01",
+          "bytes": 350000000,
+          "sha256": "05eeffcb5f629bea4e78eebd3eac7e917d8774011763c298b3f7504bbb13fb0d"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_03.zip.part02",
+          "bytes": 350000000,
+          "sha256": "5d1a56365181297598ff3f0b678607ecb8671411e1ff281ea998ced5a56f73ea"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_03.zip.part03",
+          "bytes": 202361230,
+          "sha256": "6350227fa15bbb6dcd5f61ec413d3d6de0166821c1b66659b953b099059fd13e"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_04.zip",
+      "archive_bytes": 17789414,
+      "archive_sha256": "c94b324d2b46c9d3b320e294424dcd0251088bbff7d8cf83cf419d54cabcbdd2",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_04.zip",
+          "bytes": 17789414,
+          "sha256": "c94b324d2b46c9d3b320e294424dcd0251088bbff7d8cf83cf419d54cabcbdd2"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_05.zip",
+      "archive_bytes": 906226738,
+      "archive_sha256": "2a065e94fd5ff7ddf406b16f7b6595cb48db285958392f89e432e95e562cac3d",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_05.zip.part01",
+          "bytes": 350000000,
+          "sha256": "1ea2b77e932c788add2c9dc575599007186781df58e542efc7abe6265f025dbb"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_05.zip.part02",
+          "bytes": 350000000,
+          "sha256": "dc5bafd055ef7ac06991be9c87999c2b7e033132ae09470cd5e2f09c76dfd9a0"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_05.zip.part03",
+          "bytes": 206226738,
+          "sha256": "f577e55f99d51d2ec6042ac50ba728fa68a6097c37d57f04e1402610224adac9"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_06.zip",
+      "archive_bytes": 850034302,
+      "archive_sha256": "ea3b864a2e105540ee6021072f1233e784c9cf45ccdf94916d36819b62c6ca4a",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_06.zip.part01",
+          "bytes": 350000000,
+          "sha256": "1ffbe6800a5c03dac311afe3dd004f272b6c3ccdbf02b557e28d39ddc9954f31"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_06.zip.part02",
+          "bytes": 350000000,
+          "sha256": "e96dbfc5dbe276c30bb2ccd44ebf540722b5fdde6eecca98f6245013cb6b2a62"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_06.zip.part03",
+          "bytes": 150034302,
+          "sha256": "af95b1b3b2a1dbbb5e63348c9eedfaceae57cbe94d9ca5969cca5f1ff48bafb3"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_07.zip",
+      "archive_bytes": 844742880,
+      "archive_sha256": "607b32338846ec7fd905d4ff5baaedb1a867069a00d88ef6922e27aea7935efe",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_07.zip.part01",
+          "bytes": 350000000,
+          "sha256": "68d1e77c24bc928588447e9c28b18409781cfa0033c7eae526580d6fe404599f"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_07.zip.part02",
+          "bytes": 350000000,
+          "sha256": "effdbca0b799f877a32b69b2d299e47d9732dfebda6e1060ba562d9c817da527"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_07.zip.part03",
+          "bytes": 144742880,
+          "sha256": "f58145c753883beca3666a0a3e0a7f67cf8dc8881614e6e1adcf037bb45a05f6"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_08.zip",
+      "archive_bytes": 814043234,
+      "archive_sha256": "f54330edb0a8633dda8476f1f11e5990cd198c995a26e51054b3d4e463ccffe2",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_08.zip.part01",
+          "bytes": 350000000,
+          "sha256": "e155f0d1f2d1996221efd8a6db98e80b163f29eea037bd314be3525f552e45f7"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_08.zip.part02",
+          "bytes": 350000000,
+          "sha256": "293203fdcbfe919dcfc6ad94f6af8f76311cd83ffdae41c5438b937a26301156"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_08.zip.part03",
+          "bytes": 114043234,
+          "sha256": "1234c809a634f24a824e24e209c4d8f948c7db3c9b4504bc2e39acb850b4d95a"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_09.zip",
+      "archive_bytes": 849594893,
+      "archive_sha256": "69a7b4f9124de5b09f4fbc3725e12591621570ec7e81393091ae17cd9a79dd40",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_09.zip.part01",
+          "bytes": 350000000,
+          "sha256": "21755f2677477b5603297109bca07c52bb8941299f84be31b92da6870c942ea2"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_09.zip.part02",
+          "bytes": 350000000,
+          "sha256": "4cff8a7ec54141a5008bf965dac5addad29a37492da27f599650614d43db08aa"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_09.zip.part03",
+          "bytes": 149594893,
+          "sha256": "031c3c09a0afe6fe92133d6868e80233f2280856c7cf947a45cedd8d97d26111"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_10.zip",
+      "archive_bytes": 802997081,
+      "archive_sha256": "705e0cf4547d6095bb2c3cd4a0382ee4b1b1e52b5a8e34b0734d6025883fd255",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_10.zip.part01",
+          "bytes": 350000000,
+          "sha256": "b96c1c341b9365fe0111a125d8799f7d0e998c9e4d8d51b25e7e0ae0adb5da1c"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_10.zip.part02",
+          "bytes": 350000000,
+          "sha256": "3d84b1c461d5cc9a5ad8fe47573278576aa55cb6828ab185ec20993cb647259d"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_10.zip.part03",
+          "bytes": 102997081,
+          "sha256": "65fc79ce818bd599f08470fb0190788be9428860e81e5f6252e0e1ac967c93a8"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_11.zip",
+      "archive_bytes": 837775816,
+      "archive_sha256": "45e742458ec5c567a90bf7ffbf0641f94d9b81890a8143f44b642e396b834975",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_11.zip.part01",
+          "bytes": 350000000,
+          "sha256": "de2a0335e2e795b1e401c411d28e69deee4c1c098a31edde4e65626601d86a06"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_11.zip.part02",
+          "bytes": 350000000,
+          "sha256": "23e973f8e864006089a10ca50adb7f9d6d31edc67ceabc09e9004f0745541e97"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_11.zip.part03",
+          "bytes": 137775816,
+          "sha256": "6d6eaee5c64e31bb9c20b60d42f807056431bb9433e56b817a711c05438b0b46"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_12.zip",
+      "archive_bytes": 536745464,
+      "archive_sha256": "1fb3994b14398479bd1f9d145a3d4504f23babbdbfd2d706654d243ad34bf4bc",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_12.zip.part01",
+          "bytes": 350000000,
+          "sha256": "fdc16583862b93a12138f9848dc49f8b1566336f5ceb2cc3a30c5c37b5814a25"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_12.zip.part02",
+          "bytes": 186745464,
+          "sha256": "c2b30b1f6eb02e1a6b23236587d99a436ff650ae0088e812e9c52e5cfae79c6a"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_13.zip",
+      "archive_bytes": 53711465,
+      "archive_sha256": "c5a7e43d5e424cba7a4b9a6d8d148353cfed7242c1141c4d17ba23a7fe401571",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_13.zip",
+          "bytes": 53711465,
+          "sha256": "c5a7e43d5e424cba7a4b9a6d8d148353cfed7242c1141c4d17ba23a7fe401571"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_14.zip",
+      "archive_bytes": 846823309,
+      "archive_sha256": "9d617f14de628d8e92bfd89a218250dbe997fb433c20a8d0efea1eeb5844f15b",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_14.zip.part01",
+          "bytes": 350000000,
+          "sha256": "a33bb95e51d46e7bcd1f81fe41d607b8069d15f01d8e71e6934b60bb5496d734"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_14.zip.part02",
+          "bytes": 350000000,
+          "sha256": "9801b2c294ea55723253dd0cc477138747937b984f55290af46993841a99c1d6"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_14.zip.part03",
+          "bytes": 146823309,
+          "sha256": "3868e184fa554e38ce3f743b63b2bb3622a3ce24a479b45d737844aa0f9056c6"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_15.zip",
+      "archive_bytes": 354301239,
+      "archive_sha256": "0563dea169a632efac239b50c5aa56f20816d59c458d107ec2526d4805b4a163",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_15.zip.part01",
+          "bytes": 350000000,
+          "sha256": "186c6adebacf69c0f0c6a223dcf216710ceae08856df74700689658cb1c4bcfb"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_15.zip.part02",
+          "bytes": 4301239,
+          "sha256": "c8025c9e457511db7b4b0c74070aae8d267b9b9529574b7b94defd21193ca34e"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "archive_bytes": 557238151,
+      "archive_sha256": "1820cfb617b476420f6ca9e6fb55748d173ad03894dc942378d02f92c1843566",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_16.zip.part01",
+          "bytes": 350000000,
+          "sha256": "376383ac7314c00a9491f834a42568503efeea5922ff01f703f5520b2bdeaa62"
+        },
+        {
+          "file": "GR86_RevB_I32_Full_Records_16.zip.part02",
+          "bytes": 207238151,
+          "sha256": "168d76920826d3681c5554b70e6c5d70948621921a5f020f4bb885c28af857b3"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "archive_bytes": 339029120,
+      "archive_sha256": "8ad7875f48026736ec23ff588906dfb0d9a7eb5415dc41154e2aec456ada40f0",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_17.zip",
+          "bytes": 339029120,
+          "sha256": "8ad7875f48026736ec23ff588906dfb0d9a7eb5415dc41154e2aec456ada40f0"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "archive_bytes": 346051201,
+      "archive_sha256": "44c9bd3c05e2961b1f7dcdfcdc37d1059e4894bbb2a0f4161f4c99eeec4ab030",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_18.zip",
+          "bytes": 346051201,
+          "sha256": "44c9bd3c05e2961b1f7dcdfcdc37d1059e4894bbb2a0f4161f4c99eeec4ab030"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    },
+    {
+      "archive": "GR86_RevB_I32_Full_Records_19.zip",
+      "archive_bytes": 123116888,
+      "archive_sha256": "790807abe6d7a733b0671a7793a0b062e09df7cdebdee7c9fe112b3254050535",
+      "parts": [
+        {
+          "file": "GR86_RevB_I32_Full_Records_19.zip",
+          "bytes": 123116888,
+          "sha256": "790807abe6d7a733b0671a7793a0b062e09df7cdebdee7c9fe112b3254050535"
+        }
+      ],
+      "all_parts_and_concatenated_archive_verified": true
+    }
+  ],
+  "complete": true
+}

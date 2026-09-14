@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "name": "b470_r0.47_off_highC",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "mode": "off",
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "highref": true,
+    "no_off_load": true
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 426590,
+  "main_peak": 3.39752158,
+  "active_min": 0.085350923,
+  "final_main": 3.31085538,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.10747141999999998,
+  "input_switch_peak_A": 1.25892347,
+  "I151max": 1.44397563,
+  "I121max": 1.03939758,
+  "ready_rises": 2,
+  "waveform_sha256": "944a676db32f22d5627c701bed211ba56229eb74c3542ce24b8a1ab2d08cbed7"
+}

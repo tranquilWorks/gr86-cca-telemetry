@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "name": "c680_ct1",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "c160": 0.0006799999999999999,
+    "constant": 0.75,
+    "slew": 0.00037
+  },
+  "returncode": 0,
+  "deck_sha256": "461e31d7791100e6a14b3cca3319c06f904e22a81d7c97f2bc2b35f9e460d9fb",
+  "completed": false,
+  "error": ""
+}

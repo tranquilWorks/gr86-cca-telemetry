@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "name": "c470_ct4.7",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "c160": 0.00047,
+    "constant": 0.75,
+    "slew": 0.001739
+  },
+  "returncode": 0,
+  "deck_sha256": "1f320289e530117128534248ac3e09f9fe8032b1f2b011f820512af0e3a2ffc2",
+  "completed": false,
+  "error": ""
+}

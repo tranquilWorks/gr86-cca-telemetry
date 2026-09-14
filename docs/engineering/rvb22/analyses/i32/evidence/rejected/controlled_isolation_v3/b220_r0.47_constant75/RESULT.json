@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "name": "b220_r0.47_constant75",
+    "bulk": 220,
+    "damp": 0.47,
+    "mode": "constant75",
+    "slow": false,
+    "constant": 0.75
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60450,
+  "main_peak": 3.36529556,
+  "active_min": 3.29700931,
+  "final_main": 3.29700931,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 0.8066095800000004,
+  "input_switch_peak_A": 1.26895108,
+  "I151max": 1.46322569,
+  "I121max": 1.03940361,
+  "ready_rises": 1,
+  "waveform_sha256": "2d26300977257db0dad00172d7d055a4903d01d52656b293e1f4d5c99c77c31d"
+}

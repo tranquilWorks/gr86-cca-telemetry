@@ -1,0 +1,12 @@
+I32 passive RC smoke
+V1 in 0 PWL(0 0 1u 1)
+R1 in out 1k
+C1 out 0 1u
+.control
+set wr_vecnames
+set wr_singlescale
+tran 10u 5m
+wrdata waveform.tsv v(out)
+quit
+.endc
+.end

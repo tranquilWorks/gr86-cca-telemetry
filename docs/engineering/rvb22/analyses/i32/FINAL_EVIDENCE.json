@@ -1,0 +1,381 @@
+{
+  "status": "SOURCE_BOUND_DIGITAL_I32_EVIDENCE_WITH_PHYSICAL_GATES",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "filled_PCB_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "native_schematic_XML_sha256": "f2394512c684bbf5eedb75730429004d8b92e1b834973b5ff7db300a618f1908",
+  "native": {
+    "status": "NATIVE_OUTPUTS_COMPLETE",
+    "ERC": 0,
+    "DRC": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "fitted": 177,
+    "postconditions": 13,
+    "CAD_files": 135,
+    "firmware_reused_unchanged_files": 32
+  },
+  "power": {
+    "selected_cases": 31,
+    "supplementary_PG_tolerance_cases": 2,
+    "supplementary_discharge_route_cases": 1,
+    "completed": 34,
+    "main_normal_min_V": 3.13255965,
+    "reset_margin_V": 0.016509650000000153,
+    "main_max_V": 3.57139192,
+    "overshoot_margin_V": 0.028608080000000147,
+    "VIN_minus_source_min_V": -0.0670058899999999,
+    "reverse_margin_V": 0.2329941100000001,
+    "normal_ready_rises": 1,
+    "normal_SNS_faults": 0,
+    "deliberate_fault_cases": 16,
+    "model_class": "transparent current-mode derivative; not final-source vendor-macromodel validation",
+    "supplementary_note": "Final cases use fitted4.908V nominal and retained4.75..5.25V envelope. PG cold750 case also uses0.95A upstream average-limit guard. Previous narrower-voltage and unused-key attempts remain historical.",
+    "component_stress": {
+      "U152": {
+        "peak_W": 0.533508552711265,
+        "whole_record_energy_J": 0.024295314315140756
+      },
+      "U153": {
+        "peak_W": 0.2564605363158863,
+        "whole_record_energy_J": 0.018350117543637714
+      },
+      "R165": {
+        "peak_W": 2.2803212202250487,
+        "whole_record_energy_J": 0.003865216906458675
+      }
+    },
+    "R158": {
+      "peak_W": 0.10285818496795801,
+      "energy_J": 0.000403224367244151,
+      "RMS_A": 0.03690019143056695
+    },
+    "numerical_resolution_peak_difference_V": 1.189999999873237e-06
+  },
+  "input": {
+    "completed": 17,
+    "incomplete_retained": 1,
+    "extrema": {
+      "Q101_VDS_max_V": 130.4932217,
+      "Q101_VGS_max_V": 12.94102076,
+      "Q101_current_peak_A": 10.3506526,
+      "Q101_power_peak_W": 417.8772171467556,
+      "D101_reverse_max_V": 277.60882300000003,
+      "D101_current_peak_A": 10.3528352,
+      "R101_peak_V": 153.0772138,
+      "R101_peak_W": 1.9738422907146613,
+      "R110_peak_W": 30.10978874571558,
+      "fuse_I2t_A2s": 0.04082942857406762,
+      "Q101_onstate_power_max_W": 3.423704516988104
+    },
+    "Q101_VGS_min_V": -0.553693899999999,
+    "SOA_utilization_max": 0.5223465214334445,
+    "D102": {
+      "peak_A": 0.0050937724,
+      "peak_W": 0.20633773978821457,
+      "positive_energy_J": 0.08320448500922627,
+      "duration_above_1mA_s": 0.4053018667
+    },
+    "D103": {
+      "peak_A": 4.169324,
+      "peak_W": 139.96023164649839,
+      "positive_energy_J": 0.0003498471704773534,
+      "duration_above_1mA_s": 4.64990000000054e-06
+    },
+    "D104": {
+      "peak_A": 0.0,
+      "peak_W": 0.0,
+      "positive_energy_J": 0.0,
+      "duration_above_1mA_s": 0.0
+    },
+    "D105": {
+      "peak_A": 2.16049793,
+      "peak_W": 348.45917531292014,
+      "positive_energy_J": 7.412360907074056e-05,
+      "duration_above_1mA_s": 3.0253499999806366e-06
+    },
+    "pin_ranges": {
+      "PROTECT_CTRL_VIN_range_V": [
+        -0.000568683457,
+        40.5078444
+      ],
+      "INPUT_UV_range_V": [
+        -3.77305334e-05,
+        10.8537588
+      ],
+      "INPUT_OV_range_V": [
+        -1.42215087e-05,
+        4.09103218
+      ],
+      "INPUT_SHDN_range_V": [
+        -0.000568683167,
+        40.5078237
+      ],
+      "INPUT_GATE_DRIVE_range_V": [
+        -0.190916174,
+        40.7809594
+      ],
+      "PROTECTED_12V_range_V": [
+        -0.00165101254,
+        33.5690466
+      ],
+      "VIN5_range_V": [
+        -0.00165101254,
+        32.6124897
+      ],
+      "RAW_12V_range_V": [
+        -187.318523,
+        164.817226
+      ],
+      "REV_BLOCKED_12V_range_V": [
+        -0.000568860349,
+        163.641287
+      ]
+    }
+  },
+  "layout": {
+    "measured_paths": 80,
+    "views": 7,
+    "filled_ground_pairs": 23,
+    "ground_contract": [
+      {
+        "contract_key": "source_to_load_ground_upper_ohm",
+        "mesh_total_values_ohm": [
+          0.011281787819671,
+          0.01127348700301362
+        ],
+        "margin_ohm": 0.0037182121803290002,
+        "pass_allocation": true
+      },
+      {
+        "contract_key": "C206_to_load_plane_plus_load_barrel_upper_ohm",
+        "mesh_total_values_ohm": [
+          0.01074100655716136,
+          0.010919037014800731
+        ],
+        "margin_ohm": 8.096298519926805e-05,
+        "pass_allocation": true
+      }
+    ]
+  },
+  "mechanics": {
+    "status": "PASS_DECLARED_ENVELOPES",
+    "fitted_count": 177,
+    "extra_height_mm": 1.71,
+    "populated_checks": 1308,
+    "mated_checks": 529,
+    "interferences": [],
+    "nearest": [
+      {
+        "ref": "R408",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.12000000000000456
+      },
+      {
+        "ref": "C159",
+        "obstacle": "W02_upper",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.19999999999999996
+      },
+      {
+        "ref": "L406",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.23009600384333298
+      },
+      {
+        "ref": "C201",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.24699999999999991
+      },
+      {
+        "ref": "C524",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.370000000000001
+      },
+      {
+        "ref": "D402",
+        "obstacle": "J401_mated_plug",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.5500000000000007
+      },
+      {
+        "ref": "L406",
+        "obstacle": "J401_mated_plug",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.8499999999999998
+      },
+      {
+        "ref": "C531",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.0190512986136042
+      },
+      {
+        "ref": "R151",
+        "obstacle": "W02_upper",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.0799999999999996
+      },
+      {
+        "ref": "L406",
+        "obstacle": "Adafruit851_full150mm_pigtail",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.1499999999999986
+      },
+      {
+        "ref": "D402",
+        "obstacle": "Adafruit851_full150mm_pigtail",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.173661978001374
+      },
+      {
+        "ref": "C205",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.1940512986136156
+      },
+      {
+        "ref": "R203",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.2449999999999992
+      },
+      {
+        "ref": "U502",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.2990512986136054
+      },
+      {
+        "ref": "J401",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4499999999999993
+      },
+      {
+        "ref": "R403",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4719999999999995
+      },
+      {
+        "ref": "R402",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4719999999999995
+      },
+      {
+        "ref": "U401",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.9470000000000032
+      },
+      {
+        "ref": "D102",
+        "obstacle": "C05_base",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0
+      },
+      {
+        "ref": "R201",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0454028942973514
+      },
+      {
+        "ref": "R410",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0692146069119928
+      },
+      {
+        "ref": "F101",
+        "obstacle": "F1_mated_housing",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.145530237493754
+      },
+      {
+        "ref": "U202",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.199051298613611
+      },
+      {
+        "ref": "D402",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.2000000000000033
+      },
+      {
+        "ref": "D102",
+        "obstacle": "W02_lower",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.250000000000007
+      }
+    ]
+  },
+  "thermal": {
+    "release_heat_W": 2.940859375,
+    "stacked_80pct_heat_W": 3.062581616386441,
+    "required_U121_efficiency_at_U151_80pct": 0.8333959154354461,
+    "cases": [
+      {
+        "case": "retained_I25_vector_on_I32_copper",
+        "coarse_board_max_C": 101.63906705816667,
+        "fine_board_max_C": 107.51905854350258,
+        "one_step_allowance_C": 5.879991485335907,
+        "board_screen_with_one_step_C": 113.39905002883849,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_measured_loss_allocation",
+        "coarse_board_max_C": 101.50781575777226,
+        "fine_board_max_C": 107.36427337996871,
+        "one_step_allowance_C": 5.856457622196444,
+        "board_screen_with_one_step_C": 113.22073100216515,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_stacked_80pct_sensitivity",
+        "coarse_board_max_C": 101.96630566483533,
+        "fine_board_max_C": 107.83172215739599,
+        "one_step_allowance_C": 5.865416492560655,
+        "board_screen_with_one_step_C": 113.69713864995664,
+        "source_heat_W": 3.062581616386441
+      }
+    ],
+    "local_package_screen": {
+      "U152": {
+        "coarse_board_max_C": 77.7095277793387,
+        "fine_board_max_C": 77.88739779757303,
+        "one_step_local_board_C": 78.06526781580736,
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.533508552711265,
+        "conditional_Tj_screen_C": 105.27420400408187,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.725795995918133
+      },
+      "U153": {
+        "coarse_board_max_C": 87.00414878001614,
+        "fine_board_max_C": 89.5661304736405,
+        "one_step_local_board_C": 92.12811216726486,
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.2564605363158863,
+        "conditional_Tj_screen_C": 105.20759951937507,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.792400480624934
+      }
+    },
+    "mesh_convergence_proven": false,
+    "junction_temperature_proven": false,
+    "immediate_air_proven": false,
+    "physical_tests": 0
+  },
+  "physical_tests": 0,
+  "supplier_approval": false,
+  "manufacturing_order": false,
+  "full_product_qualified": false
+}

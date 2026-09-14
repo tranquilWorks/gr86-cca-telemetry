@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "name": "reverse_14V",
+    "pwl": "0 -14 60m -14 61m 12",
+    "stop": 0.13,
+    "events": [
+      [
+        "recovery",
+        0.06,
+        0.12,
+        0.06
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "5ec86e3594209ec77a7f2f962134e948af3d752b01f848d584a8aed4b8859d09",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/reverse_14V/waveform.tsv not found."
+}

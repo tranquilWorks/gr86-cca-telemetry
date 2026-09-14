@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "name": "c470_ct1",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "c160": 0.00047,
+    "constant": 0.75,
+    "slew": 0.00037
+  },
+  "returncode": 0,
+  "deck_sha256": "2f028286053d7fbeab46807f50f5ec3b3f6c2f0d08fcecf12c5ce0e90f6443db",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 76579,
+  "main_peak_V": 1.8727963,
+  "main_final_V": 0.200003478,
+  "active_min_V": null,
+  "ready_final": 0.0,
+  "minimum_vin_minus_output_V": 2.05611265,
+  "input_switch_peak_A": 2.31707667,
+  "input_switch_reverse_A": -0.0001,
+  "I151_max_A": 1.67254057,
+  "I121_max_A": 1.03983711,
+  "ready_rises": 0,
+  "sns_faults": 8,
+  "R158_peak_W": 0.4242212908108763,
+  "R158_energy_J": 0.0024359823725361076,
+  "R158_RMS_A": 0.2078248705473339,
+  "waveform_sha256": "c34c087799474f40476d102fc25f309f93c5b14fd6fe0770a1044efefb7c2762"
+}

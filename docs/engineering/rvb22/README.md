@@ -1,3 +1,13 @@
+# I32 recovery and digital closure — 2026-09-14 UTC
+
+The authoritative 177-part I32 recovery overlay is applied. The authored PCB remains SHA-256 `45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7`; preserved KiCad 9.0.9 evidence reports zero ERC, DRC, unconnected, parity, and exclusion findings with 177 resolved STEP components.
+
+I32-RCV-FW-01 is digitally closed by a genuine unchanged-source ESP32-S3 build using Arduino CLI 1.3.1, Arduino-ESP32 3.3.6, NimBLE-Arduino 2.3.6, GCC 14.2.0_20251107, and `CPUFreq=160`. All 28 source/image/ELF release checks pass. See `analyses/i32/recovery_20260914/firmware_160mhz/`.
+
+No hardware was connected, flashed, or operated. Supplier sourcing/DFM, construction, thermal correlation, EMC, silicon behavior, first-article, installed fit, and vehicle qualification remain acceptance gates.
+
+---
+
 # GR86 CCA I24 engineering checkpoint
 
 This checkpoint preserves completed I24 PCB, return-path, manufacturing/ground and authored mechanical evidence while the final fine thermal retry and register/workbook reconciliation are still running. It is not the final I24 package or a fabrication release.

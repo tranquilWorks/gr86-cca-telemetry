@@ -97,7 +97,7 @@ jobs:
           "$RUNNER_TEMP/convergence-env/bin/python" docs/engineering/rvb22/analyses/convergence_01/native_exports.py \
             --native-dir native_I06_hosted \
             --source-pcb docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb \
-            --expected-source-hash a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936 \
+            --expected-source-hash 45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7 \
             --expected-hash "$(sha256sum native_I06_hosted/candidate_kicad/GR86_CCA_RevB.kicad_pcb | cut -d' ' -f1)" \
             --output-dir native_convergence_review
       - name: Run native-copper full-path thermal feasibility screen

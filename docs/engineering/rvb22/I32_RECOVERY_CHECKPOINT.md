@@ -1,5 +1,9 @@
 # I32 recovery checkpoint — 2026-09-14 UTC
 
+## Continuation closure
+
+The complete guarded overlay was subsequently applied to the named branch checkout. I32-RCV-FW-01 is closed digitally by a genuine unchanged-source 160 MHz ESP32-S3 build with full compiler/dependency/source/image evidence and 28/28 release checks passing under `analyses/i32/recovery_20260914/firmware_160mhz/`. Historical 240 MHz images remain quarantined. The build was not flashed or run on hardware; all supplier and physical qualification gates below remain in force.
+
 ## Publication boundary
 
 This commit publishes a recovery checkpoint ONLY. It does not publish the recovered I32 CAD, the repaired runner, new firmware images, or a fabrication release. The design baseline inspected before this checkpoint was `4c3e54395e84483298e453468a65ff2646e9de4e` on `codex/rvb24-coordinated-closure`, PR46. Preserve any newer work. Do not restart I32 from the older 153-part board.

@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "name": "iso0_constant75",
+    "bulk_uF": 470,
+    "damp": 0.082,
+    "top": 11800,
+    "isolate": false,
+    "mode": "constant75",
+    "constant": 0.75
+  },
+  "returncode": 0,
+  "completed": false,
+  "samples": 33967,
+  "end_s": 0.0616079367,
+  "main_peak": 3.07827497,
+  "main_final": 1.81566543,
+  "vin_min_output_delta": -0.09247070999999973,
+  "ready_final": 0.0,
+  "u151_average_current_max": 1.67255134,
+  "u121_average_current_max": 1.03939739,
+  "error": "zero-size array to reduction operation minimum which has no identity"
+}

@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "name": "b220_r0.47_worst_load",
+    "bulk": 220,
+    "damp": 0.47,
+    "mode": "load",
+    "slow": true,
+    "highref": true,
+    "bulk_scale": 0.448,
+    "ceramic": 0.5,
+    "esr": 0.1
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60448,
+  "main_peak": 3.59510009,
+  "active_min": 3.2106358,
+  "final_main": 3.35155956,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 1.4367827700000002,
+  "input_switch_peak_A": 0.669378513,
+  "I151max": 0.789243747,
+  "I121max": 0.756962601,
+  "ready_rises": 1,
+  "load_release_peak": 3.59510009,
+  "waveform_sha256": "849d41b2a7053e8fc29762ba29ca664e26c794bc18663d1296001512fd3c951f"
+}

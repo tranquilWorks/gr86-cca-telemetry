@@ -1,0 +1,140 @@
+{
+  "original": {
+    "file": "GR86_RevB_I32_Full_Records_16.zip",
+    "sha256": "5b888539f4fb6a47edd141812c6aa26e61ddd3a8da8e69a8c9380a38db1268e7",
+    "bytes": 557229527
+  },
+  "reconstructed_sha256": "1820cfb617b476420f6ca9e6fb55748d173ad03894dc942378d02f92c1843566",
+  "records": [
+    {
+      "member": "power_final_c166_68n/cold450_max_storage/waveform.tsv.gz",
+      "retained_bytes_sha256": "6d7e8dfead041f854dd3f7c3a91f41455acaedee539e751edc2abc2972e134d3",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/cold750_all_storage_max/waveform.tsv.gz",
+      "retained_bytes_sha256": "8f8a1786db2fe5c3bc753f3e1f0ba4bba349fd8eb56bad1dcc6198106f21fa2a",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/cold750_max_main_storage_min_upstream_limit/waveform.tsv.gz",
+      "retained_bytes_sha256": "7bd4debc043a434d85817049b2f8bf0504186b0ad45b1e78c13da7c46a5ab3a0",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/cold750_min_U151_limit/waveform.tsv.gz",
+      "retained_bytes_sha256": "968223445cb4ba7358ae3786b9ccf452f63e3fce5ce5ffd8786a8b1b37e668ea",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/high_reference_slow_loop_low_damping/waveform.tsv.gz",
+      "retained_bytes_sha256": "09e745798431dc0e5aa0d7a891a5cdcf8dc2e52022f3e61262f8e87b9f86b2e2",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/low_reference_slow_loop_aged_damping/waveform.tsv.gz",
+      "retained_bytes_sha256": "5ceb91f3d55a2b220392ecefb5d860c2a975928a2ad1c22ba8d2e8734009f779",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/maximum_inductance_low_reference/waveform.tsv.gz",
+      "retained_bytes_sha256": "1e5732071801bc78c60a8a27ee5b20373e7607f1744b1dd2fb3981c6dbf7dde5",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/maximum_main_capacitance_load_release/waveform.tsv.gz",
+      "retained_bytes_sha256": "3483998245e524b070b55bec9ea528239a66e1370c9baf54499c832a9dac7a82",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/maximum_reset_delay/waveform.tsv.gz",
+      "retained_bytes_sha256": "b9b87e070db1a8aabc0c5413753e6f05e8a2e4a29d33c6bf7df672f7c5d57dba",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/minimum_inductance_saturation_guard/waveform.tsv.gz",
+      "retained_bytes_sha256": "a4780d44980fa778eed0d174d7e93468f85ce2429a6326ddd6cae6a26b0e5d5c",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/minimum_reset_threshold/waveform.tsv.gz",
+      "retained_bytes_sha256": "35851c10618c2c1753ecb79e6c64e9da6007646d2bc953b95a88b57f68574b0a",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/nominal_hot_leakage/waveform.tsv.gz",
+      "retained_bytes_sha256": "bc69d246b46a9435d0aa126ce43a4ab3666bd7711ca532b21d0c62a8ee96ceb2",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/nominal_loop_load_release/waveform.tsv.gz",
+      "retained_bytes_sha256": "00f767241d43ada0202151d576efa925563d5419b37fdc927c412b6eb6456bcc",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/off_restart_5V4.75_Ron0.001/waveform.tsv.gz",
+      "retained_bytes_sha256": "3f9a9cab003c311cf38fb136d152d76cf0dfcb0fc1c14f7f5a6c610b68b69681",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/off_restart_5V4.75_Ron0.04/waveform.tsv.gz",
+      "retained_bytes_sha256": "57fb06b105577e8c8a59d0d73f8c43ab27d1687c9374f996cf84daaf1b0e414f",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/off_restart_5V5.25_Ron0.001/waveform.tsv.gz",
+      "retained_bytes_sha256": "0ea4af11ecb1182003b71019a0b940d314e65c003e8bfa6d6831819d89677f55",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/off_restart_5V5.25_Ron0.04/waveform.tsv.gz",
+      "retained_bytes_sha256": "90179658483c6f5686f1d98850eb3cf4ebf1ca81c643a135a4c1e052e9678fa9",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "power_final_c166_68n/slowest_charging_earliest_boot/waveform.tsv.gz",
+      "retained_bytes_sha256": "c3e9cb26b719723b84b5d648c47e20fdc604024e48c147bab90b169c8bd16ba6",
+      "source": "/workspace/scratch/a2f5ff859ded/deliverables/.GR86_RevB_I32_Full_Records_16.zip.Ag3PDm"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/cold750_all_storage_max_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "3ed31da706eb67d255920531c272e882b3fe863e50c78ca611735e5f42c406f1",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/cold750_all_storage_max_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/cold750_max_main_storage_min_upstream_limit_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "4f776e8fefbc0d4286f7facc5826acdfeec15c214ab27159b77499c5d1df95e3",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/cold750_max_main_storage_min_upstream_limit_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/cold750_min_U151_limit_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "7891036872b353fa92ab25c0dff8f3775421fb67ed44cc76af47e3b8e654daee",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/cold750_min_U151_limit_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/high_reference_slow_loop_low_damping_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "95040cee4cca25a62487e6b42760e95964a0288ff8406fb5d3d53501243d22d6",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/high_reference_slow_loop_low_damping_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/low_reference_slow_loop_aged_damping_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "dad73da05dadca870329b40c812940bf9ccec581640f865abbe87e81a707758b",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/low_reference_slow_loop_aged_damping_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/off_restart_discharge_copper_upper_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "05f36bd43b16f5cd27dba7c6883769d95023573c19aa8f79e5ff23aa8a35d039",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/off_restart_discharge_copper_upper_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "bulk_precharge_68n_repeat/slowest_charging_earliest_boot_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "81362a7bcee6b70e7ead146e904ecebbffa79e3a43fece3c92e46662fea8afb4",
+      "source": "/workspace/scratch/a2f5ff859ded/engineering_runs/bulk_precharge_68n_repeat/slowest_charging_earliest_boot_bulk_CT_68n/waveform.tsv.gz"
+    },
+    {
+      "member": "retained_variants/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/bulk_precharge_68n_options/high_reference_slow_loop_low_damping_bulk_CT_68n/waveform.tsv.gz",
+      "retained_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "explicit retained zero-byte failed artifact"
+    }
+  ]
+}

@@ -1,0 +1,2009 @@
+{
+  "base_commit": "4c3e54395e84483298e453468a65ff2646e9de4e",
+  "firmware_file_count": 32,
+  "firmware_files": {
+    "PROGRAMMING_AND_CALIBRATION.md": {
+      "sha256": "7de9d530554eb5dda642b5bfc259776f21493883f4e916ba879f825ec1239c75",
+      "size": 6431
+    },
+    "SOURCE_MANIFEST.json": {
+      "sha256": "3cc361dbe9ed9dd112bf889d5a3bece277ac45287a5348ebc2ab4255bf74a90f",
+      "size": 4622
+    },
+    "build.sh": {
+      "sha256": "b6fb5c0c0f7a92da2298e9848b94c6a0f793eb30d63a850eab2edaad048502bb",
+      "size": 965
+    },
+    "cca_telemetry/cca_telemetry.ino": {
+      "sha256": "1347dd39faab8f88e237cec9cf28e1a626e8d96227b93d11ae869761515d7ace",
+      "size": 93680
+    },
+    "cca_telemetry/config.h": {
+      "sha256": "c77669e999f655cf514f484d143e4b2c8ffc818c779145da03062d17c91e6a84",
+      "size": 771
+    },
+    "cca_telemetry/pidmaps/gr86_2022.h": {
+      "sha256": "2852ec1ebdc901b193fd3d27782f186fb927a964cd71fe45e3b35d4045f331c0",
+      "size": 4458
+    },
+    "cca_telemetry/pidmaps/pidmap_defs.h": {
+      "sha256": "5da626ecd86d54fa12d91398903c5e6dda2e5eba3139ed5ae7b2edd0db88558d",
+      "size": 435
+    },
+    "cca_telemetry/src/boot_diagnostics.h": {
+      "sha256": "2fbed7b0ff9d11d35e0cfafc9720032d1d4c47dd2a4cdb38d44e3d62f244bc14",
+      "size": 681
+    },
+    "cca_telemetry/src/driver_loss.h": {
+      "sha256": "56c09de2e058ddb7ebbca66fe88b9fd1d2e81b3ff324ca7d9ca25732c1329209",
+      "size": 822
+    },
+    "cca_telemetry/src/gps_mode_config.h": {
+      "sha256": "55e5f6ebdd5435fcb7ac4137fb6e47fc2eaa3295601bf27c062ba9d84a4c25c7",
+      "size": 1059
+    },
+    "cca_telemetry/src/gps_nmea.cpp": {
+      "sha256": "7a97575c0e8d7192ce62b424b585d162d8e1bda37950e3a3f196db5e59344023",
+      "size": 9610
+    },
+    "cca_telemetry/src/gps_nmea.h": {
+      "sha256": "559026366c21fd5f11d44a50709c8d095f832c0f3b5c2ce8f9f10d4872443623",
+      "size": 1156
+    },
+    "cca_telemetry/src/gps_solution_epoch.h": {
+      "sha256": "ebb4b490eb5050f5fcdd87a74e3146fac4abe68c71900bba229c73137b2d82f4",
+      "size": 1434
+    },
+    "cca_telemetry/src/io_budget.h": {
+      "sha256": "97a108e6189eebd561a22d0e65142a0433163b7a61c2e69886ad4a8348195c16",
+      "size": 2104
+    },
+    "cca_telemetry/src/led_status.cpp": {
+      "sha256": "0ae1552da8b7876b1344e8b29d6c1b331517e943fa08bbc68924d50a0d1882d8",
+      "size": 4966
+    },
+    "cca_telemetry/src/led_status.h": {
+      "sha256": "6c594e044491aa64e15e7c6c02fb28487b97546dd0918d7f6463f94d1197e0b9",
+      "size": 1136
+    },
+    "cca_telemetry/src/nvs_cfg.cpp": {
+      "sha256": "0356a9d44654a218e4b06fd732854fbd27d0e71e864dbdc7eff0fc4dd940e1ec",
+      "size": 3305
+    },
+    "cca_telemetry/src/nvs_cfg.h": {
+      "sha256": "57b61a85d7432a85d6fcf8b0e55cba71b27504b8c907f9a18fd7b8aa7554eeb9",
+      "size": 485
+    },
+    "cca_telemetry/src/oil_fault_recovery.h": {
+      "sha256": "3c9fc4d4deb8d8864d96e382b7fbe86d7a8ad6d5e32bca3cdb7190293ba41826",
+      "size": 904
+    },
+    "cca_telemetry/src/oil_model.cpp": {
+      "sha256": "27939b0f6991a0f04501f13e2b9fa42ff0aae591d72bdbd42cdbc0bdf5494006",
+      "size": 1202
+    },
+    "cca_telemetry/src/oil_model.h": {
+      "sha256": "8f8a5fbbc6d57542a207d84257e0ec539cd63d827ab8deb6172061651f176b06",
+      "size": 4461
+    },
+    "cca_telemetry/src/racechrono_codec.h": {
+      "sha256": "7a89bf68062cccf5b336bf23a9f1ccf6497f2b94e75abc90822b6d8f168063ab",
+      "size": 1161
+    },
+    "cca_telemetry/src/runtime_config.cpp": {
+      "sha256": "56317143ba5bdecbae42a8e8fb84fd5feb473e681afb3ef77206d39f26b85ba1",
+      "size": 1259
+    },
+    "cca_telemetry/src/runtime_config.h": {
+      "sha256": "c3a0ab6b7ac6d2fdfa4ac8c0e4c3fadd6d881854f7d71e98ab9ee780ba2ae650",
+      "size": 1371
+    },
+    "cca_telemetry/src/runtime_timing.h": {
+      "sha256": "8c4a56f5127819eed8d161da840667141ca69339d902972e0fe72dab4cd563eb",
+      "size": 2357
+    },
+    "partitions.csv": {
+      "sha256": "ab2f33c14eb855054613fd3a4ba85457ae281c6f371c25931ccc763bc79cb0e2",
+      "size": 305
+    },
+    "tests/check_release.py": {
+      "sha256": "94509c2e090c86e105afe368560f6d0d4211ac423e40c384e0cc1fe065d59fa1",
+      "size": 2851
+    },
+    "tests/erb_diagnostics_test.cpp": {
+      "sha256": "63636e85e054ce88ad53826975fc95d28f259ee26ced7cc402bf002aef894140",
+      "size": 1601
+    },
+    "tests/erb_parser_test.cpp": {
+      "sha256": "547efc04fea235fe0aca28592cf58781bf9c72efd34a28715c5e556ccc810365",
+      "size": 1878
+    },
+    "tests/io_budget_test.cpp": {
+      "sha256": "2aa9346640e28d1ce040296a8ebc6b7f056644e480541096b7ecf8c0683cc1ea",
+      "size": 2169
+    },
+    "tests/oil_model_test.cpp": {
+      "sha256": "3264e2ac7f88df8e2d5d6a57f96279c8ff9530f12729ea4cda3d0c8a936bd573",
+      "size": 2628
+    },
+    "tests/protocol_test.cpp": {
+      "sha256": "9e624c7232058a98054c8f855d60d3ac6a8fe248638b3a8189bc3b57115ed651",
+      "size": 4253
+    }
+  },
+  "nimble_file_count": 468,
+  "nimble_files": {
+    ".clang-format": {
+      "sha256": "8b49e93eaf74f69a32f2fc8cc16dbaf299b05241281d106fe8a1b0dcd9edfd1f",
+      "size": 1034
+    },
+    ".github/workflows/build.yml": {
+      "sha256": "3834459610e367f1e49da3ea4619461b8132d5f895e9832d1c285e2d6fb4fe70",
+      "size": 10891
+    },
+    ".github/workflows/release.yml": {
+      "sha256": "32fd605135b73fd010b3f66ae06a64ca2bf23100cc947fd5f80ecee22245dc66",
+      "size": 470
+    },
+    ".github/workflows/sponsors.yml": {
+      "sha256": "a7c7032fe090908e77fb78422b4629f56856c97e0114de6a4dd65b33e01f4cc6",
+      "size": 382
+    },
+    ".gitignore": {
+      "sha256": "9fb9d4f4e76401eb8bd03fb218ed7b90d1a24bd6d3fa86ca61bbbda199232242",
+      "size": 27
+    },
+    "CHANGELOG.md": {
+      "sha256": "bfd9d6694a7bed05071bd864b681c6e0bed0fdf403a15dd2d2b183f2b2a7b3aa",
+      "size": 46231
+    },
+    "LICENSE": {
+      "sha256": "1352de53fbef2f779adefaafb5568854c9532d1475955d1331f9f5427f9db713",
+      "size": 11353
+    },
+    "NOTICE": {
+      "sha256": "3f5b3600d59a04cc1d5bf6712438c02a4e8be44dea6a1d87701557f899be0418",
+      "size": 465
+    },
+    "README.md": {
+      "sha256": "d7c4f7e1b6ab23bfc892644f0229d4048b0c92d11330903cf2264a3aade7fab1",
+      "size": 4289
+    },
+    "docs/1.x_to2.x_migration_guide.md": {
+      "sha256": "4995ea69274e1e657f524052e1e93b370b358912a6be031f592791e7934d5c26",
+      "size": 12718
+    },
+    "docs/Bluetooth 5 features.md": {
+      "sha256": "dedb7befbd095d0dfa82c8905edaa676518e4da91ff89365c04b36384558a6c8",
+      "size": 1797
+    },
+    "docs/Command_line_config.md": {
+      "sha256": "3cc63ef96916621ea58ed6c3be45b9481c73987bf0c6019cb770985fc8d33b5c",
+      "size": 4586
+    },
+    "docs/Doxyfile": {
+      "sha256": "b6f9255f086b8b9d28938a1f8506977ae8fdf2d46894d21ef362eb6c32e18127",
+      "size": 128147
+    },
+    "docs/Migration_guide.md": {
+      "sha256": "5fb57f3c9b97d3415ba14c297774fd62dcda004538586f1ae7f53a3b5eb3ab84",
+      "size": 19453
+    },
+    "docs/New_user_guide.md": {
+      "sha256": "46fcb0174d1049f1dcb0c1c5cc2656f4f5aea9b3822366e0eb5eef6b898f0303",
+      "size": 13044
+    },
+    "docs/Usage_tips.md": {
+      "sha256": "d9ba427d9e2145a6aa660478baee0b51e652dd078ef24134e954cfb7eb97250a",
+      "size": 2819
+    },
+    "docs/index.md": {
+      "sha256": "86f3c3be6ba952cadfc5239e62be7ac20ed64aa90a87320709363b2d58a5b24c",
+      "size": 3274
+    },
+    "examples/BLE_Beacon_Scanner/BLE_Beacon_Scanner.ino": {
+      "sha256": "f68abaff668a111aa29f35e6da222216731e20a8c6e8ceb64db7c4094638e7f3",
+      "size": 4354
+    },
+    "examples/BLE_Beacon_Scanner/BLE_Beacon_Scanner.md": {
+      "sha256": "eaa210c209aaaf1fd625dcad8b81faefff42221ea89edb910219ce949623c624",
+      "size": 186
+    },
+    "examples/BLE_EddystoneTLM_Beacon/BLE_EddystoneTLM_Beacon.ino": {
+      "sha256": "849ad605117d197ac4e76be283ceacc0441f76aa1effaea275b93a26b6ed103f",
+      "size": 3412
+    },
+    "examples/BLE_EddystoneTLM_Beacon/BLE_EddystoneTLM_Beacon.md": {
+      "sha256": "090111bb8d7231de1d5895450cb19637c8706dd4cb4f1a7d492941a3188265a2",
+      "size": 606
+    },
+    "examples/Bluetooth_5/NimBLE_extended_client/NimBLE_extended_client.ino": {
+      "sha256": "54c6edcddd577b288f9ba70760a435d1fc9907b457aa7c5605d9873a58f68712",
+      "size": 5349
+    },
+    "examples/Bluetooth_5/NimBLE_extended_scan/NimBLE_extended_scan.ino": {
+      "sha256": "40074bc2aab883243c4bc873ac5f4d2b46f593bd56e49cc7ab4525adeed3f0d5",
+      "size": 2635
+    },
+    "examples/Bluetooth_5/NimBLE_extended_server/NimBLE_extended_server.ino": {
+      "sha256": "647931e806732f7185b56ffe0e18918704d84f4630dabeb5d7013b5ac7e5fad1",
+      "size": 6157
+    },
+    "examples/Bluetooth_5/NimBLE_multi_advertiser/NimBLE_multi_advertiser.ino": {
+      "sha256": "a9fafd02aa6cdf10489c73be865ae968c122b8289af66f813d259b06d0fc472b",
+      "size": 7067
+    },
+    "examples/L2CAP/L2CAP_Client/L2CAP_Client.ino": {
+      "sha256": "71f03be2603c61a97ce025466018cfb45e6aede9d1080c0cb03edc34a61221be",
+      "size": 4358
+    },
+    "examples/L2CAP/L2CAP_Server/L2CAP_Server.ino": {
+      "sha256": "c5c8ec5dfe70cb38a9f23c91ce88b8f210b4ee746a0b6deba87449bc62397fd5",
+      "size": 3140
+    },
+    "examples/NimBLE_Async_Client/NimBLE_Async_Client.ino": {
+      "sha256": "f3f0557481d7f63034f9b7ba62c43e764735825d026befd4ea2b8567d3a27bb1",
+      "size": 2768
+    },
+    "examples/NimBLE_Client/NimBLE_Client.ino": {
+      "sha256": "f5491f8b72b49e810fad3e7072a28f21627294d52692a91d61ce3ba0eb3d2072",
+      "size": 12124
+    },
+    "examples/NimBLE_Scan_Continuous/NimBLE_Scan_Continuous.ino": {
+      "sha256": "4dbab578b127a981fc67ee2c7a5ed954b54d9328f408e46807f8f5dd7d54182f",
+      "size": 2247
+    },
+    "examples/NimBLE_Scan_Whitelist/NimBLE_Scan_whitelist.ino": {
+      "sha256": "986c7fd9c22b4dd59c6542d391a36ef287fcb00cadce760890fc4d01b47711cc",
+      "size": 2313
+    },
+    "examples/NimBLE_Secure_Client/NimBLE_Secure_Client.ino": {
+      "sha256": "393bab9f617fa2155eb2db1ee12b21f55f6ac25e15569a329f8317c9622d81e1",
+      "size": 3755
+    },
+    "examples/NimBLE_Secure_Server/NimBLE_Secure_Server.ino": {
+      "sha256": "7ce6a2bdf88630f3871be92db9d0ea211e1bef20241774df0cc0dde7bd72395a",
+      "size": 1874
+    },
+    "examples/NimBLE_Server/NimBLE_Server.ino": {
+      "sha256": "c906a4ca43aa0695ad4e1a1a11aa3e5bfbe72db3a97b4ff7fab9da0e6274c555",
+      "size": 9369
+    },
+    "examples/NimBLE_Server_Whitelist/NimBLE_Server_Whitelist.ino": {
+      "sha256": "526aff83ee24f8869987b32b29c656cbbe069a461eace8fd96be0b51646a4939",
+      "size": 3087
+    },
+    "examples/NimBLE_active_passive_scan/NimBLE_active_passive_scan.ino": {
+      "sha256": "b61fe8c106a5bc39e367b671aa79548150f380fe90ffe6edce22ec5a5f54fc99",
+      "size": 1440
+    },
+    "examples/NimBLE_iBeacon/NimBLE_iBeacon.ino": {
+      "sha256": "83ffd7d4214513049787235352c88f6c6d813f442b467ac1a68df2435702e853",
+      "size": 1282
+    },
+    "library.properties": {
+      "sha256": "f38f455c5d3cbb2abd0cfc75d6b7358ad0766f1877b701d1a033e1e1208c12ef",
+      "size": 605
+    },
+    "src/HIDKeyboardTypes.h": {
+      "sha256": "c02688de1e5db5642212db57d0fb68240332568eff4c8ca0002e2e4c44bdd5b9",
+      "size": 13585
+    },
+    "src/HIDTypes.h": {
+      "sha256": "f26779da252895210be39f6e942ab656a1f57f1193db6774bed82609542e78e3",
+      "size": 3394
+    },
+    "src/NimBLE2904.cpp": {
+      "sha256": "2fc2f683e5e00ae88f4e7384042ac9e7bbd379cf1917366a75e5dd968e5a6fbf",
+      "size": 2220
+    },
+    "src/NimBLE2904.h": {
+      "sha256": "d294acec784abb60a0e69a3644f987ed18f29c09a7bf39c125375bae89f518a6",
+      "size": 3207
+    },
+    "src/NimBLEAddress.cpp": {
+      "sha256": "9642fbd90c81d2b88c141c4ee32ed3817e3ccd1f025ab10bfb47426c3a3c2977",
+      "size": 7462
+    },
+    "src/NimBLEAddress.h": {
+      "sha256": "b4b1461a10e261fb4b80a76a5104264e983720c399ececc7a87eaa3141db9e88",
+      "size": 2331
+    },
+    "src/NimBLEAdvertisedDevice.cpp": {
+      "sha256": "e96de32e32d704133f7fa4113027250dc0dad42d4a6bff88adf66c2be60f3699",
+      "size": 27685
+    },
+    "src/NimBLEAdvertisedDevice.h": {
+      "sha256": "7c91a2b02989ac8e35499842c368b829f2f6da3e33736fa91118cc1b22dd03e1",
+      "size": 7386
+    },
+    "src/NimBLEAdvertisementData.cpp": {
+      "sha256": "e5744e774eda2b1b7a92d531da6d3d041f0c0670cd447414c00de9c03ec063de",
+      "size": 19743
+    },
+    "src/NimBLEAdvertisementData.h": {
+      "sha256": "184bec10503c9ee4b30fe3fe6668821fb22724b8075ebdfa02f680c394874669",
+      "size": 3354
+    },
+    "src/NimBLEAdvertising.cpp": {
+      "sha256": "2d91191b0cc328614c7a03ee1ff76c750290642e65eb556d0ac7efbbe2995667",
+      "size": 21321
+    },
+    "src/NimBLEAdvertising.h": {
+      "sha256": "0dcab88c3aafc25cd4473311c5c4464a16bb3e46a906b278de0ed5cc8d1906eb",
+      "size": 4116
+    },
+    "src/NimBLEAttValue.cpp": {
+      "sha256": "275afdb30bb8a4bc76c87ffef28f65cb2ac892270fe2d996ea91364660093eb3",
+      "size": 4994
+    },
+    "src/NimBLEAttValue.h": {
+      "sha256": "64239c649e18179f8db67657ad9ae7a6e877c01ba1f6d7a595f8cccb2e893a32",
+      "size": 13802
+    },
+    "src/NimBLEAttribute.h": {
+      "sha256": "4814941d492a3389cf8097ad9188ac92962eb854378bc718a02d47e72a7a961d",
+      "size": 1823
+    },
+    "src/NimBLEBeacon.cpp": {
+      "sha256": "73715406421936cdcd24e9bd51a8c41af228bf8a6d92fb2cd047f75fc073bad8",
+      "size": 4019
+    },
+    "src/NimBLEBeacon.h": {
+      "sha256": "764e89d3d187e459f6e38c9f3c254e39606fcfe07c48d54c284508d23e026ecf",
+      "size": 2327
+    },
+    "src/NimBLECharacteristic.cpp": {
+      "sha256": "e751b08af80e4246b461cdca8d4dcc84ba6fe9faab91c49edef2ad328888bac0",
+      "size": 16132
+    },
+    "src/NimBLECharacteristic.h": {
+      "sha256": "9b55a6312c9ee5ad1d6506db7241b477cfa7755deb04f1c35f0ff3f508e8ac49",
+      "size": 11604
+    },
+    "src/NimBLEClient.cpp": {
+      "sha256": "bbe4c9bb0a10fb8dd849211acfe62ebfb5778da923dc5ae32c25936e0b2c42ea",
+      "size": 49999
+    },
+    "src/NimBLEClient.h": {
+      "sha256": "64fc9a81b8aba8746b194bc1b121c6a256fd8872c734eb0ffeb2eaa5769d58a5",
+      "size": 9751
+    },
+    "src/NimBLEConnInfo.h": {
+      "sha256": "bf18d1253e8341df249f60eaa85e4d59403150e85a25d82b530eba5bc1ebec41",
+      "size": 3234
+    },
+    "src/NimBLEDescriptor.cpp": {
+      "sha256": "cea6b4bf063d962b2e83005dd2dade112969bba4720bf06efe6cc9c61f65f6fc",
+      "size": 6009
+    },
+    "src/NimBLEDescriptor.h": {
+      "sha256": "047138d9b52648fba8596efd3d7f39d8e8e1d539c2099d11fdc6bccef225122b",
+      "size": 2821
+    },
+    "src/NimBLEDevice.cpp": {
+      "sha256": "612762b01e41f15cebbfaa95415b0dd3d24c979e5bfbdb57fafd27c3cd779a34",
+      "size": 46894
+    },
+    "src/NimBLEDevice.h": {
+      "sha256": "0068347800779bdfe9920dc525ba3b7449f63326daf83104e4c59a245c2f2c29",
+      "size": 12213
+    },
+    "src/NimBLEEddystoneTLM.cpp": {
+      "sha256": "f9624af88f737a8ac8e70e62453540a28393bc22a1de715bf51e5823c40987ae",
+      "size": 6141
+    },
+    "src/NimBLEEddystoneTLM.h": {
+      "sha256": "4a7d64517f5c0eafbd804a9841fe6d01452a0ac312b012f990993b27596b702d",
+      "size": 2181
+    },
+    "src/NimBLEExtAdvertising.cpp": {
+      "sha256": "9afc25e978b2d483fff9fe9636081fa03d629a135638894f52d3f5a76dc19979",
+      "size": 37417
+    },
+    "src/NimBLEExtAdvertising.h": {
+      "sha256": "b4d049f351be7064aba265f3c8228f37e876b4280e4ba5cd9ee0483ecd6da650",
+      "size": 6577
+    },
+    "src/NimBLEHIDDevice.cpp": {
+      "sha256": "e84b83c50cd46d297f3c48cb4a039e9df04cfa759ba4e4793f809aaf92c99964",
+      "size": 13947
+    },
+    "src/NimBLEHIDDevice.h": {
+      "sha256": "d225c03b6544dceb597aa28278774921d2e6a6a6dea6234c5ace896818c53a4c",
+      "size": 3511
+    },
+    "src/NimBLEL2CAPChannel.cpp": {
+      "sha256": "2a0d69ac3c9349356e8909ebf63c4e97af63bcd68ac98f61495c94669ca09ce4",
+      "size": 10567
+    },
+    "src/NimBLEL2CAPChannel.h": {
+      "sha256": "d80c9a2937b07bcc04cb1f15b43c342a120f938882cde924b1d49079a749fc64",
+      "size": 4875
+    },
+    "src/NimBLEL2CAPServer.cpp": {
+      "sha256": "548f8f7e47a6cff1ab915c9624b2d582940e2425c11544abe4b63ef8f44964c9",
+      "size": 1200
+    },
+    "src/NimBLEL2CAPServer.h": {
+      "sha256": "2d8c34954db8bfa4950a0d5a3593bc8dd8cf3223331dc17e95b86825c88d0d9a",
+      "size": 1257
+    },
+    "src/NimBLELocalAttribute.h": {
+      "sha256": "0d64ab82b0cc4afacab28665665fd16a1350924f6d6f46d3079b4ca1d4a70262",
+      "size": 1710
+    },
+    "src/NimBLELocalValueAttribute.h": {
+      "sha256": "6d90a71d4ad75d2b58b3ea418f39208785ca75f0c8399ececea1a8ab0e50ce09",
+      "size": 5101
+    },
+    "src/NimBLELog.h": {
+      "sha256": "5f18f8ef6f0b56ac165b326be2ec8601c995661dcf90a7396caf8a0ee20849e0",
+      "size": 9399
+    },
+    "src/NimBLERemoteCharacteristic.cpp": {
+      "sha256": "46b1727f578c666c145a4155835fd45d13695cbc4d101763c3584de05682805c",
+      "size": 13834
+    },
+    "src/NimBLERemoteCharacteristic.h": {
+      "sha256": "4355cc247052684b84282c77fa1484bd210e035c0e3091ef9266abd4a6a127cc",
+      "size": 3532
+    },
+    "src/NimBLERemoteDescriptor.cpp": {
+      "sha256": "3234c5039317a18d61fb3dd6ed11ea3a2a904512bdb3af5199fc6f494909438a",
+      "size": 2266
+    },
+    "src/NimBLERemoteDescriptor.h": {
+      "sha256": "eb355bcc6407d52e520255cef7a283b2e2ebe6800da397fae8c8eace5bc01d2f",
+      "size": 1624
+    },
+    "src/NimBLERemoteService.cpp": {
+      "sha256": "be4d7d2835f8df3c89c0a096319b8d70f80a5626819f33926e3e0a40538823c2",
+      "size": 10934
+    },
+    "src/NimBLERemoteService.h": {
+      "sha256": "ca34eef2d408a96f0d2bdda0a96d3edffe9f9338864b4576cb830937df6eb9e4",
+      "size": 2953
+    },
+    "src/NimBLERemoteValueAttribute.cpp": {
+      "sha256": "97a907649c4a9b37c5e72509b21fd5612e86f129c77360ec15e0bd2cecd8279e",
+      "size": 7907
+    },
+    "src/NimBLERemoteValueAttribute.h": {
+      "sha256": "6ed4f1830dbcbdd066728e40486f1f24065a0b5db350425052f91e714758c77f",
+      "size": 6930
+    },
+    "src/NimBLEScan.cpp": {
+      "sha256": "6ea07d764d8833b1ebfb1d7cdc7e83bb59675bf9523595c49491caa47f1aca43",
+      "size": 20543
+    },
+    "src/NimBLEScan.h": {
+      "sha256": "415f62bddccae61bc874e1aa9727ad4ce7aad78fde38f6fc97a9a7a48a19b45f",
+      "size": 4970
+    },
+    "src/NimBLEServer.cpp": {
+      "sha256": "367beda26de02615bf10391963fe5ded36ddf0d34ba4969707cb0e80feeac140",
+      "size": 38177
+    },
+    "src/NimBLEServer.h": {
+      "sha256": "c81b38a5dd87a4a94d0cf2b6833dc1166aaf81c9aa2841ed1ac9747369cd9df3",
+      "size": 8472
+    },
+    "src/NimBLEService.cpp": {
+      "sha256": "6bd10bb166259ca2e57abc135e9eac63780d3e4650b61494027eaeef44065ef8",
+      "size": 12732
+    },
+    "src/NimBLEService.h": {
+      "sha256": "dd8d5cf12d6b9097125a3872858e2d2ecbfff230533e7a797dc6a8df0818d1ad",
+      "size": 3128
+    },
+    "src/NimBLEUUID.cpp": {
+      "sha256": "5ba5df26ccb2b5f117d2f412c1b546628457681c09c557855e83329f62352cf4",
+      "size": 11785
+    },
+    "src/NimBLEUUID.h": {
+      "sha256": "1549b48526b705f340a5f5ea7f26c5d48209e05598462a52b80630ee0e8999a6",
+      "size": 2146
+    },
+    "src/NimBLEUtils.cpp": {
+      "sha256": "215d6ee42a551e49ba2591f1dfb749c050e22d26d540e35db56ce263ac99bb18",
+      "size": 25378
+    },
+    "src/NimBLEUtils.h": {
+      "sha256": "a264512823a387ab6006bd4e4afb8d4881304b77ed627ce18019263f20bd93b0",
+      "size": 2084
+    },
+    "src/NimBLEValueAttribute.h": {
+      "sha256": "a6d707a88cd7255d52c03e1fc6872675a10c8b03586803579301d8ac53955e10",
+      "size": 3816
+    },
+    "src/nimble/CODING_STANDARDS.md": {
+      "sha256": "3549138f82b6457ad2b21bb55768dbd71d4d11bfea35950d19d606a87162f236",
+      "size": 5680
+    },
+    "src/nimble/LICENSE": {
+      "sha256": "0deb15bc7df50b1d009c644b008f92e1062909e9521328d337c5fad3a5d4921c",
+      "size": 12514
+    },
+    "src/nimble/NOTICE": {
+      "sha256": "b838c4733a5020cd8e2bafbe70842acd8c8dc7816012965b77d10c1f4c0727f6",
+      "size": 321
+    },
+    "src/nimble/README.md": {
+      "sha256": "4d249c6fa13cc9ec5852c4312e1fdfa419d24923c3828d2a85d3fab5eef25dfd",
+      "size": 8800
+    },
+    "src/nimble/RELEASE_NOTES.md": {
+      "sha256": "c2392ee83df4cabf69e9d2d1114b7d29bbda8312f1a9e4d3efdf085af5dd452b",
+      "size": 736
+    },
+    "src/nimble/console/console.h": {
+      "sha256": "a288c7f356a0afc898a3342e8f9d7370b939849827f0591d04a1269302b5656a",
+      "size": 223
+    },
+    "src/nimble/esp_port/esp-hci/include/esp_nimble_hci.h": {
+      "sha256": "17768e294f03d5cdb9024a75db532f4b0495ac0365bd3301c889009a087090a2",
+      "size": 1365
+    },
+    "src/nimble/esp_port/esp-hci/src/esp_nimble_hci.c": {
+      "sha256": "a52e8c2334dda6c22fae35e41e3b493426f12598e13d9247cac384cd95f2d9a6",
+      "size": 9298
+    },
+    "src/nimble/esp_port/esp-hci/src/na_hci_driver.c": {
+      "sha256": "d12f451d784b9fbf268b2b82a946b17f1e66f4cb3fde201623b00a69acba9524",
+      "size": 2698
+    },
+    "src/nimble/esp_port/esp-hci/src/na_hci_transport.c": {
+      "sha256": "ff0cb968b36793fb719fbf29605e29ca961146d5fefaa96f9e876e71a8e1a090",
+      "size": 4901
+    },
+    "src/nimble/esp_port/port/include/bt_osi_mem.h": {
+      "sha256": "8375e68163b78d526792dff66c54672d23963bafa8b7c0d48b8411aaab70e239",
+      "size": 437
+    },
+    "src/nimble/esp_port/port/include/esp_nimble_cfg.h": {
+      "sha256": "ae5c69f576de157a9447cd693c4c158f4b15858fc43064e0ff809bd291a81630",
+      "size": 56832
+    },
+    "src/nimble/esp_port/port/include/esp_nimble_mem.h": {
+      "sha256": "777bf7277c59d95e211f8979a0de08b4da79626c4217f8c919ebbfc8084f70e0",
+      "size": 781
+    },
+    "src/nimble/esp_port/port/src/exp_nimble_mem.c": {
+      "sha256": "5eab458212611a17bdd73b1fef00ed740edb332973c74fce005ad7968dd7d248",
+      "size": 1385
+    },
+    "src/nimble/esp_port/port/transport/include/esp_hci_driver.h": {
+      "sha256": "34ebd3be589fa36caea01e89e5bc45ac9bdf49c28568523f416078f2d7d90a8c",
+      "size": 1770
+    },
+    "src/nimble/esp_port/port/transport/include/esp_hci_internal.h": {
+      "sha256": "5a908fbb08db45c3cdd7fb8c8ef41a628018c9f6b4c717154d9f92ccb3e437e5",
+      "size": 4318
+    },
+    "src/nimble/esp_port/port/transport/include/esp_hci_transport.h": {
+      "sha256": "9d5b9bddbc1d23c654dd44e1c080c12c40d51722c44bce8dea6ef120f511d1f8",
+      "size": 2985
+    },
+    "src/nimble/ext/tinycrypt/AUTHORS": {
+      "sha256": "478b050e66ce46564c1d081590edc7f3db7fcf1894430d20a9b6b550029d4ab8",
+      "size": 406
+    },
+    "src/nimble/ext/tinycrypt/LICENSE": {
+      "sha256": "b2d451fcba3577b118741d733d37ebd15bdd0b6b381e554a7345bdbfa3743108",
+      "size": 3313
+    },
+    "src/nimble/ext/tinycrypt/README": {
+      "sha256": "d795d171058c36cdb8ce718fd615846f345815465efe011aa0b215df86e53a38",
+      "size": 3106
+    },
+    "src/nimble/ext/tinycrypt/VERSION": {
+      "sha256": "283571d2642fc7b3befd294f45d53b896a1d54d34c86235b13151192b380606a",
+      "size": 6
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/aes.h": {
+      "sha256": "bd9e1ea99ec9717aa68f8c2b9b8844c11a7557017dde19c0ea7ca9599ce28c8e",
+      "size": 5330
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/cbc_mode.h": {
+      "sha256": "353e30695a02fc4348428244394526e4c9037c3e27f50094c4b0fac412b58c11",
+      "size": 6875
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ccm_mode.h": {
+      "sha256": "10a1afe6577af04ea8ffbb4550b57fead818645db9ecbb5496148b746e2cfa92",
+      "size": 8576
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/cmac_mode.h": {
+      "sha256": "e2514f99cf9c4f43047cc78e4838cd545498aee9b72fcc3edab66f78fcfcdcd8",
+      "size": 8109
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/constants.h": {
+      "sha256": "89c80a6d5f468ebde82fb525a6dd72685cb27720fd385da6e3f3f2a19fba48ec",
+      "size": 2024
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ctr_mode.h": {
+      "sha256": "5c0c1bbcf5f43c6ca34980c1fde73b4f9c0608d201497a4e306eeca0dc9a0903",
+      "size": 4687
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ctr_prng.h": {
+      "sha256": "c304a65a3320a672eff8e0a378d204ad7a22c38ade8adfa4ff12e442c74a5f2d",
+      "size": 6488
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ecc.h": {
+      "sha256": "ab1904e162dc994ef0b0174dcee9e708d57d58828dc5d819ba71713ac443fee4",
+      "size": 20332
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ecc_dh.h": {
+      "sha256": "7c461cb2c564bb9ac77ee6d5c7b8e19d6bf9c31df048660e97120d2ffffa671b",
+      "size": 5582
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ecc_dsa.h": {
+      "sha256": "dab76f2f41b8818a52cca21eaa036d6beaa39b1bccb379738746e466438321ce",
+      "size": 6179
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/ecc_platform_specific.h": {
+      "sha256": "ed890b375c177e7abad7b188ac0a737e87d43224325cd1ed944bad3d25c470cf",
+      "size": 4070
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/hmac.h": {
+      "sha256": "2f285c6bf8af88e8972f9aaf86de8d1f036236926f86b633ae9b0f83064e3fbf",
+      "size": 5484
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/hmac_prng.h": {
+      "sha256": "beddb96b4ec20a7208f4f9eb2825a7a6f33995d49fdbc3936bba777067808cd0",
+      "size": 6897
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/sha256.h": {
+      "sha256": "90eb15d8cd82f81ba163c53b199c04eb9e5fda52a41901bb380dd80097f57902",
+      "size": 5017
+    },
+    "src/nimble/ext/tinycrypt/include/tinycrypt/utils.h": {
+      "sha256": "c5c169e0ae15e394588d7d6797a28af9ab251b1ed1169b3207625752d8d8fc8a",
+      "size": 3233
+    },
+    "src/nimble/ext/tinycrypt/src/aes_decrypt.c": {
+      "sha256": "1d72bf9c96650a336e759fead9f483931bb596639211789366f9f4f8bc084927",
+      "size": 6435
+    },
+    "src/nimble/ext/tinycrypt/src/aes_encrypt.c": {
+      "sha256": "f6a526d2c14389e330e8b0f3add43abb27d81e6d40fe468d51f4ab07345e9bac",
+      "size": 6984
+    },
+    "src/nimble/ext/tinycrypt/src/cbc_mode.c": {
+      "sha256": "30c1cbdd1a70a9342aa0baf8fd9b27a4b0a8abd45226967f118ac3f3164d6524",
+      "size": 3911
+    },
+    "src/nimble/ext/tinycrypt/src/ccm_mode.c": {
+      "sha256": "e90a9df3c829bf8d20f743c4a5b06b6e22283e7540b4716e11d2f6c37ef32fe9",
+      "size": 8195
+    },
+    "src/nimble/ext/tinycrypt/src/cmac_mode.c": {
+      "sha256": "c461e997d46a36cb60e85af10268a1cd0cc22f6c21984254763235805c8ae8b6",
+      "size": 7873
+    },
+    "src/nimble/ext/tinycrypt/src/ctr_mode.c": {
+      "sha256": "87c0e44a353a85544fdf2bc0f7cf09b5cfb97845adbfb8970ec966d60fecf9fd",
+      "size": 3200
+    },
+    "src/nimble/ext/tinycrypt/src/ctr_prng.c": {
+      "sha256": "fe367423198c2cd0c2407e13545c89780e6c2d94ef3cf545687865e7619ec622",
+      "size": 8075
+    },
+    "src/nimble/ext/tinycrypt/src/ecc.c": {
+      "sha256": "78807b54951c267bcaf340578e021f3d5ea7d6bc54c5d4d4de087f9f018028e2",
+      "size": 28344
+    },
+    "src/nimble/ext/tinycrypt/src/ecc_dh.c": {
+      "sha256": "6c85bd6e81d2707e7650de6035462a04f45f87140ef3cf389bb4b73f5ec1e2c1",
+      "size": 7440
+    },
+    "src/nimble/ext/tinycrypt/src/ecc_dsa.c": {
+      "sha256": "fb6b998bf16ec935b7f9002a0aec870b203c3cfacdbe276d087a7291333d9626",
+      "size": 10538
+    },
+    "src/nimble/ext/tinycrypt/src/ecc_platform_specific.c": {
+      "sha256": "17f454ecc206f2ac532c517b13beb56ff730e71efb93eb70b20ee71617a8eb7b",
+      "size": 4115
+    },
+    "src/nimble/ext/tinycrypt/src/hmac.c": {
+      "sha256": "5df9b0d5f48102b5a2888dd0d73600487c476aa8388be303a4367bd84dcecd07",
+      "size": 4786
+    },
+    "src/nimble/ext/tinycrypt/src/hmac_prng.c": {
+      "sha256": "c079f580437ef09fd3976c546366d17722ac3559fc59d024fa9095fe848b5ea0",
+      "size": 7020
+    },
+    "src/nimble/ext/tinycrypt/src/sha256.c": {
+      "sha256": "af2602ba9994330f3030d6f0d22ac51039078aba9eed171a2205c3a671caafb1",
+      "size": 7503
+    },
+    "src/nimble/ext/tinycrypt/src/utils.c": {
+      "sha256": "f473d3ad7b55d223b2fc6708ab097d5742a281c8bbd3915aef6a0b197bfe6397",
+      "size": 2542
+    },
+    "src/nimble/nimble/controller/include/controller/ble_fem.h": {
+      "sha256": "b891539a5599864305561e3f1a6291e065409820e5321fa1e6d24533e846c7fe",
+      "size": 1773
+    },
+    "src/nimble/nimble/controller/include/controller/ble_hw.h": {
+      "sha256": "9598625371171e97405f4e0fb9cfa45949a889cc2ea8672990ddeb400f926e28",
+      "size": 2898
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll.h": {
+      "sha256": "41d9b29dac1ca57e8aa5515ccbf2a1fcf3eb7e63681d958f161320bbec458b34",
+      "size": 23415
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_adv.h": {
+      "sha256": "48246bf6fe9da8217d841fa60b294af14e6927547add14d35d7d234510306aa9",
+      "size": 7675
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_conn.h": {
+      "sha256": "770481ef9f9d4ee4d117b7bcd93a73a7216a5c874966fa28e61d3cc76737a552",
+      "size": 16350
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_crypto.h": {
+      "sha256": "2fe6b48ad39ab68d894bcb91d83dd6d3ee49ae9b35d3cfcafa534be070e82502",
+      "size": 1468
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_ctrl.h": {
+      "sha256": "0b39e98f92139d9f7bbfa567b9d086999321ccca180c659f904748ca970d2ed0",
+      "size": 12819
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_ext.h": {
+      "sha256": "4fe75f106a9642d2fe643894ddcab6132c1578eb74dfa667e7186a3d831f4aaa",
+      "size": 2343
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_hci.h": {
+      "sha256": "d86c2501314ceab9a78eded68bc7d393d86f4ac146cb77c32435c5fc71935b93",
+      "size": 3331
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_iso.h": {
+      "sha256": "62feaea93ccc450f3df16035812a3c2e327d4dbd6cdc0212d79f860383c88a06",
+      "size": 2332
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_iso_big.h": {
+      "sha256": "1ac5f30661fd3b58e8cb2094a5b67ac1b4ef388f59b2b364b2bae67e002def5f",
+      "size": 2055
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_isoal.h": {
+      "sha256": "c55e9da9feb8011b8a5b10e261648627801050f5d52893cd93487660c0fb3143",
+      "size": 2781
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_pdu.h": {
+      "sha256": "8e9f509ea75e7d1f0027280ea05c3c9d0e02bdd2df2fd62908167f6398fa4021",
+      "size": 1459
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_resolv.h": {
+      "sha256": "d7a12f6a33b21d424cd76666e3d09620163eb65cc2c2f258977c89335df7512b",
+      "size": 3915
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_rfmgmt.h": {
+      "sha256": "a15acafa7b2fce1684472e7836f4fc27e61afb517bc14e9bfebb3bf748367fce",
+      "size": 2205
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_scan.h": {
+      "sha256": "539b5f38e75718a6a8770da62c42a330afdd5072902068d180c7b2594ffc88ac",
+      "size": 8379
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_scan_aux.h": {
+      "sha256": "b260fdd8aae2cadfe3a165b9e3d6f7d34283d3c30b188131e6099e6674e5638c",
+      "size": 1916
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_sched.h": {
+      "sha256": "685187995716c567eb99bb2cab2be8a311ccc720f79135d304247cb21e893cae",
+      "size": 7692
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_sync.h": {
+      "sha256": "5c069c18078672fabe14c3e27d8236a77b967270582c4df50ebb79bdcb4fb67c",
+      "size": 2744
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_tmr.h": {
+      "sha256": "04073d1c7330d4eaba2d24e83acb5297e7c7ccdd39fc47737062ccad56b9efa8",
+      "size": 3869
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_trace.h": {
+      "sha256": "393498056061c212ca24dab215ea28c62c258c4786334db4ad4787ff00523e7e",
+      "size": 2532
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_utils.h": {
+      "sha256": "62bf46ec7683500fa7cdb3c98f708cd7600dd27f89390edd0827aca5ed403a02",
+      "size": 2367
+    },
+    "src/nimble/nimble/controller/include/controller/ble_ll_whitelist.h": {
+      "sha256": "f0ba457e93924d214f67581d3eb117a19fe0d44dae8e3cdabe0bd031bdf8733b",
+      "size": 1614
+    },
+    "src/nimble/nimble/controller/include/controller/ble_phy.h": {
+      "sha256": "8aed98631de7ba82818d6d8d7d4424b7ca2abaaccd1e76a731bda1091e360d29",
+      "size": 7572
+    },
+    "src/nimble/nimble/controller/include/controller/ble_phy_trace.h": {
+      "sha256": "b2db4984fe7ed15eb02c855d5554a275aca5e835674ad95a6a5775bd2d9074d8",
+      "size": 2129
+    },
+    "src/nimble/nimble/controller/src/ble_ll.c": {
+      "sha256": "8f7cd46d62b61748363ed1d4e627bb716a2d18b322b7fb1cdd6970186662dbd8",
+      "size": 59238
+    },
+    "src/nimble/nimble/controller/src/ble_ll_adv.c": {
+      "sha256": "6a13f7a59bfbc491a8c6099456aa054914cf6264da3b4bc4aecb24c7913ad414",
+      "size": 164079
+    },
+    "src/nimble/nimble/controller/src/ble_ll_conn.c": {
+      "sha256": "d95da4bde92dbe45c124cba07d27dde209ff84efa9a4d6dacb5d4f3826fa0776",
+      "size": 148359
+    },
+    "src/nimble/nimble/controller/src/ble_ll_conn_hci.c": {
+      "sha256": "d58ffacb42ee41329534bf394fd60e143b27d5ff22357a57e38c9ad096e7b360",
+      "size": 64943
+    },
+    "src/nimble/nimble/controller/src/ble_ll_conn_priv.h": {
+      "sha256": "c264853131429950703ff4d1944a126362d4a7923fd89fa8f60ca6645b2a94cd",
+      "size": 11695
+    },
+    "src/nimble/nimble/controller/src/ble_ll_crypto.c": {
+      "sha256": "a7c7254136956fdf44f330033391b5db8ad111b9f6b9fcc1b53beac37265ba61",
+      "size": 1874
+    },
+    "src/nimble/nimble/controller/src/ble_ll_ctrl.c": {
+      "sha256": "a2b410382b0ddc95de30e23999b76677bd3a7ee6f1b3e3b04abd6015e818770d",
+      "size": 102208
+    },
+    "src/nimble/nimble/controller/src/ble_ll_ctrl_priv.h": {
+      "sha256": "1abee4ffdf6a29b412a022cca06cf72c94c1f32791fbce315186c28696ede4ed",
+      "size": 1100
+    },
+    "src/nimble/nimble/controller/src/ble_ll_dtm.c": {
+      "sha256": "cd673f5b85ed9723c17a18210176f914ffe0e4ca0508f3f139f75e24643d316e",
+      "size": 19262
+    },
+    "src/nimble/nimble/controller/src/ble_ll_dtm_priv.h": {
+      "sha256": "4396223acf29e1777298c15dbe501fadad4c249bf81ce2b8f8b0477325a184b6",
+      "size": 1594
+    },
+    "src/nimble/nimble/controller/src/ble_ll_hci.c": {
+      "sha256": "c1cde4a362682316206b9f5d8edf59ef8b9c860fa2f615a2d958cb2c34a85da5",
+      "size": 60107
+    },
+    "src/nimble/nimble/controller/src/ble_ll_hci_ev.c": {
+      "sha256": "161857b9a90d2440833e7bb4469c4c885cde30a2827654abc9c18a6f7a6c59c0",
+      "size": 19197
+    },
+    "src/nimble/nimble/controller/src/ble_ll_hci_priv.h": {
+      "sha256": "7512ee60fd5dd5a86dc03393c96212d6a7766632c822d715ef4a8d086e18fb32",
+      "size": 1170
+    },
+    "src/nimble/nimble/controller/src/ble_ll_hci_supp_cmd.c": {
+      "sha256": "7436b4f93f89a84f83c861626ebe47dfe6fe2478f6b64571e0ac46db846ce006",
+      "size": 10386
+    },
+    "src/nimble/nimble/controller/src/ble_ll_hci_vs.c": {
+      "sha256": "bde5ba355f5e5582973e3c08d469eb00c66052215f3b3cd320f95e879c6777e8",
+      "size": 12233
+    },
+    "src/nimble/nimble/controller/src/ble_ll_iso.c": {
+      "sha256": "6ee6ad17c9dd64b6d3baadf4d64631b62325854dc2f9113bc409b9ce5d087209",
+      "size": 3361
+    },
+    "src/nimble/nimble/controller/src/ble_ll_iso_big.c": {
+      "sha256": "b257f25abcaf11cc7784a4136e121ecc32a927110c5de142f1b033824f509cce",
+      "size": 37581
+    },
+    "src/nimble/nimble/controller/src/ble_ll_isoal.c": {
+      "sha256": "0798d2386a5a8043a2bb23aeeb20a67ddc0e5ebd0115908b689f19a946bbc03f",
+      "size": 10899
+    },
+    "src/nimble/nimble/controller/src/ble_ll_pdu.c": {
+      "sha256": "032efdfe2fff964d05d03837ec9390225adcc94a33cbc94628b7ba4e1cc87996",
+      "size": 2268
+    },
+    "src/nimble/nimble/controller/src/ble_ll_priv.h": {
+      "sha256": "04a67d39c285577c40f2fa1240775c3bd1be4fd2edc911f872faa5bd249210d8",
+      "size": 2353
+    },
+    "src/nimble/nimble/controller/src/ble_ll_rand.c": {
+      "sha256": "f0e9faa04a535eb7af3d51122659ca56e6070e6b53ea6cef3a229b054de36101",
+      "size": 5422
+    },
+    "src/nimble/nimble/controller/src/ble_ll_resolv.c": {
+      "sha256": "9d05bf758c050c8057baa811bb2d01e57e9859f3f6e83da966adf53a8673cf59",
+      "size": 18955
+    },
+    "src/nimble/nimble/controller/src/ble_ll_rfmgmt.c": {
+      "sha256": "90db557e506e3cb6330f164533c29cd5eead7f67d0d83b161a0113b7b5bd50d4",
+      "size": 8766
+    },
+    "src/nimble/nimble/controller/src/ble_ll_scan.c": {
+      "sha256": "9282edcba0a61d11940a29e4a75636bb47dca0709d3901bc478e92a92742bf2c",
+      "size": 80689
+    },
+    "src/nimble/nimble/controller/src/ble_ll_scan_aux.c": {
+      "sha256": "430bb39a20b80311c52c309b84dbc8ef9a46d53d5d92ffd15b89f44eddc782ee",
+      "size": 52749
+    },
+    "src/nimble/nimble/controller/src/ble_ll_sched.c": {
+      "sha256": "dc37426195e463d15c6439ed8db62aae3e71603f1f3608c47a1e296b4356d784",
+      "size": 36043
+    },
+    "src/nimble/nimble/controller/src/ble_ll_sync.c": {
+      "sha256": "7a7b65adf51ac8a7459dda0c04d232c949478cb8da1ef6172ee3320cfb478b27",
+      "size": 67625
+    },
+    "src/nimble/nimble/controller/src/ble_ll_trace.c": {
+      "sha256": "3fcdc11c606598bbd251fa5e2a77cfe24c4a10adf87aad545ea6d3f6e1f821ef",
+      "size": 2609
+    },
+    "src/nimble/nimble/controller/src/ble_ll_utils.c": {
+      "sha256": "2f9d4edd20806bcbcdf38a2a52219a3ad7ec36df3f81c7a069508ced9b0a6f47",
+      "size": 11703
+    },
+    "src/nimble/nimble/controller/src/ble_ll_whitelist.c": {
+      "sha256": "a79794b02e5564fe5c4fc017f8fc506075a95e4143214855adff058c73f616d5",
+      "size": 7812
+    },
+    "src/nimble/nimble/drivers/nrf51/include/ble/xcvr.h": {
+      "sha256": "8a40fc490bf9391c8ae9358d1819c28e440f7a5c93f4a722fa1bfb9d8ccaf37c",
+      "size": 1556
+    },
+    "src/nimble/nimble/drivers/nrf51/src/ble_hw.c": {
+      "sha256": "71e6f4c5e9b5cf7274ba0058b30395580b4fb92c83131beccd80ccfaeace3a34",
+      "size": 10842
+    },
+    "src/nimble/nimble/drivers/nrf51/src/ble_phy.c": {
+      "sha256": "7f9d08c436f0e8539ac2f1587c8fe9475862129908c0f931d93f46657c223648",
+      "size": 46559
+    },
+    "src/nimble/nimble/drivers/nrf5x/include/ble/xcvr.h": {
+      "sha256": "87c101e14ec546c8f462bfa017cdcdc0b8353da01e658c0e021c0ff36548dab8",
+      "size": 2285
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/ble_hw.c": {
+      "sha256": "ff6f6894718b0f00eebe58d7e7a40668172d5c5fe51fcd9b383f99875f9324ba",
+      "size": 12152
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/ble_phy.c": {
+      "sha256": "4c8d8eb7a79fadc4626d83a65ede05db7fe5ee979a752bd89d6ccfc20b6b5abf",
+      "size": 71167
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/ble_phy_trace.c": {
+      "sha256": "b897b45a05fa50b2f987b26be6cb42df9dfe17f9a17b0acf2bb9314c816abe09",
+      "size": 1725
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/nrf52/phy.c": {
+      "sha256": "3e847ee630fd8595c5b98a76c34a9f2f9f81219781c3a75404c7065c5d50f84c",
+      "size": 8268
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/nrf52/phy_ppi.h": {
+      "sha256": "a1c8b567d25be3d1deb42293f8c61ee0a5f16d718e297411e7af80535b713b36",
+      "size": 3102
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/nrf53/phy.c": {
+      "sha256": "cdf59cf64f1fb97a499ce018586ebfb7079ead8b799a3f51b890eb26cce16fd7",
+      "size": 10237
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/nrf53/phy_ppi.h": {
+      "sha256": "f2c405f8c728f62f101161e7f7a20c76976a4d9cd50014109cf159e2c4187ac7",
+      "size": 5156
+    },
+    "src/nimble/nimble/drivers/nrf5x/src/phy_priv.h": {
+      "sha256": "ebc12da89e99f4e61908ce424e5bc014e2cbee8845e09840fff646f2591305cb",
+      "size": 3157
+    },
+    "src/nimble/nimble/host/include/host/ble_aes_ccm.h": {
+      "sha256": "8d7996ac4ab57e7f98220f916f2a1ecd3e577d52d9966cbebe878391edfaec85",
+      "size": 1262
+    },
+    "src/nimble/nimble/host/include/host/ble_att.h": {
+      "sha256": "6e07fc062d51d58ada360e5a934a0a70b208ececf06f9847b53204306ddcc6bb",
+      "size": 11295
+    },
+    "src/nimble/nimble/host/include/host/ble_dtm.h": {
+      "sha256": "170922f3117723e0ec6a178b8b46b24fe0b4656923cb9f9b24e398a58aa97867",
+      "size": 3733
+    },
+    "src/nimble/nimble/host/include/host/ble_ead.h": {
+      "sha256": "9bc93e66bd147f705c33f39ebac467e0e4a9c2238c675f1a09493cc0e780ef69",
+      "size": 5088
+    },
+    "src/nimble/nimble/host/include/host/ble_eddystone.h": {
+      "sha256": "466e41d4b4bbaaff922171306abca5544106c124e4e7f73210b428c1505b8168",
+      "size": 4879
+    },
+    "src/nimble/nimble/host/include/host/ble_esp_gap.h": {
+      "sha256": "00fc4635ab3e93336f7d8fb0adfaf7fc8ccf91087e65f09eecd63326b4c15dc5",
+      "size": 10719
+    },
+    "src/nimble/nimble/host/include/host/ble_esp_gatt.h": {
+      "sha256": "99baaa249b85a1c867c055d8d948670dc78ff9ef89813d0afa88fddbf0f8c301",
+      "size": 383
+    },
+    "src/nimble/nimble/host/include/host/ble_esp_hs.h": {
+      "sha256": "a6b6724a624e4a9c1e06ed8b4e39e5cb0728031ada9c335a39aa3272ebd31aec",
+      "size": 1183
+    },
+    "src/nimble/nimble/host/include/host/ble_gap.h": {
+      "sha256": "4f0d58d0af72504cbe24a247b0965730597ecaad1843919897523b69744cbc1f",
+      "size": 133271
+    },
+    "src/nimble/nimble/host/include/host/ble_gatt.h": {
+      "sha256": "1e9551c50fb995bfd1ad3dd57ed750d6a1f1805b42c4f6e47d3872498008bc33",
+      "size": 64695
+    },
+    "src/nimble/nimble/host/include/host/ble_hs.h": {
+      "sha256": "88c6ae203b175284909d14f8155327e42732ecc19a690ed7d403c4b2c7d08e28",
+      "size": 14688
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_adv.h": {
+      "sha256": "96b9c24f711fdea55ddde7fbc986f5184424e3cb973cab5d06c1ce739c794a5d",
+      "size": 7712
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_hci.h": {
+      "sha256": "7b1d35eb5340c5e3c63391f31892be7590ed890e84c4e7a4c56b0d67135125b6",
+      "size": 4574
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_id.h": {
+      "sha256": "64c982ab7b736a9076eef2929dda4a9c156deb08c74276e7d4dc50d5b3481ff2",
+      "size": 4978
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_log.h": {
+      "sha256": "635c3f4dfafbf9bcfb30ce23d0f36cee446e826e76dbca38508530f6825ec088",
+      "size": 3246
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_mbuf.h": {
+      "sha256": "a5bd2c1340dcd5694f6e5ece6e117e8d51f7dc4a3213325789c170a01dd296d2",
+      "size": 2451
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_pvcy.h": {
+      "sha256": "dcae8c4d5bfbdd87bf3c70764b3a0d7fa0afb6aa462538db26fb53b952e59907",
+      "size": 2972
+    },
+    "src/nimble/nimble/host/include/host/ble_hs_stop.h": {
+      "sha256": "95a5d93a5b7ee934fadf260b590d9abb8976efb1d305d98adad28b0e5c92bc2d",
+      "size": 3181
+    },
+    "src/nimble/nimble/host/include/host/ble_ibeacon.h": {
+      "sha256": "d9c71ea5648abb309424ec20045647e4ed7a7af6fb42925dbcb3e9d5c3e531ad",
+      "size": 1061
+    },
+    "src/nimble/nimble/host/include/host/ble_l2cap.h": {
+      "sha256": "c169fecfec30afd12ad54f7ca1d66529be42f2bb7395345d5b0200e94461b877",
+      "size": 21113
+    },
+    "src/nimble/nimble/host/include/host/ble_sm.h": {
+      "sha256": "049fbdb6fc47f39722c6251b45dff405da78258f9449a4f582600ce43dff1a8d",
+      "size": 4394
+    },
+    "src/nimble/nimble/host/include/host/ble_store.h": {
+      "sha256": "952b1929f226a380631c1d32578912a106f2ce33c91b0da310eda47b52f39001",
+      "size": 15932
+    },
+    "src/nimble/nimble/host/include/host/ble_uuid.h": {
+      "sha256": "21ab0ded77f6a8bd8b76efe86c2d10b131a9e1b2fac323dfbe7b446c2e89dfcd",
+      "size": 7837
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/access.h": {
+      "sha256": "3bf4d36e3333e072b06329a6ee3641b660d0f94c8ef51c780d20ae67dca62406",
+      "size": 22348
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/atomic.h": {
+      "sha256": "2d2b8e5c1cc47ec7e66f14bac8aaee8bb598266861beb7d9b1869f498c0c8965",
+      "size": 10127
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/cdb.h": {
+      "sha256": "37c9d1b786a2c6392842b7e40d82f516c6d54506f9bca6a17c0fa99e1e8ea119",
+      "size": 7205
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/cfg.h": {
+      "sha256": "4a5a6d04a43cf54b16e189df7a208b22ac2707bd30a794a06822e69e19c25aec",
+      "size": 17980
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/cfg_cli.h": {
+      "sha256": "1c112a978b3fa23401d402c481af2d2d849d5398904f681f93a9aa019ec7d6fd",
+      "size": 11587
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/cfg_srv.h": {
+      "sha256": "fa0243e0f6ba201da848d9cd5a52121c66b4d3ac03022213a95d3f87ff927d5e",
+      "size": 760
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/glue.h": {
+      "sha256": "8b028a89a0ede819ba98a3cd83986bb249552acdb23502ec5de58b73b836b8a0",
+      "size": 26663
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/health_cli.h": {
+      "sha256": "c528457813721dbb2b1d366931161a32e57673622d403b60329b314118692a0c",
+      "size": 2119
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/health_srv.h": {
+      "sha256": "4bccf4cc102e27d60d0a025dc03fa4bf0873e362d0df67e5448114bc5737f747",
+      "size": 2573
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/heartbeat.h": {
+      "sha256": "9a28b51783ba92329b3e081501040ad768cb20c96285ba8c337927be1ebd2742",
+      "size": 3315
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/main.h": {
+      "sha256": "1648d70b0c7f628339d77655fffe57820a23ae10a0f4dc6118551a90e745fe3c",
+      "size": 18783
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/mesh.h": {
+      "sha256": "700fa87dff305ba0eefa1836922fa493c7b7f8e09c3469460f0c20419f580c21",
+      "size": 694
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/model_cli.h": {
+      "sha256": "8a0fb5755681f1b539bb64616d29007bc5c79738a8698cecdeadc9b14681c082",
+      "size": 1477
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/model_srv.h": {
+      "sha256": "85375d91f1754fd29ac7f3855c9be77701f23b90efa625f0be0663726c4a7497",
+      "size": 2115
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/msg.h": {
+      "sha256": "522f97ed6885132e3e6fc8a82c0bfac6037ecc68b2948d2f7193bfee8d837735",
+      "size": 6880
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/porting.h": {
+      "sha256": "cef2475209abba915164ee40e0e237a1b2b98d12374dfefdac6b68ede339b31e",
+      "size": 353
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/proxy.h": {
+      "sha256": "e71334d183031a870f8d8c0fd76d1055866a4b3d68f8023f9d832843e6b20c4a",
+      "size": 752
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/slist.h": {
+      "sha256": "b5d56e6f730dde4bd63bc4df1b199befe5fefec98d52030bebbe77cff74cc504",
+      "size": 13202
+    },
+    "src/nimble/nimble/host/mesh/include/mesh/testing.h": {
+      "sha256": "ab4767cccbbd7af39540f9c7c3f4291cda0f64bea29c22ace7b5d735958c8a12",
+      "size": 2693
+    },
+    "src/nimble/nimble/host/mesh/src/access.c": {
+      "sha256": "1dd1d9a2ce2dffbc02c13c03ef5c3a29b364dbfee7f352747ae2419cded3eba9",
+      "size": 28894
+    },
+    "src/nimble/nimble/host/mesh/src/access.h": {
+      "sha256": "f14d936b31c12ab3c29932df755e5c12f1f0c935f8624d63cfca21dbf7e103e7",
+      "size": 2673
+    },
+    "src/nimble/nimble/host/mesh/src/adv.c": {
+      "sha256": "680a32386436cd53a61570c407862d6b84ec528028280c7267e690ba35d7b5dc",
+      "size": 6021
+    },
+    "src/nimble/nimble/host/mesh/src/adv.h": {
+      "sha256": "5e5c471a615862637a57ee5ff1a6570b0ea2df0ffa986a8524ef435be936fc7d",
+      "size": 3148
+    },
+    "src/nimble/nimble/host/mesh/src/adv_ext.c": {
+      "sha256": "10fed5b5aa8848a98ffb3755c6cac3a6a0c802f71c673cba85c85a6a190bd2cd",
+      "size": 8509
+    },
+    "src/nimble/nimble/host/mesh/src/adv_legacy.c": {
+      "sha256": "61a2fbb1470de094ab66e324b8b19d2cdba21c91c56bdaf687c654061094d720",
+      "size": 6798
+    },
+    "src/nimble/nimble/host/mesh/src/aes-ccm.c": {
+      "sha256": "cd6ccfc489a65d92cc63df34dfe8bda2e6ef8a573d3a872a3c352803af1f0f43",
+      "size": 4868
+    },
+    "src/nimble/nimble/host/mesh/src/app_keys.c": {
+      "sha256": "a90225302cda14fdf06343f79e030a563a96a0b4bff6fca4ca68f7f389ce2bfd",
+      "size": 15012
+    },
+    "src/nimble/nimble/host/mesh/src/app_keys.h": {
+      "sha256": "f696824f11cd33c8f1bf1249b190c9eec02b41cd988992de22f9b93a30bde716",
+      "size": 2428
+    },
+    "src/nimble/nimble/host/mesh/src/atomic.h": {
+      "sha256": "2d2b8e5c1cc47ec7e66f14bac8aaee8bb598266861beb7d9b1869f498c0c8965",
+      "size": 10127
+    },
+    "src/nimble/nimble/host/mesh/src/beacon.c": {
+      "sha256": "6fb0adeb800fc8e8d795dee7d95e4d4832e11a70a9de185f83da6f4aac9c2bf2",
+      "size": 11167
+    },
+    "src/nimble/nimble/host/mesh/src/beacon.h": {
+      "sha256": "0a7cad50a0696f146307b19c6ef53f3b1f6a9762cb67e63b766e4443e49e904f",
+      "size": 558
+    },
+    "src/nimble/nimble/host/mesh/src/cdb.c": {
+      "sha256": "172f53a9e01e703d2accfb385b656919fcd43bcbb5d116c4dd3639d426682ad0",
+      "size": 24559
+    },
+    "src/nimble/nimble/host/mesh/src/cdb_priv.h": {
+      "sha256": "852de10a375099a16d9fb2cc2633306e65540c3d620bc4c6f5e96586c4bc9bcf",
+      "size": 347
+    },
+    "src/nimble/nimble/host/mesh/src/cfg.c": {
+      "sha256": "08b399ff351d0222d4a019babd21e75eff0977589da1e7095be4db2799913a5e",
+      "size": 8349
+    },
+    "src/nimble/nimble/host/mesh/src/cfg.h": {
+      "sha256": "b51cf34b511dedb1d8643dc2b4153350b847aafc447cd35f8061334cd87ca615",
+      "size": 219
+    },
+    "src/nimble/nimble/host/mesh/src/cfg_cli.c": {
+      "sha256": "cc1273de13aaf9a5ee1a03c248d9403a2e243ad2511772ec2d5806b4ae021ccc",
+      "size": 67981
+    },
+    "src/nimble/nimble/host/mesh/src/cfg_srv.c": {
+      "sha256": "d9adcc9c2092e32f6ac3bbd081dad1e7583f1846790b015bb2fde9156e9d01c5",
+      "size": 65943
+    },
+    "src/nimble/nimble/host/mesh/src/crypto.c": {
+      "sha256": "9723e9a374bea100a4d3fbc44627001eaf0ad106fbcbfa15758196b5016acba0",
+      "size": 13770
+    },
+    "src/nimble/nimble/host/mesh/src/crypto.h": {
+      "sha256": "11749f74fbf6d725419e4bf4d755ce77be4c4fffaf34892e10bf01927d28bd16",
+      "size": 4617
+    },
+    "src/nimble/nimble/host/mesh/src/foundation.h": {
+      "sha256": "dfb1dc41ccc580b96d90ce67e73ffdc0211a1b206fe0178a4ff3d0bc30b9ab2d",
+      "size": 7879
+    },
+    "src/nimble/nimble/host/mesh/src/friend.c": {
+      "sha256": "3e969100cdf7e5e2b0fa595549d456b131d63ae1c22b59eff871719c7f04adf1",
+      "size": 41877
+    },
+    "src/nimble/nimble/host/mesh/src/friend.h": {
+      "sha256": "6143c22ff3ef45689abdf42a78b28b834108bb06e882c514ff17837422d745e1",
+      "size": 1736
+    },
+    "src/nimble/nimble/host/mesh/src/glue.c": {
+      "sha256": "6733d3426a0139ea2ce27a07ee575317fc9884983752df92cb98fcc790c4e208",
+      "size": 21417
+    },
+    "src/nimble/nimble/host/mesh/src/health_cli.c": {
+      "sha256": "3c8312f73fefb04653a8c05af16f06a231566b3f5781e134fd1a447ab3419258",
+      "size": 12601
+    },
+    "src/nimble/nimble/host/mesh/src/health_srv.c": {
+      "sha256": "7e42fdc898dc60beff8b72c89711d5e70a1cfbb8d13ab6da4886264678f53292",
+      "size": 11013
+    },
+    "src/nimble/nimble/host/mesh/src/heartbeat.c": {
+      "sha256": "0d0e4e3fcfb5d034a59390b776d547a0836d7c427e68f129bcbdf071d9edd3b0",
+      "size": 10129
+    },
+    "src/nimble/nimble/host/mesh/src/heartbeat.h": {
+      "sha256": "702e82e293d0348643e27d3a249a26f813b64fccdf8e396f28b3ad40fde6bd1a",
+      "size": 1004
+    },
+    "src/nimble/nimble/host/mesh/src/light_model.c": {
+      "sha256": "7a5bec57260b302ccc2089398ceb9caf3da415bffe8b3f9f566652c4fdd85cc9",
+      "size": 1469
+    },
+    "src/nimble/nimble/host/mesh/src/light_model.h": {
+      "sha256": "3aae6b9ea4eb91bac0bcba07fe262f1e5975b7710a0276c51e43fd528b93a1b5",
+      "size": 748
+    },
+    "src/nimble/nimble/host/mesh/src/lpn.c": {
+      "sha256": "86100f7b63ea5ac36259a74dfcc87772ff14a7dbc53561e9304ec08aed0e3e60",
+      "size": 25140
+    },
+    "src/nimble/nimble/host/mesh/src/lpn.h": {
+      "sha256": "4038624c90c3e5f8b3f654022c8ef0af550076674c98d00ebabfe0d5197a49fb",
+      "size": 1322
+    },
+    "src/nimble/nimble/host/mesh/src/mesh.c": {
+      "sha256": "dc9b7ba8b218d3e8968d9ec1bbe3b04e903f9e245fb6a7eb08d33ade5b108cf6",
+      "size": 8701
+    },
+    "src/nimble/nimble/host/mesh/src/mesh_priv.h": {
+      "sha256": "b19232d0c57d26ffb1a99d996df87ca2d01730dc2c2e04fff700e67ea5fca8d3",
+      "size": 1817
+    },
+    "src/nimble/nimble/host/mesh/src/model_cli.c": {
+      "sha256": "e7aef2e690f49708108cdf8c16259d9fee439b19f1526bfaf3e9ee56881756a7",
+      "size": 6496
+    },
+    "src/nimble/nimble/host/mesh/src/model_srv.c": {
+      "sha256": "d04ed39e7e1e25184284f40aa6b110ee3338df3fbd9236f78c63ce789a113553",
+      "size": 6184
+    },
+    "src/nimble/nimble/host/mesh/src/msg.c": {
+      "sha256": "74087f75a7434f79a895ec38a2c48c5834cc3e42a79af5811fe979ff540bf4e1",
+      "size": 1854
+    },
+    "src/nimble/nimble/host/mesh/src/net.c": {
+      "sha256": "50f92a6269763fb19d58a669dad4ea24f577de2aecb51cd6b9d7b9f57cb17f43",
+      "size": 30946
+    },
+    "src/nimble/nimble/host/mesh/src/net.h": {
+      "sha256": "f32f5ef0d7172a716975c198390fbbab98eadc4e38bbf56b810d826dcc9c95e4",
+      "size": 9297
+    },
+    "src/nimble/nimble/host/mesh/src/pb_adv.c": {
+      "sha256": "62dd1d389b18e08d2093262ff4285a015de786cd509bf3091a71da6bdceae1f7",
+      "size": 20986
+    },
+    "src/nimble/nimble/host/mesh/src/pb_gatt.c": {
+      "sha256": "47cb738e90bd7367c659eecbdecc7779637ddaa36b2e9ad1454571723d3d9c36",
+      "size": 3510
+    },
+    "src/nimble/nimble/host/mesh/src/pb_gatt_srv.c": {
+      "sha256": "07dbda823dfa53415643b767b34cba8f51ad32879e2b32680e57a052b6eadfd2",
+      "size": 11457
+    },
+    "src/nimble/nimble/host/mesh/src/pb_gatt_srv.h": {
+      "sha256": "2346639a6d3f5f1478a2e9ac2054325211214bd9ab181bc8b673ef694c6a1d96",
+      "size": 777
+    },
+    "src/nimble/nimble/host/mesh/src/prov.c": {
+      "sha256": "a1b68779a4b49123ce595af0673116dc8fdde08c8157f2abc120425ee8a9181e",
+      "size": 10520
+    },
+    "src/nimble/nimble/host/mesh/src/prov.h": {
+      "sha256": "991d128b4e3da8cb2f9112b64fa970487bd202e2a9964b727d0ddf76077867c8",
+      "size": 5398
+    },
+    "src/nimble/nimble/host/mesh/src/prov_bearer.h": {
+      "sha256": "274199d6736af8b3bd6acd5048110ce072d710b8f137a134c67f0f0c909f5782",
+      "size": 3348
+    },
+    "src/nimble/nimble/host/mesh/src/prov_device.c": {
+      "sha256": "64d44c003e15e7766f47f49811b2825ee9485456d7dea8180b590935211a82e6",
+      "size": 16340
+    },
+    "src/nimble/nimble/host/mesh/src/provisioner.c": {
+      "sha256": "c12fa330695a4ba65ed5fea460853a224af7e8e6963754564c0a9a1e71777b7e",
+      "size": 19615
+    },
+    "src/nimble/nimble/host/mesh/src/provisioner.h": {
+      "sha256": "900aeb5c23bcf5baec27a4f2c93cea0b16fbfb36b3bf773ab48547b059b6992f",
+      "size": 226
+    },
+    "src/nimble/nimble/host/mesh/src/proxy.c": {
+      "sha256": "5e5c60fc3330ba7ee0141f4a8a8565215717a7094b7e2aca2980906bcb99261b",
+      "size": 36056
+    },
+    "src/nimble/nimble/host/mesh/src/proxy.h": {
+      "sha256": "87c031027f3c0868832be401dcdd5d8c89c398ed54b10c12fee963a9b9edd985",
+      "size": 1417
+    },
+    "src/nimble/nimble/host/mesh/src/proxy_msg.c": {
+      "sha256": "321950a6b03a27b4ee6caec5f5248aeff261c7077bf34e9ed53c6cf74f4d8b97",
+      "size": 5672
+    },
+    "src/nimble/nimble/host/mesh/src/proxy_msg.h": {
+      "sha256": "6aed44869a61ee13a3fcc11f10e0d87d516c6a6662dcab9a37cdeb4e42faae35",
+      "size": 1844
+    },
+    "src/nimble/nimble/host/mesh/src/proxy_srv.c": {
+      "sha256": "649ab3b6317674b5427a5c8cb81224196393aded5deed67b336f260f00ff656c",
+      "size": 22484
+    },
+    "src/nimble/nimble/host/mesh/src/rpl.c": {
+      "sha256": "47a69c1846eed7aa3976daec4794c932e01875d339f60b1a4a732943bace0300",
+      "size": 7710
+    },
+    "src/nimble/nimble/host/mesh/src/rpl.h": {
+      "sha256": "b08fd14528229751e07c34e8663f9d5d042ade67823dd117d303237fd476d73c",
+      "size": 776
+    },
+    "src/nimble/nimble/host/mesh/src/settings.c": {
+      "sha256": "4405252e192152911e40cb6fc618dadc1d84f5da62422fc2a65a0345bb803613",
+      "size": 5325
+    },
+    "src/nimble/nimble/host/mesh/src/settings.h": {
+      "sha256": "cef2aff5a68b22e3fc36fa829a5361e9f941cfe8fed785c25dd95aa5433c7d47",
+      "size": 759
+    },
+    "src/nimble/nimble/host/mesh/src/shell.c": {
+      "sha256": "2a86f2942bcc89925ad24174940a83ba2e7fc705a1d50e72b9c1b3bc4e67a5ac",
+      "size": 77301
+    },
+    "src/nimble/nimble/host/mesh/src/shell.h": {
+      "sha256": "21658186c41398f6e6ce69543e2ee143ebc5d9ab8c8b3ee8ff5402528357d0dc",
+      "size": 171
+    },
+    "src/nimble/nimble/host/mesh/src/subnet.c": {
+      "sha256": "ce41b93a8cb44567e082c376d199f57c1887128cd1f3a935a66d4b66fe996e97",
+      "size": 18951
+    },
+    "src/nimble/nimble/host/mesh/src/subnet.h": {
+      "sha256": "749709a8cde77506b2b274d0e9e3e8344cc48da01ae189b055e843c8df03f8d5",
+      "size": 6723
+    },
+    "src/nimble/nimble/host/mesh/src/testing.c": {
+      "sha256": "d8951122c3bf2115a7a664bc7806727608e9927645435b900758e140fd449f69",
+      "size": 4586
+    },
+    "src/nimble/nimble/host/mesh/src/testing.h": {
+      "sha256": "a8b3f242804b27337014769ddd8a1e8c266e0e7d1f19e285828d6552bd6c2eae",
+      "size": 748
+    },
+    "src/nimble/nimble/host/mesh/src/transport.c": {
+      "sha256": "042c637015e1958d9371a1e1589209c6ac50555c0d59eec3c1148ef8da9cf060",
+      "size": 47952
+    },
+    "src/nimble/nimble/host/mesh/src/transport.h": {
+      "sha256": "12141e31de20c6ecb65f3ee1950b342ab53507a9722420749059eaab51b13e10",
+      "size": 2945
+    },
+    "src/nimble/nimble/host/services/gap/include/services/gap/ble_svc_gap.h": {
+      "sha256": "72f629c0fb8b1fa618341ddac9347d519092ec6fe6c134d5468ce438ac603ad2",
+      "size": 2394
+    },
+    "src/nimble/nimble/host/services/gap/src/ble_svc_gap.c": {
+      "sha256": "478a987d05630c0d2bec34d545bc7f3854bc359dc2d6992340e4b9b1e5abf590",
+      "size": 11112
+    },
+    "src/nimble/nimble/host/services/gatt/include/services/gatt/ble_svc_gatt.h": {
+      "sha256": "8bd7a8e8bffe72412b083261bb23b798dc1127cb9f70f83e03882567e28d3a5d",
+      "size": 1945
+    },
+    "src/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c": {
+      "sha256": "f77468fee46cc2d497e1461506b61a20ccb789d722a0380e41cc7f1eb87a3d28",
+      "size": 8249
+    },
+    "src/nimble/nimble/host/src/ble_aes_ccm.c": {
+      "sha256": "1547c63e06da13cddcd221ac0a4266fe945bbc037a51e7b4da7f56c1b5a8b08f",
+      "size": 7944
+    },
+    "src/nimble/nimble/host/src/ble_att.c": {
+      "sha256": "9d9c7f8a5b8155e0e3732d696017490923ea36437ccf994453b58f95c02f9bfd",
+      "size": 21139
+    },
+    "src/nimble/nimble/host/src/ble_att_clt.c": {
+      "sha256": "3e6a5c34171c43b53c7d1108ab16a5b95b618dafd20ff671434d955c6e66becf",
+      "size": 29738
+    },
+    "src/nimble/nimble/host/src/ble_att_cmd.c": {
+      "sha256": "7f5e4fb6aaf1fb8e83f3e016b4932f676144bd0df5d836841b22589838c2e92f",
+      "size": 19569
+    },
+    "src/nimble/nimble/host/src/ble_att_cmd_priv.h": {
+      "sha256": "ac3a2d92820c96c14aa4f5f1ab29a54df43ab38d9a9d9df1bddafe065ab95011",
+      "size": 19416
+    },
+    "src/nimble/nimble/host/src/ble_att_priv.h": {
+      "sha256": "476153bc2489086c595bfe82b5ca499a2fe3ddef00b8d0f29aeb330f4fab91fe",
+      "size": 14139
+    },
+    "src/nimble/nimble/host/src/ble_att_svr.c": {
+      "sha256": "273ab4bbfb33c8061ae916f669f6db9629b26152f025cd5c7eaf46d8fd72342b",
+      "size": 100710
+    },
+    "src/nimble/nimble/host/src/ble_dtm.c": {
+      "sha256": "22496996bcc200208725f20868290c96fe19c3c30a4bc6d58cd223376ade4061",
+      "size": 2222
+    },
+    "src/nimble/nimble/host/src/ble_ead.c": {
+      "sha256": "b7bbf611cf0ca4ef51887979c271ad11b9c218d712e52ae35c385736b91b6778",
+      "size": 5613
+    },
+    "src/nimble/nimble/host/src/ble_eatt.c": {
+      "sha256": "3d7e30372d965105ac8a7d81cf266788843a4d3268c048af0c218b0a84eefb18",
+      "size": 17770
+    },
+    "src/nimble/nimble/host/src/ble_eatt_priv.h": {
+      "sha256": "558b1113a909df92c644fb21698938f2fe1b340cceac534c3e56c3700e089dc5",
+      "size": 1807
+    },
+    "src/nimble/nimble/host/src/ble_eddystone.c": {
+      "sha256": "4f58ade6b85623013fbe092509688932dd086ee3131afec7d10c736fa57b2ffa",
+      "size": 5837
+    },
+    "src/nimble/nimble/host/src/ble_gap.c": {
+      "sha256": "8cadddeeacfd4e8f0ef010c21f4a7f4d30077459cacdd6821ba33c8b0328ce44",
+      "size": 266742
+    },
+    "src/nimble/nimble/host/src/ble_gap_priv.h": {
+      "sha256": "14c8314af99d467c8bbb8f541cd5aef93d62dc0b851de44a279400d866e9b8f8",
+      "size": 7851
+    },
+    "src/nimble/nimble/host/src/ble_gatt_priv.h": {
+      "sha256": "3b84d0f137f995e9df9e9151a81029dc6ae2697658444c24e364a788b03d0f06",
+      "size": 9021
+    },
+    "src/nimble/nimble/host/src/ble_gattc.c": {
+      "sha256": "6c8e62b26f72ada8bf6a693a5213512bb59528ad269a60cc87dc3157a2820c35",
+      "size": 152179
+    },
+    "src/nimble/nimble/host/src/ble_gattc_cache.c": {
+      "sha256": "ac5b9d60a39bbc321dafa7df44c087829395a639f81fc3c2cc76b48e07d1a9ed",
+      "size": 23850
+    },
+    "src/nimble/nimble/host/src/ble_gattc_cache_conn.c": {
+      "sha256": "33e4bcc2ff6d8845dafe839e7a47d450892a18d7c665734b58fc182ec14b4018",
+      "size": 56115
+    },
+    "src/nimble/nimble/host/src/ble_gattc_cache_priv.h": {
+      "sha256": "945e22a281014a5f3407c68d28d2b0614a3501962369cfdafc3ca73c5a8a6605",
+      "size": 7026
+    },
+    "src/nimble/nimble/host/src/ble_gatts.c": {
+      "sha256": "5d41a95f285a59910f691723726be91974cc9606f7ab8dd781e32ec0df7c3514",
+      "size": 95791
+    },
+    "src/nimble/nimble/host/src/ble_gatts_lcl.c": {
+      "sha256": "d2476a3a2b98100a2f9528d03e191e7e636070e0815ebab5cb19ed61a8281e85",
+      "size": 7275
+    },
+    "src/nimble/nimble/host/src/ble_hs.c": {
+      "sha256": "c5677503b264738b692d0e688672011206a308d20c5ca1aa5e32a649443bd48a",
+      "size": 23388
+    },
+    "src/nimble/nimble/host/src/ble_hs_adv.c": {
+      "sha256": "693eea83f173fc52a307e5245b24a7e6acdef907cee922d6537c8470c2175a7b",
+      "size": 29396
+    },
+    "src/nimble/nimble/host/src/ble_hs_adv_priv.h": {
+      "sha256": "c2bfd390aa72fa2e969a998cd7159b42f9526e3d634c91281a3cf8fec82120a0",
+      "size": 1225
+    },
+    "src/nimble/nimble/host/src/ble_hs_atomic.c": {
+      "sha256": "996ba445f97440f98240918ccca7a227e06ce15d426327ae71e0253b06f0db46",
+      "size": 2651
+    },
+    "src/nimble/nimble/host/src/ble_hs_atomic_priv.h": {
+      "sha256": "8e6b3aa66e56065152524cdfafe587e35a2875fed10fb9043c01f6c6a58b4409",
+      "size": 1363
+    },
+    "src/nimble/nimble/host/src/ble_hs_cfg.c": {
+      "sha256": "2e68f2cae125996c66bb8a8309728a3de078d7775108c969654cbd2063acd4cd",
+      "size": 1469
+    },
+    "src/nimble/nimble/host/src/ble_hs_conn.c": {
+      "sha256": "81e2e4b63a2ad8ba7bfb317ae23e1b10f2a38b88de46235b8dd2e27c2f81169b",
+      "size": 14523
+    },
+    "src/nimble/nimble/host/src/ble_hs_conn_priv.h": {
+      "sha256": "30f10a1a95df3e029ee73d3fede0458cde5e81844a0fde7e220673466e7dc000",
+      "size": 5003
+    },
+    "src/nimble/nimble/host/src/ble_hs_flow.c": {
+      "sha256": "5e968066a72d31e9173912205a41ecc4d9e647dfd8852942e26b25426716cd29",
+      "size": 8830
+    },
+    "src/nimble/nimble/host/src/ble_hs_flow_priv.h": {
+      "sha256": "d28567f5e1f1f22a5f4578b125e105804f622ef1fd800353bcd7f297201999bb",
+      "size": 1135
+    },
+    "src/nimble/nimble/host/src/ble_hs_hci.c": {
+      "sha256": "e6e8b48be7cb298985e4157ad8a5b0c46e70a405ea41edbb40a55bb5b1a2e4bf",
+      "size": 35452
+    },
+    "src/nimble/nimble/host/src/ble_hs_hci_cmd.c": {
+      "sha256": "0a22e4cffb27570a79c895e2bb4556fb5daef26846074c6c59929d1e252e3b64",
+      "size": 4683
+    },
+    "src/nimble/nimble/host/src/ble_hs_hci_evt.c": {
+      "sha256": "3719d2b5ef019a296d5759c0ad9730bda942935b742666f9301a9b2a5cc7c4ee",
+      "size": 45558
+    },
+    "src/nimble/nimble/host/src/ble_hs_hci_priv.h": {
+      "sha256": "5621de4607ed87c37bc110155cd77393789be58a55514d845e16b6c20e9d10e6",
+      "size": 5675
+    },
+    "src/nimble/nimble/host/src/ble_hs_hci_util.c": {
+      "sha256": "537f829cea68054b830c364acd56a238d4a87462446e0921c6ae81db8e61adef",
+      "size": 9808
+    },
+    "src/nimble/nimble/host/src/ble_hs_id.c": {
+      "sha256": "b6c10d1137d89177b566c39cb0ce36d964ccec870a748bdab13aa50ef3281b78",
+      "size": 10360
+    },
+    "src/nimble/nimble/host/src/ble_hs_id_priv.h": {
+      "sha256": "a84abf34bcd25f16938e565bb2ee84166a2ec90d532b4819ee6b2c3ce693444b",
+      "size": 1402
+    },
+    "src/nimble/nimble/host/src/ble_hs_log.c": {
+      "sha256": "42ee665168ee27b72a5a38ad96896471727b1efd93acab3019c17b5ed9009a40",
+      "size": 1404
+    },
+    "src/nimble/nimble/host/src/ble_hs_mbuf.c": {
+      "sha256": "38f7294838a226f04ac9f8752fefc994a287a5e3b0fce5b1c029350d3fd4e3aa",
+      "size": 4271
+    },
+    "src/nimble/nimble/host/src/ble_hs_mbuf_priv.h": {
+      "sha256": "856c4c86523f7375dd2c9e3ae4ffaaad17f430fe0d132150ce4e8d9e40431127",
+      "size": 1155
+    },
+    "src/nimble/nimble/host/src/ble_hs_misc.c": {
+      "sha256": "7c2e67e285b3210e3a48bb06600bb895908f872d8b36947a0e62a2bf26ae34a7",
+      "size": 3699
+    },
+    "src/nimble/nimble/host/src/ble_hs_mqueue.c": {
+      "sha256": "cf9e9dcc76585f07f1c383f85bcf4018ce912c7220ccaffd8ee8794ee90880ce",
+      "size": 2098
+    },
+    "src/nimble/nimble/host/src/ble_hs_periodic_sync.c": {
+      "sha256": "d3f974f73eebff4e6e26c3e0f5345d9d5f79169ea6809cc3568eb847e77bb4bd",
+      "size": 4104
+    },
+    "src/nimble/nimble/host/src/ble_hs_periodic_sync_priv.h": {
+      "sha256": "d623120f8dfa2ed5b01e8279e6a2ea069afa6b8b566c5b1c0487675270ccc1a5",
+      "size": 1873
+    },
+    "src/nimble/nimble/host/src/ble_hs_priv.h": {
+      "sha256": "18b2ff99eece4c8c6798c063e21bb9320a7adda7c65a7bd4843568c22d95851a",
+      "size": 5042
+    },
+    "src/nimble/nimble/host/src/ble_hs_pvcy.c": {
+      "sha256": "83ef670e15211ef7b96bed2574ffab746c3b13009903074a2044b45a5d057c38",
+      "size": 10425
+    },
+    "src/nimble/nimble/host/src/ble_hs_pvcy_priv.h": {
+      "sha256": "4cc124a32da88eab913567bd960318ed43fecd68c90cc502c5191d8482a2ce58",
+      "size": 1516
+    },
+    "src/nimble/nimble/host/src/ble_hs_resolv.c": {
+      "sha256": "d4392a827f71ad2dfb04a137c95d3d9886cd37f2c253ed535885a639adcab5f4",
+      "size": 23047
+    },
+    "src/nimble/nimble/host/src/ble_hs_resolv_priv.h": {
+      "sha256": "97660e68f83460afaca7344398680a28d95a87bacc4c449df9fa2047f9c61d51",
+      "size": 3660
+    },
+    "src/nimble/nimble/host/src/ble_hs_shutdown.c": {
+      "sha256": "d1d1a4a32a06dd1fd091c1c906bffdf28fe861d47ed51ece6acce30974367b0b",
+      "size": 2005
+    },
+    "src/nimble/nimble/host/src/ble_hs_startup.c": {
+      "sha256": "8ad071795ab13fca443349cd8cf4ba2e873bba5992a39e4531cfbd49c3719999",
+      "size": 13742
+    },
+    "src/nimble/nimble/host/src/ble_hs_startup_priv.h": {
+      "sha256": "898793116eaf5931ac922d900395b688546ff870b83cbb9ac5ed7fc012818cb5",
+      "size": 967
+    },
+    "src/nimble/nimble/host/src/ble_hs_stop.c": {
+      "sha256": "5f5b996d50178f0d7c199bb3640be6ab3a57d072f26945aeb113c5d8efb2e36a",
+      "size": 8142
+    },
+    "src/nimble/nimble/host/src/ble_ibeacon.c": {
+      "sha256": "c0b27bcc562d3eb7e066cd30c333feb3d571e17b5c9196c20a459dac76b0642c",
+      "size": 2732
+    },
+    "src/nimble/nimble/host/src/ble_l2cap.c": {
+      "sha256": "1017ad624afb3d3347a2258580feffd0aa5a32b5d8995ee0d8008765665efc9c",
+      "size": 15485
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_coc.c": {
+      "sha256": "74efd5092411417cb9e163e5ed9afdf192804e44646c155ba9e1138c7f3069d6",
+      "size": 19125
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_coc_priv.h": {
+      "sha256": "84743f46ac4ef661c9c5c3befe18fd21f8e4c937f6ada8516921e85587233786",
+      "size": 3837
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_priv.h": {
+      "sha256": "98257a9b04caba0394601a11dc380890660a1f478015aad743791a5c425f4a24",
+      "size": 5121
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_sig.c": {
+      "sha256": "71c79f119649612bd7bdf27d0933894ee10154158989d30bc4bec423a22fb3a9",
+      "size": 58926
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_sig_cmd.c": {
+      "sha256": "6169d0c05deba76946869d0a3672bb5ba1900be6412400698b6fc45b6f78517e",
+      "size": 3233
+    },
+    "src/nimble/nimble/host/src/ble_l2cap_sig_priv.h": {
+      "sha256": "b995686160973d1e6a85fa292dd3d46ca66f71e2edf84bb23ccc44f5ab408310",
+      "size": 5634
+    },
+    "src/nimble/nimble/host/src/ble_sm.c": {
+      "sha256": "f88810ae6fcdf1f499efcb1471b18b36a154e7cd67dd45145b70bd4822d120da",
+      "size": 90650
+    },
+    "src/nimble/nimble/host/src/ble_sm_alg.c": {
+      "sha256": "6c8b4ae4c9a97569943dde2bb903a2cae98718b89bb55262893dec8ff9199e68",
+      "size": 19925
+    },
+    "src/nimble/nimble/host/src/ble_sm_cmd.c": {
+      "sha256": "e95d036aaf3e393bcfc6e8976345af8fdd2e9ab1007b9ecc24c2be4046d805f1",
+      "size": 2028
+    },
+    "src/nimble/nimble/host/src/ble_sm_lgcy.c": {
+      "sha256": "25f4f03e581113b760c8b49adb7cff494a8309c338f70e4850bad6eb7ad42e9b",
+      "size": 7337
+    },
+    "src/nimble/nimble/host/src/ble_sm_priv.h": {
+      "sha256": "6d131c837a46dd0941f5f3fcb17d84b63be7b2bf062b6fbde89e8221838ab433",
+      "size": 16464
+    },
+    "src/nimble/nimble/host/src/ble_sm_sc.c": {
+      "sha256": "3e9f484a1f62f51a7347c24f0535137c6f9e99f0aa92bc39652a4e107a79e663",
+      "size": 26336
+    },
+    "src/nimble/nimble/host/src/ble_store.c": {
+      "sha256": "9d8e23eba52b9224676fee01f64631bb3c738c3de7a2cc12d70ad845b659fb4f",
+      "size": 15858
+    },
+    "src/nimble/nimble/host/src/ble_store_util.c": {
+      "sha256": "a25a4886c9cd47522287d9f43eb7e917c8e1383cd4247701bd2c5b875304524a",
+      "size": 10219
+    },
+    "src/nimble/nimble/host/src/ble_uuid.c": {
+      "sha256": "a8a249ebb962d429f30ed6055e3c7fc46fd927dd317026a22b4779a06e1f62bb",
+      "size": 9663
+    },
+    "src/nimble/nimble/host/src/ble_uuid_priv.h": {
+      "sha256": "b80e34ab2dd2ef3296fe8e7d15e7c3716a0773574b63b78735647f3733de84fb",
+      "size": 1484
+    },
+    "src/nimble/nimble/host/store/config/include/store/config/ble_store_config.h": {
+      "sha256": "c093f6e20c864c10e708a210ab7ca8f87937c2231fa11c2b005d685d7b9ae840",
+      "size": 1267
+    },
+    "src/nimble/nimble/host/store/config/src/ble_store_config.c": {
+      "sha256": "58c2ae0008aa8f44c4ed2cad45c3b7f5a4756b97e1f056655c8b215da31218d2",
+      "size": 31865
+    },
+    "src/nimble/nimble/host/store/config/src/ble_store_config_conf.c": {
+      "sha256": "f617468c4cf11560e4750aafcd8e8c48c4dd7b4e9410f793469d0675b3269a2c",
+      "size": 11346
+    },
+    "src/nimble/nimble/host/store/config/src/ble_store_config_priv.h": {
+      "sha256": "3270055841eef318f0f6d0be43eb77556dbcb5a85cddf967bfd0a8becdbc95ec",
+      "size": 3309
+    },
+    "src/nimble/nimble/host/store/config/src/ble_store_nvs.c": {
+      "sha256": "e4d61d3b6403e263d40f2f498c4d6ac64ee1727ccd3fd6f040ba0e1908c26144",
+      "size": 35858
+    },
+    "src/nimble/nimble/host/store/ram/include/store/ram/ble_store_ram.h": {
+      "sha256": "f5618f64e9167f67c96919748baab827e8181e1751cd9a0a3010e5d9ca898c20",
+      "size": 1423
+    },
+    "src/nimble/nimble/host/store/ram/src/ble_store_ram.c": {
+      "sha256": "6b75cc3fc7f58413ca546e20e78e94543276681d377061cb4ccac63b9b1136e7",
+      "size": 20641
+    },
+    "src/nimble/nimble/host/util/include/host/util/util.h": {
+      "sha256": "e158ab352d1348b58f658057203b8985d28d452e64b46345dac5ce2f60bde5ac",
+      "size": 1583
+    },
+    "src/nimble/nimble/host/util/src/addr.c": {
+      "sha256": "28a14892bc8268e921c8864cdbc4baa856e10ab64b50351e71ffef72ba90e936",
+      "size": 3087
+    },
+    "src/nimble/nimble/include/nimble/ble.h": {
+      "sha256": "79780288a65d15e54f0201f8ff4f9f798db627d7e6539533c88a5eaa425b5b56",
+      "size": 10654
+    },
+    "src/nimble/nimble/include/nimble/hci_common.h": {
+      "sha256": "ba965cdba069046a79284215e72ec9274483223f69f4a87e8e0f0883e107ed7e",
+      "size": 77177
+    },
+    "src/nimble/nimble/include/nimble/nimble_npl.h": {
+      "sha256": "4d54006f2271db7f1d7d0f76711518101e641f2288c973213d40ff4da52073fb",
+      "size": 4870
+    },
+    "src/nimble/nimble/include/nimble/nimble_opt.h": {
+      "sha256": "592d82ea57749c3dbd7d6b4b9aee09c4069caee2e8e39a83f0ad2a25e0a85bf6",
+      "size": 1036
+    },
+    "src/nimble/nimble/include/nimble/nimble_opt_auto.h": {
+      "sha256": "f4b2bb51d8f63c4d1f5692d4d8a95dfea72631788629e17ec0cd874a5acbbc7c",
+      "size": 4004
+    },
+    "src/nimble/nimble/transport/common/hci_h4/include/nimble/transport/hci_h4.h": {
+      "sha256": "8d11de2d32df1f605a0780ab6bd5bac77f73133bbe50663fbb6cea42f28fcb68",
+      "size": 2067
+    },
+    "src/nimble/nimble/transport/common/hci_h4/src/hci_h4.c": {
+      "sha256": "acae6049513276320b8c5f81b5cd67eda5090a447a946ff8c5a5fb6f7d1a850f",
+      "size": 8523
+    },
+    "src/nimble/nimble/transport/common/hci_ipc/include/nimble/transport/hci_ipc.h": {
+      "sha256": "1bb19283a46406bb071eb0423cd4176fa2a6b143f2d16db345f9e5174e4c513e",
+      "size": 2742
+    },
+    "src/nimble/nimble/transport/common/hci_ipc/src/hci_ipc.c": {
+      "sha256": "81c4904bc5b945eb48e61aeeaf0802e1e41a04edb47a6c2738a4ca8065c671bc",
+      "size": 5630
+    },
+    "src/nimble/nimble/transport/esp_ipc/src/hci_esp_ipc.c": {
+      "sha256": "fddfe57fb7c95e7c6393d033f328f4e2406cb8d2fb0739cc56d4ee4aae4cb7a1",
+      "size": 1880
+    },
+    "src/nimble/nimble/transport/esp_ipc_legacy/src/hci_esp_ipc_legacy.c": {
+      "sha256": "1a7febec483f2f03f63bb191a315c0025e2fa4f86596bf599e000984c83972ec",
+      "size": 972
+    },
+    "src/nimble/nimble/transport/include/nimble/transport.h": {
+      "sha256": "6eaa646699045a32bcf22f8b829cc9bb600980f3d4c6e18a7a2873679aa89624",
+      "size": 7765
+    },
+    "src/nimble/nimble/transport/include/nimble/transport/monitor.h": {
+      "sha256": "63ba1c4bc7dba2dd696a4557bde6472375bdd142532aa809e33875f33969dd90",
+      "size": 2078
+    },
+    "src/nimble/nimble/transport/include/nimble/transport/transport_ipc.h": {
+      "sha256": "ebf59bb74b040f8714150627f07f4906792a25be367e3525af2c55a5c560f514",
+      "size": 1549
+    },
+    "src/nimble/nimble/transport/include/nimble/transport_impl.h": {
+      "sha256": "99277febac52f36510432233908c8ae299becf85b1d4b218f45b5ab42491ce06",
+      "size": 1704
+    },
+    "src/nimble/nimble/transport/nrf5340/src/nrf5340_ble_hci.c": {
+      "sha256": "9f75eb93b32e4a65f15f3ab9646b4e5df9fed2d783a2bef020887672ab54b83e",
+      "size": 6158
+    },
+    "src/nimble/nimble/transport/src/transport.c": {
+      "sha256": "f4119814a8642dd68f2293dc44cc702df5bff7c1d24831b527b8545a54beea4c",
+      "size": 14124
+    },
+    "src/nimble/porting/nimble/include/hal/hal_gpio.h": {
+      "sha256": "0f6c162b6008e24572a8a89aa7f2211edbb61acb51d849f5bcf0f305fb6766ae",
+      "size": 3728
+    },
+    "src/nimble/porting/nimble/include/hal/hal_os_tick.h": {
+      "sha256": "de764bcbb4149a40d1b725ed9d78e95142c0c8742a98d116b903bcce42faf0eb",
+      "size": 947
+    },
+    "src/nimble/porting/nimble/include/hal/hal_system.h": {
+      "sha256": "d91d4b9a5e45e9064c938377686ab8286db18ca99aa0426ec9d028dde741626f",
+      "size": 1810
+    },
+    "src/nimble/porting/nimble/include/hal/hal_timer.h": {
+      "sha256": "256a507179b261df7926d424eeb9fadde08e65d64d0395f63165cb578a4779fb",
+      "size": 5209
+    },
+    "src/nimble/porting/nimble/include/hal/hal_uart.h": {
+      "sha256": "4a8e2a28bcf6774a3c87c1044033ebdb7b13d36037924e2cc932deeb0c200a3c",
+      "size": 3579
+    },
+    "src/nimble/porting/nimble/include/hal/hal_watchdog.h": {
+      "sha256": "10186d38206dc39d3e05627efdded079f6c303b46efbe8130d9ad97eecbcddb4",
+      "size": 1159
+    },
+    "src/nimble/porting/nimble/include/log/log.h": {
+      "sha256": "607fe5c652cbb25da469a1efbcf5c544d0a6ab38bd5f1e6a56ac6ca0de9dcdf8",
+      "size": 954
+    },
+    "src/nimble/porting/nimble/include/log_common/ignore.h": {
+      "sha256": "7c8142f7140027c7c68efe5d1f2d0cf98f98b3ec60526622bb11ff34108fa172",
+      "size": 2474
+    },
+    "src/nimble/porting/nimble/include/log_common/log_common.h": {
+      "sha256": "9b21f68660f7c57a49c00587d1770e0eed64cf239708f16a0084082b34c99c62",
+      "size": 4453
+    },
+    "src/nimble/porting/nimble/include/logcfg/logcfg.h": {
+      "sha256": "2e4ffd2132e1d0db87e9eb48902ab93884c85585f3482215785767c7daf1c5d7",
+      "size": 8876
+    },
+    "src/nimble/porting/nimble/include/mem/mem.h": {
+      "sha256": "953d62d0e6de3268a5639545bc7e1a35e147c459cdaeff1b47e539ac1f12dc39",
+      "size": 4524
+    },
+    "src/nimble/porting/nimble/include/modlog/modlog.h": {
+      "sha256": "50c7dd25542dda4e8cf36ae9aad6bdf4da0cda6f1763762c38c422260bd35cde",
+      "size": 3208
+    },
+    "src/nimble/porting/nimble/include/nimble/nimble_port.h": {
+      "sha256": "24fe2ae764e94771e7b8a0a21ae6742079b8770a4b192588af188fd726e98707",
+      "size": 2606
+    },
+    "src/nimble/porting/nimble/include/nimble/storage_port.h": {
+      "sha256": "a51ca499cb773f4130401f3681943dd07b400523761ced1590fe913e1fff3a8c",
+      "size": 1601
+    },
+    "src/nimble/porting/nimble/include/os/endian.h": {
+      "sha256": "58a7c7a884d7f78fda36baf6c55444e8ea15c20c7ff9e58ef8cc6b8650bfbca1",
+      "size": 6152
+    },
+    "src/nimble/porting/nimble/include/os/os.h": {
+      "sha256": "a198f7382bca162c675bd5ff2f4b029b9e2d2860402f2276283cccfeca6eb6ad",
+      "size": 1962
+    },
+    "src/nimble/porting/nimble/include/os/os_cputime.h": {
+      "sha256": "d978960ddf3d1c1dee8f7eaf3004d7e6075bc602edb0fca7daa9ff08c316eea6",
+      "size": 7366
+    },
+    "src/nimble/porting/nimble/include/os/os_error.h": {
+      "sha256": "77673eac0484a9cc34c381fafd1dcc506cd4a1e71e9fa7c49fd07baba9491963",
+      "size": 1851
+    },
+    "src/nimble/porting/nimble/include/os/os_mbuf.h": {
+      "sha256": "e30c90bc526190f9c87ecd74322b59853258b2deabc2ca11f5f87e8d5e10de88",
+      "size": 40252
+    },
+    "src/nimble/porting/nimble/include/os/os_mempool.h": {
+      "sha256": "3258c2c9ff86f80e5b1ce721a94b964a57c6d6727133c4c334135d9379806ec0",
+      "size": 13303
+    },
+    "src/nimble/porting/nimble/include/os/os_trace_api.h": {
+      "sha256": "2bc2a4b22d8798eb0a0713a451c6b1be6735fba91d61b0becd53d4d9c378fd5f",
+      "size": 6456
+    },
+    "src/nimble/porting/nimble/include/os/queue.h": {
+      "sha256": "22e016b84d31e07d6979915d7fe998470f5c1a57829411bf6120718b266cba05",
+      "size": 9263
+    },
+    "src/nimble/porting/nimble/include/os/util.h": {
+      "sha256": "4e13799baa040f5cfdd4d571e8708d37a59d02563f57ec2402008a787bab7dcc",
+      "size": 1456
+    },
+    "src/nimble/porting/nimble/include/stats/stats.h": {
+      "sha256": "7dd361577589ffe48e932f641932bd45c7d4fd0de50ce2a9fb232c5de4d5071b",
+      "size": 2095
+    },
+    "src/nimble/porting/nimble/include/syscfg/syscfg.h": {
+      "sha256": "6baea4045c06c2ac761a2cfc5bfa57bb6bcf63734f1157df07a59c1d7c2b6894",
+      "size": 49920
+    },
+    "src/nimble/porting/nimble/include/sysflash/sysflash.h": {
+      "sha256": "67b717a8979a36d0a41cda8e02e114ef5455290fda854f60bf8180f0dc9a3223",
+      "size": 1743
+    },
+    "src/nimble/porting/nimble/include/sysinit/sysinit.h": {
+      "sha256": "27fa623fc16c07c8660b2a86b985ab506f08040b5ef44b1e8f482e9cd2dc4f93",
+      "size": 1114
+    },
+    "src/nimble/porting/nimble/src/endian.c": {
+      "sha256": "e9694fe362d87f2d9430ef375e971e0665bc963e8bdcaa69ca3261f3ce783d58",
+      "size": 5102
+    },
+    "src/nimble/porting/nimble/src/hal_timer.c": {
+      "sha256": "2eebadac52546078f7c167d649c467a7abdb0a27f9b4d42fa9ef74338589d1e4",
+      "size": 23927
+    },
+    "src/nimble/porting/nimble/src/mem.c": {
+      "sha256": "794158dc92455bea4c405854df1e3c9ab94f39df7c2da76c92909f23c016f81e",
+      "size": 10957
+    },
+    "src/nimble/porting/nimble/src/nimble_port.c": {
+      "sha256": "884e11f785dac66f9116af72c30bc0c1010bc35a3161c67b96b8392dadd73c8d",
+      "size": 9110
+    },
+    "src/nimble/porting/nimble/src/os_cputime.c": {
+      "sha256": "925e0514adb9f29b8d06fc309e4139b3f9b57b1143d371c1d44b5fa9d6994a24",
+      "size": 2945
+    },
+    "src/nimble/porting/nimble/src/os_cputime_pwr2.c": {
+      "sha256": "1a345c49945ac4cabd0e3ae7892b706ae2104bbf656684dc4ad7127a2e8fd84b",
+      "size": 2658
+    },
+    "src/nimble/porting/nimble/src/os_mbuf.c": {
+      "sha256": "c92cbfbb904574cbffd4d26805d5d4cf59f69a0d94c7dec1ead9bb833824f5ac",
+      "size": 30551
+    },
+    "src/nimble/porting/nimble/src/os_mempool.c": {
+      "sha256": "4899d760f278d98e9f2593a1ff96d6de0e5192d6bcf561db452e3fa9ac0c3175",
+      "size": 13385
+    },
+    "src/nimble/porting/nimble/src/os_msys_init.c": {
+      "sha256": "13a2e97ad8c7a2c45a2814ab5211a47cfc5d5ccc03b152fafa05563ebf074d7a",
+      "size": 6432
+    },
+    "src/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h": {
+      "sha256": "ac842cd82f098665124108b64e3641142dd6decd92e002758c87fab6b8d2e98f",
+      "size": 18522
+    },
+    "src/nimble/porting/npl/freertos/include/nimble/nimble_port_freertos.h": {
+      "sha256": "05982c055294666cfc9d6b9a93bcb4242d62ff04b125b75d3c6ad488185c459b",
+      "size": 1793
+    },
+    "src/nimble/porting/npl/freertos/include/nimble/npl_freertos.h": {
+      "sha256": "dfbed2232f159edc4aed18b2861eca7a260141847e10a43320294ba6b58af4be",
+      "size": 3917
+    },
+    "src/nimble/porting/npl/freertos/src/nimble_port_freertos.c": {
+      "sha256": "ed5c5422f074cec12d4dd0dbc0fc28b3e0b477b7814260cf6189448eeb44115a",
+      "size": 4851
+    },
+    "src/nimble/porting/npl/freertos/src/npl_os_freertos.c": {
+      "sha256": "6fb5153e38b8eb0f5178f6732ead0e1cfc8b4261fd38a4258a53027d20e7e912",
+      "size": 20289
+    },
+    "src/nimconfig.h": {
+      "sha256": "551e23986ea611c0c7e1567e2c80e72e7ac15af62239a5ded2d6049f71e10a72",
+      "size": 13949
+    },
+    "src/nimconfig_rename.h": {
+      "sha256": "80e853c0998f32956c8073c4dedc10097d7e0df4f6a11a3dd85799fe4e29ee02",
+      "size": 3618
+    },
+    "src/syscfg/syscfg.h": {
+      "sha256": "54af358bbcefdbf12903b626693111acb898fadf7aa576895c426aadbfc42a54",
+      "size": 70
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "name": "b330_r0.68_off_lowCin",
+    "bulk": 330,
+    "damp": 0.68,
+    "top": 11300,
+    "mode": "off",
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "highref": true,
+    "no_off_load": true,
+    "cin_scale": 0.5,
+    "pg_mid": 4.42
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 426541,
+  "main_peak": 3.38112843,
+  "active_min": 0.0262855161,
+  "final_main": 3.31085538,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.12243238000000023,
+  "input_switch_peak_A": 0.934593208,
+  "I151max": 1.08690292,
+  "I121max": 1.01547602,
+  "ready_rises": 2,
+  "waveform_sha256": "9dc4bfe49d14a6f1a48d4f3aa259f1ff08c9ece98a68628936f09400707b9371"
+}

@@ -1,0 +1,673 @@
+{
+  "schema_version": 1,
+  "mode": "NATIVE_EVIDENCE",
+  "status": "NATIVE_OUTPUTS_COMPLETE",
+  "runner_sha256": "e19ac430dcedf874687e0fcefe5f573d69627d357be382f63fd54206cc9a4072",
+  "commands": [
+    {
+      "name": "kicad_version",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.12,
+      "stdout": "logs/kicad_version.stdout",
+      "stderr": "logs/kicad_version.stderr"
+    },
+    {
+      "name": "pcbnew_version",
+      "argv": [
+        "/usr/bin/python3",
+        "-c",
+        "import pcbnew;print(pcbnew.GetBuildVersion())"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.145,
+      "stdout": "logs/pcbnew_version.stdout",
+      "stderr": "logs/pcbnew_version.stderr"
+    },
+    {
+      "name": "zone_refill",
+      "argv": [
+        "/usr/bin/python3",
+        "-c",
+        "\nimport json,sys\nfrom pathlib import Path\nimport pcbnew as p\nproject, board = map(Path, sys.argv[1:3])\nassert '9.0.9' in p.GetBuildVersion(), p.GetBuildVersion()\nmanager = p.GetSettingsManager()\nmanager.LoadProject(str(project))\n# Compare pad identities/names before accepting native load or refill.\n# A balanced lexer is sufficient for these quoted scalar fields; no CAD edits occur.\nimport re\ndef children(text):\n depth=0; quoted=False; escaped=False; start=None\n for i,ch in enumerate(text):\n  if quoted:\n   if escaped: escaped=False\n   elif ch=='\\\\': escaped=True\n   elif ch=='\"': quoted=False\n  elif ch=='\"': quoted=True\n  elif ch=='(':\n   if depth==1:start=i\n   depth+=1\n  elif ch==')':\n   depth-=1\n   if depth==1 and start is not None:yield text[start:i+1]\n assert depth==0 and not quoted\nexpected={}\nfor fp in children(board.read_text()):\n if not fp.startswith('(footprint '):continue\n fields=list(children(fp))\n ref=json.loads(next(re.match(r'\\(property\\s+\"Reference\"\\s+(\"(?:[^\"\\\\]|\\\\.)*\")',x).group(1) for x in fields if x.startswith('(property \"Reference\"')))\n for pad in fields:\n  if not pad.startswith('(pad '):continue\n  pf=list(children(pad)); ident=next(json.loads(re.match(r'\\(uuid\\s+(\"[^\"]+\")',x).group(1)) for x in pf if x.startswith('(uuid '))\n  net=next((json.loads(re.match(r'\\(net\\s+\\d+\\s+(\"(?:[^\"\\\\]|\\\\.)*\")',x).group(1)) for x in pf if x.startswith('(net ')), '')\n  expected[(ref,ident)]=net\ndef check_pad_nets(board_obj,stage):\n actual={(f.GetReference(),pad.m_Uuid.AsString()):pad.GetNetname() for f in board_obj.GetFootprints() for pad in f.Pads()}\n differences=[{'reference':key[0],'pad_uuid':key[1],'source':expected.get(key),'native':actual.get(key)} for key in expected.keys()|actual.keys() if expected.get(key)!=actual.get(key)]\n assert not differences, stage+' pad-net identity changed: '+json.dumps(differences)\n\nb = p.LoadBoard(str(board))\nassert b is not None, \"Native PCB parser rejected input; inspect parser-isolation diagnostic\"\ncheck_pad_nets(b,\"native load/reload\")\nb.SetProject(manager.GetProject(str(project)))\nb.SynchronizeNetsAndNetClasses(False)\np.ZONE_FILLER(b).Fill(b.Zones())\np.SaveBoard(str(board), b)\nb = p.LoadBoard(str(board))\nassert b is not None, \"Native PCB parser rejected input; inspect parser-isolation diagnostic\"\ncheck_pad_nets(b,\"native load/reload\")\nzones = [z for z in b.Zones() if not z.GetIsRuleArea()]\ndetails = []\nfor z in zones:\n for layer in [p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]:\n  if not z.IsOnLayer(layer): continue\n  poly = z.GetFilledPolysList(layer)\n  area = 0.0\n  for i in range(poly.OutlineCount()):\n   outline = poly.Outline(i)\n   pts = [(p.ToMM(outline.CPoint(j).x),p.ToMM(outline.CPoint(j).y)) for j in range(outline.PointCount())]\n   if len(pts) >= 3:\n    area += abs(sum(a[0]*c[1]-c[0]*a[1] for a,c in zip(pts,pts[1:]+pts[:1])))/2\n  details.append({'uuid':z.m_Uuid.AsString(),'net':z.GetNetname(),\n                  'layer':b.GetLayerName(layer),'outline_count':poly.OutlineCount(),\n                  'outer_area_mm2':area})\nprint(json.dumps({'version':p.GetBuildVersion(),'zones':len(zones),\n 'copper_zones':len({d['uuid'] for d in details}), 'zone_layer_details':details,\n 'footprints':len(list(b.GetFootprints())), 'tracks_and_vias':len(list(b.GetTracks()))}))\n",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pro",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.611,
+      "stdout": "logs/zone_refill.stdout",
+      "stderr": "logs/zone_refill.stderr"
+    },
+    {
+      "name": "erc",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/ERC.json",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.358,
+      "stdout": "logs/erc.stdout",
+      "stderr": "logs/erc.stderr"
+    },
+    {
+      "name": "schematic_netlist",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/SCHEMATIC_NETLIST.xml",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.327,
+      "stdout": "logs/schematic_netlist.stdout",
+      "stderr": "logs/schematic_netlist.stderr"
+    },
+    {
+      "name": "schematic_bom",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "sch",
+        "export",
+        "bom",
+        "--exclude-dnp",
+        "--fields",
+        "Reference,Value,Footprint,Manufacturer,MPN,LCSC,${QUANTITY}",
+        "--labels",
+        "Reference,Value,Footprint,Manufacturer,MPN,LCSC,Quantity",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/REVIEW_BOM.csv",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.325,
+      "stdout": "logs/schematic_bom.stdout",
+      "stderr": "logs/schematic_bom.stderr"
+    },
+    {
+      "name": "schematic_pdf",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "sch",
+        "export",
+        "pdf",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/REVIEW_SCHEMATIC.pdf",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.972,
+      "stdout": "logs/schematic_pdf.stdout",
+      "stderr": "logs/schematic_pdf.stderr"
+    },
+    {
+      "name": "drc",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--schematic-parity",
+        "--exit-code-violations",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/DRC.json",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.896,
+      "stdout": "logs/drc.stdout",
+      "stderr": "logs/drc.stderr"
+    },
+    {
+      "name": "pcb_netlist",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "export",
+        "ipcd356",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/PCB_NETLIST.d356",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.462,
+      "stdout": "logs/pcb_netlist.stdout",
+      "stderr": "logs/pcb_netlist.stderr"
+    },
+    {
+      "name": "gerbers",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/review_gerbers/",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.039,
+      "stdout": "logs/gerbers.stdout",
+      "stderr": "logs/gerbers.stderr"
+    },
+    {
+      "name": "drills",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--excellon-separate-th",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/review_gerbers/",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.72,
+      "stdout": "logs/drills.stdout",
+      "stderr": "logs/drills.stderr"
+    },
+    {
+      "name": "component_positions",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "export",
+        "pos",
+        "--format",
+        "csv",
+        "--units",
+        "mm",
+        "--side",
+        "both",
+        "--exclude-dnp",
+        "--use-drill-file-origin",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/REVIEW_POSITIONS.csv",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/candidate_kicad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.358,
+      "stdout": "logs/component_positions.stdout",
+      "stderr": "logs/component_positions.stderr"
+    },
+    {
+      "name": "component_step",
+      "argv": [
+        "/workspace/scratch/a2f5ff859ded/kicad9-runtime/usr/bin/kicad-cli",
+        "pcb",
+        "export",
+        "step",
+        "--no-dnp",
+        "--subst-models",
+        "-o",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/REVIEW_COMPONENTS.step",
+        "/workspace/scratch/a2f5ff859ded/engineering_runs/native_c166_68n_release/model_export/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.931,
+      "stdout": "logs/component_step.stdout",
+      "stderr": "logs/component_step.stderr"
+    }
+  ],
+  "inputs": {
+    "cad": {
+      "CAN.kicad_sch": "ea1c080399a0066b8ff71deea8e129f5b3515e3787fed44052969215f2e5e1a1",
+      "CANDIDATE_README.md": "a4f2e6a6dde9036ff0186344769c0d4065770665c8e294c9098fee62c299d212",
+      "ESP32.kicad_sch": "51d1cb4706eacc4408e3f4a275f077c7d2fcb6497423b18136061760a2962d84",
+      "FITTED_REFERENCES.json": "4dd4364369eb3d63ae88437972165a9f787c97bdeb3c42c1535494856dbcda6a",
+      "GPS.kicad_sch": "55a9d87b7fac9f5c218104c7d5f063411c8f9ac93436b913c260918982f7ecaf",
+      "GR86_CCA_RevB.kicad_dru": "156050fc0fd321f299a2db28d9cda78f453029e537d201247cc71d9abf7d65da",
+      "GR86_CCA_RevB.kicad_pcb": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+      "GR86_CCA_RevB.kicad_prl": "4a3e8bf6f0f966c07be53473d0d7162aa6e1c144cf48237c3c29a8ef0cf0e78e",
+      "GR86_CCA_RevB.kicad_pro": "52d0a52f7bb8ae57320f6d059c3539fd628a3cb9c84d66192c2cf9916142171f",
+      "GR86_CCA_RevB.kicad_sch": "3993d2b279b3041cf1ea64515656e1980fd30249d07c9c3b9c3a0f36e5c3b281",
+      "Input_Protection.kicad_sch": "56286b82dd827a716a0309f331061d887a6e19ac2dd1edbdf78ca1457afe441f",
+      "LEDs_Status.kicad_sch": "62919551d080dc2172fb7f6894287fbf606264cf2a185d8e7480ac66f78d9a6e",
+      "Oil_Pressure.kicad_sch": "de0c8f81adbcb074200e27a78609317bd0667109c7538589fed6a4b4b9f59c27",
+      "Power_3V3.kicad_sch": "1d899997db347f76c40aa42bef0753d7a051cf7e45197a2a4afe93053efdf30f",
+      "Power_5V.kicad_sch": "aef7c9b440176e10b39b729abbeacacf71cfbae56ef96046bc47a93d59c43fff",
+      "Programming_Debug.kicad_sch": "486de6f9c5b7d04bba917926c68ba5ea9dbc3d4116f4a3578988283b7a2fe61f",
+      "RVB22_POWER_CANDIDATE_ONLY.txt": "5f5d506776d25fad066c6c63591de12e4a791c4d2f3d636e933943f1a5781f07",
+      "Test_Points.kicad_sch": "b6263cca62138a2d94ee13314f1163d50c92c5d8e27f48cb935fb0e38b539ba4",
+      "Vehicle_Interconnect.kicad_sch": "bf55946e04486d888dc3ee126e71d68ff2826af1ceb2286277e4d4e99a7e4c40",
+      "fp-lib-table": "7b517306e8b610c928fc6371b9c96d9d2df8fbad166a38894c914d7b8bb51fc7",
+      "libraries/RevB.kicad_sym": "44373515af16efc6831ea5b753117727154a558209fbe05a2087328c71e82e9e",
+      "libraries/RevB.pretty/CDTop_PA1616D_20Pad_v06.kicad_mod": "595453e700993350c3e2154261109550fd90dd2e8323077911daf3340a1fb430",
+      "libraries/RevB.pretty/C_0402_1005Metric.kicad_mod": "1aec3acfe8de50f53c01fa2f4735284e5027424485d0cf154a868f441e4436bc",
+      "libraries/RevB.pretty/C_0603_1608Metric.kicad_mod": "608e18fb80450783fac25cc58c9252747b9ea2194cf45d152599bf23170afeb6",
+      "libraries/RevB.pretty/C_0603_1608Metric_RVB22_C154.kicad_mod": "9c580f28840a78576acd1b62b1b1cba3d74d5a3577a0dff1f2c59068acd034bb",
+      "libraries/RevB.pretty/C_0603_1608Metric_RVB22_C205.kicad_mod": "3634037f681da9a06a7ff5b4dab2349650dfb638e951fde6438c475867caf6d0",
+      "libraries/RevB.pretty/C_0805_2012Metric.kicad_mod": "f9821eb1d391e3d2bc6c77832e3dcb89c12eb239a84b32afe731e7e2e61509bb",
+      "libraries/RevB.pretty/C_1210_3225Metric.kicad_mod": "01a9cf0760a69faa989db0ff756daa38df9941e218e5f8a06ba1a5cd5ec2c37d",
+      "libraries/RevB.pretty/Coilcraft_MSS1246T_12x12.kicad_mod": "374a5e52bb92199e80c7cf60b615f4ae3c2b600cba74612aa8f5a2b8f990cd05",
+      "libraries/RevB.pretty/Coilcraft_MSS1246T_12x12_RVB22_L121.kicad_mod": "4dc10090e2f615024b53139aafe2b754ab5c105de094d3fee4304f1db60aa045",
+      "libraries/RevB.pretty/D_SMA.kicad_mod": "08e475ba157dfd29f03602ae785bc21faee2586a20f96edeb9c19cb42868948f",
+      "libraries/RevB.pretty/D_SMB.kicad_mod": "3fe2352afdcb9d3c333fd57aba59a4eac88464beb338c81b2422b7b931073f73",
+      "libraries/RevB.pretty/D_SMC.kicad_mod": "ef70d411a94053ae633f6b30a5146218b0bf144e91ba1b4b20bdc2451864a860",
+      "libraries/RevB.pretty/D_SMC_RVB22_D103.kicad_mod": "e944bb83714e7c8bcd1b95c36a43a4f16cc250dbcd1532af8c0a2660ec1c28a8",
+      "libraries/RevB.pretty/D_SOD-123F.kicad_mod": "aa24a7d6bbbac5a2c0eb536a1ba5c0f023c3b35272e8a03f914873b48b3b0c07",
+      "libraries/RevB.pretty/ESP32-S3-WROOM-1.kicad_mod": "65145e12e0f08bb8c126a3915e7f641b1c79c7b0ae5aaa4c0d5bc278a18c4c04",
+      "libraries/RevB.pretty/ESP32-S3-WROOM-1_RVB22_U201.kicad_mod": "d6feca1219e0ee0cdd576b1fbdb003d4a9262fa38926a54b8109db2090cb2750",
+      "libraries/RevB.pretty/ESP32-S3-WROOM-1_RVB22_U201_TH48.kicad_mod": "16c83584927c2242aa0557c4ff150689f6605724fe9f2a6246875d297f21a4be",
+      "libraries/RevB.pretty/Fuse_Littelfuse-NANO2-885.kicad_mod": "b041f0e9d16bafb9f833640d4f6fc49e2ba71f90d21fed23638d10ba696c0b4a",
+      "libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm.kicad_mod": "64ad83fbdbf19255a150892c28ccc38dac47fc9d30ae5d5ca4c791b321f6f623",
+      "libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.kicad_mod": "cbc4631b4f422e67d772176af27ac1af4c2f5ce5a1431a3409f2df58bae9d482",
+      "libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm.kicad_mod": "22e9c999c6c9bcd47b01724cc6b99207c24f0c7c4107a9b23347aa559fc923ab",
+      "libraries/RevB.pretty/Hirose_UFL_R_SMT_1_80_RevB.kicad_mod": "04a28fbb207e977e5eedea4d3d0f43952de1da7b014e0c80ceb839aaee695eee",
+      "libraries/RevB.pretty/I32_FINISHED_C159.kicad_mod": "5d5eca9131524a542379e8d2042f53f410982bac445f4ae0c863da55b7838c52",
+      "libraries/RevB.pretty/I32_FINISHED_C161.kicad_mod": "9d423e019868a16a264fc91b188472fcffe8baa803607012a8dac0fb70882233",
+      "libraries/RevB.pretty/I32_FINISHED_C162.kicad_mod": "86efbb6591be237669b564c1887b1108a4fb42c050d4873d7a7ed901fdc97e87",
+      "libraries/RevB.pretty/I32_FINISHED_C165.kicad_mod": "adda4b8406aaf9ef915940aab8875dc93949ac38738abd00536ae204112ab986",
+      "libraries/RevB.pretty/I32_FINISHED_C166.kicad_mod": "61430cddecf7ca2343efd68a11d099520156d132d18ba9ad0647e1160ebb6056",
+      "libraries/RevB.pretty/I32_FINISHED_C167.kicad_mod": "2ac72773c3f75930451cd4b77069eb4be627301021467188c932c540b54dd357",
+      "libraries/RevB.pretty/I32_FINISHED_Q152.kicad_mod": "0dbce307dde0790e5f2a07cd83769003d91f64efa4cf2f6c157c61bfb35fef8e",
+      "libraries/RevB.pretty/I32_FINISHED_Q153.kicad_mod": "8f5813cf9d59f3b170c96cf69b338c4b86ddaadf676addf179980023ab076af6",
+      "libraries/RevB.pretty/I32_FINISHED_R151.kicad_mod": "571aeabfe637d1ed3e8a11fa1cc10721b9829098359d0c89f5d9844009df1e74",
+      "libraries/RevB.pretty/I32_FINISHED_R155.kicad_mod": "ada5bc60e24b145b9e9d53ed87242baeba8b3427a980b3ef8ceab07e14f1f016",
+      "libraries/RevB.pretty/I32_FINISHED_R156.kicad_mod": "69e4f6c28ba2ac8f0bca2986701b3296cc7364be4fc8ecef036998c2e1dcdc6b",
+      "libraries/RevB.pretty/I32_FINISHED_R158.kicad_mod": "d9bf484e90a944a5a1c20bcf47821af0b45fff646223075b75d8cc74b6272db4",
+      "libraries/RevB.pretty/I32_FINISHED_R159.kicad_mod": "150e9efb9c39dd381d92b19fa64c0d756c131f5efc672ae2712b0fc0beddbc03",
+      "libraries/RevB.pretty/I32_FINISHED_R160.kicad_mod": "96a4cc7d14e744cbd7a547c9534ab59683e392dcea5824004a618981d5bcbef1",
+      "libraries/RevB.pretty/I32_FINISHED_R161.kicad_mod": "2662b975393a8568709965c294cf053b2c06c44e415ad995f9e663849193c8bf",
+      "libraries/RevB.pretty/I32_FINISHED_R162.kicad_mod": "405a7214aafebe1fdd8ec0ae8ce5a27bca8ec9ad0c3a3bfe98702a90f95de136",
+      "libraries/RevB.pretty/I32_FINISHED_R163.kicad_mod": "fd1ed58e87e8b15a6d47ef44564ca4e8c768c67a75756391a294c2f6a0d32bc7",
+      "libraries/RevB.pretty/I32_FINISHED_R164.kicad_mod": "faff87b4d3bd1a38fd1618a1da709229dcecc06a096e067a5becdc39a4eefdab",
+      "libraries/RevB.pretty/I32_FINISHED_R165.kicad_mod": "635dfda7a0d15ea0a7a1ebbf22657bec1325e0b774c82781b6ead917f16e6a0d",
+      "libraries/RevB.pretty/I32_FINISHED_R166.kicad_mod": "7d665a90cfe447970a7c9040888d85b9e00ee148b3d1c4b3b6587dd09270d592",
+      "libraries/RevB.pretty/I32_FINISHED_R167.kicad_mod": "9ecc9cf9db55d9029f0bb33c5ed434c174538ac8a48bf297972dc412a874c0cc",
+      "libraries/RevB.pretty/I32_FINISHED_R168.kicad_mod": "1ca55924c37f14231f0a0a4922840c4e542c42afbdba9999579ca2bbad95c9af",
+      "libraries/RevB.pretty/I32_FINISHED_R169.kicad_mod": "af82fbd4188ec7e7e3001f17550eeb4121f1c8ee770f773d4fc4c5f070261b46",
+      "libraries/RevB.pretty/I32_FINISHED_R170.kicad_mod": "eeefc79c48487ef3893914f91cb17fd7a7f21e37bb4dd1be9682d3caf24618ed",
+      "libraries/RevB.pretty/I32_FINISHED_R204.kicad_mod": "b45ec3a8e090d8668756adef4eaae80438b972d1f4b78b56d7ffbc03a198beeb",
+      "libraries/RevB.pretty/I32_FINISHED_TP154.kicad_mod": "0ce73bcc2f8ccb20c44edf93b163b7a6d26a12fd1dae666f0220f22f7a465c4b",
+      "libraries/RevB.pretty/I32_FINISHED_U152.kicad_mod": "950b4be43868fae383a0f9e4c687e34fa5097336c99ccf75cc7e7e1f239463ec",
+      "libraries/RevB.pretty/I32_FINISHED_U153.kicad_mod": "0007c9f60a4fec8cae58fbbf201d24e2e63ccdd4d2410e8c56716da8dac8e242",
+      "libraries/RevB.pretty/KEMET_C1210_10u50V.kicad_mod": "bf19c7f0ff60f7a10572bca286f824c29a0974bfc6de0183ff90ac6c2eaf5e16",
+      "libraries/RevB.pretty/KEMET_T598_X_7343_Median.kicad_mod": "e2638c7b17476fe21a06134809c9dd9aa26ba048d554a17f9a344de5de941a5e",
+      "libraries/RevB.pretty/KEMET_T598_X_7343_Median_RVB22_C206.kicad_mod": "3abe092b5475ee38f326e36f846186a9b839d0c11d01485e7f443a21769e888c",
+      "libraries/RevB.pretty/LED_0603_1608Metric.kicad_mod": "fc97fced1536541b16bae010b22d0204b3c6e7680ebf76507c56f7dff2c16649",
+      "libraries/RevB.pretty/L_Coilcraft_XAL5030-XXX.kicad_mod": "fb4554ae1d45c37ef0d8d21d86e363d74469b39a559860253100c06ab7e08bad",
+      "libraries/RevB.pretty/MSOP-8_3x3mm_P0.65mm.kicad_mod": "1f7eac14be14b4813bbc1654935e31bf0a7b37885911b1811b8e7b861cc5bb35",
+      "libraries/RevB.pretty/Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal.kicad_mod": "8d286e81ef8f67d655dc450516580447da744920eb73b6bea226b7707c8fa837",
+      "libraries/RevB.pretty/Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.kicad_mod": "e84beb0320bccedf7a1f971c3bbb7f367a862dd8206247d51e913b34cf9e7633",
+      "libraries/RevB.pretty/MountingHole_4.4mm_Outboard.kicad_mod": "b257de739a84ff80cc31716db935e7e3e4baa453841d9ad9eb434b14472caf43",
+      "libraries/RevB.pretty/Murata_LQW18AS_1608.kicad_mod": "bbc27566d1eda3ed63ed86d856e53e674ac58bb51aa4d60edd2994096d537fcf",
+      "libraries/RevB.pretty/Nexperia_SOD323_PMEG2010BEA.kicad_mod": "15eff0adf9f4fa564660b60e6cb1cbfeaab635638d6b332c366a891214eeb0a4",
+      "libraries/RevB.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "2f3abce1a47e344cff1be30f002410ea46d00c52eb239a2e5cc8b7fe46e5acc9",
+      "libraries/RevB.pretty/R_0603_1608Metric.kicad_mod": "c9cacb54994c0aa1d42dfe9c3fb385868f53f5a8d826a51a7f08056f34d871b4",
+      "libraries/RevB.pretty/R_0603_1608Metric_RVB22_R155.kicad_mod": "73c41c8ed8b62bcf4c6baba606b61bce664d31fc130a50d9a5df7b67e9bcbef6",
+      "libraries/RevB.pretty/R_0603_1608Metric_RVB22_R156.kicad_mod": "c18c6b45214d5b6c56f645b69f6568d25275bd872bcf56f588dd9a7e1e5f9fd6",
+      "libraries/RevB.pretty/R_0603_1608Metric_RVB22_R157.kicad_mod": "ccc18a2be92a75b0406d9842522773aa5fd4767eda9419f28f497afd9796b008",
+      "libraries/RevB.pretty/R_0603_1608Metric_RVB22_R203.kicad_mod": "f7916796ae7c2c9092f7a1ad71856a38d7b8ec22461bf40846903e745aa7e311",
+      "libraries/RevB.pretty/R_0805_2012Metric.kicad_mod": "c9e065246f39a319f005b381e48e92fe0cf15ef93d474e17a8c210566693cd97",
+      "libraries/RevB.pretty/R_1206_3216Metric.kicad_mod": "fc7e92d4991b06a68d33544a7eab13e18224773057bc9e6bafdd6744529e3f71",
+      "libraries/RevB.pretty/R_2512_6332Metric.kicad_mod": "29b787a14a222b380ee2f0308002d95acec37074f13708a80c0b4531dbc01138",
+      "libraries/RevB.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod": "c7cfe70e1d1fdc430d5bee68c1c48c8ac9b976c676d5181211167f569fdd117e",
+      "libraries/RevB.pretty/SOT-23-5.kicad_mod": "428744bf0ef6b4f15c735b90c0119d7ae4b9eef99642e9ecca7ec1a32d4240e0",
+      "libraries/RevB.pretty/SOT-23.kicad_mod": "fab9dbbbc894bef856de100bd88ce1195435b9223f660f4021c15e00f9be8237",
+      "libraries/RevB.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": "f4ea754c90fccf90ab5b622758f985cd938cbfcba7ecb1009a1b6ff89256c933",
+      "libraries/RevB.pretty/TDK_CGA4J1_33N_I32.kicad_mod": "ba06b9d248aceb13951256083b693c18c4ffa25681ffa4cd9b0ad878c99ef60f",
+      "libraries/RevB.pretty/TI_DDA0008B_4214849B.kicad_mod": "d7153eb7b6245784529bd34fa265eea9dde51380969793584c2ce3c50f121016",
+      "libraries/RevB.pretty/TI_DPY0002A_TPD1E05U06_SMDMask.kicad_mod": "99cf73073a296cbd9a26c6fe36d9de9b5c4cb72b3b62a6f2da18cc611a614ee2",
+      "libraries/RevB.pretty/TI_DQC0010A_I32.kicad_mod": "8a8832f6078089142a54a71baf2b90ddf49c522287f1489780be2776812fe3ae",
+      "libraries/RevB.pretty/TI_DRB0008J_TCAN3403.kicad_mod": "6a087c283c7dfdf04838e90b35b49f0c323ece348600c172c0c3a64cf9e1202e",
+      "libraries/RevB.pretty/TI_PWP0016A_TPS2660.kicad_mod": "fac4eb28211a9a50ee25bbf26f3b9032ac18f7995e4f76bff63cf6a3ba873931",
+      "libraries/RevB.pretty/TO-252-2.kicad_mod": "4db74601b723f842b0e423dbfb2fae7b8717859c27c2219feae089447a985e29",
+      "libraries/RevB.pretty/TPS3808_DBV0006A.kicad_mod": "2481f3a84725b6069d69c7b9b66d3281b5dfc7bef5ee133835a96124cfacac04",
+      "libraries/RevB.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": "57c6d35b43e1b88a36581eba48f1ea77345677124233631fb1b3fce3abab76c3",
+      "libraries/RevB.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "15befb4e91182778cd505b79123962fdf11fe396349ca7f788ba430d0d20ca10",
+      "libraries/RevB.pretty/U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod": "ecb0d4bf28d78d48e82afb246edd1724537b3f37576d5564404e724bdf309fcb",
+      "libraries/RevB.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "e123bce97bda0be995e78f9feab2277e8edfc92577e089028da2f2702d0603c4",
+      "libraries/RevB.pretty/WSLP0603_MANUFACTURER.kicad_mod": "d762689855c072c352dba0202e4780af14db25b4964e44973fc6bbc9f03d5fbb",
+      "libraries/RevB.pretty/WSLP0603_MANUFACTURER_R153.kicad_mod": "e221b11feb82caf78a35d9d9c47d12b962a172eaf38e412357424943ca373165",
+      "libraries/RevB.pretty/Wurth_61300211121_1x02.kicad_mod": "fae196d64558ce050e0d2caf740f7864cc78b44944d3a8f8552b6a8353dc0b8c",
+      "models/ENVELOPE_CDTop_PA1616D_20Pad_v06.step": "d3c27aeb3da18df56e080db9947eb015a1967d558c9aecd4dc6f93c79d42a8ca",
+      "models/ENVELOPE_C_0603_1608Metric_RVB22_C205.step": "6f635d6a798f5b396801338bd09c561cb28c5ed77b3f3b28248ae6934f3ca326",
+      "models/ENVELOPE_Coilcraft_MSS1246T_12x12_RVB22_L121.step": "ddd6949e37a4949979fcbfd33b7194073cb8d9f20713a929af460e011db336ed",
+      "models/ENVELOPE_Fuse_Littelfuse-NANO2-885.step": "9d36a9abf86fe279bf6de0a69d7bd60e729853d406d1523e3406362177cb6003",
+      "models/ENVELOPE_HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.step": "b30c2bf603e43d6fd52a5532c80196e6ad8df4c1de639250321851f114fefc6f",
+      "models/ENVELOPE_KEMET_C1210_10u50V.step": "5b0d225bb2c29ee9132422fdcf2b1dfbc044cedcc181e102344f0d5dd34e274d",
+      "models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step": "70e116f6b72779d9d18e13b3f39b807c8d55337d3b94d25107a7c972fe799330",
+      "models/ENVELOPE_Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.step": "2243353fd26661c62429727755fdc6f236a303e3b37a78bfb77d7062a91ec91e",
+      "models/ENVELOPE_Murata_LQW18AS_1608.step": "8dc9860d48f1f310cbb4fedd0859e36f6b22350e2f1eb7ca433e5d2465fc130d",
+      "models/ENVELOPE_R_0603_1608Metric_RVB22_R155.step": "9fa8ccd8941ac41b5cfcbfe19e4b8e011285245410a56c75a4f1b4916fcfc785",
+      "models/ENVELOPE_R_0603_1608Metric_RVB22_R156.step": "34333acbfbf21749f6c9601043337101b7c1790e7a5a69842e37599ae3f07d2c",
+      "models/ENVELOPE_R_0603_1608Metric_RVB22_R157.step": "24d98fde147dda86b6eaf5e60d7412babffba9fab808ba53cab12091fc09aabb",
+      "models/ENVELOPE_R_0603_1608Metric_RVB22_R203.step": "379bf1889a646b97bd6172624f5cb82ead3c68097b0693b15d2cca55e3ab3494",
+      "models/ENVELOPE_TDK_CGA4J1_33N_I32.step": "3f0cc244fadb333bd5f2920199b75927959fe7631b790fe337f43f97019e2d5a",
+      "models/ENVELOPE_TDK_CGA5L1_68N_I32.step": "4119dfcb505646dbbf35e24561821d78b1fe48c39f2976c2d720f4682f4fe0e0",
+      "models/ENVELOPE_TI_DDA0008B_4214849B.step": "9ef46c4d078c5bbb9982618e3c80d58590fa2dbcb052185ee7728a010ad4d931",
+      "models/ENVELOPE_TI_DPY0002A_TPD1E05U06_SMDMask.step": "c9d865a8b06d5de7e49b609d88e16493b0842f8623eda2073718034e07a2e374",
+      "models/ENVELOPE_TI_DQC0010A_I32.step": "0e31d372d70b467870b210500d68efae39ab4210a8c369898da962a3db259cfb",
+      "models/ENVELOPE_TI_DRB0008J_TCAN3403.step": "c0ce404df93ae34fa583617fb70a787b163f8d3d2e0537580652a5badf4ff737",
+      "models/ENVELOPE_TI_PWP0016A_TPS2660.step": "5f4c1b37c0a8362ddb61c8228a7233d601c78a2878029a100b67c8091b11d35c",
+      "models/ENVELOPE_TPS3808_DBV0006A.step": "49c7af653bd28289a781dbc22e2974042c1ad314726f6d6ab4da24e6050d048d",
+      "models/ENVELOPE_WSL2512_I32_R158.step": "a634eccea572b463a321f368eb39ee4bdba37d1907f60f5567cd9a34e34957b3",
+      "models/ENVELOPE_WSLP0603_MANUFACTURER.step": "41b3fb49317d8023ba3e55d02a8d568e7a99ef293928d5ba4e69f481a00438b6",
+      "models/ENVELOPE_WSLP0603_MANUFACTURER_R153.step": "5d3ddd582dc72c78ad5910dd196a105247bfef40a94cd49eaad1a28116cfd740",
+      "sym-lib-table": "4668006fdd85a6fbfd2e8d258275ac0881c762a223afce22626785f03b2c718f"
+    }
+  },
+  "native_gates_run": true,
+  "firmware_build_run": false,
+  "manufacturing_release": false,
+  "output_postconditions": {
+    "refilled_copper": {
+      "pass": true,
+      "details": {
+        "copper_zones": 20,
+        "zone_layer_pairs": 20,
+        "saved_filled_polygon_count": 94,
+        "details": [
+          {
+            "uuid": "134c9ab9-e117-5eaf-98d2-b4abd2832612",
+            "net": "GND",
+            "layer": "F.Cu",
+            "outline_count": 2,
+            "outer_area_mm2": 369.26923230731626
+          },
+          {
+            "uuid": "3e129aa9-5bc5-4696-8564-1325ebdf93be",
+            "net": "OIL_EFUSE_RTN",
+            "layer": "F.Cu",
+            "outline_count": 2,
+            "outer_area_mm2": 7.835632861386472
+          },
+          {
+            "uuid": "51d0ea03-7216-4543-9f4b-5e8c626ddbbe",
+            "net": "GND",
+            "layer": "F.Cu",
+            "outline_count": 21,
+            "outer_area_mm2": 2011.2377951516576
+          },
+          {
+            "uuid": "80694fcd-4224-5db7-ad66-b41a97d530c4",
+            "net": "GND",
+            "layer": "F.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 68.74542085281014
+          },
+          {
+            "uuid": "dd323d65-0713-5686-a3cb-1ab14aced4cb",
+            "net": "GND",
+            "layer": "F.Cu",
+            "outline_count": 2,
+            "outer_area_mm2": 382.2668812691628
+          },
+          {
+            "uuid": "025f3d28-cee6-5603-b502-cc856bf65ad7",
+            "net": "GND",
+            "layer": "B.Cu",
+            "outline_count": 3,
+            "outer_area_mm2": 50.322925551236864
+          },
+          {
+            "uuid": "2838a140-f9bc-4f26-80b8-7066701e2a62",
+            "net": "OIL_EFUSE_RTN",
+            "layer": "B.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 16.98989707030401
+          },
+          {
+            "uuid": "2cbe24e5-7152-51c6-872a-dcf9024643b0",
+            "net": "GND",
+            "layer": "B.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 428.6668390021664
+          },
+          {
+            "uuid": "4d3a0773-3148-5ce0-9317-b6d911b544a3",
+            "net": "GND",
+            "layer": "B.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 431.009325540077
+          },
+          {
+            "uuid": "fd2d6539-43cc-4d0e-9c86-2c8de69b05fb",
+            "net": "GND",
+            "layer": "B.Cu",
+            "outline_count": 33,
+            "outer_area_mm2": 2151.3160280414454
+          },
+          {
+            "uuid": "93e88f7c-8fff-4c7f-b1d5-661fb50aaf19",
+            "net": "OIL_EFUSE_RTN",
+            "layer": "In1.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 16.98989707030401
+          },
+          {
+            "uuid": "b0888c9d-194c-56f7-9068-c1c90cdcd80c",
+            "net": "GND",
+            "layer": "In1.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 428.1604161158305
+          },
+          {
+            "uuid": "b9e12855-9aff-553f-899d-e044269f5078",
+            "net": "GND",
+            "layer": "In1.Cu",
+            "outline_count": 3,
+            "outer_area_mm2": 59.45286387875947
+          },
+          {
+            "uuid": "e8b9068f-470c-537d-af54-6c229a10635d",
+            "net": "GND",
+            "layer": "In1.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 428.6295049644377
+          },
+          {
+            "uuid": "f5ad958c-f9cd-468c-9e6c-951ecb335b1e",
+            "net": "GND",
+            "layer": "In1.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 3167.391045704218
+          },
+          {
+            "uuid": "2fe17068-db9d-535b-90bb-c97bd3281718",
+            "net": "GND",
+            "layer": "In2.Cu",
+            "outline_count": 2,
+            "outer_area_mm2": 404.5329487438471
+          },
+          {
+            "uuid": "3d6f56bf-8bca-55af-9494-76e5a3ae62ec",
+            "net": "GND",
+            "layer": "In2.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 402.7471565655658
+          },
+          {
+            "uuid": "52337a10-bc47-4de1-8eb5-c1a2aa4c9592",
+            "net": "GND",
+            "layer": "In2.Cu",
+            "outline_count": 14,
+            "outer_area_mm2": 2951.1526946172576
+          },
+          {
+            "uuid": "7127fb96-ee09-43d1-976f-58e8e95c3b43",
+            "net": "OIL_EFUSE_RTN",
+            "layer": "In2.Cu",
+            "outline_count": 1,
+            "outer_area_mm2": 16.98989707030401
+          },
+          {
+            "uuid": "ca831ba5-947a-55c3-b79f-e0f2a1053129",
+            "net": "GND",
+            "layer": "In2.Cu",
+            "outline_count": 2,
+            "outer_area_mm2": 62.088458726337656
+          }
+        ]
+      }
+    },
+    "erc_report": {
+      "pass": true,
+      "details": {
+        "findings": 0,
+        "errors": 0,
+        "warnings": 0,
+        "exclusions": 0
+      }
+    },
+    "drc_report": {
+      "pass": true,
+      "details": {
+        "findings": 0,
+        "errors": 0,
+        "warnings": 0,
+        "exclusions": 0
+      }
+    },
+    "schematic_netlist": {
+      "pass": true,
+      "details": {
+        "components": 220,
+        "nets": 145
+      }
+    },
+    "pcb_netlist": {
+      "pass": true,
+      "details": {
+        "test_records": 945
+      }
+    },
+    "requested_gerbers": {
+      "pass": true,
+      "details": {
+        "F.Cu": "GR86_CCA_RevB-F_Cu.gtl",
+        "In1.Cu": "GR86_CCA_RevB-In1_Cu.g1",
+        "In2.Cu": "GR86_CCA_RevB-In2_Cu.g2",
+        "B.Cu": "GR86_CCA_RevB-B_Cu.gbl",
+        "F.Mask": "GR86_CCA_RevB-F_Mask.gts",
+        "B.Mask": "GR86_CCA_RevB-B_Mask.gbs",
+        "F.Paste": "GR86_CCA_RevB-F_Paste.gtp",
+        "B.Paste": "GR86_CCA_RevB-B_Paste.gbp",
+        "F.SilkS": "GR86_CCA_RevB-F_Silkscreen.gto",
+        "B.SilkS": "GR86_CCA_RevB-B_Silkscreen.gbo",
+        "Edge.Cuts": "GR86_CCA_RevB-Edge_Cuts.gm1"
+      }
+    },
+    "separate_drills": {
+      "pass": true,
+      "details": {
+        "Plated": "GR86_CCA_RevB-PTH.drl",
+        "NonPlated": "GR86_CCA_RevB-NPTH.drl"
+      }
+    },
+    "schematic_bom": {
+      "pass": true,
+      "details": {
+        "rows": 177,
+        "columns": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "Manufacturer",
+          "MPN",
+          "LCSC",
+          "Quantity"
+        ]
+      }
+    },
+    "component_positions": {
+      "pass": true,
+      "details": {
+        "rows": 175,
+        "columns": [
+          "Ref",
+          "Val",
+          "Package",
+          "PosX",
+          "PosY",
+          "Rot",
+          "Side"
+        ]
+      }
+    },
+    "schematic_pdf": {
+      "pass": true,
+      "details": {
+        "bytes": 1909678,
+        "sha256": "3b130c48284e2fd69fe565c128d1b7eebcf19edb55107f6813d96772dfc5b248"
+      }
+    },
+    "component_step_file": {
+      "pass": true,
+      "details": {
+        "bytes": 3567846,
+        "sha256": "1eeac1bb71fbefe1d760bfce5dde58e68699a1fc6b7da81bbff660b6d232cd4b"
+      }
+    },
+    "component_model_log": {
+      "pass": true,
+      "details": {
+        "missing_model_log_entries": 0,
+        "scope": "Exporter log only; source model presence and envelope correctness remain separate checks."
+      }
+    },
+    "fitted_component_step_inventory": {
+      "pass": true,
+      "details": {
+        "fitted_count": 177,
+        "exporter_added_count": 177,
+        "step_occurrence_reference_count": 178,
+        "all_fitted_present": true,
+        "expected_inventory_sha256": "4dd4364369eb3d63ae88437972165a9f787c97bdeb3c42c1535494856dbcda6a",
+        "scope": "Native STEP inclusion only. Explicit envelope models remain envelopes, and solder/cable/installed bounds are checked separately."
+      }
+    }
+  },
+  "remaining_project_exports_and_checks": [
+    "JLC panelization and panel Gerber/drill parity via existing project export tools",
+    "Manufacturing BOM/CPL reconciliation, assembly variants and exact supplier fields",
+    "All installed components represented in collision-checked STEP geometry",
+    "Controlled fabrication/assembly drawings and rendered schematic PDF review",
+    "Exact native finding waivers, independent Gerber connectivity and clearance reconstruction",
+    "Firmware actual dependency/compiler hashes and target timing verification"
+  ],
+  "preflight": {
+    "kicad_9_0_9_and_bindings": true
+  },
+  "project_settings_restored_after_pcbnew": true,
+  "refilled_pcb_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "nonzero_commands": [],
+  "incomplete_outputs": [],
+  "native_report_finding_count": 0,
+  "acceptance_note": "No review criteria automatically closed. Inspect all native findings, explicit waivers, library selection and source/output parity. An exported review file is not a release and a compiled image is not target execution.",
+  "inputs_unchanged": true,
+  "copied_source_inventory": {
+    "path": "COPIED_SOURCE_INVENTORY.json",
+    "sha256": "134e0e9e151bb9c746222a10417f9f525f884e1bb45b48696f51598e68f56ca1"
+  },
+  "output_manifest": {
+    "path": "OUTPUT_MANIFEST.json",
+    "sha256": "3b04c06a1c4fcbc77cec0df280df89e2ff7405daf3729c9bfaf1bc9634de4b95"
+  }
+}

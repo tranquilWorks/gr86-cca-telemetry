@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "name": "b330_r0.47_cold_loaded",
+    "bulk": 330,
+    "damp": 0.47,
+    "top": 11300,
+    "highref": false,
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "tss": 0.001,
+    "esr": 0.01,
+    "constant": 0.75
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60431,
+  "main_peak": 3.30023618,
+  "active_min": 3.25693036,
+  "final_main": 3.25693036,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.13167803000000022,
+  "input_switch_peak_A": 1.61240168,
+  "I151max": 1.67255274,
+  "I121max": 1.03939832,
+  "ready_rises": 1,
+  "waveform_sha256": "dcc6c012e8e638be6ea213decc3f11eee1ceffbc5effa63138d7a460c001c609"
+}

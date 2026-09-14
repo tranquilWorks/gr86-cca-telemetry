@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "floating_comparison_relative_tolerance": 1e-12,
+  "floating_comparison_absolute_tolerance": 1e-12,
+  "material_differences": [],
+  "source_layout_paths": 80,
+  "explicit_conductor_paths": 66,
+  "plane_return_paths": 14,
+  "all_plane_return_paths_verified_in_filled_copper": true,
+  "filled_ground_checks": 23,
+  "populated_checks": 1308,
+  "mated_checks": 529,
+  "probe_checks": 38,
+  "interferences": 0,
+  "new_optional_source_views_generated": 0,
+  "prior_source_views_preserved": 7,
+  "failed_optional_render_attempts": [
+    {
+      "timeout_seconds": 20
+    },
+    {
+      "timeout_seconds": 90
+    }
+  ],
+  "CAD_modified_in_recovery": false,
+  "scope": "Same source-sensitive measurement models replayed; agreement checks reproducibility, not independent physics or physical fit."
+}

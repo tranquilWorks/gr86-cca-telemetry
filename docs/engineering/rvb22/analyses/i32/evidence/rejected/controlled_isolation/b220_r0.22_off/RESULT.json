@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "name": "b220_r0.22_off",
+    "bulk": 220,
+    "damp": 0.22,
+    "mode": "off",
+    "slow": false
+  },
+  "rc": 0,
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/controlled_isolation/b220_r0.22_off/waveform.tsv not found."
+}

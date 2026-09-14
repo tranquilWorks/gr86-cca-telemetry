@@ -1,0 +1,46 @@
+{
+  "files": {
+    "boot_app0.bin": {
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "size": 8192
+    },
+    "cca_telemetry.ino.bin": {
+      "sha256": "67ef9d2d5ee0d2627d0a2452e0f3d13ce966dfb44fee0602a5e0ef1a011fc673",
+      "size": 684144
+    },
+    "cca_telemetry.ino.bootloader.bin": {
+      "sha256": "f96b0924b33989a8bafb6ad7449f7c83a5541b2e0785c8cad572a3907bed05fd",
+      "size": 20224
+    },
+    "cca_telemetry.ino.elf.gz": {
+      "sha256": "e7f1180c54f19361eecdcf1d2bdb385ae6bbcbb800fefe34b6c45c0957b477d2",
+      "size": 4648916
+    },
+    "cca_telemetry.ino.map.gz": {
+      "sha256": "837ddb6a2d2d86e37efa88d6d4d39df736e729175b9d3cc4d3bbeffa9eaa76dd",
+      "size": 676902
+    },
+    "cca_telemetry.ino.merged.bin": {
+      "sha256": "94bffbeb3361a97afb41c5560ec111be1e9aa5280c2701868bd05191c7b5936f",
+      "size": 8388608
+    },
+    "cca_telemetry.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "size": 3072
+    }
+  },
+  "original_artifacts": {
+    "cca_telemetry.ino.elf": {
+      "sha256": "e1e9b3ef1905ec18e18a457ebd670607e044d9fd84422b48eea4d75791e9fb9e",
+      "size": 12783916,
+      "stored_as": "cca_telemetry.ino.elf.gz"
+    },
+    "cca_telemetry.ino.map": {
+      "sha256": "90e0483ac4ef0c8cc35bfdaa8a209b8248a9c461d7e63ba32410d51a67730ca0",
+      "size": 12482559,
+      "stored_as": "cca_telemetry.ino.map.gz"
+    }
+  },
+  "scope": "Unflashed ESP32-S3 build outputs; no device execution claimed.",
+  "status": "PASS"
+}

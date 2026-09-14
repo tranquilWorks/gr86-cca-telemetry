@@ -23,7 +23,7 @@ import time
 import xml.etree.ElementTree as ET
 
 FQBN = ('esp32:esp32:esp32s3:USBMode=hwcdc,CDCOnBoot=default,MSCOnBoot=default,'
-        'DFUOnBoot=default,UploadMode=default,CPUFreq=240,FlashMode=qio,FlashSize=8M,'
+        'DFUOnBoot=default,UploadMode=default,CPUFreq=160,FlashMode=qio,FlashSize=8M,'
         'PartitionScheme=default_8MB,DebugLevel=none,PSRAM=enabled,LoopCore=1,'
         'EventsCore=1,EraseFlash=none,UploadSpeed=115200')
 LAYERS = 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts'
@@ -181,8 +181,14 @@ def validate_component_log(path: Path) -> dict:
 
 def validate_component_inventory(log_path: Path, step_path: Path, expected_path: Path) -> dict:
     """Bind fitted-reference coverage to actual STEP assembly occurrences."""
-    expected = set(json.loads(expected_path.read_text())['fitted_references'])
-    require(len(expected) == 153, 'Controlled fitted-reference inventory must contain 153 distinct references')
+    inventory_data = json.loads(expected_path.read_text())
+    listed = inventory_data['fitted_references']
+    require(isinstance(listed, list) and all(isinstance(ref, str) and ref for ref in listed),
+            'Fitted-reference inventory must be a list of nonempty strings')
+    expected = set(listed)
+    require(len(listed) == len(expected), 'Duplicate fitted-reference inventory entries')
+    require(inventory_data.get('I32_expected_count') == 177 and len(expected) == 177,
+            'I32 controlled fitted-reference inventory must contain 177 distinct references')
     added = set(re.findall(r'^Adding component ([^.]+)\.$', log_path.read_text(), re.M))
     occurrences = set(re.findall(r"NEXT_ASSEMBLY_USAGE_OCCURRENCE\('[^']*','([^']+)'", step_path.read_text()))
     require(expected <= added, 'Fitted references absent from exporter additions: '+', '.join(sorted(expected-added)))

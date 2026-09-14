@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "b220_r0.22_off",
+    "bulk": 220,
+    "damp": 0.22,
+    "mode": "off",
+    "slow": false
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 426669,
+  "main_peak": 3.38737089,
+  "active_min": 6.35085666e-08,
+  "final_main": 3.30000922,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.10962289000000025,
+  "input_switch_peak_A": 0.60517666,
+  "I151max": 0.772698671,
+  "I121max": 0.685814012,
+  "ready_rises": 2,
+  "waveform_sha256": "00cf96629150aa1908765f0578d72fd35e7a2c90be2917c0ada9592a956b92fb"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "LOSSLESS_TRANSPORT_COMPRESSION",
+  "original_name": "cca_telemetry.ino.elf",
+  "original_size": 12757508,
+  "original_sha256": "e16bae55dc8e1156f72204bc6d5b3ab9fc19ec746b04a83240e15a80fba073e5",
+  "stored_name": "cca_telemetry.ino.elf.gz",
+  "stored_size": 4647918,
+  "stored_sha256": "f987a1772d45a8c41877d40dbae987c374d175fe8f13965c54f6d97f3f6d8585",
+  "additional_artifacts": {
+    "cca_telemetry.ino.map": {
+      "original_size": 12295589,
+      "original_sha256": "e291e2932d6cfda4c8bc9d182a066965b7c9c0e424c447db2d864f635d8bbafe",
+      "stored_name": "cca_telemetry.ino.map.gz",
+      "stored_size": 675923,
+      "stored_sha256": "ff4c49db11fe040ca6011efd6d4d0b973418050c3e2621ddea43af670dacc167"
+    }
+  },
+  "gzip_reproducible_header": true,
+  "release_effectivity": "QUARANTINED_240MHZ_DO_NOT_FLASH"
+}

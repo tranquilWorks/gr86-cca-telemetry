@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "name": "b470_r0.47_cold_loaded",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "highref": false,
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "tss": 0.001,
+    "esr": 0.01,
+    "constant": 0.75
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60450,
+  "main_peak": 3.2959003,
+  "active_min": 3.25692751,
+  "final_main": 3.25693036,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.1566724399999999,
+  "input_switch_peak_A": 1.71826618,
+  "I151max": 1.67255815,
+  "I121max": 1.03939493,
+  "ready_rises": 1,
+  "waveform_sha256": "64592f863cebf6b37628ddb3b627783f1d51845336b3a0acf3e9ff2e9cb27f1a"
+}

@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "name": "crank_6V",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.1m 6 90m 6 91m 12",
+    "stop": 0.15,
+    "events": [
+      [
+        "UV",
+        0.06,
+        0.061,
+        0.001
+      ],
+      [
+        "reconnect",
+        0.091,
+        0.14,
+        0.05
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "d21b8f23a4b20f9798af68518d7c434ecc67d4b03dafc7f8ab567791319e9e5f",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/crank_6V/waveform.tsv not found."
+}

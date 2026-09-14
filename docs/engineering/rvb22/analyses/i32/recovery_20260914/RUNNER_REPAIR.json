@@ -1,0 +1,21 @@
+{
+  "status": "REPLAY_RUNNER_REPAIRED_NOT_HISTORICALLY_RECOVERED",
+  "baseline_runner_sha256": "187d303cb103cef92143d53c099615a435ceef29c0458d7ac9521205d451f315",
+  "prior_native_recorded_runner_sha256": "e19ac430dcedf874687e0fcefe5f573d69627d357be382f63fd54206cc9a4072",
+  "replacement_runner_sha256": "546a93083dcf8db00aedd9d751a6362b04b39bce9b721032a0818caa65afb7d7",
+  "changes": [
+    "Pin the current I32 controlled count to 177 and require matching effectivity metadata; reject duplicate or malformed reference entries.",
+    "Use CPUFreq=160 by default to preserve the established I25 release profile."
+  ],
+  "native_execution_this_session": false,
+  "firmware_compilation_this_session": false,
+  "continuation": {
+    "firmware_compilation_performed": true,
+    "cpu_frequency_MHz": 160,
+    "compile_exit_code": 0,
+    "release_checks": "28/28 PASS",
+    "evidence": "firmware_160mhz/RESULT.json",
+    "native_CAD_execution_in_continuation": false,
+    "native_CAD_reason": "KiCad/pcbnew unavailable in the resumed runtime; preserved KiCad 9.0.9 evidence and 13 postconditions remain authoritative."
+  }
+}

@@ -31,7 +31,7 @@ jobs:
           import hashlib, json, pathlib
           pcb=pathlib.Path('feedback_evidence/cad/GR86_CCA_RevB.kicad_pcb')
           actual=hashlib.sha256(pcb.read_bytes()).hexdigest()
-          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+          expected='45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7'
           assert actual==expected, (actual,expected)
           record={
             'status':'SUPERSEDED_BY_ADOPTED_SOURCE',
@@ -70,7 +70,7 @@ jobs:
           assert result['inputs_unchanged'] is True
           assert len(checks)==14 and all(v['pass'] for v in checks.values()), checks
           source=(root/'cad/GR86_CCA_RevB.kicad_pcb').read_bytes()
-          expected='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+          expected='45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7'
           assert hashlib.sha256(source).hexdigest()==expected
           record={'source_sha256':expected,'native_postconditions':14,'branch_modified':False,'fabrication_release':False}
           (root/'ADOPTED_SOURCE_VERIFICATION.json').write_text(json.dumps(record,indent=2)+'\n')

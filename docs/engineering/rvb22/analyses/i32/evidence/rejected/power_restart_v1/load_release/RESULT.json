@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "name": "load_release",
+    "mode": "load"
+  },
+  "returncode": 0,
+  "deck_sha256": "214481c294091c8093acdbf2e1f9869ee46ff8944c7c1a68c18e67ead395f8e5",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60431,
+  "main_peak_V": 3.36958028,
+  "main_final_V": 3.25993028,
+  "active_min_V": 3.19787,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 1.6002722299999999,
+  "input_switch_peak_A": 1.01735984,
+  "input_switch_reverse_A": -1.49570234e-20,
+  "I151_max_A": 1.22268433,
+  "I121_max_A": 1.03939516,
+  "ready_rises": 1,
+  "sns_faults": 0,
+  "R158_peak_W": 0.43964335457145454,
+  "R158_energy_J": 0.0006053235853939033,
+  "R158_RMS_A": 0.1035986857266494,
+  "waveform_sha256": "8b0504f7a6a91a4be94d089d31b5875c6796d17bbe29ebf18d6991f0f814fe38"
+}

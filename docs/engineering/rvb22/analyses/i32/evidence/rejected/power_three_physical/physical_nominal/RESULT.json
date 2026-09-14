@@ -1,0 +1,53 @@
+{
+  "parameters": {
+    "bulk": 330,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 1000,
+    "physical_dividers": true,
+    "physical_input_caps": true,
+    "slew": 0.0024,
+    "en_cap": 2.2e-07,
+    "sns_top": 634000,
+    "input_leak": 0.0282,
+    "active_discharge": true,
+    "q153_threshold": 1.5,
+    "q152_threshold": 2.5,
+    "r164": 4700,
+    "r165": 4.7,
+    "input_route_R": 0.03,
+    "input_route_L": 1e-07,
+    "off_delay": 0.0001,
+    "name": "physical_nominal"
+  },
+  "returncode": 0,
+  "deck_sha256": "153942d30cb7fa5b0068d088d769533761cd244ac6cff9f446eab7b2cbefeaf7",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60444,
+  "main_peak_V": 3.33315783,
+  "main_final_V": 3.25999647,
+  "active_min_V": 3.1973007,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 1.6434016099999997,
+  "input_switch_peak_A": 0.772028015,
+  "input_switch_reverse_A": 0.0,
+  "I151_max_A": 0.93579309,
+  "I121_max_A": 0.853685961,
+  "ready_rises": 1,
+  "sns_faults": 0,
+  "R158_peak_W": 0.2231427161829956,
+  "R158_energy_J": 0.0003141077839111732,
+  "R158_RMS_A": 0.07462765538846619,
+  "rail5_active_range_V": [
+    4.98236599,
+    5.00463484
+  ],
+  "R165": {
+    "peak_A": 1.81691593e-07,
+    "peak_W": 6.220501628504496e-11,
+    "energy_J": 1.9505815298576067e-16
+  },
+  "source_peak_V": 3.33665982,
+  "waveform_sha256": "92523a18c7d5a80d67a7c63897ce9d381c82953fab1e234f550b0ad1abd9c513"
+}

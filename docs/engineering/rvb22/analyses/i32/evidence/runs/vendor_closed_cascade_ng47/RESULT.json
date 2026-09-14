@@ -1,0 +1,106 @@
+{
+  "status": "ABORTED_NOT_STARTUP_PROOF",
+  "requested_stop_s": 0.024,
+  "end_s": 0.02125455633617396,
+  "finite": true,
+  "samples": 14463289,
+  "columns": [
+    "time",
+    "v(vin5)",
+    "v(source5)",
+    "v(rail5)",
+    "v(vin)",
+    "v(source)",
+    "v(main)",
+    "i(l121)",
+    "i(l151)",
+    "i(vpass)",
+    "v(enable)",
+    "v(en151)",
+    "v(switchon)",
+    "v(snsevent)"
+  ],
+  "full_waveform_sha256": "020a1a2943c5085b006c47fc73b0965e88c7d4cfa1af33ff8407023f6190627b",
+  "extrema": {
+    "time": {
+      "min": 0.0,
+      "max": 0.02125455633617396,
+      "last": 0.02125455633617396
+    },
+    "v(vin5)": {
+      "min": -5.371261210351628e-117,
+      "max": 10.68799152409441,
+      "last": 10.577777607045684
+    },
+    "v(source5)": {
+      "min": -5.451928817083058e-106,
+      "max": 5.010825496912571,
+      "last": 4.959521197449264
+    },
+    "v(rail5)": {
+      "min": -5.453802782234455e-106,
+      "max": 5.009597930513257,
+      "last": 4.952678726348927
+    },
+    "v(vin)": {
+      "min": -2.36939085070118e-18,
+      "max": 5.003905558956926,
+      "last": 4.892636649694583
+    },
+    "v(source)": {
+      "min": -1.987145876286094e-18,
+      "max": 2.4091253678899407,
+      "last": 2.4091253678899407
+    },
+    "v(main)": {
+      "min": -1.9307329586990214e-18,
+      "max": 2.3894040228945665,
+      "last": 2.3894040228945665
+    },
+    "i(l121)": {
+      "min": -7.601357264465544e-07,
+      "max": 1.507167587099364,
+      "last": 1.3240438636583947
+    },
+    "i(l151)": {
+      "min": -3.548019558260884e-08,
+      "max": 2.164459304547336,
+      "last": 2.1644591952647905
+    },
+    "i(vpass)": {
+      "min": -0.0033859496492851804,
+      "max": 1.381153305454859,
+      "last": 1.334285548165937
+    },
+    "v(enable)": {
+      "min": 9.99999997999e-10,
+      "max": 0.9999900000989889,
+      "last": 0.9999900000989889
+    },
+    "v(en151)": {
+      "min": -4.480301992916665e-106,
+      "max": 1.7165211458601628,
+      "last": 1.7165211458601628
+    },
+    "v(switchon)": {
+      "min": 0.0,
+      "max": 0.9999999999989999,
+      "last": 0.9999999999989999
+    },
+    "v(snsevent)": {
+      "min": 0.0,
+      "max": 0.0,
+      "last": 0.0
+    }
+  },
+  "failure_log_lines": [],
+  "scope": "Historical I32 170-part, three-input-cap/330uF trial. Unmodified TI LM5164 library; downstream controller derivative. Not the selected177-part source.",
+  "files_sha256": {
+    "run.log": "1cd45ec55ee84f17b98b79b2d95a2fd9a8cd9af8009321d0d07ce7c05c79b5c1",
+    "lm63615_derivative.lib": "4f6a4e03df1ed2ffde2e171591b34728107e5ac444baba3c9c5afe4732a6ef90",
+    "LM5164-Q1_TRANS.LIB": "e11ddf6995163f98eda6205de6a7cb74c8a3982b7328467de8d806286e894b5d",
+    "SIMULATOR_VERSION.txt": "1f1cb5076e8e6fd7e0057e943df57d65035f615dd151597ba3b450cd2fdc7a00",
+    "case.cir": "fc51824dcdfbc0816cc08a473b86d7908bff4afc9623268e5b774ca63ee8cefa",
+    "completion.txt": "00f67e4ead944903d72eaab8e5206883fe30d5578459b9ca5ab900285aa86bd9"
+  }
+}

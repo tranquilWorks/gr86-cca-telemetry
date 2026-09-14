@@ -1,0 +1,16 @@
+Error: no such function 'clip'
+Error: no such function 'clip'
+Error: no such function 'clip'
+Error: no such function 'clip'
+
+Note: No compatibility mode selected!
+
+
+Circuit: i32 input component trajectory, transparent approximation
+
+Error on line 18 or its substitute:
+  bctrl protect_ctrl_vin 0 i=   9.0000000000e-05 * clip ( v(protect_ctrl_vin) /   2.5000000000e+00 ,   0.0000000000e+00 ,   1.0000000000e+00 )
+parameter value out of range or the wrong type
+    Simulation interrupted due to error!
+
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run

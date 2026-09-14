@@ -1,0 +1,80 @@
+{
+  "parameters": {
+    "bulk": 330,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 1000,
+    "physical_dividers": true,
+    "physical_input_caps": true,
+    "slew": 0.0024,
+    "en_cap": 2.2e-07,
+    "sns_top": 634000,
+    "input_leak": 0.0282,
+    "active_discharge": true,
+    "q153_threshold": 1.5,
+    "q152_threshold": 2.5,
+    "r164": 4700,
+    "r165": 4.418,
+    "input_route_R": 0.06,
+    "input_route_L": 3e-07,
+    "off_delay": 0.0001,
+    "name": "sns_falling_restart_min_Ron_life_0.99",
+    "branch_R": 0.1,
+    "branch_L": 1e-07,
+    "sns_fault": true,
+    "stop": 0.2,
+    "q_ron": 0.001,
+    "vref": 1.0156,
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "fb_top_scale": 1.0014,
+    "fb_bottom_scale": 0.9986
+  },
+  "returncode": 0,
+  "deck_sha256": "961c61fedd1a93d2158e01eab6b6135ae185ef8ea1cc2e4ead449177f571f52b",
+  "completed": true,
+  "end_s": 0.2,
+  "samples": 101416,
+  "main_peak_V": 3.3937204,
+  "main_final_V": 3.31737117,
+  "active_min_V": 3.07003016,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 1.5801001700000001,
+  "input_switch_peak_A": 0.938497689,
+  "input_switch_reverse_A": -0.0301142035,
+  "I151_max_A": 1.10677974,
+  "I121_max_A": 1.01965028,
+  "ready_rises": 2,
+  "sns_faults": 1,
+  "R158_peak_W": 0.32475681371887716,
+  "R158_energy_J": 0.001067958634341939,
+  "R158_RMS_A": 0.10658922115986888,
+  "rail5_active_range_V": [
+    4.98073673,
+    5.08734061
+  ],
+  "pre_fault_ready": true,
+  "pre_fault_main_min_V": 3.31737117,
+  "normal_main_min_V": 3.31737117,
+  "R165": {
+    "peak_A": 0.750781556,
+    "minimum_A": -2.24181967e-06,
+    "peak_abs_A": 0.750781556,
+    "peak_W": 2.490307070257973,
+    "energy_J": 0.0025486858819676545,
+    "pulse_screen_125C": {
+      "continuous_derated_W": 0.35294117647058826,
+      "whole_record_mean_W": 0.012743429409838272,
+      "pulses_above_continuous": [
+        {
+          "start_s": 0.150073133,
+          "duration_s": 0.0021416790000000074,
+          "peak_W": 2.490307070257973,
+          "energy_J": 0.0021268510922612597
+        }
+      ]
+    }
+  },
+  "source_peak_V": 3.3984418,
+  "waveform_sha256": "9238aec6f5fad67aebbe5a7d3250128fee5fef479d6020bb699599302b866f65"
+}

@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/80f872752466/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/input_stress.py", line 128, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/80f872752466/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/input_stress.py", line 125, in main
+    with cf.ThreadPoolExecutor(a.jobs)as pool:rr=list(pool.map(lambda p:run(p,a.output),json.loads(a.cases.read_text())))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/80f872752466/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/input_stress.py", line 125, in <lambda>
+    with cf.ThreadPoolExecutor(a.jobs)as pool:rr=list(pool.map(lambda p:run(p,a.output),json.loads(a.cases.read_text())))
+                                                                        ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/80f872752466/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/input_stress.py", line 58, in run
+    try:rc=subprocess.run(['ngspice','-b','case.cir'],cwd=d,stdout=f,stderr=subprocess.STDOUT,timeout=180).returncode
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ngspice'

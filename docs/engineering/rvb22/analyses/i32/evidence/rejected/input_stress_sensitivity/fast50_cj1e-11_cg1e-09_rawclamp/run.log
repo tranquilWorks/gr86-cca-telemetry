@@ -1,0 +1,58 @@
+Using SPARSE 1.3 as Direct Linear Solver
+
+Note: No compatibility mode selected!
+
+
+Circuit: i32 input component trajectory, transparent approximation
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+bat                                          0
+cable_r                            2.35285e-29
+raw_12v                            2.35285e-29
+fused_12v                          3.52928e-29
+diode101                           3.52928e-29
+rev_blocked_12v                   -4.05072e-22
+protect_ctrl_vin                  -4.07255e-22
+protected_12v                      2.46388e-27
+tvs102                            -4.07255e-22
+input_uv                           -2.6867e-23
+input_ov                          -1.01268e-23
+input_shdn                        -4.07254e-22
+one                                          1
+uv_ok                                    1e-09
+ov_bad                                   1e-09
+pvalid                                       0
+ptimer                                       0
+allow                                        0
+allow_d                                      0
+input_gate_drive                  -2.57594e-18
+input_gate                        -2.57594e-18
+input_gate_slew                   -2.57594e-18
+qdrain                            -4.05072e-22
+qsrc                               2.52282e-27
+clamp104                          -2.57594e-18
+tvs103                             2.46388e-27
+buck_feed                           2.4627e-27
+vin5                               2.35215e-27
+ballow#branch                                0
+bpvalid#branch                               0
+lcable#branch                     -2.35285e-28
+vd103#branch                      -2.72247e-32
+vd104#branch                                 0
+vq101#branch                       2.35321e-28
+vlogic#branch                           -2e-12
+vd102#branch                       2.18292e-28
+vd101#branch                      -2.35285e-28
+vbat#branch                        2.35285e-28
+
+ Reference value :  2.08281e-03 Reference value :  4.30781e-03 Reference value :  6.46831e-03 Reference value :  8.65691e-03 Reference value :  1.08662e-02 Reference value :  1.30859e-02 Reference value :  1.52693e-02 Reference value :  1.74005e-02 Reference value :  1.96250e-02 Reference value :  2.18453e-02 Reference value :  2.40122e-02 Reference value :  2.62193e-02 Reference value :  2.84055e-02 Reference value :  3.06183e-02 Reference value :  3.26451e-02 Reference value :  3.44697e-02 Reference value :  3.66678e-02 Reference value :  3.88826e-02 Reference value :  4.11236e-02 Reference value :  4.33183e-02 Reference value :  4.55040e-02 Reference value :  4.77150e-02 Reference value :  4.99508e-02 Reference value :  5.21544e-02 Reference value :  5.43549e-02 Reference value :  5.65857e-02 Reference value :  5.88016e-02 Reference value :  6.00215e-02 Reference value :  6.03140e-02 Reference value :  6.24804e-02 Reference value :  6.46433e-02 Reference value :  6.63947e-02 Reference value :  6.85640e-02 Reference value :  7.03502e-02 Reference value :  7.21704e-02 Reference value :  7.40662e-02 Reference value :  7.62528e-02 Reference value :  7.84469e-02 Reference value :  8.06376e-02 Reference value :  8.28260e-02 Reference value :  8.51103e-02 Reference value :  8.73752e-02 Reference value :  8.96305e-02 Reference value :  9.18832e-02 Reference value :  9.40979e-02 Reference value :  9.63288e-02 Reference value :  9.85508e-02
+No. of Data Rows : 1018423
+I32_FINISHED
+ngspice-42 done

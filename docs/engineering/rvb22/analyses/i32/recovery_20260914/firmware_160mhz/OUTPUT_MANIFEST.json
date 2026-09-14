@@ -1,0 +1,116 @@
+{
+  "files": {
+    "COPIED_SOURCE_INVENTORY.json": {
+      "sha256": "7301aab02f0fda257467d49f1836577969b792775d652d2d0735b217a0c0c880",
+      "size": 81207
+    },
+    "IMAGE_MANIFEST.json": {
+      "sha256": "24d88a8dba20fe9667ad31d5829dcbb8b4dd81b649e4675acc2823b763fa9e16",
+      "size": 1556
+    },
+    "README.md": {
+      "sha256": "d4877dbc653a926f7bf6eaf426135d325c9f5b673c4846de8a5e139a6f0d939f",
+      "size": 1321
+    },
+    "RELEASE_CHECK.json": {
+      "sha256": "68f9c1c29be094b7b9ebca86782f8bdd4a37ab9528602c98d51fbdb9d8f53ba0",
+      "size": 8436
+    },
+    "REPLAY_LIMITATIONS.json": {
+      "sha256": "0f34ea39009e0a7e7ad140ae997b84879eb480a12393cb46f90daf4106617bf8",
+      "size": 909
+    },
+    "RESULT.json": {
+      "sha256": "976b04edcad09b4d2f70e178a35b2a10078cdc495e80937019d4846373f4d445",
+      "size": 407
+    },
+    "TOOLCHAIN_INVENTORY.json": {
+      "sha256": "c916c64cf4b911fab367f072f8e16bb1164a43ab82c3b1d0de4cc370d10a5090",
+      "size": 1590
+    },
+    "build_metadata/build.options.json": {
+      "sha256": "4d36fd3e6701ce9f7fa1946411680330911c55445d60fa942d36bbffeeab98bd",
+      "size": 976
+    },
+    "build_metadata/compile_commands.json": {
+      "sha256": "71b4a0ce216786d72834f5048a4907c6b5cd058c49e98caf2b5dd7d0002b41ab",
+      "size": 718807
+    },
+    "build_metadata/flash_args": {
+      "sha256": "b66dd3f13a6c9740d1237ea5f2405ca787c1db2bda529522aeb5f237acc9cfd1",
+      "size": 179
+    },
+    "build_metadata/partitions.csv": {
+      "sha256": "ab2f33c14eb855054613fd3a4ba85457ae281c6f371c25931ccc763bc79cb0e2",
+      "size": 305
+    },
+    "build_metadata/sdkconfig": {
+      "sha256": "a75e4fd055150af11af0781ce8cadaa3a06af44e9734d43027c36397efa4e0e7",
+      "size": 133941
+    },
+    "finalize_records.py": {
+      "sha256": "462c62b6f5000417c585f3a885554d07986b08799609ecab58291e85adbc2fcc",
+      "size": 6311
+    },
+    "generate_evidence.py": {
+      "sha256": "1e8071fc931f9c417d6e9b5f36f6b18383260d568c85487cebec871b4d62a0e5",
+      "size": 6037
+    },
+    "images/boot_app0.bin": {
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "size": 8192
+    },
+    "images/cca_telemetry.ino.bin": {
+      "sha256": "67ef9d2d5ee0d2627d0a2452e0f3d13ce966dfb44fee0602a5e0ef1a011fc673",
+      "size": 684144
+    },
+    "images/cca_telemetry.ino.bootloader.bin": {
+      "sha256": "f96b0924b33989a8bafb6ad7449f7c83a5541b2e0785c8cad572a3907bed05fd",
+      "size": 20224
+    },
+    "images/cca_telemetry.ino.elf.gz": {
+      "sha256": "e7f1180c54f19361eecdcf1d2bdb385ae6bbcbb800fefe34b6c45c0957b477d2",
+      "size": 4648916
+    },
+    "images/cca_telemetry.ino.map.gz": {
+      "sha256": "837ddb6a2d2d86e37efa88d6d4d39df736e729175b9d3cc4d3bbeffa9eaa76dd",
+      "size": 676902
+    },
+    "images/cca_telemetry.ino.merged.bin": {
+      "sha256": "94bffbeb3361a97afb41c5560ec111be1e9aa5280c2701868bd05191c7b5936f",
+      "size": 8388608
+    },
+    "images/cca_telemetry.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "size": 3072
+    },
+    "logs/firmware-build-verbose.log": {
+      "sha256": "515d4f9782090ddb80cf39bb4e3772b1fadb98cc577b8789474aa138bead9979",
+      "size": 1130833
+    },
+    "logs/firmware-build.log": {
+      "sha256": "e3e37a180b992e865378a923bfa126a411a08cbb489731d4fd329c7901ab1bea",
+      "size": 2260
+    },
+    "logs/fresh-input.log": {
+      "sha256": "a61ededcce314ade6e6e73e816adf921f0a7712b0adb0ec042dd7e28fbea847c",
+      "size": 2988
+    },
+    "logs/fresh-power.log": {
+      "sha256": "d14ba75d9ea12dd92d5b5dfd18d7426bd489c6515d75296022e77d08366988c5",
+      "size": 3207
+    },
+    "logs/host-tests.log": {
+      "sha256": "ab55b0b5f4f0ea94cbeac88439e8c1effa8dc43c382f0af1f619ab1dfa8e2781",
+      "size": 624
+    },
+    "logs/setup-native-firmware.log": {
+      "sha256": "bac7263b9c3148fc130576bfe58a24f249847e0785252dfc3403c376811ce1f3",
+      "size": 5786
+    },
+    "run_release_check.py": {
+      "sha256": "147d0454f478fa429a9d143a72121a92eaf6457072d4f09edbf53d2620f2cb6a",
+      "size": 4092
+    }
+  }
+}

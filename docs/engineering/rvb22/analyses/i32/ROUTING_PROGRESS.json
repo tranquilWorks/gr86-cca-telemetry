@@ -1,0 +1,7 @@
+{
+  "status": "ADOPTED_UUID_INVENTORY_CONTROLS",
+  "source_PCB_sha256": "56aa12528c6ee873235d2a1cabd6f6c738800f3424a57ef5b87702b930f36ab7",
+  "adopted": "ADOPTED_ROUTE_INVENTORY.json",
+  "historical_attempts": "history/STAGE170_ROUTING_PROGRESS.json",
+  "note": "Not an instruction to rerun intermediate authoring against the final board."
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "scope": "Actual host AddressSanitizer and UndefinedBehaviorSanitizer execution; no ESP32 compilation or hardware execution",
+  "tests": [
+    {
+      "test": "erb_diagnostics_test.cpp",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/erb_diagnostics_test.cpp",
+        "-o",
+        "/tmp/i32_sanitized_erb_diagnostics_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "PASS: 24 RTC-record, calibration identity and BLE backoff wrap checks.\n",
+      "stderr": ""
+    },
+    {
+      "test": "erb_parser_test.cpp",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/erb_parser_test.cpp",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/gps_nmea.cpp",
+        "-o",
+        "/tmp/i32_sanitized_erb_parser_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "26 checks, 0 failures\n",
+      "stderr": ""
+    },
+    {
+      "test": "io_budget_test.cpp",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/io_budget_test.cpp",
+        "-o",
+        "/tmp/i32_sanitized_io_budget_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "VERIFIED assertions=14600225 exact_replenished_10s=1200\n",
+      "stderr": ""
+    },
+    {
+      "test": "oil_model_test.cpp",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/oil_model_test.cpp",
+        "-o",
+        "/tmp/i32_sanitized_oil_model_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "PASS: 32 independent-channel calibration, supply sweep and fault assertions.\n",
+      "stderr": ""
+    },
+    {
+      "test": "protocol_test.cpp",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/protocol_test.cpp",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/gps_nmea.cpp",
+        "-o",
+        "/tmp/i32_sanitized_protocol_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "PASS: 11407 protocol/parser/encoding assertions; address/undefined sanitizer enabled.\n",
+      "stderr": ""
+    }
+  ]
+}
