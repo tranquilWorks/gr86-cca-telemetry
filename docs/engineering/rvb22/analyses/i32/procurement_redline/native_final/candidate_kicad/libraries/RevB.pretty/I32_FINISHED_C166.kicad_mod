@@ -1,0 +1,180 @@
+(footprint "I32_FINISHED_C166"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+	(tags "capacitor")
+	(property "Reference" "C166"
+		(at -4.4 10.8 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eda4f495-5e39-48a8-87e8-8029ec36905b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "68n /100V C0G 5% BULK CT"
+		(at 0 1.68 0)
+		(layer "F.Fab")
+		(uuid "5026fb37-3854-4e27-8f68-86a14e570f44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA5L1C0G2A683J160AE"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62d53cff-3e18-46e0-a746-c0ff5a7f40e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd5e165c-b195-4be4-aa41-c02c96e5842e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "CGA5L1C0G2A683J160AE"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "59946cd4-9f59-47b4-b576-c862009c44f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Manufacturer" "TDK"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61dd9721-e2b6-4660-a0bb-e02890c83d9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c637ba69-281d-433b-a9a3-a0612e803818")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Qualification" "I32 selected source; native evidence and physical gates control"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "029fe89e-7e13-4f8f-a9ed-e5bdf805190d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Height" "1.90mm maximum"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3cd8a1f-0b4a-4acd-9ddd-ec70abab1ff8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.45 -1.2)
+		(end 2.45 1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cd86f4e6-ef68-433b-8743-a4e3675143d0")
+	)
+	(fp_rect
+		(start -1.8 -0.95)
+		(end 1.8 0.95)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "46630741-0115-4b94-a2da-e42d801f69a7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "07689f20-e49a-4753-9d70-225fe167ae15")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.65 0)
+		(size 1.1 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ac604310-c8bf-5dd7-8afb-ffa64fb1cca2")
+	)
+	(pad "2" smd roundrect
+		(at 1.65 0)
+		(size 1.1 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0a211dfc-862b-5913-b4fc-87c7109cd780")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_TDK_CGA5L1_68N_I32.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

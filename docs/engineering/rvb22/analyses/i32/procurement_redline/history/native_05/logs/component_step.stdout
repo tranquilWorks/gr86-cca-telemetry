@@ -1,0 +1,209 @@
+Determining PCB data.
+Build STEP data.
+Adding component R162.
+Adding component R126.
+Adding component C204.
+Adding component D606.
+Adding component R167.
+Adding component R403.
+Adding component R165.
+Adding component R604.
+Adding component R110.
+Adding component C202.
+Adding component R124.
+Adding component D604.
+Adding component D511.
+Adding component C532.
+Adding component C523.
+Adding component U201.
+Adding component C506.
+Adding component R128.
+Adding component D502.
+Adding component R603.
+Adding component C128.
+Adding component R125.
+Could not add 3D model for U403.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl
+Adding component R201.
+Adding component D522.
+Adding component R402.
+Adding component R121.
+Adding component D104.
+Adding component R163.
+Adding component J202.
+Could not add 3D model for Q153.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Adding component C125.
+Adding component R166.
+Adding component C401.
+Adding component C504.
+Adding component F101.
+Adding component J203.
+Adding component R404.
+Adding component C162.
+Adding component D605.
+Adding component C402.
+Adding component R606.
+Adding component R202.
+Adding component R602.
+Adding component R123.
+Adding component U402.
+Adding component D105.
+Adding component D512.
+Adding component R160.
+Adding component R601.
+Adding component R159.
+Adding component C513.
+Adding component C403.
+Adding component C103.
+Adding component R111.
+Adding component R401.
+Adding component R164.
+Adding component C123.
+Adding component D103.
+Adding component R405.
+Adding component R507.
+Adding component U121.
+Adding component D401.
+Adding component U404.
+Adding component D602.
+Adding component C206.
+Adding component C405.
+Adding component D601.
+Adding component C201.
+Adding component D521.
+Adding component C505.
+Adding component R605.
+Adding component C126.
+Adding component R109.
+Adding component U401.
+Adding component L121.
+Adding component C404.
+Adding component C121.
+Adding component D603.
+Adding component D101.
+Adding component R157.
+Adding component Q101.
+Adding component C165.
+Adding component R122.
+Adding component F1.
+Adding component R127.
+Adding component C124.
+Adding component R161.
+Could not add 3D model for Q152.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Adding component C127.
+Adding component R511.
+Adding component C511.
+Could not add 3D model for L151.
+File not found: ${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XAL5030-XXX.wrl
+Adding component R168.
+Adding component R204.
+Adding component R408.
+Adding component C102.
+Adding component C167.
+Adding component C159.
+Adding component C122.
+Adding component R104.
+Adding component C158.
+Adding component R169.
+Could not add 3D model for D501.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Adding component C301.
+Adding component D402.
+Adding component R525.
+Adding component C151.
+Adding component R515.
+Adding component R154.
+Adding component R513.
+Adding component R504.
+Adding component C101.
+Adding component R158.
+Adding component R102.
+Adding component R153.
+Adding component R155.
+Adding component C501.
+Adding component R151.
+Adding component C166.
+Adding component C302.
+Adding component R156.
+Adding component C155.
+Adding component C512.
+Adding component C522.
+Adding component R505.
+Adding component R170.
+Adding component R106.
+Adding component C502.
+Adding component R105.
+Adding component U301.
+Adding component C524.
+Adding component R103.
+Could not add 3D model for D301.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Adding component R101.
+Adding component C161.
+Adding component C205.
+Adding component R521.
+Adding component L406.
+Adding component C503.
+Adding component R411.
+Adding component R506.
+Adding component R522.
+Could not add 3D model for U502.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl
+Adding component C153.
+Adding component R152.
+Adding component R409.
+Adding component U501.
+Adding component C129.
+Adding component R410.
+Adding component R107.
+Adding component C531.
+Adding component U202.
+Adding component R303.
+Adding component U152.
+Adding component C154.
+Could not add 3D model for J401.
+File not found: ${KICAD7_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+Adding component D102.
+Adding component R203.
+Adding component C514.
+Adding component R302.
+Adding component C152.
+Adding component R503.
+Adding component R502.
+Adding component C157.
+Could not add 3D model for U101.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.wrl
+Adding component R523.
+Adding component R514.
+Adding component R501.
+Adding component R407.
+Adding component R108.
+Adding component U153.
+Adding component R512.
+Adding component U151.
+Adding component C521.
+Adding component C156.
+Adding component R524.
+Create PCB solid model.
+Board outline: found 96 initial points.
+Build board outlines (1 outlines) with 96 points.
+Build board cutouts and holes (411 hole(s)).
+Subtracting holes for shapes
+Subtracting holes for pads
+Subtracting holes for vias
+Generate board full shape.
+Writing STEP file.
+
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : $tempfile$.step(63762 ents)  Write  Done
+STEP file '/workspace/scratch/5b5c59eb3fe5/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_05/REVIEW_COMPONENTS.step' created.
+
+Export time 3.230 s

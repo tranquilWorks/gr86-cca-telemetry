@@ -1,0 +1,17 @@
+{
+  "componentCode": "C88374",
+  "componentModelEn": "U.FL-R-SMT-1(80)",
+  "componentBrandEn": "HRS(Hirose)",
+  "componentSpecificationEn": "SMD",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811091710_HRS-Hirose-U-FL-R-SMT-1-80_C88374.pdf",
+  "describe": "-40\u2103~+90\u2103 1 1.25mm 2mm 50\u03a9 6GHz Board Side IPEX Male Pin SMD Coaxial Connectors (RF) ROHS",
+  "overseasStockCount": 110059,
+  "preMinPurchaseNum": 105,
+  "canPresaleNumber": 108821,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C88374",
+  "retrieved_at_UTC": "2026-09-15T21:03:47.290470+00:00",
+  "response_sha256": "8c411e72e463c44aa3053b7dc702465635301992aa9d16b84473ec199d6e54a1"
+}

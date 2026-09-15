@@ -1,0 +1,12 @@
+{
+  "status": "PASS_CURRENT_I32_PACKAGE_HASH_AND_POPULATION_BINDING",
+  "package_sha256": "9a8fc224474f7744d2c8c46fdd7c82f6f1d414a18e7612d65a40dc281d79f0c5",
+  "package_members": 188,
+  "checks": {
+    "every_unique_member_manifested_and_hash_matched": true,
+    "all_157_current_CAD_inputs_exact": true,
+    "177_fitted_175_factory_two_local_three_DNP": true,
+    "29_unchanged_unassigned_sources_explicit": true,
+    "standalone_Gerbers_14_exact_members": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "name": "cold_loaded_750mA",
+    "constant": 0.75,
+    "ipos": 1.55
+  },
+  "returncode": 0,
+  "deck_sha256": "6f70a9352ca6d665cda29e81494f07316a0a7517cb077c96021a67f170ebaf0c",
+  "completed": false,
+  "error": ""
+}

@@ -1,0 +1,84 @@
+{
+  "checked_revision": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+  "runs": [
+    {
+      "id": 34918358266,
+      "name": "I26 source-bound closure evidence",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358266",
+      "updated_at": "2026-09-15T01:46:14Z"
+    },
+    {
+      "id": 34918358016,
+      "name": "I26 register audit",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358016",
+      "updated_at": "2026-09-15T01:46:24Z"
+    },
+    {
+      "id": 34918358009,
+      "name": "I27 historical ledger and current I32 clearance",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358009",
+      "updated_at": "2026-09-15T01:46:51Z"
+    },
+    {
+      "id": 34918358006,
+      "name": "Desktop respin-risk due diligence",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358006",
+      "updated_at": "2026-09-15T01:48:07Z"
+    },
+    {
+      "id": 34918358048,
+      "name": "Convergence04 release profile and current I32 thermal",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358048",
+      "updated_at": "2026-09-15T01:53:53Z"
+    },
+    {
+      "id": 34918358026,
+      "name": "Desktop convergence candidate native verification",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358026",
+      "updated_at": "2026-09-15T01:49:52Z"
+    },
+    {
+      "id": 34918358085,
+      "name": "RVB22 native engineering review",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358085",
+      "updated_at": "2026-09-15T01:51:36Z"
+    },
+    {
+      "id": 34918358044,
+      "name": "Convergence02 analytic history and current I32 thermal",
+      "head_sha": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/tranquilWorks/gr86-cca-telemetry/actions/runs/34918358044",
+      "updated_at": "2026-09-15T01:53:05Z"
+    }
+  ],
+  "verified_job_steps": [
+    104220771188,
+    104220771409,
+    104220770839
+  ],
+  "native_log_identity_confirmed": true,
+  "package_log_identity_confirmed": true
+}

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C342967",
+  "componentModelEn": "CGA3E3X7R1H224KT0Y0N",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X7R1H224KT0Y0N_C342967.pdf",
+  "describe": "220nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 3670,
+  "preMinPurchaseNum": 390,
+  "canPresaleNumber": 3655,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C342967",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.076501+00:00",
+  "response_sha256": "f0450a49037aabd072c55ab22e98c1a38833a49191a27ce5062b798683d50902"
+}

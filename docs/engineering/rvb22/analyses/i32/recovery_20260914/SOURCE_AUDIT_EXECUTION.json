@@ -1,0 +1,8 @@
+{
+  "evidence_class": "NEW_SOURCE_AUDIT_WITH_VERIFIED_BASELINE_TRANSPORT",
+  "script_sha256": "a03a9fad3b0a3717426a3da44b2c1e1f6e7b8c2bfabb35d45262a4575823b7a8",
+  "adapter_sha256": "3b9f1a8ee8f3ee83e884c51d9f786221fa2893f08998391db8030bb417c1d0a4",
+  "changed_assertions": 0,
+  "baseline_method": "Snapshot content recomputed as Git trees and matched to connected live HEAD",
+  "native_reports": "RECOVERED_PRIOR_NATIVE_OUTPUTS_NOT_RERUN"
+}

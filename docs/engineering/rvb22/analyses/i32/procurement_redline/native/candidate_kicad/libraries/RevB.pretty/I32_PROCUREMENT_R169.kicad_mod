@@ -1,0 +1,167 @@
+(footprint "I32_PROCUREMENT_R169"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+	(tags "resistor")
+	(property "Reference" "R169"
+		(at 2.6 -10.8 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d69af966-14a1-472c-a36b-1fde7fdc896c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "3.01k /0.1% 10ppm BULK EN TOP"
+		(at 0 1.43 180)
+		(layer "F.Fab")
+		(uuid "6f73a0d8-c369-48e8-a992-3058a33b5ba6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/partdetail/C19679768"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "637fea4e-a59d-42b1-b1cb-e3e3477c7fc9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9a54cec9-9aaa-435b-8eab-fb08ee555034")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "PTFR0603B3K01N9"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "874a13dd-921a-4b22-beaf-59132cc6d89e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Manufacturer" "Resistor.Today"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6855b2f6-2ca7-4ab8-b8d8-8e40030fc822")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b23c5d57-cb7d-44a9-9bfc-1f8fbdd5d6db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Qualification" "I32 selected source; native evidence and physical gates control"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ada714d-60aa-4bdc-b401-002a48180efb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "LCSC" "C2692830"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78b6323e-fce5-4ba0-a72c-438f6f759e41")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.65 0.9)
+		(end 1.65 -0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2b4301fa-70df-50ec-aa34-90293ffdb6e3")
+	)
+	(fp_rect
+		(start -0.8 0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "fc7ff602-d87a-5fb3-91ad-4845acb31f6e")
+	)
+	(pad "1" smd rect
+		(at -0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "092117d7-287f-57f8-b169-94b5965c1559")
+	)
+	(pad "2" smd rect
+		(at 0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f426a2bb-d5d4-515c-a58d-2ca188590bcb")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R169.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,694 @@
+{
+  "status": "ADOPTED_AND_NATIVE_VERIFIED",
+  "base_commit": "1c934f9ddd7a1b823e5136484f525485472528f6",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "parts": {
+    "C152": {
+      "before": {
+        "properties": {
+          "Reference": "C152",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:C_0603_1608Metric",
+        "position": [
+          40,
+          13.975,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C152",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C152",
+        "position": [
+          40,
+          13.975,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "GND"
+        }
+      }
+    },
+    "C154": {
+      "before": {
+        "properties": {
+          "Reference": "C154",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:C_0603_1608Metric_RVB22_C154",
+        "position": [
+          30.3,
+          15.2,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BOOT",
+          "2": "3V3_SW"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C154",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C154",
+        "position": [
+          30.3,
+          15.2,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BOOT",
+          "2": "3V3_SW"
+        }
+      }
+    },
+    "C165": {
+      "before": {
+        "properties": {
+          "Reference": "C165",
+          "Value": "220n /50V X7R EN DELAY",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224K080AB",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_C165",
+        "position": [
+          27,
+          -0.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C165",
+          "Value": "220n /50V X7R 10% EN DELAY",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C342967"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C165",
+        "position": [
+          27,
+          -0.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "L121": {
+      "before": {
+        "properties": {
+          "Reference": "L121",
+          "Value": "47u /MSS1246T",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "MSS1246T-473MLC",
+          "Manufacturer": "Coilcraft",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:Coilcraft_MSS1246T_12x12_RVB22_L121",
+        "position": [
+          60,
+          29,
+          90
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "5V_SW",
+          "2": "5V_SOURCE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "L121",
+          "Value": "47u /100mOhm 2.5A BPCI",
+          "Datasheet": "https://jlcpcb.com/partdetail/ChilisinElec-BPCI00121280470M00/C6471075",
+          "Description": "",
+          "MPN": "BPCI00121280470M00",
+          "Manufacturer": "Chilisin / Pulse",
+          "LCSC": "C6471075",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_L121",
+        "position": [
+          59.8,
+          29.05,
+          90
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "5V_SW",
+          "2": "5V_SOURCE"
+        }
+      }
+    },
+    "R151": {
+      "before": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R151",
+        "position": [
+          38.6,
+          1.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_IN"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C190124"
+        },
+        "footprint": "RevB:I32_FINISHED_R151",
+        "position": [
+          38.6,
+          1.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_IN"
+        }
+      }
+    },
+    "R155": {
+      "before": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.02% 2ppm FB TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU060311K8HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R155",
+        "position": [
+          44.55,
+          10.8,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.1% 10ppm FB TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603B11K8N9",
+          "Manufacturer": "Resistor.Today",
+          "LCSC": "C19679768",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R155",
+        "position": [
+          44.0,
+          10.8,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      }
+    },
+    "R156": {
+      "before": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "5.05k /0.02% 2ppm FB BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06035K05HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R156",
+        "position": [
+          41.25,
+          10.8,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "5.05k /0.01% 5ppm FB BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/60030/plt.pdf",
+          "Description": "",
+          "MPN": "PLT1206Z5051LBTS",
+          "Manufacturer": "Vishay",
+          "LCSC": "C4074185",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R156",
+        "position": [
+          41.25,
+          10.101,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      }
+    },
+    "R160": {
+      "before": {
+        "properties": {
+          "Reference": "R160",
+          "Value": "6.34k /0.02% SNS TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06036K34HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R160",
+        "position": [
+          27,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_ISO_SNS"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R160",
+          "Value": "6.34k /0.1% 10ppm SNS TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C864499",
+          "Description": "",
+          "MPN": "RT0805BRB076K34L",
+          "Manufacturer": "YAGEO",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C864499"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R160",
+        "position": [
+          27,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_ISO_SNS"
+        }
+      }
+    },
+    "R161": {
+      "before": {
+        "properties": {
+          "Reference": "R161",
+          "Value": "1k /0.02% SNS BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R161",
+        "position": [
+          30.5,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_SNS",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R161",
+          "Value": "1k /0.02% 10ppm SNS BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R161",
+        "position": [
+          30.5,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_SNS",
+          "2": "GND"
+        }
+      }
+    },
+    "R162": {
+      "before": {
+        "properties": {
+          "Reference": "R162",
+          "Value": "4.7k /0.02% ISO EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06034K70HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R162",
+        "position": [
+          27,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_ENABLE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R162",
+          "Value": "4.7k /0.02% 10ppm ISO EN TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q4K70N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067437"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R162",
+        "position": [
+          27,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_ENABLE"
+        }
+      }
+    },
+    "R163": {
+      "before": {
+        "properties": {
+          "Reference": "R163",
+          "Value": "1k /0.02% ISO EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R163",
+        "position": [
+          30.5,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R163",
+          "Value": "1k /0.02% 10ppm ISO EN BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R163",
+        "position": [
+          30.5,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "R169": {
+      "before": {
+        "properties": {
+          "Reference": "R169",
+          "Value": "3.01k /0.02% BULK EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06033K01HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R169",
+        "position": [
+          80,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_ENABLE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R169",
+          "Value": "3.01k /0.1% 10ppm BULK EN TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603B3K01N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "LCSC": "C2692830"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R169",
+        "position": [
+          79.8,
+          1.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_ENABLE"
+        }
+      }
+    },
+    "R170": {
+      "before": {
+        "properties": {
+          "Reference": "R170",
+          "Value": "1k /0.02% BULK EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R170",
+        "position": [
+          83.3,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R170",
+          "Value": "1k /0.02% 10ppm BULK EN BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R170",
+        "position": [
+          83.2,
+          1.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "U101": {
+      "before": {
+        "properties": {
+          "Reference": "U101",
+          "Value": "LTC4367HMS8#WTRPBF",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "LTC4367HMS8#WTRPBF",
+          "Manufacturer": "Analog Devices",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:MSOP-8_3x3mm_P0.65mm",
+        "position": [
+          33,
+          30.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "PROTECT_CTRL_VIN",
+          "2": "INPUT_UV",
+          "3": "INPUT_OV",
+          "4": "GND",
+          "5": "INPUT_SHDN",
+          "6": "INPUT_FAULT_N",
+          "7": "PROTECTED_12V",
+          "8": "INPUT_GATE_DRIVE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "U101",
+          "Value": "LTC4367HMS8#PBF",
+          "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4367.pdf",
+          "Description": "",
+          "MPN": "LTC4367HMS8#PBF",
+          "Manufacturer": "Analog Devices",
+          "LCSC": "C688370",
+          "Assembly": "FACTORY",
+          "Qualification": "Owner accepts H-grade #PBF without #W controlled-manufacturing pedigree; electrical equivalence only"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_U101",
+        "position": [
+          33,
+          30.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "PROTECT_CTRL_VIN",
+          "2": "INPUT_UV",
+          "3": "INPUT_OV",
+          "4": "GND",
+          "5": "INPUT_SHDN",
+          "6": "INPUT_FAULT_N",
+          "7": "PROTECTED_12V",
+          "8": "INPUT_GATE_DRIVE"
+        }
+      }
+    }
+  },
+  "copper_counts": {
+    "added": 1,
+    "removed": 0,
+    "modified": 18
+  },
+  "detail": "SOURCE_AUDIT.json"
+}

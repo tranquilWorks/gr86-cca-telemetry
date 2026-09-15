@@ -1,0 +1,95 @@
+{
+  "status": "FAIL",
+  "scope": "Host C++ logic tests; not ESP32 target compilation, hardware execution, timing or electrical qualification",
+  "tests": [
+    {
+      "test": "erb_diagnostics_test.cpp",
+      "source_sha256": "63636e85e054ce88ad53826975fc95d28f259ee26ced7cc402bf002aef894140",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/erb_diagnostics_test.cpp",
+        "-o",
+        "/tmp/i32_recovery_erb_diagnostics_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "PASS: 24 RTC-record, calibration identity and BLE backoff wrap checks.\n",
+      "stderr": ""
+    },
+    {
+      "test": "erb_parser_test.cpp",
+      "source_sha256": "547efc04fea235fe0aca28592cf58781bf9c72efd34a28715c5e556ccc810365",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/erb_parser_test.cpp",
+        "-o",
+        "/tmp/i32_recovery_erb_parser_test"
+      ],
+      "compile_exit": 1
+    },
+    {
+      "test": "io_budget_test.cpp",
+      "source_sha256": "2aa9346640e28d1ce040296a8ebc6b7f056644e480541096b7ecf8c0683cc1ea",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/io_budget_test.cpp",
+        "-o",
+        "/tmp/i32_recovery_io_budget_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "VERIFIED assertions=14600225 exact_replenished_10s=1200\n",
+      "stderr": ""
+    },
+    {
+      "test": "oil_model_test.cpp",
+      "source_sha256": "3264e2ac7f88df8e2d5d6a57f96279c8ff9530f12729ea4cda3d0c8a936bd573",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/oil_model_test.cpp",
+        "-o",
+        "/tmp/i32_recovery_oil_model_test"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "PASS: 32 independent-channel calibration, supply sweep and fault assertions.\n",
+      "stderr": ""
+    },
+    {
+      "test": "protocol_test.cpp",
+      "source_sha256": "9e624c7232058a98054c8f855d60d3ac6a8fe248638b3a8189bc3b57115ed651",
+      "compile_argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "/mnt/data/GR86_RevB_I32_Checked_Recovery/repository_overlay/docs/engineering/rvb22/candidate/firmware/tests/protocol_test.cpp",
+        "-o",
+        "/tmp/i32_recovery_protocol_test"
+      ],
+      "compile_exit": 1
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+GR86 U121 unchanged TI model - vendor_nonideal_load_step selected sensitivity
+.include "LM5164-Q1_TRANS.LIB"
+VINPUT VIN 0 PWL(0 0 100u 0 200u 10.687669348522192)
+C121 VIN 0 2.2u
+C122 VIN 0 2.2u
+C123 VIN 0 100n
+C129 VIN 0 2.2u
+R125 VIN EN 100k
+R126 EN 0 26.1k
+R121 RON 0 31.6k
+C124 BST SW 2.2n
+L121 SW LOUT 37.6u
+RLDCR LOUT OUT 0.187
+C127 OUT C127R 11u
+RC127 C127R 0 0.01
+C128 OUT C128R 11u
+RC128 C128R 0 0.01
+R122 OUT FB 309k
+R123 FB 0 100k
+R124 SW RIPPLE 43.2k
+C125 RIPPLE OUT 3.3n
+C126 RIPPLE FB 100p
+R127 OUT PGOOD 100k
+R128 OUT V5 0.005
+R151 V5 VIN33 0.005
+C151 VIN33 0 11u
+C152 VIN33 0 110n
+R401 V5 GPS5 0.005
+C401 GPS5 0 11u
+C502 V5 0 50n
+VDEMAND DEMAND 0 PWL(0 .15 4m .15 4.001m .75 4.5m .75 4.501m .15)
+BLOAD V5 0 I={V(DEMAND)*min(max(V(V5)/4.5,0),1)}
+XU121 BST EN FB 0 0 PGOOD RON SW VIN LM5164-Q1_TRANS
+.options method=gear maxord=2 reltol=0.002 abstol=1n vntol=1u
+.control
+set wr_vecnames
+set wr_singlescale
+save v(VIN) v(OUT) i(L121) v(FB) v(PGOOD) v(SW)
+tran 20n 5.5m 0 20n
+meas tran vout_final AVG v(OUT) FROM=5m TO=5.5m
+meas tran vout_min MIN v(OUT) FROM=5m TO=5.5m
+meas tran vout_max MAX v(OUT) FROM=5m TO=5.5m
+meas tran il_peak MAX i(L121) FROM=0 TO=5.5m
+wrdata nominal_waveform.tsv v(VIN) v(OUT) i(L121) v(FB) v(PGOOD) v(SW)
+quit
+.endc
+.end

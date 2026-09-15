@@ -1,0 +1,18 @@
+{
+  "componentCode": "C85864",
+  "componentModelEn": "GCM188R71H104KA57D",
+  "componentBrandEn": "Murata Electronics",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GCM188R71H104KA57D_C85864.pdf",
+  "describe": "100nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 1889215,
+  "preMinPurchaseNum": 402,
+  "canPresaleNumber": 1854317,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C85864",
+  "retrieved_at_UTC": "2026-09-15T21:05:48.183112+00:00",
+  "response_sha256": "645ac88da8e2cb35a0abdb98a0624367397b99b62130111775bf7948c40df554"
+}

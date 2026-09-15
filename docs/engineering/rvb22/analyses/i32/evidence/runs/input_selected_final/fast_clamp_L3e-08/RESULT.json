@@ -1,0 +1,269 @@
+{
+  "parameters": {
+    "name": "fast_clamp_L3e-08",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12",
+    "stop": 0.1,
+    "step": 2e-07,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.060052
+    ],
+    "clamp_lead_L": 3e-08,
+    "r101": 11979.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125
+  },
+  "returncode": 0,
+  "deck_sha256": "b679abc96383bd3add1e3062ab481c0803574ff1be2d52a568278cfb2864b6f1",
+  "completed": true,
+  "end_s": 0.1,
+  "samples": 520986,
+  "Q101_VDS_max_V": 128.31783180000002,
+  "Q101_VGS_max_V": 12.441757799999998,
+  "Q101_VGS_min_V": -0.5461493000000033,
+  "Q101_current_peak_A": 10.222991,
+  "Q101_energy_positive_J": 0.008058581297369739,
+  "Q101_power_peak_W": 413.75359132860035,
+  "D101_reverse_max_V": 277.226585,
+  "D101_current_peak_A": 10.2251327,
+  "fuse_I2t_A2s": 0.014246653662642815,
+  "R101_peak_V": 150.72459890000002,
+  "R101_peak_W": 1.8964775618637522,
+  "R101_energy_J": 2.0951987898133713e-05,
+  "R110_peak_W": 28.926258064546584,
+  "R110_energy_J": 0.006522553559925856,
+  "PROTECT_CTRL_VIN_range_V": [
+    -1.01376871e-21,
+    14.5068037
+  ],
+  "INPUT_UV_range_V": [
+    -1.15817454e-20,
+    10.6987331
+  ],
+  "INPUT_OV_range_V": [
+    -4.36542711e-21,
+    4.0325994
+  ],
+  "INPUT_SHDN_range_V": [
+    -1.01376819e-21,
+    14.5067963
+  ],
+  "INPUT_GATE_DRIVE_range_V": [
+    -0.00439363027,
+    40.7809594
+  ],
+  "PROTECTED_12V_range_V": [
+    -1.86392742e-05,
+    33.5689894
+  ],
+  "VIN5_range_V": [
+    -1.86392736e-05,
+    32.6123473
+  ],
+  "RAW_12V_range_V": [
+    -128.568951,
+    162.393002
+  ],
+  "REV_BLOCKED_12V_range_V": [
+    -1.74617084e-19,
+    161.303976
+  ],
+  "D102": {
+    "peak_A": 1.01499609e-09,
+    "peak_W": 1.471724407089861e-08,
+    "positive_energy_J": 1.024373838709432e-09,
+    "charge_C": 9.992865435622924e-11,
+    "duration_above_1mA_s": 0.0
+  },
+  "D103": {
+    "peak_A": 4.16911092,
+    "peak_W": 139.95284028090424,
+    "positive_energy_J": 0.0003498444418628289,
+    "charge_C": 1.0495138661747195e-05,
+    "duration_above_1mA_s": 4.638749999997388e-06
+  },
+  "D104": {
+    "peak_A": 0.0,
+    "peak_W": 0.0,
+    "positive_energy_J": 0.0,
+    "charge_C": 0.0,
+    "duration_above_1mA_s": 0.0
+  },
+  "D105": {
+    "peak_A": 2.15992805,
+    "peak_W": 348.3736137038567,
+    "positive_energy_J": 7.38598982952983e-05,
+    "duration_above_1mA_s": 2.4114999999762243e-06,
+    "terminal_max_V": 161.289453
+  },
+  "Q101_case_temperature_allocation_C": 125,
+  "Q101_onstate_power_max_W": 3.423704516988104,
+  "R101_pulse_screen": {
+    "continuous_derated_W": 0.35294117647058826,
+    "whole_record_mean_W": 0.00020951987898133712,
+    "pulses_above_continuous": [
+      {
+        "start_s": 0.0600144479,
+        "duration_s": 3.869500000003301e-06,
+        "peak_W": 1.8964775618637522,
+        "energy_J": 3.5139702683793317e-06
+      }
+    ]
+  },
+  "R110_pulse_screen": {
+    "continuous_derated_W": 0.36,
+    "whole_record_mean_W": 0.06522553559925856,
+    "pulses_above_continuous": [
+      {
+        "start_s": 0.0600006417,
+        "duration_s": 1.4030599999999283e-05,
+        "peak_W": 28.926258064546584,
+        "energy_J": 0.0002475889596040827
+      }
+    ]
+  },
+  "events": [
+    {
+      "event": "fault",
+      "linear_intervals": [
+        {
+          "duration_s": 1.3260599999995182e-05,
+          "start_s": 0.0600014456,
+          "peak_VDS_V": 128.31783180000002,
+          "peak_ID_A": 10.222991,
+          "positive_energy_J": 0.0005655412138677362,
+          "published_family_s": 0.0001,
+          "derated_SOA_utilization_max": 0.5171919891607505,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 2.9999999984209325e-09,
+          "start_s": 0.0600148987,
+          "peak_VDS_V": 116.0840091,
+          "peak_ID_A": 0.0165534189,
+          "positive_energy_J": 4.767160512027816e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000958909593533449,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 3.299999995487468e-09,
+          "start_s": 0.0600149087,
+          "peak_VDS_V": 115.59177549999998,
+          "peak_ID_A": 0.0156758101,
+          "positive_energy_J": 4.850129949610307e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0009046755954332565,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 3.5000000050966484e-09,
+          "start_s": 0.0600149188,
+          "peak_VDS_V": 115.5241783,
+          "peak_ID_A": 0.0209958478,
+          "positive_energy_J": 6.713132031979626e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0012093468238005554,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 2.400000004287861e-09,
+          "start_s": 0.0600149292,
+          "peak_VDS_V": 114.86193169999999,
+          "peak_ID_A": 0.0110480023,
+          "positive_energy_J": 2.6400399474124205e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0006339785661928004,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.6999999949418587e-09,
+          "start_s": 0.0600149639,
+          "peak_VDS_V": 113.99523330000001,
+          "peak_ID_A": 0.0113756002,
+          "positive_energy_J": 2.074581295450754e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0006477883720932447,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.4999999992104662e-09,
+          "start_s": 0.0600149746,
+          "peak_VDS_V": 113.47984399999999,
+          "peak_ID_A": 0.010021191,
+          "positive_energy_J": 1.6056364251672914e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0005682319079383974,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 3.200000001091219e-09,
+          "start_s": 0.0600149841,
+          "peak_VDS_V": 113.47377279999999,
+          "peak_ID_A": 0.0158136483,
+          "positive_energy_J": 4.730992058216276e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0008952899436160488,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.400000004814217e-09,
+          "start_s": 0.0600150061,
+          "peak_VDS_V": 112.67312709999999,
+          "peak_ID_A": 0.0102779309,
+          "positive_energy_J": 1.5653686808222989e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000578509276124464,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 2.399999997348967e-09,
+          "start_s": 0.0600150495,
+          "peak_VDS_V": 111.47504289999999,
+          "peak_ID_A": 0.0127426559,
+          "positive_energy_J": 3.0558838405593467e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0007093585222499013,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1999999952050366e-09,
+          "start_s": 0.0600150714,
+          "peak_VDS_V": 110.75290040000002,
+          "peak_ID_A": 0.0104430369,
+          "positive_energy_J": 1.3543625794464824e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0005780657693725306,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.3000000034790737e-09,
+          "start_s": 0.0600151153,
+          "peak_VDS_V": 109.53091500000001,
+          "peak_ID_A": 0.0105356209,
+          "positive_energy_J": 1.441099009747119e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0005765702659190076,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        }
+      ],
+      "positive_energy_J": 0.0005671198277448487,
+      "fuse_event_I2t_A2s": 0.0010026092749822085,
+      "SOA_scope": "Fig.2 lower-bound trajectory screen at allocated case temperature; no avalanche or DC extrapolation"
+    }
+  ],
+  "waveform_sha256": "a3f4edb410c6f0495e5e0f51973b38c932ba2a118c38dd964ec5bfdb5cfbef4f"
+}

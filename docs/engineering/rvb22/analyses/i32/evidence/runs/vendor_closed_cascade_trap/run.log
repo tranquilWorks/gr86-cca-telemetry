@@ -1,0 +1,637 @@
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Note: Compatibility modes selected: ps
+
+
+Circuit: i32 closed vendor u121 cascade, constant 750ma startup
+
+Option cshunt: 375 capacitors added with 1e-15 F each
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+one                                          1
+inlet5                                       0
+vin5                               5.87255e-48
+en5                                1.21549e-48
+on5                                      1e-09
+ron5                                    0.0316
+bst5                               5.94198e-37
+sw5                                6.01531e-37
+source5                            6.01532e-37
+pg5                                1.50345e-40
+xu121.x_u3_u37.yint                          1
+xu121.x_u3_u37.e_abmgate_int1                1
+xu121.u3_pwm_int                             0
+xu121.u3_pwm_int_n                           1
+xu121.vcc                                    0
+xu121.u3_n16807541                           0
+xu121.x_u3_u10.yint1                         0
+xu121.x_u3_u10.e_abmgate1_int1               0
+xu121.u3_n17610996                           0
+xu121.x_u3_u10.yint2                         0
+xu121.x_u3_u10.yint3                         0
+xu121.x_u3_u10.e_abmgate2_int1               0
+xu121.u3_n17611014                           0
+xu121.x_u3_u39.yint                          0
+xu121.x_u3_u39.e_abmgate_int1                0
+xu121.u3_n17611165                           1
+xu121.u3_pwm_int_ok_bar_n          1.63859e-13
+xu121.x_u3_u27.yint                          0
+xu121.x_u3_u27.e_abmgate_int1                0
+xu121.on_set                                 0
+xu121.u3_pwmbar_n                  1.63859e-13
+xu121.x_u3_u649.yint1                        0
+xu121.x_u3_u649.e_abmgate1_int1               0
+xu121.u3_pwm                       1.22433e-45
+xu121.x_u3_u649.yint2                        0
+xu121.x_u3_u649.yint3                        1
+xu121.x_u3_u649.e_abmgate2_int1               1
+xu121.u3_n17584645                           1
+xu121.u3_isw                      -6.07667e-45
+xu121.e_u3_abm175_int1            -6.07667e-45
+xu121.u3_hs_cl_int                -6.07581e-47
+xu121.u3_ls_cl_int                -6.01592e-45
+xu121.x_u3_u15.yint                          0
+xu121.x_u3_u15.e_abmgate_int1                0
+xu121.x_u3_u8.yint                           1
+xu121.x_u3_u8.e_abmgate_int1                 1
+xu121.u3_pwm_n                               1
+xu121.u3_bst_sw_on                           1
+xu121.e_u3_e_test_int1                       1
+xu121.u3_bst_sw_on_int                       1
+xu121.x_u3_u48.yint                          0
+xu121.x_u3_u48.e_abmgate_int1                0
+xu121.u3_n17559207                           1
+xu121.u3_n17523913                 1.63859e-13
+xu121.u3_n17524271                           0
+xu121.x_u3_u29.yint                          0
+xu121.x_u3_u29.e_abmgate_int1                0
+xu121.u3_n17610992                           1
+xu121.u3_n16807385                 5.87255e-48
+xu121.x_u3_u17.yint                          0
+xu121.x_u3_u17.e_abmgate_int1                0
+xu121.u3_zcd                                 1
+xu121.x_u3_u11.yint                          1
+xu121.x_u3_u11.e_abmgate_int1                1
+xu121.pwmbar_final                           0
+xu121.x_u3_u30.yint1                         0
+xu121.x_u3_u30.e_abmgate1_int1               0
+xu121.x_u3_u30.yint2                         0
+xu121.x_u3_u30.yint3                         0
+xu121.x_u3_u30.e_abmgate2_int1               0
+xu121.u3_n17512629                           0
+xu121.x_u3_u49.yint                          0
+xu121.x_u3_u49.e_abmgate_int1                0
+xu121.hs_cl                                  0
+xu121.e_u3_abm173_int1                       0
+xu121.x_u3_u31.yint1                         0
+xu121.x_u3_u31.e_abmgate1_int1               0
+xu121.x_u3_u31.yint2                         0
+xu121.x_u3_u31.yint3                         0
+xu121.x_u3_u31.e_abmgate2_int1               0
+xu121.u3_n17512658                           0
+xu121.u3_bst_uvlo                            1
+xu121.x_u3_u9.yint                           1
+xu121.x_u3_u9.e_abmgate_int1                 1
+xu121.x_u3_u647.yint                         1
+xu121.x_u3_u647.e_abmgate_int1               1
+xu121.u3_pwm_int_ok_bar                      1
+xu121.toff                                   1
+xu121.x_u3_u32.yint1                         1
+xu121.x_u3_u32.e_abmgate1_int1               1
+xu121.u3_n17611205                           1
+xu121.x_u3_u32.yint2                         1
+xu121.x_u3_u32.yint3                         1
+xu121.x_u3_u32.e_abmgate2_int1               1
+xu121.u3_n17611186                           1
+xu121.u3_n17419691                           1
+xu121.ls_cl                                  0
+xu121.e_u3_abm174_int1                       0
+xu121.u3_n16877175                       0.001
+xu121.x_u3_u33.yint                          1
+xu121.x_u3_u33.e_abmgate_int1                1
+xu121.x_u3_u646.yint                         1
+xu121.x_u3_u646.e_abmgate_int1               1
+xu121.e_u3_abm172_int1                       1
+xu121.x_u3_u34.yint                          1
+xu121.x_u3_u34.e_abmgate_int1                1
+xu121.u3_pwm_int_ok                          0
+xu121.x_u3_u20.yint1                         0
+xu121.x_u3_u20.e_abmgate1_int1               0
+xu121.u3_n17611169                           0
+xu121.x_u3_u20.yint2                         0
+xu121.x_u3_u20.yint3                         0
+xu121.x_u3_u20.e_abmgate2_int1               0
+xu121.u3_n17611198                           0
+xu121.x_u3_u35.yint                          0
+xu121.x_u3_u35.e_abmgate_int1                0
+xu121.x_u3_u25.yint1                         1
+xu121.x_u3_u25.e_abmgate1_int1               1
+xu121.u3_n17611021                           1
+xu121.x_u3_u25.yint2                         1
+xu121.x_u3_u25.yint3                         1
+xu121.x_u3_u25.e_abmgate2_int1               1
+xu121.u3_n17611002                           1
+xu121.x_u3_u16.yint                          1
+xu121.x_u3_u16.e_abm_int1                    1
+xu121.x_u3_u26.yint                          1
+xu121.x_u3_u26.e_abmgate_int1                1
+xu121.x_u3_u36.yint                          0
+xu121.x_u3_u36.e_abmgate_int1                0
+xu121.x_u3_u28.yint                          1
+xu121.x_u3_u28.e_abmgate_int1                1
+xu121.u3_pwmbar                              1
+xu121.u2_n528489                           1.5
+xu121.u2_n169716663                        0.6
+xu121.u2_n521382                          1.25
+xu121.e_u2_abm166_int1                       0
+xu121.u2_en_sdwn_n                           0
+xu121.u2_ss_int                      1.251e-15
+xu121.g_u2_abmii1_int1                       0
+xu121.active_mode                            0
+xu121.vref                           1.251e-15
+xu121.e_u2_abm165_int1               1.251e-15
+xu121.x_u2_u24.yint                          1
+xu121.x_u2_u24.e_abmgate_int1                1
+xu121.u2_n16972352                           1
+xu121.x_u2_u46.yint                          0
+xu121.x_u2_u46.e_abmgate_int1                0
+xu121.u2_standby                             0
+xu121.x_u2_u38.inp1               -1.51538e-09
+xu121.x_u2_u38.inm1                        1.5
+xu121.x_u2_u38.inp2               -1.51538e-09
+xu121.x_u2_u38.ehys_int1                     0
+xu121.x_u2_u38.1                             0
+xu121.u2_n5284713                          0.1
+xu121.x_u2_u38.eout_int1                     0
+xu121.x_u2_u39.inp1               -1.11128e-09
+xu121.x_u2_u39.inm1                        1.1
+xu121.u2_n16971675                         1.1
+xu121.x_u2_u39.inp2               -1.11128e-09
+xu121.x_u2_u39.ehys_int1                     0
+xu121.x_u2_u39.1                             0
+xu121.x_u2_u39.eout_int1                     0
+xu121.u4_n03028                              0
+xu121.u4_n03327                  -6.05441e-286
+xu121.x_u4_u1.inp1                -1.15169e-09
+xu121.x_u4_u1.inm1                        1.14
+fb5                                3.95125e-37
+xu121.u4_n02837                           1.14
+xu121.x_u4_u1.inp2                -1.15169e-09
+xu121.x_u4_u1.ehys_int1                      0
+xu121.x_u4_u1.1                              0
+xu121.u4_n02934                           0.06
+xu121.x_u4_u1.eout_int1                      0
+xu121.u4_n03725                              0
+xu121.x_u4_u15.yint                          0
+xu121.x_u4_u15.e_abmgate_int1                0
+xu121.u1_n16883989                           0
+xu121.u1_n16873466                           0
+xu121.u1_n16863904                           0
+xu121.e_u1_abm11_int1                        0
+xu121.u1_n16870888                           0
+xu121.u1_toff_50n                            0
+xu121.u1_toff_250n                           0
+xu121.x_u1_u48.yint                          1
+xu121.x_u1_u48.e_abmgate_int1                1
+xu121.u1_toff_int                            1
+xu121.x_u1_u25.yint1                         0
+xu121.x_u1_u25.e_abmgate1_int1               0
+xu121.u1_n16795973                           0
+xu121.x_u1_u25.yint2                         0
+xu121.x_u1_u25.yint3                         0
+xu121.x_u1_u25.e_abmgate2_int1               0
+xu121.u1_n16778722                           5
+xu121.u1_n16873406                           0
+xu121.e_u1_abm175_int1                       0
+xu121.u1_n16873372                           1
+xu121.x_u1_u59.reset2                        1
+xu121.x_u1_u59.meas                          0
+xu121.x_u1_u59.ch                            0
+xu121.x_u1_u59.e_abm1_int1                   0
+xu121.u1_n16899964                           0
+xu121.u1_n16899970                           0
+xu121.x_u1_u59.reset                         1
+xu121.x_u1_u59.e_abm3_int1                   0
+xu121.x_u1_u59.e_abm2_int1                   1
+xu121.x_u1_u58.yint                          0
+xu121.x_u1_u58.e_abmgate_int1                0
+xu121.u1_n16873278                           0
+xu121.u1_n16873291                           0
+xu121.u1_n16873385                           0
+xu121.x_u1_u46.yint                          0
+xu121.x_u1_u46.e_abmgate_int1                0
+xu121.u1_n16865305                 4.83548e-13
+xu121.x_u1_u43.yint                          0
+xu121.x_u1_u43.e_abmgate_int1                0
+xu121.u1_n01219                      1.101e-10
+xu121.x_u1_u60.reset2              4.87075e-28
+xu121.x_u1_u60.meas                          1
+xu121.x_u1_u60.ch                            1
+xu121.x_u1_u60.e_abm1_int1                   1
+xu121.x_u1_u60.reset                         0
+xu121.x_u1_u60.e_abm3_int1                   0
+xu121.x_u1_u60.e_abm2_int1                   0
+xu121.u1_n16741306                         1.1
+xu121.g_u1_abmii3_int1                       0
+xu121.u1_ieff                                0
+xu121.x_u1_u13.qint                1.00099e-08
+xu121.x_u1_u13.gq_int1                       0
+xu121.x_u1_u13.my5                           1
+xu121.x_u1_u13.myvss                         0
+xu121.x_u1_u13.qqq                 1.00099e-08
+xu121.x_u1_u13.x3.yint                       0
+xu121.x_u1_u13.x3.e_abmgate_int1               0
+xu121.x_u1_u13.qqqd1                         0
+xu121.u1_pk_cl                               0
+xu121.x_u1_u13.qbr                           1
+xu121.x_u1_u13.eqb_int1                      1
+xu121.n16873458                              1
+xu121.x_u1_u10.yint                          0
+xu121.x_u1_u10.e_abm_int1                    0
+xu121.u1_n16873346                         1.5
+xu121.u1_n16873256                           0
+xu121.x_u1_u6.qint                 1.00099e-08
+xu121.x_u1_u6.gq_int1                        0
+xu121.u1_finalton_reset                      0
+xu121.u1_on_timer                            0
+xu121.x_u1_u6.my5                            1
+xu121.x_u1_u6.myvss                          0
+xu121.x_u1_u6.qqq                  1.00099e-08
+xu121.x_u1_u6.x3.yint                        0
+xu121.x_u1_u6.x3.e_abmgate_int1               0
+xu121.x_u1_u6.qqqd1                          0
+xu121.x_u1_u6.qbr                            1
+xu121.x_u1_u6.eqb_int1                       1
+xu121.x_u1_u56.yint                          0
+xu121.x_u1_u56.e_abmgate_int1                0
+xu121.u1_finalton_reset2                     0
+xu121.u1_finalton_reset_ok                   0
+xu121.ron_res                            31600
+xu121.e_u1_abm7_int1                     31600
+xu121.x_u1_u55.yint                          0
+xu121.x_u1_u55.e_abmgate_int1                0
+xu121.u1_n01331                              1
+xu121.x_u1_u44.yint                          0
+xu121.x_u1_u44.e_abmgate_int1                0
+xu121.u1_reset                               0
+xu121.e_u1_abm10_int1                        0
+xu121.u1_n16782154                           0
+xu121.e_u1_abm9_int1                         0
+xu121.x_u1_u54.yint                          1
+xu121.x_u1_u54.e_abm_int1                    1
+xu121.u1_comp                                1
+xu121.x_u1_u61.reset2              4.87075e-28
+xu121.x_u1_u61.meas                          1
+xu121.x_u1_u61.ch                            1
+xu121.x_u1_u61.e_abm1_int1                   1
+xu121.x_u1_u61.reset                         0
+xu121.x_u1_u61.e_abm3_int1                   0
+xu121.x_u1_u61.e_abm2_int1                   0
+xu121.x_u1_u11.yint                          0
+xu121.x_u1_u11.e_abm_int1                    0
+xu121.u1_n16873309                         1.5
+xu121.x_u1_u28.yint                          0
+xu121.x_u1_u28.e_abmgate_int1                0
+xu121.u1_n16917620                           1
+xu121.x_u1_u1.yint                           0
+xu121.x_u1_u1.e_abm_int1                     0
+xu121.u1_high_when_vfb_is_more_than_vref+4mv               0
+xu121.e_u1_abm6_int1                         0
+xu121.x_u1_u47.yint                          0
+xu121.x_u1_u47.e_abmgate_int1                0
+xu121.x_u1_u51.yint                          0
+xu121.x_u1_u51.e_abmgate_int1                0
+xu121.x_u1_u12.yint                          1
+xu121.x_u1_u12.e_abm_int1                    1
+xu121.u1_n16873408                         1.2
+xu121.x_u1_u62.yint1                         0
+xu121.x_u1_u62.e_abmgate1_int1               0
+xu121.x_u1_u62.yint2                         0
+xu121.x_u1_u62.yint3                         1
+xu121.x_u1_u62.e_abmgate2_int1               1
+winding5                           6.01532e-37
+c127r                              6.67054e-39
+c128r                              6.67054e-39
+ripple5                             5.9561e-37
+rail5                              6.08203e-37
+feediso                            6.22579e-37
+good5                                    1e-09
+iso_en_pin                           1.041e-37
+gooddelay                           6.6967e-11
+ageiso                                       0
+switchon                                     0
+slewiso                                      0
+feedpass                           6.22579e-37
+vin                                2.88304e-32
+snsiso                             3.82747e-33
+localgood                                1e-09
+snsfiltered                        7.50005e-10
+snsprev                            7.09778e-10
+snsevent                                     0
+restartage                               1e-05
+pgwant                                       0
+pgdelay                                      0
+en151                              2.59073e-40
+enable_ctrl                              1e-09
+c151_esr                           1.93997e-33
+enable                                   1e-09
+xu151.age                                    0
+xu151.active                                 0
+xu151.ref                                    0
+xu151.neg                                    0
+xu151.req                          5.24232e-33
+fb                                 -3.6405e-34
+xu151.integral                               0
+xu151.cmd                                    0
+xu151.command                                0
+xu151.drive                                  0
+source                            -1.18847e-33
+xu151.active_f                               0
+xu151.sense                        9.24257e-31
+sw                                 9.24257e-31
+winding                            -3.1656e-32
+c155_esr                          -1.05772e-33
+c156_esr                          -1.05772e-33
+c157_esr                          -1.05772e-33
+c158_esr                          -4.15829e-36
+main                              -4.14096e-34
+c201_esr                           -3.6338e-34
+c204_esr                           -3.6338e-34
+c202_esr                          -2.74647e-36
+c205_esr                          -2.74647e-36
+c301_esr                          -2.74647e-36
+c302_esr                          -3.33257e-35
+c404_esr                          -2.74647e-36
+c531_esr                          -2.74647e-36
+branch_sense                      -4.14096e-34
+branch_l                          -4.08632e-34
+branch_r                          -6.11989e-35
+damped                            -3.55178e-35
+c206_esr                          -1.36602e-36
+requested                                 0.45
+valid                                    1e-09
+timer                                        0
+ready                                        0
+reset_ctl                                    1
+reset_raw                         -1.12391e-35
+en                                -3.93372e-35
+disg                                2.5072e-32
+disfeed                           -1.18847e-33
+disdrain                          -1.19248e-33
+hold_l                             2.88836e-32
+hold_bus                           2.66696e-32
+c162                               2.66992e-32
+c163                               2.66992e-32
+c164                               2.66992e-32
+breset#branch                           -1e-12
+bready#branch                                0
+v.xu151.vsense#branch             -1.71921e-36
+b.xu151.bdrive#branch             -8.25939e-41
+b.xu151.bcmd#branch                          0
+b.xu151.breq#branch               -1.70332e-41
+b.xu151.bneg#branch                          0
+b.xu151.bref#branch                          0
+b.xu151.bactive#branch                       0
+bpgwant#branch                               0
+bswitchon#branch                             0
+bsnsevent#branch                             0
+bvslew#branch                                0
+b.xu121.x_u1_u62.be_abmgate2#branch          -1e-12
+b.xu121.x_u1_u62.be_abmgate1#branch               0
+b.xu121.x_u1_u12.be_abm#branch          -1e-12
+b.xu121.x_u1_u51.be_abmgate#branch               0
+b.xu121.x_u1_u47.be_abmgate#branch               0
+b.xu121.be_u1_abm6#branch                    0
+b.xu121.x_u1_u1.be_abm#branch                0
+b.xu121.x_u1_u28.be_abmgate#branch               0
+b.xu121.x_u1_u11.be_abm#branch               0
+b.xu121.x_u1_u61.be_abm2#branch     -0.00023424
+b.xu121.x_u1_u61.be_abm3#branch     0.000233984
+b.xu121.x_u1_u61.be_abm1#branch      0.00023424
+b.xu121.x_u1_u54.be_abm#branch          -1e-12
+b.xu121.be_u1_abm9#branch                    0
+b.xu121.be_u1_abm10#branch                   0
+b.xu121.x_u1_u44.be_abmgate#branch               0
+b.xu121.x_u1_u55.be_abmgate#branch     6.83407e-05
+b.xu121.be_u1_abm7#branch            -3.16e-08
+b.xu121.x_u1_u56.be_abmgate#branch               0
+b.xu121.x_u1_u6.beqb#branch             -1e-12
+b.xu121.x_u1_u6.x3.be_abmgate#branch               0
+b.xu121.x_u1_u6.bgq#branch                   0
+b.xu121.x_u1_u10.be_abm#branch               0
+b.xu121.x_u1_u13.beqb#branch            -1e-12
+b.xu121.x_u1_u13.x3.be_abmgate#branch               0
+b.xu121.x_u1_u13.bgq#branch                  0
+b.xu121.bg_u1_abmii3#branch                  0
+b.xu121.x_u1_u60.be_abm2#branch     -0.00023424
+b.xu121.x_u1_u60.be_abm3#branch     0.000234266
+b.xu121.x_u1_u60.be_abm1#branch      0.00023424
+b.xu121.x_u1_u43.be_abmgate#branch               0
+b.xu121.x_u1_u46.be_abmgate#branch               0
+b.xu121.x_u1_u58.be_abmgate#branch               0
+b.xu121.x_u1_u59.be_abm2#branch          -1e-12
+b.xu121.x_u1_u59.be_abm3#branch               0
+b.xu121.x_u1_u59.be_abm1#branch               0
+b.xu121.be_u1_abm175#branch                  0
+b.xu121.x_u1_u25.be_abmgate2#branch               0
+b.xu121.x_u1_u25.be_abmgate1#branch               0
+b.xu121.x_u1_u48.be_abmgate#branch      0.00023424
+b.xu121.be_u1_abm11#branch         0.000234266
+b.xu121.x_u4_u15.be_abmgate#branch               0
+b.xu121.x_u4_u1.beout#branch                 0
+b.xu121.x_u4_u1.behys#branch                 0
+b.xu121.x_u2_u39.beout#branch                0
+b.xu121.x_u2_u39.behys#branch                0
+b.xu121.x_u2_u38.beout#branch                0
+b.xu121.x_u2_u38.behys#branch                0
+b.xu121.x_u2_u46.be_abmgate#branch               0
+b.xu121.x_u2_u24.be_abmgate#branch          -1e-12
+b.xu121.be_u2_abm165#branch         -1.251e-27
+b.xu121.bg_u2_abmii1#branch                  0
+b.xu121.be_u2_abm166#branch                  0
+b.xu121.x_u3_u28.be_abmgate#branch     5.12872e-05
+b.xu121.x_u3_u36.be_abmgate#branch               0
+b.xu121.x_u3_u26.be_abmgate#branch      0.00023424
+b.xu121.x_u3_u16.be_abm#branch          -1e-12
+b.xu121.x_u3_u25.be_abmgate2#branch     -9.8413e-06
+b.xu121.x_u3_u25.be_abmgate1#branch    -6.83407e-05
+b.xu121.x_u3_u35.be_abmgate#branch               0
+b.xu121.x_u3_u20.be_abmgate2#branch               0
+b.xu121.x_u3_u20.be_abmgate1#branch               0
+b.xu121.x_u3_u34.be_abmgate#branch     5.12872e-05
+b.xu121.be_u3_abm172#branch             -1e-12
+b.xu121.x_u3_u646.be_abmgate#branch      0.00023424
+b.xu121.x_u3_u33.be_abmgate#branch      0.00023424
+b.xu121.be_u3_abm174#branch                  0
+b.xu121.x_u3_u32.be_abmgate2#branch     -9.8413e-06
+b.xu121.x_u3_u32.be_abmgate1#branch    -6.83407e-05
+b.xu121.x_u3_u647.be_abmgate#branch    -6.83407e-05
+b.xu121.x_u3_u9.be_abmgate#branch          -1e-12
+b.xu121.x_u3_u31.be_abmgate2#branch               0
+b.xu121.x_u3_u31.be_abmgate1#branch               0
+b.xu121.be_u3_abm173#branch                  0
+b.xu121.x_u3_u49.be_abmgate#branch               0
+b.xu121.x_u3_u30.be_abmgate2#branch               0
+b.xu121.x_u3_u30.be_abmgate1#branch               0
+b.xu121.x_u3_u11.be_abmgate#branch          -1e-12
+b.xu121.x_u3_u17.be_abmgate#branch     -0.00023424
+b.xu121.x_u3_u29.be_abmgate#branch     -0.00023424
+b.xu121.x_u3_u48.be_abmgate#branch               0
+b.xu121.be_u3_e_test#branch       -6.83407e-05
+b.xu121.x_u3_u8.be_abmgate#branch          -1e-12
+b.xu121.x_u3_u15.be_abmgate#branch               0
+b.xu121.be_u3_abm175#branch        6.60401e-55
+b.xu121.x_u3_u649.be_abmgate2#branch          -1e-12
+b.xu121.x_u3_u649.be_abmgate1#branch               0
+b.xu121.x_u3_u27.be_abmgate#branch               0
+b.xu121.x_u3_u39.be_abmgate#branch     -0.00023424
+b.xu121.x_u3_u10.be_abmgate2#branch               0
+b.xu121.x_u3_u10.be_abmgate1#branch               0
+b.xu121.x_u3_u37.be_abmgate#branch          -1e-12
+h.xu121.x_u3_h2.h_u3_h2#branch     6.55047e-55
+v.xu121.x_u3_h2.vh_u3_h2#branch     6.01592e-45
+h.xu121.x_u3_h3.h_u3_h3#branch     5.35316e-57
+v.xu121.x_u3_h3.vh_u3_h3#branch    -6.07581e-47
+lhold#branch                      -8.86805e-34
+lbranch#branch                    -5.46407e-35
+l151#branch                       -3.95169e-31
+l121#branch                       -1.50401e-43
+e.xu121.x_u1_u62.e_abmgate2#branch    -3.16414e-12
+e.xu121.x_u1_u62.e_abmgate1#branch               0
+e.xu121.x_u1_u12.e_abm#branch     -3.16414e-12
+e.xu121.x_u1_u51.e_abmgate#branch               0
+e.xu121.x_u1_u47.e_abmgate#branch               0
+e.xu121.e_u1_abm6#branch                     0
+e.xu121.x_u1_u1.e_abm#branch                 0
+e.xu121.x_u1_u28.e_abmgate#branch               0
+e.xu121.x_u1_u11.e_abm#branch                0
+e.xu121.x_u1_u61.e_abm2#branch     -0.00023424
+e.xu121.x_u1_u61.e_abm3#branch     0.000233984
+e.xu121.x_u1_u61.e_abm1#branch     0.000234239
+e.xu121.x_u1_u54.e_abm#branch     -3.16414e-12
+e.xu121.e_u1_abm9#branch                     0
+e.xu121.e_u1_abm10#branch                    0
+e.xu121.x_u1_u44.e_abmgate#branch               0
+e.xu121.x_u1_u55.e_abmgate#branch     6.83407e-05
+e.xu121.e_u1_abm7#branch             -3.16e-08
+e.xu121.x_u1_u56.e_abmgate#branch               0
+e.xu121.x_u1_u6.eqb#branch        -3.16402e-12
+e.xu121.x_u1_u6.x3.e_abmgate#branch               0
+e.xu121.x_u1_u6.eq#branch           -1.011e-18
+e.xu121.x_u1_u10.e_abm#branch                0
+e.xu121.x_u1_u13.eqb#branch       -3.16414e-12
+e.xu121.x_u1_u13.x3.e_abmgate#branch               0
+e.xu121.x_u1_u13.eq#branch          -1.011e-18
+e.xu121.x_u1_u60.e_abm2#branch     -0.00023424
+e.xu121.x_u1_u60.e_abm3#branch     0.000234266
+e.xu121.x_u1_u60.e_abm1#branch     0.000234239
+e.xu121.x_u1_u43.e_abmgate#branch               0
+e.xu121.x_u1_u46.e_abmgate#branch               0
+e.xu121.x_u1_u58.e_abmgate#branch               0
+e.xu121.x_u1_u59.e_abm2#branch    -4.00036e-12
+e.xu121.x_u1_u59.e_abm3#branch               0
+e.xu121.x_u1_u59.e_abm1#branch               0
+e.xu121.e_u1_abm175#branch                   0
+e.xu121.x_u1_u25.e_abmgate2#branch               0
+e.xu121.x_u1_u25.e_abmgate1#branch               0
+e.xu121.x_u1_u48.e_abmgate#branch      0.00023424
+e.xu121.e_u1_abm11#branch          0.000234266
+e.xu121.x_u4_u15.e_abmgate#branch               0
+e.xu121.x_u4_u1.eout#branch      -1.21121e-286
+e.xu121.x_u4_u1.ehys#branch        3.89708e-15
+e.xu121.x_u4_u1.ein#branch          1.1439e-12
+e.xu121.x_u2_u39.eout#branch                 0
+e.xu121.x_u2_u39.ehys#branch       3.76032e-15
+e.xu121.x_u2_u39.ein#branch        1.10376e-12
+e.xu121.x_u2_u38.eout#branch                 0
+e.xu121.x_u2_u38.ehys#branch       5.12777e-15
+e.xu121.x_u2_u38.ein#branch        1.50513e-12
+e.xu121.x_u2_u46.e_abmgate#branch               0
+e.xu121.x_u2_u24.e_abmgate#branch    -3.16414e-12
+e.xu121.e_u2_abm165#branch          -1.251e-27
+e.xu121.e_u2_abm166#branch         5.94233e-49
+e.xu121.x_u3_u28.e_abmgate#branch     5.12755e-05
+e.xu121.x_u3_u36.e_abmgate#branch               0
+e.xu121.x_u3_u26.e_abmgate#branch      0.00023424
+e.xu121.x_u3_u16.e_abm#branch     -3.16414e-12
+e.xu121.x_u3_u25.e_abmgate2#branch    -9.84719e-06
+e.xu121.x_u3_u25.e_abmgate1#branch    -6.83407e-05
+e.xu121.x_u3_u35.e_abmgate#branch               0
+e.xu121.x_u3_u20.e_abmgate2#branch               0
+e.xu121.x_u3_u20.e_abmgate1#branch               0
+e.xu121.x_u3_u34.e_abmgate#branch     5.12745e-05
+e.xu121.e_u3_abm172#branch        -3.16414e-12
+e.xu121.x_u3_u646.e_abmgate#branch      0.00023424
+e.xu121.x_u3_u33.e_abmgate#branch      0.00023424
+e.xu121.e_u3_abm174#branch                   0
+e.xu121.x_u3_u32.e_abmgate2#branch    -9.84719e-06
+e.xu121.x_u3_u32.e_abmgate1#branch    -6.83407e-05
+e.xu121.x_u3_u647.e_abmgate#branch    -6.83407e-05
+e.xu121.x_u3_u9.e_abmgate#branch    -3.16414e-12
+e.xu121.x_u3_u31.e_abmgate2#branch               0
+e.xu121.x_u3_u31.e_abmgate1#branch               0
+e.xu121.e_u3_abm173#branch                   0
+e.xu121.x_u3_u49.e_abmgate#branch               0
+e.xu121.x_u3_u30.e_abmgate2#branch               0
+e.xu121.x_u3_u30.e_abmgate1#branch               0
+e.xu121.x_u3_u11.e_abmgate#branch    -3.16414e-12
+e.xu121.x_u3_u17.e_abmgate#branch     -0.00023424
+e.xu121.x_u3_u29.e_abmgate#branch     -0.00023424
+e.xu121.x_u3_u48.e_abmgate#branch               0
+e.xu121.e_u3_e_test#branch        -6.83407e-05
+e.xu121.x_u3_u8.e_abmgate#branch    -3.16414e-12
+e.xu121.x_u3_u15.e_abmgate#branch               0
+e.xu121.e_u3_abm175#branch         6.60401e-55
+e.xu121.x_u3_u649.e_abmgate2#branch    -3.16414e-12
+e.xu121.x_u3_u649.e_abmgate1#branch               0
+e.xu121.x_u3_u27.e_abmgate#branch               0
+e.xu121.x_u3_u39.e_abmgate#branch     -0.00023424
+e.xu121.x_u3_u10.e_abmgate2#branch               0
+e.xu121.x_u3_u10.e_abmgate1#branch               0
+e.xu121.x_u3_u37.e_abmgate#branch    -3.16402e-12
+vr165#branch                       8.54938e-37
+vload#branch                          -4.5e-13
+vr158#branch                      -5.46407e-35
+vpass#branch                      -2.88304e-36
+v.xu121.v_u1_v9#branch                -1.2e-12
+v.xu121.v_u1_v8#branch                -1.5e-12
+v.xu121.v_u1_v7#branch                -1.5e-12
+v.xu121.v_u1_v3#branch                  -1e-06
+v.xu121.v_u1_v2#branch              -2.201e-12
+v.xu121.v_u1_v1#branch                  -1e-12
+v.xu121.x_u1_u6.v2#branch            1.388e-20
+v.xu121.x_u1_u6.v1#branch           -2.001e-12
+v.xu121.x_u1_u13.v2#branch           1.388e-20
+v.xu121.x_u1_u13.v1#branch          -2.001e-12
+v.xu121.v_u4_v1#branch               -1.14e-12
+v.xu121.v_u4_v2#branch                  -6e-14
+v.xu121.v_u2_vf6#branch               -1.1e-12
+v.xu121.v_u2_vf5#branch                 -1e-13
+v.xu121.v_u2_vf2#branch             -2.501e-12
+v.xu121.v_u2_vf7#branch                 -6e-13
+v.xu121.v_u2_vf4#branch               -1.5e-12
+v.xu121.v_u3_vf5#branch                 -1e-15
+vinput#branch                      5.87255e-47
+vlogic#branch                           -7e-12
+
+ Reference value :  2.51140e-05 Reference value :  1.27776e-04 Reference value :  1.87306e-04 Reference value :  2.86925e-04 Reference value :  3.47419e-04 Reference value :  3.92888e-04 Reference value :  4.09189e-04 Reference value :  4.26279e-04 Reference value :  4.37767e-04 Reference value :  4.59561e-04 Reference value :  4.83507e-04 Reference value :  5.43927e-04 Reference value :  5.62596e-04 Reference value :  5.80632e-04 Reference value :  6.00094e-04 Reference value :  6.26045e-04 Reference value :  6.58295e-04 Reference value :  6.72785e-04 Reference value :  6.86599e-04 Reference value :  7.01998e-04 Reference value :  7.15478e-04 Reference value :  7.40576e-04 Reference value :  7.71654e-04 Reference value :  7.81203e-04 Reference value :  7.93537e-04 Reference value :  8.05719e-04 Reference value :  8.27949e-04 Reference value :  8.82335e-04 Reference value :  8.93596e-04 Reference value :  9.05320e-04 Reference value :  9.20290e-04 Reference value :  9.32308e-04 Reference value :  9.43247e-04 Reference value :  9.52610e-04 Reference value :  1.00406e-03 Reference value :  1.01928e-03 Reference value :  1.02856e-03 Reference value :  1.04566e-03 Reference value :  1.06131e-03 Reference value :  1.07092e-03 Reference value :  1.12100e-03 Reference value :  1.12778e-03 Reference value :  1.13475e-03 Reference value :  1.14898e-03 Reference value :  1.15751e-03 Reference value :  1.16553e-03 Reference value :  1.17297e-03 Reference value :  1.18663e-03 Reference value :  1.19517e-03 Reference value :  1.20231e-03 Reference value :  1.23545e-03 Reference value :  1.25334e-03 Reference value :  1.26089e-03 Reference value :  1.26871e-03 Reference value :  1.28100e-03 Reference value :  1.28693e-03 Reference value :  1.29477e-03 Reference value :  1.30826e-03 Reference value :  1.32137e-03 Reference value :  1.33288e-03 Reference value :  1.36891e-03 Reference value :  1.37428e-03 Reference value :  1.37987e-03 Reference value :  1.38191e-03 Reference value :  1.39257e-03 Reference value :  1.39971e-03 Reference value :  1.41036e-03 Reference value :  1.41767e-03 Reference value :  1.42867e-03 Reference value :  1.43511e-03 Reference value :  1.44195e-03 Reference value :  1.44777e-03 Reference value :  1.45374e-03 Reference value :  1.45935e-03 Reference value :  1.46505e-03 Reference value :  1.47094e-03 Reference value :  1.47557e-03 Reference value :  1.48213e-03 Reference value :  1.48779e-03 Reference value :  1.49351e-03 Reference value :  1.50319e-03 Reference value :  1.50879e-03 Reference value :  1.51452e-03 Reference value :  1.52094e-03 Reference value :  1.52669e-03 Reference value :  1.53726e-03 Reference value :  1.54169e-03 Reference value :  1.54691e-03 Reference value :  1.55228e-03 Reference value :  1.55760e-03 Reference value :  1.55926e-03 Reference value :  1.56940e-03 Reference value :  1.57880e-03 Reference value :  1.58026e-03 Reference value :  1.58927e-03 Reference value :  1.59582e-03 Reference value :  1.60126e-03 Reference value :  1.60632e-03 Reference value :  1.61529e-03 Reference value :  1.62160e-03 Reference value :  1.63045e-03 Reference value :  1.63671e-03 Reference value :  1.64196e-03 Reference value :  1.65195e-03 Reference value :  1.66186e-03 Reference value :  1.67051e-03 Reference value :  1.67549e-03 Reference value :  1.68069e-03 Reference value :  1.68658e-03 Reference value :  1.69498e-03 Reference value :  1.70483e-03 Reference value :  1.71083e-03 Reference value :  1.72065e-03 Reference value :  1.72979e-03 Reference value :  1.73483e-03 Reference value :  1.73964e-03 Reference value :  1.74887e-03 Reference value :  1.75263e-03 Reference value :  1.75842e-03 Reference value :  1.76737e-03 Reference value :  1.77697e-03 Reference value :  1.78158e-03 Reference value :  1.78943e-03 Reference value :  1.79532e-03 Reference value :  1.80020e-03 Reference value :  1.80830e-03 Reference value :  1.81375e-03 Reference value :  1.81838e-03 Reference value :  1.82726e-03 Reference value :  1.83190e-03 Reference value :  1.83960e-03 Reference value :  1.84528e-03 Reference value :  1.85296e-03 Reference value :  1.86193e-03 Reference value :  1.86762e-03 Reference value :  1.87528e-03 Reference value :  1.87971e-03 Reference value :  1.88496e-03 Reference value :  1.88985e-03 Reference value :  1.89687e-03 Reference value :  1.89958e-03 Reference value :  1.90408e-03 Reference value :  1.90995e-03 Reference value :  1.91426e-03 Reference value :  1.91549e-03 Reference value :  1.92267e-03 Reference value :  1.92811e-03 Reference value :  1.93654e-03 Reference value :  1.94090e-03 Reference value :  1.94797e-03 Reference value :  1.95339e-03 Reference value :  1.95764e-03 Reference value :  1.96599e-03 Reference value :  1.97030e-03 Reference value :  1.97445e-03 Reference value :  1.97866e-03 Reference value :  1.98585e-03 Reference value :  1.99217e-03 Reference value :  1.99927e-03 Reference value :  2.00612e-03 Reference value :  2.01431e-03 Reference value :  2.01569e-03 Reference value :  2.01970e-03 Reference value :  2.02767e-03 Reference value :  2.03469e-03 Reference value :  2.03881e-03 Reference value :  2.04661e-03 Reference value :  2.05066e-03 Reference value :  2.05482e-03 Reference value :  2.05974e-03 Reference value :  2.06397e-03 Reference value :  2.07167e-03 Reference value :  2.07828e-03 Reference value :  2.08347e-03 Reference value :  2.09020e-03 Reference value :  2.09421e-03 Reference value :  2.09927e-03 Reference value :  2.10703e-03 Reference value :  2.11100e-03 Reference value :  2.11863e-03 Reference value :  2.12517e-03 Reference value :  2.13288e-03 Reference value :  2.13671e-03 Reference value :  2.14434e-03 Reference value :  2.14829e-03 Reference value :  2.15322e-03 Reference value :  2.15705e-03 Reference value :  2.16449e-03 Reference value :  2.17160e-03 Reference value :  2.17580e-03 Reference value :  2.18231e-03 Reference value :  2.18611e-03 Reference value :  2.19089e-03 Reference value :  2.19830e-03 Reference value :  2.20567e-03 Reference value :  2.20935e-03 Reference value :  2.21317e-03 Reference value :  2.21685e-03 Reference value :  2.22060e-03 Reference value :  2.22427e-03 Reference value :  2.23063e-03 Reference value :  2.23750e-03 Reference value :  2.24161e-03doAnalyses: TRAN:  Timestep too small; time = 0.00224607, timestep = 6.25e-20: trouble with node "xu121.u1_n16863904"
+
+
+tran simulation(s) aborted
+binary raw file "waveform.raw"
+ngspice-42 done

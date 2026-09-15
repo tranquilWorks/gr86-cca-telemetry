@@ -1,0 +1,65 @@
+name: I28 electrical signoff apply
+on:
+  push:
+    branches: [codex/rvb24-coordinated-closure]
+    paths: [.github/workflows/i28-electrical-signoff-apply.yml]
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/rvb24-coordinated-closure
+          fetch-depth: 0
+      - name: Apply U121 Q1 correction and I28 evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, math
+          sch=Path('docs/engineering/rvb22/candidate/cad/Power_5V.kicad_sch')
+          pcb=Path('docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb')
+          st=sch.read_text(); pt=pcb.read_text()
+          if 'LM5164DDAR' not in st or 'LM5164DDAR' not in pt:
+              raise SystemExit('expected pre-I28 U121 identity not found')
+          st=st.replace('LM5164DDAR','LM5164QDDARQ1')
+          st=st.replace('https://www.ti.com/lit/ds/symlink/lm5164.pdf','https://www.ti.com/lit/ds/symlink/lm5164-q1.pdf')
+          st=st.replace('(property "LCSC" "C477928"','(property "LCSC" "C2072225"')
+          pt=pt.replace('(property "Value" "LM5164DDAR"','(property "Value" "LM5164QDDARQ1"')
+          pt=pt.replace('(property "MPN" "LM5164DDAR"','(property "MPN" "LM5164QDDARQ1"')
+          pt=pt.replace('(property "LCSC" "C477928"','(property "LCSC" "C2072225"')
+          sch.write_text(st); pcb.write_text(pt)
+          Rtop,Rmid,Rbot=549e3,24.3e3,14.7e3; Rt=Rtop+Rmid+Rbot
+          uv=[v*Rt/(Rmid+Rbot) for v in (0.4925,0.5075)]
+          uvr=[(v+h)*Rt/(Rmid+Rbot) for v in (0.4925,0.5075) for h in (0.020,0.032)]
+          ov=[v*Rt/Rbot for v in (0.4925,0.5075)]
+          Pout=2.3326875; eta=.8; Pin=Pout/eta; Rser=.125+.47; vf=1.15
+          a=12-vf; vin=(a+math.sqrt(a*a-4*Pin*Rser))/2; iin=Pin/vin
+          f5=5*2500/31.6*1e3; di5=5*(1-5/vin)/(47e-6*f5)
+          v33=1*(1+11.8/4.99); di33=v33*(1-v33/5)/(15e-6*400e3)
+          report={
+            'milestone':'I28 electrical/power pre-fabrication signoff',
+            'ecad_change':{'U121_before':'LM5164DDAR','U121_after':'LM5164QDDARQ1','LCSC':'C2072225','footprint_or_routing_change':False},
+            'model_status':{'LM5164_Q1':'TI unencrypted PSpice model acquired; stock ngspice cannot execute its PSpice A-device primitives','LM63615_Q1':'TI model acquired; Cadence encrypted','full_vendor_macromodel_spice_claim':False},
+            'input_bounds':{'uv_trip_post_diode_V':[min(uv),max(uv)],'uv_reenable_post_diode_V':[min(uvr),max(uvr)],'ov_trip_post_diode_V':[min(ov),max(ov)],'deep_6V_crank':'intentional UV shutdown/restart, not ride-through','load_dump':'LTC4367/Q101 isolation is primary defense; downstream LM5164-Q1 is not credited with directly absorbing unsuppressed raw load dump'},
+            'release_12V':{'5V_output_burden_W':Pout,'efficiency_floor':eta,'pessimistic_series_diode_drop_V':vf,'U121_VIN_V':vin,'U121_input_A':iin,'U121_fsw_Hz':f5,'U121_inductor_ripple_A_pp':di5,'U121_release_peak_A':0.4665375+di5/2,'U151_nominal_V':v33,'U151_ripple_A_pp':di33,'U151_release_peak_A':0.45+di33/2,'U151_0p75A_stress_peak_A':0.75+di33/2},
+            'desktop_disposition':'PASS_WITH_PHYSICAL_QUALIFICATION'
+          }
+          out=Path('docs/engineering/rvb22/analyses/i28'); out.mkdir(parents=True,exist_ok=True)
+          (out/'I28_POWER_SIGNOFF.json').write_text(json.dumps(report,indent=2)+'\n')
+          (out/'I28_POWER_SIGNOFF.md').write_text(f'''# I28 electrical / power pre-fabrication signoff\n\n**Disposition: PASS WITH PHYSICAL QUALIFICATION.**\n\nU121 is changed from catalog LM5164DDAR to automotive-qualified LM5164QDDARQ1 (same DDA footprint and pin map; no routing change).\n\nAt the release 5 V burden of {Pout:.7f} W and an 80% efficiency floor, using a deliberately pessimistic 1.15 V D101 drop plus 0.125 ohm Q101 and 0.47 ohm R110 gives **{vin:.3f} V at U121 VIN from 12.0 V raw** and **{iin:.3f} A** input current. This remains comfortably above the LM5164-Q1 6 V minimum.\n\nLTC4367 post-diode thresholds bound to UV trip **{min(uv):.3f}-{max(uv):.3f} V**, UV re-enable **{min(uvr):.3f}-{max(uvr):.3f} V**, and OV trip **{min(ov):.3f}-{max(ov):.3f} V**. A deep 6 V crank therefore intentionally shuts the board down and it restarts after input recovery; continuous crank ride-through is not claimed.\n\nFor load dump, the protection controller and 200 V Q101 are the primary isolation mechanism. The 100 V buck rating is not used as permission to expose U121 directly to an unsuppressed raw load dump.\n\nTI simulation packages were acquired. The LM5164-Q1 package relies on PSpice primitives unsupported by stock ngspice and the LM63615-Q1 package is Cadence-encrypted, so **no full vendor-macromodel SPICE pass is claimed**. I28 instead uses exact native connectivity plus guaranteed datasheet limits and conservative circuit bounds; physical startup/transient qualification remains mandatory.\n''')
+          PY
+          git diff --check
+      - name: Commit board and evidence
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/engineering/rvb22/candidate/cad/Power_5V.kicad_sch \
+                  docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb \
+                  docs/engineering/rvb22/analyses/i28
+          git commit -m 'I28: automotive-qualify 5V buck and document power signoff'
+          git push origin HEAD:codex/rvb24-coordinated-closure

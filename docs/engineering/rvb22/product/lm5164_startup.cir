@@ -1,0 +1,35 @@
+GR86 Rev B U121 replay - nominal passives - NOT VALIDATED
+.include "LM5164-Q1_TRANS.LIB"
+VINPUT VIN 0 PWL(0 0 100u 0 200u 10.687669348522192)
+C121 VIN 0 2.2u
+C122 VIN 0 2.2u
+C123 VIN 0 100n
+C129 VIN 0 2.2u
+R125 VIN EN 100k
+R126 EN 0 26.1k
+R121 RON 0 31.6k
+C124 BST SW 2.2n
+L121 SW OUT 47u
+C127 OUT 0 22u
+C128 OUT 0 22u
+R122 OUT FB 309k
+R123 FB 0 100k
+R124 SW RIPPLE 43.2k
+C125 RIPPLE OUT 3.3n
+C126 RIPPLE FB 100p
+R127 OUT PGOOD 100k
+RLOAD OUT 0 10.717252395
+XU121 BST EN FB 0 0 PGOOD RON SW VIN LM5164-Q1_TRANS
+.options method=gear maxord=2 reltol=0.002 abstol=1n vntol=1u
+.control
+set wr_vecnames
+set wr_singlescale
+tran 20n 6m 0 20n
+meas tran vout_final AVG v(OUT) FROM=5m TO=6m
+meas tran vout_min MIN v(OUT) FROM=5m TO=6m
+meas tran vout_max MAX v(OUT) FROM=5m TO=6m
+meas tran il_peak MAX i(L121) FROM=0 TO=6m
+wrdata nominal_waveform.tsv v(OUT) i(L121) v(FB) v(PGOOD)
+quit
+.endc
+.end

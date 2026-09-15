@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2169200",
+  "componentModelEn": "CGA3E2C0G1H222J080AA",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E2C0G1H222J080AA_C2169200.pdf",
+  "describe": "2.2nF 50V C0G \u00b15% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 115,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2169200",
+  "retrieved_at_UTC": "2026-09-15T21:05:04.547050+00:00",
+  "response_sha256": "1f198e475c48cbf63cabeecf28c7289242a4cfd922ea7af6d770fd3957c89ea7"
+}

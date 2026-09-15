@@ -1,0 +1,10 @@
+PASS: 24 RTC-record, calibration identity and BLE backoff wrap checks.
+26 checks, 0 failures
+VERIFIED assertions=14600225 exact_replenished_10s=1200
+PASS: 32 independent-channel calibration, supply sweep and fault assertions.
+PASS: 11407 protocol/parser/encoding assertions; address/undefined sanitizer enabled.
+PASS: 24 RTC-record, calibration identity and BLE backoff wrap checks.
+26 checks, 0 failures
+VERIFIED assertions=14600225 exact_replenished_10s=1200
+PASS: 32 independent-channel calibration, supply sweep and fault assertions.
+PASS: 11407 protocol/parser/encoding assertions; address/undefined sanitizer enabled.

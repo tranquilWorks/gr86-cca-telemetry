@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "outside_contract_100V_1us",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 100 60.051m 100 60.052m 12",
+    "stop": 0.1,
+    "step": 1e-07,
+    "cable_R": 0.1,
+    "snubber": false,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ],
+    "outside_contract": true
+  },
+  "returncode": 1,
+  "deck_sha256": "b15f96ec53ebf7cf3886bbf25e6d83f7a05d4f6f89fd0ecf9092060cacd80bb4",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/outside_contract_100V_1us/waveform.tsv not found."
+}

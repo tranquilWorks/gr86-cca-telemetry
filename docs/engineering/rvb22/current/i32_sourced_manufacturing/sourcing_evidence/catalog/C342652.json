@@ -1,0 +1,18 @@
+{
+  "componentCode": "C342652",
+  "componentModelEn": "CGA6N3X7R2A225KT0Y0U",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "1210",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA6N3X7R2A225KT0Y0U_C342652.pdf",
+  "describe": "100V 2.2uF X7R \u00b110% 1210 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 767,
+  "preMinPurchaseNum": 30,
+  "canPresaleNumber": 750,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C342652",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.078326+00:00",
+  "response_sha256": "b7f0525169b00063aa503d003398c9d4c73cd69e6dee2a1a74efb87d9c85bb10"
+}

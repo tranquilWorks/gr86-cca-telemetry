@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "name": "b330_r0.22_load",
+    "bulk_uF": 330,
+    "damp": 0.22,
+    "top": 11500,
+    "isolate": true,
+    "slow": false,
+    "mode": "load"
+  },
+  "returncode": 0,
+  "completed": true,
+  "samples": 60387,
+  "end_s": 0.12,
+  "main_peak": 3.39865507,
+  "main_final": 3.30007622,
+  "vin_min_output_delta": -2.346934197146297e-18,
+  "ready_final": 1.0,
+  "u151_average_current_max": 1.01698983,
+  "u121_average_current_max": 0.891520854,
+  "active_min": 3.24655061,
+  "load_release_peak": 3.39524553,
+  "waveform_sha256": "bd89ee50e628f7d94622465b1d902640192ed4dcf8d689a647829c9e898e5db2"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PORTABILITY_ATTEMPT_NOT_A_POWER_SIGNOFF",
+  "engine": "ngspice 39 (Debian 39.3+ds-1)",
+  "vendor_model_file": "LM5164-Q1_TRANS.LIB",
+  "vendor_model_sha256": "e11ddf6995163f98eda6205de6a7cb74c8a3982b7328467de8d806286e894b5d",
+  "vendor_model_modified": false,
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "repair": "Load the packaged XSPICE code-model shared libraries before PSpice compatibility parsing. A-device loading is then possible; numerical correlation is a separate issue.",
+  "completed_experiments": [
+    {
+      "case": "startup, 100 ns maximum step, 6 ms stop",
+      "completed": true,
+      "vout_last_ms_average_V": 6.372398e-06,
+      "accepted": false,
+      "reason": "Result is strongly timestep dependent and cannot support board acceptance."
+    },
+    {
+      "case": "startup, 20 ns maximum step, 1 ms stop",
+      "completed": true,
+      "vout_at_1ms_V": 1.46692286,
+      "accepted": false,
+      "reason": "Only an early soft-start interval; does not reach regulation."
+    },
+    {
+      "case": "DC input, STEADY_STATE=1, UIC, 20 ns maximum step, 600 us requested",
+      "completed": false,
+      "stopped_at_s": 9.88103e-06,
+      "accepted": false,
+      "reason": "Transient aborted: timestep too small at an internal one-shot node. Post-abort measure output is not valid."
+    }
+  ],
+  "long_startup_attempt": {
+    "requested_stop_s": 0.006,
+    "completed": false,
+    "timeout_s": 240,
+    "accepted": false
+  },
+  "LM63615_Q1": "Acquired vendor model is Cadence encrypted; not executed. No decryption or substitute-model signoff claimed.",
+  "passive_model_scope": "Nominal fitted external R/C/L values and topology; ideal passive elements, without guaranteed bias/temperature/ESR/DCR bounds. Resistive load is an engineering test fixture, not the complete downstream circuit.",
+  "physical_tests_performed": 0,
+  "full_vendor_macromodel_spice_verified": false,
+  "fabrication_clearance_from_these_runs": false,
+  "next_engineering_action": "Run the unchanged vendor models in a supported PSpice environment or establish and correlate a numerically valid port, then run the exact coupled circuit and declared corners. Do not count successful simulator exit or a partial transient as a power pass."
+}

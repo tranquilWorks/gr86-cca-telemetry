@@ -1,0 +1,92 @@
+{
+  "revision": "I32 frozen procurement redline",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "status": "FROZEN_PROCUREMENT_DESKTOP_VERIFIED_PHYSICAL_GATES_RETAINED",
+  "known_actionable_digital_corrections_remaining": 0,
+  "meaning": "The recovered native I32 design now includes the frozen procurement redline. All affected desktop source/CAD/manufacturing/electrical/package gates pass; supplier, first-article and physical qualification remain open.",
+  "rows": [
+    {
+      "id": "I32-A",
+      "topic": "U151 reverse discharge",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "U152 isolates the 470 uF input, with Q152/Q153/R165 source discharge and audited pad/net identities. The exact frozen set completes 32 swap/stress cases plus 6 controls; worst reverse allocation is -0.06700731 V against -0.3 V. Unknown silicon transfer behavior remains a physical gate.",
+      "remaining_gate": "Actual TPS reverse blocking, fault timing and MOS transfer behavior; no vendor177-part validation."
+    },
+    {
+      "id": "I32-B",
+      "topic": "Startup/load-release/reset margin",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "Fresh frozen-procurement ngspice 42/KLU: 32/32 swap/stress cases, 17/17 normal sequences; main 3.12786634..3.57660977 V, reset margin +11.81634 mV, overshoot margin +23.39023 mV. The 1 us confirmation is 3.5766084 V and 30.08 uH L121 superstress passes. No controller gain, load limit or acceptance threshold was relaxed.",
+      "remaining_gate": "Correlate startup current limit, CT timing, load transient and reset sequencing with actual silicon over temperature and supplier tolerances."
+    },
+    {
+      "id": "I32-C",
+      "topic": "Power placement and routes",
+      "status": "CORRECTED_AND_NATIVE_VERIFIED",
+      "disposition": "Final native ERC/DRC/unconnected/parity all zero. Independent copper/export audit covers 145 nets and 571 net-bearing pads; 23 actual-filled ground paths pass. Manufacturer lands are qualified for all 13 changed refs. Routing adds one segment and modifies 18 copper objects; no vias are added or removed and all 49 special vias remain unchanged.",
+      "remaining_gate": "Switch-node ringing, CT noise and EMC are physical correlation gates."
+    },
+    {
+      "id": "I32-D",
+      "topic": "Automotive input component stresses",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "D101600V S5J, R10112.1k/1W, raw110V SMCJ clamp.17 completed defined-envelope input cases plus one incomplete record retained. Q101VDS130.493V and SOA utilization0.52235 at allocated125C.",
+      "remaining_gate": "Actual OEM/source envelope, MOSFET/clamp trajectory, local thermal impedance, repetition and fuse coordination."
+    },
+    {
+      "id": "I32-E",
+      "topic": "Exact parts and mechanical access",
+      "status": "CORRECTED_AND_NATIVE_VERIFIED",
+      "disposition": "177 fitted parts, 175 factory CPL rows and two local installations F101/U401. R156 uses 1206, R160 0805, L121 the manufacturer BPCI land pattern; all frozen tolerances/TCR bounds and exact MPN/C-numbers are checked. Nine new models are documented generic maximum-body envelopes. Full 1.71 mm stack: 1308 populated checks, 529 mated checks, 38 probes, no modeled interference, minimum allocated clearance 0.120 mm. L121 is factory manual/wave handling, not proven automatic SMT.",
+      "remaining_gate": "Exact supplier dimensions, solder process, installed mechanical fit and supplier placement conventions."
+    },
+    {
+      "id": "I32-F",
+      "topic": "Ground resistance allocation",
+      "status": "ANALYTICALLY_BOUNDED_WITH_EXPLICIT_MARGIN",
+      "disposition": "Actual restricted In1 copper at0.1/0.075mm, all drills,15um barrel,10% matrix inflation;11.282mohm<15mohm main and10.919mohm<11mohm reservoir.",
+      "remaining_gate": "Numerical finite-volume model and contact/plating/etch allocations require construction and measurement correlation."
+    },
+    {
+      "id": "I32-G",
+      "topic": "Added steady heat and thermal correlation",
+      "status": "PHYSICAL_ACCEPTANCE_REMAINS_AFTER_DIGITAL_RECHECK",
+      "disposition": "Final 0.5/0.25 mm thermal runs retain the 2.940859375 W release budget. The stacked both-80% sensitivity is 3.06708195554 W; at U151 80%, U121 must reach 83.4630636% or an approved measured-loss allocation within the fixed budget. Conditional U152/U153 screens are 105.7765/105.6562 C; L121 winding allocation is 121.6020 C against 125 C including self-rise.",
+      "remaining_gate": "The unchanged 112.8829809018675 C correlation trigger is exceeded by the 113.763359 C stacked one-step board screen. Physical heat/contact/package correlation must resolve this; no mesh convergence or measured junction/air result is claimed. U201 immediate air <=85 C and 851 local <=60 C remain required."
+    },
+    {
+      "id": "I32-H",
+      "topic": "Vendor model execution limits",
+      "status": "IRREDUCIBLE_SILICON_CORRELATION_GATE",
+      "disposition": "Unmodified LM5164 isolated baseline completed.170-part closed attempts on ngspice42/47 aborted near21.3ms; full records retained. Transparent derivatives include fixed controller and slow sensitivity without tuned gains.",
+      "remaining_gate": "Final silicon correlation; timestep agreement does not validate unknown controller equations."
+    },
+    {
+      "id": "I32-I",
+      "topic": "Evidence lineage and manufacturing effectivity",
+      "status": "CAD_AND_FIRMWARE_EFFECTIVITY_VERIFIED",
+      "disposition": "Current native evidence binds 157 CAD inputs, 177 fitted models, exact BOM/CPL, 14 fabrication files and the 188-member manufacturing ZIP. All 32 firmware files remain unchanged; the genuine 160 MHz recovery build and 28 release checks remain preserved. Hosted native run 34916258259 additionally passed native CAD, target compilation, independent exports and I32 thermal verification after the redline.",
+      "remaining_gate": "Supplier DFM, sourcing and first-article acceptance remain unperformed."
+    },
+    {
+      "id": "I32-RCV-FW-01",
+      "topic": "Firmware compiler options versus thermal effectivity",
+      "status": "CLOSED_DIGITAL_TARGET_BUILD_VERIFIED",
+      "disposition": "Closed by a genuine unchanged-source ESP32-S3 build at CPUFreq=160. The full FQBN, -DF_CPU=160000000L compiler log, source/dependency/image hashes, split and merged images, ELF/map and 28/28 release checks are preserved under recovery_20260914/firmware_160mhz/.",
+      "remaining_gate": "No digital rebuild remains. Firmware was not flashed or executed on target; physical thermal, EMC, silicon, first-article and vehicle acceptance remain open."
+    },
+    {
+      "id": "I32-PROCUREMENT-REDLINE",
+      "status": "CLOSED_DESKTOP_SCOPE",
+      "finding": "Apply frozen nine-MPN set to thirteen fitted references, including R156 1206/R160 0805/L121 BPCI package, exact BOM/CPL and native output regeneration.",
+      "evidence": "procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+      "desktop_gate_categories_passed": 14,
+      "scope": "No supplier process approval, order or physical validation claimed. 29 unrelated source assignments and L121 factory process acceptance remain open."
+    }
+  ],
+  "physical_tests": 0,
+  "supplier_approvals": 0,
+  "full_product_qualified": false,
+  "current_redline_evidence": "procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+  "prior_rows_effectivity": "Affected I32 numerical and source assertions are refreshed here. Their previous wording is preserved under procurement_redline/history/pre_ci_binding/I32_FINDINGS_REGISTER.json. Original 290-row history and supplier/physical gates remain intact."
+}

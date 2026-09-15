@@ -1,0 +1,73 @@
+{
+  "parameters": {
+    "bulk": 330,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 1000,
+    "physical_dividers": true,
+    "physical_input_caps": true,
+    "slew": 0.0024,
+    "en_cap": 2.2e-07,
+    "sns_top": 634000,
+    "input_leak": 0.0282,
+    "active_discharge": true,
+    "q153_threshold": 1.5,
+    "q152_threshold": 2.5,
+    "r164": 4700,
+    "r165": 4.7,
+    "input_route_R": 0.06,
+    "input_route_L": 3e-07,
+    "off_delay": 0.0001,
+    "name": "normal_live_off",
+    "branch_R": 0.1,
+    "branch_L": 1e-07,
+    "mode": "off"
+  },
+  "returncode": 0,
+  "deck_sha256": "15fab6da58ca89dc4bacdb92b1c30babf1e6c0601f6afa2933e6ca417e777840",
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 427160,
+  "main_peak_V": 3.33107692,
+  "main_final_V": 3.25999647,
+  "active_min_V": 3.07000388,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 0.11341409000000002,
+  "input_switch_peak_A": 0.773702805,
+  "input_switch_reverse_A": -0.0527434213,
+  "I151_max_A": 0.931876013,
+  "I121_max_A": 0.854973725,
+  "ready_rises": 2,
+  "sns_faults": 1,
+  "R158_peak_W": 0.22078035233312585,
+  "R158_energy_J": 0.000739334208839373,
+  "R158_RMS_A": 0.043019168206043415,
+  "rail5_active_range_V": [
+    3.32675971,
+    5.00043303
+  ],
+  "pre_fault_ready": true,
+  "pre_fault_main_min_V": 3.25999647,
+  "normal_main_min_V": 3.25999647,
+  "R165": {
+    "peak_A": 0.651049669,
+    "minimum_A": -1.53995734e-06,
+    "peak_abs_A": 0.651049669,
+    "peak_W": 1.9921686560735454,
+    "energy_J": 0.001974727964840899,
+    "pulse_screen_125C": {
+      "continuous_derated_W": 0.35294117647058826,
+      "whole_record_mean_W": 0.0023232093704010576,
+      "pulses_above_continuous": [
+        {
+          "start_s": 0.15441263,
+          "duration_s": 0.0018038579999999915,
+          "peak_W": 1.9921686560735454,
+          "energy_J": 0.0015751604262024522
+        }
+      ]
+    }
+  },
+  "source_peak_V": 3.33473062,
+  "waveform_sha256": "e40ea759845a4d34028c7f762deaa2679e02f344c4f87d9e6ef0292f40b5b1be"
+}

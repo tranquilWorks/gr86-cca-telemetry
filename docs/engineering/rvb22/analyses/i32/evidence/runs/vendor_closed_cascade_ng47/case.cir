@@ -1,0 +1,179 @@
+I32 closed vendor U121 cascade, constant 750mA startup
+.include "LM5164-Q1_TRANS.LIB"
+.include "lm63615_derivative.lib"
+Vlogic one 0 1
+VINPUT inlet5 0 PWL(0 0 100u 0 200u 10.688)
+Rfixture inlet5 VIN5 .1
+C121 VIN5 0 1.1u
+C122 VIN5 0 1.1u
+C123 VIN5 0 50n
+C129 VIN5 0 1.1u
+R125 VIN5 EN5 100k
+R126 EN5 0 26.1k
+S5en one on5 EN5 0 en5_sw
+R5en on5 0 1k
+.model en5_sw SW(Ron=.01 Roff=1e12 Vt=1.45 Vh=.05)
+* U121 fitted compensation/ripple passives retained, but averaged switch waveform.
+* Effective reference 5/4.09 is calibrated to vendor REPLAY at 10.688V, not TI Vref.
+R121 ron5 0 31.6k
+C124 bst5 sw5 2.2n
+R127 source5 pg5 100k
+XU121 bst5 EN5 fb5 0 0 pg5 ron5 sw5 VIN5 LM5164-Q1_TRANS
+L121 sw5 winding5 4.7e-05
+R_L121 winding5 source5 0.187
+C127 source5 c127r 1.1e-05
+R_C127 c127r 0 .01
+C128 source5 c128r 1.1e-05
+R_C128 c128r 0 .01
+R122 source5 fb5 309k
+R123 fb5 0 100k
+R124 sw5 ripple5 43.2k
+C125 ripple5 source5 3.3n
+C126 ripple5 fb5 100p
+R128 source5 rail5 .005
+* Controlled reverse-blocking load switch, NOT its vendor transistor model.
+* 5V PGOOD: min/max crossings swept separately. 100us fall lag is allocation.
+R151 rail5 feediso .005
+Sgood5 one good5 iso_en_pin 0 good5model
+Rgood5 good5 0 1k
+.model good5model SW(Ron=.01 Roff=1e12 Vt=0.6950000000000001 Vh=0.05499999999999999)
+Bgooddelay 0 gooddelay I={(v(good5)-v(gooddelay))/(v(good5)>v(gooddelay) ? 0.0001442695416700931 : 0.0001442695416700931)}
+Cgooddelay gooddelay 0 1 IC=0
+Bage 0 ageiso I={v(switchon)>.5 ? 1 : -v(ageiso)/1u}
+Cageiso ageiso 0 1 IC=0
+Rageiso ageiso 0 1e12
+Bvslew slewiso 0 V={min(max((v(ageiso)-0.0005)/0.00216,0),max(v(feediso),0))}
+* Conductance servo only models slew-limited turn-on. It has no artificial current limit.
+Vpass feediso feedpass 0
+Bpass feedpass vin I={v(switchon)>.5 ? v(feediso,vin)*(v(feediso,vin)<0 ? 1/0.04 : min(1/0.04,max(v(slewiso,vin),0)*1e6)) : -0.0001*clip(v(vin),0,1)}
+Bbias feediso 0 I={50u*clip(v(feediso),0,1)}
+
+
+R160 vin snsiso 640340.0
+R161 snsiso 0 99000.0
+Bic151 vin 0 I={10u*clip(v(vin),0,1)}
+* Reserve additional leakage for both MLCC banks and board, independent of switch allocation.
+Bcapleak vin 0 I={0.0282*clip(v(vin),0,1)}
+Sgoodlocal one localgood snsiso 0 snsmodel
+Rgoodlocal localgood 0 1k
+.model snsmodel SW(Ron=.01 Roff=1e12 Vt=0.5325 Vh=0.03249999999999997)
+
+Bsnsfilter 0 snsfiltered I={(v(localgood)-v(snsfiltered))/7.213477083504654e-06}
+Csnsfilter snsfiltered 0 1 IC=0
+Bsnsprev 0 snsprev I={(v(snsfiltered)-v(snsprev))/1u}
+Csnsprev snsprev 0 1 IC=0
+Bsnsevent snsevent 0 V={clip((v(snsprev)-v(snsfiltered)-.02)/.01,0,1)*clip((.5-v(snsfiltered))/.01,0,1)}
+Brestart 0 restartage I={-v(snsevent)*v(restartage)/10n + (1-v(snsevent))*clip((.1-v(restartage))/.001,0,1)}
+Crestart restartage 0 1 IC=0
+Rrestart restartage 0 1e12
+Bswitchon switchon 0 V={v(gooddelay)>.5 && v(restartage)>0.002 ? 1 : 0}
+Bpgwant pgwant 0 V={min(v(localgood),v(switchon))}
+Bpgdelay 0 pgdelay I={(v(pgwant)-v(pgdelay))/(v(pgwant)>v(pgdelay) ? 0.0001442695416700931 : 7.213477083504654e-06)}
+Cpgdelay pgdelay 0 1 IC=0
+Bpgsink en151 0 I={(1-clip(v(pgdelay),0,1))*v(en151)/400}
+R159pull rail5 en151 100k
+C165en en151 0 1.1e-07
+Benleak en151 0 I={300n*clip(v(en151),0,1)}
+S151en one enable_ctrl en151 0 en151model
+R151en enable_ctrl 0 1k
+.model en151model SW(Ron=.01 Roff=1e12 Vt=1.22 Vh=0.28)
+C151 vin C151_esr 1.1e-05
+R_C151 C151_esr 0 .01
+C152 vin 0 2.2e-07
+* Other 5V consumers and known decoupling aggregate, enabled by available voltage.
+C_OTHER5 rail5 0 2.205e-05
+Bother5 rail5 0 I={.0792*clip(v(rail5)/4.5,0,1)}
+* shared 1V computational logic reference
+Suv one enable enable_ctrl 0 uv_sw
+Ruv enable 0 1k
+.model uv_sw SW(Ron=.01 Roff=1e12 Vt=.5 Vh=.01)
+XU151 vin sw source fb enable U151_DERIV PARAMS: VREF=1.0156 TSS=0.001 TDELAY=0.001
++ TFPWM=0.008 KP=14.4 FZ=1000 FP=80000 TI=3e-06 IPOS=2.2 INEG=1.49
+L151 sw winding 1.5e-05
+R_L151 winding source 0.0771
+C155 source C155_ESR 2.4200000000000002e-05
+R_C155 C155_ESR 0 0.01
+C156 source C156_ESR 2.4200000000000002e-05
+R_C156 C156_ESR 0 0.01
+C157 source C157_ESR 2.4200000000000002e-05
+R_C157 C157_ESR 0 0.01
+C158 source C158_ESR 1e-07
+R_C158 C158_ESR 0 0.01
+C201 main C201_ESR 2.4200000000000002e-05
+R_C201 C201_ESR 0 0.01
+C204 main C204_ESR 2.4200000000000002e-05
+R_C204 C204_ESR 0 0.01
+C202 main C202_ESR 1e-07
+R_C202 C202_ESR 0 0.01
+C205 main C205_ESR 1e-07
+R_C205 C205_ESR 0 0.01
+C301 main C301_ESR 1e-07
+R_C301 C301_ESR 0 0.01
+C302 main C302_ESR 1e-06
+R_C302 C302_ESR 0 0.01
+C404 main C404_ESR 1e-07
+R_C404 C404_ESR 0 0.01
+C531 main C531_ESR 1e-07
+R_C531 C531_ESR 0 0.01
+VR158 main branch_sense 0
+Rbranch branch_sense branch_l 0.1
+Lbranch branch_l branch_r 1e-07
+R158 branch_r damped 0.47
+C206 damped C206_ESR 0.000396
+R_C206 C206_ESR 0 0.025
+R155 source fb 11300
+R156 fb 0 4990
+R153 source main 0.01
+R154 main 0 1000
+Vload requested 0 DC .45
+Bload main 0 I={0.75*clip(v(main)/2.7,0,1)}
+* TPS3808G33 CT=open; normalized delay/logic is an approximation, no actual MCU.
+Svalid one valid main 0 valid_sw
+Rvalid valid 0 1k
+.model valid_sw SW(Ron=.01 Roff=1e12 Vt=3.08535 Vh=0.01535)
+Btimer 0 timer I={v(valid)>.5 ? (v(timer)<1.01 ? 1u : 0) : -v(timer)}
+Ctimer timer 0 2e-08 IC=0
+Rtimer timer 0 1e12
+Bready ready 0 V={v(valid)>.5 && v(timer)>1 ? 1 : 0}
+Breset reset_ctl 0 V={1-v(ready)}
+Sreset reset_raw 0 reset_ctl 0 reset_sw
+.model reset_sw SW(Ron=400 Roff=1e12 Vt=.5 Vh=.01)
+R203 reset_raw en 1k
+R201 main en 10k
+Cen en 0 20p
+R164gate vin disg 4700
+Cdisg disg 0 2e-09
+Bq152gate disg 0 I={2e-05*clip(v(disg),0,1)}
+Bq153gate en151 0 I={2e-05*clip(v(en151),0,1)}
+Bq153 disg 0 I={v(disg)*clip((v(en151)-1.5)/.1,0,1)/0.3}
+VR165 source disfeed 0
+R165 disfeed disdrain 4.7
+Bq152 disdrain 0 I={v(disdrain)*clip((v(disg)-2.5)/.1,0,1)/0.3}
+Dq152body 0 disdrain body_diode
+
+R162phys rail5 iso_en_pin 474700.0
+R163phys iso_en_pin 0 99000.0
+Biso_en_leak iso_en_pin 0 I={1e-07*clip(v(iso_en_pin),0,1)}
+Bsns_leak snsiso 0 I={1e-07*clip(v(snsiso),0,1)}
+
+Rhold vin hold_l 0.06
+Lhold hold_l hold_bus 3e-07
+R_C162 hold_bus c162 0.1
+C162 c162 0 0.00021056
+R_C163 hold_bus c163 0.1
+C163 c163 0 0.00021056
+R_C164 hold_bus c164 0.1
+C164 c164 0 0.00021056
+
+C161phys feediso 0 100n
+
+.options method=gear maxord=2 reltol=.002 abstol=1n vntol=1u
+.control
+set filetype=binary
+save v(VIN5) v(source5) v(rail5) v(vin) v(source) v(main) i(L121) i(L151) i(Vpass) v(enable) v(en151) v(switchon) v(snsevent)
+tran 50n 0.024 0 50n
+write waveform.raw v(VIN5) v(source5) v(rail5) v(vin) v(source) v(main) i(L121) i(L151) i(Vpass) v(enable) v(en151) v(switchon) v(snsevent)
+echo I32_VENDOR_FINISHED > completion.txt
+quit
+.endc
+.end

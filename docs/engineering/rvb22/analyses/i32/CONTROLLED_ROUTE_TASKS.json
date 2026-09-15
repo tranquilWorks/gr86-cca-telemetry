@@ -1,0 +1,580 @@
+[
+  {
+    "id": "cr_enable_upper_ground",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      40.5,
+      -8.8
+    ]
+  },
+  {
+    "id": "cr_enable_upper_signal",
+    "kind": "via",
+    "net": "3V3_BUCK_ENABLE",
+    "at": [
+      36,
+      -8.8
+    ]
+  },
+  {
+    "id": "cr_ct_ground",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      46.0,
+      0.8
+    ]
+  },
+  {
+    "id": "cr_bulk_ground",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      77.6,
+      -6.55
+    ]
+  },
+  {
+    "id": "cr_bulk_cap_ground",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      80.9,
+      0.4
+    ]
+  },
+  {
+    "id": "cr_bulk_main",
+    "kind": "via",
+    "net": "+3V3",
+    "at": [
+      78.0,
+      1.0
+    ]
+  },
+  {
+    "id": "cr_bulk_sns",
+    "kind": "via",
+    "net": "+3V3",
+    "at": [
+      81.0,
+      -3.5
+    ]
+  },
+  {
+    "id": "cr_bulk_enable_local",
+    "kind": "via",
+    "net": "3V3_BULK_ENABLE",
+    "at": [
+      77.6,
+      -1.5
+    ]
+  },
+  {
+    "id": "cr_bulk_enable_remote",
+    "kind": "via",
+    "net": "3V3_BULK_ENABLE",
+    "at": [
+      81.6,
+      0.1
+    ]
+  },
+  {
+    "id": "cr_bulk_damped",
+    "kind": "via",
+    "net": "3V3_BULK_DAMPED",
+    "at": [
+      80.2,
+      -6.1
+    ]
+  },
+  {
+    "id": "cr_bulk_bleed",
+    "kind": "via",
+    "net": "3V3_BULK_DAMPED",
+    "at": [
+      85.0,
+      0.3
+    ]
+  },
+  {
+    "id": "cr_bulk_div_ground",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      86.8,
+      3.7
+    ]
+  },
+  {
+    "id": "cr_input_reservoir",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "C162.1",
+    "z": [
+      35.88,
+      -2
+    ],
+    "width": 1.0,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_iso_slew",
+    "kind": "track",
+    "net": "3V3_ISO_CT",
+    "a": "U152.6",
+    "z": "C159.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_iso_slew_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C159.2",
+    "z": [
+      46.0,
+      0.8
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_pg_enable_divider",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "C165.1",
+    "z": "R166.1",
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_enable_divider",
+    "kind": "track",
+    "net": "3V3_BUCK_ENABLE",
+    "a": "R166.2",
+    "z": "R167.1",
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_enable_from_divider",
+    "kind": "track",
+    "net": "3V3_BUCK_ENABLE",
+    "a": "R166.2",
+    "z": [
+      36,
+      -8.8
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_enable_inner",
+    "kind": "track",
+    "net": "3V3_BUCK_ENABLE",
+    "a": [
+      36,
+      -8.8
+    ],
+    "z": [
+      39.1625,
+      12.025
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_enable_pin",
+    "kind": "track",
+    "net": "3V3_BUCK_ENABLE",
+    "a": [
+      39.1625,
+      12.025
+    ],
+    "z": "U151.11",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_enable_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "R167.2",
+    "z": [
+      40.5,
+      -8.8
+    ],
+    "width": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_bulk_in_pins",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "U153.1",
+    "z": "U153.2",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_bias",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "U153.2",
+    "z": "U153.3",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_out_pins",
+    "kind": "track",
+    "net": "3V3_BULK_SWITCHED",
+    "a": "U153.9",
+    "z": "U153.10",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_ground_pin",
+    "kind": "track",
+    "net": "GND",
+    "a": "U153.5",
+    "z": "U153.11",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_ground_via",
+    "kind": "track",
+    "net": "GND",
+    "a": "U153.11",
+    "z": [
+      77.6,
+      -6.55
+    ],
+    "width": 0.4,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_slew",
+    "kind": "track",
+    "net": "3V3_BULK_CT",
+    "a": "U153.6",
+    "z": "C166.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_slew_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C166.2",
+    "z": [
+      85.12,
+      -6.8
+    ],
+    "width": 0.4,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_sns_pin",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "U153.8",
+    "z": [
+      81.0,
+      -3.5
+    ],
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_sns_inner",
+    "kind": "track",
+    "net": "+3V3",
+    "a": [
+      81.0,
+      -3.5
+    ],
+    "z": [
+      78.0,
+      1.0
+    ],
+    "width": 0.4,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_bulk_main_feed",
+    "kind": "track",
+    "net": "+3V3",
+    "a": [
+      78.88,
+      -6.8
+    ],
+    "z": [
+      78.0,
+      1.0
+    ],
+    "width": 0.6,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_bulk_input_cap_feed",
+    "kind": "track",
+    "net": "+3V3",
+    "a": [
+      78.0,
+      1.0
+    ],
+    "z": "C167.1",
+    "width": 0.4,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_input_feed",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "C167.1",
+    "z": "U153.1",
+    "width": 0.4,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_input_cap_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C167.2",
+    "z": [
+      80.9,
+      0.4
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_en_supply",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "C167.1",
+    "z": "R169.1",
+    "width": 0.25,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_en_divider",
+    "kind": "track",
+    "net": "3V3_BULK_ENABLE",
+    "a": "R169.2",
+    "z": "R170.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_en_to_via",
+    "kind": "track",
+    "net": "3V3_BULK_ENABLE",
+    "a": "R169.2",
+    "z": [
+      81.6,
+      0.1
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_en_inner",
+    "kind": "track",
+    "net": "3V3_BULK_ENABLE",
+    "a": [
+      81.6,
+      0.1
+    ],
+    "z": [
+      77.6,
+      -1.5
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_bulk_en_local",
+    "kind": "track",
+    "net": "3V3_BULK_ENABLE",
+    "a": [
+      77.6,
+      -1.5
+    ],
+    "z": "U153.4",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_to_damper",
+    "kind": "track",
+    "net": "3V3_BULK_SWITCHED",
+    "a": "U153.10",
+    "z": "R158.1",
+    "width": 0.6,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_damper_to_via",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": "R158.2",
+    "z": [
+      80.2,
+      -6.1
+    ],
+    "width": 0.8,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_via_to_reservoir",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": [
+      80.2,
+      -6.1
+    ],
+    "z": "C206.1",
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "cr_reservoir_bleed_inner",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": [
+      80.2,
+      -6.1
+    ],
+    "z": [
+      85.0,
+      0.3
+    ],
+    "width": 0.2,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_reservoir_bleed",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": [
+      85.0,
+      0.3
+    ],
+    "z": "R168.1",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_reservoir_bleed_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "R168.2",
+    "z": [
+      86.8,
+      3.7
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_bulk_divider_return",
+    "kind": "track",
+    "net": "GND",
+    "a": "R170.2",
+    "z": [
+      86.8,
+      3.7
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_reset_delay_supply",
+    "kind": "track",
+    "net": "+3V3",
+    "a": "R204.1",
+    "z": [
+      74.99079999999996,
+      9.000000000000002
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_ct_reset_near",
+    "kind": "via",
+    "net": "SUP_RESET_DELAY",
+    "at": [
+      75.3,
+      6.8
+    ]
+  },
+  {
+    "id": "cr_ct_reset_far",
+    "kind": "via",
+    "net": "SUP_RESET_DELAY",
+    "at": [
+      76.45,
+      15.5
+    ],
+    "size": 0.6,
+    "drill": 0.3
+  },
+  {
+    "id": "cr_ct_reset_near_trace",
+    "kind": "track",
+    "net": "SUP_RESET_DELAY",
+    "a": "R204.2",
+    "z": [
+      75.3,
+      6.8
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_ct_reset_far_trace",
+    "kind": "track",
+    "net": "SUP_RESET_DELAY",
+    "a": "U202.4",
+    "z": [
+      76.45,
+      15.5
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "cr_ct_reset_inner",
+    "kind": "track",
+    "net": "SUP_RESET_DELAY",
+    "a": [
+      75.3,
+      6.8
+    ],
+    "z": [
+      76.45,
+      15.5
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "cr_sns_reservoir_feed",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "R160.1",
+    "z": [
+      35.88,
+      -2
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844891",
+  "componentModelEn": "TNPW06031K00BEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://datasheet.lcsc.com/lcsc/2012221940_Vishay-Intertech-TNPW06031K00BEEA_C844891.pdf",
+  "describe": "-55\u2103~+155\u2103 1k\u03a9 210mW 75V Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 18976,
+  "preMinPurchaseNum": 130,
+  "canPresaleNumber": 18800,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844891",
+  "retrieved_at_UTC": "2026-09-15T21:03:46.380618+00:00",
+  "response_sha256": "6f147c3a95f44f65f5af02216874508974c84801fc5f1787964b80a136b535f5"
+}

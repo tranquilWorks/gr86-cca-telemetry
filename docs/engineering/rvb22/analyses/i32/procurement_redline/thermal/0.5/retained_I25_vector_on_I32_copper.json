@@ -1,0 +1,64 @@
+{
+  "mesh_mm": 0.5,
+  "nodes": 76016,
+  "boundary": "finite_sink_to_air",
+  "sink_R_K_W": 1.0,
+  "sink_C": 67.29287622449536,
+  "bulk_air_C": 65.0,
+  "max_board_C": 101.64108987205934,
+  "min_board_C": 69.71029356737661,
+  "hotspot": {
+    "layer": 0,
+    "x_mm": 79.5,
+    "y_mm": 21.0
+  },
+  "source_region_mean_C": {
+    "U201": 100.31849062201753,
+    "U151": 82.31575053665865,
+    "U121": 88.6817849869418,
+    "U403": 78.56646993994593,
+    "U401": 80.35122062441224,
+    "other5V_allocation": 75.64346020793644
+  },
+  "contact_shoe_C": {
+    "wing1": 69.42216627543577,
+    "wing2": 68.87730728382687,
+    "central": 72.56493430629105
+  },
+  "contact_heat_W": {
+    "wing1": 0.8059065929854149,
+    "wing2": 0.5996850622967855,
+    "central": 0.8872845692131882
+  },
+  "heat_W": 2.940859375,
+  "heat_to_sink_W": 2.2928762244953886,
+  "heat_to_air_W": 0.6479831505204305,
+  "energy_balance_residual_W": 1.581890174406908e-11,
+  "max_nodal_residual_W": 2.842170943040401e-14,
+  "iterations": 4,
+  "max_linear_residual_W": 3.907985046680551e-14,
+  "exposed_bottom_area_mm2": 3457.119017735094,
+  "package_temperature_proven": false,
+  "physical_test": false,
+  "shared_contact_nodes": true,
+  "occlusion_uses_union": true,
+  "disconnected_copper_cells": 11156,
+  "source_layers": {
+    "U201": 0,
+    "U151": 3,
+    "U121": 0,
+    "U403": 0,
+    "U401": 0,
+    "other5V_allocation": 0
+  },
+  "case": "retained_I25_vector_on_I32_copper",
+  "source_heat_vector_W": {
+    "U201": 1.54935,
+    "U151": 0.3873375,
+    "U121": 0.608171875,
+    "U403": 0.101,
+    "U401": 0.165,
+    "other5V_allocation": 0.13
+  },
+  "heat_vector_total_W": 2.940859375
+}

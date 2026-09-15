@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "name": "b220_r0.47_slow_high_start",
+    "bulk": 220,
+    "damp": 0.47,
+    "top": 11300,
+    "highref": true,
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "tss": 0.001,
+    "esr": 0.01,
+    "slow": true
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60437,
+  "main_peak": 3.61326318,
+  "active_min": 3.31085538,
+  "final_main": 3.31085538,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 1.0722327499999995,
+  "input_switch_peak_A": 1.18450438,
+  "I151max": 1.4625649,
+  "I121max": 1.03940751,
+  "ready_rises": 1,
+  "waveform_sha256": "d1c9e9568fe78fa45a45c0c3205fec679ad6ce780f2b73acb94a333c385af42b"
+}

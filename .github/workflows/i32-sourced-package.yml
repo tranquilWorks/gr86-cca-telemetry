@@ -1,0 +1,57 @@
+name: I32 sourced ECAD and manufacturing package
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/workflows/i32-sourced-package.yml'
+      - 'docs/engineering/rvb22/candidate/cad/**'
+      - 'docs/engineering/rvb22/analyses/i32/procurement_completion/**'
+      - 'docs/engineering/rvb22/analyses/i32/procurement_redline/**'
+      - 'docs/engineering/rvb22/current/i32_sourced_manufacturing/**'
+      - 'docs/engineering/rvb22/product/GR86_I32_SOURCED_MANUFACTURING.zip'
+permissions:
+  contents: read
+jobs:
+  sourced-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Reject wrong identities and fabrication drift
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 -m unittest discover -s docs/engineering/rvb22/analyses/i32/procurement_completion -p 'test_*.py' -v
+          python3 docs/engineering/rvb22/analyses/i32/procurement_completion/build.py verify
+      - name: Regenerate sourced native project
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 docs/engineering/rvb22/analyses/i32/procurement_completion/build.py prepare
+          git diff --exit-code -- docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad
+      - name: Independently execute KiCad on the sourced project
+        run: |
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -e QT_QPA_PLATFORM=offscreen -e PYTHONDONTWRITEBYTECODE=1 \
+            -v "$PWD:/work" -w /work \
+            kicad/kicad:9.0.9@sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729 \
+            python3 docs/engineering/rvb22/candidate/run_native_candidate.py \
+            --cad-dir docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad \
+            --output sourced_native_ci --pcbnew-python /usr/bin/python3
+      - name: Verify new native copper and exports against the qualified baseline
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 docs/engineering/rvb22/analyses/i32/procurement_completion/build.py package --native-dir sourced_native_ci
+          python3 docs/engineering/rvb22/analyses/i32/procurement_completion/build.py verify --native-dir sourced_native_ci
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: i32-sourced-native-${{ github.event.pull_request.head.sha }}
+          path: |
+            sourced_native_ci/
+            docs/engineering/rvb22/analyses/i32/procurement_completion/VERIFICATION.json
+          retention-days: 7

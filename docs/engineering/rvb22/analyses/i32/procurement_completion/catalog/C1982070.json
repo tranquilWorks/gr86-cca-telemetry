@@ -1,0 +1,18 @@
+{
+  "componentCode": "C1982070",
+  "componentModelEn": "SMCJ110AHE3_A/H",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "DO-214AB(SMCJ)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-SMCJ110AHE3-A-H_C1982070.pdf",
+  "describe": "-55\u2103~+150\u2103 1.5kW@10/1000us 110V 122V 177V 8.5A TVS Unidirectional DO-214AB(SMCJ) ESD and Surge Protection (TVS/ESD) ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 23,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C1982070",
+  "retrieved_at_UTC": "2026-09-15T21:28:22.978297+00:00",
+  "response_sha256": "68d2fadfe2145d1157df1d1b3ab37226353498ee26d82bc0946a90263d51e8a7"
+}

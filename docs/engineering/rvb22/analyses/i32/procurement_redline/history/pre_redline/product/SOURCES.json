@@ -1,0 +1,18 @@
+{
+  "reviewed_date": "2026-09-12",
+  "supplier_formats": [
+    "https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly",
+    "https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad"
+  ],
+  "LM5164_Q1_model": "https://www.ti.com/lit/zip/snvmbp2",
+  "LM5164_Q1_product": "https://www.ti.com/product/LM5164-Q1",
+  "LM63615_Q1_model": "https://www.ti.com/lit/zip/snvmbr6",
+  "LM63615_Q1_product": "https://www.ti.com/product/LM63615-Q1",
+  "primary_product_evidence": [
+    "../I25_THERMAL_MILESTONE.json",
+    "../I27_FABRICATION_READINESS.json",
+    "../analyses/i28/I28_POWER_SIGNOFF.json",
+    "../analyses/i26/QUALIFICATION_GATES.json"
+  ],
+  "note": "Stock, supplier approval and physical testing are not asserted."
+}

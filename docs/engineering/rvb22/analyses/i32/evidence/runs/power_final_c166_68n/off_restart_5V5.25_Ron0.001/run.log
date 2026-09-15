@@ -1,0 +1,340 @@
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: singular matrix:  check node snsprev
+
+Warning: singular matrix:  check node snsprev
+
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Note: No compatibility mode selected!
+
+
+Circuit: i32 exploratory network alternative; not manufacturer u151 model
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+bat                                          0
+cable_r                            2.03966e-55
+raw_12v                            2.93354e-52
+fused_12v                          2.93456e-52
+rev_blocked_12v                    5.60651e-42
+protect_ctrl_vin                  -4.20557e-42
+protected_12v                      4.96687e-42
+input_uv                            3.7186e-43
+input_ov                           1.40163e-43
+input_shdn                        -4.20556e-42
+one                                          1
+uv_ok                                    1e-09
+ov_bad                                   1e-09
+pvalid                                       0
+ptimer                                       0
+allow                                        0
+allow_d                                      0
+input_gate_drive                  -2.77862e-35
+input_gate                        -2.77862e-35
+input_gate_slew                   -2.77863e-35
+qsrc                               4.96722e-42
+buck_feed                          4.96671e-42
+vin5                               4.95223e-42
+en5                                  1.025e-42
+on5                                      1e-09
+xu121.age                                    0
+xu121.active                                 0
+xu121.ref                                    0
+xu121.neg                                    0
+xu121.req                         -3.16069e-41
+fb5                                9.87717e-43
+xu121.integral                               0
+xu121.cmd                                    0
+xu121.command                                0
+xu121.drive                                  0
+source5                            2.16187e-45
+xu121.active_f                               0
+xu121.sense                        -6.2057e-40
+sw5                                -6.2057e-40
+winding5                           8.35956e-43
+c127r                              7.42194e-45
+c128r                              7.42194e-45
+ripple5                            9.87673e-43
+rail5                             -5.29406e-45
+feediso                            -5.3278e-45
+good5                                    1e-09
+iso_en_pin                        -9.30929e-46
+gooddelay                           6.6967e-11
+ageiso                                       0
+switchon                                     0
+slewiso                                      0
+feedpass                           -5.3278e-45
+vin                               -8.24702e-93
+snsiso                            -1.12629e-93
+localgood                                1e-09
+snsfiltered                        7.50022e-10
+snsprev                            7.09797e-10
+snsevent                                     0
+restartage                               1e-05
+pgwant                                       0
+pgdelay                                      0
+en151                             -7.15447e-45
+actual_en151                      -3.45946e-45
+enable_ctrl                              1e-09
+c151_esr                          -1.65466e-98
+enable                                   1e-09
+xu151.age                                    0
+xu151.active                                 0
+xu151.ref                                    0
+xu151.neg                                    0
+xu151.req                         -4.54931e-93
+fb                                 3.15925e-94
+xu151.integral                               0
+xu151.cmd                                    0
+xu151.command                                0
+xu151.drive                                  0
+source                             1.05412e-93
+xu151.active_f                               0
+xu151.sense                        3.64452e-94
+sw                                 3.64452e-94
+winding                            1.05449e-93
+c155_esr                           8.37862e-99
+c156_esr                           8.37862e-99
+c157_esr                           8.37862e-99
+c158_esr                         -1.15095e-100
+main                               1.05406e-93
+c201_esr                          -3.93926e-99
+c204_esr                          -3.93926e-99
+c202_esr                         -1.40098e-101
+c205_esr                         -1.40098e-101
+c301_esr                         -1.40098e-101
+c302_esr                         -1.40123e-100
+c404_esr                         -1.40098e-101
+c531_esr                         -1.40098e-101
+branch_sense                       1.05406e-93
+branch_l                           1.05406e-93
+branch_r                           1.05406e-93
+bulksw_out                                   0
+damped                                       0
+c206_esr                                     0
+main_feed                          1.05412e-93
+main_l                             1.05407e-93
+requested                                 0.45
+ready                                        0
+valid                                    1e-09
+timer                                        0
+reset_ctl                                    1
+reset_raw                          3.69846e-95
+en                                 1.29446e-94
+disg                              -8.24706e-93
+disfeed                            1.05412e-93
+disdrain                           1.05412e-93
+hold_l                            -8.24708e-93
+hold_bus                          -8.24705e-93
+c162                              -8.24715e-93
+bulk_en_in                         1.05406e-93
+bulk_en_pin                        2.63431e-94
+bulk_want                                1e-09
+bulk_enabled                        6.6967e-11
+bulk_age                                     0
+bulk_slew                                    0
+bulk_feed                          1.05406e-93
+bulk_localcap                      1.05406e-93
+bbulk_slew#branch                            0
+breset#branch                                0
+bready#branch                                0
+v.xu151.vsense#branch            -7.28906e-106
+b.xu151.bdrive#branch             3.64452e-106
+b.xu151.bcmd#branch                          0
+b.xu151.breq#branch                          0
+b.xu151.bneg#branch                          0
+b.xu151.bref#branch                          0
+b.xu151.bactive#branch                       0
+bpgwant#branch                               0
+bswitchon#branch                             0
+bsnsevent#branch                             0
+bvslew#branch                                0
+v.xu121.vsense#branch              1.24114e-51
+b.xu121.bdrive#branch              -6.2057e-52
+b.xu121.bcmd#branch                          0
+b.xu121.breq#branch                          0
+b.xu121.bneg#branch                          0
+b.xu121.bref#branch                          0
+b.xu121.bactive#branch                       0
+ballow#branch                                0
+bpvalid#branch                               0
+lhold#branch                       1.08086e-96
+lmainfeed#branch                   6.38983e-97
+lbranch#branch                    -1.44101e-98
+l151#branch                        3.20359e-96
+l121#branch                        2.98997e-42
+lcable#branch                     -2.03966e-54
+vbulkpass#branch                             0
+vr165#branch                     -2.59553e-101
+vload#branch                                 0
+vr158#branch                      -1.44101e-98
+vpass#branch                                 0
+vlogic#branch                           -9e-12
+vbat#branch                        2.03966e-54
+
+ Reference value :  8.13017e-03
+ Reference value :  1.96842e-02
+ Reference value :  3.05182e-02
+ Reference value :  4.06879e-02
+ Reference value :  5.02699e-02
+ Reference value :  5.76479e-02
+ Reference value :  6.53179e-02
+ Reference value :  7.37097e-02
+ Reference value :  8.02337e-02
+ Reference value :  8.73057e-02
+ Reference value :  9.62662e-02
+ Reference value :  1.05032e-01
+ Reference value :  1.13252e-01
+ Reference value :  1.20454e-01
+ Reference value :  1.24174e-01
+ Reference value :  1.33092e-01
+ Reference value :  1.40940e-01
+ Reference value :  1.49986e-01
+ Reference value :  1.58802e-01
+ Reference value :  1.67744e-01
+ Reference value :  1.74738e-01
+ Reference value :  1.82396e-01
+ Reference value :  1.89656e-01
+ Reference value :  1.98600e-01
+ Reference value :  2.06530e-01
+ Reference value :  2.14740e-01
+ Reference value :  2.23464e-01
+ Reference value :  2.32734e-01
+ Reference value :  2.41888e-01
+ Reference value :  2.50942e-01
+ Reference value :  2.59934e-01
+ Reference value :  2.68444e-01
+ Reference value :  2.76694e-01
+ Reference value :  2.85340e-01
+ Reference value :  2.93913e-01
+ Reference value :  3.02601e-01
+ Reference value :  3.11231e-01
+ Reference value :  3.20045e-01
+ Reference value :  3.28697e-01
+ Reference value :  3.37539e-01
+ Reference value :  3.46393e-01
+ Reference value :  3.55211e-01
+ Reference value :  3.63877e-01
+ Reference value :  3.72033e-01
+ Reference value :  3.80325e-01
+ Reference value :  3.88605e-01
+ Reference value :  3.97203e-01
+ Reference value :  4.05623e-01
+ Reference value :  4.13669e-01
+ Reference value :  4.20857e-01
+ Reference value :  4.29101e-01
+ Reference value :  4.37391e-01
+ Reference value :  4.44669e-01
+ Reference value :  4.51459e-01
+ Reference value :  4.59555e-01
+ Reference value :  4.70475e-01
+ Reference value :  4.81477e-01
+ Reference value :  4.92387e-01
+ Reference value :  5.03425e-01
+ Reference value :  5.14471e-01
+ Reference value :  5.25391e-01
+ Reference value :  5.35793e-01
+ Reference value :  5.45347e-01
+ Reference value :  5.55563e-01
+ Reference value :  5.65973e-01
+ Reference value :  5.76759e-01
+ Reference value :  5.87251e-01
+ Reference value :  5.98083e-01
+ Reference value :  6.08313e-01
+ Reference value :  6.18919e-01
+ Reference value :  6.29721e-01
+ Reference value :  6.40597e-01
+ Reference value :  6.51329e-01
+ Reference value :  6.62129e-01
+ Reference value :  6.73107e-01
+ Reference value :  6.83987e-01
+ Reference value :  6.94727e-01
+ Reference value :  7.05313e-01
+ Reference value :  7.16127e-01
+ Reference value :  7.26827e-01
+ Reference value :  7.37711e-01
+ Reference value :  7.48635e-01
+ Reference value :  7.59693e-01
+ Reference value :  7.70761e-01
+ Reference value :  7.81683e-01
+ Reference value :  7.92685e-01
+ Reference value :  8.03819e-01
+ Reference value :  8.14923e-01
+ Reference value :  8.25955e-01
+ Reference value :  8.37105e-01
+ Reference value :  8.48151e-01
+ Reference value :  8.59047e-01
+ Reference value :  8.70051e-01
+ Reference value :  8.81115e-01
+ Reference value :  8.91072e-01
+ Reference value :  9.00544e-01
+ Reference value :  9.10154e-01
+ Reference value :  9.17632e-01
+ Reference value :  9.26841e-01
+ Reference value :  9.36051e-01
+ Reference value :  9.44559e-01
+ Reference value :  9.53241e-01
+ Reference value :  9.60896e-01
+ Reference value :  9.64376e-01
+ Reference value :  9.65421e-01
+ Reference value :  9.68783e-01
+ Reference value :  9.71111e-01
+ Reference value :  9.73297e-01
+ Reference value :  9.77783e-01
+ Reference value :  9.80395e-01
+ Reference value :  9.85731e-01
+ Reference value :  9.90777e-01
+ Reference value :  9.94097e-01
+ Reference value :  9.97063e-01
+ Reference value :  1.00428e+00
+ Reference value :  1.01083e+00
+ Reference value :  1.01889e+00
+ Reference value :  1.02754e+00
+ Reference value :  1.03601e+00
+ Reference value :  1.04431e+00
+ Reference value :  1.05277e+00
+ Reference value :  1.06016e+00
+ Reference value :  1.06865e+00
+ Reference value :  1.07746e+00
+ Reference value :  1.08615e+00
+ Reference value :  1.09434e+00
+ Reference value :  1.10317e+00
+ Reference value :  1.11190e+00
+ Reference value :  1.11999e+00
+ Reference value :  1.12892e+00
+ Reference value :  1.13658e+00
+ Reference value :  1.14573e+00
+ Reference value :  1.15479e+00
+ Reference value :  1.16371e+00
+ Reference value :  1.17284e+00
+ Reference value :  1.18089e+00
+ Reference value :  1.19008e+00
+ Reference value :  1.19912e+00
+ Reference value :  1.20783e+00
+ Reference value :  1.21618e+00
+ Reference value :  1.22273e+00
+ Reference value :  1.23095e+00
+ Reference value :  1.23984e+00
+ Reference value :  1.24738e+00
+ Reference value :  1.25623e+00
+ Reference value :  1.26346e+00
+ Reference value :  1.27195e+00
+ Reference value :  1.28039e+00
+ Reference value :  1.28889e+00
+ Reference value :  1.29673e+00
+No. of Data Rows : 652283
+I32_FINISHED
+ngspice-42 done

@@ -1,0 +1,2583 @@
+{
+  "status": "PASS_CURRENT_SOURCE_BINDING_AND_PRESERVED_CONTRACTS",
+  "base_commit": "1c934f9ddd7a1b823e5136484f525485472528f6",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "native_CAD_inputs_verified": 157,
+  "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+  "fitted_parts": 177,
+  "new_references": [],
+  "removed_references": [],
+  "part_changes": {
+    "C152": {
+      "before": {
+        "properties": {
+          "Reference": "C152",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:C_0603_1608Metric",
+        "position": [
+          40,
+          13.975,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C152",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C152",
+        "position": [
+          40,
+          13.975,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "GND"
+        }
+      }
+    },
+    "C154": {
+      "before": {
+        "properties": {
+          "Reference": "C154",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:C_0603_1608Metric_RVB22_C154",
+        "position": [
+          30.3,
+          15.2,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BOOT",
+          "2": "3V3_SW"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C154",
+          "Value": "220n /50V X7R 10%",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "LCSC": "C342967",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C154",
+        "position": [
+          30.3,
+          15.2,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BOOT",
+          "2": "3V3_SW"
+        }
+      }
+    },
+    "C165": {
+      "before": {
+        "properties": {
+          "Reference": "C165",
+          "Value": "220n /50V X7R EN DELAY",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224K080AB",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_C165",
+        "position": [
+          27,
+          -0.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C165",
+          "Value": "220n /50V X7R 10% EN DELAY",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224KT0Y0N",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C342967"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_C165",
+        "position": [
+          27,
+          -0.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "L121": {
+      "before": {
+        "properties": {
+          "Reference": "L121",
+          "Value": "47u /MSS1246T",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "MSS1246T-473MLC",
+          "Manufacturer": "Coilcraft",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:Coilcraft_MSS1246T_12x12_RVB22_L121",
+        "position": [
+          60,
+          29,
+          90
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "5V_SW",
+          "2": "5V_SOURCE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "L121",
+          "Value": "47u /100mOhm 2.5A BPCI",
+          "Datasheet": "https://jlcpcb.com/partdetail/ChilisinElec-BPCI00121280470M00/C6471075",
+          "Description": "",
+          "MPN": "BPCI00121280470M00",
+          "Manufacturer": "Chilisin / Pulse",
+          "LCSC": "C6471075",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_L121",
+        "position": [
+          59.8,
+          29.05,
+          90
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "5V_SW",
+          "2": "5V_SOURCE"
+        }
+      }
+    },
+    "R151": {
+      "before": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R151",
+        "position": [
+          38.6,
+          1.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_IN"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C190124"
+        },
+        "footprint": "RevB:I32_FINISHED_R151",
+        "position": [
+          38.6,
+          1.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_IN"
+        }
+      }
+    },
+    "R155": {
+      "before": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.02% 2ppm FB TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU060311K8HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R155",
+        "position": [
+          44.55,
+          10.8,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.1% 10ppm FB TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603B11K8N9",
+          "Manufacturer": "Resistor.Today",
+          "LCSC": "C19679768",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R155",
+        "position": [
+          44.0,
+          10.8,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      }
+    },
+    "R156": {
+      "before": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "5.05k /0.02% 2ppm FB BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06035K05HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R156",
+        "position": [
+          41.25,
+          10.8,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "5.05k /0.01% 5ppm FB BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/60030/plt.pdf",
+          "Description": "",
+          "MPN": "PLT1206Z5051LBTS",
+          "Manufacturer": "Vishay",
+          "LCSC": "C4074185",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R156",
+        "position": [
+          41.25,
+          10.101,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      }
+    },
+    "R160": {
+      "before": {
+        "properties": {
+          "Reference": "R160",
+          "Value": "6.34k /0.02% SNS TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06036K34HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R160",
+        "position": [
+          27,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_ISO_SNS"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R160",
+          "Value": "6.34k /0.1% 10ppm SNS TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C864499",
+          "Description": "",
+          "MPN": "RT0805BRB076K34L",
+          "Manufacturer": "YAGEO",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C864499"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R160",
+        "position": [
+          27,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_ISO_SNS"
+        }
+      }
+    },
+    "R161": {
+      "before": {
+        "properties": {
+          "Reference": "R161",
+          "Value": "1k /0.02% SNS BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R161",
+        "position": [
+          30.5,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_SNS",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R161",
+          "Value": "1k /0.02% 10ppm SNS BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R161",
+        "position": [
+          30.5,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_SNS",
+          "2": "GND"
+        }
+      }
+    },
+    "R162": {
+      "before": {
+        "properties": {
+          "Reference": "R162",
+          "Value": "4.7k /0.02% ISO EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06034K70HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R162",
+        "position": [
+          27,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_ENABLE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R162",
+          "Value": "4.7k /0.02% 10ppm ISO EN TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q4K70N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067437"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R162",
+        "position": [
+          27,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_ENABLE"
+        }
+      }
+    },
+    "R163": {
+      "before": {
+        "properties": {
+          "Reference": "R163",
+          "Value": "1k /0.02% ISO EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R163",
+        "position": [
+          30.5,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R163",
+          "Value": "1k /0.02% 10ppm ISO EN BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R163",
+        "position": [
+          30.5,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "R169": {
+      "before": {
+        "properties": {
+          "Reference": "R169",
+          "Value": "3.01k /0.02% BULK EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06033K01HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R169",
+        "position": [
+          80,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_ENABLE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R169",
+          "Value": "3.01k /0.1% 10ppm BULK EN TOP",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603B3K01N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "LCSC": "C2692830"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R169",
+        "position": [
+          79.8,
+          1.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_ENABLE"
+        }
+      }
+    },
+    "R170": {
+      "before": {
+        "properties": {
+          "Reference": "R170",
+          "Value": "1k /0.02% BULK EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R170",
+        "position": [
+          83.3,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_ENABLE",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R170",
+          "Value": "1k /0.02% 10ppm BULK EN BOTTOM",
+          "Datasheet": "https://jlcpcb.com/partdetail/C19679768",
+          "Description": "",
+          "MPN": "PTFR0603Q1K00N9",
+          "Manufacturer": "Resistor.Today",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "LCSC": "C23067434"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_R170",
+        "position": [
+          83.2,
+          1.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "U101": {
+      "before": {
+        "properties": {
+          "Reference": "U101",
+          "Value": "LTC4367HMS8#WTRPBF",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "LTC4367HMS8#WTRPBF",
+          "Manufacturer": "Analog Devices",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:MSOP-8_3x3mm_P0.65mm",
+        "position": [
+          33,
+          30.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "PROTECT_CTRL_VIN",
+          "2": "INPUT_UV",
+          "3": "INPUT_OV",
+          "4": "GND",
+          "5": "INPUT_SHDN",
+          "6": "INPUT_FAULT_N",
+          "7": "PROTECTED_12V",
+          "8": "INPUT_GATE_DRIVE"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "U101",
+          "Value": "LTC4367HMS8#PBF",
+          "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4367.pdf",
+          "Description": "",
+          "MPN": "LTC4367HMS8#PBF",
+          "Manufacturer": "Analog Devices",
+          "LCSC": "C688370",
+          "Assembly": "FACTORY",
+          "Qualification": "Owner accepts H-grade #PBF without #W controlled-manufacturing pedigree; electrical equivalence only"
+        },
+        "footprint": "RevB:I32_PROCUREMENT_U101",
+        "position": [
+          33,
+          30.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "PROTECT_CTRL_VIN",
+          "2": "INPUT_UV",
+          "3": "INPUT_OV",
+          "4": "GND",
+          "5": "INPUT_SHDN",
+          "6": "INPUT_FAULT_N",
+          "7": "PROTECTED_12V",
+          "8": "INPUT_GATE_DRIVE"
+        }
+      }
+    }
+  },
+  "copper_delta": {
+    "added": [
+      {
+        "uuid": "e73f2b43-f23e-59ae-8ce0-5aa85cc24de5",
+        "kind": "segment",
+        "net": "3V3_FB_ADJ",
+        "record": [
+          "segment",
+          [
+            "start",
+            41.25,
+            9.975
+          ],
+          [
+            "end",
+            41.25,
+            8.577
+          ],
+          [
+            "width",
+            0.25
+          ],
+          [
+            "layer",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "3V3_FB_ADJ"
+          ],
+          [
+            "uuid",
+            "e73f2b43-f23e-59ae-8ce0-5aa85cc24de5"
+          ]
+        ]
+      }
+    ],
+    "removed": [],
+    "modified": [
+      {
+        "uuid": "28492143-e290-4dbc-b429-4569e74e1140",
+        "kind": "segment",
+        "net": "5V_RIPPLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            53.1375,
+            29.525
+          ],
+          [
+            "end",
+            53.1375,
+            33.075
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "5V_RIPPLE"
+          ],
+          [
+            "uuid",
+            "28492143-e290-4dbc-b429-4569e74e1140"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "5V_RIPPLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              53.4,
+              29.525
+            ],
+            [
+              "end",
+              53.4,
+              33.075
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "5V_RIPPLE"
+            ],
+            [
+              "uuid",
+              "28492143-e290-4dbc-b429-4569e74e1140"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "32230902-957f-5d9a-84a5-fb419fd063be",
+        "kind": "segment",
+        "net": "3V3_VIN",
+        "record": [
+          "segment",
+          [
+            "start",
+            31.7,
+            -5
+          ],
+          [
+            "end",
+            33.28,
+            -5
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_VIN"
+          ],
+          [
+            "uuid",
+            "32230902-957f-5d9a-84a5-fb419fd063be"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_VIN",
+          "record": [
+            "segment",
+            [
+              "start",
+              31.7,
+              -4.8
+            ],
+            [
+              "end",
+              33.08,
+              -4.8
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_VIN"
+            ],
+            [
+              "uuid",
+              "32230902-957f-5d9a-84a5-fb419fd063be"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "36d11513-0e2e-52a7-abb7-07684330cc53",
+        "kind": "segment",
+        "net": "LED_OIL",
+        "record": [
+          "segment",
+          [
+            "start",
+            37.9229,
+            8.5229
+          ],
+          [
+            "end",
+            38.05,
+            8.65
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "LED_OIL"
+          ],
+          [
+            "uuid",
+            "36d11513-0e2e-52a7-abb7-07684330cc53"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "LED_OIL",
+          "record": [
+            "segment",
+            [
+              "start",
+              40.7801,
+              8.5229
+            ],
+            [
+              "end",
+              40.8771,
+              8.5229
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "B.Cu"
+            ],
+            [
+              "net",
+              "LED_OIL"
+            ],
+            [
+              "uuid",
+              "36d11513-0e2e-52a7-abb7-07684330cc53"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "3b8f0c37-982f-54a9-81f1-70ee53ad33cd",
+        "kind": "segment",
+        "net": "3V3_VIN",
+        "record": [
+          "segment",
+          [
+            "start",
+            28.675,
+            -5
+          ],
+          [
+            "end",
+            31.7,
+            -5
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_VIN"
+          ],
+          [
+            "uuid",
+            "3b8f0c37-982f-54a9-81f1-70ee53ad33cd"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_VIN",
+          "record": [
+            "segment",
+            [
+              "start",
+              28.875,
+              -4.8
+            ],
+            [
+              "end",
+              31.7,
+              -4.8
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_VIN"
+            ],
+            [
+              "uuid",
+              "3b8f0c37-982f-54a9-81f1-70ee53ad33cd"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "443bfa0e-fb77-58e6-9ecb-5bd0fefa89fc",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            25.4,
+            -8.6
+          ],
+          [
+            "end",
+            32.5,
+            -8.6
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "443bfa0e-fb77-58e6-9ecb-5bd0fefa89fc"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              25.8,
+              -8.3
+            ],
+            [
+              "end",
+              32.5,
+              -8.3
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "443bfa0e-fb77-58e6-9ecb-5bd0fefa89fc"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "4d5b7807-9a0e-5ca5-9895-f84b3a80253d",
+        "kind": "segment",
+        "net": "3V3_VIN",
+        "record": [
+          "segment",
+          [
+            "start",
+            26.175,
+            -7.5
+          ],
+          [
+            "end",
+            28.675,
+            -5
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_VIN"
+          ],
+          [
+            "uuid",
+            "4d5b7807-9a0e-5ca5-9895-f84b3a80253d"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_VIN",
+          "record": [
+            "segment",
+            [
+              "start",
+              26.175,
+              -7.5
+            ],
+            [
+              "end",
+              28.875,
+              -4.8
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_VIN"
+            ],
+            [
+              "uuid",
+              "4d5b7807-9a0e-5ca5-9895-f84b3a80253d"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "7a14f1b2-71cb-5209-b47b-bb386498582d",
+        "kind": "segment",
+        "net": "LED_OIL",
+        "record": [
+          "segment",
+          [
+            "start",
+            38.3,
+            8.9
+          ],
+          [
+            "end",
+            41.1,
+            11.4109
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "In2.Cu"
+          ],
+          [
+            "net",
+            "LED_OIL"
+          ],
+          [
+            "uuid",
+            "7a14f1b2-71cb-5209-b47b-bb386498582d"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "LED_OIL",
+          "record": [
+            "segment",
+            [
+              "start",
+              41.1,
+              8.3
+            ],
+            [
+              "end",
+              41.1,
+              11.4109
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "In2.Cu"
+            ],
+            [
+              "net",
+              "LED_OIL"
+            ],
+            [
+              "uuid",
+              "7a14f1b2-71cb-5209-b47b-bb386498582d"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "93ce9b07-0dbb-5f98-b6e8-51c32439b134",
+        "kind": "segment",
+        "net": "3V3_VIN",
+        "record": [
+          "segment",
+          [
+            "start",
+            33.28,
+            -5
+          ],
+          [
+            "end",
+            35.88,
+            -2
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_VIN"
+          ],
+          [
+            "uuid",
+            "93ce9b07-0dbb-5f98-b6e8-51c32439b134"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_VIN",
+          "record": [
+            "segment",
+            [
+              "start",
+              33.08,
+              -4.8
+            ],
+            [
+              "end",
+              35.88,
+              -2
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_VIN"
+            ],
+            [
+              "uuid",
+              "93ce9b07-0dbb-5f98-b6e8-51c32439b134"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "a24cb3de-b7c2-5540-a3d0-46114e92cc12",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            25.1,
+            -1.625
+          ],
+          [
+            "end",
+            25.1,
+            -8.3
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "a24cb3de-b7c2-5540-a3d0-46114e92cc12"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              25.5,
+              -1.225
+            ],
+            [
+              "end",
+              25.5,
+              -8
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "a24cb3de-b7c2-5540-a3d0-46114e92cc12"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "a5495de6-76dc-52bf-a709-7e5df67a481b",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            25.1,
+            -8.3
+          ],
+          [
+            "end",
+            25.4,
+            -8.6
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "a5495de6-76dc-52bf-a709-7e5df67a481b"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              25.5,
+              -8
+            ],
+            [
+              "end",
+              25.8,
+              -8.3
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "a5495de6-76dc-52bf-a709-7e5df67a481b"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "b457b4fd-eb33-5534-9800-acdd35f6d9e9",
+        "kind": "via",
+        "net": "LED_OIL",
+        "record": [
+          "via",
+          [
+            "at",
+            38.3,
+            8.9
+          ],
+          [
+            "size",
+            0.6
+          ],
+          [
+            "drill",
+            0.3
+          ],
+          [
+            "layers",
+            "F.Cu",
+            "B.Cu"
+          ],
+          [
+            "tenting",
+            "front",
+            "back"
+          ],
+          [
+            "net",
+            "LED_OIL"
+          ],
+          [
+            "uuid",
+            "b457b4fd-eb33-5534-9800-acdd35f6d9e9"
+          ]
+        ],
+        "before": {
+          "kind": "via",
+          "net": "LED_OIL",
+          "record": [
+            "via",
+            [
+              "at",
+              41.1,
+              8.3
+            ],
+            [
+              "size",
+              0.6
+            ],
+            [
+              "drill",
+              0.3
+            ],
+            [
+              "layers",
+              "F.Cu",
+              "B.Cu"
+            ],
+            [
+              "tenting",
+              "front",
+              "back"
+            ],
+            [
+              "net",
+              "LED_OIL"
+            ],
+            [
+              "uuid",
+              "b457b4fd-eb33-5534-9800-acdd35f6d9e9"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "c1369344-2892-551d-80aa-f1f60763536b",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            33.075,
+            -8.6
+          ],
+          [
+            "end",
+            34.175,
+            -7.5
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "c1369344-2892-551d-80aa-f1f60763536b"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              33.375,
+              -8.3
+            ],
+            [
+              "end",
+              34.175,
+              -7.5
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "c1369344-2892-551d-80aa-f1f60763536b"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "e5333d64-c3b2-5340-9460-f73ff50e2f26",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            26.225,
+            -0.5
+          ],
+          [
+            "end",
+            25.1,
+            -1.625
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "e5333d64-c3b2-5340-9460-f73ff50e2f26"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              26.225,
+              -0.5
+            ],
+            [
+              "end",
+              25.5,
+              -1.225
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "e5333d64-c3b2-5340-9460-f73ff50e2f26"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "eb94081f-52b6-5996-a067-a57828880c35",
+        "kind": "segment",
+        "net": "LED_OIL",
+        "record": [
+          "segment",
+          [
+            "start",
+            38.05,
+            8.65
+          ],
+          [
+            "end",
+            38.3,
+            8.9
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "LED_OIL"
+          ],
+          [
+            "uuid",
+            "eb94081f-52b6-5996-a067-a57828880c35"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "LED_OIL",
+          "record": [
+            "segment",
+            [
+              "start",
+              40.8771,
+              8.5229
+            ],
+            [
+              "end",
+              41.1,
+              8.3
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "B.Cu"
+            ],
+            [
+              "net",
+              "LED_OIL"
+            ],
+            [
+              "uuid",
+              "eb94081f-52b6-5996-a067-a57828880c35"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "ef0397d9-9779-471a-8b58-b03979f454dc",
+        "kind": "segment",
+        "net": "LED_OIL",
+        "record": [
+          "segment",
+          [
+            "start",
+            34.8625,
+            8.5229
+          ],
+          [
+            "end",
+            37.9229,
+            8.5229
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "LED_OIL"
+          ],
+          [
+            "uuid",
+            "ef0397d9-9779-471a-8b58-b03979f454dc"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "LED_OIL",
+          "record": [
+            "segment",
+            [
+              "start",
+              34.8625,
+              8.5229
+            ],
+            [
+              "end",
+              40.7801,
+              8.5229
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "B.Cu"
+            ],
+            [
+              "net",
+              "LED_OIL"
+            ],
+            [
+              "uuid",
+              "ef0397d9-9779-471a-8b58-b03979f454dc"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "efa339a0-00cb-4444-8611-1a88ec9da80e",
+        "kind": "segment",
+        "net": "5V_RIPPLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            52,
+            29.525
+          ],
+          [
+            "end",
+            53.1375,
+            29.525
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "5V_RIPPLE"
+          ],
+          [
+            "uuid",
+            "efa339a0-00cb-4444-8611-1a88ec9da80e"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "5V_RIPPLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              52,
+              29.525
+            ],
+            [
+              "end",
+              53.4,
+              29.525
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "5V_RIPPLE"
+            ],
+            [
+              "uuid",
+              "efa339a0-00cb-4444-8611-1a88ec9da80e"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "fe21d3d6-058e-45d4-8488-560bb80c4f1f",
+        "kind": "segment",
+        "net": "5V_RIPPLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            53.1375,
+            33.075
+          ],
+          [
+            "end",
+            52.4,
+            33.075
+          ],
+          [
+            "width",
+            0.2
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "5V_RIPPLE"
+          ],
+          [
+            "uuid",
+            "fe21d3d6-058e-45d4-8488-560bb80c4f1f"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "5V_RIPPLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              53.4,
+              33.075
+            ],
+            [
+              "end",
+              52.4,
+              33.075
+            ],
+            [
+              "width",
+              0.2
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "5V_RIPPLE"
+            ],
+            [
+              "uuid",
+              "fe21d3d6-058e-45d4-8488-560bb80c4f1f"
+            ]
+          ]
+        }
+      },
+      {
+        "uuid": "ff5c0b7d-d594-59cd-8b75-b22253e7b75d",
+        "kind": "segment",
+        "net": "3V3_ENABLE",
+        "record": [
+          "segment",
+          [
+            "start",
+            32.5,
+            -8.6
+          ],
+          [
+            "end",
+            33.075,
+            -8.6
+          ],
+          [
+            "width",
+            0.15
+          ],
+          [
+            "layer",
+            "F.Cu"
+          ],
+          [
+            "net",
+            "3V3_ENABLE"
+          ],
+          [
+            "uuid",
+            "ff5c0b7d-d594-59cd-8b75-b22253e7b75d"
+          ]
+        ],
+        "before": {
+          "kind": "segment",
+          "net": "3V3_ENABLE",
+          "record": [
+            "segment",
+            [
+              "start",
+              32.5,
+              -8.3
+            ],
+            [
+              "end",
+              33.375,
+              -8.3
+            ],
+            [
+              "width",
+              0.15
+            ],
+            [
+              "layer",
+              "F.Cu"
+            ],
+            [
+              "net",
+              "3V3_ENABLE"
+            ],
+            [
+              "uuid",
+              "ff5c0b7d-d594-59cd-8b75-b22253e7b75d"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "firmware_unchanged_from_base": true,
+  "firmware_files": {
+    "PROGRAMMING_AND_CALIBRATION.md": "7de9d530554eb5dda642b5bfc259776f21493883f4e916ba879f825ec1239c75",
+    "SOURCE_MANIFEST.json": "3cc361dbe9ed9dd112bf889d5a3bece277ac45287a5348ebc2ab4255bf74a90f",
+    "build.sh": "b6fb5c0c0f7a92da2298e9848b94c6a0f793eb30d63a850eab2edaad048502bb",
+    "cca_telemetry/cca_telemetry.ino": "1347dd39faab8f88e237cec9cf28e1a626e8d96227b93d11ae869761515d7ace",
+    "cca_telemetry/config.h": "c77669e999f655cf514f484d143e4b2c8ffc818c779145da03062d17c91e6a84",
+    "cca_telemetry/pidmaps/gr86_2022.h": "2852ec1ebdc901b193fd3d27782f186fb927a964cd71fe45e3b35d4045f331c0",
+    "cca_telemetry/pidmaps/pidmap_defs.h": "5da626ecd86d54fa12d91398903c5e6dda2e5eba3139ed5ae7b2edd0db88558d",
+    "cca_telemetry/src/boot_diagnostics.h": "2fbed7b0ff9d11d35e0cfafc9720032d1d4c47dd2a4cdb38d44e3d62f244bc14",
+    "cca_telemetry/src/driver_loss.h": "56c09de2e058ddb7ebbca66fe88b9fd1d2e81b3ff324ca7d9ca25732c1329209",
+    "cca_telemetry/src/gps_mode_config.h": "55e5f6ebdd5435fcb7ac4137fb6e47fc2eaa3295601bf27c062ba9d84a4c25c7",
+    "cca_telemetry/src/gps_nmea.cpp": "7a97575c0e8d7192ce62b424b585d162d8e1bda37950e3a3f196db5e59344023",
+    "cca_telemetry/src/gps_nmea.h": "559026366c21fd5f11d44a50709c8d095f832c0f3b5c2ce8f9f10d4872443623",
+    "cca_telemetry/src/gps_solution_epoch.h": "ebb4b490eb5050f5fcdd87a74e3146fac4abe68c71900bba229c73137b2d82f4",
+    "cca_telemetry/src/io_budget.h": "97a108e6189eebd561a22d0e65142a0433163b7a61c2e69886ad4a8348195c16",
+    "cca_telemetry/src/led_status.cpp": "0ae1552da8b7876b1344e8b29d6c1b331517e943fa08bbc68924d50a0d1882d8",
+    "cca_telemetry/src/led_status.h": "6c594e044491aa64e15e7c6c02fb28487b97546dd0918d7f6463f94d1197e0b9",
+    "cca_telemetry/src/nvs_cfg.cpp": "0356a9d44654a218e4b06fd732854fbd27d0e71e864dbdc7eff0fc4dd940e1ec",
+    "cca_telemetry/src/nvs_cfg.h": "57b61a85d7432a85d6fcf8b0e55cba71b27504b8c907f9a18fd7b8aa7554eeb9",
+    "cca_telemetry/src/oil_fault_recovery.h": "3c9fc4d4deb8d8864d96e382b7fbe86d7a8ad6d5e32bca3cdb7190293ba41826",
+    "cca_telemetry/src/oil_model.cpp": "27939b0f6991a0f04501f13e2b9fa42ff0aae591d72bdbd42cdbc0bdf5494006",
+    "cca_telemetry/src/oil_model.h": "8f8a5fbbc6d57542a207d84257e0ec539cd63d827ab8deb6172061651f176b06",
+    "cca_telemetry/src/racechrono_codec.h": "7a89bf68062cccf5b336bf23a9f1ccf6497f2b94e75abc90822b6d8f168063ab",
+    "cca_telemetry/src/runtime_config.cpp": "56317143ba5bdecbae42a8e8fb84fd5feb473e681afb3ef77206d39f26b85ba1",
+    "cca_telemetry/src/runtime_config.h": "c3a0ab6b7ac6d2fdfa4ac8c0e4c3fadd6d881854f7d71e98ab9ee780ba2ae650",
+    "cca_telemetry/src/runtime_timing.h": "8c4a56f5127819eed8d161da840667141ca69339d902972e0fe72dab4cd563eb",
+    "partitions.csv": "ab2f33c14eb855054613fd3a4ba85457ae281c6f371c25931ccc763bc79cb0e2",
+    "tests/check_release.py": "94509c2e090c86e105afe368560f6d0d4211ac423e40c384e0cc1fe065d59fa1",
+    "tests/erb_diagnostics_test.cpp": "63636e85e054ce88ad53826975fc95d28f259ee26ced7cc402bf002aef894140",
+    "tests/erb_parser_test.cpp": "547efc04fea235fe0aca28592cf58781bf9c72efd34a28715c5e556ccc810365",
+    "tests/io_budget_test.cpp": "2aa9346640e28d1ce040296a8ebc6b7f056644e480541096b7ecf8c0683cc1ea",
+    "tests/oil_model_test.cpp": "3264e2ac7f88df8e2d5d6a57f96279c8ff9530f12729ea4cda3d0c8a936bd573",
+    "tests/protocol_test.cpp": "9e624c7232058a98054c8f855d60d3ac6a8fe248638b3a8189bc3b57115ed651"
+  },
+  "U201_pin_nets": {
+    "1": "GND",
+    "2": "+3V3",
+    "3": "ESP_EN",
+    "4": "CAN_RX_MCU",
+    "5": "CAN_TX_MCU",
+    "6": "LED_BLE",
+    "7": "LED_CAN",
+    "8": "LED_PWR",
+    "9": "GPS_PPS_MCU",
+    "10": "GPS_TX_MCU",
+    "11": "GPS_TX_MODULE_BUFFERED",
+    "12": "LED_GPS",
+    "13": "unconnected-(U201-IO19-Pad13)",
+    "14": "unconnected-(U201-IO20-Pad14)",
+    "15": "unconnected-(U201-IO3-Pad15)",
+    "16": "unconnected-(U201-IO46-Pad16)",
+    "17": "LED_OIL",
+    "18": "LED_SYS",
+    "19": "unconnected-(U201-IO11-Pad19)",
+    "20": "unconnected-(U201-IO12-Pad20)",
+    "21": "unconnected-(U201-IO13-Pad21)",
+    "22": "unconnected-(U201-IO14-Pad22)",
+    "23": "unconnected-(U201-IO21-Pad23)",
+    "24": "unconnected-(U201-IO47-Pad24)",
+    "25": "unconnected-(U201-IO48-Pad25)",
+    "26": "unconnected-(U201-IO45-Pad26)",
+    "27": "ESP_GPIO0",
+    "28": "unconnected-(U201-IO35-Pad28)",
+    "29": "unconnected-(U201-IO36-Pad29)",
+    "30": "unconnected-(U201-IO37-Pad30)",
+    "31": "unconnected-(U201-IO38-Pad31)",
+    "32": "unconnected-(U201-IO39-Pad32)",
+    "33": "unconnected-(U201-IO40-Pad33)",
+    "34": "unconnected-(U201-IO41-Pad34)",
+    "35": "unconnected-(U201-IO42-Pad35)",
+    "36": "UART0_RX",
+    "37": "UART0_TX",
+    "38": "OIL_EXCITATION_ADC",
+    "39": "ADC_NODE",
+    "40": "GND",
+    "41": "GND"
+  },
+  "receive_only_CAN": {
+    "transceiver": "TCAN3403DRBRQ1",
+    "R301": "DNP_OPEN",
+    "R306": "DNP",
+    "bus": "Classical 500kbit/s",
+    "source_and_firmware_unchanged": true
+  },
+  "RF_CAN_GPS_oil_signal_copper_unchanged": true,
+  "keepout_rules_preserved": true,
+  "keepout_native_nanometre_quantization": [
+    {
+      "uuid": "2332f54c-cf20-5d1e-bd1d-4ae250e874c4",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "7b080849-e712-4db0-8a16-c97ca0f5650f",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "00737372-b873-5dd0-8112-a4c8a60784f4",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "3bb4eea7-3154-525b-ad2a-c8cfe5ec355c",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "6821ef76-7bef-5905-8faf-f60a1802f310",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "96a8219f-536f-578e-b254-2a0228855af1",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "75a2571d-f0ef-4a1e-a891-fc10bdd59c22",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    },
+    {
+      "uuid": "ea9363eb-f253-5291-a221-4df21b11e012",
+      "hausdorff_mm": 0.0,
+      "symmetric_difference_mm2": 0.0,
+      "rule_and_layer_sets_identical": true
+    }
+  ],
+  "stackup_and_native_rules_unchanged": true,
+  "new_ordinary_vias": 0,
+  "filled_capped_planarized_vias": [
+    {
+      "reference": "U201.41",
+      "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+      "xy": [
+        77.469766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+      "xy": [
+        77.919766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "d72b7fda-9a42-544b-8389-2a21a70fede0",
+      "xy": [
+        78.369766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "a27c8483-d7d2-5af4-840b-783456b2104a",
+      "xy": [
+        78.819766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "7ee3916a-276a-58b0-8ffa-547df9d26231",
+      "xy": [
+        79.269766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "99d78d50-eb70-5980-8bc6-96748fa20b85",
+      "xy": [
+        79.719766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "ef24142a-c94a-59f2-8a5c-205671624e14",
+      "xy": [
+        80.169766,
+        20.375
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "84fbb7f2-7bee-5553-89b1-b75e49bdef76",
+      "xy": [
+        77.469766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "4c45f2fc-05e3-5793-8ebe-25ed8a659ba7",
+      "xy": [
+        77.919766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "f589eeeb-e381-5f48-8d3a-0c21b3919866",
+      "xy": [
+        78.369766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "347575c4-650f-5f7a-8a86-4845297e1b3a",
+      "xy": [
+        78.819766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "b1d5274d-96c5-57c6-867f-1221c18c24d2",
+      "xy": [
+        79.269766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "bfeaef42-e32e-5acf-8fc0-f329b55f8391",
+      "xy": [
+        79.719766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "bb615e3c-0a78-551e-8654-915b467d0378",
+      "xy": [
+        80.169766,
+        20.825
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "ef78647c-eca7-5292-83f4-b25b6f8270ce",
+      "xy": [
+        77.469766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "18e08ea4-2dad-56f0-8f50-bf1f335ed795",
+      "xy": [
+        77.919766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "6c5a68b8-1b52-5e12-8412-10d2cd189d1d",
+      "xy": [
+        78.369766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "7cc6e6ef-a4b6-5ff2-87b2-4824f184d87d",
+      "xy": [
+        78.819766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "6b996bb8-9e90-52bc-8c18-5c8cbd8765cd",
+      "xy": [
+        79.269766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "14164b14-4235-54f1-8db8-d45c2850566b",
+      "xy": [
+        79.719766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "fe750b02-70d0-5481-88cb-1fa418ceab42",
+      "xy": [
+        80.169766,
+        21.275
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "9c434a9b-dd07-54f3-8786-f42c34b7c0b4",
+      "xy": [
+        77.469766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "8cb29710-771b-5273-89a4-5dbcb9a6258f",
+      "xy": [
+        77.919766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "b443c3fa-8779-599f-8a9f-f1285307357d",
+      "xy": [
+        78.369766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "2144b62f-fe15-5ce5-888c-b7cf6de5cd34",
+      "xy": [
+        78.819766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "bda0c4bc-81b2-52be-83e1-883a89cc7b84",
+      "xy": [
+        79.269766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "4924afd5-07da-54da-878a-4d6d352f60dd",
+      "xy": [
+        79.719766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "22883634-ebbd-5b92-8bdf-2711079423b1",
+      "xy": [
+        80.169766,
+        21.725
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "9840c434-1445-5f6d-824a-61dd19494463",
+      "xy": [
+        77.469766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "b752b41e-fafa-5a1b-842f-89f1ac40ef28",
+      "xy": [
+        77.919766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "b73b45d0-ebee-5829-8bb2-a065bb10d88e",
+      "xy": [
+        78.369766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "59ac719f-ece3-574f-8dce-92e5152a7857",
+      "xy": [
+        78.819766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "7fe1fc58-4404-5dc0-8a32-d32b13a215f6",
+      "xy": [
+        79.269766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "ba8f99d2-fe4a-5bc0-8a6e-60cb433d11b7",
+      "xy": [
+        79.719766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "eaabd8e5-f6cf-5d66-8e42-697f5a4de0cf",
+      "xy": [
+        80.169766,
+        22.175
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "a2b09f65-d9de-563e-8383-6cc0a2f082cc",
+      "xy": [
+        77.469766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "c47721ea-32dd-56ce-8f35-3787d41f6334",
+      "xy": [
+        77.919766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "a39abf8d-62e7-5dd5-8ee4-303136cf05ed",
+      "xy": [
+        78.369766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "ba67ae4e-5efd-57f4-8b90-1048aad54d22",
+      "xy": [
+        78.819766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "3ef280a0-7d97-5854-8778-15e311975df9",
+      "xy": [
+        79.269766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "a09e8c2b-e543-5524-86a2-5e9ef15d68c1",
+      "xy": [
+        79.719766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "84007739-5138-50e7-875f-6861225ff66c",
+      "xy": [
+        80.169766,
+        22.625
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "51941c55-fcd9-56e9-8a85-28371980e442",
+      "xy": [
+        77.469766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "cbc101e4-3c1e-59f4-874d-8a0386458c2c",
+      "xy": [
+        77.919766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "589eab7f-dfc5-5ccb-8970-bbbcf94be2c0",
+      "xy": [
+        78.369766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "1fe4e66b-a2c7-583f-8229-3123e94a1ca1",
+      "xy": [
+        78.819766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "dbed8ccc-fd30-5858-89e6-91ed111f8886",
+      "xy": [
+        79.269766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "U201.41",
+      "uuid": "bb0630d0-93c1-5889-8e34-4a5bd5182b44",
+      "xy": [
+        79.719766,
+        23.075
+      ],
+      "drill": 0.2,
+      "land": 0.6
+    },
+    {
+      "reference": "R153.2",
+      "uuid": "744040f0-f2a8-5899-a69c-202637932746",
+      "xy": [
+        41.4,
+        21
+      ],
+      "drill": 0.3,
+      "land": 0.6
+    }
+  ],
+  "physical_tests": 0
+}

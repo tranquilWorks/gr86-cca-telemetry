@@ -1,0 +1,17 @@
+{
+  "componentCode": "C491123",
+  "componentModelEn": "ERA3AEB2612V",
+  "componentBrandEn": "PANASONIC",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2004071109_PANASONIC-ERA3AEB2612V_C491123.pdf",
+  "describe": "-55\u2103~+155\u2103 100mW 26.1k\u03a9 75V Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 7,
+  "preMinPurchaseNum": 122,
+  "canPresaleNumber": 7,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C491123",
+  "retrieved_at_UTC": "2026-09-15T21:05:23.827249+00:00",
+  "response_sha256": "3e6a1a3e480e7228628e48c7c16265b7fff16fc8c51222ee4af2e5f337d045dd"
+}

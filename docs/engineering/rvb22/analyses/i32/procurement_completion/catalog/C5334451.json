@@ -1,0 +1,17 @@
+{
+  "componentCode": "C5334451",
+  "componentModelEn": "WSLP0603R0100FEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212301230_Vishay-Intertech-WSLP0603R0100FEA_C5334451.pdf",
+  "describe": "-65\u2103~+170\u2103 10m\u03a9 400mW \u00b11% \u00b175ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 5000,
+  "preMinPurchaseNum": 16,
+  "canPresaleNumber": 4997,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C5334451",
+  "retrieved_at_UTC": "2026-09-15T21:06:12.933730+00:00",
+  "response_sha256": "83faaf6b87ba12e9d5019bb2bd5ce10ba794547398f11215b67eaca70278c4bd"
+}

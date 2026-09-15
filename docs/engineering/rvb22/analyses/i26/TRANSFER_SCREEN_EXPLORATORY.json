@@ -1,0 +1,1702 @@
+{
+  "status": "EXPLORATORY_NOT_A_CLOSURE_PROOF",
+  "source_filled_PCB_sha256": "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1",
+  "signal_vias": 60,
+  "candidate_corridors_found": 53,
+  "unresolved_finite_searches": 7,
+  "method": {
+    "grid_step_mm": 0.1,
+    "etch_allowance_mm": 0.03,
+    "corridor_halfwidth_mm": 0.025,
+    "full_cell_erosion_mm": 0.07071067811865475,
+    "ground_via_candidates_per_signal": 5,
+    "finite_search_margin_mm": 3,
+    "inductance_screen": "0.4*ell_mm*max(1,ln(2*ell_mm/0.025)) nH; deliberately thin-filament assumed estimate; not extracted impedance or a proven upper bound",
+    "current_edge_sensitivities": "10/20/40mA over0.5/1/2/5ns are selected sensitivity cases, not guaranteed driver bounds. V=L*dI/dt cannot establish settled receiver timing by itself."
+  },
+  "limitations": [
+    "Endpoint snapping and local via-cap treatment require independent path-width/etch validation.",
+    "Finite-search failures do not prove PCB discontinuities.",
+    "The source current/edge envelope, receiver settling, voltage overshoot and clamp behavior have NOT been bounded.",
+    "No route is accepted or rejected merely by this exploratory inductance screen.",
+    "No physical tests or new native KiCad execution occurred in this extraction."
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "signal_via_uuid": "9d21b5f7-79a9-4b86-8869-7c31bc728bba",
+      "net": "ADC_NODE",
+      "signal_via_xy_mm": [
+        85.9,
+        32.95
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "48e4e79e-2297-4939-bbad-7a1a3a963492",
+        "ground_via_xy_mm": [
+          85.95,
+          34.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.265685424949238
+          },
+          "In2.Cu": {
+            "length_mm": 1.265685424949238
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173925,
+        "screen_loop_length_mm": 7.21985702673326,
+        "screen_loop_inductance_nH": 18.364029176157242
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 1,
+      "signal_via_uuid": "a707bcaa-d3a2-4ed5-a777-5314dcf6bd07",
+      "net": "ADC_NODE",
+      "signal_via_xy_mm": [
+        85,
+        29.1
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+        "ground_via_xy_mm": [
+          87.475,
+          29.4
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.1071067811865487
+          },
+          "In2.Cu": {
+            "length_mm": 3.1071067811865487
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173728,
+        "screen_loop_length_mm": 10.902699739207844,
+        "screen_loop_inductance_nH": 29.52903366392119
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 2,
+      "signal_via_uuid": "55d7b7a3-a3b2-4602-af0b-f59854786f9e",
+      "net": "CANL",
+      "signal_via_xy_mm": [
+        14.5,
+        11.6
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "1e7f8991-4979-4474-9d57-ddab15ed0340",
+        "ground_via_xy_mm": [
+          14.71,
+          9.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.9485281374238566
+          },
+          "In2.Cu": {
+            "length_mm": 1.9485281374238566
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173867,
+        "screen_loop_length_mm": 8.585542451682487,
+        "screen_loop_inductance_nH": 22.43267041970817
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 3,
+      "signal_via_uuid": "798dfe74-73cc-463b-bbd2-3bc71c37bc91",
+      "net": "CANL",
+      "signal_via_xy_mm": [
+        21.5,
+        4.5
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "0da869ef-8782-42b0-abb3-58a3c7778b54",
+        "ground_via_xy_mm": [
+          22.2125,
+          3.8
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.2242640687119284
+          },
+          "In2.Cu": {
+            "length_mm": 1.2242640687119284
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173867,
+        "screen_loop_length_mm": 7.13701431425863,
+        "screen_loop_inductance_nH": 18.120368791307786
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 4,
+      "signal_via_uuid": "18281df7-815e-4cae-8190-449244384592",
+      "net": "CAN_RX_MCU",
+      "signal_via_xy_mm": [
+        82.7281,
+        15.5354
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+        "ground_via_xy_mm": [
+          85.7,
+          16.8
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.269848480983501
+          },
+          "In2.Cu": {
+            "length_mm": 4.269848480983501
+          }
+        },
+        "reference_access_radius_mm": 0.5820726835826057,
+        "screen_loop_length_mm": 13.223842329132212,
+        "screen_loop_inductance_nH": 36.83658947084657
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 5,
+      "signal_via_uuid": "71aaa022-632b-464b-aacc-82a5096b8d92",
+      "net": "CAN_RX_MCU",
+      "signal_via_xy_mm": [
+        77.8,
+        33.1
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "f82e6c84-3830-428c-9756-bd35648104b6",
+        "ground_via_xy_mm": [
+          77.575,
+          29
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.7828427124746207
+          },
+          "In2.Cu": {
+            "length_mm": 3.7828427124746207
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173877,
+        "screen_loop_length_mm": 12.254171601784016,
+        "screen_loop_inductance_nH": 33.76216937659473
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 6,
+      "signal_via_uuid": "bfbf4c62-616f-487b-80f3-dfaba5150b7d",
+      "net": "CAN_RX_MCU",
+      "signal_via_xy_mm": [
+        25.2,
+        18.7
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+        "ground_via_xy_mm": [
+          26.95,
+          20.9
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.138477631085024
+          },
+          "In2.Cu": {
+            "length_mm": 3.138477631085024
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 10.965441439004815,
+        "screen_loop_inductance_nH": 29.7241329677817
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 7,
+      "signal_via_uuid": "23f7ea8d-d2ba-4908-8aae-50145a14ab11",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        57,
+        24.75
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 8,
+      "signal_via_uuid": "4bf99cf7-7707-46d0-9446-eda8ac3a6ffe",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        73.8,
+        16.7
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+        "ground_via_xy_mm": [
+          76.651,
+          17.301
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.845584412271569
+          },
+          "In2.Cu": {
+            "length_mm": 3.3828427124746208
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173753,
+        "screen_loop_length_mm": 12.91691330158094,
+        "screen_loop_inductance_nH": 35.86026639319921
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 9,
+      "signal_via_uuid": "7269ec71-37ad-4ff6-a4fc-2cee946e5c9b",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        26.9727,
+        7.0603
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "2eaf8347-1897-4f05-8efb-19304420c29b",
+        "ground_via_xy_mm": [
+          24.275,
+          8.865
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.11126983722081
+          },
+          "In2.Cu": {
+            "length_mm": 3.11126983722081
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173849,
+        "screen_loop_length_mm": 10.91102585127639,
+        "screen_loop_inductance_nH": 29.554915945517795
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 10,
+      "signal_via_uuid": "98efacb0-0638-457c-a8dc-3cf61bac199e",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        47.55,
+        22.85
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 11,
+      "signal_via_uuid": "b113a326-4ac2-4511-8286-3f5e1e4a0087",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        67.75,
+        22.75
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 12,
+      "signal_via_uuid": "c3487f70-578c-429d-b17e-5209308516b0",
+      "net": "CAN_TX_MCU",
+      "signal_via_xy_mm": [
+        44.35,
+        22.65
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 13,
+      "signal_via_uuid": "0dfa5e4c-6325-40c7-8fd1-9e27e7f3f2fe",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        8.7,
+        25.5
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+        "ground_via_xy_mm": [
+          11.2179,
+          28.3071
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 7.845584412271561
+          },
+          "In2.Cu": {
+            "length_mm": 4.918376618407356
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173867,
+        "screen_loop_length_mm": 17.452447207513693,
+        "screen_loop_inductance_nH": 50.55280405962305
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 14,
+      "signal_via_uuid": "1dc649ae-92e1-4744-ac36-5b5151291d31",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        49.8,
+        23.6
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+        "ground_via_xy_mm": [
+          47.65,
+          24.5
+        ],
+        "ground_via_drill_mm": 0.2,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.9071067811865472
+          },
+          "In2.Cu": {
+            "length_mm": 1.9071067811865472
+          }
+        },
+        "reference_access_radius_mm": 0.584243088417383,
+        "screen_loop_length_mm": 8.502699739207861,
+        "screen_loop_inductance_nH": 22.1832387607976
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 15,
+      "signal_via_uuid": "3cd866d2-259c-4081-89b6-a289d6338ddd",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        26.3,
+        23
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+        "ground_via_xy_mm": [
+          26.475,
+          22
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 0.7242640687119285
+          },
+          "In2.Cu": {
+            "length_mm": 0.7242640687119285
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173805,
+        "screen_loop_length_mm": 6.137014314258618,
+        "screen_loop_inductance_nH": 15.210872257302007
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 16,
+      "signal_via_uuid": "4d5bdc5f-e7d3-47d7-8d8b-bd2c20085824",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        8.7,
+        31
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+        "ground_via_xy_mm": [
+          11.2179,
+          28.3071
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.8112698372208107
+          },
+          "In2.Cu": {
+            "length_mm": 3.8112698372208107
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173867,
+        "screen_loop_length_mm": 12.311025851276394,
+        "screen_loop_inductance_nH": 33.941606147032786
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 17,
+      "signal_via_uuid": "550dafae-1c40-4da3-bf6b-47ccc177d5b2",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        59.8,
+        25.2
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 18,
+      "signal_via_uuid": "66bd2235-3eeb-45c9-bcb4-1f1d4706b40e",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        69.103,
+        4.738
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+        "ground_via_xy_mm": [
+          71,
+          7.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.845584412271569
+          },
+          "In2.Cu": {
+            "length_mm": 4.845584412271569
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173772,
+        "screen_loop_length_mm": 14.379655001377893,
+        "screen_loop_inductance_nH": 40.538208805755794
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 19,
+      "signal_via_uuid": "78c59ff5-fd2d-45d7-8061-0098fd5bd846",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        43.4,
+        23
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 20,
+      "signal_via_uuid": "7a15fa7f-08e9-433f-a4d8-cf3e1f256436",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        55.9,
+        25.4
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+        "ground_via_xy_mm": [
+          47.65,
+          24.5
+        ],
+        "ground_via_drill_mm": 0.2,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 8.007106781186536
+          },
+          "In2.Cu": {
+            "length_mm": 8.007106781186536
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 20.702699739207837,
+        "screen_loop_inductance_nH": 61.381771899395964
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 21,
+      "signal_via_uuid": "ac499f64-3ec7-480b-bf09-997305f9bf87",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        10.4,
+        25.5
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+        "ground_via_xy_mm": [
+          15.7032,
+          21.15
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 7.1597979746446585
+          },
+          "In2.Cu": {
+            "length_mm": 6.574011537017758
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173867,
+        "screen_loop_length_mm": 18.42229568849719,
+        "screen_loop_inductance_nH": 53.76059386483803
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 22,
+      "signal_via_uuid": "d5f2c11d-54e4-4396-813e-e83e01f9015f",
+      "net": "ESP_EN",
+      "signal_via_xy_mm": [
+        83.4992,
+        9.0175
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+        "ground_via_xy_mm": [
+          86.3,
+          10.025
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.9798989873223336
+          },
+          "In2.Cu": {
+            "length_mm": 2.9798989873223336
+          }
+        },
+        "reference_access_radius_mm": 0.584243088417379,
+        "screen_loop_length_mm": 10.648284151479425,
+        "screen_loop_inductance_nH": 28.73940118563276
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 23,
+      "signal_via_uuid": "301cec8c-4344-45fe-bf04-e500049368e6",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        46.2,
+        29.6
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "ea41e0a5-d6a0-458d-a4b9-6641344bbb38",
+        "ground_via_xy_mm": [
+          45.7,
+          30.3
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.1242640687119285
+          },
+          "In2.Cu": {
+            "length_mm": 1.1242640687119285
+          }
+        },
+        "reference_access_radius_mm": 0.584243088417383,
+        "screen_loop_length_mm": 6.937014314258623,
+        "screen_loop_inductance_nH": 17.53371463506519
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 24,
+      "signal_via_uuid": "6beb5f14-cad6-412b-941f-bfc3cbda2b31",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        47.7,
+        31.3
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "9810c55d-2450-47b4-ad1d-b9dd05ca628b",
+        "ground_via_xy_mm": [
+          50.3,
+          29.85
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.9870057685088813
+          },
+          "In2.Cu": {
+            "length_mm": 2.9870057685088813
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173806,
+        "screen_loop_length_mm": 10.662497713852524,
+        "screen_loop_inductance_nH": 28.783452384129276
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 25,
+      "signal_via_uuid": "9b4fb715-3cb1-4ddf-9589-187b2d6153f7",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        54.1,
+        32.4
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "9810c55d-2450-47b4-ad1d-b9dd05ca628b",
+        "ground_via_xy_mm": [
+          50.3,
+          29.85
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.269848480983501
+          },
+          "In2.Cu": {
+            "length_mm": 4.269848480983501
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 13.228183138801766,
+        "screen_loop_inductance_nH": 36.85041792254698
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 26,
+      "signal_via_uuid": "a341487b-8df0-4220-863d-6129c8bd2e84",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        68.9377,
+        30.9107
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+        "ground_via_xy_mm": [
+          72.6,
+          28.2
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.15269119345812
+          },
+          "In2.Cu": {
+            "length_mm": 4.15269119345812
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173834,
+        "screen_loop_length_mm": 12.993868563751006,
+        "screen_loop_inductance_nH": 36.10478518690499
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 27,
+      "signal_via_uuid": "b6835311-8663-4d16-9b60-09fdc2d7ae02",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        25.8,
+        37.4
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "082f4665-276c-4a52-b950-8e6fa4098335",
+        "ground_via_xy_mm": [
+          26.4625,
+          38
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.082842712474619
+          },
+          "In2.Cu": {
+            "length_mm": 1.082842712474619
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173855,
+        "screen_loop_length_mm": 6.854171601784008,
+        "screen_loop_inductance_nH": 17.291386342638273
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 28,
+      "signal_via_uuid": "d108d55f-ff55-491b-9e7e-3e1cd2cdb78b",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        30.1,
+        34
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "ba2e1377-7ac2-427e-929e-229eee1b53c8",
+        "ground_via_xy_mm": [
+          31,
+          36
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.8071067811865473
+          },
+          "In2.Cu": {
+            "length_mm": 1.8071067811865473
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 8.30269973920786,
+        "screen_loop_inductance_nH": 21.582394274395657
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 29,
+      "signal_via_uuid": "e93f1140-12dd-48e3-bbea-15f27ed9ad26",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        74.5887,
+        6
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+        "ground_via_xy_mm": [
+          71,
+          7.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.8455844122715725
+          },
+          "In2.Cu": {
+            "length_mm": 3.8455844122715725
+          }
+        },
+        "reference_access_radius_mm": 0.582334881108965,
+        "screen_loop_length_mm": 12.375838586761075,
+        "screen_loop_inductance_nH": 34.146288644175065
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 30,
+      "signal_via_uuid": "ee866e45-02dc-4c28-8a4a-4e788ee00281",
+      "net": "ESP_GPIO0",
+      "signal_via_xy_mm": [
+        81.4988,
+        3.6162
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "71f6e64e-f019-4727-9c6b-544ff32098bd",
+        "ground_via_xy_mm": [
+          86.275,
+          5.8
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 5.145584412271568
+          },
+          "In2.Cu": {
+            "length_mm": 5.145584412271568
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173853,
+        "screen_loop_length_mm": 14.979655001377907,
+        "screen_loop_inductance_nH": 42.474629495242404
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 31,
+      "signal_via_uuid": "aa45a8e2-a43d-4a30-a57d-d12b678d1bb5",
+      "net": "GPS_ANT_RF_BIASED",
+      "signal_via_xy_mm": [
+        62.6764,
+        16.7254
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "54fef2c3-3b31-4875-984f-620e5e356928",
+        "ground_via_xy_mm": [
+          62.2,
+          17.35
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 0.982842712474619
+          },
+          "In2.Cu": {
+            "length_mm": 0.982842712474619
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 6.654171601784004,
+        "screen_loop_inductance_nH": 16.708014308500335
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 32,
+      "signal_via_uuid": "c6e025dc-442e-4fda-9889-719ebbfa4e06",
+      "net": "GPS_FIX_RAW",
+      "signal_via_xy_mm": [
+        44.8369,
+        8.9561
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "01453d4c-2fc8-4bc6-84bd-b2d6f655a57e",
+        "ground_via_xy_mm": [
+          43,
+          6.525
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.128427124746191
+          },
+          "In2.Cu": {
+            "length_mm": 3.128427124746191
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173877,
+        "screen_loop_length_mm": 10.945340426327157,
+        "screen_loop_inductance_nH": 29.661611918463432
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 33,
+      "signal_via_uuid": "cbcb743b-03b8-484d-b338-bdfa7176ba21",
+      "net": "GPS_FIX_RAW",
+      "signal_via_xy_mm": [
+        47.2383,
+        17.3297
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+        "ground_via_xy_mm": [
+          45.2,
+          14.575
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.45269119345812
+          },
+          "In2.Cu": {
+            "length_mm": 3.45269119345812
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173857,
+        "screen_loop_length_mm": 11.59386856375101,
+        "screen_loop_inductance_nH": 31.686056794541063
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 34,
+      "signal_via_uuid": "63a9f54c-1d05-4532-a4c2-eb8ef5db79c4",
+      "net": "GPS_PPS_BUFFER",
+      "signal_via_xy_mm": [
+        73.3925,
+        10.6309
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+        "ground_via_xy_mm": [
+          79.1,
+          13
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 6.128427124746186
+          },
+          "In2.Cu": {
+            "length_mm": 6.128427124746186
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173957,
+        "screen_loop_length_mm": 16.945340426327164,
+        "screen_loop_inductance_nH": 48.884050436200575
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 35,
+      "signal_via_uuid": "7e4ffebe-ae16-494b-a6a4-6a0e23cb339f",
+      "net": "GPS_PPS_BUFFER",
+      "signal_via_xy_mm": [
+        65.3696,
+        20.388
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+        "ground_via_xy_mm": [
+          64.55,
+          20.35
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.631370849898476
+          },
+          "In2.Cu": {
+            "length_mm": 1.631370849898476
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173803,
+        "screen_loop_length_mm": 7.951227876631712,
+        "screen_loop_inductance_nH": 20.531193094989
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 36,
+      "signal_via_uuid": "041c41b9-4e0b-48c6-820e-2e426022fd28",
+      "net": "GPS_PPS_RAW",
+      "signal_via_xy_mm": [
+        65.007,
+        15.5586
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "e7b5041e-7ba7-4cc7-99c9-f98380827f39",
+        "ground_via_xy_mm": [
+          64.2,
+          12.8
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.7970562748477144
+          },
+          "In2.Cu": {
+            "length_mm": 2.7970562748477144
+          }
+        },
+        "reference_access_radius_mm": 0.584243088417384,
+        "screen_loop_length_mm": 10.282598726530196,
+        "screen_loop_inductance_nH": 27.608693909843
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 37,
+      "signal_via_uuid": "27bbfa88-e554-4144-a958-fd26b6b7cf74",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        31.3289,
+        16.3539
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "b8d7ddee-8ac9-46c4-bd1a-d795e74a6abf",
+        "ground_via_xy_mm": [
+          33.85,
+          14.7
+        ],
+        "ground_via_drill_mm": 0.2,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.9698484809835004
+          },
+          "In2.Cu": {
+            "length_mm": 2.9698484809835004
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 10.628183138801766,
+        "screen_loop_inductance_nH": 28.67711634095767
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 38,
+      "signal_via_uuid": "53d6c8aa-1833-49f5-9dde-e3a6fc52b6dd",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        40.738,
+        22.0382
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+        "ground_via_xy_mm": [
+          41.6,
+          22.725
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 0.5242640687119285
+          },
+          "In2.Cu": {
+            "length_mm": 0.5242640687119285
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173804,
+        "screen_loop_length_mm": 5.737014314258618,
+        "screen_loop_inductance_nH": 14.064785249097302
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 39,
+      "signal_via_uuid": "7dd68167-6892-4950-bf78-7a77396721cb",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        46.8818,
+        22.2413
+      ],
+      "status": "NO_CORRIDOR_IN_FINITE_SEARCH",
+      "solution": null,
+      "logic_margin_proven": false
+    },
+    {
+      "index": 40,
+      "signal_via_uuid": "b1632013-f4b0-4a8e-af3a-48434825420d",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        50.8512,
+        21.5316
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "ba214ee4-455a-417f-8302-9ce7b284ffdf",
+        "ground_via_xy_mm": [
+          57.375,
+          21.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 7.272792206135776
+          },
+          "In2.Cu": {
+            "length_mm": 7.272792206135776
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173854,
+        "screen_loop_length_mm": 19.234070589106324,
+        "screen_loop_inductance_nH": 56.461305322644655
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 41,
+      "signal_via_uuid": "cda81067-6d99-4193-8c88-c58075351269",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        33.65,
+        23.1203
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "c03970f4-80eb-4e57-91f8-f8cef3a027c0",
+        "ground_via_xy_mm": [
+          37.675,
+          24
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.607106781186547
+          },
+          "In2.Cu": {
+            "length_mm": 5.611269837220807
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173879,
+        "screen_loop_length_mm": 14.90686279524213,
+        "screen_loop_inductance_nH": 42.23918205820148
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 42,
+      "signal_via_uuid": "dd0d1ca6-5e29-4fa8-9338-855fc68a1574",
+      "net": "GPS_SEARCH_BUFFER",
+      "signal_via_xy_mm": [
+        28.6127,
+        19.109
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+        "ground_via_xy_mm": [
+          26.95,
+          20.9
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.6798989873223333
+          },
+          "In2.Cu": {
+            "length_mm": 2.6798989873223333
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173805,
+        "screen_loop_length_mm": 10.048284151479427,
+        "screen_loop_inductance_nH": 26.886911445680628
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 43,
+      "signal_via_uuid": "4649c574-09aa-4553-8285-cc0669ba4f87",
+      "net": "GPS_TX_BUFFER",
+      "signal_via_xy_mm": [
+        69.3568,
+        12.2761
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+        "ground_via_xy_mm": [
+          67.8,
+          15.525
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.6284271247461914
+          },
+          "In2.Cu": {
+            "length_mm": 3.6284271247461914
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173809,
+        "screen_loop_length_mm": 11.945340426327144,
+        "screen_loop_inductance_nH": 32.789328347900366
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 44,
+      "signal_via_uuid": "773de029-1f66-442c-b6c4-5df68fa45ed7",
+      "net": "GPS_TX_BUFFER",
+      "signal_via_xy_mm": [
+        65.2557,
+        17.0485
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+        "ground_via_xy_mm": [
+          66.425,
+          18
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.0071067811865475
+          },
+          "In2.Cu": {
+            "length_mm": 1.0071067811865475
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173753,
+        "screen_loop_length_mm": 6.702699739207846,
+        "screen_loop_inductance_nH": 16.849345874246378
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 45,
+      "signal_via_uuid": "9f920bc5-0a91-4de6-aa05-9418f773b804",
+      "net": "GPS_TX_MCU",
+      "signal_via_xy_mm": [
+        71.8179,
+        16.0654
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+        "ground_via_xy_mm": [
+          67.8,
+          15.525
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.6414213562373114
+          },
+          "In2.Cu": {
+            "length_mm": 3.6414213562373114
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173827,
+        "screen_loop_length_mm": 11.971328889309389,
+        "screen_loop_inductance_nH": 32.871071990886826
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 46,
+      "signal_via_uuid": "ccff4e64-86f8-477e-98b3-c24b578bee40",
+      "net": "GPS_TX_MCU",
+      "signal_via_xy_mm": [
+        61.69,
+        21
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+        "ground_via_xy_mm": [
+          62.35,
+          20.35
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.182842712474619
+          },
+          "In2.Cu": {
+            "length_mm": 1.182842712474619
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 7.054171601784004,
+        "screen_loop_inductance_nH": 17.87709305296889
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 47,
+      "signal_via_uuid": "7477b432-3105-4fa6-a49a-60cfb63ca77c",
+      "net": "GPS_TX_RAW",
+      "signal_via_xy_mm": [
+        45.2129,
+        15.4388
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+        "ground_via_xy_mm": [
+          45.2,
+          14.575
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.6313708498984758
+          },
+          "In2.Cu": {
+            "length_mm": 1.6313708498984758
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173855,
+        "screen_loop_length_mm": 7.951227876631723,
+        "screen_loop_inductance_nH": 20.53119309498903
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 48,
+      "signal_via_uuid": "622710dd-f5b1-4ab8-ad80-f12476e88bdc",
+      "net": "OIL_EXCITATION_ADC",
+      "signal_via_xy_mm": [
+        85.4,
+        26.9
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+        "ground_via_xy_mm": [
+          87.475,
+          29.4
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.804163056034262
+          },
+          "In2.Cu": {
+            "length_mm": 2.804163056034262
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173778,
+        "screen_loop_length_mm": 10.29681228890328,
+        "screen_loop_inductance_nH": 27.652546561758022
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 49,
+      "signal_via_uuid": "7162ebe1-38bb-4575-81da-2a949f97d055",
+      "net": "OIL_EXCITATION_ADC",
+      "signal_via_xy_mm": [
+        72,
+        30.2
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+        "ground_via_xy_mm": [
+          72.6,
+          28.2
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.9798989873223336
+          },
+          "In2.Cu": {
+            "length_mm": 2.9798989873223336
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173753,
+        "screen_loop_length_mm": 10.648284151479418,
+        "screen_loop_inductance_nH": 28.739401185632744
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 50,
+      "signal_via_uuid": "aa33599f-e3d7-4502-9c9d-3200826530e0",
+      "net": "OIL_EXC_AMP_OUT",
+      "signal_via_xy_mm": [
+        81.4,
+        26.3
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "e4ecb195-124d-4b42-a230-5523f9ead050",
+        "ground_via_xy_mm": [
+          77.575,
+          26.4
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.589949493661166
+          },
+          "In2.Cu": {
+            "length_mm": 4.589949493661166
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173906,
+        "screen_loop_length_mm": 13.868385164157113,
+        "screen_loop_inductance_nH": 38.8960409832481
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 51,
+      "signal_via_uuid": "caecfdf0-de07-453d-ac0f-b3205dcee9c1",
+      "net": "OIL_EXC_AMP_OUT",
+      "signal_via_xy_mm": [
+        74.8,
+        30.4
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+        "ground_via_xy_mm": [
+          72.6,
+          28.2
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.3041630560342625
+          },
+          "In2.Cu": {
+            "length_mm": 3.3041630560342625
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 11.296812288903292,
+        "screen_loop_inductance_nH": 30.75691452220626
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 52,
+      "signal_via_uuid": "0cc1040f-f3c3-4402-af1c-aef2298a5277",
+      "net": "OIL_SIG",
+      "signal_via_xy_mm": [
+        8.1,
+        28.25
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+        "ground_via_xy_mm": [
+          11.2179,
+          28.3071
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.831370849898477
+          },
+          "In2.Cu": {
+            "length_mm": 3.831370849898477
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173874,
+        "screen_loop_length_mm": 12.351227876631729,
+        "screen_loop_inductance_nH": 34.06855052099999
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 53,
+      "signal_via_uuid": "479d552a-0ae8-5c84-a424-5bea68ee866e",
+      "net": "OIL_SIG",
+      "signal_via_xy_mm": [
+        13.7,
+        22.4
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+        "ground_via_xy_mm": [
+          15.7032,
+          21.15
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 2.362741699796952
+          },
+          "In2.Cu": {
+            "length_mm": 2.362741699796952
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884160567,
+        "screen_loop_length_mm": 9.413969576426018,
+        "screen_loop_inductance_nH": 24.94408728716497
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 54,
+      "signal_via_uuid": "fd6080e3-35ea-419c-98a1-786a3f58331d",
+      "net": "OIL_SIG",
+      "signal_via_xy_mm": [
+        21.15,
+        37.3
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "d45fed1a-9561-44cf-9969-767765783376",
+        "ground_via_xy_mm": [
+          20.93,
+          36.479
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 0.4828427124746191
+          },
+          "In2.Cu": {
+            "length_mm": 0.4828427124746191
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 5.654171601784004,
+        "screen_loop_inductance_nH": 13.828792521987436
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 55,
+      "signal_via_uuid": "fef4218c-7235-4462-8723-4cbebabcc710",
+      "net": "OIL_SIG",
+      "signal_via_xy_mm": [
+        42.75,
+        38.6
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "7b5cb19f-890e-4a23-a261-041b15d76e17",
+        "ground_via_xy_mm": [
+          43.351,
+          37.999
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 1.182842712474619
+          },
+          "In2.Cu": {
+            "length_mm": 1.182842712474619
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173829,
+        "screen_loop_length_mm": 7.054171601784004,
+        "screen_loop_inductance_nH": 17.87709305296889
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 56,
+      "signal_via_uuid": "2fc920da-e441-49b3-99ee-0bc322e4db58",
+      "net": "UART0_RX",
+      "signal_via_xy_mm": [
+        71,
+        4.79
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+        "ground_via_xy_mm": [
+          71,
+          7.5
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 3.389949493661167
+          },
+          "In2.Cu": {
+            "length_mm": 3.389949493661167
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173784,
+        "screen_loop_length_mm": 11.468385164157091,
+        "screen_loop_inductance_nH": 31.293189765059456
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 57,
+      "signal_via_uuid": "746c3d8b-e0cd-481e-af01-fc99ce5941fc",
+      "net": "UART0_RX",
+      "signal_via_xy_mm": [
+        84.2423,
+        24.8242
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "84007739-5138-50e7-875f-6861225ff66c",
+        "ground_via_xy_mm": [
+          80.169766,
+          22.625
+        ],
+        "ground_via_drill_mm": 0.2,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 4.676955262170047
+          },
+          "In2.Cu": {
+            "length_mm": 4.676955262170047
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173753,
+        "screen_loop_length_mm": 14.042396701174845,
+        "screen_loop_inductance_nH": 39.45412285240004
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 58,
+      "signal_via_uuid": "b3cd08fc-2916-4093-a426-cde1e985d162",
+      "net": "UART0_TX",
+      "signal_via_xy_mm": [
+        78.4234,
+        8.2321
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+        "ground_via_xy_mm": [
+          79.1,
+          13
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 5.821320343559638
+          },
+          "In2.Cu": {
+            "length_mm": 5.821320343559638
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173923,
+        "screen_loop_length_mm": 16.33112686395406,
+        "screen_loop_inductance_nH": 46.87098437254662
+      },
+      "logic_margin_proven": false
+    },
+    {
+      "index": 59,
+      "signal_via_uuid": "ecc7d41a-f12f-497b-ae51-66a03f769475",
+      "net": "UART0_TX",
+      "signal_via_xy_mm": [
+        82.9548,
+        26.8261
+      ],
+      "status": "TWO_EXPLICIT_COPPER_CORRIDORS_FOUND",
+      "solution": {
+        "ground_via_uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+        "ground_via_xy_mm": [
+          87.475,
+          29.4
+        ],
+        "ground_via_drill_mm": 0.3,
+        "paths": {
+          "In1.Cu": {
+            "length_mm": 5.011269837220808
+          },
+          "In2.Cu": {
+            "length_mm": 5.011269837220808
+          }
+        },
+        "reference_access_radius_mm": 0.5842430884173853,
+        "screen_loop_length_mm": 14.711025851276386,
+        "screen_loop_inductance_nH": 41.606452421712234
+      },
+      "logic_margin_proven": false
+    }
+  ],
+  "gnd02_desktop_complete": false,
+  "physical_test_claimed": false
+}

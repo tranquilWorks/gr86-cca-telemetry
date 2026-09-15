@@ -1,0 +1,45 @@
+{
+  "milestone": "I28 electrical/power pre-fabrication signoff",
+  "ecad_change": {
+    "U121_before": "LM5164DDAR",
+    "U121_after": "LM5164QDDARQ1",
+    "LCSC": "C2072225",
+    "footprint_or_routing_change": false
+  },
+  "model_status": {
+    "LM5164_Q1": "TI unencrypted PSpice model acquired; stock ngspice cannot execute its PSpice A-device primitives",
+    "LM63615_Q1": "TI model acquired; Cadence encrypted",
+    "full_vendor_macromodel_spice_claim": false
+  },
+  "input_bounds": {
+    "uv_trip_post_diode_V": [
+      7.4253846153846155,
+      7.651538461538461
+    ],
+    "uv_reenable_post_diode_V": [
+      7.726923076923077,
+      8.134
+    ],
+    "ov_trip_post_diode_V": [
+      19.7,
+      20.3
+    ],
+    "deep_6V_crank": "intentional UV shutdown/restart, not ride-through",
+    "load_dump": "LTC4367/Q101 isolation is primary defense; downstream LM5164-Q1 is not credited with directly absorbing unsuppressed raw load dump"
+  },
+  "release_12V": {
+    "5V_output_burden_W": 2.3326875,
+    "efficiency_floor": 0.8,
+    "pessimistic_series_diode_drop_V": 1.15,
+    "U121_VIN_V": 10.687669348522192,
+    "U121_input_A": 0.27282462433244925,
+    "U121_fsw_Hz": 395569.62025316455,
+    "U121_inductor_ripple_A_pp": 0.14312007250108277,
+    "U121_release_peak_A": 0.5380975362505414,
+    "U151_nominal_V": 3.364729458917836,
+    "U151_ripple_A_pp": 0.1834080987626556,
+    "U151_release_peak_A": 0.5417040493813278,
+    "U151_0p75A_stress_peak_A": 0.8417040493813278
+  },
+  "desktop_disposition": "PASS_WITH_PHYSICAL_QUALIFICATION"
+}

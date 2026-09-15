@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "b470_r0.47_slow",
+    "bulk_uF": 470,
+    "damp": 0.47,
+    "top": 11500,
+    "isolate": true,
+    "slow": true,
+    "mode": "slow"
+  },
+  "returncode": 0,
+  "completed": true,
+  "samples": 60330,
+  "end_s": 0.12,
+  "main_peak": 3.53328223,
+  "main_final": 3.30007622,
+  "vin_min_output_delta": -2.346934197146297e-18,
+  "ready_final": 1.0,
+  "u151_average_current_max": 1.33486838,
+  "u121_average_current_max": 1.03939659,
+  "active_min": 3.30007621,
+  "waveform_sha256": "293ba467b578fa838f4d21b3b118fce947229a4f95705392305265e5a9c0d7a5"
+}

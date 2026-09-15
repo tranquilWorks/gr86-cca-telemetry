@@ -1,0 +1,14 @@
+/usr/bin/ld: /tmp/cc0AMkbd.o: in function `rmc(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, gps::RmcData&)':
+protocol_test.cpp:(.text+0x25f): undefined reference to `gps::parseRmcSentence(char*, gps::RmcData&)'
+/usr/bin/ld: /tmp/cc0AMkbd.o: in function `main':
+protocol_test.cpp:(.text.startup+0x323): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x348): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x367): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x383): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x3a2): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x4db): undefined reference to `gps::parseAntennaStatus(char const*, unsigned char&)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x55d): undefined reference to `gps::parseAntennaStatus(char const*, unsigned char&)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x5ad): undefined reference to `gps::parseAntennaStatus(char const*, unsigned char&)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x610): undefined reference to `gps::parsePmtkAck(char const*, unsigned short&, unsigned char&)'
+/usr/bin/ld: protocol_test.cpp:(.text.startup+0x6c6): undefined reference to `gps::checksumOk(char const*, unsigned long)'
+collect2: error: ld returned 1 exit status

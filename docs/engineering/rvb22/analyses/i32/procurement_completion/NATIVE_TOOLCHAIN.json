@@ -1,0 +1,11 @@
+{
+  "container": "kicad/kicad:9.0.9",
+  "digest": "sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729",
+  "native_version": "9.0.9",
+  "execution": "Docker on local engineering host; QT_QPA_PLATFORM=offscreen; no display or hardware connection",
+  "results": "native/RESULT.json",
+  "baseline": "ad507920488976ff03e4598e79c9bbe5e9f0ba3b",
+  "new_SPICE_run": false,
+  "new_thermal_run": false,
+  "new_firmware_build": false
+}

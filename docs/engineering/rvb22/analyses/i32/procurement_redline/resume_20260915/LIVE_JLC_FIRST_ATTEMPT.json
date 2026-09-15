@@ -1,0 +1,188 @@
+{
+  "checked_revision": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+  "rows": [
+    {
+      "refs": [
+        "C152",
+        "C154",
+        "C165"
+      ],
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "url": "https://jlcpcb.com/partdetail/C342967",
+      "retrieved_at_UTC": "2026-09-15T18:21:24.396008+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:33 GMT",
+      "response_sha256": "bc58eb1e5309e7e139b345fb81c88d3553786a397a37f12be7844c8aa26c8e17",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "fixtureFlag": false,
+      "MSL": "MSL 1",
+      "stock": 3670,
+      "preorder_minimum": 390,
+      "canPresaleNumber": 3655,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "exact_identity_verified": true,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "L121"
+      ],
+      "MPN": "BPCI00121280470M00",
+      "LCSC": "C6471075",
+      "url": "https://jlcpcb.com/partdetail/C6471075",
+      "retrieved_at_UTC": "2026-09-15T18:21:24.397049+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:33 GMT",
+      "response_sha256": "74a4fc252791dc26ec6e0fc2f2335d2f1159bea97ce4a792fa87260544780f74",
+      "status": "CHECK_FAILED",
+      "error": "KeyError: 'noBuyReason'"
+    },
+    {
+      "refs": [
+        "R155"
+      ],
+      "MPN": "PTFR0603B11K8N9",
+      "LCSC": "C19679768",
+      "url": "https://jlcpcb.com/partdetail/C19679768",
+      "retrieved_at_UTC": "2026-09-15T18:21:24.397691+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:32 GMT",
+      "response_sha256": "ba9887240a3a8c9e7aa086902cbdc31ad8956fb9d2eaae0516373b7ecbf16599",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "fixtureFlag": false,
+      "MSL": "MSL 1",
+      "stock": 3964,
+      "preorder_minimum": 85,
+      "canPresaleNumber": 3949,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "exact_identity_verified": true,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R156"
+      ],
+      "MPN": "PLT1206Z5051LBTS",
+      "LCSC": "C4074185",
+      "url": "https://jlcpcb.com/partdetail/C4074185",
+      "retrieved_at_UTC": "2026-09-15T18:21:24.398288+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:33 GMT",
+      "response_sha256": "cc6896bc2864222af6addb6c20fc4156a2aebaf298fab6f6cfa8a6ad288a1b16",
+      "status": "CHECK_FAILED",
+      "error": "KeyError: 'noBuyReason'"
+    },
+    {
+      "refs": [
+        "R160"
+      ],
+      "MPN": "RT0805BRB076K34L",
+      "LCSC": "C864499",
+      "url": "https://jlcpcb.com/partdetail/C864499",
+      "retrieved_at_UTC": "2026-09-15T18:21:33.581376+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:40 GMT",
+      "response_sha256": "7523f64d3e0e5eeb90c225b479fc934805ead7c982385fed04d30f1ba4eeec04",
+      "package": "0805",
+      "assemblyMode": "smtWeld",
+      "fixtureFlag": false,
+      "MSL": "MSL 1",
+      "stock": 0,
+      "preorder_minimum": 72,
+      "canPresaleNumber": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "exact_identity_verified": true,
+      "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+    },
+    {
+      "refs": [
+        "R161",
+        "R163",
+        "R170"
+      ],
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "url": "https://jlcpcb.com/partdetail/C23067434",
+      "retrieved_at_UTC": "2026-09-15T18:21:33.716388+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:41 GMT",
+      "response_sha256": "111b39fb8b646dc17c68c303caa997c5c7abd510356ae85fcf3608f242e47659",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "fixtureFlag": false,
+      "MSL": "MSL 1",
+      "stock": 12905,
+      "preorder_minimum": 19,
+      "canPresaleNumber": 12782,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "exact_identity_verified": true,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R162"
+      ],
+      "MPN": "PTFR0603Q4K70N9",
+      "LCSC": "C23067437",
+      "url": "https://jlcpcb.com/partdetail/C23067437",
+      "retrieved_at_UTC": "2026-09-15T18:21:33.812979+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:40 GMT",
+      "response_sha256": "1ad753d7ad62facab4b2b4cc3f8c78d89b5e1db75ec14ee9e5e10dcfc8071bf2",
+      "status": "CHECK_FAILED",
+      "error": "KeyError: 'noBuyReason'"
+    },
+    {
+      "refs": [
+        "R169"
+      ],
+      "MPN": "PTFR0603B3K01N9",
+      "LCSC": "C2692830",
+      "url": "https://jlcpcb.com/partdetail/C2692830",
+      "retrieved_at_UTC": "2026-09-15T18:21:33.863605+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:40 GMT",
+      "response_sha256": "57a9ca7fcc368436cedf89a932b48c63f136fe98e4088efdfe6d008054b166f6",
+      "status": "CHECK_FAILED",
+      "error": "KeyError: 'noBuyReason'"
+    },
+    {
+      "refs": [
+        "U101"
+      ],
+      "MPN": "LTC4367HMS8#PBF",
+      "LCSC": "C688370",
+      "url": "https://jlcpcb.com/partdetail/C688370",
+      "retrieved_at_UTC": "2026-09-15T18:21:41.448235+00:00",
+      "http_status": 200,
+      "response_Date": "Tue, 15 Sep 2026 18:21:47 GMT",
+      "response_sha256": "7427f0c9fd74a97e9ba27d4117dda5f3f7dc8764dd433390667db938e26beb2e",
+      "package": "MSOP-8",
+      "assemblyMode": "smtWeld",
+      "fixtureFlag": false,
+      "MSL": "MSL 1",
+      "stock": 2,
+      "preorder_minimum": 2,
+      "canPresaleNumber": 1,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "exact_identity_verified": true,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    }
+  ],
+  "physical_tests": 0,
+  "order_placed": false,
+  "supplier_process_approval": false
+}

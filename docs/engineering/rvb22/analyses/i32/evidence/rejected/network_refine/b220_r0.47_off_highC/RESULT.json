@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "name": "b220_r0.47_off_highC",
+    "bulk": 220,
+    "damp": 0.47,
+    "top": 11300,
+    "mode": "off",
+    "bulk_scale": 1.2,
+    "ceramic": 1.1,
+    "highref": true,
+    "no_off_load": true
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 426631,
+  "main_peak": 3.38852241,
+  "active_min": 0.00520185272,
+  "final_main": 3.31085538,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": -0.10718302000000035,
+  "input_switch_peak_A": 0.690237915,
+  "I151max": 0.843798879,
+  "I121max": 0.771151756,
+  "ready_rises": 2,
+  "waveform_sha256": "864dc15cd2aeceb69ae56ebe462d1649843c4f122d4d954af29e2a7f61a84d9f"
+}

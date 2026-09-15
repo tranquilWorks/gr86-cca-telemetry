@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "b100_r0.082_normal",
+    "bulk_uF": 100,
+    "damp": 0.082,
+    "top": 11500,
+    "isolate": true,
+    "slow": false,
+    "mode": "normal"
+  },
+  "returncode": 0,
+  "completed": true,
+  "samples": 60429,
+  "end_s": 0.12,
+  "main_peak": 3.37537082,
+  "main_final": 3.30007622,
+  "vin_min_output_delta": -2.346934197146297e-18,
+  "ready_final": 1.0,
+  "u151_average_current_max": 0.518292399,
+  "u121_average_current_max": 0.585840072,
+  "active_min": 3.30007622,
+  "waveform_sha256": "92dfcd6e2bcfd37c7e33785ee44ff1b3aaaa6dee912cdcf4368bd920f6a3fdb7"
+}

@@ -1,0 +1,22 @@
+{
+  "query": "S5JHE3_A/H",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:19.712619+00:00",
+  "response_sha256": "a9c4f7cb86906f6a99d15893012de98767b2e0d718e7740dab9ea353cbdc3d7e",
+  "rows": [
+    {
+      "componentCode": "C511410",
+      "componentModelEn": "S5JHE3_A/H",
+      "componentBrandEn": "Vishay Intertech",
+      "stockCount": 403,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 25,
+      "urlSuffix": "VishayIntertech-S5JHE3_AH/C511410",
+      "componentSpecificationEn": "SMC(DO-214AB)",
+      "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2004181706_Vishay-Intertech-S5JHE3-A-H_C511410.pdf"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "I32_final_startup_load0",
+    "pwl": "0 0 1m 0 2m 12 ",
+    "stop": 0.08,
+    "load": 0,
+    "cap_scale": 1.265,
+    "events": [
+      [
+        "inrush",
+        0.02,
+        0.05,
+        0.03
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  {
+    "name": "I32_final_startup_load0.5",
+    "pwl": "0 0 1m 0 2m 12 ",
+    "stop": 0.08,
+    "load": 0.75,
+    "cap_scale": 1.265,
+    "events": [
+      [
+        "inrush",
+        0.02,
+        0.05,
+        0.03
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  {
+    "name": "I32_final_load_dump_100V_400ms",
+    "pwl": "0 0 1m 0 2m 12 60m 12 65m 100 465m 100 470m 12",
+    "stop": 0.53,
+    "step": 2e-06,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.067,
+        0.01
+      ],
+      [
+        "reconnect",
+        0.47,
+        0.52,
+        0.05
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "clamp_temperature_C": -40,
+    "clamp_minimum": true,
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "load": 0.75,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  {
+    "name": "I32_final_negative_150V_2ms",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m -150 62.001m -150 62.002m 12",
+    "stop": 0.12,
+    "step": 5e-07,
+    "cable_R": 10,
+    "events": [
+      [
+        "negative",
+        0.06,
+        0.063,
+        0.003
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.063
+    ],
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load": 0.75,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  {
+    "name": "I32_final_fast_clamp_L3e-08",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12",
+    "stop": 0.1,
+    "step": 2e-07,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.060052
+    ],
+    "clamp_lead_L": 3e-08,
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load": 0.75,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  {
+    "name": "I32_final_controller_high_R101_crank",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.1m 6 90m 6 91m 12",
+    "stop": 0.15,
+    "events": [
+      [
+        "UV",
+        0.06,
+        0.061,
+        0.001
+      ],
+      [
+        "reconnect",
+        0.091,
+        0.14,
+        0.05
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "r101": 12826.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load": 0.75,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  }
+]

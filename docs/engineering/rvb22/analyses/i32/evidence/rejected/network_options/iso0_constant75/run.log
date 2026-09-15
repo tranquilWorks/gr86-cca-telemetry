@@ -1,0 +1,130 @@
+Using SPARSE 1.3 as Direct Linear Solver
+
+Note: No compatibility mode selected!
+
+
+Circuit: i32 exploratory network alternative; not manufacturer u151 model
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+bat                                          0
+cable_r                            4.76374e-29
+raw_12v                            4.76374e-29
+fused_12v                          7.14561e-29
+rev_blocked_12v                   -5.88387e-22
+protect_ctrl_vin                  -5.88387e-22
+protected_12v                      2.78429e-23
+input_uv                          -3.90257e-23
+input_ov                          -1.47097e-23
+input_shdn                        -5.88387e-22
+one                                          1
+uv_ok                                    1e-09
+ov_bad                                   1e-09
+pvalid                                       0
+ptimer                                       0
+allow                                        0
+allow_d                                      0
+input_gate_drive                  -3.63993e-18
+input_gate                        -3.63993e-18
+input_gate_slew                   -3.63993e-18
+qsrc                                2.7843e-23
+buck_feed                          2.78429e-23
+vin5                               2.78428e-23
+en5                                5.76287e-24
+on5                                      1e-09
+xu121.age                                    0
+xu121.active                                 0
+xu121.ref                                    0
+xu121.neg                                    0
+xu121.req                         -7.80927e-23
+fb5                                 2.4404e-24
+xu121.integral                               0
+xu121.cmd                                    0
+xu121.command                                0
+xu121.drive                                  0
+source5                            9.98122e-24
+xu121.active_f                               0
+xu121.sense                        9.98123e-24
+sw5                                9.98123e-24
+winding5                           9.98123e-24
+c127r                                        0
+c128r                                        0
+ripple5                            9.98123e-24
+rail5                              9.98122e-24
+vin                                9.98122e-24
+c151_esr                                     0
+enable                                   1e-09
+xu151.age                                    0
+xu151.active                                 0
+xu151.ref                                    0
+xu151.neg                                    0
+xu151.req                         -1.21665e-27
+fb                                 8.44893e-29
+xu151.integral                               0
+xu151.cmd                                    0
+xu151.command                                0
+xu151.drive                                  0
+source                             2.84284e-28
+xu151.active_f                               0
+xu151.sense                        2.84309e-28
+sw                                 2.84309e-28
+winding                            2.84309e-28
+c155_esr                                     0
+c156_esr                                     0
+c157_esr                                     0
+c158_esr                                     0
+main                               2.84281e-28
+c201_esr                                     0
+c204_esr                                     0
+c202_esr                                     0
+c205_esr                                     0
+c301_esr                                     0
+c302_esr                                     0
+c404_esr                                     0
+c531_esr                                     0
+damped                             2.84281e-28
+c206_esr                                     0
+requested                                 0.45
+valid                                    1e-09
+timer                                        0
+ready                                        0
+reset_ctl                                    1
+reset_raw                          9.97476e-30
+en                                 3.49117e-29
+breset#branch                                0
+bready#branch                                0
+v.xu151.vsense#branch             -2.84309e-40
+b.xu151.bdrive#branch              2.84309e-40
+b.xu151.bcmd#branch                          0
+b.xu151.breq#branch                          0
+b.xu151.bneg#branch                          0
+b.xu151.bref#branch                          0
+b.xu151.bactive#branch                       0
+v.xu121.vsense#branch             -9.98123e-36
+b.xu121.bdrive#branch              9.98123e-36
+b.xu121.bcmd#branch                          0
+b.xu121.breq#branch                          0
+b.xu121.bneg#branch                          0
+b.xu121.bref#branch                          0
+b.xu121.bactive#branch                       0
+ballow#branch                                0
+bpvalid#branch                               0
+l151#branch                        3.26149e-31
+l121#branch                        2.47301e-29
+lcable#branch                     -4.76374e-28
+vload#branch                                 0
+vlogic#branch                           -5e-12
+vbat#branch                        4.76374e-28
+
+ Reference value :  1.54753e-02 Reference value :  3.21313e-02 Reference value :  4.42232e-02 Reference value :  5.36034e-02doAnalyses: TRAN:  Timestep too small; time = 0.0616079, timestep = 1.56608e-17: trouble with node "d.xu151.dlo#internal"
+
+
+tran simulation(s) aborted
+I31_FINISHED
+ngspice-42 done

@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "name": "c22_load0.45",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "c160": 2.2e-05,
+    "constant": 0.45
+  },
+  "returncode": 0,
+  "deck_sha256": "4622c3952121e3c292be9a7fb6b78eedc9deda0d546ace3f213c237cc52a7060",
+  "completed": false,
+  "error": ""
+}

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844916",
+  "componentModelEn": "CRCW0603100KFKEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121919_Vishay-Intertech-CRCW0603100KFKEA_C844916.pdf",
+  "describe": "-55\u2103~+155\u2103 100k\u03a9 100mW 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 216189,
+  "preMinPurchaseNum": 2239,
+  "canPresaleNumber": 205032,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844916",
+  "retrieved_at_UTC": "2026-09-15T21:03:46.320735+00:00",
+  "response_sha256": "3d6ac685abc685fdac3c57abfc68421a0568330bb30daa3216edb907ed46a977"
+}

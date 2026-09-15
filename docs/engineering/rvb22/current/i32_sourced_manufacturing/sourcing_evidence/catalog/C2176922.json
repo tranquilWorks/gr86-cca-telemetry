@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2176922",
+  "componentModelEn": "CGA3E2X7R1H223K080AE",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E2X7R1H223K080AE_C2176922.pdf",
+  "describe": "22nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 963,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2176922",
+  "retrieved_at_UTC": "2026-09-15T21:03:41.480148+00:00",
+  "response_sha256": "b708a36b26d9a814203917404e0f12e3f0028ce790a82d562b298b358f2b9911"
+}

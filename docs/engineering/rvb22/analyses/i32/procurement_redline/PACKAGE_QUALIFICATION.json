@@ -1,0 +1,925 @@
+{
+  "status": "PASS_DESKTOP_PACKAGE_PAD_NET_STENCIL_AND_MODEL_SCREEN",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "changed_refs": 13,
+  "rows": [
+    {
+      "ref": "L121",
+      "MPN": "BPCI00121280470M00",
+      "LCSC": "C6471075",
+      "library": "RevB:I32_PROCUREMENT_L121",
+      "footprint_sha256": "62791325f5cbda2be4dd82985cbcd4bf73d3b33a36b9617956ccf05d027d84ae",
+      "side": "F.Cu",
+      "at": [
+        59.8,
+        29.05,
+        90
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            0,
+            -4.9,
+            90
+          ],
+          "size": [
+            5.4,
+            2.8
+          ],
+          "net": "5V_SW",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0,
+            4.9,
+            90
+          ],
+          "size": [
+            5.4,
+            2.8
+          ],
+          "net": "5V_SOURCE",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.16926576932957035,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_L121.step",
+      "maximum_body_mm": [
+        12.5,
+        12.5,
+        8.0
+      ],
+      "model_sha256": "012827c008c724df60c1e5c3be7b19e7256c292075d3cf10b0846c84b075f756",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R155",
+      "MPN": "PTFR0603B11K8N9",
+      "LCSC": "C19679768",
+      "library": "RevB:I32_PROCUREMENT_R155",
+      "footprint_sha256": "e745f6962bd7cb45168e46cd9d55f7f27aab8b08847c987403969f2514b18506",
+      "side": "B.Cu",
+      "at": [
+        44.0,
+        10.8,
+        90
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0,
+            90
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_SOURCE",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0,
+            90
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_FB_ADJ",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.20315899753890335,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R155.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "0f0c8defdcd9cffd023581c836e61cbc068773961e7c442b740bcc510300c875",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R156",
+      "MPN": "PLT1206Z5051LBTS",
+      "LCSC": "C4074185",
+      "library": "RevB:I32_PROCUREMENT_R156",
+      "footprint_sha256": "28732fba82235982b73ab64d514f4111891ac94a5ccb22203d85729ed7219919",
+      "side": "B.Cu",
+      "at": [
+        41.25,
+        10.101,
+        -90
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -1.524,
+            0,
+            270
+          ],
+          "size": [
+            0.9144,
+            1.7018
+          ],
+          "net": "3V3_FB_ADJ",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            1.524,
+            0,
+            270
+          ],
+          "size": [
+            0.9144,
+            1.7018
+          ],
+          "net": "GND",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.30805948066166083,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R156.step",
+      "maximum_body_mm": [
+        3.4032,
+        1.7272,
+        0.8382
+      ],
+      "model_sha256": "a93960ff860ceb9a15c4834c0f4ad3597ca07c5d0935c50a705f1761b92ef198",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R160",
+      "MPN": "RT0805BRB076K34L",
+      "LCSC": "C864499",
+      "library": "RevB:I32_PROCUREMENT_R160",
+      "footprint_sha256": "a40cecb94598ee48a551434e110cd3a64b8a129f15cb94575c0f686983737fd5",
+      "side": "F.Cu",
+      "at": [
+        27,
+        -7.5
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -1.025,
+            0
+          ],
+          "size": [
+            1.0,
+            1.45
+          ],
+          "net": "3V3_VIN",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            1.025,
+            0
+          ],
+          "size": [
+            1.0,
+            1.45
+          ],
+          "net": "3V3_ISO_SNS",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.24319805153394913,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R160.step",
+      "maximum_body_mm": [
+        2.1,
+        1.35,
+        0.6
+      ],
+      "model_sha256": "e20321a795b07c624dba2ebb1a7727554907337c5a03993c7013fb14abf358cb",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R161",
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "library": "RevB:I32_PROCUREMENT_R161",
+      "footprint_sha256": "29fdfa1d402144d9fe2b5be5d77303f8f326deb94fb80250aaf7bb3ef1046900",
+      "side": "F.Cu",
+      "at": [
+        30.5,
+        -7.5
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_ISO_SNS",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "GND",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.42500000000000077,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R161.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "c4d10ae18fa4b3d448bd15992b8d00860cea42566ef9e77320e533a6d1eb5375",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R162",
+      "MPN": "PTFR0603Q4K70N9",
+      "LCSC": "C23067437",
+      "library": "RevB:I32_PROCUREMENT_R162",
+      "footprint_sha256": "245865c88806d8bd38a74de4204e7ddd84f62eb9c1996a0059684240e621fcce",
+      "side": "F.Cu",
+      "at": [
+        27,
+        -4
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "+5V",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_ISO_ENABLE",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.3854194988955911,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R162.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "0b3a847fd13707e5ff8ea19bd0827e81b2618212671f6bc720590729f96d1a5c",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R163",
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "library": "RevB:I32_PROCUREMENT_R163",
+      "footprint_sha256": "89be3d784917df9fd203a6955e99c685c05d1c36fef8025aa01cbf6e7d2c031f",
+      "side": "F.Cu",
+      "at": [
+        30.5,
+        -4
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_ISO_ENABLE",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "GND",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.18284271247461809,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R163.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "707c3ed5248ee4f3edaa481145a9332ac49b1a179a976739869f149554e69e3a",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R169",
+      "MPN": "PTFR0603B3K01N9",
+      "LCSC": "C2692830",
+      "library": "RevB:I32_PROCUREMENT_R169",
+      "footprint_sha256": "5982422f075aca0574a5652566236df4892c2c62ae82766795506e4004f5def3",
+      "side": "B.Cu",
+      "at": [
+        79.8,
+        1.7,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "+3V3",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_BULK_ENABLE",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.40000000000000013,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R169.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "1c192d1898eca17b8fa1cfeb62195cc3eac08e6c4a6dd1c5ad2e6ae0650c63c7",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "R170",
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "library": "RevB:I32_PROCUREMENT_R170",
+      "footprint_sha256": "aecd819e47b40cd34d437d17736b0705f55570bcdf8e8a358f0fd02143dc3734",
+      "side": "B.Cu",
+      "at": [
+        83.2,
+        1.7,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "3V3_BULK_ENABLE",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.95,
+            0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ],
+          "net": "GND",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.29999999999999716,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R170.step",
+      "maximum_body_mm": [
+        1.8,
+        1.0,
+        0.5
+      ],
+      "model_sha256": "ea72a49cbb923093490d12d1367e18481f262080f9b88974f5d955cfb8a710ec",
+      "model_kind": "Generic manufacturer-dimensional maximum-body envelope; not vendor CAD"
+    },
+    {
+      "ref": "U101",
+      "MPN": "LTC4367HMS8#PBF",
+      "LCSC": "C688370",
+      "library": "RevB:I32_PROCUREMENT_U101",
+      "footprint_sha256": "7e817ec6efab09650e473b5191069bc9cf42c3340cebab83b9c1919930a913f8",
+      "side": "B.Cu",
+      "at": [
+        33,
+        30.5
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -2.1125,
+            0.975
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "PROTECT_CTRL_VIN",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            -2.1125,
+            0.325
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "INPUT_UV",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            -2.1125,
+            -0.325
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "INPUT_OV",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            -2.1125,
+            -0.975
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "GND",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            2.1125,
+            -0.975
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "INPUT_SHDN",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            2.1125,
+            -0.325
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "INPUT_FAULT_N",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            2.1125,
+            0.325
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "PROTECTED_12V",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            2.1125,
+            0.975
+          ],
+          "size": [
+            1.625,
+            0.4
+          ],
+          "net": "INPUT_GATE_DRIVE",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.17618080759124152,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.wrl",
+      "model_kind": "Retained KiCad nominal generic package; maximum body/tolerance separately covered by mechanical courtyard +0.30 mm and height allocation"
+    },
+    {
+      "ref": "C152",
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "library": "RevB:I32_PROCUREMENT_C152",
+      "footprint_sha256": "d711d389534110c5ebc73377e0b15717147ee7e41dbb0fdd7f7c90c92267c137",
+      "side": "B.Cu",
+      "at": [
+        40,
+        13.975,
+        -90
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.775,
+            0,
+            270
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "3V3_VIN",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.775,
+            0,
+            270
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "GND",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.48155810378133895,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "model_kind": "Retained KiCad nominal generic package; maximum body/tolerance separately covered by mechanical courtyard +0.30 mm and height allocation"
+    },
+    {
+      "ref": "C154",
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "library": "RevB:I32_PROCUREMENT_C154",
+      "footprint_sha256": "e5b58c15bf09ad77c8b0a20ba7e2c1a389b5f9dd28b4410eb84de58769332ba8",
+      "side": "B.Cu",
+      "at": [
+        30.3,
+        15.2,
+        -90
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.775,
+            0,
+            270
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "3V3_BOOT",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.775,
+            0,
+            270
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "3V3_SW",
+          "layers": [
+            "B.Cu",
+            "B.Mask",
+            "B.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.26895996312169596,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "model_kind": "Retained KiCad nominal generic package; maximum body/tolerance separately covered by mechanical courtyard +0.30 mm and height allocation"
+    },
+    {
+      "ref": "C165",
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "library": "RevB:I32_PROCUREMENT_C165",
+      "footprint_sha256": "1da1589440318b7bfdfc43aba48ad3fef37136d9e978c8bb053ecb90114c813e",
+      "side": "F.Cu",
+      "at": [
+        27,
+        -0.5
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            -0.775,
+            0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "3V3_ENABLE",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0.775,
+            0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ],
+          "net": "GND",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "pad_nets_unchanged": true,
+      "copper_clearance_min_mm": 0.6499999999999986,
+      "mask_paste": "Native per-pad copper/mask/paste layers; no local paste reduction override; global project settings retained",
+      "model_reference": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl",
+      "model_kind": "Retained KiCad nominal generic package; maximum body/tolerance separately covered by mechanical courtyard +0.30 mm and height allocation"
+    }
+  ],
+  "manufacturer_evidence": [
+    {
+      "file": "L121-manufacturer.pdf",
+      "sha256": "805a8e13e5586f4154d79776e6625c7aa66d51e31156b565813e0be08ebb357c",
+      "basis": "Chilisin/Pulse BPCI series, p2: BPCI00121280 body and recommended PCB lands",
+      "source_url": "https://jlcpcb.com/partdetail/C6471075"
+    },
+    {
+      "file": "R156-plt.pdf",
+      "sha256": "67a3288cc599e975ea20e403f26cafb14ab488e8c2d13dec757ccdf13a52607f",
+      "basis": "Vishay PLT Rev 11-May-2026: 1206 body and electrical limits",
+      "source_url": "https://www.vishay.com/docs/60030/plt.pdf"
+    },
+    {
+      "file": "R156-landpatterns.pdf",
+      "sha256": "aab906d4cd374abc7b9bd750132aa6612eb350f2c700e98768d9b365dd97aec7",
+      "basis": "Vishay 60119, p1: 1206 recommended land pattern",
+      "source_url": "https://www.vishay.com/docs/60119/landpatterns.pdf"
+    },
+    {
+      "file": "C864499.pdf",
+      "sha256": "0a729d144519a7021c82a0ef242b064e467c70d44afcf9eabd6c7ffdc4b673a3",
+      "basis": "YAGEO RT V16, 6-May-2025, p4: RT0805 dimensions",
+      "source_url": "https://jlcpcb.com/partdetail/C864499"
+    },
+    {
+      "file": "C19679768.pdf",
+      "sha256": "ce6a100ade2073ba8416627461be900b0efb807a330bea476227f7f9128a7ec8",
+      "basis": "Resistor.Today PTFR, p3: 0603 maximum dimensions and land pattern",
+      "source_url": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    {
+      "file": "C342967.pdf",
+      "sha256": "e449d37358784c239856a850a0df4842ef2da1768af3ec4cec89ff789b435c1d",
+      "basis": "TDK CGA series: ordering-code dimensions, CGA3 E maximum body; exact T0Y0N catalog identity bound by current JLC record",
+      "source_url": "https://jlcpcb.com/partdetail/C342967"
+    },
+    {
+      "file": "C688370.pdf",
+      "sha256": "b595ae2b72ddee6102afd1965ff2744e13c7981759f8cfcb7b1c02ca00bce530",
+      "basis": "Analog Devices LTC4367: H-grade ordering table and MS8 drawing 05-08-1660 Rev G",
+      "source_url": "https://jlcpcb.com/partdetail/C688370"
+    }
+  ],
+  "engineering_basis": {
+    "L121": "Manufacturer lands: 5.4 mm width, 2.8 mm depth, 7.0 mm inside gap, 12.6 mm overall; pad centres +/-4.9 mm. 12.5 x12.5 x8.0 mm maximum body, 13.1 mm courtyard. Local 90 degree rotation puts pads along PCB X; passive winding has no electrical polarity. All switch/return networks retained; exact assembly feed orientation remains a supplier setup check.",
+    "R156": "Vishay 60119: 0.156 in overall, 0.084 in inner gap, 0.036 in pad length, 0.067 in width. Converted without scaling the old 0603. 3.4032 x1.7272 x0.8382 mm maximum body. Nonpolar. Original ground-pad centre retained.",
+    "R160": "1.0 x1.45 mm standard 0805 lands at +/-1.025 mm; RT0805 body2.00+/-.10 x1.25+/-.10 x.50+/-.10 mm, terminations.35+/-.20 mm. Land outer span3.05 mm, inner gap1.05 mm, adequate lead overlap even at length/termination extremes. Nonpolar.",
+    "PTFR0603": "Manufacturer a=3.0+/-.2,b=1.2+/-.2,c=1.0+/-.2 mm. Chosen a2.8,b1.2,c1.0: pads.9 x1.2 at+/-.95. Body maximum1.8x1.0x.5 mm. All six references use the qualified pattern, including package-identical replacements.",
+    "C152_C154_C165": "Same CGA3 E body1.6+/-.1 x.8+/-.1 x.8+/-.1 mm; 220 nF,50 V,X7R,10%, nonpolar. Exact T0Y0N MPN retained in all active properties. Existing 0603 lands/models and pin identities preserved; no new DC-bias or voltage-rating credit is taken.",
+    "U101": "HMS8 #PBF is 8-pin MSOP H-grade, -40..125 C. Same pin geometry/net assignment as prior HMS8 #WTRPBF. Retained KiCad MSOP8 generic lands/model are checked against MS8 body3.0+/-.102 mm, leadspan4.9+/-.152 mm, pitch.65 mm and maxheight1.1 mm; land pattern is a generic compatible pattern, not claimed identical to ADI recommendation. Owner accepts loss of #W controlled-manufacturing pedigree."
+  },
+  "native_DRC_findings": 0,
+  "exact_vendor_3D_models_claimed": false,
+  "assembly_validation_performed": false,
+  "physical_tests": 0
+}

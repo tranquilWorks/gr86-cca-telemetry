@@ -1,0 +1,975 @@
+{
+  "status": "COMPLETE_FROZEN_PROCUREMENT_REDLINE_DESKTOP_VERIFIED",
+  "starting_remote_SHA": "1c934f9ddd7a1b823e5136484f525485472528f6",
+  "immutable_pre_redline_CAD_commit": "e5ef8425dbe59c99e99eabb75c04342a47b27561",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+  "gates": {
+    "native_schematic_ERC": true,
+    "native_PCB_DRC": true,
+    "unconnected_pad_net_checks": true,
+    "schematic_PCB_reference_value_net_parity": true,
+    "all_frozen_footprint_package_identities": true,
+    "BOM_exact_frozen_MPN_Cnumber_source_binding": true,
+    "fitted_DNP_local_count_reconciliation": true,
+    "CPL_reference_side_XY_rotation_reconciliation": true,
+    "native_manufacturing_hash_consistency": true,
+    "stackup_and_49_special_vias": true,
+    "I32_native_source_audits": true,
+    "fresh_final_procurement_ngspice": true,
+    "affected_thermal_and_package_desktop_screens": true,
+    "live_exact_frozen_JLC_public_purchase_preorder_paths": true
+  },
+  "desktop_gates_passed": 14,
+  "native": {
+    "ERC": 0,
+    "DRC": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "postconditions": 13,
+    "CAD_files": 157,
+    "fitted_models": 177,
+    "electrical_nets": 145,
+    "net_bearing_pads": 571
+  },
+  "substitutions": {
+    "L121": {
+      "MPN": "BPCI00121280470M00",
+      "LCSC": "C6471075",
+      "Value": "47u /100mOhm 2.5A BPCI",
+      "Manufacturer": "Chilisin / Pulse",
+      "Datasheet": "https://jlcpcb.com/partdetail/ChilisinElec-BPCI00121280470M00/C6471075"
+    },
+    "R155": {
+      "MPN": "PTFR0603B11K8N9",
+      "LCSC": "C19679768",
+      "Value": "11.8k /0.1% 10ppm FB TOP",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "R156": {
+      "MPN": "PLT1206Z5051LBTS",
+      "LCSC": "C4074185",
+      "Value": "5.05k /0.01% 5ppm FB BOTTOM",
+      "Manufacturer": "Vishay",
+      "Datasheet": "https://www.vishay.com/docs/60030/plt.pdf"
+    },
+    "R160": {
+      "MPN": "RT0805BRB076K34L",
+      "LCSC": "C864499",
+      "Value": "6.34k /0.1% 10ppm SNS TOP",
+      "Manufacturer": "YAGEO",
+      "Datasheet": "https://jlcpcb.com/partdetail/C864499"
+    },
+    "R161": {
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "Value": "1k /0.02% 10ppm SNS BOTTOM",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "R162": {
+      "MPN": "PTFR0603Q4K70N9",
+      "LCSC": "C23067437",
+      "Value": "4.7k /0.02% 10ppm ISO EN TOP",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "R163": {
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "Value": "1k /0.02% 10ppm ISO EN BOTTOM",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "R169": {
+      "MPN": "PTFR0603B3K01N9",
+      "LCSC": "C2692830",
+      "Value": "3.01k /0.1% 10ppm BULK EN TOP",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "R170": {
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "Value": "1k /0.02% 10ppm BULK EN BOTTOM",
+      "Manufacturer": "Resistor.Today",
+      "Datasheet": "https://jlcpcb.com/partdetail/C19679768"
+    },
+    "U101": {
+      "MPN": "LTC4367HMS8#PBF",
+      "LCSC": "C688370",
+      "Value": "LTC4367HMS8#PBF",
+      "Manufacturer": "Analog Devices",
+      "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4367.pdf",
+      "Qualification": "Owner accepts H-grade #PBF without #W controlled-manufacturing pedigree; electrical equivalence only"
+    },
+    "C152": {
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "Value": "220n /50V X7R 10%",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N"
+    },
+    "C154": {
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "Value": "220n /50V X7R 10%",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N"
+    },
+    "C165": {
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "Value": "220n /50V X7R 10% EN DELAY",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  "assembly": {
+    "status": "PASS_NATIVE_SOURCE_BOM_CPL_MANUFACTURING_BINDING",
+    "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+    "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+    "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+    "native_postconditions": 13,
+    "fitted": 177,
+    "factory_CPL_rows": 175,
+    "local_install": [
+      "F101",
+      "U401"
+    ],
+    "DNP": [
+      "C203",
+      "R301",
+      "R306"
+    ],
+    "frozen_changed_refs": 13,
+    "frozen_MPN_Cnumber_binding": true,
+    "old_frozen_MPNs_in_active_BOM": 0,
+    "other_unchanged_factory_refs_without_LCSC": 29,
+    "unchanged_unassigned_refs": [
+      "C159",
+      "C161",
+      "C162",
+      "C166",
+      "C167",
+      "C206",
+      "C532",
+      "D101",
+      "D105",
+      "L151",
+      "L406",
+      "Q152",
+      "Q153",
+      "R101",
+      "R102",
+      "R103",
+      "R153",
+      "R157",
+      "R158",
+      "R159",
+      "R164",
+      "R165",
+      "R166",
+      "R167",
+      "R168",
+      "R204",
+      "U152",
+      "U153",
+      "U202"
+    ],
+    "aux_drill_origin_mm": [
+      0,
+      41.288863
+    ],
+    "changed_CPL": [
+      {
+        "ref": "C152",
+        "board_X_mm": 40,
+        "board_Y_mm": 13.975,
+        "side": "bottom",
+        "native_rotation_deg": -90.0,
+        "CPL_X_mm": 40.0,
+        "CPL_Y_mm": 27.313863
+      },
+      {
+        "ref": "C154",
+        "board_X_mm": 30.3,
+        "board_Y_mm": 15.2,
+        "side": "bottom",
+        "native_rotation_deg": -90.0,
+        "CPL_X_mm": 30.3,
+        "CPL_Y_mm": 26.088863
+      },
+      {
+        "ref": "R155",
+        "board_X_mm": 44.0,
+        "board_Y_mm": 10.8,
+        "side": "bottom",
+        "native_rotation_deg": 90.0,
+        "CPL_X_mm": 44.0,
+        "CPL_Y_mm": 30.488863
+      },
+      {
+        "ref": "R156",
+        "board_X_mm": 41.25,
+        "board_Y_mm": 10.101,
+        "side": "bottom",
+        "native_rotation_deg": -90.0,
+        "CPL_X_mm": 41.25,
+        "CPL_Y_mm": 31.187863
+      },
+      {
+        "ref": "R169",
+        "board_X_mm": 79.8,
+        "board_Y_mm": 1.7,
+        "side": "bottom",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 79.8,
+        "CPL_Y_mm": 39.588863
+      },
+      {
+        "ref": "R170",
+        "board_X_mm": 83.2,
+        "board_Y_mm": 1.7,
+        "side": "bottom",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 83.2,
+        "CPL_Y_mm": 39.588863
+      },
+      {
+        "ref": "U101",
+        "board_X_mm": 33,
+        "board_Y_mm": 30.5,
+        "side": "bottom",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 33.0,
+        "CPL_Y_mm": 10.788863
+      },
+      {
+        "ref": "C165",
+        "board_X_mm": 27,
+        "board_Y_mm": -0.5,
+        "side": "top",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 27.0,
+        "CPL_Y_mm": 41.788863
+      },
+      {
+        "ref": "L121",
+        "board_X_mm": 59.8,
+        "board_Y_mm": 29.05,
+        "side": "top",
+        "native_rotation_deg": 90.0,
+        "CPL_X_mm": 59.8,
+        "CPL_Y_mm": 12.238863
+      },
+      {
+        "ref": "R160",
+        "board_X_mm": 27,
+        "board_Y_mm": -7.5,
+        "side": "top",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 27.0,
+        "CPL_Y_mm": 48.788863
+      },
+      {
+        "ref": "R161",
+        "board_X_mm": 30.5,
+        "board_Y_mm": -7.5,
+        "side": "top",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 30.5,
+        "CPL_Y_mm": 48.788863
+      },
+      {
+        "ref": "R162",
+        "board_X_mm": 27,
+        "board_Y_mm": -4,
+        "side": "top",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 27.0,
+        "CPL_Y_mm": 45.288863
+      },
+      {
+        "ref": "R163",
+        "board_X_mm": 30.5,
+        "board_Y_mm": -4,
+        "side": "top",
+        "native_rotation_deg": 0.0,
+        "CPL_X_mm": 30.5,
+        "CPL_Y_mm": 45.288863
+      }
+    ],
+    "gerber_layers": 11,
+    "drill_files": 2,
+    "gerber_job_files": 1,
+    "special_vias": 49,
+    "stock_or_capacity_reserved": false,
+    "physical_tests": 0,
+    "L121_process": "JLC catalog manualWeld/wave handling; supplier process approval required. Remains factory supplied, not a third local-install exception."
+  },
+  "electrical": {
+    "completed": 32,
+    "normal_case_count": 17,
+    "normal_sequence_ok": true,
+    "main_normal_min_V": 3.12786634,
+    "reset_limit_V": 3.11605,
+    "reset_margin_V": 0.011816340000000203,
+    "main_max_V": 3.57660977,
+    "overshoot_margin_V": 0.023390229999999956,
+    "VIN_minus_source_min_V": -0.06700731000000015,
+    "reverse_margin_V": 0.23299268999999984,
+    "L121_peak_A": 0.942206123,
+    "L121_Isat_A": 2.5,
+    "L121_Isat_margin_A": 1.557793877,
+    "L121_Isat_utilization": 0.37688244919999997,
+    "pass": true,
+    "status": "PASS",
+    "elapsed_s": 1056.9515726566315,
+    "candidate_bounds": {
+      "R155": {
+        "mpn": "PTFR0603B11K8N9",
+        "nom": 11800.0,
+        "tol": 0.001,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0033
+      },
+      "R156": {
+        "mpn": "PLT1206Z5051LBTS",
+        "nom": 5050.0,
+        "tol": 0.0001,
+        "tcr_ppm": 5.0,
+        "drift": 0.001,
+        "total_frac": 0.0016
+      },
+      "R160": {
+        "mpn": "RT0805BRB076K34L",
+        "nom": 6340.0,
+        "tol": 0.001,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0033
+      },
+      "R161": {
+        "mpn": "PTFR0603Q1K00N9",
+        "nom": 1000.0,
+        "tol": 0.0002,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0025
+      },
+      "R162": {
+        "mpn": "PTFR0603Q4K70N9",
+        "nom": 4700.0,
+        "tol": 0.0002,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0025
+      },
+      "R163": {
+        "mpn": "PTFR0603Q1K00N9",
+        "nom": 1000.0,
+        "tol": 0.0002,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0025
+      },
+      "R169": {
+        "mpn": "PTFR0603B3K01N9",
+        "nom": 3010.0,
+        "tol": 0.001,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.003
+      },
+      "R170": {
+        "mpn": "PTFR0603Q1K00N9",
+        "nom": 1000.0,
+        "tol": 0.0002,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "total_frac": 0.0025
+      }
+    },
+    "L121": {
+      "mpn": "BPCI00121280470M00",
+      "nom_H": 4.7e-05,
+      "tol": 0.2,
+      "DCR_25C_max_ohm": 0.1,
+      "Isat_A": 2.5,
+      "Irated_A": 2.5,
+      "DCR_155C_max_ohm": 0.15109,
+      "DCR_m55C_est_ohm": 0.06856
+    },
+    "C152_C154_C165": "No electrical parameter change; same 220nF 50V X7R +/-10% behavior retained.",
+    "U101": "No electrical model change: LTC4367HMS8#PBF is the same H-grade LTC4367 electrical device; #W pedigree difference is manufacturing qualification, not circuit function.",
+    "R156_note": "Final JLC procurement choice is PLT1206Z5051LBTS / C4074185, exact 5.05k, +/-0.01%, 5ppm/C. Its manufacturer-qualified 1206 land pattern is applied to the native CAD.",
+    "solver": "/usr/bin/ngspice",
+    "procurement_bound_final": {
+      "R156": {
+        "mpn": "PLT1206Z5051LBTS",
+        "jlc": "C4074185",
+        "nom": 5050.0,
+        "tol": 0.0001,
+        "tcr_ppm": 5.0,
+        "drift": 0.001,
+        "dt_C": 100.0,
+        "package": "1206",
+        "rated_max_C": 125
+      },
+      "R160": {
+        "mpn": "RT0805BRB076K34L",
+        "jlc": "C864499",
+        "nom": 6340.0,
+        "tol": 0.001,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "dt_C": 130.0,
+        "package": "0805",
+        "rated_max_C": 155
+      },
+      "R169": {
+        "mpn": "PTFR0603B3K01N9",
+        "jlc": "C2692830",
+        "nom": 3010.0,
+        "tol": 0.001,
+        "tcr_ppm": 10.0,
+        "drift": 0.001,
+        "dt_C": 100.0,
+        "package": "0603",
+        "rated_max_C": 125
+      }
+    },
+    "source_PCB_sha256": "177454910e8699749c42599a13c613f3155a52760af65763f2c7982ffec90e66",
+    "high_side_1us_confirmation_V": 3.5766084,
+    "superstress_30p08uH_PASS": true,
+    "L121_rating_note": "Manufacturer operating range is -40..125 C including self-heating; -55/155 C resistance corners are deliberate model superstress, not rated operating claims.",
+    "physical_tests": 0,
+    "R160_note": "Final JLC procurement choice is RT0805BRB076K34L / C864499, exact 6.34k, +/-0.1%, 10ppm/C; electrically tighter than the first-run R160 total-error envelope.",
+    "R169_note": "Final JLC procurement choice is PTFR0603B3K01N9 / C2692830, exact 3.01k, +/-0.1%, 10ppm/C; this run explicitly requalifies its looser corner.",
+    "component_stress": {
+      "U152": {
+        "peak_W": 0.5335137927211607,
+        "whole_record_energy_J": 0.024328644512894508
+      },
+      "U153": {
+        "peak_W": 0.25685895427801414,
+        "whole_record_energy_J": 0.01833560441533763
+      },
+      "R165": {
+        "peak_W": 2.2825478623034985,
+        "whole_record_energy_J": 0.003878585476395652
+      }
+    },
+    "control_cases": 6,
+    "raw_waveforms_preserved": 38,
+    "model_class": "Transparent current-mode derivative; not final-source vendor-macromodel or hardware validation",
+    "final_source_binding": "METADATA_ONLY_REBIND.json"
+  },
+  "thermal": {
+    "release_heat_W": 2.940859375,
+    "stacked_80pct_heat_W": 3.0670819555441735,
+    "required_U121_efficiency_at_U151_80pct": 0.8346306359288465,
+    "cases": [
+      {
+        "case": "retained_I25_vector_on_I32_copper",
+        "coarse_board_max_C": 101.64108987205934,
+        "fine_board_max_C": 107.5179680978438,
+        "one_step_allowance_C": 5.876878225784466,
+        "board_screen_with_one_step_C": 113.39484632362827,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_measured_loss_allocation",
+        "coarse_board_max_C": 101.54749526399533,
+        "fine_board_max_C": 107.40959656476468,
+        "one_step_allowance_C": 5.862101300769353,
+        "board_screen_with_one_step_C": 113.27169786553404,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_stacked_80pct_sensitivity",
+        "coarse_board_max_C": 102.02147115774711,
+        "fine_board_max_C": 107.89241522060256,
+        "one_step_allowance_C": 5.870944062855443,
+        "board_screen_with_one_step_C": 113.763359283458,
+        "source_heat_W": 3.0670819555441735
+      }
+    ],
+    "stacked_board_screen_C": 113.763359283458,
+    "local_package_screen": {
+      "U152": {
+        "cases": [
+          {
+            "case": "I32_measured_loss_allocation",
+            "coarse_C": 77.73026218078279,
+            "fine_C": 77.91539009661945,
+            "one_step_C": 78.1005180124561
+          },
+          {
+            "case": "I32_stacked_80pct_sensitivity",
+            "coarse_C": 78.24298675897741,
+            "fine_C": 78.40513530723216,
+            "one_step_C": 78.5672838554869
+          }
+        ],
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.5335137927211607,
+        "conditional_Tj_screen_C": 105.7764872842661,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.223512715733904
+      },
+      "U153": {
+        "cases": [
+          {
+            "case": "I32_measured_loss_allocation",
+            "coarse_C": 87.02894891496881,
+            "fine_C": 89.57924353930674,
+            "one_step_C": 92.12953816364468
+          },
+          {
+            "case": "I32_stacked_80pct_sensitivity",
+            "coarse_C": 87.46682806935053,
+            "fine_C": 90.01162840942177,
+            "one_step_C": 92.55642874949302
+          }
+        ],
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.25685895427801414,
+        "conditional_Tj_screen_C": 105.65623541767174,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.343764582328262
+      }
+    },
+    "L121_conditional_screen": {
+      "peak_as_RMS_A": 0.942206123,
+      "rated_current_A": 2.5,
+      "typical_rise_at_rated_current_C": 40,
+      "global_board_one_step_C": 113.763359283458,
+      "copper_TC_per_K": 0.00393,
+      "allocated_winding_C": 121.60197565712534,
+      "rated_max_including_self_rise_C": 125,
+      "margin_C": 3.3980243428746633,
+      "basis": "Manufacturer BPCI M00 rated-current definition; typical thermal scaling, not guaranteed measurement or validation."
+    },
+    "R156_R169_global_board_to_125C_margin_C": 11.236640716541999,
+    "old_board_correlation_trigger_C": 112.8829809018675,
+    "correlation_trigger_unchanged": true,
+    "mesh_convergence_proven": false,
+    "junction_temperature_proven": false,
+    "immediate_air_proven": false,
+    "physical_tests": 0,
+    "source_rebind": "METADATA_ONLY_REBIND.json"
+  },
+  "mechanics": {
+    "status": "PASS_DECLARED_ENVELOPES",
+    "fitted_count": 177,
+    "populated_checks": 1308,
+    "mated_checks": 529,
+    "interferences": [],
+    "extra_height_mm": 1.71,
+    "nearest": [
+      {
+        "ref": "R408",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.12000000000000456
+      },
+      {
+        "ref": "C159",
+        "obstacle": "W02_upper",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.19999999999999996
+      },
+      {
+        "ref": "L406",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.23009600384333298
+      },
+      {
+        "ref": "C201",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.24699999999999991
+      },
+      {
+        "ref": "C524",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.370000000000001
+      },
+      {
+        "ref": "D402",
+        "obstacle": "J401_mated_plug",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.5500000000000007
+      },
+      {
+        "ref": "L406",
+        "obstacle": "J401_mated_plug",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 0.8499999999999998
+      },
+      {
+        "ref": "C531",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.0190512986136042
+      },
+      {
+        "ref": "R151",
+        "obstacle": "W02_upper",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.0799999999999996
+      },
+      {
+        "ref": "L406",
+        "obstacle": "Adafruit851_full150mm_pigtail",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.1499999999999986
+      },
+      {
+        "ref": "D402",
+        "obstacle": "Adafruit851_full150mm_pigtail",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.173661978001374
+      },
+      {
+        "ref": "C205",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.1940512986136156
+      },
+      {
+        "ref": "R203",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.2449999999999992
+      },
+      {
+        "ref": "U502",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.2990512986136054
+      },
+      {
+        "ref": "J401",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4499999999999993
+      },
+      {
+        "ref": "R403",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4719999999999995
+      },
+      {
+        "ref": "R402",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.4719999999999995
+      },
+      {
+        "ref": "U401",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 1.9470000000000032
+      },
+      {
+        "ref": "D102",
+        "obstacle": "C05_base",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0
+      },
+      {
+        "ref": "R201",
+        "obstacle": "J201_programming_tool",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0454028942973514
+      },
+      {
+        "ref": "R410",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.0692146069119928
+      },
+      {
+        "ref": "F101",
+        "obstacle": "F1_mated_housing",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.145530237493754
+      },
+      {
+        "ref": "U202",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.199051298613611
+      },
+      {
+        "ref": "D402",
+        "obstacle": "T03_full_packet_plus_bow",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.2000000000000033
+      },
+      {
+        "ref": "D102",
+        "obstacle": "W02_lower",
+        "overlap_mm3": 0.0,
+        "clearance_mm": 2.250000000000007
+      }
+    ]
+  },
+  "filled_ground_paths": 23,
+  "return_allocations": {
+    "source_to_load_ground_upper_ohm": 0.01128199978697789,
+    "shared_return_allocation_ohm": 0.015,
+    "C206_to_load_plane_plus_load_barrel_upper_ohm": 0.010919037419879735,
+    "C206_ground_spreading_allocation_ohm": 0.011
+  },
+  "sourceability": {
+    "status": "PASS_EXACT_MPN_CNUMBER_AND_PUBLIC_PURCHASE_PATHS",
+    "unique_parts": 9,
+    "changed_fitted_references": 13,
+    "rows": [
+      {
+        "refs": [
+          "R155"
+        ],
+        "MPN": "PTFR0603B11K8N9",
+        "LCSC": "C19679768",
+        "url": "https://jlcpcb.com/partdetail/C19679768",
+        "retrieved_at_UTC": "2026-09-14T23:04:32.466636+00:00",
+        "response_sha256": "9a42b7010332da879c5d4c56f0d3f962a3d9ffce845f65b6e3cad54d9657086c",
+        "package": "0603",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+155\u2103 100V 100mW 11.8k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+        "datasheet_url": null,
+        "stock": 3984,
+        "preorder_minimum": 85,
+        "canPresaleNumber": 3969,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "R161",
+          "R163",
+          "R170"
+        ],
+        "MPN": "PTFR0603Q1K00N9",
+        "LCSC": "C23067434",
+        "url": "https://jlcpcb.com/partdetail/C23067434",
+        "retrieved_at_UTC": "2026-09-14T23:04:38.601266+00:00",
+        "response_sha256": "57d4ccfa615394cf9a48568695dbadef1ff712b2725d63746061150dea19059f",
+        "package": "0603",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+155\u2103 100V 100mW 1k\u03a9 Thin Film Resistor \u00b10.02% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+        "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280131_RESI-PTFR0603Q1K00N9_C23067434.pdf",
+        "stock": 12948,
+        "preorder_minimum": 19,
+        "canPresaleNumber": 12825,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "R162"
+        ],
+        "MPN": "PTFR0603Q4K70N9",
+        "LCSC": "C23067437",
+        "url": "https://jlcpcb.com/partdetail/C23067437",
+        "retrieved_at_UTC": "2026-09-14T23:04:48.994128+00:00",
+        "response_sha256": "756e532ab541e91efb4c883088d43765a922b9ab83c3831e800548999b7065b7",
+        "package": "0603",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+155\u2103 100V 100mW 4.7k\u03a9 Thin Film Resistor \u00b10.02% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+        "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280131_RESI-PTFR0603Q4K70N9_C23067437.pdf",
+        "stock": 6817,
+        "preorder_minimum": 20,
+        "canPresaleNumber": 6812,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "R169"
+        ],
+        "MPN": "PTFR0603B3K01N9",
+        "LCSC": "C2692830",
+        "url": "https://jlcpcb.com/partdetail/C2692830",
+        "retrieved_at_UTC": "2026-09-14T23:04:48.722518+00:00",
+        "response_sha256": "1e6d12ee5674c9bee558089747af0a0bdb55993b2ca5663c970dd4a8f9ce1ce7",
+        "package": "0603",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+125\u2103 100V 100mW 3.01k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+        "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405061537_RESI-PTFR0603B3K01N9_C2692830.pdf",
+        "stock": 317,
+        "preorder_minimum": 66,
+        "canPresaleNumber": 316,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "C152",
+          "C154",
+          "C165"
+        ],
+        "MPN": "CGA3E3X7R1H224KT0Y0N",
+        "LCSC": "C342967",
+        "url": "https://jlcpcb.com/partdetail/C342967",
+        "retrieved_at_UTC": "2026-09-14T23:04:32.174394+00:00",
+        "response_sha256": "fda05a37df1bfd633a2cd4d69019c90daab4021e2bbf31a1bf1a0a9843e997d5",
+        "package": "0603",
+        "assemblyMode": "smtWeld",
+        "description": "220nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+        "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X7R1H224KT0Y0N_C342967.pdf",
+        "stock": 3670,
+        "preorder_minimum": 390,
+        "canPresaleNumber": 3655,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "R156"
+        ],
+        "MPN": "PLT1206Z5051LBTS",
+        "LCSC": "C4074185",
+        "url": "https://jlcpcb.com/partdetail/C4074185",
+        "retrieved_at_UTC": "2026-09-14T23:04:32.209867+00:00",
+        "response_sha256": "b96e1c2fdc9d95bf244037ef2cc99c1c488ce67809aa8fe7650ab5253d710139",
+        "package": "1206",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+125\u2103 400mW 5.05k\u03a9 Thin Film Resistor \u00b10.01% \u00b15ppm/\u2103 1206 Chip Resistor - Surface Mount",
+        "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312130952_Vishay-Intertech-PLT1206Z5051LBTS_C4074185.pdf",
+        "stock": 0,
+        "preorder_minimum": 2,
+        "canPresaleNumber": 0,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+      },
+      {
+        "refs": [
+          "L121"
+        ],
+        "MPN": "BPCI00121280470M00",
+        "LCSC": "C6471075",
+        "url": "https://jlcpcb.com/partdetail/C6471075",
+        "retrieved_at_UTC": "2026-09-14T23:01:16.537041+00:00",
+        "response_sha256": "b6d1536aed842a79cca52bb314d36532d0e6103c1b4ba8d8958b651ed5a3405a",
+        "package": "SMD,12x12mm",
+        "assemblyMode": "manualWeld",
+        "description": "100m\u03a9 2.5A 2.5A 47uH Magnetic Shielded Inductor \u00b120% SMD,12x12mm Power Inductors ROHS",
+        "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2312120515_Chilisin-Elec-BPCI00121280470M00_C6471075.pdf",
+        "stock": 0,
+        "preorder_minimum": 35,
+        "canPresaleNumber": 0,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+      },
+      {
+        "refs": [
+          "U101"
+        ],
+        "MPN": "LTC4367HMS8#PBF",
+        "LCSC": "C688370",
+        "url": "https://jlcpcb.com/partdetail/C688370",
+        "retrieved_at_UTC": "2026-09-14T23:04:49.111353+00:00",
+        "response_sha256": "03e2210145ad29ab2f2f6b9828e8fc9f2c07d0ef4332ab2538615d331434acd2",
+        "package": "MSOP-8",
+        "assemblyMode": "smtWeld",
+        "description": "-40\u2103~+125\u2103 2.5V~60V MSOP-8 Surge Protection Devices (SPDs) ROHS",
+        "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Analog-Devices-LTC4367HMS8-PBF_C688370.pdf",
+        "stock": 2,
+        "preorder_minimum": 2,
+        "canPresaleNumber": 1,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PURCHASABLE_STOCK"
+      },
+      {
+        "refs": [
+          "R160"
+        ],
+        "MPN": "RT0805BRB076K34L",
+        "LCSC": "C864499",
+        "url": "https://jlcpcb.com/partdetail/C864499",
+        "retrieved_at_UTC": "2026-09-14T23:04:32.542143+00:00",
+        "response_sha256": "b5a32b8d19c27df8bd2a397b0180baf5c70212cb52a6abf45efe739b4d0e899e",
+        "package": "0805",
+        "assemblyMode": "smtWeld",
+        "description": "-55\u2103~+155\u2103 125mW 6.34k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0805 Chip Resistor - Surface Mount ROHS",
+        "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404241522_YAGEO-RT0805BRB076K34L_C864499.pdf",
+        "stock": 0,
+        "preorder_minimum": 72,
+        "canPresaleNumber": 0,
+        "isBuyComponent": "1",
+        "allowPostFlag": true,
+        "noBuyReason": null,
+        "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+      }
+    ],
+    "stock_reserved": false,
+    "order_placed": false,
+    "authenticated_orderability_test": false,
+    "physical_assembly_validated": false,
+    "L121_factory_process_note": "JLC lists this SMD part as manualWeld (public UI: Wave Soldering). It remains a factory-supplied placement in the 175-row CPL. This is not proof of automatic SMT handling; exact supplier process and orientation approval remain required before ordering. F101/U401 remain the only local-install exceptions.",
+    "scope": "Public exact-identity catalog/sourceability and preorder availability snapshot; inventory and supplier process acceptance are not guaranteed."
+  },
+  "metadata_rebind": {
+    "status": "PASS_EXACT_PHYSICS_GEOMETRY_AND_MODEL_IDENTITY",
+    "qualified_source_PCB_sha256": "177454910e8699749c42599a13c613f3155a52760af65763f2c7982ffec90e66",
+    "final_source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+    "changed_fields": [
+      "13 frozen footprint descriptive texts/tags corrected",
+      "R151 missing PCB LCSC copied from existing schematic: C190124; MPN unchanged",
+      "README rail-label correction: R155/R156 are the 3.3 V feedback divider"
+    ],
+    "pad_nets_values_models_placement_routing_stackup_rules_exactly_unchanged": true,
+    "qualification_rerun_required": false,
+    "reason": "These are descriptive/source-code fields only. Strict whole-board comparison excludes only descr/tags and the R151 LCSC property; every other source token is identical.",
+    "library_changes": "Equivalent normalized library metadata synchronized from source",
+    "native_filled_boards_exactly_equal_excluding_same_metadata_and_generated_property_UUIDs": true,
+    "qualified_filled_PCB_sha256": "020d5a7e739f65f24e50bff894fa8ea9cf0114b37ef197560a8c09cd1aa4c54f",
+    "final_filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+    "filled_polygon_geometry_exactly_unchanged": true
+  },
+  "remaining_supplier_gates": [
+    "29 unchanged factory references still need exact LCSC/customer-supplied sourcing assignment; no unrelated substitutes authorized.",
+    "L121 catalog manual/wave process and assembly orientation must be accepted by JLC; no authenticated order or capacity reservation performed.",
+    "Supplier stackup, minimum finished plating, special-via fill/cap/planarization, stencil and assembly DFM acceptance."
+  ],
+  "remaining_physical_gates": [
+    "First-article populated/mated fit, probe access, C166 edge tolerance and cooling hardware/material acceptance.",
+    "Thermal correlation under retained I25 workload and 2.940859375 W budget; unchanged 112.8829809018675 C trigger; U201 immediate air <=85 C and Adafruit 851 local <=60 C at 65 C cabin.",
+    "Measure converter losses and package temperatures, particularly L121 self-rise and 125 C parts; verify contact performance and long-term material/fatigue behavior.",
+    "Bench startup/brownout/reset/reverse protection, EMC/transient testing, installed vehicle and unit acceptance."
+  ],
+  "U101_pedigree": "Owner accepted #W controlled-manufacturing option downgrade to functional H-grade #PBF; pedigree is not equivalent.",
+  "firmware": "32 adopted source files unchanged; retained genuine 160 MHz recovery build passed 28/28 binary release checks.",
+  "physical_tests": 0,
+  "supplier_approval": false,
+  "manufacturing_order": false,
+  "full_product_qualified": false
+}

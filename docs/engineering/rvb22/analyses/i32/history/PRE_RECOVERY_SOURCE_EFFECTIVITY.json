@@ -1,0 +1,45 @@
+{
+  "status": "CURRENT_I32_SOURCE_BOUND_SUPPLIER_DFM_FIRST_ARTICLE_HANDOFF",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "filled_PCB_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "native_schematic_XML_sha256": "f2394512c684bbf5eedb75730429004d8b92e1b834973b5ff7db300a618f1908",
+  "fitted_BOM_count": 177,
+  "position_rows": 175,
+  "CAD_inputs": 135,
+  "firmware_inputs_reused": 32,
+  "source_binding": "../analyses/i32/SOURCE_BINDING.json",
+  "full_evidence": "../analyses/i32/FINAL_EVIDENCE.json",
+  "old_effectivity_preserved": "../analyses/i32/history/PRE_I32_SOURCE_EFFECTIVITY.json",
+  "mechanics": "C05/W02/T03; rechecked177parts+38probes;1.71mm complete height stack",
+  "thermal": {
+    "release_heat_W": 2.940859375,
+    "old_112p88298_C_correlation_trigger_retained": true,
+    "actual_loss_one_step_board_screen_C": 113.22073100216515,
+    "board_temperature_is_not_junction_or_air": true,
+    "gate": "../analyses/i32/QUALIFICATION_AND_SERVICE.md",
+    "required_U121_efficiency_at_U151_80pct": 0.8333959154354461
+  },
+  "model_carry_forward": {
+    "firmware": "32 exact byte-identical inputs to prior target compilation",
+    "RF_CAN_GPS_oil": "Fitted signal components/nets/copper and firmware contracts unchanged; power rail now separately re-evaluated.",
+    "input_power_thermal_mechanics": "Affected models regenerated on I32; prior source-specific passes are superseded."
+  },
+  "supplier_acceptance": false,
+  "physical_measurement_claimed": false,
+  "C166": {
+    "MPN": "CGA5L1C0G2A683J160AE",
+    "value_nF": 68,
+    "maximum_body_mm": [
+      3.6,
+      1.9,
+      1.9
+    ],
+    "position_mm": [
+      85.85,
+      -3.0
+    ],
+    "rotation_deg": 90,
+    "copper_edge_clearance_mm": 0.3,
+    "body_nominal_tab_edge_clearance_mm": 0.1
+  }
+}

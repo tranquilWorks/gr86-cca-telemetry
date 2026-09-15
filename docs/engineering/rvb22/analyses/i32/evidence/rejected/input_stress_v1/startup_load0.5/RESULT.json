@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "name": "startup_load0.5",
+    "pwl": "0 0 1m 0 2m 12 ",
+    "stop": 0.08,
+    "load": 0.5,
+    "cap_scale": 1.2,
+    "events": [
+      [
+        "inrush",
+        0.02,
+        0.05,
+        0.03
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "e1539a52adebee3324f42bce2324d2a44b8ac79d9ba8ee8beabe695201629139",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/startup_load0.5/waveform.tsv not found."
+}

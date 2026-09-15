@@ -1,0 +1,15 @@
+{
+  "candidate_file_count": 32,
+  "candidate_firmware_matches_base_commit": true,
+  "compile_exit_code": 0,
+  "cpu_frequency_mhz": 160,
+  "executed_on_target": false,
+  "flashed": false,
+  "hardware_connected": false,
+  "inputs_unchanged": true,
+  "release_check_count": 28,
+  "release_check_status": "PASS",
+  "release_checks_passed": 28,
+  "status": "PASS_FIRMWARE_TARGET_BUILD",
+  "target": "ESP32-S3"
+}

@@ -1,0 +1,15 @@
+{
+  "completed_requested_interval": true,
+  "last_time_s": 0.0055,
+  "requested_stop_s": 0.0055,
+  "all_saved_values_finite": true,
+  "data_rows": 2524514,
+  "abort_diagnostics": [],
+  "meaning": "Numerical completion only, not hardware or model-fidelity acceptance.",
+  "returncode": 0,
+  "timed_out": false,
+  "suite": "vendor_5V",
+  "case": "vendor_nonideal_load_step",
+  "physical_tests_performed": 0,
+  "product_pass_claimed": false
+}

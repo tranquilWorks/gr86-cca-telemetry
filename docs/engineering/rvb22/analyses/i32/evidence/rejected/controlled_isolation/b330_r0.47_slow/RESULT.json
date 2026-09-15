@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "name": "b330_r0.47_slow",
+    "bulk": 330,
+    "damp": 0.47,
+    "mode": "slow",
+    "slow": true
+  },
+  "rc": 0,
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/controlled_isolation/b330_r0.47_slow/waveform.tsv not found."
+}

@@ -1,0 +1,108 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T23:26:28+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "GR86_CCA_RevB.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R169",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 1.9
+                    },
+                    "uuid": "2501389c-977f-52fc-8029-672200e69de4"
+                },
+                {
+                    "description": "Footprint TP201",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 4.0
+                    },
+                    "uuid": "ee545624-3668-5487-b901-6c99d2e97937"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R170",
+                    "pos": {
+                        "x": 83.2,
+                        "y": 1.9
+                    },
+                    "uuid": "68c71947-6e25-51ff-b12f-11d210e43343"
+                },
+                {
+                    "description": "Footprint TP202",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 4.0
+                    },
+                    "uuid": "f7fb6f96-d765-57a3-b378-6eafd2ac0ee2"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Clearance violation (rule 'Logic clearance' clearance 0.1500 mm; actual 0.1236 mm)",
+            "items": [
+                {
+                    "description": "Track [ESP_GPIO0] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 66.3,
+                        "y": 26.1
+                    },
+                    "uuid": "4cb84e39-1264-4c74-882e-a8a2df776a2e"
+                },
+                {
+                    "description": "Pad 2 [5V_SOURCE] of L121 on F.Cu",
+                    "pos": {
+                        "x": 64.7,
+                        "y": 29.0
+                    },
+                    "uuid": "506c4fd9-e8f4-56ed-b993-1534c62bdddd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Logic clearance' clearance 0.1500 mm; actual 0.1236 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [5V_SOURCE] of L121 on F.Cu",
+                    "pos": {
+                        "x": 64.7,
+                        "y": 29.0
+                    },
+                    "uuid": "506c4fd9-e8f4-56ed-b993-1534c62bdddd"
+                },
+                {
+                    "description": "Track [ESP_GPIO0] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 66.2,
+                        "y": 26.1
+                    },
+                    "uuid": "5dac7354-b7b9-4211-aab1-317f780a92d9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

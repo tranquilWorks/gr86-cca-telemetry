@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844888",
+  "componentModelEn": "TNPW0603100KBEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210190530_Vishay-Intertech-TNPW0603100KBEEA_C844888.pdf",
+  "describe": "-55\u2103~+155\u2103 100k\u03a9 125mW Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 49590,
+  "preMinPurchaseNum": 143,
+  "canPresaleNumber": 45020,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844888",
+  "retrieved_at_UTC": "2026-09-15T21:05:38.901464+00:00",
+  "response_sha256": "11972b5ec7b17592b5bcc7c882bb5fef73cace84e94b5b62f7c05697ce306bf3"
+}

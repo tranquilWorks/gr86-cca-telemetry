@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "name": "jump_24V",
+    "pwl": "0 0 1m 0 2m 12 60m 12 61m 24 100m 24 101m 12",
+    "stop": 0.16,
+    "events": [
+      [
+        "OV",
+        0.06,
+        0.065,
+        0.005
+      ],
+      [
+        "reconnect",
+        0.101,
+        0.15,
+        0.05
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "60ec30a680e33bd189e9530dcbbf50639b8c71780f026a118dda62ccc02e0b4a",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/jump_24V/waveform.tsv not found."
+}

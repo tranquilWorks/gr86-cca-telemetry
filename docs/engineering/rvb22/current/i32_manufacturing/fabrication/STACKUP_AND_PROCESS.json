@@ -1,0 +1,19 @@
+{
+  "layers": 4,
+  "copper_um": [
+    70,
+    30,
+    30,
+    70
+  ],
+  "dielectric_um": [
+    203,
+    1030,
+    203
+  ],
+  "finish": "ENIG",
+  "minimum_finished_barrel_plating_um": 15,
+  "filled_capped_planarized_vias": 49,
+  "ordinary_vias": "Retained tenting; no substitution for49 special locations",
+  "authority": "Editable authored PCB stackup and current manufacturing instructions"
+}

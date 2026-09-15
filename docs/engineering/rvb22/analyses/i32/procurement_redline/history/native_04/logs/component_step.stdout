@@ -1,0 +1,344 @@
+Determining PCB data.
+Build STEP data.
+Adding component R162.
+Could not add 3D model for R126.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C204.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for D606.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for R167.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R403.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R165.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl
+Could not add 3D model for R604.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R110.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl
+Could not add 3D model for C202.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R124.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for D604.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for D511.
+File not found: ${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl
+Could not add 3D model for C532.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C523.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for U201.
+File not found: ${KICAD6_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S3-WROOM-1.wrl
+Adding component C506.
+Could not add 3D model for R128.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Could not add 3D model for D502.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl
+Could not add 3D model for R603.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C128.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R125.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Could not add 3D model for U403.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl
+Could not add 3D model for R201.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for D522.
+File not found: ${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl
+Could not add 3D model for R402.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R121.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for D104.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.wrl
+Adding component R163.
+Could not add 3D model for J202.
+File not found: ${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl
+Could not add 3D model for Q153.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Could not add 3D model for C125.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R166.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C401.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Adding component C504.
+Adding component F101.
+Could not add 3D model for J203.
+File not found: ${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl
+Could not add 3D model for R404.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Adding component C162.
+Could not add 3D model for D605.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for C402.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R606.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R202.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R602.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R123.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for U402.
+File not found: ${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl
+Could not add 3D model for D105.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl
+Could not add 3D model for D512.
+File not found: ${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl
+Adding component R160.
+Could not add 3D model for R601.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R159.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C513.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C403.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C103.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R111.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Could not add 3D model for R401.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R164.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C123.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+Could not add 3D model for D103.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl
+Could not add 3D model for R405.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R507.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl
+Adding component U121.
+Could not add 3D model for D401.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for U404.
+File not found: ${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.wrl
+Could not add 3D model for D602.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Adding component C206.
+Could not add 3D model for C405.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for D601.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for C201.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for D521.
+File not found: ${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl
+Adding component C505.
+Could not add 3D model for R605.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C126.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R109.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Adding component U401.
+Adding component L121.
+Could not add 3D model for C404.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C121.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for D603.
+File not found: ${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl
+Could not add 3D model for D101.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl
+Adding component R157.
+Could not add 3D model for Q101.
+File not found: ${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TO-252-2.wrl
+Could not add 3D model for C165.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R122.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Adding component F1.
+Could not add 3D model for R127.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C124.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component R161.
+Could not add 3D model for Q152.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Could not add 3D model for C127.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R511.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Could not add 3D model for C511.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for L151.
+File not found: ${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XAL5030-XXX.wrl
+Could not add 3D model for R168.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R204.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R408.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C102.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C167.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component C159.
+Could not add 3D model for C122.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R104.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C158.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component R169.
+Could not add 3D model for D501.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Could not add 3D model for C301.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component D402.
+Could not add 3D model for R525.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C151.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R515.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R154.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R513.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Could not add 3D model for R504.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C101.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+Adding component R158.
+Could not add 3D model for R102.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Adding component R153.
+Adding component R155.
+Could not add 3D model for C501.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R151.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Adding component C166.
+Could not add 3D model for C302.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component R156.
+Could not add 3D model for C155.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for C512.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C522.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R505.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Adding component R170.
+Could not add 3D model for R106.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C502.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R105.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
+Adding component U301.
+Could not add 3D model for C524.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R103.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for D301.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+Could not add 3D model for R101.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl
+Could not add 3D model for C161.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component C205.
+Could not add 3D model for R521.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Adding component L406.
+Could not add 3D model for C503.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+Could not add 3D model for R411.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R506.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R522.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for U502.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl
+Could not add 3D model for C153.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R152.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R409.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Adding component U501.
+Could not add 3D model for C129.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R410.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R107.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C531.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Adding component U202.
+Could not add 3D model for R303.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Adding component U152.
+Could not add 3D model for C154.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for J401.
+File not found: ${KICAD7_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+Could not add 3D model for D102.
+File not found: ${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl
+Adding component R203.
+Could not add 3D model for C514.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R302.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C152.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for R503.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R502.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for C157.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for U101.
+File not found: ${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.wrl
+Could not add 3D model for R523.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
+Could not add 3D model for R514.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R501.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R407.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Could not add 3D model for R108.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Adding component U153.
+Could not add 3D model for R512.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Adding component U151.
+Could not add 3D model for C521.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+Could not add 3D model for C156.
+File not found: ${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.wrl
+Could not add 3D model for R524.
+File not found: ${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+Create PCB solid model.
+Board outline: found 96 initial points.
+Build board outlines (1 outlines) with 96 points.
+Build board cutouts and holes (411 hole(s)).
+Subtracting holes for shapes
+Subtracting holes for pads
+Subtracting holes for vias
+Generate board full shape.
+Writing STEP file.
+
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : $tempfile$.step(6748 ents)  Write  Done
+STEP file '/workspace/scratch/5b5c59eb3fe5/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_04/REVIEW_COMPONENTS.step' created.
+
+Export time 0.654 s

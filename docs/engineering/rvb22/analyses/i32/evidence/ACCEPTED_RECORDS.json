@@ -1,0 +1,516 @@
+{
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "accepted_full_records": [
+    {
+      "kind": "power",
+      "name": "nominal_hot_leakage",
+      "record_directory": "power_final_c166_68n/nominal_hot_leakage",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/nominal_hot_leakage/waveform.tsv.gz",
+      "full_record_sha256": "3ac235367b7581c27b95e7369d3e8ac0260c239351ec994de1c65433cb90b79f",
+      "compressed_sha256": "bc69d246b46a9435d0aa126ce43a4ab3666bd7711ca532b21d0c62a8ee96ceb2",
+      "deck_sha256": "f8bac09f19d3dca80b8455605002162a3c2ef1757f7afc9e35d4138b0bf85f46"
+    },
+    {
+      "kind": "power",
+      "name": "low_reference_slow_loop_aged_damping",
+      "record_directory": "power_final_c166_68n/low_reference_slow_loop_aged_damping",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/low_reference_slow_loop_aged_damping/waveform.tsv.gz",
+      "full_record_sha256": "c571917faec8ebf8ea7eef9836cea2624ebe457bf9e13bb785c9c0d8f68e83a7",
+      "compressed_sha256": "5ceb91f3d55a2b220392ecefb5d860c2a975928a2ad1c22ba8d2e8734009f779",
+      "deck_sha256": "2a9137309b603da37265eb0bd9639a5bf4fd731ba83edcf99b05d8327f853444"
+    },
+    {
+      "kind": "power",
+      "name": "high_reference_slow_loop_low_damping",
+      "record_directory": "power_final_c166_68n/high_reference_slow_loop_low_damping",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/high_reference_slow_loop_low_damping/waveform.tsv.gz",
+      "full_record_sha256": "715346d78ff44d181a80b133d6e6c5a43e5ab0aa118ec41745f52d5be4c03281",
+      "compressed_sha256": "09e745798431dc0e5aa0d7a891a5cdcf8dc2e52022f3e61262f8e87b9f86b2e2",
+      "deck_sha256": "c71e5904304d21840408b72ee7b4ce838045fde9a1463b7b5a8e2ce8916511eb"
+    },
+    {
+      "kind": "power",
+      "name": "cold750_max_main_storage_min_upstream_limit",
+      "record_directory": "power_final_c166_68n/cold750_max_main_storage_min_upstream_limit",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/cold750_max_main_storage_min_upstream_limit/waveform.tsv.gz",
+      "full_record_sha256": "6328702066adf0fc51e8ea94041ba31829879fec94207cf93afc2aff7a6db940",
+      "compressed_sha256": "7bd4debc043a434d85817049b2f8bf0504186b0ad45b1e78c13da7c46a5ab3a0",
+      "deck_sha256": "c9974a7552b13f7c9bb55c9a67d8788cd9e05f8372b19660d5c9406763c370f1"
+    },
+    {
+      "kind": "power",
+      "name": "cold750_min_U151_limit",
+      "record_directory": "power_final_c166_68n/cold750_min_U151_limit",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/cold750_min_U151_limit/waveform.tsv.gz",
+      "full_record_sha256": "bd147a3481a4fd6d5a2b959dbffe5175fb1a13ddd59991ac6968e1716dd0b2b4",
+      "compressed_sha256": "968223445cb4ba7358ae3786b9ccf452f63e3fce5ce5ffd8786a8b1b37e668ea",
+      "deck_sha256": "d7f1a2ba3f5713d5e898dbb696938b9fab55f9c17c79fd88de96c15b0abf0c4e"
+    },
+    {
+      "kind": "power",
+      "name": "cold450_max_storage",
+      "record_directory": "power_final_c166_68n/cold450_max_storage",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/cold450_max_storage/waveform.tsv.gz",
+      "full_record_sha256": "f5b845eadc4cc0088c96ee12d8f86005778064a1330847cc5960c6333808260a",
+      "compressed_sha256": "6d7e8dfead041f854dd3f7c3a91f41455acaedee539e751edc2abc2972e134d3",
+      "deck_sha256": "d38f39aa4b08f61a7993f2ddc963eb0734f18e36997fc316489a0db2d6712a33"
+    },
+    {
+      "kind": "power",
+      "name": "cold750_all_storage_max",
+      "record_directory": "power_final_c166_68n/cold750_all_storage_max",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/cold750_all_storage_max/waveform.tsv.gz",
+      "full_record_sha256": "171f8f1006a14fd44652f90f7255a82c1746939cd7c4633f7a773535560f5207",
+      "compressed_sha256": "8f8a1786db2fe5c3bc753f3e1f0ba4bba349fd8eb56bad1dcc6198106f21fa2a",
+      "deck_sha256": "012ed7156579624f1925fd6820347308804e0bcc221462b16eb4c9f74788000a"
+    },
+    {
+      "kind": "power",
+      "name": "slowest_charging_earliest_boot",
+      "record_directory": "power_final_c166_68n/slowest_charging_earliest_boot",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/slowest_charging_earliest_boot/waveform.tsv.gz",
+      "full_record_sha256": "2ec540f1f1a66dcb6f20a0ea6622e21d30436f8b22f4eaecb60c1f4e13aa10cf",
+      "compressed_sha256": "c3e9cb26b719723b84b5d648c47e20fdc604024e48c147bab90b169c8bd16ba6",
+      "deck_sha256": "3880d4ca9115a51508884ded67e415751a6ebbfcc965cfdf01c283cb960773cb"
+    },
+    {
+      "kind": "power",
+      "name": "maximum_reset_delay",
+      "record_directory": "power_final_c166_68n/maximum_reset_delay",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/maximum_reset_delay/waveform.tsv.gz",
+      "full_record_sha256": "4ccd1ac03b15c19c2c04705a3bab289268de53ef6a61272d042be95e63140cc3",
+      "compressed_sha256": "b9b87e070db1a8aabc0c5413753e6f05e8a2e4a29d33c6bf7df672f7c5d57dba",
+      "deck_sha256": "ed9d5a818237050c1bbebeb61b29623c7b0a3c308398d7182210285ba143a533"
+    },
+    {
+      "kind": "power",
+      "name": "minimum_reset_threshold",
+      "record_directory": "power_final_c166_68n/minimum_reset_threshold",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/minimum_reset_threshold/waveform.tsv.gz",
+      "full_record_sha256": "66d93b063462141dc8d4d99e192b89b49a0016636134a76345c41f3bf9fbad7c",
+      "compressed_sha256": "35851c10618c2c1753ecb79e6c64e9da6007646d2bc953b95a88b57f68574b0a",
+      "deck_sha256": "213c5813abb9c6fbdd0a63f2f81b8f21c8658eada49eb2089e6f3dc9c71d2535"
+    },
+    {
+      "kind": "power",
+      "name": "minimum_inductance_saturation_guard",
+      "record_directory": "power_final_c166_68n/minimum_inductance_saturation_guard",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/minimum_inductance_saturation_guard/waveform.tsv.gz",
+      "full_record_sha256": "bc3db72c5dc856e2d7b46a84a854c19a3eea4cd34d5c878a7d78816238603ca0",
+      "compressed_sha256": "a4780d44980fa778eed0d174d7e93468f85ce2429a6326ddd6cae6a26b0e5d5c",
+      "deck_sha256": "dfd2edc43652325ebd03f57924eaaf375d7dfe2ef38167a13f9e3bb3ff97a634"
+    },
+    {
+      "kind": "power",
+      "name": "maximum_inductance_low_reference",
+      "record_directory": "power_final_c166_68n/maximum_inductance_low_reference",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/maximum_inductance_low_reference/waveform.tsv.gz",
+      "full_record_sha256": "8a9a0d1bc7d5986e30b9759d88cf70b99666e9bd29df1604213d5bec3048aab9",
+      "compressed_sha256": "1e5732071801bc78c60a8a27ee5b20373e7607f1744b1dd2fb3981c6dbf7dde5",
+      "deck_sha256": "e52c95c6a144e477243b6d0d98308f59170c10dd8a86c6781bc5b21532ed5fbb"
+    },
+    {
+      "kind": "power",
+      "name": "nominal_loop_load_release",
+      "record_directory": "power_final_c166_68n/nominal_loop_load_release",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/nominal_loop_load_release/waveform.tsv.gz",
+      "full_record_sha256": "add5f4fd04be7b1f93ee3eb3c814536ef393fa6f2ce2b539222d8aea12d55e72",
+      "compressed_sha256": "00f767241d43ada0202151d576efa925563d5419b37fdc927c412b6eb6456bcc",
+      "deck_sha256": "9b146836473217f0f7489c51fc6fba84f7eb32c92687471ddf8949f0adafa65b"
+    },
+    {
+      "kind": "power",
+      "name": "maximum_main_capacitance_load_release",
+      "record_directory": "power_final_c166_68n/maximum_main_capacitance_load_release",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/maximum_main_capacitance_load_release/waveform.tsv.gz",
+      "full_record_sha256": "4fb4b361c2cf4ba4de4e92562435d990aec6e8e4249c296435831c5276dc3a19",
+      "compressed_sha256": "3483998245e524b070b55bec9ea528239a66e1370c9baf54499c832a9dac7a82",
+      "deck_sha256": "242ed85bb90cdb44f8d028c4045e1bb4da6ba41b2909abdb64b2e13bf9cd6fb6"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_5V4.75_Ron0.001",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_5V4.75_Ron0.001",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_5V4.75_Ron0.001/waveform.tsv.gz",
+      "full_record_sha256": "5ebba5923dc16fe5cfce2b155640c6a13e250dc06b82a231c10f8efd45161cad",
+      "compressed_sha256": "cdd1196d5d3e038fe4c6ed2369357ed467a570b845542c611639643339164fe7",
+      "deck_sha256": "5292b599f0c5564468da54ff26e0c661cd6c4f92a07bae0d7631ae7b33bb42fb"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_5V4.75_Ron0.04",
+      "record_directory": "power_final_c166_68n/off_restart_5V4.75_Ron0.04",
+      "archive": "GR86_RevB_I32_Full_Records_16.zip",
+      "member": "power_final_c166_68n/off_restart_5V4.75_Ron0.04/waveform.tsv.gz",
+      "full_record_sha256": "2a475556930ea3ee0e3bc55e21120265e270333322b6368858c530d1c8ba802a",
+      "compressed_sha256": "57fb06b105577e8c8a59d0d73f8c43ab27d1687c9374f996cf84daaf1b0e414f",
+      "deck_sha256": "37c42f5e41e150a08937060b6fb05c17e65242b8417dba7127f7a9c8ae7d41e8"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_5V5.25_Ron0.001",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_5V5.25_Ron0.001",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_5V5.25_Ron0.001/waveform.tsv.gz",
+      "full_record_sha256": "c5c2529b176385864f9b6e6b8a530357d98676dd8b45ce4026903b75c1df1206",
+      "compressed_sha256": "4bd6c61b7839b7ceba8f2788956d7b3f171182d2a53aaccb4f6f5013ea2c1f4f",
+      "deck_sha256": "eeb999d491c8e5ea7693e5fda89e7503414ee21afd742f765c0c443832b53a11"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_5V5.25_Ron0.04",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_5V5.25_Ron0.04",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_5V5.25_Ron0.04/waveform.tsv.gz",
+      "full_record_sha256": "524eb4daa2bff93e4e5f0e7b6c35885e0bf2b50d60d46454d015de3a59fe7bb9",
+      "compressed_sha256": "a74d455d8e7195b5e2bc9379677e78673a2e19876cb01d84fb2258812d617396",
+      "deck_sha256": "c69520387e6273a55ac6173ccbefc4aa9b71e2ebe3daf9e0de1ebd498cb94fa9"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_slow_discharge",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_slow_discharge",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_slow_discharge/waveform.tsv.gz",
+      "full_record_sha256": "322e41b5534aa8067bb80728bba67ec22b5a15ef0e0f4bb30190abdb0bf17148",
+      "compressed_sha256": "7b714810ee39f341bc619e4bd92748383b72fc1cb2ebbcc9a6d046a92dbfc9ad",
+      "deck_sha256": "c3fa9f6a7016f788e6232e910890273a9272bb42f43bd4119b27c85f30043c3a"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_minimum_bulk",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_minimum_bulk",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_minimum_bulk/waveform.tsv.gz",
+      "full_record_sha256": "ac8c7766dfdcfa214bf1b89faff111d46311081dcda096250e9466e94bdc2378",
+      "compressed_sha256": "4d0d6b2cd5d10a62fbddf4564e46ca91f5ef2777643bf6f9f691ce3037059bbe",
+      "deck_sha256": "626d935c737a1f442c5d27d133a6690bbce918adf24102565c799af27abc85aa"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_maximum_reset_delay",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_maximum_reset_delay",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_maximum_reset_delay/waveform.tsv.gz",
+      "full_record_sha256": "c17c5af2b4f2293aaab0cfd4e2e806b0025b3ba8efead01e280c9c2f3677a350",
+      "compressed_sha256": "30ce497d26186f7a87d472b289e39f16b5a20f00e594b65dc9900394fb2bd6ae",
+      "deck_sha256": "1dd84cd9f6a95c15bb6693b8486d3b49192ce2c253c201133b2dafe3633d8bd3"
+    },
+    {
+      "kind": "power",
+      "name": "SNS_falling_restart",
+      "record_directory": "power_final_c166_68n_recovery/SNS_falling_restart",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/SNS_falling_restart/waveform.tsv.gz",
+      "full_record_sha256": "b085803b7c1baf9c70f56938b6b2a278f5539faeda4f1894c121e3fa7ed0ab4f",
+      "compressed_sha256": "801faf1b73e715f2efdc59d23f0f9cce265b2c3f17a77515e3d236b142608338",
+      "deck_sha256": "37ef342a433e3df0703e9e37bcfd17112b1d2cb68949cb03b0ac33fe356c405c"
+    },
+    {
+      "kind": "power",
+      "name": "SNS_falling_restart_stored_corner",
+      "record_directory": "power_final_c166_68n_recovery/SNS_falling_restart_stored_corner",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/SNS_falling_restart_stored_corner/waveform.tsv.gz",
+      "full_record_sha256": "bc78c31a5634dc7436c840c30154159e8f9c78e24fa83fa1590b5b4ca8956bad",
+      "compressed_sha256": "e7a24e5a39b2b9f49c467a558a08e228ee3458a6f22ef1ce9f38b8c233225c49",
+      "deck_sha256": "d31730400775edc02fcbb86fb461e8eaf8f86ce9a5b4bf26ad7797e04104b293"
+    },
+    {
+      "kind": "power",
+      "name": "external5_R128_open",
+      "record_directory": "power_final_c166_68n_recovery/external5_R128_open",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/external5_R128_open/waveform.tsv.gz",
+      "full_record_sha256": "ac48dab2375bac6d3d6bddcd838f88910b2e5c36aebdd550f546c6d8553042a6",
+      "compressed_sha256": "e1bac44ee08898ea7619bc86165033fbf6b6e94ddb7f7405f464d7cafcf000f9",
+      "deck_sha256": "1d42d3eb25a23e71400554cd001e51c12e2b288eec3ddd3ba59a5023996db4ff"
+    },
+    {
+      "kind": "power",
+      "name": "external3_R153_open",
+      "record_directory": "power_final_c166_68n_recovery/external3_R153_open",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/external3_R153_open/waveform.tsv.gz",
+      "full_record_sha256": "25216309f633a56c92309a0f3dae7c80b85c944896c9b5eb81463aaa4316b267",
+      "compressed_sha256": "152205857f36b3603e620487823b23e5dcd5bed160837481f3c42367f7a0494f",
+      "deck_sha256": "c1cada78ed512da67ab64a9f015e451dc0ecf38d1ce2a6654bf210cc6fe7f9fa"
+    },
+    {
+      "kind": "power",
+      "name": "live_crank_6V",
+      "record_directory": "power_final_c166_68n_recovery/live_crank_6V",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/live_crank_6V/waveform.tsv.gz",
+      "full_record_sha256": "f30b3b935c1dfc60204d031d69f6fcf9d781bfa39e071ac1007626569dc7b063",
+      "compressed_sha256": "965826f4ff96ef929d0dd2315d13a67ca70244c0076ccb9205ab0777c0fb7c29",
+      "deck_sha256": "3297b3e4a2d14d951f72cb5eb72144d7b36ebdca3fb16c3f5785cafbadd41ac5"
+    },
+    {
+      "kind": "power",
+      "name": "live_overvoltage_24V",
+      "record_directory": "power_final_c166_68n_recovery/live_overvoltage_24V",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/live_overvoltage_24V/waveform.tsv.gz",
+      "full_record_sha256": "27c08ef00d87943e433c9da8df4ee332381369f734178bff21365c693fbed957",
+      "compressed_sha256": "7826d5eeaa7ace35d95d21294f6c9d4a94e0f22917ef9bc47b7e4e6e4f1809c4",
+      "deck_sha256": "a1a65e063038b505664ab63e42df61afde1420b2f4c8b6c58e9de9dcf80d4336"
+    },
+    {
+      "kind": "power",
+      "name": "slow_supply_collapse",
+      "record_directory": "power_final_c166_68n_recovery/slow_supply_collapse",
+      "archive": "GR86_RevB_I32_Full_Records_19.zip",
+      "member": "power_final_c166_68n_recovery/slow_supply_collapse/waveform.tsv.gz",
+      "full_record_sha256": "27b4a777414ecb3f2df78771335ea352631375a63d43aad4867f491009de13f5",
+      "compressed_sha256": "41d98853a18e8b2621abde48d011a99034bc6e0bd933fc97628133d2f237b265",
+      "deck_sha256": "4756ba7b6400b802dee0d4e7b4fd2e90ade09192a9259e4b52a9b9d24e5145a2"
+    },
+    {
+      "kind": "power",
+      "name": "rapid_reapplication_10ms",
+      "record_directory": "power_final_c166_68n_recovery/rapid_reapplication_10ms",
+      "archive": "GR86_RevB_I32_Full_Records_19.zip",
+      "member": "power_final_c166_68n_recovery/rapid_reapplication_10ms/waveform.tsv.gz",
+      "full_record_sha256": "574e7f46db18415fb6cc9a7d3da23bab66e09aaedae385237dd9caa1f23a679f",
+      "compressed_sha256": "b2e060276e9b272b3fc5d85d42136ac0c1a4d15a0adc6b54bb2a8bb812a16917",
+      "deck_sha256": "8ae6e5720a9f0fe68588f8713ee2c5f582b11c14a37018fb371507eb5b417d8e"
+    },
+    {
+      "kind": "power",
+      "name": "rapid_reapplication_100ms",
+      "record_directory": "power_final_c166_68n_recovery/rapid_reapplication_100ms",
+      "archive": "GR86_RevB_I32_Full_Records_19.zip",
+      "member": "power_final_c166_68n_recovery/rapid_reapplication_100ms/waveform.tsv.gz",
+      "full_record_sha256": "5bd446f39a09c0a2becbedc5526bbba8b7a7cc63667c87df9d59630368a641da",
+      "compressed_sha256": "b13b6a88879766f4000d534868421d33547e7a3224559c3032504ddc8fe490cc",
+      "deck_sha256": "99cd87c3451bf87a4314580c16d3275bed1e82d404d1556d1e0db6fbab2a16ff"
+    },
+    {
+      "kind": "power",
+      "name": "high_reference_1us_resolution",
+      "record_directory": "power_final_c166_68n_recovery/high_reference_1us_resolution",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/high_reference_1us_resolution/waveform.tsv.gz",
+      "full_record_sha256": "e0cfa128bd1eed19ac5c7b560182f558a588b92a25afe7d7c8d97a104454b1a1",
+      "compressed_sha256": "d2f1fcc1a9bdd8dd049f71f29e54b618c21e539c403b2bac49dd32720f33430f",
+      "deck_sha256": "07a5d855e18952bb7fc8e6a7bb9677275411ec8a443bf8461e3916d55e2626ec"
+    },
+    {
+      "kind": "power",
+      "name": "PG_highR_lowEN_ratio_cold750",
+      "record_directory": "power_final_c166_68n_recovery/PG_highR_lowEN_ratio_cold750",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/PG_highR_lowEN_ratio_cold750/waveform.tsv.gz",
+      "full_record_sha256": "bed2d27063668cd96c97158ad59d995bfe220508d455ed0501616986e9585dd9",
+      "compressed_sha256": "397dc8efbff732288c1795c81aff6cc7c314b4220b8711d61e8dc73ef3206e0f",
+      "deck_sha256": "eef11a9b81e1c357e704c0547bd788b51ad1a567b9f08778a0ea220a396ebe1f"
+    },
+    {
+      "kind": "power",
+      "name": "PG_lowR_highEN_ratio_off",
+      "record_directory": "power_final_c166_68n_recovery/PG_lowR_highEN_ratio_off",
+      "archive": "GR86_RevB_I32_Full_Records_17.zip",
+      "member": "power_final_c166_68n_recovery/PG_lowR_highEN_ratio_off/waveform.tsv.gz",
+      "full_record_sha256": "dcf0375424304fba6d2d75696f64ae58bc93fa804df1e68e3cf969a4e6a455f5",
+      "compressed_sha256": "67e704a8a8c1ae53fab097387215570e3a43d64951aa20382f3530bfce657963",
+      "deck_sha256": "a2eced2764e9e064c60347f70dbdd63a341905a597cfe9dd27e6af6f6b8539ec"
+    },
+    {
+      "kind": "power",
+      "name": "off_restart_discharge_copper_upper",
+      "record_directory": "power_final_c166_68n_recovery/off_restart_discharge_copper_upper",
+      "archive": "GR86_RevB_I32_Full_Records_18.zip",
+      "member": "power_final_c166_68n_recovery/off_restart_discharge_copper_upper/waveform.tsv.gz",
+      "full_record_sha256": "c914667797a04ae49fa0bde561a345fbf029e0df428269aeaaf0ce77bbaec8eb",
+      "compressed_sha256": "cceda7696277f1b92970df895707b1ccd3a261bf819257dad47c547c9b687188",
+      "deck_sha256": "680774d795b71ae80d4a91ca5302c7f0f57267cfe936c4de2f502b3362bc0700"
+    },
+    {
+      "kind": "input",
+      "name": "startup_load0",
+      "record_directory": "input_selected_final/startup_load0",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/startup_load0/waveform.tsv.gz",
+      "full_record_sha256": "c2c4aff683fd5166136f1f06ac89e02e12bbf9d11cca0c6424b70831dd2fb0fe",
+      "compressed_sha256": "9995acc9b3333a88d8b2fbce22daa8ba295a270317b8483c2232eb02af59066f",
+      "deck_sha256": "49c7332e8399ba423f89ec86ddd72a7b2d8dc0ed7e894bb4fe68200f0c90ca50"
+    },
+    {
+      "kind": "input",
+      "name": "startup_load0.5",
+      "record_directory": "input_selected_final/startup_load0.5",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/startup_load0.5/waveform.tsv.gz",
+      "full_record_sha256": "0a7086d6ba0b1e994212c4345108a604228f95dd097f028b07243a96963c9f82",
+      "compressed_sha256": "04ed6d9064990fc79e7697eb061e2fc744ff10670abaeccb1ac3763d6663446d",
+      "deck_sha256": "188780044700103a9899aaa742be9372d567bf35f24d3c525d9dd725ef1ba2bb"
+    },
+    {
+      "kind": "input",
+      "name": "load_dump_100V_400ms",
+      "record_directory": "input_selected_final/load_dump_100V_400ms",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/load_dump_100V_400ms/waveform.tsv.gz",
+      "full_record_sha256": "1e65d1045e317933b9a8598f3b396ed5b056d188e1b525f7d675edd61817da7d",
+      "compressed_sha256": "7fa77da454961af28f136992c4ed36035b7fdbc3f6e29bb7dd11d429593fd2ab",
+      "deck_sha256": "a849f976cc2149df8bb95c827ea871600f846eb285033652aafab7de64ada98c"
+    },
+    {
+      "kind": "input",
+      "name": "fast_positive_50V_50us",
+      "record_directory": "input_selected_final/fast_positive_50V_50us",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/fast_positive_50V_50us/waveform.tsv.gz",
+      "full_record_sha256": "2830ee31ff14585dce4f8a0ef1beeaa4b2bda6cccd1598b6505106d6d2ae1d46",
+      "compressed_sha256": "cfa2984f1b69d14d92410ca49a02c15aac499cd2755177923dcb5b0bfc136093",
+      "deck_sha256": "779c3f262aa56d32c3b5e3093ece37572d2e444d3670d21e71bf8dd3d33c130d"
+    },
+    {
+      "kind": "input",
+      "name": "negative_150V_2ms",
+      "record_directory": "input_selected_final/negative_150V_2ms",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/negative_150V_2ms/waveform.tsv.gz",
+      "full_record_sha256": "f5db6b294236995b6cd8fe60f04890f55b85aa394778de34805c086ce1bf9421",
+      "compressed_sha256": "0286c8b4a6e6cbfbcd4ae111f8edf9058ecf5129f82cc40a9149981301259edc",
+      "deck_sha256": "ec8c03d0a4929ef5244282f39605a260d1c97651e4309f45eceb9cf9e407f048"
+    },
+    {
+      "kind": "input",
+      "name": "reverse_14V",
+      "record_directory": "input_selected_final/reverse_14V",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/reverse_14V/waveform.tsv.gz",
+      "full_record_sha256": "23b537d4f3d40f81e5167fd440926da031c8a45fd602c74a17012018518b8d28",
+      "compressed_sha256": "4e7cd9b2a59d69d91a708ca37ac7beb6fce20e1684157e03bc5b0d0205924cd2",
+      "deck_sha256": "eaadc8998d501229f6df45955f6b2a7b959ce0d33678194bf7ec4ff1b7bcf447"
+    },
+    {
+      "kind": "input",
+      "name": "jump_24V",
+      "record_directory": "input_selected_final/jump_24V",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/jump_24V/waveform.tsv.gz",
+      "full_record_sha256": "727742233bd69b088bb254f7f0e3fde9fe5c1109016eba8d8921ae0e69d0dd50",
+      "compressed_sha256": "cb62b29e30263450886501eb56aa34984372df43b64bd0f15db1a1142b730289",
+      "deck_sha256": "11ca4f5665ebae5a3ada583cc04dc12b1372f43e1c28c8efcf53284651336f9f"
+    },
+    {
+      "kind": "input",
+      "name": "crank_6V",
+      "record_directory": "input_selected_final/crank_6V",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/crank_6V/waveform.tsv.gz",
+      "full_record_sha256": "07284832657c880eeddb95e99a4dc327b58dd12fbd594a0ec58a673e091a15cc",
+      "compressed_sha256": "fdda8d4e0f8934e316e875c79be923b553eb8d9155ef43f0f14fdbef9f02c553",
+      "deck_sha256": "90b6bb56900ad3d21fe80a05d80b0c961c47c82ead360ae3e8abda82fe7332fc"
+    },
+    {
+      "kind": "input",
+      "name": "fast_clamp_L3e-08",
+      "record_directory": "input_selected_final/fast_clamp_L3e-08",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/fast_clamp_L3e-08/waveform.tsv.gz",
+      "full_record_sha256": "a3f4edb410c6f0495e5e0f51973b38c932ba2a118c38dd964ec5bfdb5cfbef4f",
+      "compressed_sha256": "07e0edb47b04e2a4e1513f66110fb4acefa2d1a8f6cc5b4ba29648f0904e2dc5",
+      "deck_sha256": "b679abc96383bd3add1e3062ab481c0803574ff1be2d52a568278cfb2864b6f1"
+    },
+    {
+      "kind": "input",
+      "name": "fast_clamp_L3e-07",
+      "record_directory": "input_selected_final/fast_clamp_L3e-07",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/fast_clamp_L3e-07/waveform.tsv.gz",
+      "full_record_sha256": "e6c1e7b187378ef5a62759481b506d2a0b5cc2a33639347063d75d2ab16feee4",
+      "compressed_sha256": "cf009a35a28d013c840e40e27c847454ca8a52d8cf9c260825319d683fa372be",
+      "deck_sha256": "836d5963d34a1bfada40b91d60f0b33d4669bead33a8729c7d4fdeb71bea47a6"
+    },
+    {
+      "kind": "input",
+      "name": "controller_high_R101_crank",
+      "record_directory": "input_selected_final/controller_high_R101_crank",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_selected_final/controller_high_R101_crank/waveform.tsv.gz",
+      "full_record_sha256": "10c1fd17c9c15bd8341674451155d901b3f4e12c36175d7dbfd1e532e58e1218",
+      "compressed_sha256": "1608a231971d798b3c2b65e950506c2176dc2b77083cda3422fd5b6e396c403e",
+      "deck_sha256": "5efb29eeaf761e7ef4c492ddcfb2ebce771d2ee276688f117f95f9a895e51995"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_startup_load0.5",
+      "record_directory": "input_controlled_final/I32_final_startup_load0.5",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_controlled_final/I32_final_startup_load0.5/waveform.tsv.gz",
+      "full_record_sha256": "a3d58a4824b691add04c7307bf30a6ebc92c848c58bd745e001e7073fe2fb687",
+      "compressed_sha256": "d8e30e647c8b8f807e4c053b7170a2c7c19cd00e61b07801538c3690c2c7a152",
+      "deck_sha256": "429640ff4d34ebf3831fe3e4b99586c58f25529dc47bf402aafb6dcbc1567e41"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_load_dump_100V_400ms",
+      "record_directory": "input_controlled_final/I32_final_load_dump_100V_400ms",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_controlled_final/I32_final_load_dump_100V_400ms/waveform.tsv.gz",
+      "full_record_sha256": "57df5b1b3e32b139e870afac16284ff44b253035c9ae19bc03931663d0c1822f",
+      "compressed_sha256": "776bccfbee762328625c3287ce27ee578ef0b8f03917a4cbc0082d78d30a60c6",
+      "deck_sha256": "34f7cac502d36dec357b2f9a09a02a74a33ea5c7d2642b0055d138befcb8b20a"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_negative_150V_2ms",
+      "record_directory": "input_controlled_final/I32_final_negative_150V_2ms",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_controlled_final/I32_final_negative_150V_2ms/waveform.tsv.gz",
+      "full_record_sha256": "f9ec5be127aaf9d6dbd8f5435554ac34ff1ef2dcd57ad2209450cbd87f17c291",
+      "compressed_sha256": "9908cd604b864532d237bc866b4227ff65e21a7843792f60aff8b5a914980b14",
+      "deck_sha256": "bbed716b8e4a76418eda78bf33a0084662afeec3e30e73aa762a9978a59d0c89"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_fast_clamp_L3e-08",
+      "record_directory": "input_controlled_final/I32_final_fast_clamp_L3e-08",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_controlled_final/I32_final_fast_clamp_L3e-08/waveform.tsv.gz",
+      "full_record_sha256": "d3b916645883f01916556d8a249a46d762eee5ae64819e9c64dee9a8237b0ff7",
+      "compressed_sha256": "b7f6e2b660aa7ff7e05216bc2be8d05224785f85286c1ea649f4ecb28aa98238",
+      "deck_sha256": "29477b2b1adf0b5782e988c093e79dbbf4cbd9ccefa8bb78fcf84e79256a10fb"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_controller_high_R101_crank",
+      "record_directory": "input_controlled_final/I32_final_controller_high_R101_crank",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_controlled_final/I32_final_controller_high_R101_crank/waveform.tsv.gz",
+      "full_record_sha256": "8256bfb448656f02eb71ece24161e9f973396ab82edf1efa90a059fdb2a4f58e",
+      "compressed_sha256": "c8ccf4f6bb83ebc161756a928ae196ca29aba42449892cfce017d20aff671f10",
+      "deck_sha256": "b49017ce9a03bf215848a287426fad935d83c8f37387cfdd741feebff84d8485"
+    },
+    {
+      "kind": "input",
+      "name": "I32_final_startup_unloaded_repeat",
+      "record_directory": "input_unloaded_repeat/I32_final_startup_unloaded_repeat",
+      "archive": "GR86_RevB_I32_Full_Records_01.zip",
+      "member": "input_unloaded_repeat/I32_final_startup_unloaded_repeat/waveform.tsv.gz",
+      "full_record_sha256": "f3184096358f4f3acea5a50e353733c4c64f25122e1ae11a71542ccc7143aeff",
+      "compressed_sha256": "b0527cdd15fbd4bb4a259140edfaabc6ba1c4fb955739d6d75e7eef819738adf",
+      "deck_sha256": "0ba6990a2b1a4d3459bee4607e622e2f195249d81c4bee8e104aa5358e8b435d"
+    }
+  ],
+  "note": "Only these complete exact records support the current 34 power and 17 input numerical summaries. Earlier selected labels and failed records are historical."
+}

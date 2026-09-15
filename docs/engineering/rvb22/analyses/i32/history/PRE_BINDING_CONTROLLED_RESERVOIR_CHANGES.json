@@ -1,0 +1,659 @@
+{
+  "input_PCB_sha256": "44c98f6ab4153a8f0c2d6d99dea482617dc97870ac98be0e082ddb5c0976a967",
+  "input_schematic_sha256": "e33c5a4e309fe20f8d03f9140058b96ad3b9a760f0d76c29cd8a0209b4204f6e",
+  "parts": {
+    "U152": {
+      "mpn": "TPS22953QDQCRQ1",
+      "value": "TPS22953-Q1 REVERSE BLOCKING",
+      "manufacturer": "Texas Instruments",
+      "lib": "RevB:TPS22953QDQCRQ1",
+      "fp": "RevB:TI_DQC0010A_I32",
+      "pcb": [
+        43.6,
+        4.8,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        490.22,
+        63.5
+      ],
+      "nets": {
+        "1": "3V3_ISO_IN",
+        "2": "3V3_ISO_IN",
+        "3": "3V3_ISO_IN",
+        "4": "3V3_ISO_ENABLE",
+        "5": "GND",
+        "6": "3V3_ISO_CT",
+        "7": "3V3_ENABLE",
+        "8": "3V3_ISO_SNS",
+        "9": "3V3_VIN",
+        "10": "3V3_VIN",
+        "11": "GND"
+      },
+      "url": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf"
+    },
+    "C159": {
+      "mpn": "CGA4J1C0G2A333J125AE",
+      "value": "33n /100V C0G 5% CT",
+      "manufacturer": "TDK",
+      "lib": "Device:C",
+      "fp": "RevB:TDK_CGA4J1_33N_I32",
+      "pcb": [
+        44.3,
+        0.7,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        533.4,
+        127
+      ],
+      "nets": {
+        "1": "3V3_ISO_CT",
+        "2": "GND"
+      },
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA4J1C0G2A333J125AE",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "C161": {
+      "mpn": "GCM188R71H104KA57D",
+      "value": "100n /50V X7R ISO INPUT",
+      "manufacturer": "Murata",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        40.6,
+        4.5,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        449.58,
+        360.68
+      ],
+      "nets": {
+        "1": "3V3_ISO_IN",
+        "2": "GND"
+      },
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71H104KA57D"
+    },
+    "R159": {
+      "mpn": "CRCW060347K0FKEA",
+      "value": "47k /1% PG PULLUP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        46,
+        -1.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        177.8
+      ],
+      "nets": {
+        "1": "+5V",
+        "2": "3V3_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "R160": {
+      "mpn": "TNPU06036K34HWEA00",
+      "value": "6.34k /0.02% SNS TOP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        27,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        228.6
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "3V3_ISO_SNS"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R161": {
+      "mpn": "TNPU06031K00HWEA00",
+      "value": "1k /0.02% SNS BOTTOM",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        30.5,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        533.4,
+        228.6
+      ],
+      "nets": {
+        "1": "3V3_ISO_SNS",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R162": {
+      "mpn": "TNPU06034K70HWEA00",
+      "value": "4.7k /0.02% ISO EN TOP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        27,
+        -4,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        127
+      ],
+      "nets": {
+        "1": "+5V",
+        "2": "3V3_ISO_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R163": {
+      "mpn": "TNPU06031K00HWEA00",
+      "value": "1k /0.02% ISO EN BOTTOM",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        30.5,
+        -4,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        533.4,
+        177.8
+      ],
+      "nets": {
+        "1": "3V3_ISO_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "TP154": {
+      "mpn": "BARE PCB PAD",
+      "value": "TP_ISO_ENABLE",
+      "manufacturer": "PCB",
+      "lib": "Connector:TestPoint",
+      "fp": "RevB:TestPoint_Pad_D1.5mm",
+      "pcb": [
+        33,
+        -1,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        279.4
+      ],
+      "nets": {
+        "1": "3V3_ISO_ENABLE"
+      },
+      "url": ""
+    },
+    "C162": {
+      "mpn": "T598X477M010ATE025",
+      "value": "470u /10V POLYMER INPUT",
+      "manufacturer": "KEMET",
+      "lib": "Device:C",
+      "fp": "RevB:KEMET_T598_X_7343_Median",
+      "pcb": [
+        49,
+        -5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        45.72,
+        377.19
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "GND"
+      },
+      "url": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "C165": {
+      "mpn": "CGA3E3X7R1H224K080AB",
+      "value": "220n /50V X7R EN DELAY",
+      "manufacturer": "TDK",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        27,
+        -0.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        368.3,
+        400.05
+      ],
+      "nets": {
+        "1": "3V3_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224K080AB"
+    },
+    "Q152": {
+      "mpn": "DMG2302UKQ-7",
+      "value": "DMG2302UKQ /DISCHARGE",
+      "manufacturer": "Diodes Incorporated",
+      "lib": "RevB:DMG2302UKQ",
+      "fp": "RevB:SOT-23",
+      "pcb": [
+        46,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        490.22,
+        330.2
+      ],
+      "nets": {
+        "1": "3V3_DISCHARGE_GATE",
+        "2": "GND",
+        "3": "3V3_DISCHARGE_DRAIN"
+      },
+      "url": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf"
+    },
+    "Q153": {
+      "mpn": "DMG2302UKQ-7",
+      "value": "DMG2302UKQ /DISCHARGE",
+      "manufacturer": "Diodes Incorporated",
+      "lib": "RevB:DMG2302UKQ",
+      "fp": "RevB:SOT-23",
+      "pcb": [
+        50,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        541.02,
+        330.2
+      ],
+      "nets": {
+        "1": "3V3_ENABLE",
+        "2": "GND",
+        "3": "3V3_DISCHARGE_GATE"
+      },
+      "url": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf"
+    },
+    "R164": {
+      "mpn": "CRCW06034K70FKEA",
+      "value": "4.7k /DISCHARGE GATE FEED",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        48,
+        48.2,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        335.28
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "3V3_DISCHARGE_GATE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R165": {
+      "mpn": "CRCW25124R70FKEGHP",
+      "value": "4.7R /1.5W PULSE DISCHARGE",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_2512_6332Metric",
+      "pcb": [
+        39.5,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        508,
+        355.6
+      ],
+      "nets": {
+        "1": "3V3_SOURCE",
+        "2": "3V3_DISCHARGE_DRAIN"
+      },
+      "url": "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+    },
+    "D105": {
+      "mpn": "SMCJ110AHE3_A/H",
+      "value": "SMCJ110A /RAW OV CLAMP",
+      "manufacturer": "Vishay",
+      "lib": "Device:D_Zener",
+      "fp": "RevB:D_SMC",
+      "pcb": [
+        27,
+        44,
+        180,
+        "F.Cu"
+      ],
+      "sch": [
+        190.5,
+        269.24
+      ],
+      "sheet": "Input_Protection.kicad_sch",
+      "nets": {
+        "1": "REV_BLOCKED_12V",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/88394/smcj.pdf"
+    },
+    "R166": {
+      "mpn": "CRCW0603330KFKEA",
+      "value": "330k /1% U151 EN DIVIDER",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        35,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        257.81
+      ],
+      "nets": {
+        "1": "3V3_ENABLE",
+        "2": "3V3_BUCK_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "R167": {
+      "mpn": "CRCW0603330KFKEA",
+      "value": "330k /1% U151 EN DIVIDER",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        39,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        533.4,
+        279.4
+      ],
+      "nets": {
+        "1": "3V3_BUCK_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "U153": {
+      "mpn": "TPS22953QDQCRQ1",
+      "value": "TPS22953-Q1 BULK CHARGER",
+      "manufacturer": "Texas Instruments",
+      "lib": "RevB:TPS22953QDQCRQ1",
+      "fp": "RevB:TI_DQC0010A_I32",
+      "pcb": [
+        79.1,
+        -3.5,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        205.74,
+        370.84
+      ],
+      "nets": {
+        "1": "+3V3",
+        "2": "+3V3",
+        "3": "+3V3",
+        "4": "3V3_BULK_ENABLE",
+        "5": "GND",
+        "6": "3V3_BULK_CT",
+        "7": "unconnected-(U153-PG-Pad7)",
+        "8": "+3V3",
+        "9": "3V3_BULK_SWITCHED",
+        "10": "3V3_BULK_SWITCHED",
+        "11": "GND"
+      },
+      "url": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "C166": {
+      "mpn": "CGA4J1C0G2A333J125AE",
+      "value": "33n /100V C0G 5% CT",
+      "manufacturer": "TDK",
+      "lib": "Device:C",
+      "fp": "RevB:TDK_CGA4J1_33N_I32",
+      "pcb": [
+        85.85,
+        -3.0,
+        90,
+        "B.Cu"
+      ],
+      "sch": [
+        284.48,
+        381
+      ],
+      "nets": {
+        "1": "3V3_BULK_CT",
+        "2": "GND"
+      },
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA4J1C0G2A333J125AE",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "C167": {
+      "mpn": "GCM188R71C105KA64D",
+      "value": "1u /16V X7R BULK INPUT",
+      "manufacturer": "Murata",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        78.5,
+        -0.4,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        111.76,
+        355.6
+      ],
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71C105KA64D",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "R168": {
+      "mpn": "CRCW06031K00FKEA",
+      "value": "1k /1% RESERVOIR BLEED",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        86.35,
+        2,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        368.3,
+        377.19
+      ],
+      "nets": {
+        "1": "3V3_BULK_DAMPED",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "R169": {
+      "mpn": "TNPU06033K01HWEA00",
+      "value": "3.01k /0.02% BULK EN TOP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        80,
+        2.0,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        45.72,
+        350.52
+      ],
+      "nets": {
+        "1": "+3V3",
+        "2": "3V3_BULK_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R170": {
+      "mpn": "TNPU06031K00HWEA00",
+      "value": "1k /0.02% BULK EN BOTTOM",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        83.3,
+        2.0,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        111.76,
+        400.05
+      ],
+      "nets": {
+        "1": "3V3_BULK_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R204": {
+      "mpn": "CRCW0603100KFKEA",
+      "value": "100k /1% RESET DELAY",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        75.6,
+        6.9,
+        90,
+        "B.Cu"
+      ],
+      "sch": [
+        50.8,
+        215.9
+      ],
+      "nets": {
+        "1": "+3V3",
+        "2": "SUP_RESET_DELAY"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sheet": "ESP32.kicad_sch",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/fe7b91e6-7649-5595-9466-78a891f274f0"
+    }
+  },
+  "property_changes": {
+    "C206": {
+      "MPN": "T598X687M006ATE025",
+      "Value": "680u /6.3V POLYMER",
+      "Capacitance_Condition": "304.64uF minimum,1432.08uF maximum stacked envelope; <=3.78V steady at125C"
+    },
+    "R155": {
+      "MPN": "TNPU060311K8HWEA00",
+      "Value": "11.8k /0.02% 2ppm FB TOP",
+      "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R156": {
+      "MPN": "TNPU06035K05HWEA00",
+      "Value": "5.05k /0.02% 2ppm FB BOTTOM",
+      "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf"
+    },
+    "R158": {
+      "MPN": "WSL2512R3000FEA",
+      "Value": "300m /1% BULK DAMPING"
+    }
+  },
+  "removed_refs": [
+    "C163",
+    "C164"
+  ],
+  "new_refs": [
+    "C166",
+    "C167",
+    "R166",
+    "R167",
+    "R168",
+    "R169",
+    "R170",
+    "R204",
+    "U153"
+  ],
+  "removed_copper_uuids": [
+    "061d10d7-70cd-59e9-9aa6-fc7b02c0776b",
+    "e02a5ec7-456f-5865-8595-0cc718456c8d",
+    "00085a12-ccf9-5add-b5d3-a3ae1b7464fb",
+    "24a14d10-d02a-5912-b311-fcee76172ded",
+    "2fe6edc9-1607-5795-9c28-a82afff517ab",
+    "4eb58fa6-f592-51b0-b0aa-e091435aa2ac",
+    "569fcf6b-cdeb-50f3-9f7a-6785497d929f",
+    "6317c741-b569-51ce-97c4-f3d94ad27232",
+    "8b7c7381-5ae6-55bd-9d8a-e8e168f3b065",
+    "8ecea7d7-0e01-53fd-8a42-fd18d8006426",
+    "9e99c940-9a45-5939-b0eb-fecfe81264ce",
+    "bdf51660-7a8c-50d8-93fc-a2a2ab071826",
+    "d9b51607-6161-522f-b3b4-7c318831fb69",
+    "2edd686d-2549-5390-b9ad-8168d9132ca5",
+    "e2b4c7db-9a33-52aa-9fc1-4e3094efd6f6",
+    "b1437193-da53-59f4-9337-787ccc46c56f",
+    "b96aa586-eed8-55df-97cb-1593918842c8",
+    "10ad661c-d9e6-5c6f-be02-a968546f3694",
+    "36764b2a-ac9e-5b18-b672-469b510f851e",
+    "43e8a834-b0ee-5c6a-bfdd-29fa861f514b",
+    "462f233c-8862-57c0-a4e5-cec416221454",
+    "5e73cb03-4967-5c24-9d13-4d5acbfb0825",
+    "658d4735-d427-5e2b-9f12-622d9b6554af",
+    "72ec8b80-dea7-5f8e-abd4-023cc3171af8",
+    "e77ce2a2-d1d2-51d7-b263-72ec4bda5857",
+    "b131b8d0-458c-5097-b06a-944a39619a72",
+    "f70a422f-e44a-5f03-ba24-2de5765cf98f",
+    "dde28e85-5ccc-5d5a-82f4-e8d923f1f34e",
+    "5c951440-0882-5734-9653-25f9766a90e4",
+    "6c67e6ea-01d1-5738-8f89-8c0583c39472",
+    "4e569dc7-d740-502e-be89-f99f6d221692",
+    "4f2123a5-df0b-5bbc-a73e-20569b4b8050",
+    "0b9fc1b6-b392-5eb0-9126-52c789e63d9b"
+  ],
+  "status": "STAGED_REQUIRES_ROUTING_AND_VERIFICATION"
+}

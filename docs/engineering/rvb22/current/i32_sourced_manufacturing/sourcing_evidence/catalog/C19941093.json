@@ -1,0 +1,18 @@
+{
+  "componentCode": "C19941093",
+  "componentModelEn": "T598X477M010ATE025",
+  "componentBrandEn": "KEMET",
+  "componentSpecificationEn": "CASE-X-7364-40(mm)",
+  "assemblyMode": "manualWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401221617_KEMET-T598X477M010ATE025_C19941093.pdf",
+  "describe": "10V 25m\u03a9@100kHz 4.47A@100kHz 470uA@5mins 470uF \u00b120% CASE-X-7364-40(mm) Tantalum Capacitors ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 4,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C19941093",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.220364+00:00",
+  "response_sha256": "1a2c02a5b8b9037775c271c02b27f58f75d1ff1133c02a636d1751edd1e1cb04"
+}

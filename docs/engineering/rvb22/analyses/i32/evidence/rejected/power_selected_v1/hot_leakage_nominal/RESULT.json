@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "bulk": 330,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 1000,
+    "physical_dividers": true,
+    "physical_input_caps": true,
+    "slew": 0.0024,
+    "en_cap": 2.2e-07,
+    "sns_top": 634000,
+    "input_leak": 0.0282,
+    "active_discharge": true,
+    "q153_threshold": 1.5,
+    "q152_threshold": 2.5,
+    "r164": 4700,
+    "r165": 4.7,
+    "input_route_R": 0.06,
+    "input_route_L": 3e-07,
+    "off_delay": 0.0001,
+    "name": "hot_leakage_nominal",
+    "branch_R": 0.1,
+    "branch_L": 1e-07
+  },
+  "returncode": 0,
+  "deck_sha256": "1a091f85102e71e435ec9b7af7b28272bdf01843dda4e3b746fb67b4ce534f3d",
+  "completed": false,
+  "error": ""
+}

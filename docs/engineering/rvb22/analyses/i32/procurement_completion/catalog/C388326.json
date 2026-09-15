@@ -1,0 +1,18 @@
+{
+  "componentCode": "C388326",
+  "componentModelEn": "STD25NF20",
+  "componentBrandEn": "STMicroelectronics",
+  "componentSpecificationEn": "DPAK",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_STMicroelectronics-STD25NF20_C388326.pdf",
+  "describe": "-55\u2103~+175\u2103 1 N-channel 110W 125m\u03a9@10V 18A 197pF 200V 30pF 39nC@10V 3V 940pF N-Channel DPAK MOSFETs ROHS",
+  "overseasStockCount": 1,
+  "preMinPurchaseNum": 9,
+  "canPresaleNumber": 1,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C388326",
+  "retrieved_at_UTC": "2026-09-15T21:05:16.709223+00:00",
+  "response_sha256": "d02fc6e14262401fb50b107843731c17f3e6951ff2dfbf37b1fea29c2d5baaac"
+}

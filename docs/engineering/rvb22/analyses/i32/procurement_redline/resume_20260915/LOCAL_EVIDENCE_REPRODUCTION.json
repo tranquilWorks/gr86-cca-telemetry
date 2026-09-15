@@ -1,0 +1,14 @@
+{
+  "status": "PASS_CURRENT_I32_EVIDENCE_AND_PACKAGE_REPRODUCTION",
+  "source_commit": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "verified_changed_paths": 2006,
+  "native_CAD_inputs": 157,
+  "unchanged_firmware_files": 32,
+  "desktop_gates": 14,
+  "full_waveform_records": 38,
+  "aggregate_outputs_byte_identical": true,
+  "physical_tests": 0,
+  "supplier_approval": false,
+  "manufacturing_order": false
+}

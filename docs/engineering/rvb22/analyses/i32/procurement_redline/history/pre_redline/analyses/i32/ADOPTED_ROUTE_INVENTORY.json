@@ -1,0 +1,2502 @@
+{
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "routes": [
+    {
+      "task": {
+        "id": "bulk_old_bridge",
+        "kind": "track",
+        "net": "+3V3",
+        "a": [
+          75.54,
+          18.7
+        ],
+        "z": [
+          77.06,
+          18.7
+        ],
+        "width": 0.6,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "99822b68-ea91-5164-b7b2-f55f6f2cc2ce"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_feed_via",
+        "kind": "via",
+        "net": "REV_BLOCKED_12V",
+        "at": [
+          32,
+          41.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "31046385-99d6-5216-86fc-5656b8d5a2a9"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_inner",
+        "kind": "track",
+        "net": "REV_BLOCKED_12V",
+        "a": [
+          25,
+          34.8
+        ],
+        "z": [
+          32,
+          41.8
+        ],
+        "width": 0.8,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "3e9be314-0b6d-58fe-8b12-a3527738af02",
+        "fc1ba903-b6ae-541d-a883-c2f71c41405b",
+        "d8285baa-a1d6-5ee1-bfea-7c1c1674e7e5",
+        "afeda6f8-7663-5c26-a49a-a151775f5613",
+        "1eb74fa4-2a31-5c39-a7bc-0770345bf435",
+        "bbc58399-e6b8-5841-ac77-129dd4be9ec2",
+        "6f732a0c-452d-5df3-a914-d792636587f3",
+        "6de34827-f3cc-5fa0-9ab3-ab6b7058e0ef"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_feed",
+        "kind": "track",
+        "net": "REV_BLOCKED_12V",
+        "a": [
+          32,
+          41.8
+        ],
+        "z": "D105.1",
+        "width": 0.8,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "df55d83e-15fb-5d41-b466-c0a1091b220c",
+        "67b8cf39-30db-5af9-b568-c5e03a5de289"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_return_a",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          23.6,
+          46.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "0f15b7fc-39e4-5a57-b385-7277cdf2e01c"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_return_b",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          22.6,
+          46.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "68b5eaa2-e2a2-558d-ac1f-9442bfffc467"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "raw_clamp_return",
+        "kind": "track",
+        "net": "GND",
+        "a": "D105.2",
+        "z": [
+          23.6,
+          46.8
+        ],
+        "width": 0.8,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "77ce1003-609b-5647-8e25-408366330735"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "fb_pin_to_lower",
+        "kind": "track",
+        "net": "3V3_FB_ADJ",
+        "a": "U151.9",
+        "z": "R156.1",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "ea8f72d1-09c8-56b9-9de7-93dbfdedd39d",
+        "33959ff2-bd86-5e1a-a2b6-6313a2ce6cb3"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "led_oil_escape",
+        "kind": "via",
+        "net": "LED_OIL",
+        "at": [
+          41.1,
+          8.3
+        ]
+      },
+      "actual_copper_uuids": [
+        "b457b4fd-eb33-5534-9800-acdd35f6d9e9"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "led_oil_escape_link",
+        "kind": "track",
+        "net": "LED_OIL",
+        "a": [
+          40.7801,
+          8.5229
+        ],
+        "z": [
+          41.1,
+          8.3
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "36d11513-0e2e-52a7-abb7-07684330cc53",
+        "eb94081f-52b6-5996-a067-a57828880c35"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "led_oil_local_inner",
+        "kind": "track",
+        "net": "LED_OIL",
+        "a": [
+          41.1,
+          8.3
+        ],
+        "z": [
+          42.4138,
+          12.7247
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "7a14f1b2-71cb-5209-b47b-bb386498582d",
+        "8c4e7dfa-a316-51fe-a26d-9570df4bd2bc"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "fb_divider",
+        "kind": "track",
+        "net": "3V3_FB_ADJ",
+        "a": "R155.2",
+        "z": "R156.1",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "611ac612-85e2-5c0b-a561-99b51e50118e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "fb_quiet_return",
+        "kind": "track",
+        "net": "GND",
+        "a": "R156.2",
+        "z": "U151.10",
+        "width": 0.25,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "1784c71d-c637-58fa-bae2-962d76d2dc78",
+        "354f270c-90f2-52dc-a392-64a88158fec1"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "input_link_feed_via",
+        "kind": "via",
+        "net": "+5V",
+        "at": [
+          36.2375,
+          1.6
+        ]
+      },
+      "actual_copper_uuids": [
+        "cd8cd76c-1e3b-554e-92be-0d38fd287075"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "input_link_feed",
+        "kind": "track",
+        "net": "+5V",
+        "a": [
+          40.2842,
+          9.7483
+        ],
+        "z": [
+          36.2375,
+          1.6
+        ],
+        "width": 0.6,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "d6d506b1-38e9-56c9-9dad-02ac18218f0c",
+        "c43b92e7-d5c4-50a8-b28c-f982f8c66f89"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "input_link_feed_pad",
+        "kind": "track",
+        "net": "+5V",
+        "a": [
+          36.2375,
+          1.6
+        ],
+        "z": "R151.1",
+        "width": 0.6,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "7bad0810-7a78-5530-8d46-98a62973cee3",
+        "19ac1a4e-c314-5972-aa8e-8f467110e6f0"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "isolation_input_cap",
+        "kind": "track",
+        "net": "3V3_ISO_IN",
+        "a": "R151.2",
+        "z": "C161.1",
+        "width": 0.6,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "b7c58903-00e6-54a3-b0c8-8a460a22df3b",
+        "ada42866-79dd-5d72-a74c-0d067529343b"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "isolation_in12",
+        "kind": "track",
+        "net": "3V3_ISO_IN",
+        "a": "U152.1",
+        "z": "U152.2",
+        "width": 0.25,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "0bd98f76-dc6f-59e4-bca2-61f44b20b672"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "isolation_in23",
+        "kind": "track",
+        "net": "3V3_ISO_IN",
+        "a": "U152.2",
+        "z": "U152.3",
+        "width": 0.25,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "64f410ea-13f1-5d7f-bf6b-0194d2fce31a"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "isolation_input_feed",
+        "kind": "track",
+        "net": "3V3_ISO_IN",
+        "a": "C161.1",
+        "z": "U152.1",
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "61134d33-0cd6-56c9-b783-40ab0e197ab2",
+        "aa5de158-b549-53a0-8a9e-3a9f67d7eec4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "isolation_out",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": "U152.9",
+        "z": "U152.10",
+        "width": 0.25,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "5452f9f6-212f-54d5-bee7-0ec7bb28e4d8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_local_via",
+        "kind": "via",
+        "net": "3V3_ISO_SNS",
+        "at": [
+          45.2,
+          6.1
+        ]
+      },
+      "actual_copper_uuids": [
+        "d257cb89-33ba-5a09-a1c1-4944d672efa4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_local",
+        "kind": "track",
+        "net": "3V3_ISO_SNS",
+        "a": "U152.8",
+        "z": [
+          45.2,
+          6.1
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "c1579f0e-f4c5-5a3d-9112-a80308fcb8fd",
+        "e7d1302c-8c55-539a-a082-1aab83bdc791",
+        "0d870776-c26a-5635-8a75-227517c33f51",
+        "210dd54e-59e3-506a-ac39-b9a0a0f9e171",
+        "eea3b9e7-5ef1-5ce3-80f2-470dfd97229f",
+        "d6d1fa2c-6527-53be-b39e-34869634037e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_divider_via",
+        "kind": "via",
+        "net": "3V3_ISO_SNS",
+        "at": [
+          28.6,
+          -6.2
+        ]
+      },
+      "actual_copper_uuids": [
+        "13119658-7897-5b34-89ef-6a0c38094b61"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_divider",
+        "kind": "track",
+        "net": "3V3_ISO_SNS",
+        "a": "R160.2",
+        "z": "R161.1",
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "c07980b4-0baa-5843-bfd5-cef9772340b4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_to_via",
+        "kind": "track",
+        "net": "3V3_ISO_SNS",
+        "a": "R161.1",
+        "z": [
+          28.6,
+          -6.2
+        ],
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "bd9b4dce-93ee-5b0c-a3e7-ae6e74e426ba",
+        "d4691c07-5ef7-5001-b7b5-1d3651d7048e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "sns_inner",
+        "kind": "track",
+        "net": "3V3_ISO_SNS",
+        "a": [
+          28.6,
+          -6.2
+        ],
+        "z": [
+          45.2,
+          6.1
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "e2bd372d-8d88-5059-ad6f-a39559597546",
+        "b0a8241a-8589-54d1-a683-b1039d9c56eb"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "pg_local_via",
+        "kind": "via",
+        "net": "3V3_ENABLE",
+        "at": [
+          46.825,
+          -0.1
+        ]
+      },
+      "actual_copper_uuids": [
+        "408f6cc6-3557-58c7-9f51-ee8fed161269"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "pg_pin",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": "U152.7",
+        "z": [
+          46.825,
+          -0.1
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "4828e4d1-60c3-59df-8e94-1f67d7a4c38d",
+        "667dd368-cc1e-5184-b029-153aecd1bd15",
+        "75f64d01-e7ba-5a06-879e-67a43abd3564",
+        "c85ed701-6252-5b98-a6b3-cf7ef2ca41f0",
+        "339b95d7-c9d1-5813-a97f-767e2da3c5c9",
+        "81251e6b-53cd-5c5e-a1ba-40056ec7ebcb"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "pg_to_via",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": "R159.2",
+        "z": [
+          46.825,
+          -0.1
+        ],
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "cf14fc52-5188-54c2-9497-6375d1eb61b4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "u151_en_via",
+        "kind": "via",
+        "net": "3V3_ENABLE",
+        "at": [
+          39.1625,
+          12.025
+        ]
+      },
+      "actual_copper_uuids": [
+        "d7d04457-1304-5bd3-b409-b234f0cf7788"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "u151_en_inner",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": [
+          39.1625,
+          12.025
+        ],
+        "z": [
+          46.825,
+          -0.1
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "0cc7e533-4293-52ed-a41c-b50a0578bfe5",
+        "2679c2ad-1506-5021-8d08-21a8121d7151"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "u151_en_cap_via",
+        "kind": "via",
+        "net": "3V3_ENABLE",
+        "at": [
+          26.225,
+          1.0
+        ]
+      },
+      "actual_copper_uuids": [
+        "ba460b86-67fc-5d6c-a8e5-659379409bac"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "u151_en_cap",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": "C165.1",
+        "z": [
+          26.225,
+          1.0
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "11e8cbed-2fab-5ee3-a051-9400708df358"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "u151_en_cap_inner",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": [
+          26.225,
+          1.0
+        ],
+        "z": [
+          46.825,
+          -0.1
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "c64be4ad-39ed-56cd-a573-caf4fdd7fc41",
+        "379ff555-ecbe-569a-896c-88d36a9e7dcb",
+        "f69e803f-ad86-5949-894b-45960557eadf",
+        "3e48ff38-8aea-517f-9315-6ff41bc62664",
+        "717048f9-6539-5c21-ab31-97ba3bca72b4",
+        "ba353e70-1c4d-5652-8b8a-00bac1769dd3"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_local_via",
+        "kind": "via",
+        "net": "3V3_ISO_ENABLE",
+        "at": [
+          42.75,
+          2.6
+        ]
+      },
+      "actual_copper_uuids": [
+        "d780807e-d839-5e34-8b77-580d46ba8f80"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_local",
+        "kind": "track",
+        "net": "3V3_ISO_ENABLE",
+        "a": "U152.4",
+        "z": [
+          42.75,
+          2.6
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "cd059c01-b009-58a7-b5df-88b645d191fb",
+        "0da34e55-4d8b-58e4-a9e6-cc71a0692505",
+        "11f5a12b-bc35-5cc1-8dc5-6cc191f35681",
+        "d93190c8-6caa-560a-a217-c160125174bb"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_divider",
+        "kind": "track",
+        "net": "3V3_ISO_ENABLE",
+        "a": "R162.2",
+        "z": "R163.1",
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "41d2bdc5-b617-506c-b371-07da9011addd"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_tp",
+        "kind": "track",
+        "net": "3V3_ISO_ENABLE",
+        "a": "R163.1",
+        "z": "TP154.1",
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "4ae2dea3-1088-58c0-8cb1-875a397c7d1c",
+        "9c7e6264-117c-5255-8248-44c4a3a7dbe2"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_remote_via",
+        "kind": "via",
+        "net": "3V3_ISO_ENABLE",
+        "at": [
+          33,
+          -2.3
+        ]
+      },
+      "actual_copper_uuids": [
+        "b06a3cab-4c21-57a3-8ffd-fae80dc81ba9"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_tp_via",
+        "kind": "track",
+        "net": "3V3_ISO_ENABLE",
+        "a": "TP154.1",
+        "z": [
+          33,
+          -2.3
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "a4dec8ff-8bfd-527e-8c44-8e6552f1e7eb"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_inner",
+        "kind": "track",
+        "net": "3V3_ISO_ENABLE",
+        "a": [
+          33,
+          -2.3
+        ],
+        "z": [
+          42.75,
+          2.6
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "51cfd9d4-02f5-5a16-ae36-c02d7f97efd1",
+        "8c9a17f5-629a-520f-acb1-062c40fdad39",
+        "c0a1bc9a-9723-573f-ace6-76e9f9bb2e12",
+        "416cf4cb-94d1-52a7-b5db-d149b66a5d4b",
+        "11cb032f-21ac-5702-a8b1-da7ebbc3bcac",
+        "b1f0e1e4-089a-5c10-8cb0-a652324f396e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_vin_local",
+        "kind": "via",
+        "net": "3V3_VIN",
+        "at": [
+          44.3,
+          6.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "3b24ba46-a78b-56f7-b36e-ca7b2cfdf752"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_vin_local_pin",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": "U152.10",
+        "z": [
+          44.3,
+          6.8
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "6fa78ab4-ef10-535c-bfbd-71544746c0ca",
+        "5706bf5a-ec07-51a8-a87c-b5bafb3040b3"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_vin_c151_via",
+        "kind": "via",
+        "net": "3V3_VIN",
+        "at": [
+          43.9,
+          12.9
+        ]
+      },
+      "actual_copper_uuids": [
+        "9b303418-0c8b-532c-962a-e891bf01cb53"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_vin_c151",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": [
+          43.9,
+          12.9
+        ],
+        "z": "C151.1",
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "67d1cd71-a51a-5f9e-9382-e878b22d0d7f",
+        "35e0fc5d-146b-54ac-a24e-fcd9e7ea97cc"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_vin_to_buck",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": [
+          44.3,
+          6.8
+        ],
+        "z": [
+          43.9,
+          12.9
+        ],
+        "width": 0.6,
+        "layer": "In1.Cu"
+      },
+      "actual_copper_uuids": [
+        "41d68a54-8814-55c3-ad3d-6cc090168fe1",
+        "399c8ef8-edae-5a66-8afa-bbdf2b30e51a"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_input_bulk_via",
+        "kind": "via",
+        "net": "3V3_VIN",
+        "at": [
+          35.88,
+          -2
+        ]
+      },
+      "actual_copper_uuids": [
+        "187e4c9e-6ee8-5b90-884f-4817fdc3441a"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_input_bulk_feed",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": [
+          35.88,
+          -2
+        ],
+        "z": [
+          44.3,
+          6.8
+        ],
+        "width": 0.8,
+        "layer": "In1.Cu"
+      },
+      "actual_copper_uuids": [
+        "bef15078-2001-5fb7-aa2f-250f6951bb5b",
+        "364c341e-0c19-5a59-8b06-ef64df8ceea2"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_en_supply",
+        "kind": "track",
+        "net": "+5V",
+        "a": "R162.1",
+        "z": [
+          36.2375,
+          1.6
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "c5019473-def8-5a34-9760-d39fd2f8b7aa",
+        "62f4bc72-bab7-5adf-ba12-5f25a20fd9b8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "pg_supply",
+        "kind": "track",
+        "net": "+5V",
+        "a": [
+          36.2375,
+          1.6
+        ],
+        "z": "R159.1",
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "b5a458ce-00f2-5df4-b76a-a89137563748",
+        "08107284-80e4-54fc-9bfd-01c6a93969b4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "feedback_source_via",
+        "kind": "via",
+        "net": "3V3_SOURCE",
+        "at": [
+          45.1,
+          13.5
+        ]
+      },
+      "actual_copper_uuids": [
+        "a43ae273-b22e-5f9c-85d4-21f4be9ef91d"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "feedback_source_local",
+        "kind": "track",
+        "net": "3V3_SOURCE",
+        "a": "R155.1",
+        "z": [
+          45.1,
+          13.5
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "c39739ee-dfb4-5508-9220-ccfd8022dfe1",
+        "df3c5a01-d484-511e-8a20-e3d34136d0ea"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "feedback_source_sense",
+        "kind": "track",
+        "net": "3V3_SOURCE",
+        "a": [
+          45.1,
+          13.5
+        ],
+        "z": [
+          40.7,
+          24.8
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "0ac82671-ebd0-5e7c-bcc5-ad27882143d7",
+        "5b54ebb0-d448-594f-aa33-46f13c57fe46",
+        "0b4a2a5f-b1e8-5cb8-b0a4-89d4744504a9",
+        "7bd03202-0183-5e37-898b-6fec735a491b",
+        "75bdfb0e-0d1e-53f5-8eb8-2338407f1c10",
+        "0b3bdcb0-6a1e-5d38-a88b-63e4a0542785"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_ground_ep",
+        "kind": "track",
+        "net": "GND",
+        "a": "U152.11",
+        "z": [
+          43,
+          6.525
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "26378393-d77c-5d03-8337-fb9aecdc3869",
+        "1f426bff-4f23-5914-a2e3-a8d0c4aeb8ca"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_ground_pin",
+        "kind": "track",
+        "net": "GND",
+        "a": "U152.5",
+        "z": "U152.11",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "9c38d9d4-5d5e-5da2-967e-d70885da6eb4",
+        "b56bb4e9-c604-5650-b3b1-1d87ca79027d",
+        "825bf702-9b1a-5c19-9d15-d7377613a76a",
+        "681e6e84-076b-5c32-9604-c867b977bcc5"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "iso_ground_c161",
+        "kind": "track",
+        "net": "GND",
+        "a": "C161.2",
+        "z": "U152.5",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "a834588c-3cdc-5f15-8008-e3a136773cbd",
+        "8d3b12ae-35fa-525a-8243-77f5d97e1fe8",
+        "e55a6a80-8740-53ec-b1a8-c5e83d8cb1b8",
+        "5c57c0c7-39c1-558e-9259-4301c479eece",
+        "4c6f9b5d-e66f-5e55-adc4-f85b530c826c",
+        "90352984-b297-51e6-a5fa-972cf0b25e69",
+        "8c518812-65eb-57a1-a0e6-df325264e9ac",
+        "e0ed027d-4333-5119-9826-3bf87b9c1fb5"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "c162_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          52.12,
+          -2
+        ]
+      },
+      "actual_copper_uuids": [
+        "6d9b9318-7271-5873-9a6f-fbb1c9735aa5"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "c162_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "C162.2",
+        "z": [
+          52.12,
+          -2
+        ],
+        "width": 0.8,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "1c18cf4b-4e76-5622-bc62-9895468085c7"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "r161_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          32.0,
+          -7.5
+        ]
+      },
+      "actual_copper_uuids": [
+        "e1a17d13-db7e-53b2-8c0f-4ecd36b30703"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "r161_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "R161.2",
+        "z": [
+          32.0,
+          -7.5
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "3f4983c1-b4d1-56b4-b93e-fc36e1d48481"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "r163_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          32.0,
+          -4.0
+        ]
+      },
+      "actual_copper_uuids": [
+        "837cca8f-5669-5e6a-9ab8-c831ba8ffa2e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "r163_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "R163.2",
+        "z": [
+          32.0,
+          -4.0
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "0e22cebc-6df0-5325-81b8-6c47f7bc9998"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "c165_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          28.5,
+          -0.5
+        ]
+      },
+      "actual_copper_uuids": [
+        "1eec04e5-b05b-5cb8-8c90-66a5b58fd274"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "c165_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "C165.2",
+        "z": [
+          28.5,
+          -0.5
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "4e960a93-4258-57c3-ac47-e08f6646e477"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_source_via",
+        "kind": "via",
+        "net": "3V3_SOURCE",
+        "at": [
+          35.5,
+          44
+        ]
+      },
+      "actual_copper_uuids": [
+        "7743b810-491b-582d-bd3f-35d4fb0c4aa8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_source",
+        "kind": "track",
+        "net": "3V3_SOURCE",
+        "a": "R165.1",
+        "z": [
+          35.5,
+          44
+        ],
+        "width": 0.6,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "84935844-97ed-5141-80e2-3db89cae95c4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_source_feed",
+        "kind": "track",
+        "net": "3V3_SOURCE",
+        "a": [
+          35.5,
+          44
+        ],
+        "z": [
+          40.7,
+          24.8
+        ],
+        "width": 0.5,
+        "layer": "In1.Cu"
+      },
+      "actual_copper_uuids": [
+        "12b73303-83fb-5318-9eaf-101d9fb58dee",
+        "e5060ac1-4e61-50ec-a9f7-12323de1b05f",
+        "23d07a63-dbd6-5e70-815c-a2480469646b",
+        "7d80aee1-314e-5d7f-99bf-430e295b554e",
+        "59de466f-1c64-5cdd-9385-7a17d64d508b",
+        "d57e4f29-f9bc-5d56-8d11-eeac138c2f2e",
+        "a1928fdd-f296-54cb-8b67-38ef88232aef",
+        "c066c096-4973-5818-81c7-26ff856bf1a4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_drain",
+        "kind": "track",
+        "net": "3V3_DISCHARGE_DRAIN",
+        "a": "R165.2",
+        "z": "Q152.3",
+        "width": 0.5,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "1f70db4f-80e4-5776-b476-88c02292e8d7"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_gate",
+        "kind": "track",
+        "net": "3V3_DISCHARGE_GATE",
+        "a": "Q152.1",
+        "z": "Q153.3",
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "66c74d9a-3ac3-5ef6-ad3b-a59e08fb880d",
+        "d476c7b7-5ccb-5981-84a0-3185f0748111",
+        "cd16f375-9ed8-563a-933a-91346fbfe61a",
+        "d5f56f23-a3c9-5a0a-9208-a3b99767510a"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_gate_pullup",
+        "kind": "track",
+        "net": "3V3_DISCHARGE_GATE",
+        "a": "R164.2",
+        "z": "Q153.3",
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "a8e6a1f3-fd7e-5c37-9951-c208116f2279",
+        "7ab78ec1-81f8-5d80-a680-3e824d227057"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_vin_via",
+        "kind": "via",
+        "net": "3V3_VIN",
+        "at": [
+          47.175,
+          46.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "f774abe3-7032-5809-95ee-0c531cd10af1"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_vin_pin",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": "R164.1",
+        "z": [
+          47.175,
+          46.8
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "21b01ab9-70af-5959-a1e3-4437aa3aa070"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_vin_feed",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": [
+          47.175,
+          46.8
+        ],
+        "z": [
+          43.9,
+          12.9
+        ],
+        "width": 0.2,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "a8abb86f-39cc-52b3-8c76-14d1d15de00c",
+        "a48c5509-6d93-5221-a2e7-ed39904a3cb9",
+        "511f0cb3-c97a-5d4c-b514-499c8d2e0c21",
+        "7671a0b2-ce44-5531-8f6d-d4a3ab3e3895",
+        "7f4d3fc0-365e-59ad-8ce6-6cba19802131",
+        "fda791bd-bba3-506d-8799-91c4ef87bf29",
+        "f90913bc-64c4-527d-b556-537f0c770644",
+        "360fba06-c91f-5eef-b677-08d1d2d2fcf9",
+        "ab39e6b2-51e1-5d5b-8ad8-db6a51396259",
+        "d785da24-1c1f-5ab1-b633-4a8ca78b1fd2",
+        "e3bcaaa2-0976-5c6b-90fb-c956ce0af41d",
+        "aced6955-5186-5c32-8fc6-5633e412bd82",
+        "ef80555e-5d12-51ce-9dbb-602f81ee1d81",
+        "22a67d5c-82f2-5500-800c-6510779075d8",
+        "2f179521-2d49-588c-bdd4-968313ae1fd0",
+        "d85b2b74-f5aa-52af-9044-8fd2fb4153d6",
+        "1c9730ff-031e-5470-8723-2849d15d4776",
+        "657d3625-69dd-5265-bbef-928e77fe14be",
+        "0ce1c236-64a9-5b8c-bed7-821835eec664",
+        "ee440106-f05d-50da-9d4a-f11f16a187c3",
+        "a75b11f5-21b1-5661-a086-e11cc576fad4",
+        "a698ca66-5ba2-5376-99dc-f3da3dc5aab4",
+        "c790cdc0-a525-5327-9903-e70747f8b266",
+        "e9b9a701-2455-5407-9456-fddcdc12f4a8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_en_via",
+        "kind": "via",
+        "net": "3V3_ENABLE",
+        "at": [
+          50,
+          41.9
+        ]
+      },
+      "actual_copper_uuids": [
+        "cb67799d-c39c-5238-bf8e-77723f5ad98f"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_en_pin",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": "Q153.1",
+        "z": [
+          50,
+          41.9
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "98ccc8ba-fac3-597e-a63b-722e1dcdda5a",
+        "2ce61da1-fb07-57a4-bd5d-5efb26ee17ba"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "discharge_en_feed",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": [
+          50,
+          41.9
+        ],
+        "z": [
+          39.1625,
+          12.025
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "8ba4fda1-0642-529c-aed2-acffb3763d84",
+        "cb86cda2-9a36-54cd-b7f2-8527f8ba8876",
+        "64fb81ac-f88b-5f18-98d5-f6133b5c5967",
+        "4e3b72ad-8370-5f76-bbf5-a420595bd3e1",
+        "a277d239-c264-558f-b1ea-0b6b40ebd4fe",
+        "da765a68-582b-529d-a580-bdd2a360c6fc",
+        "0e8d8185-3341-591b-a080-c846a6756420",
+        "fed1dd81-64ce-5c83-947b-aa187b6727d9",
+        "ab6f9847-f904-5118-8500-98d2e5df8459",
+        "6ed6faad-c03a-552a-8e2a-e5e1b2076704",
+        "89b50b51-5d12-548c-97f7-f1bf8791965d",
+        "be8d6660-336a-5461-8b27-aa12ab2033fa",
+        "0e40fd59-3187-59bf-890e-65fab9f86fd4",
+        "146c00a2-3541-54fb-b014-83ef4dc626ed",
+        "08faa03e-2c53-5d23-9fad-d8222802a365",
+        "7aa71836-db95-5b7a-a32a-b4cc1e84c936",
+        "18566709-506e-5576-a8c7-3cbab034ca96",
+        "3a10460a-4787-5b27-850a-f4bea0217323"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "q152_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          45.0625,
+          46.4
+        ]
+      },
+      "actual_copper_uuids": [
+        "fac5241c-df4c-5554-859d-19d5d4f55f30"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "q152_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "Q152.2",
+        "z": [
+          45.0625,
+          46.4
+        ],
+        "width": 0.5,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "164b5f06-93ad-556a-b17e-60a2c8302db1"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "q153_ground_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          49.0625,
+          46.4
+        ]
+      },
+      "actual_copper_uuids": [
+        "3472493d-052f-50da-9701-24c2427781be"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "q153_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "Q153.2",
+        "z": [
+          49.0625,
+          46.4
+        ],
+        "width": 0.5,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "be0c27d7-830e-5069-906d-2c04d4a2dbe0"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "source_return_close_via",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          38.6,
+          21.6
+        ]
+      },
+      "actual_copper_uuids": [
+        "0670490d-1fe6-5868-b2aa-025df73d5b9e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "source_return_close_trace",
+        "kind": "track",
+        "net": "GND",
+        "a": "C157.2",
+        "z": [
+          38.6,
+          21.6
+        ],
+        "width": 0.6,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "d28064fd-5689-5153-8ef3-4791766d802a",
+        "436ecde7-fa50-5184-83e7-df630a6a80d3"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_upper_ground",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          40.5,
+          -8.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "79dba971-9a8d-5161-849d-1d9aff163979"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_upper_signal",
+        "kind": "via",
+        "net": "3V3_BUCK_ENABLE",
+        "at": [
+          36,
+          -8.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "4b1f680b-6f8e-5f0d-a74f-a8c96d844eac"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_ground",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          46.0,
+          0.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "dcf9efa5-3141-5890-91ed-20acf3422bf5"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_ground",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          77.6,
+          -6.55
+        ]
+      },
+      "actual_copper_uuids": [
+        "ff696c66-8f28-5cea-8ccd-4678c2245816"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_cap_ground",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          80.9,
+          0.4
+        ]
+      },
+      "actual_copper_uuids": [
+        "ff7a1826-569a-5fad-983f-7b0d4b67af43"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_main",
+        "kind": "via",
+        "net": "+3V3",
+        "at": [
+          78.0,
+          1.0
+        ]
+      },
+      "actual_copper_uuids": [
+        "36910754-f679-5c3c-9ff2-5243e982900e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_sns",
+        "kind": "via",
+        "net": "+3V3",
+        "at": [
+          81.0,
+          -3.5
+        ]
+      },
+      "actual_copper_uuids": [
+        "b98cd3cc-81a9-5946-b94b-dfaf3c9846aa"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_enable_local",
+        "kind": "via",
+        "net": "3V3_BULK_ENABLE",
+        "at": [
+          77.6,
+          -1.5
+        ]
+      },
+      "actual_copper_uuids": [
+        "17ee5352-5fcb-5270-89ac-19c4b97dfc30"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_enable_remote",
+        "kind": "via",
+        "net": "3V3_BULK_ENABLE",
+        "at": [
+          81.6,
+          0.1
+        ]
+      },
+      "actual_copper_uuids": [
+        "7bfc6b03-3696-530f-8a69-e3f2224482ec"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_damped",
+        "kind": "via",
+        "net": "3V3_BULK_DAMPED",
+        "at": [
+          80.2,
+          -6.1
+        ]
+      },
+      "actual_copper_uuids": [
+        "74292ffa-d10a-5bf3-b0a8-224fd64732a1"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_bleed",
+        "kind": "via",
+        "net": "3V3_BULK_DAMPED",
+        "at": [
+          85.0,
+          0.3
+        ]
+      },
+      "actual_copper_uuids": [
+        "01745bf7-145c-5166-a221-11895ddb2a4c"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_div_ground",
+        "kind": "via",
+        "net": "GND",
+        "at": [
+          86.8,
+          3.7
+        ]
+      },
+      "actual_copper_uuids": [
+        "a7a64b84-95ac-58ee-baae-983fbaada11c"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_input_reservoir",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": "C162.1",
+        "z": [
+          35.88,
+          -2
+        ],
+        "width": 1.0,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "3fb7739a-8b7a-5a8a-bc71-8fca6002057d",
+        "a7132721-ac03-5a89-bef7-073722c98262"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_iso_slew",
+        "kind": "track",
+        "net": "3V3_ISO_CT",
+        "a": "U152.6",
+        "z": "C159.1",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "22496875-67dd-5431-94f3-2bac6bd14c5f",
+        "e8dc649f-25ed-58b5-b2fd-8d997441338b",
+        "aa90d148-91e4-5597-8302-58188ecb4576",
+        "511f9333-9d65-5627-bfd6-b1a5caafdca8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_iso_slew_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "C159.2",
+        "z": [
+          46.0,
+          0.8
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "6b427050-91ff-5f0c-94bd-9a4df642d3fb",
+        "432bea49-9914-5167-a501-1bd9e46dca19"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_pg_enable_divider",
+        "kind": "track",
+        "net": "3V3_ENABLE",
+        "a": "C165.1",
+        "z": "R166.1",
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "e5333d64-c3b2-5340-9460-f73ff50e2f26",
+        "a24cb3de-b7c2-5540-a3d0-46114e92cc12",
+        "a5495de6-76dc-52bf-a709-7e5df67a481b",
+        "443bfa0e-fb77-58e6-9ecb-5bd0fefa89fc",
+        "ff5c0b7d-d594-59cd-8b75-b22253e7b75d",
+        "c1369344-2892-551d-80aa-f1f60763536b"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_divider",
+        "kind": "track",
+        "net": "3V3_BUCK_ENABLE",
+        "a": "R166.2",
+        "z": "R167.1",
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "4c3ea528-6a2d-5168-ac6e-900ce6272d8d"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_from_divider",
+        "kind": "track",
+        "net": "3V3_BUCK_ENABLE",
+        "a": "R166.2",
+        "z": [
+          36,
+          -8.8
+        ],
+        "width": 0.15,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "0eb54c7d-8c0d-5607-9000-a108c0f1cc6a",
+        "13d956dd-f63b-526a-ac8c-6006e6f5ccfe"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_inner",
+        "kind": "track",
+        "net": "3V3_BUCK_ENABLE",
+        "a": [
+          36,
+          -8.8
+        ],
+        "z": [
+          39.1625,
+          12.025
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "40a2568c-e026-570d-8fd3-57b097cd767a",
+        "8eb3dbc8-ffa3-5550-ba3e-ad7cae19c61d",
+        "764d773d-eec4-55ef-a697-c907125d695d",
+        "cd72e124-c0a7-5e06-b97d-f2fef8fb13ab",
+        "ca86bb7c-4797-5982-bf69-1ae78a95b5a2",
+        "e22cf59d-d954-5248-8ca7-b65a277055b3",
+        "771538e1-fd75-5c49-9c3c-f78effce6f75",
+        "36bb3cd2-db5c-57d6-90e5-0826f5e43d09",
+        "6aa36bd6-c043-5136-9dc4-4c4d54ac5c3d",
+        "85eb4400-2de9-5201-b830-903fcb296a1f",
+        "33812b11-e08d-51fb-b4a9-7749520e2a34",
+        "e54ddf4b-1225-5d0a-b246-8d5289357809",
+        "9dbdbeef-aa47-55c9-b31c-a0b1dd6d7e18",
+        "35ee2bbd-cbbf-5c90-a535-a325098e537d"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_pin",
+        "kind": "track",
+        "net": "3V3_BUCK_ENABLE",
+        "a": [
+          39.1625,
+          12.025
+        ],
+        "z": "U151.11",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "6be9f46e-6490-58da-990e-5977f1cb91af"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_enable_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "R167.2",
+        "z": [
+          40.5,
+          -8.8
+        ],
+        "width": 0.3,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "fbfadb46-1a28-5cf3-b0ca-5475e5cdc272",
+        "270be8e2-41d2-5fd7-94fe-c721be25df94"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_in_pins",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "U153.1",
+        "z": "U153.2",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "73270b80-5fe6-5921-a3da-9f54bf62db5b"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_bias",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "U153.2",
+        "z": "U153.3",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "1cfece4d-a87c-5039-b480-f64525002cfe"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_out_pins",
+        "kind": "track",
+        "net": "3V3_BULK_SWITCHED",
+        "a": "U153.9",
+        "z": "U153.10",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "b2463a50-59b6-5b51-8bcd-ade171185544"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_ground_pin",
+        "kind": "track",
+        "net": "GND",
+        "a": "U153.5",
+        "z": "U153.11",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "2f4d787c-9d93-508f-abb7-2ac78892e62c",
+        "90bf8799-6333-5698-8b66-7cd139c65237",
+        "3360b666-3719-57ea-a250-82f74b1fa4a3",
+        "5eedac9a-8750-5c82-8eeb-6fdf4f772bc2"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_ground_via",
+        "kind": "track",
+        "net": "GND",
+        "a": "U153.11",
+        "z": [
+          77.6,
+          -6.55
+        ],
+        "width": 0.4,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "5790d469-161f-5609-b576-60c12ded60d2",
+        "32e778a6-aaa3-5c94-bb8f-d8988a8b5ff1"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_slew",
+        "kind": "track",
+        "net": "3V3_BULK_CT",
+        "a": "U153.6",
+        "z": "C166.1",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "efa1b47f-ad2e-520c-bf47-98547c7a8667",
+        "a21eb064-90c3-5b4f-82e2-ef1237ccbbe9"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_slew_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "C166.2",
+        "z": [
+          85.12,
+          -6.8
+        ],
+        "width": 0.4,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "cdbc95b1-2d5a-59e1-9f97-3787787ae129",
+        "cd302027-df14-56ac-9d14-e19be3400c1e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_sns_pin",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "U153.8",
+        "z": [
+          81.0,
+          -3.5
+        ],
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "e0f06dee-99e4-5c7f-86e9-ad4fad7156ff"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_sns_inner",
+        "kind": "track",
+        "net": "+3V3",
+        "a": [
+          81.0,
+          -3.5
+        ],
+        "z": [
+          78.0,
+          1.0
+        ],
+        "width": 0.4,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "6803dc2b-408b-56d8-95d7-c299b4cea1d3",
+        "4ce980a0-2138-52c6-a0bd-8f1e6f12afec"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_main_feed",
+        "kind": "track",
+        "net": "+3V3",
+        "a": [
+          78.88,
+          -6.8
+        ],
+        "z": [
+          78.0,
+          1.0
+        ],
+        "width": 0.6,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "7b2dbaba-6f22-59c0-ad85-bcdc7b77b8d8",
+        "bc9526ff-6532-52c4-a7f9-ad3e9da837df"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_input_cap_feed",
+        "kind": "track",
+        "net": "+3V3",
+        "a": [
+          78.0,
+          1.0
+        ],
+        "z": "C167.1",
+        "width": 0.4,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "9a2c9eef-afaa-553f-b922-9ebc793017a1",
+        "bb464c99-ded2-5183-932a-1548634c558c"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_input_feed",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "C167.1",
+        "z": "U153.1",
+        "width": 0.4,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "34526080-7c69-59fb-8f65-ab49af50f49f",
+        "0e3928ec-92be-5fea-a887-d743fd5d1786",
+        "0149a6cf-97d2-53b4-a489-f1c62d1f1741",
+        "4286cf7c-c283-5750-b0b4-065c514cd280"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_input_cap_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "C167.2",
+        "z": [
+          80.9,
+          0.4
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "659a873b-4ad6-52ec-9c23-62d2fd0ece23",
+        "3f10495e-f598-57dd-82c2-ff06567dfbb8"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_en_supply",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "C167.1",
+        "z": "R169.1",
+        "width": 0.25,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "0dd96dd1-bafe-507c-b9fc-6e75a7d8dd47",
+        "3d809567-f9e4-5bf2-bd2b-eeb1292713d6"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_en_divider",
+        "kind": "track",
+        "net": "3V3_BULK_ENABLE",
+        "a": "R169.2",
+        "z": "R170.1",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "82c523bf-dff7-517a-bd3a-25bc7bcd7819"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_en_to_via",
+        "kind": "track",
+        "net": "3V3_BULK_ENABLE",
+        "a": "R169.2",
+        "z": [
+          81.6,
+          0.1
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "cf8266c7-8c66-5a2b-aa26-652e20245f07",
+        "efdc8b79-4b0d-5847-b333-081139c0be98"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_en_inner",
+        "kind": "track",
+        "net": "3V3_BULK_ENABLE",
+        "a": [
+          81.6,
+          0.1
+        ],
+        "z": [
+          77.6,
+          -1.5
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "da5e8b86-6335-565c-94de-a6cbd06bfb7c",
+        "e79361db-0f31-5d24-a093-81606ec8a1d3",
+        "1012707f-f567-5de0-8878-ed3f3126881b",
+        "a1b352c4-001d-5b9d-b88d-38af4a2cb1f6",
+        "c906a412-4b5e-592c-a07b-224cfd962b02",
+        "3f2c0c83-af27-5da9-aa0d-a4a84d800859",
+        "1c95dd7a-e460-5b26-a0f4-43ea65e4a033",
+        "a8a36ec1-966b-5227-a479-8ac22974e5e6"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_en_local",
+        "kind": "track",
+        "net": "3V3_BULK_ENABLE",
+        "a": [
+          77.6,
+          -1.5
+        ],
+        "z": "U153.4",
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "adabf0fc-325b-51ff-a537-518275e55966",
+        "1eac6d24-93b0-5c93-abd3-fb5bcc9bf2e0",
+        "59dbb7f7-aad9-5a74-922d-7df0b4a9ef31",
+        "7df9e1b2-62c8-5da3-8cec-41b79b2f8372"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_to_damper",
+        "kind": "track",
+        "net": "3V3_BULK_SWITCHED",
+        "a": "U153.10",
+        "z": "R158.1",
+        "width": 0.6,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "2964c51e-fdf0-52a6-92e1-d162e89bf668",
+        "2722b4b2-2907-5d67-a6e1-07b7bbce9b99"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_damper_to_via",
+        "kind": "track",
+        "net": "3V3_BULK_DAMPED",
+        "a": "R158.2",
+        "z": [
+          80.2,
+          -6.1
+        ],
+        "width": 0.8,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "b0659cb7-17a3-59d1-999d-68f86e6c2073",
+        "4b66644a-67a0-5acc-be94-82b9f99435ce"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_via_to_reservoir",
+        "kind": "track",
+        "net": "3V3_BULK_DAMPED",
+        "a": [
+          80.2,
+          -6.1
+        ],
+        "z": "C206.1",
+        "width": 0.8,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "deaf2007-5027-5cbe-8939-b4e44192d33d",
+        "a4c8a1dd-70b9-5b1d-9484-de7dea15f1da"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_reservoir_bleed_inner",
+        "kind": "track",
+        "net": "3V3_BULK_DAMPED",
+        "a": [
+          80.2,
+          -6.1
+        ],
+        "z": [
+          85.0,
+          0.3
+        ],
+        "width": 0.2,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "becad35f-567e-5560-9368-020506a1ce8d",
+        "afb76c11-71c9-55ff-b12e-61fb51e15fd7"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_reservoir_bleed",
+        "kind": "track",
+        "net": "3V3_BULK_DAMPED",
+        "a": [
+          85.0,
+          0.3
+        ],
+        "z": "R168.1",
+        "width": 0.2,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "716efe90-d119-56fa-85a1-58508b6df584",
+        "bbc8a59c-3e8a-5d97-8eee-b3b07338976c"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_reservoir_bleed_ground",
+        "kind": "track",
+        "net": "GND",
+        "a": "R168.2",
+        "z": [
+          86.8,
+          3.7
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "3a2d989b-ec15-5970-a6a3-75ed5c538b11",
+        "0a6e4841-7f29-5c84-9203-68aa005a9641"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_bulk_divider_return",
+        "kind": "track",
+        "net": "GND",
+        "a": "R170.2",
+        "z": [
+          86.8,
+          3.7
+        ],
+        "width": 0.3,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "9162f13a-4be1-5e88-becc-3513c058f083",
+        "ca8751b3-6278-53a5-92f8-fbafe66e5777",
+        "84baba64-bca3-5c9d-aea9-87a5464d4344",
+        "120de90a-9d5c-5041-bbb9-c26808819bae"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_reset_delay_supply",
+        "kind": "track",
+        "net": "+3V3",
+        "a": "R204.1",
+        "z": [
+          74.99079999999996,
+          9.000000000000002
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "283bb754-791c-5999-b0ce-6d670c5c48e3",
+        "9b783cc9-f412-5ded-8447-222f43c20d1e"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_reset_near",
+        "kind": "via",
+        "net": "SUP_RESET_DELAY",
+        "at": [
+          75.3,
+          6.8
+        ]
+      },
+      "actual_copper_uuids": [
+        "d2705a8e-0af1-5260-8b69-28e229fb4600"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_reset_far",
+        "kind": "via",
+        "net": "SUP_RESET_DELAY",
+        "at": [
+          76.45,
+          15.5
+        ],
+        "size": 0.6,
+        "drill": 0.3
+      },
+      "actual_copper_uuids": [
+        "144e7866-e652-57dc-827a-757620039ac4"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_reset_near_trace",
+        "kind": "track",
+        "net": "SUP_RESET_DELAY",
+        "a": "R204.2",
+        "z": [
+          75.3,
+          6.8
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "321c1076-e021-5ee4-8d34-03bc19ce8a3b",
+        "1736c0ec-f285-5fd5-8694-3969f6f72c05"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_reset_far_trace",
+        "kind": "track",
+        "net": "SUP_RESET_DELAY",
+        "a": "U202.4",
+        "z": [
+          76.45,
+          15.5
+        ],
+        "width": 0.15,
+        "layer": "B.Cu"
+      },
+      "actual_copper_uuids": [
+        "db92b680-1296-5bd6-b7cb-f5aabc128df0",
+        "0036cf87-dbbb-55f4-b97b-b339ad527166",
+        "56dd178a-0a8a-5511-a963-cf181d0469c2",
+        "c351df2f-c83b-5e4a-b195-7cafd3748cc3"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_ct_reset_inner",
+        "kind": "track",
+        "net": "SUP_RESET_DELAY",
+        "a": [
+          75.3,
+          6.8
+        ],
+        "z": [
+          76.45,
+          15.5
+        ],
+        "width": 0.15,
+        "layer": "In2.Cu"
+      },
+      "actual_copper_uuids": [
+        "199d07f7-5638-5fb9-ac2d-fd582d5e1bef",
+        "f3877610-f0de-529b-ac72-7962869726ea"
+      ],
+      "complete_native_connectivity": true
+    },
+    {
+      "task": {
+        "id": "cr_sns_reservoir_feed",
+        "kind": "track",
+        "net": "3V3_VIN",
+        "a": "R160.1",
+        "z": [
+          35.88,
+          -2
+        ],
+        "width": 0.2,
+        "layer": "F.Cu"
+      },
+      "actual_copper_uuids": [
+        "4d5b7807-9a0e-5ca5-9895-f84b3a80253d",
+        "3b8f0c37-982f-54a9-81f1-70ee53ad33cd",
+        "32230902-957f-5d9a-84a5-fb419fd063be",
+        "93ce9b07-0dbb-5f98-b6e8-51c32439b134"
+      ],
+      "complete_native_connectivity": true
+    }
+  ],
+  "note": "Task endpoints are authoring intent; exact surviving coordinates/nets are in SOURCE_AUDIT and LAYOUT_MEASUREMENTS. Rejected/partially replaced attempts remain in history."
+}

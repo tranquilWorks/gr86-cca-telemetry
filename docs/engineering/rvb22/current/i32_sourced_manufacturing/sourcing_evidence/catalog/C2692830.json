@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2692830",
+  "componentModelEn": "PTFR0603B3K01N9",
+  "componentBrandEn": "RESI",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405061537_RESI-PTFR0603B3K01N9_C2692830.pdf",
+  "describe": "-55\u2103~+125\u2103 100V 100mW 3.01k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 317,
+  "preMinPurchaseNum": 66,
+  "canPresaleNumber": 316,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2692830",
+  "retrieved_at_UTC": "2026-09-15T21:03:41.808646+00:00",
+  "response_sha256": "eae4b7e0e8ad0b35e7aca8dada4e4f776d70c1615ecba294375503869e2ab478"
+}

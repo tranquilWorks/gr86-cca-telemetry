@@ -1,0 +1,164 @@
+(footprint "I32_PROCUREMENT_R155"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "PTFR0603B11K8N9 / C19679768; Frozen I32 procurement package; dimensions and source in procurement_redline/PACKAGE_QUALIFICATION.json")
+	(tags "PTFR0603B11K8N9 C19679768")
+	(property "Reference" "R155"
+		(at -1.4 -3.399999 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b9e4142b-9a51-47e9-9c1e-e5ea618781e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "11.8k /0.1% 10ppm FB TOP"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b65ef6f8-262f-4867-b4cd-f567b52ad628")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/partdetail/C19679768"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67f4b99b-8e01-47d6-a996-625f45d4fb0a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "e1a65369-23d6-4ad7-9002-9ee13a234415")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "MPN" "PTFR0603B11K8N9"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eaa61c2d-3ada-49d8-87f6-d0c8f40312ed")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Manufacturer" "Resistor.Today"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a8829311-ccb3-4fde-8499-8d4459bcf8d4")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "LCSC" "C19679768"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5602df36-f81c-4929-8b6a-1bf3066bfbff")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02ff5b7d-34df-4749-8042-f9a3838ffe51")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Qualification" "I32 source candidate; native evidence and qualification conditions control"
+		(at 0 1.6 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "92eab3ca-1b64-43dc-85c6-d3283de0c7eb")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.65 0.9)
+		(end 1.65 -0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "85894700-182a-5bb5-96e2-cd7ef78c02a4")
+	)
+	(fp_rect
+		(start -0.8 0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "770b047f-69b3-5135-ab55-49ed1b34820b")
+	)
+	(pad "1" smd rect
+		(at -0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bbbedbb4-6c58-56b5-a9bd-74fbab7b3e0e")
+	)
+	(pad "2" smd rect
+		(at 0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1b117b6d-5e31-5688-978b-1112918453c7")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R155.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

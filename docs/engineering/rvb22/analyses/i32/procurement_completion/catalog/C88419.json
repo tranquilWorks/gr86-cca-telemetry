@@ -1,0 +1,18 @@
+{
+  "componentCode": "C88419",
+  "componentModelEn": "MIC5504-3.3YM5-TR",
+  "componentBrandEn": "Microchip Tech",
+  "componentSpecificationEn": "SOT-23-5",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Microchip-Tech-MIC5504-3-3YM5-TR_C88419.pdf",
+  "describe": "-40\u2103~+125\u2103@(Tj) 1 160mV@(300mA) 175uVrms 3.3V 300mA 38uA 5.5V 60dB@(1kHz) Fixed Over Current Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+  "overseasStockCount": 46477,
+  "preMinPurchaseNum": 36,
+  "canPresaleNumber": 45972,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C88419",
+  "retrieved_at_UTC": "2026-09-15T21:03:47.503050+00:00",
+  "response_sha256": "f003264ba3f05833b49a50282c70be0445fdf4450b35ad54e1220b2e1560da9e"
+}

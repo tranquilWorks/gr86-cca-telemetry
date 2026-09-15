@@ -1,0 +1,12 @@
+{
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "files": {
+    "evidence/native/REVIEW_SCHEMATIC.pdf": "3b130c48284e2fd69fe565c128d1b7eebcf19edb55107f6813d96772dfc5b248",
+    "evidence/layout/Reservoir_tab_power_routes.png": "68dc04739f11349c06b18da79c86456df37d7033cad93219a17839a777baa141"
+  },
+  "reviewed": [
+    "Native schematic sheet5/12 after C16668n change: value/part note readable; Q152/Q153 note clear of symbols; no new label collision observed. Other unchanged sheets carry forward the earlier177-part visual inspection.",
+    "Source-coordinate front/back reservoir view after C166 recentering: CT tail reaches moved pad and ground branch follows moved pad; dimensions and ground-fill authority recorded separately."
+  ],
+  "scope": "Visual inspection of final affected sheet/view; native177-component STEP resolution and maximum-body dimensions are checked separately. Not a physical assembly inspection."
+}

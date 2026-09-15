@@ -1,0 +1,44 @@
+name: I28 U121 symbol identity repair
+on:
+  push:
+    branches: [codex/rvb24-coordinated-closure]
+    paths: [.github/workflows/i28-symbol-identity-repair.yml]
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/rvb24-coordinated-closure
+          fetch-depth: 0
+      - name: Preserve qualified library geometry while retaining Q1 fitted metadata
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('docs/engineering/rvb22/candidate/cad/Power_5V.kicad_sch')
+          s=p.read_text()
+          reps={
+            '(symbol "RevB:LM5164QDDARQ1"':'(symbol "RevB:LM5164DDAR"',
+            '(symbol "LM5164QDDARQ1_0_1"':'(symbol "LM5164DDAR_0_1"',
+            '(symbol "LM5164QDDARQ1_1_1"':'(symbol "LM5164DDAR_1_1"',
+            '(lib_id "RevB:LM5164QDDARQ1")':'(lib_id "RevB:LM5164DDAR")'
+          }
+          for a,b in reps.items():
+              if a not in s: raise SystemExit(f'missing expected token: {a}')
+              s=s.replace(a,b)
+          # Fitted identity must remain the automotive part.
+          assert '(property "Value" "LM5164QDDARQ1"' in s
+          assert '(property "MPN" "LM5164QDDARQ1"' in s
+          assert '(property "LCSC" "C2072225"' in s
+          p.write_text(s)
+          PY
+          git diff --check
+      - name: Commit repair
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/engineering/rvb22/candidate/cad/Power_5V.kicad_sch
+          git commit -m 'I28: retain qualified LM5164 symbol identity for Q1 fitted variant'
+          git push origin HEAD:codex/rvb24-coordinated-closure

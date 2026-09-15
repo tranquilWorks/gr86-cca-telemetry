@@ -1,0 +1,22 @@
+{
+  "query": "TNPW060324K3BEEA",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:30.128183+00:00",
+  "response_sha256": "5baa63acdc4b3ef02b71a76b5545d1104857be4f6388914067d37c0c41411391",
+  "rows": [
+    {
+      "componentCode": "C4269123",
+      "componentModelEn": "TNPW060324K3BEEA",
+      "componentBrandEn": "Vishay Intertech",
+      "stockCount": 4888,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 120,
+      "urlSuffix": "VishayIntertech-TNPW060324K3BEEA/C4269123",
+      "componentSpecificationEn": "0603",
+      "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312131127_Vishay-Intertech-TNPW060324K3BEEA_C4269123.pdf"
+    }
+  ]
+}

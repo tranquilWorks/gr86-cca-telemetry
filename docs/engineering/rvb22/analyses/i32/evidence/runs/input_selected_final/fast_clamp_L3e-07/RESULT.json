@@ -1,0 +1,959 @@
+{
+  "parameters": {
+    "name": "fast_clamp_L3e-07",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12",
+    "stop": 0.1,
+    "step": 2e-07,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.060052
+    ],
+    "clamp_lead_L": 3e-07,
+    "r101": 11979.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125
+  },
+  "returncode": 0,
+  "deck_sha256": "836d5963d34a1bfada40b91d60f0b33d4669bead33a8729c7d4fdeb71bea47a6",
+  "completed": true,
+  "end_s": 0.1,
+  "samples": 515365,
+  "Q101_VDS_max_V": 130.4932217,
+  "Q101_VGS_max_V": 12.442188899999998,
+  "Q101_VGS_min_V": -0.553693899999999,
+  "Q101_current_peak_A": 10.2225882,
+  "Q101_energy_positive_J": 0.008063057869899887,
+  "Q101_power_peak_W": 417.8772171467556,
+  "D101_reverse_max_V": 271.67392,
+  "D101_current_peak_A": 10.2247462,
+  "fuse_I2t_A2s": 0.014246675350422835,
+  "R101_peak_V": 153.0772138,
+  "R101_peak_W": 1.9561426984532027,
+  "R101_energy_J": 2.092473177126992e-05,
+  "R110_peak_W": 28.925849153281003,
+  "R110_energy_J": 0.006522589139136348,
+  "PROTECT_CTRL_VIN_range_V": [
+    -1.07594426e-21,
+    14.5043426
+  ],
+  "INPUT_UV_range_V": [
+    -1.20703482e-20,
+    10.8537588
+  ],
+  "INPUT_OV_range_V": [
+    -4.54959277e-21,
+    4.09103218
+  ],
+  "INPUT_SHDN_range_V": [
+    -1.07594371e-21,
+    14.5043352
+  ],
+  "INPUT_GATE_DRIVE_range_V": [
+    -0.00438588088,
+    40.7807887
+  ],
+  "PROTECTED_12V_range_V": [
+    -1.85929545e-05,
+    33.5690466
+  ],
+  "VIN5_range_V": [
+    -1.85929539e-05,
+    32.6120878
+  ],
+  "RAW_12V_range_V": [
+    -123.444764,
+    164.817226
+  ],
+  "REV_BLOCKED_12V_range_V": [
+    -1.81983711e-19,
+    163.641287
+  ],
+  "D102": {
+    "peak_A": 1.1920929e-07,
+    "peak_W": 1.2554654407127461e-06,
+    "positive_energy_J": 1.0243692364272981e-09,
+    "charge_C": 9.992866408735908e-11,
+    "duration_above_1mA_s": 0.0
+  },
+  "D103": {
+    "peak_A": 4.169324,
+    "peak_W": 139.96023164649839,
+    "positive_energy_J": 0.00034973977385898997,
+    "charge_C": 1.0492028516635205e-05,
+    "duration_above_1mA_s": 4.64990000000054e-06
+  },
+  "D104": {
+    "peak_A": 0.0,
+    "peak_W": 0.0,
+    "positive_energy_J": 0.0,
+    "charge_C": 0.0,
+    "duration_above_1mA_s": 0.0
+  },
+  "D105": {
+    "peak_A": 2.15502788,
+    "peak_W": 347.4767514019249,
+    "positive_energy_J": 7.265130296694617e-05,
+    "duration_above_1mA_s": 3.0253499999806366e-06,
+    "terminal_max_V": 161.240026
+  },
+  "Q101_case_temperature_allocation_C": 125,
+  "Q101_onstate_power_max_W": 3.0401942998452762,
+  "R101_pulse_screen": {
+    "continuous_derated_W": 0.35294117647058826,
+    "whole_record_mean_W": 0.0002092473177126992,
+    "pulses_above_continuous": [
+      {
+        "start_s": 0.0600144445,
+        "duration_s": 3.852700000001041e-06,
+        "peak_W": 1.9561426984532027,
+        "energy_J": 3.4844969841432853e-06
+      }
+    ]
+  },
+  "R110_pulse_screen": {
+    "continuous_derated_W": 0.36,
+    "whole_record_mean_W": 0.06522589139136348,
+    "pulses_above_continuous": [
+      {
+        "start_s": 0.0600006987,
+        "duration_s": 1.3964300000002261e-05,
+        "peak_W": 28.925849153281003,
+        "energy_J": 0.0002476034663437702
+      }
+    ]
+  },
+  "events": [
+    {
+      "event": "fault",
+      "linear_intervals": [
+        {
+          "duration_s": 1.3321199999999367e-05,
+          "start_s": 0.0600013746,
+          "peak_VDS_V": 130.4932217,
+          "peak_ID_A": 10.2225882,
+          "positive_energy_J": 0.0005675195320577986,
+          "published_family_s": 0.0001,
+          "derated_SOA_utilization_max": 0.5223465214334445,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1699999996617194e-08,
+          "start_s": 0.0600148848,
+          "peak_VDS_V": 120.5202792,
+          "peak_ID_A": 0.0873635414,
+          "positive_energy_J": 7.116054588982984e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.005140195012957571,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2599999994755695e-08,
+          "start_s": 0.0600149093,
+          "peak_VDS_V": 121.9061106,
+          "peak_ID_A": 0.168992858,
+          "positive_energy_J": 1.4929529937901327e-07,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.009668154191403941,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2700000003029732e-08,
+          "start_s": 0.060014934,
+          "peak_VDS_V": 116.98664029999999,
+          "peak_ID_A": 0.0977463057,
+          "positive_energy_J": 9.066950946839803e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.005498093153810567,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.229999999768916e-08,
+          "start_s": 0.0600149706,
+          "peak_VDS_V": 118.61232799999999,
+          "peak_ID_A": 0.112103849,
+          "positive_energy_J": 9.423639265065289e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.006433215698750577,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2500000000359446e-08,
+          "start_s": 0.0600149959,
+          "peak_VDS_V": 118.02136299999998,
+          "peak_ID_A": 0.146555405,
+          "positive_energy_J": 1.291428297398784e-07,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.008174786247087848,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2499999993420552e-08,
+          "start_s": 0.0600150206,
+          "peak_VDS_V": 112.21139120000001,
+          "peak_ID_A": 0.0503866743,
+          "positive_energy_J": 4.59478706539873e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.002759204635081265,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.30000000137365e-09,
+          "start_s": 0.060015038,
+          "peak_VDS_V": 113.2509392,
+          "peak_ID_A": 0.0204621665,
+          "positive_energy_J": 9.297182509464204e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0011544978174939343,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2000000000622624e-08,
+          "start_s": 0.0600150574,
+          "peak_VDS_V": 116.26384519999999,
+          "peak_ID_A": 0.127869551,
+          "positive_energy_J": 1.0619966604431301e-07,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.007087216907382813,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.229999999768916e-08,
+          "start_s": 0.0600150819,
+          "peak_VDS_V": 113.85052230000001,
+          "peak_ID_A": 0.115517557,
+          "positive_energy_J": 1.0051718907837883e-07,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.006275859328737481,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.100000000114898e-08,
+          "start_s": 0.0600151191,
+          "peak_VDS_V": 112.17040859999999,
+          "peak_ID_A": 0.0579987702,
+          "positive_energy_J": 4.438581330702485e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0031979932098785842,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2500000000359446e-08,
+          "start_s": 0.060015143,
+          "peak_VDS_V": 113.3496305,
+          "peak_ID_A": 0.126612248,
+          "positive_energy_J": 1.058964008641494e-07,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.006870213834224491,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.229999999768916e-08,
+          "start_s": 0.060015168,
+          "peak_VDS_V": 109.50963479999999,
+          "peak_ID_A": 0.0771366592,
+          "positive_energy_J": 6.584211787477116e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.004085323851149062,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1800000004891231e-08,
+          "start_s": 0.0600152046,
+          "peak_VDS_V": 110.5359618,
+          "peak_ID_A": 0.0850501664,
+          "positive_energy_J": 6.720724796609862e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.004553659694327861,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2399999999024303e-08,
+          "start_s": 0.0600152293,
+          "peak_VDS_V": 109.9418197,
+          "peak_ID_A": 0.112403596,
+          "positive_energy_J": 9.258095024181558e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00591834468401066,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1100000002484123e-08,
+          "start_s": 0.0600152545,
+          "peak_VDS_V": 105.18799049999998,
+          "peak_ID_A": 0.0372431299,
+          "positive_energy_J": 3.067588540103359e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0019225608119153507,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.30000000137365e-09,
+          "start_s": 0.0600152713,
+          "peak_VDS_V": 106.19559959999998,
+          "peak_ID_A": 0.0163238328,
+          "positive_energy_J": 7.169115579122503e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000864259444486659,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2600000001694589e-08,
+          "start_s": 0.0600152901,
+          "peak_VDS_V": 108.3616071,
+          "peak_ID_A": 0.098903041,
+          "positive_energy_J": 7.815869750279232e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.005141212908719122,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2699999996090838e-08,
+          "start_s": 0.0600153151,
+          "peak_VDS_V": 106.3023164,
+          "peak_ID_A": 0.0891680077,
+          "positive_energy_J": 7.272242692271185e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.004563852655522207,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1500000000885802e-08,
+          "start_s": 0.0600153522,
+          "peak_VDS_V": 104.8457108,
+          "peak_ID_A": 0.0441382905,
+          "positive_energy_J": 3.228922516413468e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0022817809620281704,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1699999996617194e-08,
+          "start_s": 0.0600153769,
+          "peak_VDS_V": 105.65967140000001,
+          "peak_ID_A": 0.0987286476,
+          "positive_energy_J": 7.697749344879508e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.005005193516406516,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1399999999550658e-08,
+          "start_s": 0.0600154019,
+          "peak_VDS_V": 102.6254121,
+          "peak_ID_A": 0.062356789,
+          "positive_energy_J": 4.941444986340973e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0031178394500000002,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1099999995545229e-08,
+          "start_s": 0.0600154388,
+          "peak_VDS_V": 103.0174275,
+          "peak_ID_A": 0.0616203468,
+          "positive_energy_J": 4.586749381056473e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0031016652582197264,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1600000002220945e-08,
+          "start_s": 0.0600154635,
+          "peak_VDS_V": 102.70312969999999,
+          "peak_ID_A": 0.0889372935,
+          "positive_energy_J": 6.855100590788236e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.004446864675,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.06000000027473e-08,
+          "start_s": 0.0600154889,
+          "peak_VDS_V": 99.15009610000001,
+          "peak_ID_A": 0.0374847583,
+          "positive_energy_J": 2.813787843216487e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0018742379149999998,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2000000000622624e-08,
+          "start_s": 0.0600155246,
+          "peak_VDS_V": 100.8697381,
+          "peak_ID_A": 0.0701947203,
+          "positive_energy_J": 5.2122506871723796e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.003509736015,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2300000004628053e-08,
+          "start_s": 0.0600155497,
+          "peak_VDS_V": 99.7078525,
+          "peak_ID_A": 0.0753374909,
+          "positive_energy_J": 5.725641088302945e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.003766874545,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.099999997650652e-09,
+          "start_s": 0.0600155767,
+          "peak_VDS_V": 95.82679209999999,
+          "peak_ID_A": 0.0169500767,
+          "positive_energy_J": 9.769693903129285e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000847503835,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.000000003254403e-09,
+          "start_s": 0.0600155903,
+          "peak_VDS_V": 97.36957530000001,
+          "peak_ID_A": 0.0185164245,
+          "positive_energy_J": 9.816156128089426e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000925821225,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.229999999768916e-08,
+          "start_s": 0.0600156115,
+          "peak_VDS_V": 98.5045599,
+          "peak_ID_A": 0.0710067569,
+          "positive_energy_J": 5.238464640223319e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.003550337845,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1599999995282051e-08,
+          "start_s": 0.0600156369,
+          "peak_VDS_V": 96.7564491,
+          "peak_ID_A": 0.0610214331,
+          "positive_energy_J": 4.5044122329989705e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0030510716550000002,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.49999999499962e-09,
+          "start_s": 0.0600156754,
+          "peak_VDS_V": 95.5274057,
+          "peak_ID_A": 0.0294271191,
+          "positive_energy_J": 1.9010746318052132e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001471355955,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.2000000000622624e-08,
+          "start_s": 0.0600156986,
+          "peak_VDS_V": 96.0327672,
+          "peak_ID_A": 0.0683768606,
+          "positive_energy_J": 4.94739457313974e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0034188430300000003,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.189999999928748e-08,
+          "start_s": 0.0600157241,
+          "peak_VDS_V": 93.9884016,
+          "peak_ID_A": 0.0483195422,
+          "positive_energy_J": 3.5048565518950076e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00241597711,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0200000004345622e-08,
+          "start_s": 0.0600157619,
+          "peak_VDS_V": 93.47184100000001,
+          "peak_ID_A": 0.035089387,
+          "positive_energy_J": 2.3165705565983543e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00175446935,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1500000000885802e-08,
+          "start_s": 0.0600157863,
+          "peak_VDS_V": 93.5579909,
+          "peak_ID_A": 0.0628780974,
+          "positive_energy_J": 4.445168378811254e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00314390487,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1600000002220945e-08,
+          "start_s": 0.0600158113,
+          "peak_VDS_V": 91.39601979999999,
+          "peak_ID_A": 0.0386742235,
+          "positive_energy_J": 2.7142831868049376e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001933711175,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.06000000027473e-08,
+          "start_s": 0.0600158491,
+          "peak_VDS_V": 91.3003769,
+          "peak_ID_A": 0.0365486896,
+          "positive_energy_J": 2.4074133597270027e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0018274344800000002,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1799999997952337e-08,
+          "start_s": 0.0600158737,
+          "peak_VDS_V": 91.1323171,
+          "peak_ID_A": 0.0565349932,
+          "positive_energy_J": 3.970429414640098e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00282674966,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0500000001412158e-08,
+          "start_s": 0.0600158992,
+          "peak_VDS_V": 88.9686987,
+          "peak_ID_A": 0.0320658244,
+          "positive_energy_J": 2.1380542751879695e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00160329122,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1199999996880372e-08,
+          "start_s": 0.0600159366,
+          "peak_VDS_V": 89.0724304,
+          "peak_ID_A": 0.0347313888,
+          "positive_energy_J": 2.2758295110856948e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0017365694399999998,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1399999999550658e-08,
+          "start_s": 0.060015962,
+          "peak_VDS_V": 88.79216389999999,
+          "peak_ID_A": 0.051490668,
+          "positive_energy_J": 3.484090444546104e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0025745334,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0499999994473264e-08,
+          "start_s": 0.0600159872,
+          "peak_VDS_V": 86.7789462,
+          "peak_ID_A": 0.0284586008,
+          "positive_energy_J": 1.8496087390328532e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00142293004,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0099999996071585e-08,
+          "start_s": 0.0600160256,
+          "peak_VDS_V": 86.79789110000002,
+          "peak_ID_A": 0.0309260305,
+          "positive_energy_J": 1.9297024080424126e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001546301525,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.1199999996880372e-08,
+          "start_s": 0.0600160501,
+          "peak_VDS_V": 86.5339473,
+          "peak_ID_A": 0.0465242609,
+          "positive_energy_J": 3.0758315698036974e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.002326213045,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0000000001675335e-08,
+          "start_s": 0.0600160758,
+          "peak_VDS_V": 84.7146085,
+          "peak_ID_A": 0.027326818,
+          "positive_energy_J": 1.7030286995623672e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0013663409,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.600000003273657e-09,
+          "start_s": 0.0600161141,
+          "peak_VDS_V": 84.4890614,
+          "peak_ID_A": 0.0258349594,
+          "positive_energy_J": 1.5372215946505594e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00129174797,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.069999999714355e-08,
+          "start_s": 0.0600161388,
+          "peak_VDS_V": 84.32498840000001,
+          "peak_ID_A": 0.0425545788,
+          "positive_energy_J": 2.6955091558084824e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00212772894,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0000000001675335e-08,
+          "start_s": 0.0600161642,
+          "peak_VDS_V": 82.7616007,
+          "peak_ID_A": 0.0278465354,
+          "positive_energy_J": 1.697980835482889e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0013923267700000001,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 8.600000003800012e-09,
+          "start_s": 0.0600162037,
+          "peak_VDS_V": 82.2024648,
+          "peak_ID_A": 0.0195666935,
+          "positive_energy_J": 1.0621019852626535e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0009783346749999999,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0599999995808407e-08,
+          "start_s": 0.0600162279,
+          "peak_VDS_V": 82.21032340000001,
+          "peak_ID_A": 0.0383023518,
+          "positive_energy_J": 2.3563350303670864e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00191511759,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0300000005680765e-08,
+          "start_s": 0.0600162534,
+          "peak_VDS_V": 80.9608685,
+          "peak_ID_A": 0.0292496394,
+          "positive_energy_J": 1.7763401429965376e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0014624819699999999,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.000000004307115e-09,
+          "start_s": 0.0600162956,
+          "peak_VDS_V": 79.85633390000001,
+          "peak_ID_A": 0.0120070019,
+          "positive_energy_J": 4.295817941518159e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000600350095,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.06000000027473e-08,
+          "start_s": 0.0600163173,
+          "peak_VDS_V": 80.09234660000001,
+          "peak_ID_A": 0.0328977888,
+          "positive_energy_J": 1.9691666219767967e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00164488944,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.06000000027473e-08,
+          "start_s": 0.0600163425,
+          "peak_VDS_V": 79.16343609999998,
+          "peak_ID_A": 0.0306568987,
+          "positive_energy_J": 1.8395262385306226e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001532844935,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.900000000340192e-09,
+          "start_s": 0.0600164073,
+          "peak_VDS_V": 77.9008565,
+          "peak_ID_A": 0.0259067406,
+          "positive_energy_J": 1.4636961758832073e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00129533703,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0200000004345622e-08,
+          "start_s": 0.0600164323,
+          "peak_VDS_V": 77.3136679,
+          "peak_ID_A": 0.0305514134,
+          "positive_energy_J": 1.7850631859247073e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0015275706700000002,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.699999998722618e-09,
+          "start_s": 0.0600164583,
+          "peak_VDS_V": 75.8386988,
+          "peak_ID_A": 0.0162787379,
+          "positive_energy_J": 7.812903321074925e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000813936895,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.80000000005776e-09,
+          "start_s": 0.0600164988,
+          "peak_VDS_V": 75.6043577,
+          "peak_ID_A": 0.0165756883,
+          "positive_energy_J": 7.904261409586421e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0008287844149999999,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 1.0300000005680765e-08,
+          "start_s": 0.0600165226,
+          "peak_VDS_V": 75.43147640000001,
+          "peak_ID_A": 0.0283563338,
+          "positive_energy_J": 1.5945792603755072e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00141781669,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.299999999268227e-09,
+          "start_s": 0.0600165487,
+          "peak_VDS_V": 74.41225709999999,
+          "peak_ID_A": 0.0221246773,
+          "positive_energy_J": 1.1881479919203289e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0011062338649999999,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 8.699999998196262e-09,
+          "start_s": 0.060016614,
+          "peak_VDS_V": 73.3309016,
+          "peak_ID_A": 0.0221094245,
+          "positive_energy_J": 1.1160295891953573e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001105471225,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.40000000060337e-09,
+          "start_s": 0.0600166392,
+          "peak_VDS_V": 72.768697,
+          "peak_ID_A": 0.0247894311,
+          "positive_energy_J": 1.3066509955480888e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001239471555,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.8000000011104724e-09,
+          "start_s": 0.0600166663,
+          "peak_VDS_V": 71.50296159999999,
+          "peak_ID_A": 0.0133794411,
+          "positive_energy_J": 4.98236662415724e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000668972055,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.700000006714223e-09,
+          "start_s": 0.0600167076,
+          "peak_VDS_V": 71.1047968,
+          "peak_ID_A": 0.0118722531,
+          "positive_energy_J": 4.23250432517553e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0005936126550000001,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.100000003536834e-09,
+          "start_s": 0.0600167305,
+          "peak_VDS_V": 70.93044979999999,
+          "peak_ID_A": 0.0222552901,
+          "positive_energy_J": 1.1245484463121522e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001112764505,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 9.600000003273657e-09,
+          "start_s": 0.060016756,
+          "peak_VDS_V": 70.1888551,
+          "peak_ID_A": 0.0199176699,
+          "positive_energy_J": 1.0236201109194838e-08,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0009958834950000001,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.199999999512151e-09,
+          "start_s": 0.060016824,
+          "peak_VDS_V": 68.7793782,
+          "peak_ID_A": 0.0138925263,
+          "positive_energy_J": 5.231397349205734e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000694626315,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 8.999999995262797e-09,
+          "start_s": 0.0600168484,
+          "peak_VDS_V": 68.53727359999999,
+          "peak_ID_A": 0.0205422523,
+          "positive_energy_J": 9.931651034525391e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.001027112615,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 8.400000001129726e-09,
+          "start_s": 0.0600168742,
+          "peak_VDS_V": 67.69096719999999,
+          "peak_ID_A": 0.0159452578,
+          "positive_energy_J": 7.422300523688376e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0007972628900000001,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.8000000005841166e-09,
+          "start_s": 0.0600169423,
+          "peak_VDS_V": 66.53599170000001,
+          "peak_ID_A": 0.013597909,
+          "positive_energy_J": 5.289542289040244e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00067989545,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 8.699999998196262e-09,
+          "start_s": 0.0600169668,
+          "peak_VDS_V": 66.156479,
+          "peak_ID_A": 0.0183157643,
+          "positive_energy_J": 8.44843662772817e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000915788215,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.500000003517581e-09,
+          "start_s": 0.060016994,
+          "peak_VDS_V": 65.3299108,
+          "peak_ID_A": 0.0139485321,
+          "positive_energy_J": 5.250224198627749e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000697426605,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 5.60000000537908e-09,
+          "start_s": 0.0600170621,
+          "peak_VDS_V": 64.18625259999999,
+          "peak_ID_A": 0.0115595751,
+          "positive_energy_J": 3.774018458524586e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0005779787550000001,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.700000005661511e-09,
+          "start_s": 0.0600170865,
+          "peak_VDS_V": 63.8165726,
+          "peak_ID_A": 0.016083659,
+          "positive_energy_J": 6.645219437681458e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00080418295,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.500000003517581e-09,
+          "start_s": 0.0600171132,
+          "peak_VDS_V": 63.086636899999995,
+          "peak_ID_A": 0.0131244554,
+          "positive_energy_J": 4.7677542606643776e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00065622277,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 7.100000004589546e-09,
+          "start_s": 0.0600172077,
+          "peak_VDS_V": 61.607613400000005,
+          "peak_ID_A": 0.0136571325,
+          "positive_energy_J": 5.157877245890157e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000682856625,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.499999996578687e-09,
+          "start_s": 0.0600172339,
+          "peak_VDS_V": 60.984865,
+          "peak_ID_A": 0.0128652986,
+          "positive_energy_J": 4.574055905341277e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00064326493,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 3.0999999997560757e-09,
+          "start_s": 0.0600173307,
+          "peak_VDS_V": 59.1954766,
+          "peak_ID_A": 0.0104652467,
+          "positive_energy_J": 1.8549888317585357e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.000523262335,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 6.600000004852724e-09,
+          "start_s": 0.0600173552,
+          "peak_VDS_V": 58.880662599999994,
+          "peak_ID_A": 0.0123693253,
+          "positive_energy_J": 4.227591960962357e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.0006184662649999999,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        },
+        {
+          "duration_s": 3.79999999522429e-09,
+          "start_s": 0.0600175058,
+          "peak_VDS_V": 56.172140500000005,
+          "peak_ID_A": 0.0103575822,
+          "positive_energy_J": 2.1271938335334214e-09,
+          "published_family_s": 1e-05,
+          "derated_SOA_utilization_max": 0.00051787911,
+          "status": "SCREENED_PUBLISHED_PULSE_FAMILY"
+        }
+      ],
+      "positive_energy_J": 0.0005715930724826316,
+      "fuse_event_I2t_A2s": 0.0010026192375480576,
+      "SOA_scope": "Fig.2 lower-bound trajectory screen at allocated case temperature; no avalanche or DC extrapolation"
+    }
+  ],
+  "waveform_sha256": "e6c1e7b187378ef5a62759481b506d2a0b5cc2a33639347063d75d2ab16feee4"
+}

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C5224573",
+  "componentModelEn": "DMG2302UKQ-7",
+  "componentBrandEn": "Diodes Incorporated",
+  "componentSpecificationEn": "SOT-23",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308101551_Diodes-Incorporated-DMG2302UKQ-7_C5224573.pdf",
+  "describe": "-55\u2103~+150\u2103 1 N-channel 1.4nC@4.5V 130pF 18pF 1V 2.8A 20V 660mW 90m\u03a9@4.5V SOT-23 MOSFETs ROHS",
+  "overseasStockCount": 1510,
+  "preMinPurchaseNum": 25,
+  "canPresaleNumber": 1460,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C5224573",
+  "retrieved_at_UTC": "2026-09-15T21:06:10.569703+00:00",
+  "response_sha256": "4a028c667742f36f22dd42261abc34989642db095489e45314eabcf6ec8dd023"
+}

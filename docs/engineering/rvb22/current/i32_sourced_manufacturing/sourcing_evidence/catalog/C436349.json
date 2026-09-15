@@ -1,0 +1,17 @@
+{
+  "componentCode": "C436349",
+  "componentModelEn": "TPD1E05U06DPYR",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "X1SON-2(0.6x1)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-TPD1E05U06DPYR_C436349.pdf",
+  "describe": "-40\u2103~+125\u2103 0.42pF 1 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 8.5V ESD IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 Unidirectional X1SON-2(0.6x1) ESD and Surge Protection (TVS/ESD) ROHS",
+  "overseasStockCount": 47234,
+  "preMinPurchaseNum": 181,
+  "canPresaleNumber": 46353,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C436349",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.824431+00:00",
+  "response_sha256": "0c1ac8a02bcb65edc56fdd0cf5ca7ff45a7ef8370b554d1e63f8d0b8b3dd4607"
+}

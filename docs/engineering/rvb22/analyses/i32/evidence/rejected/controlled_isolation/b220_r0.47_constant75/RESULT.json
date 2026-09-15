@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "name": "b220_r0.47_constant75",
+    "bulk": 220,
+    "damp": 0.47,
+    "mode": "constant75",
+    "slow": false,
+    "constant": 0.75
+  },
+  "rc": 0,
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/controlled_isolation/b220_r0.47_constant75/waveform.tsv not found."
+}

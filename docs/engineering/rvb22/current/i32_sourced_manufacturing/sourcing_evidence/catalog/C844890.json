@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844890",
+  "componentModelEn": "TNPW060310K0BEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190530_Vishay-Intertech-TNPW060310K0BEEA_C844890.pdf",
+  "describe": "-55\u2103~+155\u2103 10k\u03a9 125mW Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 82882,
+  "preMinPurchaseNum": 139,
+  "canPresaleNumber": 77223,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844890",
+  "retrieved_at_UTC": "2026-09-15T21:05:41.092507+00:00",
+  "response_sha256": "36ad17d9558c8bd0296109d72747535bca81ab9749968789044a50e2853f6ecb"
+}

@@ -52,7 +52,7 @@ actual=hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()
 assert actual==expected[0], 'Arduino CLI archive checksum mismatch'
 print('Arduino CLI 1.3.1 archive checksum verified:',actual)
 PY
-tar -xzf arduino-cli_1.3.1_Linux_64bit.tar.gz -C bin arduino-cli
+tar --no-same-owner -xzf arduino-cli_1.3.1_Linux_64bit.tar.gz -C bin arduino-cli
 cli="$build_root/bin/arduino-cli"
 config="$build_root/config/arduino-cli.yaml"
 "$cli" config init --dest-dir "$build_root/config"

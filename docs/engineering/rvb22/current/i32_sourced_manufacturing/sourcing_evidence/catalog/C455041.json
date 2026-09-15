@@ -1,0 +1,18 @@
+{
+  "componentCode": "C455041",
+  "componentModelEn": "PMEG2010BEA,115",
+  "componentBrandEn": "Nexperia",
+  "componentSpecificationEn": "SOD-323",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308091722_Nexperia-PMEG2010BEA-115_C455041.pdf",
+  "describe": "1 Independent 10A 1A 200uA@20V 20V 500mV@1A SOD-323 Schottky Diodes ROHS",
+  "overseasStockCount": 1382,
+  "preMinPurchaseNum": 41,
+  "canPresaleNumber": 1387,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C455041",
+  "retrieved_at_UTC": "2026-09-15T21:03:44.729496+00:00",
+  "response_sha256": "091423b1eb91f9e1aa13030ebfe93a02a5012a106691c5c5ef8d9aca1eb56c23"
+}

@@ -1,0 +1,172 @@
+{
+  "scope": "Replay from the Git checkout containing I32, with repository-relative paths preserved. These are portable command templates for the executed entry points, not an assertion that placeholder paths exist.",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "filled_PCB_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "working_directory": "repository root",
+  "runtime": {
+    "native": "KiCad9.0.9 and matching pcbnew",
+    "electrical": "ngspice42; historical independent ngspice47 attempts separately labeled",
+    "analysis": "Python3 with NumPy1.26, SciPy1.11, Shapely2, networkx, Matplotlib and pyamg; vendored sexpdata support retained",
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "isolation": "Do not mix the cadquery runtime NumPy2 dependencies into the validated analysis environment. Power records stage under the system temporary directory before verified gzip publication."
+  },
+  "ground_baseline": {
+    "archive": "docs/engineering/rvb22/analyses/i32/evidence/ground/TERMINAL_BASELINE.kicad_pcb.gz",
+    "uncompressed_sha256": "371518b5b40000e995867303f6fc9c35cd5fc558e4b25e12cd0e1635a48a703b",
+    "instruction": "Decompress gzip to the baseline-pcb path without editing; the ground checker requires this exact hash."
+  },
+  "commands": [
+    {
+      "name": "native",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/candidate/run_native_candidate.py",
+        "--cad-dir",
+        "docs/engineering/rvb22/candidate/cad",
+        "--output",
+        "/path/to/native_i32",
+        "--kicad-cli",
+        "/path/to/kicad9.0.9/bin/kicad-cli",
+        "--pcbnew-python",
+        "/path/to/python-with-pcbnew9.0.9",
+        "--component-step"
+      ]
+    },
+    {
+      "name": "source_audit",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/source_audit.py",
+        "--native-dir",
+        "/path/to/native_i32",
+        "--out",
+        "/path/to/source_audit"
+      ]
+    },
+    {
+      "name": "power_all34",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/power_chain.py",
+        "--cases",
+        "docs/engineering/rvb22/analyses/i32/SOURCE_BOUND_POWER_CASES.json",
+        "--output",
+        "/path/to/power_all34",
+        "--jobs",
+        "1"
+      ]
+    },
+    {
+      "name": "input17",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/input_stress.py",
+        "--cases",
+        "docs/engineering/rvb22/analyses/i32/FINAL_INPUT_CASES.json",
+        "--output",
+        "/path/to/input17",
+        "--jobs",
+        "1"
+      ]
+    },
+    {
+      "name": "layout",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/layout_audit.py",
+        "--pcb",
+        "docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb",
+        "--output",
+        "/path/to/layout"
+      ]
+    },
+    {
+      "name": "filled_ground",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/filled_return_check.py",
+        "--pcb",
+        "/path/to/native_i32/candidate_kicad/GR86_CCA_RevB.kicad_pcb",
+        "--out",
+        "/path/to/filled_ground"
+      ]
+    },
+    {
+      "name": "mechanical",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/mechanical_check.py",
+        "--pcb",
+        "docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb",
+        "--out",
+        "/path/to/mechanical"
+      ]
+    },
+    {
+      "name": "ground",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/ground_check.py",
+        "--native-dir",
+        "/path/to/native_i32",
+        "--expected-hash",
+        "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+        "--expected-source-hash",
+        "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+        "--baseline-pcb",
+        "/path/to/TERMINAL_BASELINE.kicad_pcb",
+        "--baseline-hash",
+        "371518b5b40000e995867303f6fc9c35cd5fc558e4b25e12cd0e1635a48a703b",
+        "--output-dir",
+        "/path/to/ground"
+      ]
+    },
+    {
+      "name": "thermal_0.5",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/thermal_check.py",
+        "--native-dir",
+        "/path/to/native_i32",
+        "--source-pcb",
+        "docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb",
+        "--source-hash",
+        "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+        "--output",
+        "/path/to/thermal_0.5",
+        "--mesh",
+        "0.5"
+      ]
+    },
+    {
+      "name": "thermal_0.25",
+      "argv": [
+        "python",
+        "docs/engineering/rvb22/analyses/i32/thermal_check.py",
+        "--native-dir",
+        "/path/to/native_i32",
+        "--source-pcb",
+        "docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb",
+        "--source-hash",
+        "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+        "--output",
+        "/path/to/thermal_0.25",
+        "--mesh",
+        "0.25"
+      ]
+    }
+  ],
+  "source_audit_dependency": "Git history must include baseline4c3e54395e84483298e453468a65ff2646e9de4e. Source audit also uses retained candidate/verification/I13 via identities.",
+  "retained_support": [
+    "analyses/convergence_01 including support",
+    "analyses/convergence_02",
+    "analyses/convergence_04/RELEASE_POWER_PROFILE.json",
+    "analyses/power_i24/GROUND_RETURN_CONTRACT.json",
+    "analyses/mated_i22/RESULTS.json",
+    "current/mechanics"
+  ],
+  "record_authority": "ACCEPTED_RECORDS.json links current exact full waveforms; their original decks, libraries, logs and result files are retained under evidence/runs. A fresh replay is a new execution, not retroactive completion of an incomplete record."
+}

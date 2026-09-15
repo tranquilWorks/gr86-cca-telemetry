@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "name": "iso1_off",
+    "bulk_uF": 470,
+    "damp": 0.082,
+    "top": 11800,
+    "isolate": true,
+    "mode": "off"
+  },
+  "returncode": 0,
+  "completed": true,
+  "samples": 151478,
+  "end_s": 0.3,
+  "main_peak": 3.49904088,
+  "main_final": 3.36019586,
+  "vin_min_output_delta": -0.5840048900000001,
+  "ready_final": 1.0,
+  "u151_average_current_max": 1.44914398,
+  "u121_average_current_max": 1.039397,
+  "active_min": 3.36019586,
+  "waveform_sha256": "b3d4f4979d57167515a609b769898a7007d490a0b1b35f18199eba806097dac7"
+}

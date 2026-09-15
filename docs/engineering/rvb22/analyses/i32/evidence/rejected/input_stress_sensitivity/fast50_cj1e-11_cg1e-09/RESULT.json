@@ -1,0 +1,112 @@
+{
+  "parameters": {
+    "name": "fast50_cj1e-11_cg1e-09",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12",
+    "stop": 0.1,
+    "step": 1e-07,
+    "cable_R": 2,
+    "events": [
+      [
+        "fault",
+        0.06,
+        0.06008,
+        0.0001
+      ]
+    ],
+    "diode_cj": 1e-11,
+    "cgd": 1e-09,
+    "coss": 5e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.060052
+    ]
+  },
+  "returncode": 0,
+  "deck_sha256": "134892f1418f34e94adb7302413da72fc5eed384609a07ea9e8233d1e9e5df7d",
+  "completed": true,
+  "end_s": 0.1,
+  "samples": 1016605,
+  "Q101_VDS_max_V": 67.8218652,
+  "Q101_VGS_max_V": 12.5880546,
+  "Q101_VGS_min_V": -0.6288104999999966,
+  "Q101_current_peak_A": 10.2241656,
+  "Q101_energy_positive_J": 0.00873577690023966,
+  "Q101_power_peak_W": 201.90653525250923,
+  "D101_reverse_max_V": 139.2756765,
+  "D101_current_peak_A": 10.2258906,
+  "fuse_I2t_A2s": 0.014269221079880623,
+  "R101_peak_V": 89.685236,
+  "R101_peak_W": 0.8043441556375697,
+  "R101_energy_J": 1.91853636567527e-05,
+  "R110_peak_W": 28.931286972999573,
+  "R110_energy_J": 0.006493890614970994,
+  "PROTECT_CTRL_VIN_range_V": [
+    -6.39422467e-20,
+    15.3928718
+  ],
+  "INPUT_UV_range_V": [
+    -2.07299998e-19,
+    6.67805724
+  ],
+  "INPUT_OV_range_V": [
+    -7.8136153e-20,
+    2.51711388
+  ],
+  "INPUT_SHDN_range_V": [
+    -6.39422141e-20,
+    15.3928639
+  ],
+  "INPUT_GATE_DRIVE_range_V": [
+    -0.216052905,
+    41.7351552
+  ],
+  "PROTECTED_12V_range_V": [
+    -0.000319728838,
+    33.8406425
+  ],
+  "VIN5_range_V": [
+    -0.0003197266,
+    33.1918141
+  ],
+  "RAW_12V_range_V": [
+    -39.2257377,
+    101.316469
+  ],
+  "REV_BLOCKED_12V_range_V": [
+    -3.12544612e-18,
+    100.684555
+  ],
+  "D102": {
+    "peak_A": 1.0477379e-09,
+    "peak_W": 1.56298276868513e-08,
+    "positive_energy_J": 1.0440114460311205e-09,
+    "charge_C": 9.995177347920054e-11,
+    "duration_above_1mA_s": 0.0
+  },
+  "D103": {
+    "peak_A": 5.18123123,
+    "peak_W": 175.3361937642653,
+    "positive_energy_J": 0.0007200373374190368,
+    "charge_C": 2.1486322688108802e-05,
+    "duration_above_1mA_s": 8.276550000001909e-06
+  },
+  "D104": {
+    "peak_A": 0.0,
+    "peak_W": 0.0,
+    "positive_energy_J": 0.0,
+    "charge_C": 0.0,
+    "duration_above_1mA_s": 0.0
+  },
+  "events": [
+    {
+      "event": "fault",
+      "screen_duration_s": 0.0001,
+      "derated_SOA_utilization_max": 0.4114882238356649,
+      "positive_energy_J": 0.0006198946174864674,
+      "peak_VDS_V": 67.8218652,
+      "peak_ID_A": 10.2241656,
+      "SOA_scope": "piecewise lower-bound reading, temperature-scaled; no avalanche credit"
+    }
+  ],
+  "waveform_sha256": "be7de19b26c053753b1c4a610f8605726a06b593d2f04821320ec3a236a3d0d1"
+}

@@ -1,0 +1,101 @@
+{
+  "checkpoint": "RVB22_I26_PREHARDWARE_CLOSURE",
+  "policy": "Original criteria that literally require supplier, fabricated-unit, installed-vehicle, chamber or environmental evidence remain physical acceptance items. Their prehardware engineering status is qualification-only when no further design change is justified.",
+  "actionable_prehardware_target": 0,
+  "gates": [
+    {
+      "id": "G22-01",
+      "status": "DESKTOP_CLOSED_NATIVE",
+      "description": "Pinned KiCad 9.0.9 native refill/ERC/DRC/export flow completed with zero findings for the exact candidate; matched netlist, manufacturing outputs and model set are preserved.",
+      "reopen": "Any CAD, BOM, stackup or manufacturing-source mutation."
+    },
+    {
+      "id": "G22-02",
+      "status": "DESKTOP_CLOSED_TARGET_BUILD",
+      "description": "Pinned Arduino/core/NimBLE target build produced verified ELF/BIN outputs. Release behavior remains receive-only on CAN.",
+      "reopen": "Any firmware, build-profile, dependency or release-feature mutation."
+    },
+    {
+      "id": "G22-03",
+      "status": "DESKTOP_CLOSED_THERMAL_I25",
+      "description": "I25 replaces the stale residual-filled ~4.8 W release source with the coupled 2.940859375 W release profile. Existing-cooling maxima are 101.6503 C at 0.50 mm and 107.2667 C at 0.25 mm; convergence is not claimed and a one-step 5.6163 C discretization allowance yields a 112.8830 C board-region screening bound. C02 cooling is not adopted.",
+      "qualification": "Verify <=0.45 A sustained release load, >=80% effective conversion efficiency or equivalent losses, <=85 C immediate air outside U201, and temperature behavior at upper input/worst representative workload.",
+      "reopen": "I25 release-profile/environment violation or failed thermal qualification gate."
+    },
+    {
+      "id": "G22-04",
+      "status": "BOUNDED_INFERENCE_CLOSED",
+      "description": "Finite regulator, rail, startup, transient and oil models are retained as conservative source-bound engineering envelopes. Unpublished control/die behavior is not asserted as known.",
+      "qualification": "Correlate input/current/rails, startup/reset and oil transfer on the fabricated unit.",
+      "reopen": "Measured behavior exceeds the controlled model envelope."
+    },
+    {
+      "id": "G22-05",
+      "status": "BOUNDED_INFERENCE_CLOSED_CAN_QUALIFICATION_ONLY",
+      "description": "Complete 14,400-case CAN branch family settles within 1% by 137.600 ns versus representative 1.600 us sampling; sample receiver voltage remains >=1.495510 V for a 1.5 V source and DC ratio >=0.997006499. The 196 repeated 0.9 V crossings are confined to deliberate 2 ns source-edge cases, last <=5.2625 ns below 0.9 V, with zero repeated 0.5 V crossings. R301 remains DNP and firmware TX-disabled.",
+      "qualification": "Confirm installed fused switched feed/return, controlled harness exit/length allocation, actual vehicle traffic and absence of repeatable branch-attributable CAN errors.",
+      "reopen": "Installed geometry exceeds allocation, repeatable CAN corruption/error counts correlate with the branch, or CAN transmission is enabled."
+    },
+    {
+      "id": "G22-06",
+      "status": "BOUNDED_INFERENCE_CLOSED_ACCESSORY_QUALIFICATION_ONLY",
+      "description": "Exact Adafruit 851/960 products are bound. The mated route passes 776 modeled checks, retains >=16.421 mm RF metal-to-ESP32 antenna-region spacing, and has a 28 ohm complete bias-path resistance budget at 25 mA from the 3.0 V/2.3 V endpoints. The 851 published +60 C limit is lower than the board bulk-air envelope and is therefore an installation-zone requirement, not a PCB thermal requirement.",
+      "qualification": "Keep the 851 local environment <=60 C; inspect supplied SMA center contact and miniature plug/retention; confirm antenna bias >=2.3 V under representative load and module-current limits.",
+      "reopen": "Supplied interface differs from receiving envelope or installed adapter environment exceeds 60 C without relocation/protection."
+    },
+    {
+      "id": "G22-07",
+      "status": "QUALIFICATION_ONLY_SUPPLIER_PROCESS",
+      "description": "The controlled fabrication construction, current via-fill/cap set, stackup and local F101 handling are documented; supplier lot/process acceptance cannot be manufactured from desktop evidence.",
+      "qualification": "Confirm exact current files/process with JLC and reject or impact-review any deviation in stackup, copper, via fill/cap, mask or assembly process.",
+      "reopen": "Supplier proposes a design-relevant process deviation."
+    },
+    {
+      "id": "G22-08",
+      "status": "QUALIFICATION_ONLY_AS_BUILT",
+      "description": "CAD continuity/isolation and population intent are desktop-closed. Physical plating, solder, crimps, contacts and population identity are first-article observations.",
+      "qualification": "Perform current-netlist continuity/isolation, crimp/pull, population and identity checks.",
+      "reopen": "A repeatable as-built discrepancy indicates a design/package/process defect rather than workmanship."
+    },
+    {
+      "id": "G22-09",
+      "status": "BOUNDED_INFERENCE_CLOSED_RF_QUALIFICATION_ONLY",
+      "description": "The PCB RF matching/reference/keepout model is bounded in its stated RF scope. This does not close the wider non-RF return-transfer criterion GND-02. Installed nonlinear clamp/radiated/coexistence behavior remains qualification.",
+      "qualification": "Correlate installed GPS C/N0, BLE link behavior, ADC/CAN coupling and accessible-port ESD behavior.",
+      "reopen": "Repeatable installed RF/EMC/ESD failure exceeds the controlled acceptance plan."
+    },
+    {
+      "id": "G22-10",
+      "status": "DESKTOP_CLOSED_RELEASE_GEOMETRY_QUALIFICATION_ONLY",
+      "description": "For the adopted configuration, 153 model set, 1,154 populated-stack checks, 776 revised 851 mated checks and 37 probe approaches pass declared envelopes; minimum modeled R408/T03 clearance is 0.120 mm. C02 cooler structural questions are contingency-only because C02 is not adopted.",
+      "qualification": "Verify received component/cable dimensions, enclosure fit, strain relief/retention and installed clearances against the controlled envelope.",
+      "reopen": "Actual receiving/install geometry lies outside the controlled envelope."
+    },
+    {
+      "id": "G22-11",
+      "status": "QUALIFICATION_ONLY_SYSTEM",
+      "description": "Actual oil response, GPS availability, phone/OS behavior, sustained operation and environmental performance are physical system observations; desktop modeling is exhausted for release design.",
+      "qualification": "Execute the source-bound acceptance plan on fabricated hardware and vehicle/phone environment.",
+      "reopen": "A failed physical gate demonstrates a design deficiency outside the bounded prediction."
+    },
+    {
+      "id": "G22-12",
+      "status": "BOUNDED_INFERENCE_CLOSED",
+      "criterion": "GND-02",
+      "description": "GND-02 desktop return-path analysis completed by I27; no pre-fabrication copper/stitching change justified.",
+      "evidence": "analyses/i26/GND02_DESKTOP_CLOSURE.json",
+      "qualification": "Retain fabricated continuity plus installed CAN/EMC/coexistence correlation; no physical pass is claimed."
+    },
+    {
+      "id": "G22-13",
+      "status": "QUALIFICATION_ONLY_LED_VISIBILITY",
+      "criterion": "WCA-07",
+      "description": "7actual paths electrically bounded; optical typical-curve inference retained without guaranteed hot minimum.",
+      "qualification": "analyses/i26/QUALIFICATION_GATES.json#I26-LED-01"
+    }
+  ],
+  "prehardware_design_statement": "I27: zero actionable pre-hardware engineering items. Fabrication can proceed subject to supplier process acceptance and explicit as-built/install/environment qualification gates.",
+  "physical_claims_made": false,
+  "actionable_prehardware_actual": 0,
+  "actionable_prehardware_ids": []
+}

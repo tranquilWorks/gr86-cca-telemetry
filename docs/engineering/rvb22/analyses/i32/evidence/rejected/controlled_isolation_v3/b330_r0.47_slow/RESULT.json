@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "name": "b330_r0.47_slow",
+    "bulk": 330,
+    "damp": 0.47,
+    "mode": "slow",
+    "slow": true
+  },
+  "rc": 0,
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 60409,
+  "main_peak": 3.50546731,
+  "active_min": 3.30000872,
+  "final_main": 3.30000922,
+  "final_ready": 1.0,
+  "minimum_vin_minus_out": 1.4967884199999997,
+  "input_switch_peak_A": 0.824874616,
+  "I151max": 1.03022566,
+  "I121max": 0.907147819,
+  "ready_rises": 1,
+  "waveform_sha256": "81ce5ea937f4bfe0f3a90e3eca34f8626f0140065a47660b9fe6a31453b50308"
+}

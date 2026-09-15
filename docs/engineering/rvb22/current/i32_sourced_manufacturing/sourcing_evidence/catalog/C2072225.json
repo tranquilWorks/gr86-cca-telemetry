@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2072225",
+  "componentModelEn": "LM5164QDDARQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "SO-8",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2302221230_Texas-Instruments-LM5164QDDARQ1_C2072225.pdf",
+  "describe": "-40\u2103~+150\u2103@(TJ) 1 10.5uA 1A 1MHz 6V~100V Adjustable Buck Buck Built-in Yes SO-8 DC-DC Converters ROHS",
+  "overseasStockCount": 7,
+  "preMinPurchaseNum": 1,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2072225",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.233291+00:00",
+  "response_sha256": "c56ddb4e68c7a79b5b6429753cfda582f7b256aa76bc666ac01a1404b1a1b728"
+}

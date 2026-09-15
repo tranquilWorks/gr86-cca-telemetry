@@ -1,0 +1,5780 @@
+{
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "reference_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "filled_PCB_sha256": "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1",
+  "status": "EXPANDED_REFERENCE_SCOPE_NOT_FULL_RETURN_ACCEPTANCE",
+  "critical_net_set": [
+    "ADC_NODE",
+    "CANH",
+    "CANL",
+    "CAN_RXD",
+    "CAN_RX_MCU",
+    "CAN_TXD",
+    "CAN_TX_MCU",
+    "ESP_EN",
+    "ESP_GPIO0",
+    "GPS_ANT_RF_BIASED",
+    "GPS_EXT_ANT",
+    "GPS_FIX_RAW",
+    "GPS_PPS_BUFFER",
+    "GPS_PPS_MCU",
+    "GPS_PPS_RAW",
+    "GPS_RX_BUFFER",
+    "GPS_RX_MODULE",
+    "GPS_SEARCH_BUFFER",
+    "GPS_TX_BUFFER",
+    "GPS_TX_MCU",
+    "GPS_TX_MODULE_BUFFERED",
+    "GPS_TX_RAW",
+    "OIL_AMP_OUT",
+    "OIL_EXCITATION_ADC",
+    "OIL_EXC_AMP_OUT",
+    "OIL_EXC_FB",
+    "OIL_EXC_FILTERED",
+    "OIL_FB",
+    "OIL_FILTERED",
+    "OIL_SIG",
+    "UART0_RX",
+    "UART0_TX"
+  ],
+  "outer_segment_count": 678,
+  "segments_by_net": {
+    "ADC_NODE": 11,
+    "CANH": 10,
+    "CANL": 10,
+    "CAN_RXD": 6,
+    "CAN_RX_MCU": 110,
+    "CAN_TXD": 6,
+    "CAN_TX_MCU": 47,
+    "ESP_EN": 82,
+    "ESP_GPIO0": 96,
+    "GPS_ANT_RF_BIASED": 4,
+    "GPS_EXT_ANT": 8,
+    "GPS_FIX_RAW": 9,
+    "GPS_PPS_BUFFER": 8,
+    "GPS_PPS_MCU": 2,
+    "GPS_PPS_RAW": 13,
+    "GPS_RX_BUFFER": 2,
+    "GPS_RX_MODULE": 5,
+    "GPS_SEARCH_BUFFER": 17,
+    "GPS_TX_BUFFER": 8,
+    "GPS_TX_MCU": 12,
+    "GPS_TX_MODULE_BUFFERED": 2,
+    "GPS_TX_RAW": 25,
+    "OIL_AMP_OUT": 3,
+    "OIL_EXCITATION_ADC": 16,
+    "OIL_EXC_AMP_OUT": 8,
+    "OIL_EXC_FB": 5,
+    "OIL_EXC_FILTERED": 10,
+    "OIL_FB": 3,
+    "OIL_FILTERED": 11,
+    "OIL_SIG": 105,
+    "UART0_RX": 12,
+    "UART0_TX": 12
+  },
+  "outer_length_mm_by_net": {
+    "ADC_NODE": 17.227230570591402,
+    "CANH": 20.567576608893397,
+    "CANL": 18.15919628580689,
+    "CAN_RXD": 9.467640687119282,
+    "CAN_RX_MCU": 108.13129702703013,
+    "CAN_TXD": 10.093376618407355,
+    "CAN_TX_MCU": 44.18505409777662,
+    "ESP_EN": 111.90293731458387,
+    "ESP_GPIO0": 101.35512423370248,
+    "GPS_ANT_RF_BIASED": 5.118440687119287,
+    "GPS_EXT_ANT": 5.95385822331376,
+    "GPS_FIX_RAW": 25.423227110935127,
+    "GPS_PPS_BUFFER": 17.778922348507855,
+    "GPS_PPS_MCU": 2.7483166076211063,
+    "GPS_PPS_RAW": 14.094757294740383,
+    "GPS_RX_BUFFER": 2.228553390593274,
+    "GPS_RX_MODULE": 14.122905622382989,
+    "GPS_SEARCH_BUFFER": 47.17529573199488,
+    "GPS_TX_BUFFER": 13.836033885963264,
+    "GPS_TX_MCU": 20.537430711080532,
+    "GPS_TX_MODULE_BUFFERED": 2.557778368929477,
+    "GPS_TX_RAW": 35.21806852208782,
+    "OIL_AMP_OUT": 4.573738797370081,
+    "OIL_EXCITATION_ADC": 46.484862859006384,
+    "OIL_EXC_AMP_OUT": 18.265122465764904,
+    "OIL_EXC_FB": 8.562727497980802,
+    "OIL_EXC_FILTERED": 15.953475422917396,
+    "OIL_FB": 7.406039847306367,
+    "OIL_FILTERED": 18.68114218156619,
+    "OIL_SIG": 70.11875870797004,
+    "UART0_RX": 39.749217073377395,
+    "UART0_TX": 34.85727315941526
+  },
+  "finding_counts": {
+    "CAN_RXD": 2,
+    "CAN_TXD": 2,
+    "CAN_TX_MCU": 6,
+    "ESP_EN": 14,
+    "ESP_GPIO0": 3,
+    "GPS_SEARCH_BUFFER": 7
+  },
+  "findings": [
+    {
+      "uuid": "d3091ee3-2292-4281-a911-91513c53927e",
+      "net": "CAN_RXD",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        21.8,
+        10.475
+      ],
+      "end": [
+        21.8,
+        11.5
+      ],
+      "adjacent_gap_mm": 0.7085163431457495,
+      "gap_WKT": "LINESTRING (21.8 10.545741828427126, 21.8 11.254258171572875)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "875663c9-1667-423c-ac5e-d754a0dfa8f4",
+          "xy_mm": [
+            20.6,
+            7.9
+          ],
+          "distance_to_signal_segment_mm": 2.840884545348507,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "2eaf8347-1897-4f05-8efb-19304420c29b",
+          "xy_mm": [
+            24.275,
+            8.865
+          ],
+          "distance_to_signal_segment_mm": 2.952579380812646,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3f26e87e-1f50-4dc6-ba03-b89140f409dc",
+          "xy_mm": [
+            21.199,
+            7.401
+          ],
+          "distance_to_signal_segment_mm": 3.132200025541153,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 RXD BEFORE R302 1kohm; do not confuse this with the filtered MCU-side net.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "f00c8413-4b97-4145-b77b-21abb2261648",
+      "net": "CAN_RXD",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        22.5,
+        12.2
+      ],
+      "end": [
+        25.175,
+        12.2
+      ],
+      "adjacent_gap_mm": 1.2095123431457537,
+      "gap_WKT": "MULTILINESTRING ((22.745741828427125 12.2, 23.454258171572874 12.2), (24.349501999999998 12.2, 24.850498 12.2))",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "9d5bd943-e62c-4721-a3b2-39386d87717a",
+          "xy_mm": [
+            24.8514,
+            9.1816
+          ],
+          "distance_to_signal_segment_mm": 3.0183999999999997,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ca240b8d-e81a-4dc7-b88b-2c3823a6491f",
+          "xy_mm": [
+            27.575,
+            10.2
+          ],
+          "distance_to_signal_segment_mm": 3.124099870362661,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "2eaf8347-1897-4f05-8efb-19304420c29b",
+          "xy_mm": [
+            24.275,
+            8.865
+          ],
+          "distance_to_signal_segment_mm": 3.3349999999999986,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 RXD BEFORE R302 1kohm; do not confuse this with the filtered MCU-side net.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "a4f7abd7-c48f-4d76-8c65-969c1bd309f4",
+      "net": "CAN_TXD",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        25.175,
+        5.8
+      ],
+      "end": [
+        25.175,
+        8.0
+      ],
+      "adjacent_gap_mm": 0.5009959999999998,
+      "gap_WKT": "LINESTRING (25.175 5.949502, 25.175 6.450498)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "9d5bd943-e62c-4721-a3b2-39386d87717a",
+          "xy_mm": [
+            24.8514,
+            9.1816
+          ],
+          "distance_to_signal_segment_mm": 1.2251104113507476,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "2eaf8347-1897-4f05-8efb-19304420c29b",
+          "xy_mm": [
+            24.275,
+            8.865
+          ],
+          "distance_to_signal_segment_mm": 1.2482888287571927,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6673e079-ae45-4988-bf0e-0595a1e6f776",
+          "xy_mm": [
+            23.98,
+            5.279
+          ],
+          "distance_to_signal_segment_mm": 1.303635685304756,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 TXD held recessive by fitted R303 10kohm; R301 DNP; no intentional TX.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "c6d002d8-24ef-4c43-8bd5-9c1f3678ed8c",
+      "net": "CAN_TXD",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        21.8,
+        8.525
+      ],
+      "end": [
+        22.6,
+        7.725
+      ],
+      "adjacent_gap_mm": 0.500996710819855,
+      "gap_WKT": "LINESTRING (22.23537091421356 8.089629085786438, 22.589629085786438 7.735370914213564)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "3f26e87e-1f50-4dc6-ba03-b89140f409dc",
+          "xy_mm": [
+            21.199,
+            7.401
+          ],
+          "distance_to_signal_segment_mm": 1.219759197546794,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "875663c9-1667-423c-ac5e-d754a0dfa8f4",
+          "xy_mm": [
+            20.6,
+            7.9
+          ],
+          "distance_to_signal_segment_mm": 1.3530059127734801,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "36d82ffd-b744-423e-9b1d-4b2650b583aa",
+          "xy_mm": [
+            20,
+            7.9
+          ],
+          "distance_to_signal_segment_mm": 1.9054199012291235,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 TXD held recessive by fitted R303 10kohm; R301 DNP; no intentional TX.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "3cd9494b-1d5d-47a2-aa04-327840a5c89e",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.684766,
+        14.25
+      ],
+      "end": [
+        81.7,
+        14.25
+      ],
+      "adjacent_gap_mm": 0.015234000000006631,
+      "gap_WKT": "LINESTRING (81.684766 14.25, 81.7 14.25)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 2.824786945374287,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.8711522555859017,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.743680006071236,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "6e2aaa09-c44c-4e4f-ba78-c2933e8e23ce",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.7,
+        14.25
+      ],
+      "end": [
+        81.2,
+        14.75
+      ],
+      "adjacent_gap_mm": 0.7071067811865476,
+      "gap_WKT": "LINESTRING (81.7 14.25, 81.2 14.75)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 2.1510347337969717,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.7335873865673355,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.743680006071236,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "871a1d07-8555-46ec-8b60-8f49faecf1a8",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.15,
+        15.15
+      ],
+      "end": [
+        80.85,
+        15.45
+      ],
+      "adjacent_gap_mm": 0.19869417708630266,
+      "gap_WKT": "LINESTRING (81.15 15.15, 81.009502 15.290498000000003)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.3685034987171194,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9706901555025977,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.588878076392962,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "95963305-6d4d-40ef-a89e-319eb932f057",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.2,
+        14.75
+      ],
+      "end": [
+        81.2,
+        15.05
+      ],
+      "adjacent_gap_mm": 0.3000000000000007,
+      "gap_WKT": "LINESTRING (81.2 14.75, 81.2 15.05)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.8893784761135093,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.7335873865673355,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.828301978956992,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "d940ea9d-cb9c-43f3-a104-0c43f56d70f9",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.15,
+        15.1
+      ],
+      "end": [
+        81.15,
+        15.15
+      ],
+      "adjacent_gap_mm": 0.05000000000000071,
+      "gap_WKT": "LINESTRING (81.15 15.1, 81.15 15.15)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.7780048442006597,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9347061181658454,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.839938016132022,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "ff83a906-e673-4cf7-a47a-ba6b8551df15",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.2,
+        15.05
+      ],
+      "end": [
+        81.15,
+        15.1
+      ],
+      "adjacent_gap_mm": 0.07071067811865199,
+      "gap_WKT": "LINESTRING (81.2 15.05, 81.15 15.1)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.8207144548228904,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9344931419241798,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.828301978956992,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "0ec9d94b-5a70-4160-b6d4-40a844fb9989",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        84.2248,
+        13.2383
+      ],
+      "end": [
+        82.7,
+        11.7135
+      ],
+      "adjacent_gap_mm": 0.014846413977790407,
+      "gap_WKT": "LINESTRING (82.710498 11.723997999999998, 82.7 11.7135)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 3.2153860188164076,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "806e4415-5981-470a-937b-04efbe22e18c",
+          "xy_mm": [
+            87.5648,
+            14.25
+          ],
+          "distance_to_signal_segment_mm": 3.489862015896907,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 3.7395342123050535,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "2242d65a-0c68-4cb9-b4e7-8825409146cc",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        82.7,
+        11.575
+      ],
+      "end": [
+        80.45,
+        11.575
+      ],
+      "adjacent_gap_mm": 2.25,
+      "gap_WKT": "LINESTRING (82.7 11.575, 80.45 11.575)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 1.9629378492453664,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 2.5749999999999993,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 3.9195025194531965,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "30e02ce6-787a-4ce5-810b-65e6a015aed5",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        83.4992,
+        10.7758
+      ],
+      "end": [
+        82.7,
+        11.575
+      ],
+      "adjacent_gap_mm": 0.014846413977790407,
+      "gap_WKT": "LINESTRING (82.710498 11.564502000000001, 82.7 11.575)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 2.8996864106313245,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 3.04055915910216,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.8717728497421002,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "73e76284-37cf-41c1-8ab7-1ca3ac114155",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        49.8,
+        23.6
+      ],
+      "end": [
+        44.2,
+        23.6
+      ],
+      "adjacent_gap_mm": 5.145011671214931,
+      "gap_WKT": "LINESTRING (49.345011671214934 23.6, 44.2 23.6)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 0.8999999999999986,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 0.8999999999999986,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 2.664006698565155,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "7ea2e893-b7c6-487e-a87d-ac860f4c07db",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        80.45,
+        11.575
+      ],
+      "end": [
+        80.325,
+        11.7
+      ],
+      "adjacent_gap_mm": 0.057272820849004966,
+      "gap_WKT": "LINESTRING (80.45 11.575, 80.40950199999999 11.615498000000013)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 1.7862320677896315,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 2.6279745052035772,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 4.9632292236004,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "d298b72b-ed56-43ee-9216-eb6271f0ab5c",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        44.2,
+        23.6
+      ],
+      "end": [
+        43.8,
+        23.2
+      ],
+      "adjacent_gap_mm": 0.35425766894734356,
+      "gap_WKT": "LINESTRING (44.2 23.6, 43.949501999999995 23.349501999999998)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 2.250694337310151,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.330772404161331,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 2.521089385563312,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "d7c720f1-5880-4a23-84a2-5840ebcad355",
+      "net": "ESP_EN",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        82.7,
+        11.7135
+      ],
+      "end": [
+        82.7,
+        11.575
+      ],
+      "adjacent_gap_mm": 0.1385000000000005,
+      "gap_WKT": "LINESTRING (82.7 11.7135, 82.7 11.575)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 3.0993951022739945,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.822967728087704,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 3.9195025194531965,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "08c837d7-7641-55c3-9954-ab015dac0069",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        73.625,
+        9.7
+      ],
+      "end": [
+        73.6,
+        9.7
+      ],
+      "adjacent_gap_mm": 0.025000000000005684,
+      "gap_WKT": "LINESTRING (73.625 9.7, 73.6 9.7)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 3.4058772731852756,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 6.392622701208006,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 7.38325808840514,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "19fc5be8-03f0-4346-a7b9-1ce634e1447b",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        26.3,
+        23.0
+      ],
+      "end": [
+        25.6,
+        23.7
+      ],
+      "adjacent_gap_mm": 0.5349611648760956,
+      "gap_WKT": "LINESTRING (25.978274667355343 23.321725332644657, 25.6 23.7)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 1.015197025212348,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 2.198294793698062,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 2.9854857226253833,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "6d51af25-7197-57ed-a5a4-5bc6a02838b6",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        72.2,
+        8.3
+      ],
+      "end": [
+        73.6,
+        9.7
+      ],
+      "adjacent_gap_mm": 1.979898987322326,
+      "gap_WKT": "LINESTRING (72.2 8.3, 73.6 9.7)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 1.4422205101855985,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 6.41404708432983,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 6.665677009876789,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "78c69762-dc88-4794-8522-c00ca622e834",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        25.6,
+        23.7
+      ],
+      "end": [
+        23.3,
+        23.7
+      ],
+      "adjacent_gap_mm": 0.9542581715728744,
+      "gap_WKT": "LINESTRING (25.6 23.7, 24.645741828427127 23.7)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 0.719809002444399,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 1.9119688804998887,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 3.1084562084739105,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "8c1b322c-8ffa-544c-84a5-c6aa51404195",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        70.6,
+        8.3
+      ],
+      "end": [
+        72.2,
+        8.3
+      ],
+      "adjacent_gap_mm": 1.6000000000000085,
+      "gap_WKT": "LINESTRING (70.6 8.3, 72.2 8.3)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 0.8000000000000008,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 5.141133143578358,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a57d68a0-5b63-4689-aa5f-d76ceeb1b1cf",
+          "xy_mm": [
+            65.775,
+            11.075
+          ],
+          "distance_to_signal_segment_mm": 5.566080308439672,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "983030ed-42bd-481d-9e70-85d47b9cbb59",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        69.3,
+        6.5
+      ],
+      "end": [
+        67.3,
+        8.5
+      ],
+      "adjacent_gap_mm": 1.3009961098508889,
+      "gap_WKT": "LINESTRING (68.68497158578644 7.115028414213558, 67.76502841421356 8.03497158578644)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 1.9723082923316044,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 2.47487373415291,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a57d68a0-5b63-4689-aa5f-d76ceeb1b1cf",
+          "xy_mm": [
+            65.775,
+            11.075
+          ],
+          "distance_to_signal_segment_mm": 2.992699450329079,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "9eb7ba66-0b0e-5dd6-87b0-bda4927e94ec",
+      "net": "ESP_EN",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        69.5,
+        7.2
+      ],
+      "end": [
+        70.6,
+        8.3
+      ],
+      "adjacent_gap_mm": 0.5061698000186157,
+      "gap_WKT": "LINESTRING (70.242083901975 7.942083901974998, 70.6 8.3)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 0.8485281374238608,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 3.7856637462933707,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a57d68a0-5b63-4689-aa5f-d76ceeb1b1cf",
+          "xy_mm": [
+            65.775,
+            11.075
+          ],
+          "distance_to_signal_segment_mm": 5.374011537017757,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "da1fc89d-1db7-4813-9cbc-a70a557a005e",
+      "net": "ESP_GPIO0",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        81.4988,
+        3.6162
+      ],
+      "end": [
+        76.9725,
+        3.6162
+      ],
+      "adjacent_gap_mm": 2.307948032891332,
+      "gap_WKT": "LINESTRING (80.84426774503625 3.6162, 78.53631971214492 3.6162)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "71f6e64e-f019-4727-9c6b-544ff32098bd",
+          "xy_mm": [
+            86.275,
+            5.8
+          ],
+          "distance_to_signal_segment_mm": 5.251768167008139,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 5.3838,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 7.124230392821386,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "2248ae29-06c9-43f0-8806-ba00eca1e6a4",
+      "net": "ESP_GPIO0",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        74.4066,
+        25.4418
+      ],
+      "end": [
+        74.4066,
+        7.8912
+      ],
+      "adjacent_gap_mm": 3.467814825477224,
+      "gap_WKT": "MULTILINESTRING ((74.4066 21.947658171572883, 74.4066 20.739141346095657), (74.4066 10.150497999999999, 74.4066 7.8912))",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.244399999999999,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "51941c55-fcd9-56e9-8a85-28371980e442",
+          "xy_mm": [
+            77.469766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 3.0631660000000096,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84fbb7f2-7bee-5553-89b1-b75e49bdef76",
+          "xy_mm": [
+            77.469766,
+            20.825
+          ],
+          "distance_to_signal_segment_mm": 3.0631660000000096,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "a3455a22-ebda-4523-acb4-309559b360a6",
+      "net": "ESP_GPIO0",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        74.4066,
+        7.8912
+      ],
+      "end": [
+        74.5887,
+        7.7091
+      ],
+      "adjacent_gap_mm": 0.05896987712383114,
+      "gap_WKT": "LINESTRING (74.4066 7.8912, 74.448298 7.849502)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 3.4289883347716397,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 6.5154624164367565,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 6.937423224800399,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "409b3296-890e-4fc0-b46e-583ca38136c6",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        46.6787,
+        22.0382
+      ],
+      "end": [
+        40.738,
+        22.0382
+      ],
+      "adjacent_gap_mm": 1.7079841859335616,
+      "gap_WKT": "MULTILINESTRING ((44.092457171572875 22.0382, 43.383942828427124 22.0382), (42.19245817157287 22.0382, 41.19298832878506 22.0382))",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 0.6868000000000015,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.4617999999999998,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.646485014127229,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "7c5ca8b6-ce80-4c15-baf0-aaa46d09225c",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        28.6127,
+        19.882
+      ],
+      "end": [
+        31.851,
+        23.1203
+      ],
+      "adjacent_gap_mm": 0.5243875605008198,
+      "gap_WKT": "LINESTRING (31.480202 22.749502, 31.851 23.1203)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a7e70110-e9c3-4aec-9248-8e0ab922e617",
+          "xy_mm": [
+            31.575,
+            22
+          ],
+          "distance_to_signal_segment_mm": 0.5970102553558025,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 1.9495884924773221,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 3.0092665701130548,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "b0ddf69a-9f4c-4cd9-b4af-c8f737543dbe",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "F.Cu",
+      "reference": "In1.Cu",
+      "start": [
+        31.851,
+        23.1203
+      ],
+      "end": [
+        33.65,
+        23.1203
+      ],
+      "adjacent_gap_mm": 1.218466361554718,
+      "gap_WKT": "MULTILINESTRING ((31.851 23.1203, 33.036429518766916 23.1203), (33.161974828427134 23.1203, 33.195011671214935 23.1203))",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a7e70110-e9c3-4aec-9248-8e0ab922e617",
+          "xy_mm": [
+            31.575,
+            22
+          ],
+          "distance_to_signal_segment_mm": 1.153797248219981,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c03970f4-80eb-4e57-91f8-f8cef3a027c0",
+          "xy_mm": [
+            37.675,
+            24
+          ],
+          "distance_to_signal_segment_mm": 4.12001178275014,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a8e3cb8d-468f-5f58-b0a2-2f89ef9c3fb9",
+          "xy_mm": [
+            36.15,
+            27.05
+          ],
+          "distance_to_signal_segment_mm": 4.657525318234996,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "201439b9-d7d9-43d9-b1d5-768ea7ec6917",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        50.8512,
+        21.5316
+      ],
+      "end": [
+        47.5915,
+        21.5316
+      ],
+      "adjacent_gap_mm": 2.804711671214932,
+      "gap_WKT": "LINESTRING (50.396211671214935 21.5316, 47.5915 21.5316)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.9683999999999995,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 3.20563890823655,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 3.217564422043481,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "38cfb022-c804-4354-9dce-eca1a9be8e59",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        35.1235,
+        24.5938
+      ],
+      "end": [
+        38.1824,
+        24.5938
+      ],
+      "adjacent_gap_mm": 1.1428581715728683,
+      "gap_WKT": "LINESTRING (37.03954182842713 24.5938, 38.1824 24.5938)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "c03970f4-80eb-4e57-91f8-f8cef3a027c0",
+          "xy_mm": [
+            37.675,
+            24
+          ],
+          "distance_to_signal_segment_mm": 0.5938000000000017,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a8e3cb8d-468f-5f58-b0a2-2f89ef9c3fb9",
+          "xy_mm": [
+            36.15,
+            27.05
+          ],
+          "distance_to_signal_segment_mm": 2.456199999999999,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 3.592869901624602,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "57caf0ae-b3da-49ad-a870-d8f2a343bbec",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        38.1824,
+        24.5938
+      ],
+      "end": [
+        40.738,
+        22.0382
+      ],
+      "adjacent_gap_mm": 0.3454895448606257,
+      "gap_WKT": "LINESTRING (38.1824 24.5938, 38.426698 24.349501999999998)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "c03970f4-80eb-4e57-91f8-f8cef3a027c0",
+          "xy_mm": [
+            37.675,
+            24
+          ],
+          "distance_to_signal_segment_mm": 0.7786659874426302,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 1.1021516411093373,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 2.6145273234372572,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    },
+    {
+      "uuid": "6e575142-6968-4178-acc7-e0d0e22c81b6",
+      "net": "GPS_SEARCH_BUFFER",
+      "layer": "B.Cu",
+      "reference": "In2.Cu",
+      "start": [
+        47.5915,
+        21.5316
+      ],
+      "end": [
+        46.8818,
+        22.2413
+      ],
+      "adjacent_gap_mm": 0.5486790364311153,
+      "gap_WKT": "LINESTRING (47.5915 21.5316, 47.20352533264466 21.91957466735534)",
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.320460499556069,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.3857612894000955,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 3.20563890823655,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "disposition": "APPLICABILITY_AND_TRANSFER_BOUND_PENDING_NOT_A_PROVEN_PCB_DEFECT"
+    }
+  ],
+  "signal_via_count": 60,
+  "signal_vias": [
+    {
+      "signal_via_uuid": "9d21b5f7-79a9-4b86-8869-7c31bc728bba",
+      "net": "ADC_NODE",
+      "xy_mm": [
+        85.9,
+        32.95
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "48e4e79e-2297-4939-bbad-7a1a3a963492",
+          "xy_mm": [
+            85.95,
+            34.5
+          ],
+          "distance_to_signal_segment_mm": 1.5508062419270792,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a471c63-9438-4c4c-bebb-789134dca3e9",
+          "xy_mm": [
+            85.125,
+            36.5
+          ],
+          "distance_to_signal_segment_mm": 3.6336104634371567,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+          "xy_mm": [
+            87.475,
+            29.4
+          ],
+          "distance_to_signal_segment_mm": 3.8836999111671844,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "a707bcaa-d3a2-4ed5-a777-5314dcf6bd07",
+      "net": "ADC_NODE",
+      "xy_mm": [
+        85,
+        29.1
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+          "xy_mm": [
+            87.475,
+            29.4
+          ],
+          "distance_to_signal_segment_mm": 2.493115520789193,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "48e4e79e-2297-4939-bbad-7a1a3a963492",
+          "xy_mm": [
+            85.95,
+            34.5
+          ],
+          "distance_to_signal_segment_mm": 5.482928049865326,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6de1d25d-4e1c-4b11-bccd-8566e0fc05e3",
+          "xy_mm": [
+            80.6125,
+            34.275
+          ],
+          "distance_to_signal_segment_mm": 6.784598827491571,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "55d7b7a3-a3b2-4602-af0b-f59854786f9e",
+      "net": "CANL",
+      "xy_mm": [
+        14.5,
+        11.6
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "3aa525cd-ed79-43cc-8667-8342d108ed40",
+          "xy_mm": [
+            15.7,
+            12.2
+          ],
+          "distance_to_signal_segment_mm": 1.3416407864998732,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "1e7f8991-4979-4474-9d57-ddab15ed0340",
+          "xy_mm": [
+            14.71,
+            9.5
+          ],
+          "distance_to_signal_segment_mm": 2.1104738804353866,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "2846f884-dfd0-4b59-aa2f-0e958d762bdb",
+          "xy_mm": [
+            18.775,
+            13.7
+          ],
+          "distance_to_signal_segment_mm": 4.762942892792227,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "798dfe74-73cc-463b-bbd2-3bc71c37bc91",
+      "net": "CANL",
+      "xy_mm": [
+        21.5,
+        4.5
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "0da869ef-8782-42b0-abb3-58a3c7778b54",
+          "xy_mm": [
+            22.2125,
+            3.8
+          ],
+          "distance_to_signal_segment_mm": 0.9988274375486479,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6673e079-ae45-4988-bf0e-0595a1e6f776",
+          "xy_mm": [
+            23.98,
+            5.279
+          ],
+          "distance_to_signal_segment_mm": 2.599469368928975,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3f26e87e-1f50-4dc6-ba03-b89140f409dc",
+          "xy_mm": [
+            21.199,
+            7.401
+          ],
+          "distance_to_signal_segment_mm": 2.9165736747080464,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "18281df7-815e-4cae-8190-449244384592",
+      "net": "CAN_RX_MCU",
+      "xy_mm": [
+        82.7281,
+        15.5354
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 2.754525415893088,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 3.229768222334233,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 4.426213141049583,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "71aaa022-632b-464b-aacc-82a5096b8d92",
+      "net": "CAN_RX_MCU",
+      "xy_mm": [
+        77.8,
+        33.1
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "6de1d25d-4e1c-4b11-bccd-8566e0fc05e3",
+          "xy_mm": [
+            80.6125,
+            34.275
+          ],
+          "distance_to_signal_segment_mm": 3.0480782880365775,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "f88e4c0f-bd53-4b75-b6b9-84afa7fc9135",
+          "xy_mm": [
+            78.225,
+            36.3
+          ],
+          "distance_to_signal_segment_mm": 3.2280992859576005,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "72bc5fff-55f3-47eb-be7b-37ae06d0b02f",
+          "xy_mm": [
+            80.75,
+            34.9
+          ],
+          "distance_to_signal_segment_mm": 3.4557922391254956,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "bfbf4c62-616f-487b-80f3-dfaba5150b7d",
+      "net": "CAN_RX_MCU",
+      "xy_mm": [
+        25.2,
+        18.7
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 2.811138559374119,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 3.5377429245212277,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bab8fcfe-634f-4bc1-9f18-810a1b65360b",
+          "xy_mm": [
+            21.6,
+            20
+          ],
+          "distance_to_signal_segment_mm": 3.827531841800926,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "23f7ea8d-d2ba-4908-8aae-50145a14ab11",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        57,
+        24.75
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba214ee4-455a-417f-8302-9ce7b284ffdf",
+          "xy_mm": [
+            57.375,
+            21.5
+          ],
+          "distance_to_signal_segment_mm": 3.2715630820756,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4c386a71-048e-4933-bce0-9c2d62ebb5b9",
+          "xy_mm": [
+            59.25,
+            19.85
+          ],
+          "distance_to_signal_segment_mm": 5.391892061234163,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 6.9269401614277,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "4bf99cf7-7707-46d0-9446-eda8ac3a6ffe",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        73.8,
+        16.7
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.9136578385253125,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.193535163523597,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.520697138474088,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7269ec71-37ad-4ff6-a4fc-2cee946e5c9b",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        26.9727,
+        7.0603
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "9d5bd943-e62c-4721-a3b2-39386d87717a",
+          "xy_mm": [
+            24.8514,
+            9.1816
+          ],
+          "distance_to_signal_segment_mm": 2.999971229862045,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ca240b8d-e81a-4dc7-b88b-2c3823a6491f",
+          "xy_mm": [
+            27.575,
+            10.2
+          ],
+          "distance_to_signal_segment_mm": 3.196948760928144,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "2eaf8347-1897-4f05-8efb-19304420c29b",
+          "xy_mm": [
+            24.275,
+            8.865
+          ],
+          "distance_to_signal_segment_mm": 3.2456936669993994,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "98efacb0-0638-457c-a8dc-3cf61bac199e",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        47.55,
+        22.85
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 1.6530275254816527,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.040220576310313,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 4.3044308566870955,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "b113a326-4ac2-4511-8286-3f5e1e4a0087",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        67.75,
+        22.75
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 3.401470270338988,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 4.000000000000001,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 4.931341095483054,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "c3487f70-578c-429d-b17e-5209308516b0",
+      "net": "CAN_TX_MCU",
+      "xy_mm": [
+        44.35,
+        22.65
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.7244265451650564,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 2.7510225371668624,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 3.292388447616718,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "0dfa5e4c-6325-40c7-8fd1-9e27e7f3f2fe",
+      "net": "ESP_EN",
+      "xy_mm": [
+        8.7,
+        25.5
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+          "xy_mm": [
+            11.2179,
+            28.3071
+          ],
+          "distance_to_signal_segment_mm": 3.770892576035546,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+          "xy_mm": [
+            15.7032,
+            21.15
+          ],
+          "distance_to_signal_segment_mm": 8.244228905119025,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 14.011000142744987,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "1dc649ae-92e1-4744-ac36-5b5151291d31",
+      "net": "ESP_EN",
+      "xy_mm": [
+        49.8,
+        23.6
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.330772404161331,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 3.5654592972014094,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "68fbe406-6c4f-4c03-af96-cb8207d2394a",
+          "xy_mm": [
+            47.65,
+            28.5
+          ],
+          "distance_to_signal_segment_mm": 5.35093449782372,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "3cd866d2-259c-4081-89b6-a289d6338ddd",
+      "net": "ESP_EN",
+      "xy_mm": [
+        26.3,
+        23
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 1.015197025212348,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 2.198294793698062,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 3.7958036039816396,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "4d5bdc5f-e7d3-47d7-8d8b-bd2c20085824",
+      "net": "ESP_EN",
+      "xy_mm": [
+        8.7,
+        31
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+          "xy_mm": [
+            11.2179,
+            28.3071
+          ],
+          "distance_to_signal_segment_mm": 3.68666933966148,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+          "xy_mm": [
+            15.7032,
+            21.15
+          ],
+          "distance_to_signal_segment_mm": 12.085830970189846,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d45fed1a-9561-44cf-9969-767765783376",
+          "xy_mm": [
+            20.93,
+            36.479
+          ],
+          "distance_to_signal_segment_mm": 13.40120669939838,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "550dafae-1c40-4da3-bf6b-47ccc177d5b2",
+      "net": "ESP_EN",
+      "xy_mm": [
+        59.8,
+        25.2
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba214ee4-455a-417f-8302-9ce7b284ffdf",
+          "xy_mm": [
+            57.375,
+            21.5
+          ],
+          "distance_to_signal_segment_mm": 4.423869912192263,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4c386a71-048e-4933-bce0-9c2d62ebb5b9",
+          "xy_mm": [
+            59.25,
+            19.85
+          ],
+          "distance_to_signal_segment_mm": 5.37819672380994,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 5.479507277118993,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "66bd2235-3eeb-45c9-bcb4-1f1d4706b40e",
+      "net": "ESP_EN",
+      "xy_mm": [
+        69.103,
+        4.738
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 3.3507093278886515,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 3.7774267696409316,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c17dab87-e112-47a1-b079-590251aa4a68",
+          "xy_mm": [
+            63.7,
+            3.75
+          ],
+          "distance_to_signal_segment_mm": 5.4925907366196425,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "78c59ff5-fd2d-45d7-8061-0098fd5bd846",
+      "net": "ESP_EN",
+      "xy_mm": [
+        43.4,
+        23
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 1.8208857734630113,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 2.352626551325135,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 3.309456148674585,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7a15fa7f-08e9-433f-a4d8-cf3e1f256436",
+      "net": "ESP_EN",
+      "xy_mm": [
+        55.9,
+        25.4
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba214ee4-455a-417f-8302-9ce7b284ffdf",
+          "xy_mm": [
+            57.375,
+            21.5
+          ],
+          "distance_to_signal_segment_mm": 4.169607295657469,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4c386a71-048e-4933-bce0-9c2d62ebb5b9",
+          "xy_mm": [
+            59.25,
+            19.85
+          ],
+          "distance_to_signal_segment_mm": 6.482669203345176,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9810c55d-2450-47b4-ad1d-b9dd05ca628b",
+          "xy_mm": [
+            50.3,
+            29.85
+          ],
+          "distance_to_signal_segment_mm": 7.152796655854271,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "ac499f64-3ec7-480b-bf09-997305f9bf87",
+      "net": "ESP_EN",
+      "xy_mm": [
+        10.4,
+        25.5
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+          "xy_mm": [
+            11.2179,
+            28.3071
+          ],
+          "distance_to_signal_segment_mm": 2.9238281105427504,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+          "xy_mm": [
+            15.7032,
+            21.15
+          ],
+          "distance_to_signal_segment_mm": 6.859040037789546,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 12.322869998502783,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "d5f2c11d-54e4-4396-813e-e83e01f9015f",
+      "net": "ESP_EN",
+      "xy_mm": [
+        83.4992,
+        9.0175
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 2.524260662055335,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 2.9764974197872194,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "71f6e64e-f019-4727-9c6b-544ff32098bd",
+          "xy_mm": [
+            86.275,
+            5.8
+          ],
+          "distance_to_signal_segment_mm": 4.249396650113993,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Supervisor/reset/pullup network; reset immunity must be assessed separately from UART.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "301cec8c-4344-45fe-bf04-e500049368e6",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        46.2,
+        29.6
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ea41e0a5-d6a0-458d-a4b9-6641344bbb38",
+          "xy_mm": [
+            45.7,
+            30.3
+          ],
+          "distance_to_signal_segment_mm": 0.8602325267042621,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d3b47676-c11a-47b9-b7a3-41d19e4c63fd",
+          "xy_mm": [
+            46.35,
+            28.5
+          ],
+          "distance_to_signal_segment_mm": 1.1101801655587271,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "68fbe406-6c4f-4c03-af96-cb8207d2394a",
+          "xy_mm": [
+            47.65,
+            28.5
+          ],
+          "distance_to_signal_segment_mm": 1.820027472320127,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "6beb5f14-cad6-412b-941f-bfc3cbda2b31",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        47.7,
+        31.3
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ea41e0a5-d6a0-458d-a4b9-6641344bbb38",
+          "xy_mm": [
+            45.7,
+            30.3
+          ],
+          "distance_to_signal_segment_mm": 2.23606797749979,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "68fbe406-6c4f-4c03-af96-cb8207d2394a",
+          "xy_mm": [
+            47.65,
+            28.5
+          ],
+          "distance_to_signal_segment_mm": 2.80044639298809,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9810c55d-2450-47b4-ad1d-b9dd05ca628b",
+          "xy_mm": [
+            50.3,
+            29.85
+          ],
+          "distance_to_signal_segment_mm": 2.976995129320834,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "9b4fb715-3cb1-4ddf-9589-187b2d6153f7",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        54.1,
+        32.4
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "9810c55d-2450-47b4-ad1d-b9dd05ca628b",
+          "xy_mm": [
+            50.3,
+            29.85
+          ],
+          "distance_to_signal_segment_mm": 4.576297630180976,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "37d8abd4-4529-46f7-a202-75315d98331d",
+          "xy_mm": [
+            47.6,
+            35.975
+          ],
+          "distance_to_signal_segment_mm": 7.418262936833664,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "68fbe406-6c4f-4c03-af96-cb8207d2394a",
+          "xy_mm": [
+            47.65,
+            28.5
+          ],
+          "distance_to_signal_segment_mm": 7.537406715840669,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "a341487b-8df0-4220-863d-6129c8bd2e84",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        68.9377,
+        30.9107
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+          "xy_mm": [
+            72.6,
+            28.2
+          ],
+          "distance_to_signal_segment_mm": 4.55635114757411,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "aa539b28-01d4-4a85-8926-26f4bd5e7901",
+          "xy_mm": [
+            70.725,
+            36.3
+          ],
+          "distance_to_signal_segment_mm": 5.6779393955906166,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "7d061435-0ea3-4fa7-8e24-f03175cf16d5",
+          "xy_mm": [
+            74.239659,
+            34.910943
+          ],
+          "distance_to_signal_segment_mm": 6.641740231048637,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "b6835311-8663-4d16-9b60-09fdc2d7ae02",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        25.8,
+        37.4
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "082f4665-276c-4a52-b950-8e6fa4098335",
+          "xy_mm": [
+            26.4625,
+            38
+          ],
+          "distance_to_signal_segment_mm": 0.893815557036237,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d45fed1a-9561-44cf-9969-767765783376",
+          "xy_mm": [
+            20.93,
+            36.479
+          ],
+          "distance_to_signal_segment_mm": 4.9563233348925095,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ba2e1377-7ac2-427e-929e-229eee1b53c8",
+          "xy_mm": [
+            31,
+            36
+          ],
+          "distance_to_signal_segment_mm": 5.385164807134503,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "d108d55f-ff55-491b-9e7e-3e1cd2cdb78b",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        30.1,
+        34
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba2e1377-7ac2-427e-929e-229eee1b53c8",
+          "xy_mm": [
+            31,
+            36
+          ],
+          "distance_to_signal_segment_mm": 2.19317121994613,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6ab1ff5c-46a9-491f-a9ff-62922bce71a3",
+          "xy_mm": [
+            31.7,
+            36
+          ],
+          "distance_to_signal_segment_mm": 2.5612496949731383,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "cafb2237-84ca-404d-9196-36700dd7f83f",
+          "xy_mm": [
+            32.4,
+            36
+          ],
+          "distance_to_signal_segment_mm": 3.047950130825632,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "e93f1140-12dd-48e3-bbea-15f27ed9ad26",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        74.5887,
+        6
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 3.889571658936241,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 7.055836427384063,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 8.327774474011644,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "ee866e45-02dc-4c28-8a4a-4e788ee00281",
+      "net": "ESP_GPIO0",
+      "xy_mm": [
+        81.4988,
+        3.6162
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "71f6e64e-f019-4727-9c6b-544ff32098bd",
+          "xy_mm": [
+            86.275,
+            5.8
+          ],
+          "distance_to_signal_segment_mm": 5.251768167008139,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 5.409220727609478,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "524836f5-ffd8-47f6-95b3-6d7665809b06",
+          "xy_mm": [
+            86.3,
+            10.025
+          ],
+          "distance_to_signal_segment_mm": 8.007761165269601,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Boot strap/programming fixture network; not a high-rate data interface.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "aa45a8e2-a43d-4a30-a57d-d12b678d1bb5",
+      "net": "GPS_ANT_RF_BIASED",
+      "xy_mm": [
+        62.6764,
+        16.7254
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "54fef2c3-3b31-4875-984f-620e5e356928",
+          "xy_mm": [
+            62.2,
+            17.35
+          ],
+          "distance_to_signal_segment_mm": 0.7855457465991394,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c78a68c8-758f-4b03-8277-bb759062377e",
+          "xy_mm": [
+            62.35,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 2.1495260221732613,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 2.8327199155581884,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "c6e025dc-442e-4fda-9889-719ebbfa4e06",
+      "net": "GPS_FIX_RAW",
+      "xy_mm": [
+        44.8369,
+        8.9561
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "01453d4c-2fc8-4bc6-84bd-b2d6f655a57e",
+          "xy_mm": [
+            43,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 3.04703935320829,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6cceff5a-b6c9-497b-ac96-6908af735c62",
+          "xy_mm": [
+            45.3,
+            5.25
+          ],
+          "distance_to_signal_segment_mm": 3.734921527957447,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 3.8220594997985056,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "cbcb743b-03b8-484d-b338-bdfa7176ba21",
+      "net": "GPS_FIX_RAW",
+      "xy_mm": [
+        47.2383,
+        17.3297
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 2.322205628276706,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 3.4268117806497624,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 4.9729929599789315,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "63a9f54c-1d05-4532-a4c2-eb8ef5db79c4",
+      "net": "GPS_PPS_BUFFER",
+      "xy_mm": [
+        73.3925,
+        10.6309
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 3.940379557859876,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 6.179659461491381,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 7.423480063959219,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U402 LVC output BEFORE R403 220ohm.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7e4ffebe-ae16-494b-a6a4-6a0e23cb339f",
+      "net": "GPS_PPS_BUFFER",
+      "xy_mm": [
+        65.3696,
+        20.388
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 0.8204804446176726,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.7427530404506586,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 2.5055275213016523,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U402 LVC output BEFORE R403 220ohm.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "041c41b9-4e0b-48c6-820e-2e426022fd28",
+      "net": "GPS_PPS_RAW",
+      "xy_mm": [
+        65.007,
+        15.5586
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+          "xy_mm": [
+            67.8,
+            15.525
+          ],
+          "distance_to_signal_segment_mm": 2.7932020979513736,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 2.8233239204880434,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "e7b5041e-7ba7-4cc7-99c9-f98380827f39",
+          "xy_mm": [
+            64.2,
+            12.8
+          ],
+          "distance_to_signal_segment_mm": 2.874216929878467,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "PA1616D PPS into U402 LVC input; PPS repetition frequency is not edge rate.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "27bbfa88-e554-4144-a958-fd26b6b7cf74",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        31.3289,
+        16.3539
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "b8d7ddee-8ac9-46c4-bd1a-d795e74a6abf",
+          "xy_mm": [
+            33.85,
+            14.7
+          ],
+          "distance_to_signal_segment_mm": 3.0151833144934987,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "5c422bdd-0ce8-41f2-ba07-01e9965ba8b2",
+          "xy_mm": [
+            35,
+            14.8
+          ],
+          "distance_to_signal_segment_mm": 3.9864245157785176,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "f19f2e98-da36-46c3-9f05-7b565b2a8db9",
+          "xy_mm": [
+            29.2321,
+            12.7071
+          ],
+          "distance_to_signal_segment_mm": 4.206628160415417,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "53d6c8aa-1833-49f5-9dde-e3a6fc52b6dd",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        40.738,
+        22.0382
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "a6dad372-7098-440f-8e79-52bed5621818",
+          "xy_mm": [
+            41.6,
+            22.725
+          ],
+          "distance_to_signal_segment_mm": 1.1021516411093373,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4bb6a98e-c1ff-4c6f-b2c2-88fcddf766af",
+          "xy_mm": [
+            41.7737,
+            24.7
+          ],
+          "distance_to_signal_segment_mm": 2.85619567431925,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "58db5232-4d31-4329-ae95-cc0a933b2703",
+          "xy_mm": [
+            39.8485,
+            19
+          ],
+          "distance_to_signal_segment_mm": 3.16573364166981,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7dd68167-6892-4950-bf78-7a77396721cb",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        46.8818,
+        22.2413
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.320460499556069,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 2.3857612894000955,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 3.476430918341394,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "b1632013-f4b0-4a8e-af3a-48434825420d",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        50.8512,
+        21.5316
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "ba8f2754-a5d9-4caa-bc47-f8eb2bbee44a",
+          "xy_mm": [
+            47.65,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 4.365670624314206,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ee2f7544-f58f-40be-9a65-66f8f5470b1c",
+          "xy_mm": [
+            46.35,
+            24.5
+          ],
+          "distance_to_signal_segment_mm": 5.391864241614394,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 5.807078869793314,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "cda81067-6d99-4193-8c88-c58075351269",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        33.65,
+        23.1203
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "a7e70110-e9c3-4aec-9248-8e0ab922e617",
+          "xy_mm": [
+            31.575,
+            22
+          ],
+          "distance_to_signal_segment_mm": 2.358113035882716,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c03970f4-80eb-4e57-91f8-f8cef3a027c0",
+          "xy_mm": [
+            37.675,
+            24
+          ],
+          "distance_to_signal_segment_mm": 4.12001178275014,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a8e3cb8d-468f-5f58-b0a2-2f89ef9c3fb9",
+          "xy_mm": [
+            36.15,
+            27.05
+          ],
+          "distance_to_signal_segment_mm": 4.657525318234996,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "dd0d1ca6-5e29-4fa8-9338-855fc68a1574",
+      "net": "GPS_SEARCH_BUFFER",
+      "xy_mm": [
+        28.6127,
+        19.109
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "0bfdb3fb-08e8-572f-91c9-77f3be7c580d",
+          "xy_mm": [
+            26.95,
+            20.9
+          ],
+          "distance_to_signal_segment_mm": 2.4438192015777256,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 3.5955030649409805,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a7e70110-e9c3-4aec-9248-8e0ab922e617",
+          "xy_mm": [
+            31.575,
+            22
+          ],
+          "distance_to_signal_segment_mm": 4.1392151780259,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U404 LVC output drives R405 1kohm and D401; indicator, not timing input.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "4649c574-09aa-4553-8285-cc0669ba4f87",
+      "net": "GPS_TX_BUFFER",
+      "xy_mm": [
+        69.3568,
+        12.2761
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+          "xy_mm": [
+            67.8,
+            15.525
+          ],
+          "distance_to_signal_segment_mm": 3.6026347927593263,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a57d68a0-5b63-4689-aa5f-d76ceeb1b1cf",
+          "xy_mm": [
+            65.775,
+            11.075
+          ],
+          "distance_to_signal_segment_mm": 3.7778211246696167,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 5.050865019974299,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "773de029-1f66-442c-b6c4-5df68fa45ed7",
+      "net": "GPS_TX_BUFFER",
+      "xy_mm": [
+        65.2557,
+        17.0485
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 1.5075193995434957,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.9347906191627076,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+          "xy_mm": [
+            67.8,
+            15.525
+          ],
+          "distance_to_signal_segment_mm": 2.9655547103366624,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "9f920bc5-0a91-4de6-aa05-9418f773b804",
+      "net": "GPS_TX_MCU",
+      "xy_mm": [
+        71.8179,
+        16.0654
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+          "xy_mm": [
+            67.8,
+            15.525
+          ],
+          "distance_to_signal_segment_mm": 4.0540785105865895,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.988543171107174,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 5.306598493385374,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO17 output into U404 input; active GPS command path.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "ccff4e64-86f8-477e-98b3-c24b578bee40",
+      "net": "GPS_TX_MCU",
+      "xy_mm": [
+        61.69,
+        21
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 0.9263368717696618,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c78a68c8-758f-4b03-8277-bb759062377e",
+          "xy_mm": [
+            62.35,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 2.249022009674427,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4c386a71-048e-4933-bce0-9c2d62ebb5b9",
+          "xy_mm": [
+            59.25,
+            19.85
+          ],
+          "distance_to_signal_segment_mm": 2.6974246977441254,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "GPIO17 output into U404 input; active GPS command path.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7477b432-3105-4fa6-a49a-60cfb63ca77c",
+      "net": "GPS_TX_RAW",
+      "xy_mm": [
+        45.2129,
+        15.4388
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 0.8638963190105639,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 2.6902103728147364,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 2.897538334517764,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "622710dd-f5b1-4ab8-ad80-f12476e88bdc",
+      "net": "OIL_EXCITATION_ADC",
+      "xy_mm": [
+        85.4,
+        26.9
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+          "xy_mm": [
+            87.475,
+            29.4
+          ],
+          "distance_to_signal_segment_mm": 3.2489421355265704,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84007739-5138-50e7-875f-6861225ff66c",
+          "xy_mm": [
+            80.169766,
+            22.625
+          ],
+          "distance_to_signal_segment_mm": 6.755070147286118,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bb0630d0-93c1-5889-8e34-4a5bd5182b44",
+          "xy_mm": [
+            79.719766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 6.848042296507519,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "7162ebe1-38bb-4575-81da-2a949f97d055",
+      "net": "OIL_EXCITATION_ADC",
+      "xy_mm": [
+        72,
+        30.2
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+          "xy_mm": [
+            72.6,
+            28.2
+          ],
+          "distance_to_signal_segment_mm": 2.0880613017821084,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "7d061435-0ea3-4fa7-8e24-f03175cf16d5",
+          "xy_mm": [
+            74.239659,
+            34.910943
+          ],
+          "distance_to_signal_segment_mm": 5.216230093231131,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "f82e6c84-3830-428c-9756-bd35648104b6",
+          "xy_mm": [
+            77.575,
+            29
+          ],
+          "distance_to_signal_segment_mm": 5.702685770757498,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "aa33599f-e3d7-4502-9c9d-3200826530e0",
+      "net": "OIL_EXC_AMP_OUT",
+      "xy_mm": [
+        81.4,
+        26.3
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "bb0630d0-93c1-5889-8e34-4a5bd5182b44",
+          "xy_mm": [
+            79.719766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 3.636455870041049,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "e4ecb195-124d-4b42-a230-5523f9ead050",
+          "xy_mm": [
+            77.575,
+            26.4
+          ],
+          "distance_to_signal_segment_mm": 3.8263069662534948,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "dbed8ccc-fd30-5858-89e6-91ed111f8886",
+          "xy_mm": [
+            79.269766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 3.8650384079276643,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "caecfdf0-de07-453d-ac0f-b3205dcee9c1",
+      "net": "OIL_EXC_AMP_OUT",
+      "xy_mm": [
+        74.8,
+        30.4
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "f82e6c84-3830-428c-9756-bd35648104b6",
+          "xy_mm": [
+            77.575,
+            29
+          ],
+          "distance_to_signal_segment_mm": 3.1081545971846425,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "17fa8bd5-36ed-4c52-a3a2-93e8e19439fe",
+          "xy_mm": [
+            72.6,
+            28.2
+          ],
+          "distance_to_signal_segment_mm": 3.111269837220811,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "7d061435-0ea3-4fa7-8e24-f03175cf16d5",
+          "xy_mm": [
+            74.239659,
+            34.910943
+          ],
+          "distance_to_signal_segment_mm": 4.545612036407203,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "0cc1040f-f3c3-4402-af1c-aef2298a5277",
+      "net": "OIL_SIG",
+      "xy_mm": [
+        8.1,
+        28.25
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+          "xy_mm": [
+            11.2179,
+            28.3071
+          ],
+          "distance_to_signal_segment_mm": 3.118422809690822,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+          "xy_mm": [
+            15.7032,
+            21.15
+          ],
+          "distance_to_signal_segment_mm": 10.40281934092869,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 15.148122820996667,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "479d552a-0ae8-5c84-a424-5bea68ee866e",
+      "net": "OIL_SIG",
+      "xy_mm": [
+        13.7,
+        22.4
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "daf898c5-83e5-4a75-8cf4-8618b5cea48d",
+          "xy_mm": [
+            15.7032,
+            21.15
+          ],
+          "distance_to_signal_segment_mm": 2.361209486682621,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3cf548b9-ca8c-47ff-ae1f-29c3f45c751d",
+          "xy_mm": [
+            11.2179,
+            28.3071
+          ],
+          "distance_to_signal_segment_mm": 6.407390328363022,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bab8fcfe-634f-4bc1-9f18-810a1b65360b",
+          "xy_mm": [
+            21.6,
+            20
+          ],
+          "distance_to_signal_segment_mm": 8.256512580987208,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "fd6080e3-35ea-419c-98a1-786a3f58331d",
+      "net": "OIL_SIG",
+      "xy_mm": [
+        21.15,
+        37.3
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "d45fed1a-9561-44cf-9969-767765783376",
+          "xy_mm": [
+            20.93,
+            36.479
+          ],
+          "distance_to_signal_segment_mm": 0.8499652934090874,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "58a20d80-d872-4254-af50-be5716aab5b4",
+          "xy_mm": [
+            20,
+            38.8
+          ],
+          "distance_to_signal_segment_mm": 1.890105817143579,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "082f4665-276c-4a52-b950-8e6fa4098335",
+          "xy_mm": [
+            26.4625,
+            38
+          ],
+          "distance_to_signal_segment_mm": 5.3584191931949485,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "fef4218c-7235-4462-8723-4cbebabcc710",
+      "net": "OIL_SIG",
+      "xy_mm": [
+        42.75,
+        38.6
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "7b5cb19f-890e-4a23-a261-041b15d76e17",
+          "xy_mm": [
+            43.351,
+            37.999
+          ],
+          "distance_to_signal_segment_mm": 0.8499423509862288,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "32e18a66-16d7-41eb-bcc8-387b68ef17d9",
+          "xy_mm": [
+            45.7,
+            39.7
+          ],
+          "distance_to_signal_segment_mm": 3.148412298286236,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "37d8abd4-4529-46f7-a202-75315d98331d",
+          "xy_mm": [
+            47.6,
+            35.975
+          ],
+          "distance_to_signal_segment_mm": 5.514809606867677,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "2fc920da-e441-49b3-99ee-0bc322e4db58",
+      "net": "UART0_RX",
+      "xy_mm": [
+        71,
+        4.79
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 2.71,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a968cb01-5053-4993-bbe5-50b3ee60d5d0",
+          "xy_mm": [
+            65.775,
+            6.525
+          ],
+          "distance_to_signal_segment_mm": 5.5055290390660865,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c17dab87-e112-47a1-b079-590251aa4a68",
+          "xy_mm": [
+            63.7,
+            3.75
+          ],
+          "distance_to_signal_segment_mm": 7.373710056681098,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "746c3d8b-e0cd-481e-af01-fc99ce5941fc",
+      "net": "UART0_RX",
+      "xy_mm": [
+        84.2423,
+        24.8242
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "84007739-5138-50e7-875f-6861225ff66c",
+          "xy_mm": [
+            80.169766,
+            22.625
+          ],
+          "distance_to_signal_segment_mm": 4.628392142111129,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bb0630d0-93c1-5889-8e34-4a5bd5182b44",
+          "xy_mm": [
+            79.719766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 4.849022006668555,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eaabd8e5-f6cf-5d66-8e42-697f5a4de0cf",
+          "xy_mm": [
+            80.169766,
+            22.175
+          ],
+          "distance_to_signal_segment_mm": 4.858373577768186,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "b3cd08fc-2916-4093-a426-cde1e985d162",
+      "net": "UART0_TX",
+      "xy_mm": [
+        78.4234,
+        8.2321
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "fb4cf196-ac18-41ab-99ea-86587ce625ec",
+          "xy_mm": [
+            80.975,
+            9
+          ],
+          "distance_to_signal_segment_mm": 2.664644998869449,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 4.81566796716717,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84ed6f0f-5ac2-5d03-9052-bb5cc4e4fefb",
+          "xy_mm": [
+            71,
+            7.5
+          ],
+          "distance_to_signal_segment_mm": 7.459412709456423,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    },
+    {
+      "signal_via_uuid": "ecc7d41a-f12f-497b-ae51-66a03f769475",
+      "net": "UART0_TX",
+      "xy_mm": [
+        82.9548,
+        26.8261
+      ],
+      "signal_via_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "signal_via_drill_mm": 0.3,
+      "nearby_ground_vias": [
+        {
+          "uuid": "bb0630d0-93c1-5889-8e34-4a5bd5182b44",
+          "xy_mm": [
+            79.719766,
+            23.075
+          ],
+          "distance_to_signal_segment_mm": 4.953402486287178,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "84007739-5138-50e7-875f-6861225ff66c",
+          "xy_mm": [
+            80.169766,
+            22.625
+          ],
+          "distance_to_signal_segment_mm": 5.040402324334444,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "cc1783dc-a0a1-47fc-b3df-1ca4aae9fa80",
+          "xy_mm": [
+            87.475,
+            29.4
+          ],
+          "distance_to_signal_segment_mm": 5.201650627445089,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "source_scope": "Analog/differential/programming interface",
+      "current_return_transfer_status": "QUANTITATIVE_TRANSFER_VALIDATION_PENDING"
+    }
+  ],
+  "limitations": [
+    "Reference polygons and signal centerlines are nominal; no universal etched neck-width or RF-current-distribution proof.",
+    "Own signal antipads are explicitly excluded, not credited as ground copper.",
+    "CAN_RXD before R302, buffered GPS receive into GPIO18, EN, GPIO0 and indicator/control applicability now appear explicitly.",
+    "A nearby through-ground-via is not accepted without a real copper path to both return planes.",
+    "The I26 native geometry reference predates I28; I28 changes only U121 fitted metadata, while exact current-source native ERC/DRC/manufacturing verification is performed separately.",
+    "Existing RF matching, CAN receive-branch and private DC return models retain their separate scopes."
+  ],
+  "gnd02_desktop_complete": false,
+  "physical_test_claimed": false
+}

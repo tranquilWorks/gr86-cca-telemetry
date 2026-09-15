@@ -1,0 +1,18 @@
+{
+  "componentCode": "C5219894",
+  "componentModelEn": "TPS22953QDQCRQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "WSON-10",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.ti.com/cn/lit/gpn/tps22953-q1",
+  "describe": "-40\u2103~+125\u2103 1 14m\u03a9 5A 700mV~5.7V Active High Load Switch Undervoltage Protection(UVP)\u3001Over Temperature Protection WSON-10 Power Distribution Switches ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 14,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C5219894",
+  "retrieved_at_UTC": "2026-09-15T21:28:36.334713+00:00",
+  "response_sha256": "97eb96db8eb1375529997b2e630010ca3a327731b66502a37350a4124bf3d407"
+}

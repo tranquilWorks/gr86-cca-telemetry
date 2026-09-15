@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "name": "b470_r0.47_off",
+    "bulk": 470,
+    "damp": 0.47,
+    "mode": "off",
+    "slow": false
+  },
+  "rc": 0,
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/controlled_isolation/b470_r0.47_off/waveform.tsv not found."
+}

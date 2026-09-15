@@ -1,0 +1,131 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T23:25:38+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "GR86_CCA_RevB.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R168",
+                    "pos": {
+                        "x": 86.35,
+                        "y": 2.0
+                    },
+                    "uuid": "0be06b29-d33b-5ef9-98bb-071577d035cc"
+                },
+                {
+                    "description": "Footprint R170",
+                    "pos": {
+                        "x": 83.3,
+                        "y": 2.0
+                    },
+                    "uuid": "68c71947-6e25-51ff-b12f-11d210e43343"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R169",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 2.0
+                    },
+                    "uuid": "2501389c-977f-52fc-8029-672200e69de4"
+                },
+                {
+                    "description": "Footprint TP201",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 4.0
+                    },
+                    "uuid": "ee545624-3668-5487-b901-6c99d2e97937"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R170",
+                    "pos": {
+                        "x": 83.3,
+                        "y": 2.0
+                    },
+                    "uuid": "68c71947-6e25-51ff-b12f-11d210e43343"
+                },
+                {
+                    "description": "Footprint TP202",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 4.0
+                    },
+                    "uuid": "f7fb6f96-d765-57a3-b378-6eafd2ac0ee2"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Clearance violation (rule 'Protected automotive voltage clearance' clearance 0.2500 mm; actual 0.1625 mm)",
+            "items": [
+                {
+                    "description": "Track [5V_RIPPLE] on F.Cu, length 3.5500 mm",
+                    "pos": {
+                        "x": 53.1375,
+                        "y": 29.525
+                    },
+                    "uuid": "28492143-e290-4dbc-b429-4569e74e1140"
+                },
+                {
+                    "description": "Pad 1 [5V_SW] of L121 on F.Cu",
+                    "pos": {
+                        "x": 54.8,
+                        "y": 29.0
+                    },
+                    "uuid": "9edbc75e-bbba-5ed8-857d-e7a2512e5d01"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Protected automotive voltage clearance' clearance 0.2500 mm; actual 0.1625 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [5V_SW] of L121 on F.Cu",
+                    "pos": {
+                        "x": 54.8,
+                        "y": 29.0
+                    },
+                    "uuid": "9edbc75e-bbba-5ed8-857d-e7a2512e5d01"
+                },
+                {
+                    "description": "Track [5V_RIPPLE] on F.Cu, length 1.1375 mm",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 29.525
+                    },
+                    "uuid": "efa339a0-00cb-4444-8611-1a88ec9da80e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

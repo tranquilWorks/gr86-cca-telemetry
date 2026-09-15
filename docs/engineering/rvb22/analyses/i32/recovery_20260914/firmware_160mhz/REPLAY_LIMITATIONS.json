@@ -1,0 +1,20 @@
+{
+  "status": "CURRENT_RESET_RUNTIME_BLOCKED_FOR_OPTIONAL_REPLAYS",
+  "firmware_target_build": "PASS; unaffected by these optional replay dependencies",
+  "power_and_input_replay": {
+    "attempted": true,
+    "completed_cases": 0,
+    "blocker": "ngspice executable is absent from the reset runtime",
+    "logs": [
+      "logs/fresh-power.log",
+      "logs/fresh-input.log"
+    ]
+  },
+  "source_audit_replay": {
+    "attempted": true,
+    "completed": false,
+    "blocker": "The reset runtime lacks Shapely and networkx"
+  },
+  "preserved_authority": "The checked recovery bundle retains the source-bound KiCad 9.0.9, 34 accepted power-case, 17 accepted input-case, layout, filled-ground, mechanical, and thermal evidence. This record does not relabel those archived executions as fresh runs.",
+  "physical_claims": "No hardware, flash, vehicle, thermal chamber, EMC, or first-article execution occurred."
+}

@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "name": "negative_150V_2ms",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m -150 62.001m -150 62.002m 12",
+    "stop": 0.12,
+    "step": 5e-07,
+    "cable_R": 10,
+    "events": [
+      [
+        "negative",
+        0.06,
+        0.063,
+        0.003
+      ]
+    ]
+  },
+  "returncode": 1,
+  "deck_sha256": "5ad24142af3ebaa814fb3adc2b9e765e618fd37f5850cb914d8e48425def163b",
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/input_stress_v1/negative_150V_2ms/waveform.tsv not found."
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "file": "lm63615-q1.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/lm63615-q1.pdf",
+    "sha256": "7222b3f5bc6892f2a19a110a985096c342dc70084df5bfe0cebc3b4fb59a7351",
+    "bytes": 4579882,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "lm5164-q1.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/lm5164-q1.pdf",
+    "sha256": "ee02bec80b1e5730ec1f64c5195330998cad6521af4bd3a53b9b7e425a90a246",
+    "bytes": 2519214,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "tps22953-q1.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf",
+    "sha256": "c65f40c07398c8f1d32d383c7e2a223b37e5c451007e84d232bb71e3a4e0bd64",
+    "bytes": 3190526,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "tps3808-q1.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3808-q1.pdf",
+    "sha256": "878d1dfe86ddc9da705fa77ee4fdbca73c96298e11c32e5a9fe6c50f1beea49a",
+    "bytes": 1537744,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "ltc4367.pdf",
+    "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4367.pdf",
+    "sha256": "19f4e8fa5eaad9a29bff1fea1437aab169195583ed4b03a1b15c798982d1654b",
+    "bytes": 1655189,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "std25nf20.pdf",
+    "url": "https://www.st.com/resource/en/datasheet/std25nf20.pdf",
+    "sha256": "04284094809cf003dcb73c578886913da2d187d714b600294f680d2f9afab7cd",
+    "bytes": 862758,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "s5.pdf",
+    "url": "https://www.vishay.com/docs/88931/s5a.pdf",
+    "sha256": "e67f27c05e136d909b7ed2c989d2940097aa6726577b2661aa8d3861207118dc",
+    "bytes": 97451,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "smaj.pdf",
+    "url": "https://www.vishay.com/docs/88390/smaj.pdf",
+    "sha256": "b8617e715805bb3293892c4636279eac57c1ef18e8c87a481cec1b802731b72d",
+    "bytes": 111272,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "smcj.pdf",
+    "url": "https://www.vishay.com/docs/88394/smcj.pdf",
+    "sha256": "d9b1dafa25c0fa45eeb22fc4258fbdee3cafffb0bd14741e3cd9e35ea98f8e4c",
+    "bytes": 111095,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "crcw.pdf",
+    "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+    "sha256": "f7fc14c1a9de7bf51215ebe87def4f37604bdfed100e2a1c9b1f096c5a10babd",
+    "bytes": 150402,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "crcwhp.pdf",
+    "url": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+    "sha256": "82e7326b91056483c6524706e36b57917d6a2c28ad3e52d85b810d0e3288bb23",
+    "bytes": 153511,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "wsl.pdf",
+    "url": "https://www.vishay.com/docs/30100/wsl.pdf",
+    "sha256": "96c2dc89ae1e3039815ed6c41f566a6e9f6b53035f8e45ea2ada1697935a44dc",
+    "bytes": 142434,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "tnpu.pdf",
+    "url": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+    "sha256": "d1f1bfcd0370494ab90164dd8803c993f2426dc80078a35299d48d635bed1413",
+    "bytes": 138888,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "kem_t2073_t59x.pdf",
+    "url": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+    "sha256": "64cc7925483d23bc88a92c0dde3bba58e60152765bed5602f859c04c0c5db729",
+    "bytes": 4609530,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "dmg2302ukq.pdf",
+    "url": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf",
+    "sha256": "00c7643a03871ac3559a72c36f88ae6b66e96c639c2f6628bd343a12407bdeb1",
+    "bytes": 514387,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "fuse885.pdf",
+    "url": "https://www.littelfuse.com/assetdocs/littelfuse-fuse-885-datasheet?assetguid=f4426cf6-2a53-41b3-b8da-211f7a44fad1",
+    "sha256": "b2018c57472d4bfec68460844cf4b1c67cd7d0b615afd94c6f0bce95690d8d44",
+    "bytes": 409005,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "tcan3403-q1.pdf",
+    "url": "https://www.ti.com/lit/gpn/TCAN3403-Q1",
+    "sha256": "b1f664b052f46baf09f312c1b667cbf36db2ce29ecc4644d5b41324b9e3cb399",
+    "bytes": 2067877,
+    "class_": "manufacturer_primary_reference"
+  },
+  {
+    "file": "WSL2512_030_CALCULATOR_VALUES.json",
+    "url": "https://www.vishay.com/en/resistors/calculator-power-metal-strip/",
+    "sha256": "a1baffd1dfd6f170f292e6e5168f86186559a17163133589d68a443ee9a3e4ad",
+    "bytes": 81
+  },
+  {
+    "file": "WSL2512_033_CALCULATOR_VALUES.json",
+    "url": "https://www.vishay.com/en/resistors/calculator-power-metal-strip/",
+    "sha256": "e6a4561b2b0253dc0f21a28ec9e148b868815572673a568b6ad82abfc09bb8c1",
+    "bytes": 81
+  },
+  {
+    "file": "WSL2512_047_CALCULATOR_VALUES.json",
+    "url": "https://www.vishay.com/en/resistors/calculator-power-metal-strip/",
+    "sha256": "2263fd3e56304332574abcf15ece2cf2a51a7dc168356ce626eede8179f19a35",
+    "bytes": 80
+  },
+  {
+    "file": "wsl_calculator_readable.js",
+    "url": "https://www.vishay.com/en/resistors/calculator-power-metal-strip/",
+    "sha256": "0862ade5dc3f717960912fb91d45109d3fc1a283ce39388f6a2e3cacbdb311fd",
+    "bytes": 23190
+  },
+  {
+    "file": "CGA5L1C0G2A683J160AE_SOURCE.md",
+    "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA5L1C0G2A683J160AE",
+    "sha256": "61f321474bc2b307f6c58a1d5b43ee70bc33452763d97b85e38488dbc603843e",
+    "bytes": 937,
+    "class_": "factual_extraction_from_manufacturer_page_not_original_PDF"
+  }
+]

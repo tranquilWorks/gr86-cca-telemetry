@@ -1,0 +1,138 @@
+{
+  "status": "COMPLETE_REDLINE_REVERIFIED_WITH_CURRENT_JLC_SNAPSHOT",
+  "verified_at_UTC": "2026-09-15T18:28:14.692650+00:00",
+  "repository": "tranquilWorks/gr86-cca-telemetry",
+  "branch": "codex/rvb24-coordinated-closure",
+  "PR": 46,
+  "resumption_start_remote_SHA": "0b4e3f8ef5d1535733990305315445d19c4ac5c2",
+  "engineering_publication_SHA": "1ce3f9f9b8bdb68dc275334d22b63dd21d40e058",
+  "original_redline_start_remote_SHA": "1c934f9ddd7a1b823e5136484f525485472528f6",
+  "immutable_pre_redline_CAD_SHA": "e5ef8425dbe59c99e99eabb75c04342a47b27561",
+  "publication_SHA_note": "The commit containing this verification-only record is identified by the remote branch readback; no self-referential SHA is embedded.",
+  "checkout_clean_before_verification": true,
+  "checkout_clean_after_verification": true,
+  "protected_handoff_commits_preserved": true,
+  "engineering_CAD_model_BOM_CPL_manufacturing_diff_after_1ce3f9f": [],
+  "native_source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "new_local_checks": {
+    "ci_verify.py": "PASS",
+    "source_audit.py": "PASS",
+    "verified_indexed_paths": 2006,
+    "native_CAD_inputs": 157,
+    "unchanged_firmware_files": 32,
+    "desktop_gate_categories": 14,
+    "waveform_records": 38,
+    "release_ZIP_members": 188,
+    "source_audit_byte_reproduction": {
+      "SOURCE_AUDIT.json": true,
+      "SOURCE_BINDING.json": true
+    }
+  },
+  "retained_native_results": {
+    "ERC": 0,
+    "DRC": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "postconditions": 13,
+    "CAD_files": 157,
+    "fitted_models": 177,
+    "electrical_nets": 145,
+    "net_bearing_pads": 571
+  },
+  "retained_electrical_results": {
+    "completed": 32,
+    "normal_case_count": 17,
+    "normal_sequence_ok": true,
+    "main_normal_min_V": 3.12786634,
+    "reset_limit_V": 3.11605,
+    "reset_margin_V": 0.011816340000000203,
+    "main_max_V": 3.57660977,
+    "overshoot_margin_V": 0.023390229999999956,
+    "VIN_minus_source_min_V": -0.06700731000000015,
+    "L121_peak_A": 0.942206123,
+    "L121_Isat_A": 2.5,
+    "high_side_1us_confirmation_V": 3.5766084,
+    "superstress_30p08uH_PASS": true
+  },
+  "fresh_native_solver_execution_in_this_resumption": false,
+  "fresh_ngspice_execution_in_this_resumption": false,
+  "replay_disposition": "Existing post-redline execution remains applicable: active circuit values, connectivity, models, placement, routing and generated source are unchanged. ci_verify.py reproduced aggregate outputs byte-for-byte and checked all waveform parts. Current-head hosted native runs and their step/log identities were read back. No rerun or physical validation is claimed.",
+  "live_exact_frozen_sourceability": {
+    "unique_MPNs": 9,
+    "changed_references": 13,
+    "stock_paths": 6,
+    "preorder_only": [
+      "L121",
+      "R156",
+      "R160"
+    ],
+    "L121_assemblyMode": "manualWeld",
+    "supplier_acceptance": false
+  },
+  "assembly": {
+    "fitted": 177,
+    "factory_CPL_rows": 175,
+    "local_install": [
+      "F101",
+      "U401"
+    ],
+    "DNP": [
+      "C203",
+      "R301",
+      "R306"
+    ],
+    "old_frozen_MPNs_in_active_BOM": 0,
+    "other_unchanged_factory_refs_without_LCSC": 29,
+    "special_vias": 49
+  },
+  "remaining_supplier_gates": [
+    "29 unchanged factory references still need exact LCSC/customer-supplied sourcing assignment; no unrelated substitutes authorized.",
+    "L121 catalog manual/wave process and assembly orientation must be accepted by JLC; no authenticated order or capacity reservation performed.",
+    "Supplier stackup, minimum finished plating, special-via fill/cap/planarization, stencil and assembly DFM acceptance."
+  ],
+  "remaining_physical_gates": [
+    "First-article populated/mated fit, probe access, C166 edge tolerance and cooling hardware/material acceptance.",
+    "Thermal correlation under retained I25 workload and 2.940859375 W budget; unchanged 112.8829809018675 C trigger; U201 immediate air <=85 C and Adafruit 851 local <=60 C at 65 C cabin.",
+    "Measure converter losses and package temperatures, particularly L121 self-rise and 125 C parts; verify contact performance and long-term material/fatigue behavior.",
+    "Bench startup/brownout/reset/reverse protection, EMC/transient testing, installed vehicle and unit acceptance."
+  ],
+  "physical_tests": 0,
+  "manufacturing_order": false,
+  "hardware_flash": false,
+  "PR_merged": false,
+  "original_evidence_inventory": "../CHANGED_PATHS.json",
+  "resumption_files": {
+    "HOSTED_WORKFLOW_READBACK.json": {
+      "bytes": 3082,
+      "sha256": "8c9360ff49fc4ec92ad25669ac8dc8e4d01cade5a4341a929d012ef3992d95b9"
+    },
+    "LIVE_JLC_FIRST_ATTEMPT.json": {
+      "bytes": 5957,
+      "sha256": "6d55a5b58e92b45044c5846789fa47713c561f5fc61587358bebf1fd6c126cfe"
+    },
+    "LIVE_JLC_SOURCEABILITY.json": {
+      "bytes": 7525,
+      "sha256": "c5b8e804ba10f670d3bff076b60eebf8973b20ce5fb0e49751bebdbc2e4719d6"
+    },
+    "LOCAL_EVIDENCE_REPRODUCTION.json": {
+      "bytes": 502,
+      "sha256": "ba746f68ba8f4f6d264e48d3e171369dbeb38a6b1031355ebb417d3ec2365e14"
+    },
+    "README.md": {
+      "bytes": 10695,
+      "sha256": "fa6941421fea4efd409499833ba8cb1b990a4b0a81b4bd27b8908b7b18e2c52f"
+    },
+    "logs/finalize_redline.py.log": {
+      "bytes": 3515,
+      "sha256": "0549e831cefe195b4d54bba5bd8d6cf4871809cf21247f0b2678f945525cfcb1"
+    },
+    "logs/verify_package.py.log": {
+      "bytes": 469,
+      "sha256": "4b3048baa4aed558041682bd2b93563f0f880d3efbfdff615ae999c596605c51"
+    }
+  },
+  "resumption_manifest_excludes": [
+    "VERIFICATION.json"
+  ]
+}

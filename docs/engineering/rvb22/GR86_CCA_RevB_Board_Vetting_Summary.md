@@ -1,3 +1,15 @@
+# Current I32 procurement redline — 2026-09-15
+
+The native frozen-parts redline is completed and desktop-verified. Current source, BOM/CPL, manufacturing files and affected verification are controlled by [the redline report](analyses/i32/procurement_redline/README.md), [final verification](analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json), and [source effectivity](current/SOURCE_EFFECTIVITY.json). Supplier and physical gates remain open. Earlier source hashes, active parts, numerical results and package pointers below are historical where superseded; the original document is preserved under `analyses/i32/procurement_redline/history/pre_redline/`.
+
+---
+
+# Current checkpoint: convergence 01
+
+See `analyses/convergence_01/README.md` relative to the rvb22 root and `current/CONVERGENCE_01_EFFECTIVITY.json`. The former 6.5/7 mm exposed-shoe whole-path selection is withdrawn. New native-copper trial refinement gives 111.533 C board maximum at 0.25 mm; no thermal/mechanical acceptance or new PCB fabrication release is claimed. Earlier numerical statements below retain their historical configuration and scope.
+
+## Historical review
+
 # I22 engineering review
 
 Open original criteria decrease from **152 to 146**. The register now has **140 closed / 146 open / 4 not applicable**, preserving all 290 original questions, required-evidence cells and user inputs. The original user baseline remains 73/213/4. All 351 prior redlines plus six I22 findings are retained.

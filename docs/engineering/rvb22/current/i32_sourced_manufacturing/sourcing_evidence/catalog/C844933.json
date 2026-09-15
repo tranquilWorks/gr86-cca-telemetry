@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844933",
+  "componentModelEn": "CRCW06035K10FKEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2010271135_Vishay-Intertech-CRCW06035K10FKEA_C844933.pdf",
+  "describe": "-55\u2103~+155\u2103 100mW 5.1k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 30000,
+  "preMinPurchaseNum": 1493,
+  "canPresaleNumber": 29912,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844933",
+  "retrieved_at_UTC": "2026-09-15T21:03:47.251337+00:00",
+  "response_sha256": "f89f3119b6067435e9e64f1f0bca1c8f8c2e83642479331b7bf14ee53f277502"
+}

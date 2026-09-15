@@ -1,0 +1,162 @@
+(footprint "I32_PROCUREMENT_R156"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "R156"
+		(at -1.8 7.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f7adeb11-cdd9-4c7d-a470-5a49b8f73072")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "5.05k /0.01% 5ppm FB BOTTOM"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a6d0477-ffd1-41a2-a1d5-31af5e24fcaa")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/60030/plt.pdf"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53e1ca9e-62ee-448b-8ff5-0adae5e8700d")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "eb614585-8a08-4e7d-8ac6-51e2b188da8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "MPN" "PLT1206Z5051LBTS"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d6b4dbf-f31f-4dbc-a5c0-a5ad7dbed569")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Manufacturer" "Vishay"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3eccf5b1-e107-484d-879e-ab4880402480")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "LCSC" "C4074185"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97f007f8-906a-4e67-a925-4d1048a08830")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76baf999-b348-4c8e-a8c7-e0236734196a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Qualification" "I32 source candidate; native evidence and qualification conditions control"
+		(at 0 1.6 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff73ce2d-3c80-4b76-8841-4f1d7c11ea65")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.25 1.125)
+		(end 2.25 -1.125)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5a9d1031-3a81-5ebb-a799-1f966da06dcc")
+	)
+	(fp_rect
+		(start -1.6002 0.8001)
+		(end 1.6002 -0.8001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "365d1bd0-f9d5-59d2-8acb-7ef29997b436")
+	)
+	(pad "1" smd rect
+		(at -1.524 0)
+		(size 0.9144 1.7018)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "44ecc49d-b4f5-576e-9131-eb36fc42d998")
+	)
+	(pad "2" smd rect
+		(at 1.524 0)
+		(size 0.9144 1.7018)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9a6c287a-8269-59d5-a30f-a9b8910fad12")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R156.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

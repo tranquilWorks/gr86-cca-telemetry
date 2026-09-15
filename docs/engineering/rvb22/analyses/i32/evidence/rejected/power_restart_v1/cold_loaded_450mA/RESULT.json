@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "name": "cold_loaded_450mA",
+    "constant": 0.45
+  },
+  "returncode": 0,
+  "deck_sha256": "9975c390622968c935160ee2a0c461740bda360edbef238e8532c6ee5088970d",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 66332,
+  "main_peak_V": 3.2699558,
+  "main_final_V": 1.62627237,
+  "active_min_V": null,
+  "ready_final": 0.0,
+  "minimum_vin_minus_output_V": 0.23678787000000012,
+  "input_switch_peak_A": 1.64922112,
+  "input_switch_reverse_A": -0.0001,
+  "I151_max_A": 1.66532817,
+  "I121_max_A": 1.03940419,
+  "ready_rises": 0,
+  "sns_faults": 12,
+  "R158_peak_W": 0.4453573421844106,
+  "R158_energy_J": 0.006029391782079773,
+  "R158_RMS_A": 0.3269619390867131,
+  "waveform_sha256": "ce11d5017831d2f5a245c696b63da46aa15f8c2fb912a1ac9684436b6b557fec"
+}

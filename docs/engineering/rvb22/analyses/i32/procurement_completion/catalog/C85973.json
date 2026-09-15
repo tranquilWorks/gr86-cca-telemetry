@@ -1,0 +1,17 @@
+{
+  "componentCode": "C85973",
+  "componentModelEn": "GRM1885C1H103JA01D",
+  "componentBrandEn": "Murata Electronics",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM1885C1H103JA01D_C85973.pdf",
+  "describe": "10nF 50V C0G \u00b15% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 270669,
+  "preMinPurchaseNum": 382,
+  "canPresaleNumber": 247851,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C85973",
+  "retrieved_at_UTC": "2026-09-15T21:06:15.733756+00:00",
+  "response_sha256": "9a16eaeaf6874bb5921e946adb1f350fb602d3e30e44869e19f742333b302283"
+}

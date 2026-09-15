@@ -1,0 +1,406 @@
+{
+  "milestone": "I27_GND02_DESKTOP_CLOSURE",
+  "date": "2026-09-12",
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "physical_tests_performed": false,
+  "PCB_change_required": false,
+  "firmware_change_required": false,
+  "historical_54": {
+    "removed_by_prior_copper_revision": 48,
+    "isolated_R301_DNP_CAN_TX_MCU": 6,
+    "all_individually_reconciled": true
+  },
+  "expanded_adjacent_plane_findings": {
+    "count": 34,
+    "rows": [
+      {
+        "uuid": "d3091ee3-2292-4281-a911-91513c53927e",
+        "net": "CAN_RXD",
+        "adjacent_gap_mm": 0.7085163431457495,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.25509218473023226,
+        "50mA_0p5ns_bounce_V_screen": 0.02550921847302323,
+        "nearest_ground_via_mm": 2.840884545348507,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "f00c8413-4b97-4145-b77b-21abb2261648",
+        "net": "CAN_RXD",
+        "adjacent_gap_mm": 1.2095123431457537,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.4354693424591382,
+        "50mA_0p5ns_bounce_V_screen": 0.043546934245913826,
+        "nearest_ground_via_mm": 3.0183999999999997,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "a4f7abd7-c48f-4d76-8c65-969c1bd309f4",
+        "net": "CAN_TXD",
+        "adjacent_gap_mm": 0.5009959999999998,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.18037715772890434,
+        "50mA_0p5ns_bounce_V_screen": 0.018037715772890435,
+        "nearest_ground_via_mm": 1.2251104113507476,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "c6d002d8-24ef-4c43-8bd5-9c1f3678ed8c",
+        "net": "CAN_TXD",
+        "adjacent_gap_mm": 0.500996710819855,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.1803774136504389,
+        "50mA_0p5ns_bounce_V_screen": 0.01803774136504389,
+        "nearest_ground_via_mm": 1.219759197546794,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "3cd9494b-1d5d-47a2-aa04-327840a5c89e",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.015234000000006631,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.0054848055091125,
+        "50mA_0p5ns_bounce_V_screen": 0.0005484805509112501,
+        "nearest_ground_via_mm": 2.824786945374287,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "6e2aaa09-c44c-4e4f-ba78-c2933e8e23ce",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.7071067811865476,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.2545846900998487,
+        "50mA_0p5ns_bounce_V_screen": 0.02545846900998487,
+        "nearest_ground_via_mm": 2.1510347337969717,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "871a1d07-8555-46ec-8b60-8f49faecf1a8",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.19869417708630266,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.0715372795792998,
+        "50mA_0p5ns_bounce_V_screen": 0.0071537279579299805,
+        "nearest_ground_via_mm": 1.3685034987171194,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "95963305-6d4d-40ef-a89e-319eb932f057",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.3000000000000007,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.10801113645352749,
+        "50mA_0p5ns_bounce_V_screen": 0.01080111364535275,
+        "nearest_ground_via_mm": 1.8893784761135093,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "d940ea9d-cb9c-43f3-a104-0c43f56d70f9",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.05000000000000071,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.018001856075588126,
+        "50mA_0p5ns_bounce_V_screen": 0.0018001856075588127,
+        "nearest_ground_via_mm": 1.7780048442006597,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "ff83a906-e673-4cf7-a47a-ba6b8551df15",
+        "net": "CAN_TX_MCU",
+        "adjacent_gap_mm": 0.07071067811865199,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.025458469009983872,
+        "50mA_0p5ns_bounce_V_screen": 0.0025458469009983875,
+        "nearest_ground_via_mm": 1.8207144548228904,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "0ec9d94b-5a70-4160-b6d4-40a844fb9989",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.014846413977790407,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.005345260153335579,
+        "50mA_0p5ns_bounce_V_screen": 0.0005345260153335579,
+        "nearest_ground_via_mm": 3.2153860188164076,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "2242d65a-0c68-4cb9-b4e7-8825409146cc",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 2.25,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.8100835234014542,
+        "50mA_0p5ns_bounce_V_screen": 0.08100835234014542,
+        "nearest_ground_via_mm": 1.9629378492453664,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "30e02ce6-787a-4ce5-810b-65e6a015aed5",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.014846413977790407,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.005345260153335579,
+        "50mA_0p5ns_bounce_V_screen": 0.0005345260153335579,
+        "nearest_ground_via_mm": 2.8996864106313245,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "73e76284-37cf-41c1-8ab7-1ca3ac114155",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 5.145011671214931,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 1.8523951922486204,
+        "50mA_0p5ns_bounce_V_screen": 0.18523951922486204,
+        "nearest_ground_via_mm": 0.8999999999999986,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "7ea2e893-b7c6-487e-a87d-ac860f4c07db",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.057272820849004966,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.020620341559334315,
+        "50mA_0p5ns_bounce_V_screen": 0.0020620341559334314,
+        "nearest_ground_via_mm": 1.7862320677896315,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "d298b72b-ed56-43ee-9216-eb6271f0ab5c",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.35425766894734356,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.12754591140126667,
+        "50mA_0p5ns_bounce_V_screen": 0.012754591140126668,
+        "nearest_ground_via_mm": 2.250694337310151,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "d7c720f1-5880-4a23-84a2-5840ebcad355",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.1385000000000005,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.04986514132937859,
+        "50mA_0p5ns_bounce_V_screen": 0.0049865141329378596,
+        "nearest_ground_via_mm": 3.0993951022739945,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "08c837d7-7641-55c3-9954-ab015dac0069",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.025000000000005684,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.009000928037795982,
+        "50mA_0p5ns_bounce_V_screen": 0.0009000928037795982,
+        "nearest_ground_via_mm": 3.4058772731852756,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "19fc5be8-03f0-4346-a7b9-1ce634e1447b",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.5349611648760956,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.19260587792256612,
+        "50mA_0p5ns_bounce_V_screen": 0.019260587792256614,
+        "nearest_ground_via_mm": 1.015197025212348,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "6d51af25-7197-57ed-a5a4-5bc6a02838b6",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 1.979898987322326,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.7128371322795738,
+        "50mA_0p5ns_bounce_V_screen": 0.07128371322795739,
+        "nearest_ground_via_mm": 1.4422205101855985,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "78c69762-dc88-4794-8522-c00ca622e834",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.9542581715728744,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.34356836527217044,
+        "50mA_0p5ns_bounce_V_screen": 0.03435683652721704,
+        "nearest_ground_via_mm": 0.719809002444399,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "8c1b322c-8ffa-544c-84a5-c6aa51404195",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 1.6000000000000085,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.5760593944188149,
+        "50mA_0p5ns_bounce_V_screen": 0.0576059394418815,
+        "nearest_ground_via_mm": 0.8000000000000008,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "983030ed-42bd-481d-9e70-85d47b9cbb59",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 1.3009961098508889,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.4684068944887082,
+        "50mA_0p5ns_bounce_V_screen": 0.04684068944887082,
+        "nearest_ground_via_mm": 1.9723082923316044,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "9eb7ba66-0b0e-5dd6-87b0-bda4927e94ec",
+        "net": "ESP_EN",
+        "adjacent_gap_mm": 0.5061698000186157,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.1822399177948843,
+        "50mA_0p5ns_bounce_V_screen": 0.01822399177948843,
+        "nearest_ground_via_mm": 0.8485281374238608,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "da1fc89d-1db7-4813-9cbc-a70a557a005e",
+        "net": "ESP_GPIO0",
+        "adjacent_gap_mm": 2.307948032891332,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.830946966360918,
+        "50mA_0p5ns_bounce_V_screen": 0.08309469663609181,
+        "nearest_ground_via_mm": 5.251768167008139,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "2248ae29-06c9-43f0-8806-ba00eca1e6a4",
+        "net": "ESP_GPIO0",
+        "adjacent_gap_mm": 3.467814825477224,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 1.2485420677006172,
+        "50mA_0p5ns_bounce_V_screen": 0.12485420677006172,
+        "nearest_ground_via_mm": 2.244399999999999,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "a3455a22-ebda-4523-acb4-309559b360a6",
+        "net": "ESP_GPIO0",
+        "adjacent_gap_mm": 0.05896987712383114,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.021231344815566197,
+        "50mA_0p5ns_bounce_V_screen": 0.0021231344815566197,
+        "nearest_ground_via_mm": 3.4289883347716397,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "409b3296-890e-4fc0-b46e-583ca38136c6",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 1.7079841859335616,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.6149377098911218,
+        "50mA_0p5ns_bounce_V_screen": 0.061493770989112184,
+        "nearest_ground_via_mm": 0.6868000000000015,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "7c5ca8b6-ce80-4c15-baf0-aaa46d09225c",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 0.5243875605008198,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.18879898783928772,
+        "50mA_0p5ns_bounce_V_screen": 0.018879898783928775,
+        "nearest_ground_via_mm": 0.5970102553558025,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "b0ddf69a-9f4c-4cd9-b4af-c8f737543dbe",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 1.218466361554718,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.43869312147306494,
+        "50mA_0p5ns_bounce_V_screen": 0.043869312147306494,
+        "nearest_ground_via_mm": 1.153797248219981,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "201439b9-d7d9-43d9-b1d5-768ea7ec6917",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 2.804711671214932,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 1.0098003167746548,
+        "50mA_0p5ns_bounce_V_screen": 0.10098003167746548,
+        "nearest_ground_via_mm": 2.9683999999999995,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "38cfb022-c804-4354-9dce-eca1a9be8e59",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 1.1428581715728683,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.4114713663892857,
+        "50mA_0p5ns_bounce_V_screen": 0.04114713663892858,
+        "nearest_ground_via_mm": 0.5938000000000017,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "57caf0ae-b3da-49ad-a870-d8f2a343bbec",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 0.3454895448606257,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.12438906124402688,
+        "50mA_0p5ns_bounce_V_screen": 0.012438906124402689,
+        "nearest_ground_via_mm": 0.7786659874426302,
+        "disposition": "BOUNDED_NO_REROUTE"
+      },
+      {
+        "uuid": "6e575142-6968-4178-acc7-e0d0e22c81b6",
+        "net": "GPS_SEARCH_BUFFER",
+        "adjacent_gap_mm": 0.5486790364311153,
+        "trace_width_mm": 0.2,
+        "delta_series_inductance_nH_upper": 0.19754482091050343,
+        "50mA_0p5ns_bounce_V_screen": 0.019754482091050345,
+        "nearest_ground_via_mm": 2.320460499556069,
+        "disposition": "BOUNDED_NO_REROUTE"
+      }
+    ],
+    "model": {
+      "trace_width_mm": 0.2,
+      "normal_reference_height_mm": 0.203,
+      "fallback_reference_height_mm": 1.2630000000000001,
+      "Z_near_ohm": 71.60402800868533,
+      "Z_far_ohm": 137.23088777905457,
+      "delta_L_nH_per_mm": 0.36003712151175743,
+      "stress_current_mA": 50,
+      "stress_rise_ns": 0.5
+    },
+    "worst_bounce_V": 0.18523951922486204,
+    "worst_net": "ESP_EN",
+    "CAN_RXD_worst_bounce_V": 0.043546934245913826
+  },
+  "signal_via_transfers": {
+    "count": 60,
+    "explicit_dual_plane_corridors": 53,
+    "finite_search_no_corridor": 7,
+    "failed_searches": {
+      "7": "CAN_TX_MCU",
+      "10": "CAN_TX_MCU",
+      "11": "CAN_TX_MCU",
+      "12": "CAN_TX_MCU",
+      "17": "ESP_EN",
+      "19": "ESP_EN",
+      "39": "GPS_SEARCH_BUFFER"
+    },
+    "maximum_nearest_through_ground_via_mm": 5.251768167008139,
+    "lambda_over_20_screen_mm_at_0p5ns": 7.5,
+    "all_within_lambda_over_20": true,
+    "adjudication": {
+      "CAN_TX_MCU": "four finite-search misses are on the R301-DNP-isolated no-transmit stub; no release transition exists.",
+      "ESP_EN": "two finite-search misses are reset/programming control, not a repetitive release timing interface; nearest through-ground spacing remains within the conservative lambda/20 screen.",
+      "GPS_SEARCH_BUFFER": "one finite-search miss drives the 1 kohm current-limited search indicator path and has no logic receiver/timing acceptance."
+    }
+  },
+  "active_interface_statement": "All active receive/timing-interface signal-via transfers have an explicit conservative paired-plane corridor in the 53/60 path set. The seven finite-search misses are restricted to the isolated TX stub, reset/programming EN, and an LED indicator driver.",
+  "gnd02_desktop_complete": true,
+  "qualification_retained": [
+    "Fabricated-board continuity/short inspection",
+    "CAN waveform/error-count vehicle correlation",
+    "GNSS/BLE/ADC coexistence and EMC/ESD qualification"
+  ],
+  "reopen": [
+    "Any PCB stackup/copper/via change",
+    "Populate R301 or enable CAN transmission",
+    "Repeatable physical SI/EMC fault attributable to return geometry"
+  ],
+  "conclusion": "No return-path reroute or added stitching is justified before fabrication. GND-02 is bounded-inference complete for pre-hardware design; physical correlation remains qualification, not claimed test evidence."
+}

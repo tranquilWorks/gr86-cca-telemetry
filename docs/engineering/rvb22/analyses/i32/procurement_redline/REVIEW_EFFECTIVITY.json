@@ -1,0 +1,44 @@
+{
+  "status": "CURRENT_RECORDS_REBOUND_OLD_RECORDS_PRESERVED",
+  "current_source": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "records": [
+    {
+      "path": "analyses/i32/README.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/analyses/i32/README.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "analyses/i32/DESIGN_AND_MODEL_BASIS.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/analyses/i32/DESIGN_AND_MODEL_BASIS.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "analyses/i32/LAYOUT_ASSESSMENT.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/analyses/i32/LAYOUT_ASSESSMENT.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "analyses/i32/QUALIFICATION_AND_SERVICE.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/analyses/i32/QUALIFICATION_AND_SERVICE.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "current/THERMAL_REVIEW.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/current/THERMAL_REVIEW.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "current/EXECUTION_PLAN.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/current/EXECUTION_PLAN.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    },
+    {
+      "path": "current/I22_REPRODUCTION.md",
+      "preserved": "analyses/i32/procurement_redline/history/pre_redline/current/I22_REPRODUCTION.md",
+      "disposition": "Affected source-specific values superseded; unchanged physical/service requirements retained"
+    }
+  ],
+  "original_290_criterion_ledger_re_adjudicated": false,
+  "controlling_handoff_and_readiness_files_unchanged": true,
+  "input_model_carry_forward": "Input-protection circuitry/nets/routes and U101 H-grade electrical device unchanged. The ordering pedigree changed and is explicitly accepted; no automotive pedigree equivalence claimed."
+}

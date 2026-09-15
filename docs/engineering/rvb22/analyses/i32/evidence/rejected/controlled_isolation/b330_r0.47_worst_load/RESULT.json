@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "name": "b330_r0.47_worst_load",
+    "bulk": 330,
+    "damp": 0.47,
+    "mode": "load",
+    "slow": true,
+    "highref": true,
+    "bulk_scale": 0.448,
+    "ceramic": 0.5,
+    "esr": 0.1
+  },
+  "rc": 0,
+  "completed": false,
+  "error": "/workspace/scratch/a2f5ff859ded/engineering_runs/controlled_isolation/b330_r0.47_worst_load/waveform.tsv not found."
+}

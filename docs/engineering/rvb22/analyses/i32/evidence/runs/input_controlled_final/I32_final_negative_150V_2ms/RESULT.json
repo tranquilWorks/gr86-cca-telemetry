@@ -1,0 +1,135 @@
+{
+  "parameters": {
+    "name": "I32_final_negative_150V_2ms",
+    "pwl": "0 0 1m 0 2m 12 60m 12 60.001m -150 62.001m -150 62.002m 12",
+    "stop": 0.12,
+    "step": 5e-07,
+    "cable_R": 10,
+    "events": [
+      [
+        "negative",
+        0.06,
+        0.063,
+        0.003
+      ]
+    ],
+    "raw_clamp": true,
+    "cgd": 3e-11,
+    "coss": 5e-11,
+    "diode_cj": 1e-11,
+    "pulse_resistance_interval": [
+      0.06,
+      0.063
+    ],
+    "r101": 11374.0,
+    "case_temperature_C": 125,
+    "clamp_temperature_C": 125,
+    "load": 0.75,
+    "load_basis": "Fixed current at U121 INPUT VIN5, above5V. A short capacity/stress fixture, not the sustained I25 load."
+  },
+  "returncode": 0,
+  "deck_sha256": "bbed716b8e4a76418eda78bf33a0084662afeec3e30e73aa762a9978a59d0c89",
+  "completed": true,
+  "end_s": 0.12,
+  "samples": 260619,
+  "Q101_VDS_max_V": 15.890339310583,
+  "Q101_VGS_max_V": 12.760090240000002,
+  "Q101_VGS_min_V": -0.0285742635231,
+  "Q101_current_peak_A": 0.806153471,
+  "Q101_energy_positive_J": 0.016400412250993507,
+  "Q101_power_peak_W": 4.552875772388071,
+  "D101_reverse_max_V": 197.9182195,
+  "D101_current_peak_A": 0.806240858,
+  "fuse_I2t_A2s": 0.03990116604328632,
+  "R101_peak_V": 10.02535301,
+  "R101_peak_W": 0.008836618865404964,
+  "R101_energy_J": 1.4337597157220985e-05,
+  "R110_peak_W": 0.2980587237638408,
+  "R110_energy_J": 0.01892363394437167,
+  "PROTECT_CTRL_VIN_range_V": [
+    -6.18274604e-22,
+    10.5860912
+  ],
+  "INPUT_UV_range_V": [
+    -7.82831352e-21,
+    1.05399146
+  ],
+  "INPUT_OV_range_V": [
+    -2.95067202e-21,
+    0.397273705
+  ],
+  "INPUT_SHDN_range_V": [
+    -6.18274289e-22,
+    10.5860858
+  ],
+  "INPUT_GATE_DRIVE_range_V": [
+    -0.0285506535,
+    21.9179083
+  ],
+  "PROTECTED_12V_range_V": [
+    -6.62494184e-05,
+    10.9181085
+  ],
+  "VIN5_range_V": [
+    -6.60282941e-05,
+    10.5618585
+  ],
+  "RAW_12V_range_V": [
+    -187.318523,
+    16.3817002
+  ],
+  "REV_BLOCKED_12V_range_V": [
+    -1.18026881e-19,
+    15.8909482
+  ],
+  "D102": {
+    "peak_A": 1.1920929e-07,
+    "peak_W": 1.26195645807882e-06,
+    "positive_energy_J": 1.2183291830187697e-09,
+    "charge_C": 1.201221583636053e-10,
+    "duration_above_1mA_s": 0.0
+  },
+  "D103": {
+    "peak_A": 1.01091805e-09,
+    "peak_W": 1.1037312954508427e-08,
+    "positive_energy_J": 7.767705791662281e-10,
+    "charge_C": 7.235291581751484e-11,
+    "duration_above_1mA_s": 0.0
+  },
+  "D104": {
+    "peak_A": 0.0,
+    "peak_W": 0.0,
+    "positive_energy_J": 0.0,
+    "charge_C": 0.0,
+    "duration_above_1mA_s": 0.0
+  },
+  "D105": {
+    "peak_A": 0.0224038123,
+    "peak_W": 0.2674060610200054,
+    "positive_energy_J": 7.309768936811536e-08,
+    "duration_above_1mA_s": 3.939500000174623e-07,
+    "terminal_max_V": 15.9235483
+  },
+  "Q101_case_temperature_allocation_C": 125,
+  "Q101_onstate_power_max_W": 0.8027387499417414,
+  "R101_pulse_screen": {
+    "continuous_derated_W": 0.35294117647058826,
+    "whole_record_mean_W": 0.00011947997631017488,
+    "pulses_above_continuous": []
+  },
+  "R110_pulse_screen": {
+    "continuous_derated_W": 0.36,
+    "whole_record_mean_W": 0.1576969495364306,
+    "pulses_above_continuous": []
+  },
+  "events": [
+    {
+      "event": "negative",
+      "linear_intervals": [],
+      "positive_energy_J": 3.8597543841274826e-08,
+      "fuse_event_I2t_A2s": 7.32733831342625e-08,
+      "SOA_scope": "Fig.2 lower-bound trajectory screen at allocated case temperature; no avalanche or DC extrapolation"
+    }
+  ],
+  "waveform_sha256": "f9ec5be127aaf9d6dbd8f5435554ac34ff1ef2dcd57ad2209450cbd87f17c291"
+}

@@ -1,0 +1,147 @@
+{
+  "basis": "Actual In1 GND finite-volume restricted-subset resistance,150C/24um;10% numerical/spreading inflation; source return trace2mm by0.6mm with0.06mm total etch and50um copper; max board1.76mm /15um barrel; one source B-In1 and one load F-In1 barrel. All other planes and parallel grounds omitted.",
+  "source_to_load_ground_upper_ohm": 0.011281787819671,
+  "shared_return_allocation_ohm": 0.015,
+  "C206_to_load_plane_plus_load_barrel_upper_ohm": 0.010919037014800731,
+  "C206_ground_spreading_allocation_ohm": 0.011,
+  "note": "C206 ground-side barrel and2.8mm front return trace are already included in its explicit lead contract, so are not counted again here. The restricted single-plane screen is a numerical engineering bound with stated inflation, not an exact continuum theorem.",
+  "status": "PASS_RETAINED_POWER_RETURN_ALLOCATIONS",
+  "original_contract": {
+    "basis": "Actual In1 GND finite-volume restricted-subset resistance,150C/24um;10% numerical/spreading inflation; source return trace2mm by0.6mm with0.06mm total etch and50um copper; max board1.76mm /15um barrel; one source B-In1 and one load F-In1 barrel. All other planes and parallel grounds omitted.",
+    "source_to_load_ground_upper_ohm": 0.012554196212606762,
+    "shared_return_allocation_ohm": 0.015,
+    "C206_to_load_plane_plus_load_barrel_upper_ohm": 0.010709594951036672,
+    "C206_ground_spreading_allocation_ohm": 0.011,
+    "note": "C206 ground-side barrel and2.8mm front return trace are already included in its explicit lead contract, so are not counted again here. The restricted single-plane screen is a numerical engineering bound with stated inflation, not an exact continuum theorem.",
+    "status": "PASS_RETAINED_POWER_RETURN_ALLOCATIONS",
+    "original_contract": {
+      "basis": "Actual In1 GND finite-volume restricted-subset resistance,150C/24um;10% numerical/spreading inflation; source return trace2mm by0.6mm with0.06mm total etch and50um copper; max board1.76mm /15um barrel; one source B-In1 and one load F-In1 barrel. All other planes and parallel grounds omitted.",
+      "source_to_load_ground_upper_ohm": 0.013278577402052183,
+      "shared_return_allocation_ohm": 0.015,
+      "C206_to_load_plane_plus_load_barrel_upper_ohm": 0.010709491383525144,
+      "C206_ground_spreading_allocation_ohm": 0.011,
+      "note": "C206 ground-side barrel and2.8mm front return trace are already included in its explicit lead contract, so are not counted again here. The restricted single-plane screen is a numerical engineering bound with stated inflation, not an exact continuum theorem."
+    },
+    "filled_PCB_sha256": "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1",
+    "source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+    "method": "Recompute actual In1 restricted copper including all via/PTH/NPTH bores at 0.1 and 0.075 mm; retain original trace/barrel terms after exact terminal/stack geometry identity check; use larger mesh resistance and original 10% inflation.",
+    "terminal_geometry_signature_sha256": "b2c1a7dda52b0db3d72b742841ed25a0aebbbfe84c0aa3bda5df5506f3e877cc",
+    "terms": [
+      {
+        "contract_key": "source_to_load_ground_upper_ohm",
+        "retained_nonplane_ohm": 0.005431171501799264,
+        "mesh_plane_values_ohm": [
+          0.00631136421901926,
+          0.006475477009824997
+        ],
+        "credited_plane_ohm": 0.006475477009824997,
+        "numerical_multiplier": 1.1,
+        "margin_ohm": 0.0024458037873932373,
+        "pass_allocation": true
+      },
+      {
+        "contract_key": "C206_to_load_plane_plus_load_barrel_upper_ohm",
+        "retained_nonplane_ohm": 0.0007710917534874996,
+        "mesh_plane_values_ohm": [
+          0.008809864470810915,
+          0.009035002906862884
+        ],
+        "credited_plane_ohm": 0.009035002906862884,
+        "numerical_multiplier": 1.1,
+        "margin_ohm": 0.00029040504896332697,
+        "pass_allocation": true
+      }
+    ],
+    "physical_tests_claimed": 0
+  },
+  "filled_PCB_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "method": "Recompute actual In1 restricted copper including all via/PTH/NPTH bores at 0.1 and 0.075 mm; verify original terminal/stack identity; solve the coupled two-port source return using actual old/new 0.6mm B traces, equal 0.3mm drill/15um barrels, 1mohm added common-pad spreading and 10% plane inflation; use larger mesh resistance and original 10% inflation.",
+  "terminal_geometry_signature_sha256": "a59c5beb79db81b1a2e1aa03f730bf446788f3aa7a241f9603bcc65874f7a7f2",
+  "terms": [
+    {
+      "contract_key": "source_to_load_ground_upper_ohm",
+      "mesh_total_values_ohm": [
+        0.011281787819671,
+        0.01127348700301362
+      ],
+      "margin_ohm": 0.0037182121803290002,
+      "pass_allocation": true
+    },
+    {
+      "contract_key": "C206_to_load_plane_plus_load_barrel_upper_ohm",
+      "mesh_total_values_ohm": [
+        0.01074100655716136,
+        0.010919037014800731
+      ],
+      "margin_ohm": 8.096298519926805e-05,
+      "pass_allocation": true
+    }
+  ],
+  "physical_tests_claimed": 0,
+  "source_two_port_network": [
+    {
+      "mesh_mm": 0.1,
+      "plane_impedance_matrix_ohm": [
+        [
+          0.009837943616418016,
+          0.0038605268939605453
+        ],
+        [
+          0.0038605268939605453,
+          0.00935515222478407
+        ]
+      ],
+      "source_branch_R_ohm": [
+        0.003782829760589622,
+        0.004660079748311764
+      ],
+      "source_current_fractions": [
+        0.508218044267311,
+        0.491781955732689
+      ],
+      "numerical_plane_multiplier": 1.1,
+      "load_barrel_ohm": 0.0007710917534874996,
+      "additional_common_pad_spreading_ohm": 0.001,
+      "total_return_ohm": 0.011281787819671
+    },
+    {
+      "mesh_mm": 0.075,
+      "plane_impedance_matrix_ohm": [
+        [
+          0.009876696810051116,
+          0.003946506270917182
+        ],
+        [
+          0.003946506270917182,
+          0.009109130653213157
+        ]
+      ],
+      "source_branch_R_ohm": [
+        0.003782829760589622,
+        0.004660079748311764
+      ],
+      "source_current_fractions": [
+        0.5007974619945386,
+        0.49920253800546155
+      ],
+      "numerical_plane_multiplier": 1.1,
+      "load_barrel_ohm": 0.0007710917534874996,
+      "additional_common_pad_spreading_ohm": 0.001,
+      "total_return_ohm": 0.01127348700301362
+    }
+  ],
+  "terminal_baseline_PCB_sha256": "371518b5b40000e995867303f6fc9c35cd5fc558e4b25e12cd0e1635a48a703b",
+  "new_source_return_trace_mm": 1.0906854249492417,
+  "source_return_nonplane_delta_ohm": -0.0008772499877221424,
+  "source_return_ports_mm": [
+    [
+      38.6,
+      21.6
+    ],
+    [
+      37.675,
+      24
+    ]
+  ]
+}

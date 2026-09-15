@@ -1,0 +1,24 @@
+{
+  "milestone": "I27_FABRICATION_READINESS",
+  "date": "2026-09-12",
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "actionable_prehardware_count": 0,
+  "PCB_BOM_firmware_changes_for_I27": false,
+  "physical_tests_performed": 0,
+  "supplier_acceptance_performed": false,
+  "fabrication_request_recommendation": "PROCEED_TO_JLCPCB_QUOTE_DFM_AND_FABRICATION_PACKAGE_REVIEW",
+  "qualification_required_after_build": true,
+  "prehardware_counts": {
+    "desktop_source_documentary": 141,
+    "conditional_model": 31,
+    "hardware_supplier_installation": 114,
+    "not_applicable": 4,
+    "desktop_work_remaining": 0
+  },
+  "ground_return_evidence": "analyses/i26/GND02_DESKTOP_CLOSURE.json",
+  "invalidators": [
+    "Any PCB stackup/copper/via change",
+    "Populate R301 or enable CAN transmission",
+    "Repeatable physical SI/EMC fault attributable to return geometry"
+  ]
+}

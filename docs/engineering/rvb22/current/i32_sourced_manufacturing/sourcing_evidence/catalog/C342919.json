@@ -1,0 +1,18 @@
+{
+  "componentCode": "C342919",
+  "componentModelEn": "CGA4J2X7R2A104KT0Y0U",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "0805",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA4J2X7R2A104KT0Y0U_C342919.pdf",
+  "describe": "100V 100nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 4615,
+  "preMinPurchaseNum": 142,
+  "canPresaleNumber": 4577,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C342919",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.061561+00:00",
+  "response_sha256": "1f0331101e30761de2238c49868d9ba683588650edc2dac63a095a918d67e0de"
+}

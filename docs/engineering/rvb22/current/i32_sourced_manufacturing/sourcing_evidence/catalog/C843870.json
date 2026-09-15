@@ -1,0 +1,18 @@
+{
+  "componentCode": "C843870",
+  "componentModelEn": "TNPW060331K6BEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312131902_Vishay-Intertech-TNPW060331K6BEEA_C843870.pdf",
+  "describe": "-55\u2103~+155\u2103 100mW 31.6k\u03a9 Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 289,
+  "preMinPurchaseNum": 42,
+  "canPresaleNumber": 288,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C843870",
+  "retrieved_at_UTC": "2026-09-15T21:05:30.891572+00:00",
+  "response_sha256": "6971d51a7b82df40b87995df245048fe6865fdf6e2c3f73b7ea086db447845d8"
+}

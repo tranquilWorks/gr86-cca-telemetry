@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "bulk_old_bridge",
+    "kind": "track",
+    "net": "+3V3",
+    "a": [
+      75.54,
+      18.7
+    ],
+    "z": [
+      77.06,
+      18.7
+    ],
+    "width": 0.6,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "bulk_feed",
+    "kind": "track",
+    "net": "+3V3",
+    "a": [
+      78.88,
+      -6.8
+    ],
+    "z": "R158.1",
+    "width": 0.8,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "bulk_cap_via",
+    "kind": "via",
+    "net": "3V3_BULK_DAMPED",
+    "at": [
+      83,
+      -1.25
+    ]
+  },
+  {
+    "id": "bulk_damper_to_via",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": "R158.2",
+    "z": [
+      83,
+      -1.25
+    ],
+    "width": 0.8,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "bulk_via_to_cap",
+    "kind": "track",
+    "net": "3V3_BULK_DAMPED",
+    "a": [
+      83,
+      -1.25
+    ],
+    "z": "C206.1",
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "raw_clamp_feed_via",
+    "kind": "via",
+    "net": "REV_BLOCKED_12V",
+    "at": [
+      32,
+      41.8
+    ]
+  },
+  {
+    "id": "raw_clamp_inner",
+    "kind": "track",
+    "net": "REV_BLOCKED_12V",
+    "a": [
+      25,
+      34.8
+    ],
+    "z": [
+      32,
+      41.8
+    ],
+    "width": 0.8,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "raw_clamp_feed",
+    "kind": "track",
+    "net": "REV_BLOCKED_12V",
+    "a": [
+      32,
+      41.8
+    ],
+    "z": "D105.1",
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "raw_clamp_return_a",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      23.6,
+      46.8
+    ]
+  },
+  {
+    "id": "raw_clamp_return_b",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      22.6,
+      46.8
+    ]
+  },
+  {
+    "id": "raw_clamp_return",
+    "kind": "track",
+    "net": "GND",
+    "a": "D105.2",
+    "z": [
+      23.6,
+      46.8
+    ],
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "fb_pin_to_lower",
+    "kind": "track",
+    "net": "3V3_FB_ADJ",
+    "a": "U151.9",
+    "z": "R156.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "led_oil_escape",
+    "kind": "via",
+    "net": "LED_OIL",
+    "at": [
+      41.1,
+      8.3
+    ]
+  },
+  {
+    "id": "led_oil_escape_link",
+    "kind": "track",
+    "net": "LED_OIL",
+    "a": [
+      40.7801,
+      8.5229
+    ],
+    "z": [
+      41.1,
+      8.3
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "led_oil_local_inner",
+    "kind": "track",
+    "net": "LED_OIL",
+    "a": [
+      41.1,
+      8.3
+    ],
+    "z": [
+      42.4138,
+      12.7247
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "fb_divider",
+    "kind": "track",
+    "net": "3V3_FB_ADJ",
+    "a": "R155.2",
+    "z": "R156.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "fb_quiet_return",
+    "kind": "track",
+    "net": "GND",
+    "a": "R156.2",
+    "z": "U151.10",
+    "width": 0.25,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "input_link_feed_via",
+    "kind": "via",
+    "net": "+5V",
+    "at": [
+      36.2375,
+      1.6
+    ]
+  },
+  {
+    "id": "input_link_feed",
+    "kind": "track",
+    "net": "+5V",
+    "a": [
+      40.2842,
+      9.7483
+    ],
+    "z": [
+      36.2375,
+      1.6
+    ],
+    "width": 0.6,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "input_link_feed_pad",
+    "kind": "track",
+    "net": "+5V",
+    "a": [
+      36.2375,
+      1.6
+    ],
+    "z": "R151.1",
+    "width": 0.6,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_input_cap",
+    "kind": "track",
+    "net": "3V3_ISO_IN",
+    "a": "R151.2",
+    "z": "C161.1",
+    "width": 0.6,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_in12",
+    "kind": "track",
+    "net": "3V3_ISO_IN",
+    "a": "U152.1",
+    "z": "U152.2",
+    "width": 0.25,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_in23",
+    "kind": "track",
+    "net": "3V3_ISO_IN",
+    "a": "U152.2",
+    "z": "U152.3",
+    "width": 0.25,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_input_feed",
+    "kind": "track",
+    "net": "3V3_ISO_IN",
+    "a": "C161.1",
+    "z": "U152.1",
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_out",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "U152.9",
+    "z": "U152.10",
+    "width": 0.25,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "isolation_slew_cap",
+    "kind": "track",
+    "net": "3V3_ISO_CT",
+    "a": "U152.6",
+    "z": "C159.1",
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "sns_local_via",
+    "kind": "via",
+    "net": "3V3_ISO_SNS",
+    "at": [
+      45.2,
+      6.1
+    ]
+  },
+  {
+    "id": "sns_local",
+    "kind": "track",
+    "net": "3V3_ISO_SNS",
+    "a": "U152.8",
+    "z": [
+      45.2,
+      6.1
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "sns_divider_via",
+    "kind": "via",
+    "net": "3V3_ISO_SNS",
+    "at": [
+      28.6,
+      -6.2
+    ]
+  },
+  {
+    "id": "sns_divider",
+    "kind": "track",
+    "net": "3V3_ISO_SNS",
+    "a": "R160.2",
+    "z": "R161.1",
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "sns_to_via",
+    "kind": "track",
+    "net": "3V3_ISO_SNS",
+    "a": "R161.1",
+    "z": [
+      28.6,
+      -6.2
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "sns_inner",
+    "kind": "track",
+    "net": "3V3_ISO_SNS",
+    "a": [
+      28.6,
+      -6.2
+    ],
+    "z": [
+      45.2,
+      6.1
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "pg_local_via",
+    "kind": "via",
+    "net": "3V3_ENABLE",
+    "at": [
+      46.825,
+      -0.1
+    ]
+  },
+  {
+    "id": "pg_pin",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "U152.7",
+    "z": [
+      46.825,
+      -0.1
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "pg_to_via",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "R159.2",
+    "z": [
+      46.825,
+      -0.1
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "u151_en_via",
+    "kind": "via",
+    "net": "3V3_ENABLE",
+    "at": [
+      39.1625,
+      12.025
+    ]
+  },
+  {
+    "id": "u151_en_local",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "U151.11",
+    "z": [
+      39.1625,
+      12.025
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "u151_en_inner",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": [
+      39.1625,
+      12.025
+    ],
+    "z": [
+      46.825,
+      -0.1
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "u151_en_cap_via",
+    "kind": "via",
+    "net": "3V3_ENABLE",
+    "at": [
+      26.225,
+      1.0
+    ]
+  },
+  {
+    "id": "u151_en_cap",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "C165.1",
+    "z": [
+      26.225,
+      1.0
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "u151_en_cap_inner",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": [
+      26.225,
+      1.0
+    ],
+    "z": [
+      46.825,
+      -0.1
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "iso_en_local_via",
+    "kind": "via",
+    "net": "3V3_ISO_ENABLE",
+    "at": [
+      42.75,
+      2.6
+    ]
+  },
+  {
+    "id": "iso_en_local",
+    "kind": "track",
+    "net": "3V3_ISO_ENABLE",
+    "a": "U152.4",
+    "z": [
+      42.75,
+      2.6
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_en_divider",
+    "kind": "track",
+    "net": "3V3_ISO_ENABLE",
+    "a": "R162.2",
+    "z": "R163.1",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_en_tp",
+    "kind": "track",
+    "net": "3V3_ISO_ENABLE",
+    "a": "R163.1",
+    "z": "TP154.1",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_en_remote_via",
+    "kind": "via",
+    "net": "3V3_ISO_ENABLE",
+    "at": [
+      33,
+      -2.3
+    ]
+  },
+  {
+    "id": "iso_en_tp_via",
+    "kind": "track",
+    "net": "3V3_ISO_ENABLE",
+    "a": "TP154.1",
+    "z": [
+      33,
+      -2.3
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_en_inner",
+    "kind": "track",
+    "net": "3V3_ISO_ENABLE",
+    "a": [
+      33,
+      -2.3
+    ],
+    "z": [
+      42.75,
+      2.6
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "iso_vin_local",
+    "kind": "via",
+    "net": "3V3_VIN",
+    "at": [
+      44.3,
+      6.8
+    ]
+  },
+  {
+    "id": "iso_vin_local_pin",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "U152.10",
+    "z": [
+      44.3,
+      6.8
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_vin_c151_via",
+    "kind": "via",
+    "net": "3V3_VIN",
+    "at": [
+      43.9,
+      12.9
+    ]
+  },
+  {
+    "id": "iso_vin_c151",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": [
+      43.9,
+      12.9
+    ],
+    "z": "C151.1",
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_vin_to_buck",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": [
+      44.3,
+      6.8
+    ],
+    "z": [
+      43.9,
+      12.9
+    ],
+    "width": 0.6,
+    "layer": "In1.Cu"
+  },
+  {
+    "id": "iso_input_bulk_via",
+    "kind": "via",
+    "net": "3V3_VIN",
+    "at": [
+      35.88,
+      -2
+    ]
+  },
+  {
+    "id": "iso_input_bulk_local",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "C163.1",
+    "z": [
+      35.88,
+      -2
+    ],
+    "width": 1.0,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_input_bulk_feed",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": [
+      35.88,
+      -2
+    ],
+    "z": [
+      44.3,
+      6.8
+    ],
+    "width": 0.8,
+    "layer": "In1.Cu"
+  },
+  {
+    "id": "iso_input_bulk_parallel",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "C163.1",
+    "z": "C162.1",
+    "width": 1.0,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_sns_vin",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "C163.1",
+    "z": "R160.1",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "iso_en_supply",
+    "kind": "track",
+    "net": "+5V",
+    "a": "R162.1",
+    "z": [
+      36.2375,
+      1.6
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "pg_supply",
+    "kind": "track",
+    "net": "+5V",
+    "a": [
+      36.2375,
+      1.6
+    ],
+    "z": "R159.1",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "feedback_source_via",
+    "kind": "via",
+    "net": "3V3_SOURCE",
+    "at": [
+      45.1,
+      13.5
+    ]
+  },
+  {
+    "id": "feedback_source_local",
+    "kind": "track",
+    "net": "3V3_SOURCE",
+    "a": "R155.1",
+    "z": [
+      45.1,
+      13.5
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "third_input_bulk",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "C164.1",
+    "z": "C163.1",
+    "width": 1,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "feedback_source_sense",
+    "kind": "track",
+    "net": "3V3_SOURCE",
+    "a": [
+      45.1,
+      13.5
+    ],
+    "z": [
+      40.7,
+      24.8
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "iso_ground_ep",
+    "kind": "track",
+    "net": "GND",
+    "a": "U152.11",
+    "z": [
+      43,
+      6.525
+    ],
+    "width": 0.3,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_ground_pin",
+    "kind": "track",
+    "net": "GND",
+    "a": "U152.5",
+    "z": "U152.11",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_ground_c161",
+    "kind": "track",
+    "net": "GND",
+    "a": "C161.2",
+    "z": "U152.5",
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "iso_ground_ct",
+    "kind": "track",
+    "net": "GND",
+    "a": "C159.2",
+    "z": [
+      44.6,
+      1.625
+    ],
+    "width": 0.2,
+    "layer": "B.Cu"
+  },
+  {
+    "id": "c162_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      52.12,
+      -2
+    ]
+  },
+  {
+    "id": "c162_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C162.2",
+    "z": [
+      52.12,
+      -2
+    ],
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "c163_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      42.12,
+      -2.8
+    ]
+  },
+  {
+    "id": "c163_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C163.2",
+    "z": [
+      42.12,
+      -2.8
+    ],
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "c164_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      22.12,
+      -2
+    ]
+  },
+  {
+    "id": "c164_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C164.2",
+    "z": [
+      22.12,
+      -2
+    ],
+    "width": 0.8,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "r161_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      32.0,
+      -7.5
+    ]
+  },
+  {
+    "id": "r161_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "R161.2",
+    "z": [
+      32.0,
+      -7.5
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "r163_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      32.0,
+      -4.0
+    ]
+  },
+  {
+    "id": "r163_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "R163.2",
+    "z": [
+      32.0,
+      -4.0
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "c165_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      28.5,
+      -0.5
+    ]
+  },
+  {
+    "id": "c165_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "C165.2",
+    "z": [
+      28.5,
+      -0.5
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_source_via",
+    "kind": "via",
+    "net": "3V3_SOURCE",
+    "at": [
+      35.5,
+      44
+    ]
+  },
+  {
+    "id": "discharge_source",
+    "kind": "track",
+    "net": "3V3_SOURCE",
+    "a": "R165.1",
+    "z": [
+      35.5,
+      44
+    ],
+    "width": 0.6,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_source_feed",
+    "kind": "track",
+    "net": "3V3_SOURCE",
+    "a": [
+      35.5,
+      44
+    ],
+    "z": [
+      40.7,
+      24.8
+    ],
+    "width": 0.5,
+    "layer": "In1.Cu"
+  },
+  {
+    "id": "discharge_drain",
+    "kind": "track",
+    "net": "3V3_DISCHARGE_DRAIN",
+    "a": "R165.2",
+    "z": "Q152.3",
+    "width": 0.5,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_gate",
+    "kind": "track",
+    "net": "3V3_DISCHARGE_GATE",
+    "a": "Q152.1",
+    "z": "Q153.3",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_gate_pullup",
+    "kind": "track",
+    "net": "3V3_DISCHARGE_GATE",
+    "a": "R164.2",
+    "z": "Q153.3",
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_vin_via",
+    "kind": "via",
+    "net": "3V3_VIN",
+    "at": [
+      47.175,
+      46.8
+    ]
+  },
+  {
+    "id": "discharge_vin_pin",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": "R164.1",
+    "z": [
+      47.175,
+      46.8
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_vin_feed",
+    "kind": "track",
+    "net": "3V3_VIN",
+    "a": [
+      47.175,
+      46.8
+    ],
+    "z": [
+      43.9,
+      12.9
+    ],
+    "width": 0.2,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "discharge_en_via",
+    "kind": "via",
+    "net": "3V3_ENABLE",
+    "at": [
+      50,
+      41.9
+    ]
+  },
+  {
+    "id": "discharge_en_pin",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": "Q153.1",
+    "z": [
+      50,
+      41.9
+    ],
+    "width": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "discharge_en_feed",
+    "kind": "track",
+    "net": "3V3_ENABLE",
+    "a": [
+      50,
+      41.9
+    ],
+    "z": [
+      39.1625,
+      12.025
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "id": "q152_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      45.0625,
+      46.4
+    ]
+  },
+  {
+    "id": "q152_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "Q152.2",
+    "z": [
+      45.0625,
+      46.4
+    ],
+    "width": 0.5,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "q153_ground_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      49.0625,
+      46.4
+    ]
+  },
+  {
+    "id": "q153_ground",
+    "kind": "track",
+    "net": "GND",
+    "a": "Q153.2",
+    "z": [
+      49.0625,
+      46.4
+    ],
+    "width": 0.5,
+    "layer": "F.Cu"
+  },
+  {
+    "id": "source_return_close_via",
+    "kind": "via",
+    "net": "GND",
+    "at": [
+      38.6,
+      21.6
+    ]
+  },
+  {
+    "id": "source_return_close_trace",
+    "kind": "track",
+    "net": "GND",
+    "a": "C157.2",
+    "z": [
+      38.6,
+      21.6
+    ],
+    "width": 0.6,
+    "layer": "B.Cu"
+  }
+]

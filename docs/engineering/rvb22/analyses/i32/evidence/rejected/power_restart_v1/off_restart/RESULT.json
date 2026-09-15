@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "name": "off_restart",
+    "mode": "off"
+  },
+  "returncode": 0,
+  "deck_sha256": "2fb7021bde8dd215a09d9bc3a8f0ba69ecf4b2fde484035a9fd4126d96182459",
+  "completed": true,
+  "end_s": 0.85,
+  "samples": 426732,
+  "main_peak_V": 3.33654762,
+  "main_final_V": 3.25993028,
+  "active_min_V": 3.07000415,
+  "ready_final": 1.0,
+  "minimum_vin_minus_output_V": 0.2703142799999996,
+  "input_switch_peak_A": 1.01751171,
+  "input_switch_reverse_A": -0.0001,
+  "I151_max_A": 1.22268435,
+  "I121_max_A": 1.03939516,
+  "ready_rises": 2,
+  "sns_faults": 1,
+  "R158_peak_W": 0.43964336820850486,
+  "R158_energy_J": 0.0012180823395143592,
+  "R158_RMS_A": 0.05521790579319477,
+  "waveform_sha256": "d70e37c43b1c8dad31a9ac9f2c9d8eda13f99808e12b9684cb504f7345a7b4e6"
+}

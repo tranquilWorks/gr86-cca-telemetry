@@ -1,0 +1,3430 @@
+{
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "scope": "Source-bound explicit conductor paths. No zone, field-solver or silicon credit.\n\nPads/vias are conductive regions; track distances are measured along the actual\nsaved centerlines between intersections with those regions. A zero-length pad\nedge means contact with that copper region, not a zero-inductance connection.\n",
+  "routes": [
+    {
+      "path": "U121 input bypass VIN",
+      "start": "C123.1",
+      "end": "U121.2",
+      "net": "5V_VIN",
+      "start_xy_mm": [
+        42.15000000000001,
+        25.750000000000007
+      ],
+      "end_xy_mm": [
+        44.3,
+        25.865000000000002
+      ],
+      "pad_edge_gap_mm": 0.6499999999999986,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.05080713999999992,
+      "minimum_track_width_mm": 0.4,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [
+        "13cf5af3-4772-4874-9897-36cd050fa0d1"
+      ],
+      "track_ids": [
+        "4a40992e-4674-4479-8a78-a676f169a08d",
+        "ffcbb34f-5436-4c77-b4a4-49df00a27af3"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C123.1@4a12f91e-1551-5d8a-afd8-afe1b5a36e06",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          42.8750001,
+          25.7887791
+        ],
+        [
+          "F.Cu",
+          42.9001828,
+          25.7901261
+        ],
+        [
+          "region",
+          "13cf5af3-4772-4874-9897-36cd050fa0d1",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          43.499456,
+          25.8176951
+        ],
+        [
+          "F.Cu",
+          43.5249999,
+          25.8192045
+        ],
+        [
+          "region",
+          "U121.2@75e55a0c-60fc-596b-a28a-e3cdcc611695",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 input bypass ground",
+      "start": "C123.2",
+      "end": "U121.1",
+      "net": "GND",
+      "start_xy_mm": [
+        42.15000000000001,
+        23.850000000000026
+      ],
+      "end_xy_mm": [
+        44.29999999999999,
+        24.595000000000017
+      ],
+      "pad_edge_gap_mm": 0.6902299270708387,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.3064401499999998,
+      "minimum_track_width_mm": 0.6,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "4b8449df-a297-4130-aca9-d012cc6e0821",
+        "bf754b46-1982-4834-acb1-9c1fcf5d778d"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C123.2@46dc895a-2c05-54e7-a0dd-f10aabb7850c",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          42.8750001,
+          23.85
+        ],
+        [
+          "F.Cu",
+          43.55,
+          23.85
+        ],
+        [
+          "F.Cu",
+          43.9979865,
+          24.2949999
+        ],
+        [
+          "region",
+          "U121.1@d256a207-4f4b-5205-8751-f64bbed34cd7",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 input bypass exposed pad",
+      "start": "C123.2",
+      "end": "U121.9",
+      "net": "GND",
+      "start_xy_mm": [
+        42.15000000000001,
+        23.850000000000026
+      ],
+      "end_xy_mm": [
+        46.99999999999999,
+        26.49999999999998
+      ],
+      "pad_edge_gap_mm": 2.6729809646422007,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.7564399499999999,
+      "minimum_track_width_mm": 0.6,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "0ba0f863-895b-4d19-8ebe-575ca1dee564",
+        "4b8449df-a297-4130-aca9-d012cc6e0821",
+        "bf754b46-1982-4834-acb1-9c1fcf5d778d"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C123.2@46dc895a-2c05-54e7-a0dd-f10aabb7850c",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          42.8750001,
+          23.85
+        ],
+        [
+          "F.Cu",
+          43.55,
+          23.85
+        ],
+        [
+          "F.Cu",
+          43.9979865,
+          24.2949999
+        ],
+        [
+          "region",
+          "U121.1@d256a207-4f4b-5205-8751-f64bbed34cd7",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          45.0750001,
+          24.595
+        ],
+        [
+          "F.Cu",
+          45.5249999,
+          24.595
+        ],
+        [
+          "region",
+          "U121.9@aaca1255-e289-5478-8b1c-b4b3f5657b01",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 bootstrap BST",
+      "start": "C124.1",
+      "end": "U121.7",
+      "net": "5V_BST",
+      "start_xy_mm": [
+        51.599999999999895,
+        25.874999999999975
+      ],
+      "end_xy_mm": [
+        49.699999999999974,
+        25.865000000000002
+      ],
+      "pad_edge_gap_mm": 0.6499999999999985,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.6500088099999999,
+      "minimum_track_width_mm": 0.3,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "a4aeeb53-19d9-4ed6-a246-21cae31b9e8e"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C124.1@bb7c5d13-2d07-5bc2-a21b-f6fcb850512e",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          51.1249999,
+          25.8725
+        ],
+        [
+          "F.Cu",
+          50.4750001,
+          25.8690789
+        ],
+        [
+          "region",
+          "U121.7@8837aa8d-35aa-5d80-9c05-8ff10ad816c7",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 bootstrap SW",
+      "start": "C124.2",
+      "end": "U121.8",
+      "net": "5V_SW",
+      "start_xy_mm": [
+        51.599999999999895,
+        24.324999999999985
+      ],
+      "end_xy_mm": [
+        49.7,
+        24.595000000000017
+      ],
+      "pad_edge_gap_mm": 0.6499999999999985,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.65455697,
+      "minimum_track_width_mm": 0.7,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "faa73905-732c-4daa-b313-ac16852554e5"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C124.2@a424e8ae-2d41-5ba5-bd5c-043f6a906afb",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          51.1295571,
+          24.595
+        ],
+        [
+          "F.Cu",
+          50.4750001,
+          24.595
+        ],
+        [
+          "region",
+          "U121.8@ec66eb27-8dd9-5df4-a86b-35c46a7b8e90",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 switch to inductor",
+      "start": "U121.8",
+      "end": "L121.1",
+      "net": "5V_SW",
+      "start_xy_mm": [
+        49.7,
+        24.595000000000017
+      ],
+      "end_xy_mm": [
+        55.749999999999964,
+        28.99999999999997
+      ],
+      "pad_edge_gap_mm": 3.7713454439669407,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 4.6246373400000005,
+      "minimum_track_width_mm": 0.7,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "4f85b7c8-75b5-42ff-89b1-ec8a7f57f667",
+        "faa73905-732c-4daa-b313-ac16852554e5"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "U121.8@ec66eb27-8dd9-5df4-a86b-35c46a7b8e90",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          50.4750001,
+          24.595
+        ],
+        [
+          "F.Cu",
+          51.1295571,
+          24.595
+        ],
+        [
+          "region",
+          "C124.2@a424e8ae-2d41-5ba5-bd5c-043f6a906afb",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          52.0704429,
+          24.595
+        ],
+        [
+          "F.Cu",
+          53.7,
+          24.595
+        ],
+        [
+          "F.Cu",
+          55.3549999,
+          26.2499999
+        ],
+        [
+          "region",
+          "L121.1@9edbc75e-bbba-5ed8-857d-e7a2512e5d01",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 inductor to output cap",
+      "start": "L121.2",
+      "end": "C127.1",
+      "net": "5V_SOURCE",
+      "start_xy_mm": [
+        64.24999999999997,
+        28.999999999999975
+      ],
+      "end_xy_mm": [
+        56.52500000000005,
+        37.999999999999964
+      ],
+      "pad_edge_gap_mm": 7.460389987630155,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 13.8749998,
+      "minimum_track_width_mm": 1.2,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "0af0cf3c-ebdd-423a-a866-da11a8c76a62",
+        "0b55c09e-1c57-429a-a7bf-5fd6fe2f2a4e",
+        "76ba06cf-958b-4ed9-b015-193143adf0ed"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "L121.2@506c4fd9-e8f4-56ed-b993-1534c62bdddd",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          65.5,
+          31.7500001
+        ],
+        [
+          "F.Cu",
+          65.5,
+          35.7
+        ],
+        [
+          "F.Cu",
+          61.525,
+          35.7
+        ],
+        [
+          "F.Cu",
+          56.525,
+          35.7
+        ],
+        [
+          "F.Cu",
+          56.525,
+          36.6499999
+        ],
+        [
+          "region",
+          "C127.1@1cc786b8-e426-53c6-9b2e-7a6f1a448bae",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 output cap return",
+      "start": "C127.2",
+      "end": "U121.1",
+      "net": "GND",
+      "start_xy_mm": [
+        59.47500000000003,
+        37.999999999999964
+      ],
+      "end_xy_mm": [
+        44.29999999999999,
+        24.595000000000017
+      ],
+      "pad_edge_gap_mm": 18.28622903548968,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "U121 FB upper",
+      "start": "R122.2",
+      "end": "U121.5",
+      "net": "5V_FB",
+      "start_xy_mm": [
+        48.48750000000003,
+        32.99999999999997
+      ],
+      "end_xy_mm": [
+        49.7,
+        28.404999999999976
+      ],
+      "pad_edge_gap_mm": 3.6039205946842983,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 3.05809115,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "11881094-6174-4a34-9861-1f82795db763",
+        "cc8e0d31-bb6e-4ac2-808f-a0c80eeda622",
+        "f34a2b30-093b-44c5-aaaa-297b5de469c7"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "R122.2@b7ded614-26ca-55b4-a62e-3aa0eb2e13f9",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          48.5141304,
+          32.2999999
+        ],
+        [
+          "F.Cu",
+          48.5569293,
+          31.1750001
+        ],
+        [
+          "region",
+          "R123.1@0f5bf535-6652-5ef9-a463-ff3c78b30acd",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          48.9488563,
+          30.3261437
+        ],
+        [
+          "F.Cu",
+          49.7,
+          29.575
+        ],
+        [
+          "F.Cu",
+          49.7,
+          28.7050001
+        ],
+        [
+          "region",
+          "U121.5@73b9a645-0844-5cb1-96b1-ec11b1aba8c3",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 FB lower",
+      "start": "R123.1",
+      "end": "U121.5",
+      "net": "5V_FB",
+      "start_xy_mm": [
+        48.57499999999999,
+        30.700000000000024
+      ],
+      "end_xy_mm": [
+        49.7,
+        28.404999999999976
+      ],
+      "pad_edge_gap_mm": 1.5358565748762318,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.93227753,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "cc8e0d31-bb6e-4ac2-808f-a0c80eeda622",
+        "f34a2b30-093b-44c5-aaaa-297b5de469c7"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "R123.1@0f5bf535-6652-5ef9-a463-ff3c78b30acd",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          48.9488563,
+          30.3261437
+        ],
+        [
+          "F.Cu",
+          49.7,
+          29.575
+        ],
+        [
+          "F.Cu",
+          49.7,
+          28.7050001
+        ],
+        [
+          "region",
+          "U121.5@73b9a645-0844-5cb1-96b1-ec11b1aba8c3",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U121 FB ground",
+      "start": "R123.2",
+      "end": "U121.1",
+      "net": "GND",
+      "start_xy_mm": [
+        50.224999999999994,
+        30.700000000000024
+      ],
+      "end_xy_mm": [
+        44.29999999999999,
+        24.595000000000017
+      ],
+      "pad_edge_gap_mm": 7.258911390489912,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "U151 input bypass VIN13",
+      "start": "C152.1",
+      "end": "U151.13",
+      "net": "3V3_VIN",
+      "start_xy_mm": [
+        39.99999999999998,
+        13.200000000000006
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        13.325000000000003
+      ],
+      "pad_edge_gap_mm": 0.875,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.8762469758882367,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "d49d1ab8-24a3-4d53-ba1c-02aa78295711"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C152.1@3f594ec9-a1b7-5ef1-8529-8fbf28e9d09f",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          13.2
+        ],
+        [
+          "B.Cu",
+          38.8,
+          13.2
+        ],
+        [
+          "region",
+          "U151.13@91020283-d330-5932-9940-9e7c7ec47a3f",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 input bypass VIN12",
+      "start": "C152.1",
+      "end": "U151.12",
+      "net": "3V3_VIN",
+      "start_xy_mm": [
+        39.99999999999998,
+        13.200000000000006
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        12.674999999999997
+      ],
+      "pad_edge_gap_mm": 0.8915623328729102,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.2999998999999987,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "d49d1ab8-24a3-4d53-ba1c-02aa78295711",
+        "e01732e7-0e2e-4e1c-aeb9-71a5a9a45922"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C152.1@3f594ec9-a1b7-5ef1-8529-8fbf28e9d09f",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          13.2
+        ],
+        [
+          "B.Cu",
+          38.8,
+          13.2
+        ],
+        [
+          "B.Cu",
+          38.8,
+          12.775
+        ],
+        [
+          "region",
+          "U151.12@3e427363-06bd-56c5-b446-efc105381ca2",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 input bypass PGND15",
+      "start": "C152.2",
+      "end": "U151.15",
+      "net": "GND",
+      "start_xy_mm": [
+        39.99999999999998,
+        14.750000000000004
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        14.624999999999986
+      ],
+      "pad_edge_gap_mm": 0.875,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.8762469758882367,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "b9613169-264d-41c7-99c1-f41dc4e441d1"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C152.2@34a91c57-045f-5337-9278-99b85768e628",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          14.75
+        ],
+        [
+          "B.Cu",
+          38.8,
+          14.75
+        ],
+        [
+          "region",
+          "U151.15@8bee2d4a-b46c-5e55-a0d7-a3fdc2a4b722",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 input bypass PGND16",
+      "start": "C152.2",
+      "end": "U151.16",
+      "net": "GND",
+      "start_xy_mm": [
+        39.99999999999998,
+        14.750000000000004
+      ],
+      "end_xy_mm": [
+        37.86250000000003,
+        15.275000000000006
+      ],
+      "pad_edge_gap_mm": 0.8915623328729105,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.2999998999999987,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "1832e705-61fd-49fb-bbed-ad6a41492694",
+        "b9613169-264d-41c7-99c1-f41dc4e441d1"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C152.2@34a91c57-045f-5337-9278-99b85768e628",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          14.75
+        ],
+        [
+          "B.Cu",
+          38.8,
+          14.75
+        ],
+        [
+          "B.Cu",
+          38.8,
+          15.175
+        ],
+        [
+          "region",
+          "U151.16@59d05e22-17c8-5d7d-842f-388605f73a86",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 input bypass exposed pad",
+      "start": "C152.2",
+      "end": "U151.17",
+      "net": "GND",
+      "start_xy_mm": [
+        39.99999999999998,
+        14.750000000000004
+      ],
+      "end_xy_mm": [
+        35.0,
+        13.0
+      ],
+      "pad_edge_gap_mm": 2.8249999999999957,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.6749996999999985,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "1832e705-61fd-49fb-bbed-ad6a41492694",
+        "74f028de-fe0d-4506-98eb-285b84b89c32",
+        "b9613169-264d-41c7-99c1-f41dc4e441d1"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C152.2@34a91c57-045f-5337-9278-99b85768e628",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          14.75
+        ],
+        [
+          "B.Cu",
+          38.8,
+          14.75
+        ],
+        [
+          "B.Cu",
+          38.8,
+          15.175
+        ],
+        [
+          "region",
+          "U151.16@59d05e22-17c8-5d7d-842f-388605f73a86",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          37.0749999,
+          15.275
+        ],
+        [
+          "B.Cu",
+          36.7000001,
+          15.275
+        ],
+        [
+          "region",
+          "U151.17@f339b797-32f6-5465-8a42-d5fdec2ae2a4",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 bulk input feed",
+      "start": "C151.1",
+      "end": "U151.13",
+      "net": "3V3_VIN",
+      "start_xy_mm": [
+        43.19999999999999,
+        13.824999999999994
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        13.325000000000003
+      ],
+      "pad_edge_gap_mm": 3.200794428735062,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 2.3004170658882366,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "a64ce94d-9c04-489e-8991-08f3c1529140",
+        "d49d1ab8-24a3-4d53-ba1c-02aa78295711",
+        "ff509a97-020f-4c02-bf59-4da1d2ae3d82"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C151.1@7317a5bb-c730-546a-9c23-f6c0b4f1e00e",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          41.8673439,
+          13.408545
+        ],
+        [
+          "B.Cu",
+          41.2,
+          13.2
+        ],
+        [
+          "B.Cu",
+          40.4750001,
+          13.2
+        ],
+        [
+          "region",
+          "C152.1@3f594ec9-a1b7-5ef1-8529-8fbf28e9d09f",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          39.5249999,
+          13.2
+        ],
+        [
+          "B.Cu",
+          38.8,
+          13.2
+        ],
+        [
+          "region",
+          "U151.13@91020283-d330-5932-9940-9e7c7ec47a3f",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 VCC",
+      "start": "C153.1",
+      "end": "U151.4",
+      "net": "3V3_VCC_INTERNAL",
+      "start_xy_mm": [
+        30.07499999999997,
+        11.999999999999995
+      ],
+      "end_xy_mm": [
+        32.1375,
+        13.325000000000003
+      ],
+      "pad_edge_gap_mm": 1.1827037236833433,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.20260903,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "7e118b81-e91a-5f4d-84af-9810172b2019",
+        "81048dee-86ef-500d-a54d-9219b357162f",
+        "a606857e-8483-4dbb-811e-31a57c9f1bd5"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C153.1@5dae57c4-d3d2-5254-b892-7b9f0a85d6d9",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          30.5153122,
+          12.3153122
+        ],
+        [
+          "B.Cu",
+          30.8,
+          12.6
+        ],
+        [
+          "B.Cu",
+          31.3499999,
+          12.6
+        ],
+        [
+          "region",
+          "U151.5@7c2ab36c-6410-5484-9df0-f767ed325376",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          32.1375,
+          12.8750001
+        ],
+        [
+          "B.Cu",
+          32.1375,
+          13.1249999
+        ],
+        [
+          "region",
+          "U151.4@e0326e50-91bc-5d18-9249-1468a286ab84",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 VCC ground",
+      "start": "C153.2",
+      "end": "U151.10",
+      "net": "GND",
+      "start_xy_mm": [
+        28.524999999999988,
+        11.999999999999995
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        11.37500000000001
+      ],
+      "pad_edge_gap_mm": 8.104497985656877,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "U151 bootstrap BOOT",
+      "start": "C154.1",
+      "end": "U151.3",
+      "net": "3V3_BOOT",
+      "start_xy_mm": [
+        30.300000000000015,
+        14.424999999999997
+      ],
+      "end_xy_mm": [
+        32.1375,
+        13.97499999999999
+      ],
+      "pad_edge_gap_mm": 0.583659432350673,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.62704758,
+      "minimum_track_width_mm": 0.25,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "1fb6b554-c046-49a0-af0f-175b2ff0bbc4",
+        "f42a5ea3-ab5a-4b56-b1e1-51fb8c6d5923"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C154.1@8d588e74-e441-546e-be96-2c912e462145",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          30.7713745,
+          14.1598519
+        ],
+        [
+          "B.Cu",
+          31.1,
+          13.975
+        ],
+        [
+          "B.Cu",
+          31.3499999,
+          13.975
+        ],
+        [
+          "region",
+          "U151.3@b18e5589-1bc2-5efb-ac14-ba5024c03ee8",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 bootstrap SW",
+      "start": "C154.2",
+      "end": "U151.1",
+      "net": "3V3_SW",
+      "start_xy_mm": [
+        30.299999999999986,
+        15.975000000000016
+      ],
+      "end_xy_mm": [
+        32.1375,
+        15.275000000000002
+      ],
+      "pad_edge_gap_mm": 0.6500010668005911,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 0.7717512000000001,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "79b4e17f-58b8-4ae5-8830-cfa03e810144",
+        "96b58942-5d6a-468a-a7f1-fefeb725e6d1"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C154.2@6a6077c5-9a58-5015-969d-efe908954304",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          30.7750001,
+          15.7499999
+        ],
+        [
+          "B.Cu",
+          31.25,
+          15.275
+        ],
+        [
+          "B.Cu",
+          31.3499999,
+          15.275
+        ],
+        [
+          "region",
+          "U151.1@e01d325a-a532-5a4b-9184-05db88658f6e",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 switch to inductor",
+      "start": "U151.1",
+      "end": "L151.1",
+      "net": "3V3_SW",
+      "start_xy_mm": [
+        32.1375,
+        15.275000000000002
+      ],
+      "end_xy_mm": [
+        27.355,
+        16.500000000000004
+      ],
+      "pad_edge_gap_mm": 3.405000000000001,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 2.7837295979816665,
+      "minimum_track_width_mm": 0.35,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "79b4e17f-58b8-4ae5-8830-cfa03e810144",
+        "90d2c722-6070-41db-bcdf-a9aa5aad6861",
+        "96b58942-5d6a-468a-a7f1-fefeb725e6d1"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "U151.1@e01d325a-a532-5a4b-9184-05db88658f6e",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          31.3499999,
+          15.275
+        ],
+        [
+          "B.Cu",
+          31.25,
+          15.275
+        ],
+        [
+          "B.Cu",
+          30.7750001,
+          15.7499999
+        ],
+        [
+          "region",
+          "C154.2@6a6077c5-9a58-5015-969d-efe908954304",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          29.775,
+          16.5
+        ],
+        [
+          "B.Cu",
+          27.9450001,
+          16.5
+        ],
+        [
+          "region",
+          "L151.1@e9b45130-026b-553c-839d-360dd205d6f6",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 inductor to first cap",
+      "start": "L151.2",
+      "end": "C155.1",
+      "net": "3V3_SOURCE",
+      "start_xy_mm": [
+        24.044999999999998,
+        16.500000000000004
+      ],
+      "end_xy_mm": [
+        24.52499999999999,
+        21.999999999999993
+      ],
+      "pad_edge_gap_mm": 1.7999999999999972,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 3.7410314499999986,
+      "minimum_track_width_mm": 1,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "08248f18-6694-4b19-9b7d-0a6e7e8ba6d8",
+        "ad27c433-7e45-4c45-9c8e-4ae2f7c1ffa2"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "L151.2@4ddf8272-f475-54b3-ba91-b3742c3f0092",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          23.0,
+          18.85
+        ],
+        [
+          "B.Cu",
+          23.0,
+          21.0
+        ],
+        [
+          "B.Cu",
+          23.9499999,
+          21.6229508
+        ],
+        [
+          "region",
+          "C155.1@e3e9198f-6c72-59b5-acd5-a16ec1ccf40c",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 inductor to last cap",
+      "start": "L151.2",
+      "end": "C157.1",
+      "net": "3V3_SOURCE",
+      "start_xy_mm": [
+        24.044999999999998,
+        16.500000000000004
+      ],
+      "end_xy_mm": [
+        34.72500000000001,
+        22.000000000000018
+      ],
+      "pad_edge_gap_mm": 9.727876028854165,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 15.241031249999997,
+      "minimum_track_width_mm": 0.8,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "07d5f8d8-ccaf-4bdb-9af8-5d64fb0995b7",
+        "08248f18-6694-4b19-9b7d-0a6e7e8ba6d8",
+        "345ead26-44e4-4b71-b1a8-f53de5ebe406",
+        "64d73205-5011-4667-b612-f999a4249886",
+        "ad27c433-7e45-4c45-9c8e-4ae2f7c1ffa2"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "L151.2@4ddf8272-f475-54b3-ba91-b3742c3f0092",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          23.0,
+          18.85
+        ],
+        [
+          "B.Cu",
+          23.0,
+          21.0
+        ],
+        [
+          "B.Cu",
+          23.9499999,
+          21.6229508
+        ],
+        [
+          "region",
+          "C155.1@e3e9198f-6c72-59b5-acd5-a16ec1ccf40c",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          24.525,
+          20.6499999
+        ],
+        [
+          "B.Cu",
+          24.525,
+          20.0
+        ],
+        [
+          "B.Cu",
+          29.625,
+          20.0
+        ],
+        [
+          "B.Cu",
+          34.725,
+          20.0
+        ],
+        [
+          "B.Cu",
+          34.725,
+          20.6499999
+        ],
+        [
+          "region",
+          "C157.1@c0010c7a-e1b9-554c-b841-3e881414bb55",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 cap ground to PGND",
+      "start": "C155.2",
+      "end": "U151.16",
+      "net": "GND",
+      "start_xy_mm": [
+        27.47500000000002,
+        21.999999999999993
+      ],
+      "end_xy_mm": [
+        37.86250000000003,
+        15.275000000000006
+      ],
+      "pad_edge_gap_mm": 10.531932914329687,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "U151 cap ground to EP",
+      "start": "C157.2",
+      "end": "U151.17",
+      "net": "GND",
+      "start_xy_mm": [
+        37.67500000000005,
+        22.000000000000018
+      ],
+      "end_xy_mm": [
+        35.0,
+        13.0
+      ],
+      "pad_edge_gap_mm": 5.18898076499799,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "U151 source sense",
+      "start": "C157.1",
+      "end": "R155.1",
+      "net": "3V3_SOURCE",
+      "start_xy_mm": [
+        34.72500000000001,
+        22.000000000000018
+      ],
+      "end_xy_mm": [
+        39.09999999999998,
+        26.72499999999998
+      ],
+      "pad_edge_gap_mm": 4.597682103491214,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 7.696840889999999,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu",
+        "In2.Cu"
+      ],
+      "via_ids": [
+        "a716cc31-b88d-57ba-9a34-b142e1a002dd",
+        "cde2df06-5907-51c2-b56a-8a2e8439f87b"
+      ],
+      "track_ids": [
+        "16594f11-ae86-586a-8838-1c0a86173acd",
+        "1b0b3feb-8728-5462-a32d-e5a488e5a91a",
+        "21249220-2c2c-5e6a-b7a6-ffa1c47e2017",
+        "2551c8ad-e9cc-5e8a-9235-eedb64634511",
+        "25b65236-ea31-5d26-86ef-304064b6eb3f",
+        "33046cb3-8c8e-56fd-9c99-ca686a77164e",
+        "3e3318cd-733c-53f3-90f7-cd879a845659",
+        "572addc9-b593-5367-8262-4072128a9a5a",
+        "8baec827-cc24-5e7a-9cdf-9b827eaf4b53",
+        "8fed4626-93a8-5059-9ff8-e9b0c271b446",
+        "924adaad-aedd-57d7-a862-28e12bb1588f",
+        "9571b09b-8e0d-58bd-889b-1cfeb0348ca9",
+        "99a942b9-65b0-580e-bde6-aa983db1a3a0",
+        "bc8e1c9b-f46f-5594-a847-eea0df79ac4f",
+        "d4f0e1b4-8e6a-508f-80e8-98f44e95e201",
+        "e8534eda-7ef8-54bf-a140-f15443462608"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C157.1@c0010c7a-e1b9-554c-b841-3e881414bb55",
+          "B.Cu"
+        ],
+        [
+          "region",
+          "a716cc31-b88d-57ba-9a34-b142e1a002dd",
+          "B.Cu"
+        ],
+        [
+          "region",
+          "a716cc31-b88d-57ba-9a34-b142e1a002dd",
+          "In2.Cu"
+        ],
+        [
+          "In2.Cu",
+          35.1121321,
+          23.5621321
+        ],
+        [
+          "In2.Cu",
+          35.6,
+          24.05
+        ],
+        [
+          "In2.Cu",
+          36.55,
+          24.05
+        ],
+        [
+          "In2.Cu",
+          36.6,
+          24.1
+        ],
+        [
+          "In2.Cu",
+          36.8,
+          24.1
+        ],
+        [
+          "In2.Cu",
+          36.85,
+          24.15
+        ],
+        [
+          "In2.Cu",
+          36.9,
+          24.15
+        ],
+        [
+          "In2.Cu",
+          36.95,
+          24.2
+        ],
+        [
+          "In2.Cu",
+          37.0,
+          24.2
+        ],
+        [
+          "In2.Cu",
+          37.05,
+          24.25
+        ],
+        [
+          "In2.Cu",
+          37.2,
+          24.3
+        ],
+        [
+          "In2.Cu",
+          37.2,
+          24.4
+        ],
+        [
+          "In2.Cu",
+          37.3,
+          24.5
+        ],
+        [
+          "In2.Cu",
+          37.4,
+          24.5
+        ],
+        [
+          "In2.Cu",
+          37.5,
+          24.6
+        ],
+        [
+          "In2.Cu",
+          40.4764167,
+          24.6
+        ],
+        [
+          "region",
+          "cde2df06-5907-51c2-b56a-8a2e8439f87b",
+          "In2.Cu"
+        ],
+        [
+          "region",
+          "cde2df06-5907-51c2-b56a-8a2e8439f87b",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          40.4878679,
+          25.0121321
+        ],
+        [
+          "B.Cu",
+          39.1750001,
+          26.3249999
+        ],
+        [
+          "region",
+          "R155.1@5b770fa9-9182-50b7-a79d-80b38fa82b04",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 FB upper",
+      "start": "R155.2",
+      "end": "U151.9",
+      "net": "3V3_FB_ADJ",
+      "start_xy_mm": [
+        39.09999999999998,
+        25.075000000000003
+      ],
+      "end_xy_mm": [
+        37.86250000000003,
+        10.724999999999996
+      ],
+      "pad_edge_gap_mm": 13.750873608611201,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 52.57358325255732,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "via_ids": [
+        "4eabd859-1c65-44f0-b0f2-197b528fff61",
+        "793f2128-9826-5fe1-842b-15470c4341ee",
+        "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+        "f97f92ef-3d93-5500-8f49-8e6314eb783c"
+      ],
+      "track_ids": [
+        "01b80c6a-68db-53c7-8815-cd2238159557",
+        "0352c3c6-7bd0-54a4-82c9-97c296ba9c16",
+        "038fdbe9-8400-5c0a-b474-7c57a1552ef8",
+        "0dde3765-4134-50c4-8e48-99f199819281",
+        "12f09638-f1ea-50b1-b0ab-ba94f357cdda",
+        "173345c1-f7a7-59d1-8eeb-95311d874217",
+        "221ccbbd-23fe-5c97-8544-b2a5f4ea251d",
+        "26fdc819-7f69-5f4c-a9a1-381a997819bf",
+        "2fc6279a-7268-5420-98df-05cb287b69b1",
+        "342e38b4-e385-56d1-b322-372bdce44d2b",
+        "3b5a214f-b976-58c7-b6c1-9b8af8916b5d",
+        "3bba2a2e-9d85-558e-9d42-2ce4a1d79d4c",
+        "3c0dd586-931e-5500-94f1-2401b02cc000",
+        "462d2965-f282-5459-8f01-61b2dc7ea8cb",
+        "49d65f02-3318-5df1-8885-593051c599d2",
+        "4a836a6c-f6eb-5283-bfec-53191ac2fd7d",
+        "4c002a5a-71b8-560d-a853-5dd34bc359ec",
+        "4ce15ee4-d4ca-5a35-a9b5-80b5ad129d96",
+        "4ee3542e-461a-5473-971f-92d0ef40deb8",
+        "5409a10b-dd02-5750-8a69-ab1f3a6400b6",
+        "55689f09-0a7a-5ddb-b549-51a569ff5c72",
+        "56d1add0-163e-5f7a-96a5-0dcca69ae18a",
+        "56e585ee-c8e8-5909-ac37-e09fc1b79958",
+        "5a895ae2-2eb6-5fce-a100-e5b0e519d81d",
+        "62a3059a-1f09-5f72-86a7-6b3fcba511a2",
+        "69dd7a03-5b54-5949-9104-6696fdd621c9",
+        "6bafeac8-66d5-5776-8390-086d09ac818b",
+        "708921f8-a64a-517c-9bb4-1443cce66230",
+        "72c8f979-55d5-5a43-8a53-53997c88c0c7",
+        "77bc3300-629a-57e8-a004-24ca374c3ba8",
+        "77c61541-9fa9-58bc-98dd-72b99e84b4e5",
+        "7a60b661-26f6-59e4-9300-850f0e6b8985",
+        "7de65710-e2b3-52ce-8106-149ed4fb5568",
+        "803f93c1-7aa9-53d3-9054-92d685a4ebcc",
+        "81964358-c875-5690-9ad5-dc24ea1a1f8a",
+        "878d0cf3-f0f7-5ef6-9ab8-6b2a503193d2",
+        "97c90e33-382f-5f49-86ef-1b2d3e908c36",
+        "9dada98e-9744-4f7b-825e-06ca18936914",
+        "a557fde0-38c8-50c0-b8ca-7e76b9a0b3c3",
+        "ab562c81-9e3f-5fe5-a894-77105460f65a",
+        "b1007289-3d5e-5c3c-8df7-58934d409f31",
+        "b1393a42-5661-5e35-9f6d-6d2181691279",
+        "c2b00111-d396-5af3-831f-14d480b98761",
+        "c4400418-fb0b-5ab1-8948-b20646d52b9a",
+        "c65b71f9-6e3c-5ddc-a5a5-220ad88d70bb",
+        "c754b292-a9f3-5c3a-b87c-9321c4796d40",
+        "c8d191f2-bcc3-579c-88ff-a860a2ab03bf",
+        "cb023a40-b18f-53fe-b6bc-3762b53b0c61",
+        "d22ce8d0-b524-5893-92d7-679fcff349f0",
+        "d26c2ef2-a0c6-5fad-8448-6c1fad63cd69",
+        "d29cfb89-3cf2-5c23-8d90-fed01f68a3da",
+        "d6fff314-ef8e-5ca4-b730-5006f1572128",
+        "d8236db8-5027-55e7-aec1-4c8f6d6e7790",
+        "d8850e2e-bb55-54b9-8383-1159a27bce5e",
+        "d9e79b11-5438-5acf-90bf-8a2c13217e3d",
+        "e1a3bb40-91af-55ae-b62b-986a3ae98689",
+        "e3885896-dea2-5941-ac80-c11430b71375",
+        "e490f685-0812-5b31-85dc-83246209abf5",
+        "e727d7b4-8e33-52c4-a3d1-e4e926b87def",
+        "e93aa308-5e8a-5ae1-9ed1-450ac6a12eb3",
+        "eb6c2cd1-4fab-511c-9e6f-bd8fab04a767",
+        "eebfa473-3ec1-55f2-acd6-52e582e0f3fa",
+        "ef2d11af-358a-58b3-a686-7ad266e23881",
+        "f3e6eb7e-f827-559d-92e7-38fb62cd27a2",
+        "f4e3fcb4-8ff0-5795-88a5-45aea949378f",
+        "f9060ce6-e804-5457-9d60-48812bf9c794",
+        "f9517480-7f7b-5deb-87fe-cc0478eb77f8",
+        "fd819119-4f0c-5c65-90b3-0e3cd5281fda"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "R155.2@7eaa7bfc-84c5-5e6f-b57f-0839b390d03f",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          38.6249999,
+          25.1
+        ],
+        [
+          "B.Cu",
+          34.0,
+          25.1
+        ],
+        [
+          "B.Cu",
+          33.9,
+          25.0
+        ],
+        [
+          "B.Cu",
+          33.7,
+          25.0
+        ],
+        [
+          "B.Cu",
+          33.6,
+          24.9
+        ],
+        [
+          "B.Cu",
+          33.5,
+          24.9
+        ],
+        [
+          "B.Cu",
+          33.4,
+          24.8
+        ],
+        [
+          "B.Cu",
+          33.3,
+          24.8
+        ],
+        [
+          "B.Cu",
+          33.2,
+          24.7
+        ],
+        [
+          "B.Cu",
+          33.1750001,
+          24.7
+        ],
+        [
+          "region",
+          "R156.1@20022e64-319a-505c-bb14-e7c85c2a6261",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          32.2249999,
+          24.55
+        ],
+        [
+          "B.Cu",
+          31.2957907,
+          24.55
+        ],
+        [
+          "region",
+          "793f2128-9826-5fe1-842b-15470c4341ee",
+          "B.Cu"
+        ],
+        [
+          "region",
+          "793f2128-9826-5fe1-842b-15470c4341ee",
+          "In2.Cu"
+        ],
+        [
+          "In2.Cu",
+          30.814356,
+          24.364356
+        ],
+        [
+          "In2.Cu",
+          30.2,
+          23.75
+        ],
+        [
+          "In2.Cu",
+          30.1,
+          23.6
+        ],
+        [
+          "In2.Cu",
+          26.1,
+          23.6
+        ],
+        [
+          "In2.Cu",
+          25.7,
+          23.2
+        ],
+        [
+          "In2.Cu",
+          25.7,
+          22.8
+        ],
+        [
+          "In2.Cu",
+          25.9,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          25.9,
+          21.8
+        ],
+        [
+          "In2.Cu",
+          26.0,
+          21.7
+        ],
+        [
+          "In2.Cu",
+          26.0,
+          21.6
+        ],
+        [
+          "In2.Cu",
+          26.2,
+          21.4
+        ],
+        [
+          "In2.Cu",
+          26.7,
+          21.4
+        ],
+        [
+          "In2.Cu",
+          27.9,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          31.8,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          32.3,
+          22.1
+        ],
+        [
+          "In2.Cu",
+          33.4,
+          22.1
+        ],
+        [
+          "In2.Cu",
+          33.5,
+          22.0
+        ],
+        [
+          "In2.Cu",
+          38.9,
+          22.0
+        ],
+        [
+          "In2.Cu",
+          40.6878679,
+          20.2121321
+        ],
+        [
+          "region",
+          "f97f92ef-3d93-5500-8f49-8e6314eb783c",
+          "In2.Cu"
+        ],
+        [
+          "region",
+          "f97f92ef-3d93-5500-8f49-8e6314eb783c",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          40.8,
+          19.7
+        ],
+        [
+          "F.Cu",
+          40.7,
+          19.6
+        ],
+        [
+          "F.Cu",
+          40.7,
+          19.5
+        ],
+        [
+          "F.Cu",
+          40.6,
+          19.4
+        ],
+        [
+          "F.Cu",
+          40.6,
+          19.3
+        ],
+        [
+          "F.Cu",
+          40.5,
+          19.2
+        ],
+        [
+          "F.Cu",
+          40.5,
+          19.1
+        ],
+        [
+          "F.Cu",
+          40.4,
+          19.0
+        ],
+        [
+          "F.Cu",
+          40.4,
+          18.7
+        ],
+        [
+          "F.Cu",
+          39.5,
+          17.8
+        ],
+        [
+          "F.Cu",
+          39.2,
+          17.8
+        ],
+        [
+          "F.Cu",
+          37.7,
+          16.3
+        ],
+        [
+          "F.Cu",
+          37.6,
+          16.3
+        ],
+        [
+          "F.Cu",
+          37.5,
+          16.2
+        ],
+        [
+          "F.Cu",
+          37.2,
+          16.2
+        ],
+        [
+          "F.Cu",
+          37.1,
+          16.1
+        ],
+        [
+          "F.Cu",
+          37.0,
+          16.1
+        ],
+        [
+          "F.Cu",
+          36.9,
+          16.0
+        ],
+        [
+          "F.Cu",
+          36.8,
+          16.0
+        ],
+        [
+          "F.Cu",
+          36.7,
+          15.9
+        ],
+        [
+          "F.Cu",
+          36.6,
+          15.9
+        ],
+        [
+          "F.Cu",
+          36.5,
+          15.8
+        ],
+        [
+          "F.Cu",
+          36.4,
+          15.8
+        ],
+        [
+          "F.Cu",
+          35.6,
+          15.0
+        ],
+        [
+          "F.Cu",
+          35.6,
+          14.6
+        ],
+        [
+          "F.Cu",
+          35.8,
+          14.4
+        ],
+        [
+          "F.Cu",
+          35.8,
+          12.8
+        ],
+        [
+          "F.Cu",
+          34.4,
+          11.4
+        ],
+        [
+          "F.Cu",
+          34.4,
+          10.2
+        ],
+        [
+          "F.Cu",
+          33.3,
+          9.1
+        ],
+        [
+          "F.Cu",
+          33.3,
+          8.9
+        ],
+        [
+          "F.Cu",
+          33.2,
+          8.8
+        ],
+        [
+          "F.Cu",
+          33.2,
+          8.2
+        ],
+        [
+          "F.Cu",
+          33.3,
+          8.1
+        ],
+        [
+          "F.Cu",
+          33.3,
+          7.9
+        ],
+        [
+          "F.Cu",
+          33.6,
+          7.6
+        ],
+        [
+          "F.Cu",
+          34.8,
+          7.6
+        ],
+        [
+          "F.Cu",
+          34.9,
+          7.5
+        ],
+        [
+          "F.Cu",
+          35.5,
+          7.5
+        ],
+        [
+          "region",
+          "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+          "F.Cu"
+        ],
+        [
+          "region",
+          "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+          "In2.Cu"
+        ],
+        [
+          "In2.Cu",
+          36.0121321,
+          7.6121321
+        ],
+        [
+          "In2.Cu",
+          38.9007519,
+          10.5007519
+        ],
+        [
+          "region",
+          "4eabd859-1c65-44f0-b0f2-197b528fff61",
+          "In2.Cu"
+        ],
+        [
+          "region",
+          "4eabd859-1c65-44f0-b0f2-197b528fff61",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          38.7999999,
+          10.725
+        ],
+        [
+          "B.Cu",
+          38.6500001,
+          10.725
+        ],
+        [
+          "region",
+          "U151.9@313f41ed-83ca-5c52-8f7c-457fa34b6b62",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 FB lower",
+      "start": "R156.1",
+      "end": "U151.9",
+      "net": "3V3_FB_ADJ",
+      "start_xy_mm": [
+        32.69999999999998,
+        24.474999999999973
+      ],
+      "end_xy_mm": [
+        37.86250000000003,
+        10.724999999999996
+      ],
+      "pad_edge_gap_mm": 13.760420218254126,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 46.95789801255731,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "via_ids": [
+        "4eabd859-1c65-44f0-b0f2-197b528fff61",
+        "793f2128-9826-5fe1-842b-15470c4341ee",
+        "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+        "f97f92ef-3d93-5500-8f49-8e6314eb783c"
+      ],
+      "track_ids": [
+        "0352c3c6-7bd0-54a4-82c9-97c296ba9c16",
+        "038fdbe9-8400-5c0a-b474-7c57a1552ef8",
+        "0dde3765-4134-50c4-8e48-99f199819281",
+        "12f09638-f1ea-50b1-b0ab-ba94f357cdda",
+        "173345c1-f7a7-59d1-8eeb-95311d874217",
+        "221ccbbd-23fe-5c97-8544-b2a5f4ea251d",
+        "26fdc819-7f69-5f4c-a9a1-381a997819bf",
+        "2fc6279a-7268-5420-98df-05cb287b69b1",
+        "342e38b4-e385-56d1-b322-372bdce44d2b",
+        "3b5a214f-b976-58c7-b6c1-9b8af8916b5d",
+        "3bba2a2e-9d85-558e-9d42-2ce4a1d79d4c",
+        "3c0dd586-931e-5500-94f1-2401b02cc000",
+        "462d2965-f282-5459-8f01-61b2dc7ea8cb",
+        "4a836a6c-f6eb-5283-bfec-53191ac2fd7d",
+        "4c002a5a-71b8-560d-a853-5dd34bc359ec",
+        "4ce15ee4-d4ca-5a35-a9b5-80b5ad129d96",
+        "4ee3542e-461a-5473-971f-92d0ef40deb8",
+        "5409a10b-dd02-5750-8a69-ab1f3a6400b6",
+        "55689f09-0a7a-5ddb-b549-51a569ff5c72",
+        "56d1add0-163e-5f7a-96a5-0dcca69ae18a",
+        "5a895ae2-2eb6-5fce-a100-e5b0e519d81d",
+        "62a3059a-1f09-5f72-86a7-6b3fcba511a2",
+        "69dd7a03-5b54-5949-9104-6696fdd621c9",
+        "6bafeac8-66d5-5776-8390-086d09ac818b",
+        "708921f8-a64a-517c-9bb4-1443cce66230",
+        "72c8f979-55d5-5a43-8a53-53997c88c0c7",
+        "77bc3300-629a-57e8-a004-24ca374c3ba8",
+        "7a60b661-26f6-59e4-9300-850f0e6b8985",
+        "7de65710-e2b3-52ce-8106-149ed4fb5568",
+        "803f93c1-7aa9-53d3-9054-92d685a4ebcc",
+        "878d0cf3-f0f7-5ef6-9ab8-6b2a503193d2",
+        "97c90e33-382f-5f49-86ef-1b2d3e908c36",
+        "9dada98e-9744-4f7b-825e-06ca18936914",
+        "a557fde0-38c8-50c0-b8ca-7e76b9a0b3c3",
+        "ab562c81-9e3f-5fe5-a894-77105460f65a",
+        "b1007289-3d5e-5c3c-8df7-58934d409f31",
+        "b1393a42-5661-5e35-9f6d-6d2181691279",
+        "c2b00111-d396-5af3-831f-14d480b98761",
+        "c754b292-a9f3-5c3a-b87c-9321c4796d40",
+        "cb023a40-b18f-53fe-b6bc-3762b53b0c61",
+        "d22ce8d0-b524-5893-92d7-679fcff349f0",
+        "d26c2ef2-a0c6-5fad-8448-6c1fad63cd69",
+        "d29cfb89-3cf2-5c23-8d90-fed01f68a3da",
+        "d8236db8-5027-55e7-aec1-4c8f6d6e7790",
+        "d8850e2e-bb55-54b9-8383-1159a27bce5e",
+        "d9e79b11-5438-5acf-90bf-8a2c13217e3d",
+        "e1a3bb40-91af-55ae-b62b-986a3ae98689",
+        "e3885896-dea2-5941-ac80-c11430b71375",
+        "e490f685-0812-5b31-85dc-83246209abf5",
+        "e727d7b4-8e33-52c4-a3d1-e4e926b87def",
+        "e93aa308-5e8a-5ae1-9ed1-450ac6a12eb3",
+        "eb6c2cd1-4fab-511c-9e6f-bd8fab04a767",
+        "eebfa473-3ec1-55f2-acd6-52e582e0f3fa",
+        "ef2d11af-358a-58b3-a686-7ad266e23881",
+        "f3e6eb7e-f827-559d-92e7-38fb62cd27a2",
+        "f4e3fcb4-8ff0-5795-88a5-45aea949378f",
+        "f9060ce6-e804-5457-9d60-48812bf9c794",
+        "f9517480-7f7b-5deb-87fe-cc0478eb77f8",
+        "fd819119-4f0c-5c65-90b3-0e3cd5281fda"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "R156.1@20022e64-319a-505c-bb14-e7c85c2a6261",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          32.2249999,
+          24.55
+        ],
+        [
+          "B.Cu",
+          31.2957907,
+          24.55
+        ],
+        [
+          "region",
+          "793f2128-9826-5fe1-842b-15470c4341ee",
+          "B.Cu"
+        ],
+        [
+          "region",
+          "793f2128-9826-5fe1-842b-15470c4341ee",
+          "In2.Cu"
+        ],
+        [
+          "In2.Cu",
+          30.814356,
+          24.364356
+        ],
+        [
+          "In2.Cu",
+          30.2,
+          23.75
+        ],
+        [
+          "In2.Cu",
+          30.1,
+          23.6
+        ],
+        [
+          "In2.Cu",
+          26.1,
+          23.6
+        ],
+        [
+          "In2.Cu",
+          25.7,
+          23.2
+        ],
+        [
+          "In2.Cu",
+          25.7,
+          22.8
+        ],
+        [
+          "In2.Cu",
+          25.9,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          25.9,
+          21.8
+        ],
+        [
+          "In2.Cu",
+          26.0,
+          21.7
+        ],
+        [
+          "In2.Cu",
+          26.0,
+          21.6
+        ],
+        [
+          "In2.Cu",
+          26.2,
+          21.4
+        ],
+        [
+          "In2.Cu",
+          26.7,
+          21.4
+        ],
+        [
+          "In2.Cu",
+          27.9,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          31.8,
+          22.6
+        ],
+        [
+          "In2.Cu",
+          32.3,
+          22.1
+        ],
+        [
+          "In2.Cu",
+          33.4,
+          22.1
+        ],
+        [
+          "In2.Cu",
+          33.5,
+          22.0
+        ],
+        [
+          "In2.Cu",
+          38.9,
+          22.0
+        ],
+        [
+          "In2.Cu",
+          40.6878679,
+          20.2121321
+        ],
+        [
+          "region",
+          "f97f92ef-3d93-5500-8f49-8e6314eb783c",
+          "In2.Cu"
+        ],
+        [
+          "region",
+          "f97f92ef-3d93-5500-8f49-8e6314eb783c",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          40.8,
+          19.7
+        ],
+        [
+          "F.Cu",
+          40.7,
+          19.6
+        ],
+        [
+          "F.Cu",
+          40.7,
+          19.5
+        ],
+        [
+          "F.Cu",
+          40.6,
+          19.4
+        ],
+        [
+          "F.Cu",
+          40.6,
+          19.3
+        ],
+        [
+          "F.Cu",
+          40.5,
+          19.2
+        ],
+        [
+          "F.Cu",
+          40.5,
+          19.1
+        ],
+        [
+          "F.Cu",
+          40.4,
+          19.0
+        ],
+        [
+          "F.Cu",
+          40.4,
+          18.7
+        ],
+        [
+          "F.Cu",
+          39.5,
+          17.8
+        ],
+        [
+          "F.Cu",
+          39.2,
+          17.8
+        ],
+        [
+          "F.Cu",
+          37.7,
+          16.3
+        ],
+        [
+          "F.Cu",
+          37.6,
+          16.3
+        ],
+        [
+          "F.Cu",
+          37.5,
+          16.2
+        ],
+        [
+          "F.Cu",
+          37.2,
+          16.2
+        ],
+        [
+          "F.Cu",
+          37.1,
+          16.1
+        ],
+        [
+          "F.Cu",
+          37.0,
+          16.1
+        ],
+        [
+          "F.Cu",
+          36.9,
+          16.0
+        ],
+        [
+          "F.Cu",
+          36.8,
+          16.0
+        ],
+        [
+          "F.Cu",
+          36.7,
+          15.9
+        ],
+        [
+          "F.Cu",
+          36.6,
+          15.9
+        ],
+        [
+          "F.Cu",
+          36.5,
+          15.8
+        ],
+        [
+          "F.Cu",
+          36.4,
+          15.8
+        ],
+        [
+          "F.Cu",
+          35.6,
+          15.0
+        ],
+        [
+          "F.Cu",
+          35.6,
+          14.6
+        ],
+        [
+          "F.Cu",
+          35.8,
+          14.4
+        ],
+        [
+          "F.Cu",
+          35.8,
+          12.8
+        ],
+        [
+          "F.Cu",
+          34.4,
+          11.4
+        ],
+        [
+          "F.Cu",
+          34.4,
+          10.2
+        ],
+        [
+          "F.Cu",
+          33.3,
+          9.1
+        ],
+        [
+          "F.Cu",
+          33.3,
+          8.9
+        ],
+        [
+          "F.Cu",
+          33.2,
+          8.8
+        ],
+        [
+          "F.Cu",
+          33.2,
+          8.2
+        ],
+        [
+          "F.Cu",
+          33.3,
+          8.1
+        ],
+        [
+          "F.Cu",
+          33.3,
+          7.9
+        ],
+        [
+          "F.Cu",
+          33.6,
+          7.6
+        ],
+        [
+          "F.Cu",
+          34.8,
+          7.6
+        ],
+        [
+          "F.Cu",
+          34.9,
+          7.5
+        ],
+        [
+          "F.Cu",
+          35.5,
+          7.5
+        ],
+        [
+          "region",
+          "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+          "F.Cu"
+        ],
+        [
+          "region",
+          "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+          "In2.Cu"
+        ],
+        [
+          "In2.Cu",
+          36.0121321,
+          7.6121321
+        ],
+        [
+          "In2.Cu",
+          38.9007519,
+          10.5007519
+        ],
+        [
+          "region",
+          "4eabd859-1c65-44f0-b0f2-197b528fff61",
+          "In2.Cu"
+        ],
+        [
+          "region",
+          "4eabd859-1c65-44f0-b0f2-197b528fff61",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          38.7999999,
+          10.725
+        ],
+        [
+          "B.Cu",
+          38.6500001,
+          10.725
+        ],
+        [
+          "region",
+          "U151.9@313f41ed-83ca-5c52-8f7c-457fa34b6b62",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "U151 quiet feedback return",
+      "start": "R156.2",
+      "end": "U151.10",
+      "net": "GND",
+      "start_xy_mm": [
+        32.69999999999998,
+        26.125
+      ],
+      "end_xy_mm": [
+        37.86250000000002,
+        11.37500000000001
+      ],
+      "pad_edge_gap_mm": 14.719511688014492,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "R153 power input",
+      "start": "C157.1",
+      "end": "R153.1",
+      "net": "3V3_SOURCE",
+      "start_xy_mm": [
+        34.72500000000001,
+        22.000000000000018
+      ],
+      "end_xy_mm": [
+        40.24,
+        21.0
+      ],
+      "pad_edge_gap_mm": 4.43,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 8.521132530000003,
+      "minimum_track_width_mm": 0.6,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "0a1fe8ff-4589-4028-8660-98a021b7f56d",
+        "116a048a-ed1b-48da-9303-f84fa76b8565",
+        "345ead26-44e4-4b71-b1a8-f53de5ebe406",
+        "4ed7569b-42c4-4c5b-9f5a-4f08f4c7a3de",
+        "900657ca-1c30-450f-99e9-13c1a7b8799d",
+        "a800345f-6802-4e85-be35-ac14baa51f05",
+        "ba0e8169-fe63-4d0e-beec-0c11d39d79b5",
+        "fe76080f-7a02-4980-8cfe-c26627758e51"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C157.1@c0010c7a-e1b9-554c-b841-3e881414bb55",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          34.725,
+          20.6499999
+        ],
+        [
+          "B.Cu",
+          34.725,
+          20.0
+        ],
+        [
+          "B.Cu",
+          36.0,
+          20.0
+        ],
+        [
+          "B.Cu",
+          36.9391956,
+          18.4666195
+        ],
+        [
+          "region",
+          "C158.1@216fbb64-eb80-5c72-8885-b38f63f10a38",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          37.225,
+          18.4750001
+        ],
+        [
+          "B.Cu",
+          37.225,
+          19.2
+        ],
+        [
+          "B.Cu",
+          38.8,
+          19.2
+        ],
+        [
+          "B.Cu",
+          39.0,
+          19.4
+        ],
+        [
+          "B.Cu",
+          39.0,
+          20.6625
+        ],
+        [
+          "B.Cu",
+          39.5375,
+          21.2
+        ],
+        [
+          "region",
+          "R153.1@4e3e1e7d-b7a6-5b22-9c88-242202ee9289",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "R153 source test point",
+      "start": "R153.1",
+      "end": "TP152.1",
+      "net": "3V3_SOURCE",
+      "start_xy_mm": [
+        40.24,
+        21.0
+      ],
+      "end_xy_mm": [
+        30.000000000000004,
+        4.000000000000002
+      ],
+      "pad_edge_gap_mm": 18.396637010066357,
+      "status": "DIFFERENT_NETS"
+    },
+    {
+      "path": "R153 output test point",
+      "start": "R153.2",
+      "end": "TP153.1",
+      "net": "+3V3",
+      "start_xy_mm": [
+        41.760000000000005,
+        21.0
+      ],
+      "end_xy_mm": [
+        33.99999999999997,
+        3.9999999999999987
+      ],
+      "pad_edge_gap_mm": 17.263404137158723,
+      "status": "DIFFERENT_NETS"
+    },
+    {
+      "path": "Input drain feed",
+      "start": "D101.1",
+      "end": "Q101.2",
+      "net": "REV_BLOCKED_12V",
+      "start_xy_mm": [
+        26.800000000000015,
+        32.50000000000003
+      ],
+      "end_xy_mm": [
+        30.364998999999987,
+        27.475000000000012
+      ],
+      "pad_edge_gap_mm": 2.313231094942309,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.11722702,
+      "minimum_track_width_mm": 1.5,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "3571f656-8335-4a87-af8c-d6041dfa0ec5"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "D101.1@f87f3357-6f0d-53b3-b9af-1c17b526f692",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          28.0500001,
+          31.2499999
+        ],
+        [
+          "F.Cu",
+          28.8399989,
+          30.4600011
+        ],
+        [
+          "region",
+          "Q101.2@8802ca8a-2681-5bf4-95cb-6823b15f3f7a",
+          "F.Cu"
+        ],
+        [
+          "region",
+          "Q101.2@30839385-7eb5-53e0-9bd8-15aa4cc64cf4",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input controller gate",
+      "start": "U101.8",
+      "end": "R106.1",
+      "net": "INPUT_GATE_DRIVE",
+      "start_xy_mm": [
+        35.1125,
+        31.475000000000012
+      ],
+      "end_xy_mm": [
+        38.82500000000003,
+        29.00000000000003
+      ],
+      "pad_edge_gap_mm": 3.2000047224109056,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 3.0303786099999996,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "399b14b3-bbd4-4c7f-beb3-0de68e546f07",
+        "b1b91ab4-d89e-45e7-aaea-4a302c78d052",
+        "d67a84b7-127d-4cd2-8321-ec3e4026eaa2"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "U101.8@6b747251-6255-5c42-affa-356c7efc6895",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          35.9250001,
+          31.5
+        ],
+        [
+          "B.Cu",
+          36.7749999,
+          31.5
+        ],
+        [
+          "region",
+          "R107.1@940c0f1d-7fa1-5d94-bcd2-edcde367674e",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          37.5493236,
+          31.1269764
+        ],
+        [
+          "B.Cu",
+          38.825,
+          29.8513
+        ],
+        [
+          "B.Cu",
+          38.825,
+          29.4750001
+        ],
+        [
+          "region",
+          "R106.1@44dd2b1c-7490-5328-8197-770cfe0d5658",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input gate stopper",
+      "start": "R106.2",
+      "end": "Q101.1",
+      "net": "INPUT_GATE",
+      "start_xy_mm": [
+        37.17499999999998,
+        29.00000000000003
+      ],
+      "end_xy_mm": [
+        38.339999,
+        31.28
+      ],
+      "pad_edge_gap_mm": 1.2089961560496472,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 2.94810532,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "via_ids": [
+        "ac428219-3466-434d-8ed9-022a23fe4226"
+      ],
+      "track_ids": [
+        "01e39665-495f-4363-a46c-39b1605d6ad5",
+        "046fb6e7-915d-418c-a000-bb0fd1d939d1",
+        "2e3b5b6a-1ae9-40ad-8bb7-6fa7ca6f3507",
+        "ae516a50-9feb-4f90-bc8d-840cee428763"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "R106.2@b11a361e-b7bc-5951-94a9-33c0f1975b17",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          37.4935024,
+          28.5638976
+        ],
+        [
+          "B.Cu",
+          37.7075679,
+          28.3498321
+        ],
+        [
+          "region",
+          "ac428219-3466-434d-8ed9-022a23fe4226",
+          "B.Cu"
+        ],
+        [
+          "region",
+          "ac428219-3466-434d-8ed9-022a23fe4226",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          37.7075679,
+          28.3498321
+        ],
+        [
+          "F.Cu",
+          37.3433,
+          28.7141
+        ],
+        [
+          "F.Cu",
+          37.3433,
+          30.2833
+        ],
+        [
+          "F.Cu",
+          37.7399999,
+          30.6799999
+        ],
+        [
+          "region",
+          "Q101.1@3d106059-372e-5b24-b14d-5231f9be180f",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input gate clamp",
+      "start": "D104.1",
+      "end": "Q101.1",
+      "net": "INPUT_GATE",
+      "start_xy_mm": [
+        41.00000000000004,
+        33.20000000000007
+      ],
+      "end_xy_mm": [
+        38.339999,
+        31.28
+      ],
+      "pad_edge_gap_mm": 1.473106881190269,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 1.5322070499999998,
+      "minimum_track_width_mm": 0.3,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "de4dd9c9-24a3-46c2-89a7-0fa9bcc3f79a"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "D104.1@d800947e-3947-5af9-97bb-92ae492411d7",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          40.5232232,
+          32.7232232
+        ],
+        [
+          "F.Cu",
+          39.4397892,
+          31.6397892
+        ],
+        [
+          "region",
+          "Q101.1@3d106059-372e-5b24-b14d-5231f9be180f",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input gate clamp source",
+      "start": "D104.2",
+      "end": "Q101.3",
+      "net": "PROTECTED_12V",
+      "start_xy_mm": [
+        41.000000000000036,
+        30.400000000000016
+      ],
+      "end_xy_mm": [
+        38.339999,
+        26.720000000000017
+      ],
+      "pad_edge_gap_mm": 2.8854148823848313,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 3.3832797,
+      "minimum_track_width_mm": 0.8,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "11785476-5796-4252-91bc-0ccd9e61d24e",
+        "a77d9a03-ab22-41b0-b094-f96cc0f1819e"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "D104.2@4e507df5-d104-52b1-83cb-18ff7635b6b4",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          41.0,
+          29.8499999
+        ],
+        [
+          "F.Cu",
+          41.0,
+          29.38
+        ],
+        [
+          "F.Cu",
+          38.9400001,
+          27.3200001
+        ],
+        [
+          "region",
+          "Q101.3@a27cc09f-4981-57e7-bc96-a2c60eb63012",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input output clamp",
+      "start": "Q101.3",
+      "end": "D103.1",
+      "net": "PROTECTED_12V",
+      "start_xy_mm": [
+        38.339999,
+        26.720000000000017
+      ],
+      "end_xy_mm": [
+        40.89999999999999,
+        37.49999999999998
+      ],
+      "pad_edge_gap_mm": 8.557875739050228,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 9.148816739687298,
+      "minimum_track_width_mm": 0.8,
+      "layers": [
+        "F.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "025db08d-2955-431e-abc7-52617b9b470e",
+        "11785476-5796-4252-91bc-0ccd9e61d24e",
+        "a77d9a03-ab22-41b0-b094-f96cc0f1819e",
+        "aae5b5b3-251d-429a-9d8e-efc95cb28260"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "Q101.3@a27cc09f-4981-57e7-bc96-a2c60eb63012",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          38.9400001,
+          27.3200001
+        ],
+        [
+          "F.Cu",
+          41.0,
+          29.38
+        ],
+        [
+          "F.Cu",
+          41.0,
+          29.8499999
+        ],
+        [
+          "region",
+          "D104.2@4e507df5-d104-52b1-83cb-18ff7635b6b4",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          41.4767768,
+          30.8767768
+        ],
+        [
+          "F.Cu",
+          42.4,
+          31.8
+        ],
+        [
+          "F.Cu",
+          42.4,
+          36.0
+        ],
+        [
+          "region",
+          "D103.1@7c0c9774-ecab-5bc5-a15c-e23cc119748d",
+          "F.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input controller sense",
+      "start": "Q101.3",
+      "end": "U101.7",
+      "net": "PROTECTED_12V",
+      "start_xy_mm": [
+        38.339999,
+        26.720000000000017
+      ],
+      "end_xy_mm": [
+        35.11249999999999,
+        30.824999999999974
+      ],
+      "pad_edge_gap_mm": 3.6663921760508944,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 5.56238869530614,
+      "minimum_track_width_mm": 0.15,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "via_ids": [
+        "5f49663e-c2c3-44e4-8cbf-e48a2976ffb7"
+      ],
+      "track_ids": [
+        "04c0ba73-746a-43ee-a308-fd9e183fcf1e",
+        "26a5880c-64f4-4ef2-95cd-6dd0b6cf2c55",
+        "27e1b959-0f76-4545-acb9-9dee0362aff2",
+        "28d968a0-55bd-4e21-8a7a-8c2b4efa3480",
+        "3413a526-4324-462c-bd3f-249afb069c0b",
+        "3f4b3dbd-4b05-4ec6-8441-0430ad919d92",
+        "413e1db1-f746-4971-b57b-5ffd36f43b67",
+        "4522d637-446f-46cb-958e-6b02a960865d",
+        "4bf52927-5695-4cf3-abed-be523d02310b",
+        "66cefc47-2688-44b2-89e9-b07601f0de63",
+        "75b34b26-b008-4bac-9039-47ab14520419",
+        "7fe2c962-4cf8-477b-8cd6-9346d2c5b301",
+        "8a9862d7-adf3-43ff-856e-38e300df3d9f",
+        "9076ca3d-6e31-4e7c-b7d6-02c812f72a53",
+        "930686a6-dfbd-429a-aaad-90cfb01f715f",
+        "9433e10e-3878-478b-ba1c-cfd29547bcd1",
+        "a4a412d2-9ec6-4e05-b444-ff3fd74f7043",
+        "a8c8435d-7ba1-421e-9a75-4e90923665fe",
+        "acaaa05b-1a68-4611-83b1-a6c0cddc8384",
+        "b73f7b25-7967-4d54-9e80-16f2dde69b89",
+        "babbc8c6-a5bb-4533-82e2-1aa9c2c4b74e",
+        "be31f44a-b20c-4581-b23f-576883bf0c41",
+        "c01d551c-fdd8-4b8c-8bbd-20f30060bc0b",
+        "c1228018-ff3e-4450-9122-92e2cf1b5b3a",
+        "c82f9773-9283-4687-8cee-87daba480718",
+        "e0e58a6e-aef3-4368-bd1b-8c2651ed0768",
+        "e5d3104e-e28c-4e17-a0a6-5665ae37d286",
+        "e70d2421-bb3e-4d61-ac86-fa23a1b67cd9",
+        "ecd2b6aa-8c84-401e-8dff-f2604397b2cc",
+        "f917771b-104b-4ed7-9026-fb62726fc146",
+        "fd00d311-f4de-40fb-9257-6f0dad0022b8"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "Q101.3@a27cc09f-4981-57e7-bc96-a2c60eb63012",
+          "F.Cu"
+        ],
+        [
+          "F.Cu",
+          37.2799995,
+          27.2799995
+        ],
+        [
+          "F.Cu",
+          37.475,
+          27.475
+        ],
+        [
+          "F.Cu",
+          38.025,
+          27.475
+        ],
+        [
+          "F.Cu",
+          38.05,
+          27.5
+        ],
+        [
+          "F.Cu",
+          38.125,
+          27.5
+        ],
+        [
+          "F.Cu",
+          38.15,
+          27.525
+        ],
+        [
+          "F.Cu",
+          38.175,
+          27.525
+        ],
+        [
+          "F.Cu",
+          38.2,
+          27.55
+        ],
+        [
+          "F.Cu",
+          38.225,
+          27.55
+        ],
+        [
+          "F.Cu",
+          38.25,
+          27.575
+        ],
+        [
+          "F.Cu",
+          38.275,
+          27.575
+        ],
+        [
+          "F.Cu",
+          38.475,
+          27.775
+        ],
+        [
+          "F.Cu",
+          38.475,
+          27.8
+        ],
+        [
+          "F.Cu",
+          38.525,
+          27.85
+        ],
+        [
+          "F.Cu",
+          38.525,
+          27.9
+        ],
+        [
+          "F.Cu",
+          38.55,
+          27.925
+        ],
+        [
+          "F.Cu",
+          38.55,
+          27.975
+        ],
+        [
+          "F.Cu",
+          38.575,
+          28.0
+        ],
+        [
+          "F.Cu",
+          38.575,
+          28.275
+        ],
+        [
+          "F.Cu",
+          38.55,
+          28.3
+        ],
+        [
+          "F.Cu",
+          38.55,
+          28.35
+        ],
+        [
+          "F.Cu",
+          38.525,
+          28.375
+        ],
+        [
+          "F.Cu",
+          38.525,
+          28.425
+        ],
+        [
+          "F.Cu",
+          38.475,
+          28.475
+        ],
+        [
+          "F.Cu",
+          38.475,
+          28.5
+        ],
+        [
+          "F.Cu",
+          38.0,
+          28.975
+        ],
+        [
+          "F.Cu",
+          37.9969737,
+          29.4595229
+        ],
+        [
+          "region",
+          "5f49663e-c2c3-44e4-8cbf-e48a2976ffb7",
+          "F.Cu"
+        ],
+        [
+          "region",
+          "5f49663e-c2c3-44e4-8cbf-e48a2976ffb7",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          37.7044901,
+          29.8339099
+        ],
+        [
+          "B.Cu",
+          37.6052,
+          29.9332
+        ],
+        [
+          "B.Cu",
+          37.1458,
+          29.9332
+        ],
+        [
+          "B.Cu",
+          36.3575,
+          30.7215
+        ],
+        [
+          "B.Cu",
+          36.3575,
+          30.7256
+        ],
+        [
+          "B.Cu",
+          35.9250001,
+          30.7256
+        ],
+        [
+          "region",
+          "U101.7@dbe60008-af3a-5e71-9166-80a5b237c98a",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input clamp controller return",
+      "start": "D103.2",
+      "end": "U101.4",
+      "net": "GND",
+      "start_xy_mm": [
+        34.10000000000001,
+        37.49999999999998
+      ],
+      "end_xy_mm": [
+        30.887500000000003,
+        29.524999999999974
+      ],
+      "pad_edge_gap_mm": 6.2964830495631166,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    },
+    {
+      "path": "Input controller VIN bypass",
+      "start": "C101.1",
+      "end": "U101.1",
+      "net": "PROTECT_CTRL_VIN",
+      "start_xy_mm": [
+        31.549999999999972,
+        34.500000000000014
+      ],
+      "end_xy_mm": [
+        30.887500000000003,
+        31.474999999999987
+      ],
+      "pad_edge_gap_mm": 2.099999999999998,
+      "status": "EXPLICIT_ROUTE",
+      "route_centerline_outside_pads_mm": 2.3939325399999998,
+      "minimum_track_width_mm": 0.2,
+      "layers": [
+        "B.Cu"
+      ],
+      "via_ids": [],
+      "track_ids": [
+        "3e0b2555-15b8-4bb9-811c-4b71c250cdc7",
+        "da6562aa-4bd9-444a-a2d0-fb8a088a4cde"
+      ],
+      "path_nodes": [
+        [
+          "region",
+          "C101.1@40512268-daae-5385-9951-8447b8e401ac",
+          "B.Cu"
+        ],
+        [
+          "B.Cu",
+          31.0511476,
+          34.0011476
+        ],
+        [
+          "B.Cu",
+          30.8875,
+          33.8375
+        ],
+        [
+          "B.Cu",
+          30.8875,
+          31.6750001
+        ],
+        [
+          "region",
+          "U101.1@3976c6a2-2dda-5cde-bb35-e2bb42a2acc7",
+          "B.Cu"
+        ]
+      ]
+    },
+    {
+      "path": "Input controller bypass return",
+      "start": "C101.2",
+      "end": "U101.4",
+      "net": "GND",
+      "start_xy_mm": [
+        33.45000000000003,
+        34.50000000000002
+      ],
+      "end_xy_mm": [
+        30.887500000000003,
+        29.524999999999974
+      ],
+      "pad_edge_gap_mm": 4.3318849988702395,
+      "status": "ZONE_RETURN_REQUIRED_OR_EXPLICIT_DISCONTINUITY"
+    }
+  ],
+  "switch_copper": [
+    {
+      "net": "5V_SW",
+      "layer": "F.Cu",
+      "explicit_area_mm2": 28.783519659738104,
+      "nearest_sensitive": [
+        {
+          "net": "5V_FB",
+          "item": "U121.5@73b9a645-0844-5cb1-96b1-ec11b1aba8c3",
+          "gap_mm": 1.055376917249675
+        },
+        {
+          "net": "5V_FB",
+          "item": "cc8e0d31-bb6e-4ac2-808f-a0c80eeda622",
+          "gap_mm": 1.7517312038446087
+        },
+        {
+          "net": "5V_FB",
+          "item": "f34a2b30-093b-44c5-aaaa-297b5de469c7",
+          "gap_mm": 2.2200447011733364
+        },
+        {
+          "net": "5V_FB",
+          "item": "R123.1@0f5bf535-6652-5ef9-a463-ff3c78b30acd",
+          "gap_mm": 3.3716267647101237
+        },
+        {
+          "net": "5V_FB",
+          "item": "11881094-6174-4a34-9861-1f82795db763",
+          "gap_mm": 3.800387529818712
+        },
+        {
+          "net": "5V_FB",
+          "item": "R122.2@b7ded614-26ca-55b4-a62e-3aa0eb2e13f9",
+          "gap_mm": 4.922347884849731
+        }
+      ]
+    },
+    {
+      "net": "3V3_SW",
+      "layer": "B.Cu",
+      "explicit_area_mm2": 9.83637676026476,
+      "nearest_sensitive": [
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "U151.9@313f41ed-83ca-5c52-8f7c-457fa34b6b62",
+          "gap_mm": 5.510740494661952
+        },
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "9dada98e-9744-4f7b-825e-06ca18936914",
+          "gap_mm": 6.110031107223426
+        },
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "793f2128-9826-5fe1-842b-15470c4341ee",
+          "gap_mm": 6.211185588870784
+        },
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "7d934a17-95c7-55bd-97a9-c64e0386d87e",
+          "gap_mm": 6.411185970620077
+        },
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "ab562c81-9e3f-5fe5-a894-77105460f65a",
+          "gap_mm": 6.439268443613511
+        },
+        {
+          "net": "3V3_FB_ADJ",
+          "item": "R156.1@20022e64-319a-505c-bb14-e7c85c2a6261",
+          "gap_mm": 6.786776920759452
+        }
+      ]
+    }
+  ],
+  "pad_count": 502,
+  "segment_count": 2457
+}

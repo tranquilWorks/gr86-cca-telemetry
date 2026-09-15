@@ -1,0 +1,85 @@
+I32 input component trajectory, transparent approximation
+.func clip(x,a,b) {min(max(x,a),b)}
+
+.func if(c,a,b) {c ? a : b}
+.model d_small D(Is=1n N=1.5 Rs=.02)
+.model d_body D(Is=1n N=1.3 Rs=.02 Cjo=100p)
+.param CAP_SCALE=0.5 RDS_SCALE=3.34 IUP=6e-05 TON=22m OVREF=.5075 UVREF=.5 HYS=.025
+.param CABLE_L=1e-05 CABLE_R=2 CgsQ=3.9e-09 CgdQ=3e-11
+VBAT BAT 0 PWL(0 0 1m 0 2m 12 60m 12 60.001m 50 60.051m 50 60.052m 12)
+Rcable BAT cable_r R={time>=0.06 && time<=0.060052 ? CABLE_R : .1}
+Lcable cable_r RAW_12V {CABLE_L}
+Rfuse RAW_12V FUSED_12V 0.05
+VD101 FUSED_12V diode101 0
+D101 diode101 REV_BLOCKED_12V d_input
+.model d_input D(Is=1n N=1.3 Rs=.10 Cjo=1e-11)
+R101 REV_BLOCKED_12V PROTECT_CTRL_VIN 10000
+C101 PROTECT_CTRL_VIN 0 {100n*CAP_SCALE}
+Bctrl PROTECT_CTRL_VIN 0 I={90u*clip(v(PROTECT_CTRL_VIN)/2.5,0,1)}
+Bctrlout PROTECTED_12V 0 I={110u*clip(v(PROTECTED_12V)/2.5,0,1)}
+VD102 PROTECT_CTRL_VIN tvs102 0
+BD102 tvs102 0 I={max((v(tvs102)-40.5)/1.54,0)}
+D102f 0 tvs102 d_small
+R102 REV_BLOCKED_12V INPUT_UV 549k
+R103 INPUT_UV INPUT_OV 24.3k
+R104 INPUT_OV 0 14.7k
+R105 PROTECT_CTRL_VIN INPUT_SHDN 510k
+Rshdn INPUT_SHDN 0 1e12
+Vlogic one 0 1
+S_input_uv one uv_ok INPUT_UV 0 input_uv_sw
+R_input_uv uv_ok 0 1k
+.model input_uv_sw SW(Ron=0.01 Roff=1e12 Vt={UVREF+HYS/2} Vh={HYS/2})
+Sov one ov_bad INPUT_OV 0 ov_sw
+Rov ov_bad 0 1k
+.model ov_sw SW(Ron=0.01 Roff=1e12 Vt={OVREF-HYS/2} Vh={HYS/2})
+Bpvalid pvalid 0 V={if(v(uv_ok)>0.5 && v(ov_bad)<0.5 && v(PROTECT_CTRL_VIN)>2.4 && v(INPUT_SHDN)>1.2,1,0)}
+* Charge ptimer is computational state, not an added physical capacitor.
+B_p_timer 0 ptimer I={if(v(pvalid)>0.5,if(v(ptimer)<1.02,1u,0),-v(ptimer)/1)}
+C_p_timer ptimer 0 {TON*1u} IC=0
+R_p_timer ptimer 0 1e12
+Ballow allow 0 V={if(v(pvalid)>0.5 && v(ptimer)>1,1,0)}
+* 2us assumed fast-path RC lag; 6us fast-off delay screened separately by parameter.
+Rdelay allow allow_d 1
+Cdelay allow_d 0 1.4426954167009308e-05
+* Gate source follows the datasheet pullup current and 11V overdrive; fault discharges.
+Bgate 0 INPUT_GATE_DRIVE I={if(v(allow_d)>0.5,IUP*clip((v(PROTECTED_12V)+11-v(INPUT_GATE_DRIVE)),0,1),-clip(v(INPUT_GATE_DRIVE,PROTECTED_12V)/10,0,0.03))}
+R106 INPUT_GATE_DRIVE INPUT_GATE 10
+R107 INPUT_GATE_DRIVE INPUT_GATE_SLEW 5.1k
+C102 INPUT_GATE_SLEW 0 {10n*CAP_SCALE}
+Rgate INPUT_GATE PROTECTED_12V 1e9
+* Level-1 MOS fit to typical Rds_on/Vth. NOT ST's proprietary transistor model.
+VQ101 REV_BLOCKED_12V qdrain 0
+M_Q101 qdrain INPUT_GATE qsrc qsrc n_q101 W=1 L=1
+.model n_q101 NMOS(LEVEL=1 VTO=3 KP=5 LAMBDA=0)
+Rq101 qsrc PROTECTED_12V {0.075*RDS_SCALE}
+Cqgs INPUT_GATE qsrc {CgsQ}
+Cqgd INPUT_GATE qdrain {CgdQ}
+Cqds qdrain qsrc 5e-11
+Dqbody qsrc qdrain d_body
+VD104 INPUT_GATE clamp104 0
+BD104 clamp104 PROTECTED_12V I={max((v(clamp104,PROTECTED_12V)-15.6)/20,0)}
+D104forward PROTECTED_12V INPUT_GATE d_small
+VD103 PROTECTED_12V tvs103 0
+BD103 tvs103 0 I={max((v(tvs103)-32.45)/0.2684,0)}
+D103f 0 tvs103 d_small
+C103 PROTECTED_12V 0 {2.2u*CAP_SCALE}
+R111 PROTECTED_12V 0 100k
+R109 PROTECTED_12V BUCK_FEED 0.005
+R110 BUCK_FEED VIN5 0.47
+C121 VIN5 0 {2.2u*CAP_SCALE}
+C122 VIN5 0 {2.2u*CAP_SCALE}
+C123 VIN5 0 {100n*CAP_SCALE}
+C129 VIN5 0 {2.2u*CAP_SCALE}
+
+Bload5 VIN5 0 I={0.5*clip(v(VIN5)/5,0,1)}
+.options method=gear maxord=2 reltol=1e-4 abstol=1n vntol=1u
+.control
+set wr_vecnames
+set wr_singlescale
+save v(BAT) v(RAW_12V) v(FUSED_12V) v(REV_BLOCKED_12V) v(PROTECT_CTRL_VIN) v(INPUT_UV) v(INPUT_OV) v(INPUT_SHDN) v(INPUT_GATE_DRIVE) v(INPUT_GATE) v(PROTECTED_12V) v(VIN5) i(VQ101) i(VD101) i(VD102) i(VD103) i(VD104) i(Lcable) v(allow_d)
+tran 1e-07 0.1 0 1e-07
+wrdata waveform.tsv v(BAT) v(RAW_12V) v(FUSED_12V) v(REV_BLOCKED_12V) v(PROTECT_CTRL_VIN) v(INPUT_UV) v(INPUT_OV) v(INPUT_SHDN) v(INPUT_GATE_DRIVE) v(INPUT_GATE) v(PROTECTED_12V) v(VIN5) i(VQ101) i(VD101) i(VD102) i(VD103) i(VD104) i(Lcable) v(allow_d)
+echo I32_FINISHED
+quit
+.endc
+.end

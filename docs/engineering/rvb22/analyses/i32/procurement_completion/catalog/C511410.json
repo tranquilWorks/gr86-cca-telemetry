@@ -1,0 +1,18 @@
+{
+  "componentCode": "C511410",
+  "componentModelEn": "S5JHE3_A/H",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "SMC(DO-214AB)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2004181706_Vishay-Intertech-S5JHE3-A-H_C511410.pdf",
+  "describe": "-55\u2103~+150\u2103 1 Independent 1.15V@5A 100A 10uA@600V 5A 600V SMC(DO-214AB) Diodes - General Purpose ROHS",
+  "overseasStockCount": 403,
+  "preMinPurchaseNum": 25,
+  "canPresaleNumber": 400,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C511410",
+  "retrieved_at_UTC": "2026-09-15T21:28:19.734280+00:00",
+  "response_sha256": "95c7281f785668e814f358b75536f3748fbb072109eeb2958e2f52a793a30a0e"
+}

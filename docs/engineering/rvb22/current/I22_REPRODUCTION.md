@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [../analyses/i32/procurement_redline/README.md](../analyses/i32/procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/current/I22_REPRODUCTION.md`.
+
+---
+
 # Reproduce the I22 review
 
 Run model scripts from the complete recovery root. They use the archived native

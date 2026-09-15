@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE_FROZEN_PROCUREMENT_REDLINE_DESKTOP_VERIFIED",
+  "gates": 14,
+  "thermal": {
+    "release_heat_W": 2.940859375,
+    "stacked_80pct_heat_W": 3.0670819555441735,
+    "required_U121_efficiency_at_U151_80pct": 0.8346306359288465,
+    "cases": [
+      {
+        "case": "retained_I25_vector_on_I32_copper",
+        "coarse_board_max_C": 101.64108987205934,
+        "fine_board_max_C": 107.5179680978438,
+        "one_step_allowance_C": 5.876878225784466,
+        "board_screen_with_one_step_C": 113.39484632362827,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_measured_loss_allocation",
+        "coarse_board_max_C": 101.54749526399533,
+        "fine_board_max_C": 107.40959656476468,
+        "one_step_allowance_C": 5.862101300769353,
+        "board_screen_with_one_step_C": 113.27169786553404,
+        "source_heat_W": 2.940859375
+      },
+      {
+        "case": "I32_stacked_80pct_sensitivity",
+        "coarse_board_max_C": 102.02147115774711,
+        "fine_board_max_C": 107.89241522060256,
+        "one_step_allowance_C": 5.870944062855443,
+        "board_screen_with_one_step_C": 113.763359283458,
+        "source_heat_W": 3.0670819555441735
+      }
+    ],
+    "stacked_board_screen_C": 113.763359283458,
+    "local_package_screen": {
+      "U152": {
+        "cases": [
+          {
+            "case": "I32_measured_loss_allocation",
+            "coarse_C": 77.73026218078279,
+            "fine_C": 77.91539009661945,
+            "one_step_C": 78.1005180124561
+          },
+          {
+            "case": "I32_stacked_80pct_sensitivity",
+            "coarse_C": 78.24298675897741,
+            "fine_C": 78.40513530723216,
+            "one_step_C": 78.5672838554869
+          }
+        ],
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.5335137927211607,
+        "conditional_Tj_screen_C": 105.7764872842661,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.223512715733904
+      },
+      "U153": {
+        "cases": [
+          {
+            "case": "I32_measured_loss_allocation",
+            "coarse_C": 87.02894891496881,
+            "fine_C": 89.57924353930674,
+            "one_step_C": 92.12953816364468
+          },
+          {
+            "case": "I32_stacked_80pct_sensitivity",
+            "coarse_C": 87.46682806935053,
+            "fine_C": 90.01162840942177,
+            "one_step_C": 92.55642874949302
+          }
+        ],
+        "RthetaJB_allocation_K_W": 51,
+        "peak_dissipation_W": 0.25685895427801414,
+        "conditional_Tj_screen_C": 105.65623541767174,
+        "minimum_TSD_C": 130,
+        "margin_C": 24.343764582328262
+      }
+    },
+    "L121_conditional_screen": {
+      "peak_as_RMS_A": 0.942206123,
+      "rated_current_A": 2.5,
+      "typical_rise_at_rated_current_C": 40,
+      "global_board_one_step_C": 113.763359283458,
+      "copper_TC_per_K": 0.00393,
+      "allocated_winding_C": 121.60197565712534,
+      "rated_max_including_self_rise_C": 125,
+      "margin_C": 3.3980243428746633,
+      "basis": "Manufacturer BPCI M00 rated-current definition; typical thermal scaling, not guaranteed measurement or validation."
+    },
+    "R156_R169_global_board_to_125C_margin_C": 11.236640716541999,
+    "old_board_correlation_trigger_C": 112.8829809018675,
+    "correlation_trigger_unchanged": true,
+    "mesh_convergence_proven": false,
+    "junction_temperature_proven": false,
+    "immediate_air_proven": false,
+    "physical_tests": 0,
+    "source_rebind": "METADATA_ONLY_REBIND.json"
+  }
+}

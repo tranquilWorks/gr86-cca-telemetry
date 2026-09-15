@@ -1,0 +1,18 @@
+{
+  "componentCode": "C23067437",
+  "componentModelEn": "PTFR0603Q4K70N9",
+  "componentBrandEn": "RESI",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280131_RESI-PTFR0603Q4K70N9_C23067437.pdf",
+  "describe": "-55\u2103~+155\u2103 100V 100mW 4.7k\u03a9 Thin Film Resistor \u00b10.02% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 6642,
+  "preMinPurchaseNum": 20,
+  "canPresaleNumber": 6637,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C23067437",
+  "retrieved_at_UTC": "2026-09-15T21:05:06.786278+00:00",
+  "response_sha256": "ad023fcafe10fed832fe8991471c0ed7a40e08ec03473568fbeac0df23eea51f"
+}

@@ -1,0 +1,11 @@
+# SPICE execution scope — not a power signoff
+
+The TI LM5164-Q1 unencrypted model was executed locally with ngspice 39 after explicitly loading the packaged XSPICE code-model libraries and selecting PSpice compatibility. The earlier A-device-loading failure was therefore not proof that the model could never load in ngspice. The vendor library was not edited.
+
+Loading a model is not validation. The coarse-step startup completed but gave a timestep-dependent, unusable result. The finer-step 1 ms run only covered early soft-start. A longer fine-step startup did not finish within its finite execution bound, and the DC/UIC case aborted at an internal one-shot with a too-small timestep. **None of these experiments is accepted as a regulation, startup, stability or corner pass.** The engine can print measurement values after an aborted transient; they must not be used without confirming the requested time range was actually completed.
+
+The input deck preserves the fitted U121 external nominal R/C/L network. Its input source and resistive load are test fixtures; capacitors and inductors are ideal nominal elements. This is not a full-board model and does not establish passive derating, parasitics, protection timing, thermal shutdown, quiescent current or LM63615-Q1 behavior. The vendor's own model header excludes operating quiescent current and thermal shutdown. The LM63615-Q1 vendor library remains encrypted and unexecuted.
+
+`SPICE_EXECUTION.json` records the actual outcomes and hashes. `lm5164_startup.cir` is the finer-step replay deck; download TI's unchanged SNVMBP2 model and place its `LM5164-Q1_TRANS.LIB` next to the deck before running. An installed ngspice needs its XSPICE code-model libraries loaded and `set ngbehavior=ps` in the local `.spiceinit`. The code models must match the executable version. Do not use a model load, normal exit status or partial waveform as a release criterion.
+
+The product package is pushed without making another CI run a publication gate. Full coupled vendor-model SPICE remains an engineering verification item, not a CI status item. The I28 arithmetic, native CAD/firmware evidence and I25 conditional thermal disposition remain separately scoped evidence; none is replaced by a fabricated simulation pass.

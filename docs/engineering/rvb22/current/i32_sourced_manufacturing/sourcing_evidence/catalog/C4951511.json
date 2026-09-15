@@ -1,0 +1,17 @@
+{
+  "componentCode": "C4951511",
+  "componentModelEn": "T598X687M006ATE025",
+  "componentBrandEn": "KEMET",
+  "componentSpecificationEn": "2917",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401261015_KEMET-T598X687M006ATE025_C4951511.pdf",
+  "describe": "-55\u2103~+125\u2103 25m\u03a9@100kHz 6.3V 680uF \u00b120% 2917 Tantalum Capacitors ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 6,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C4951511",
+  "retrieved_at_UTC": "2026-09-15T21:06:08.369714+00:00",
+  "response_sha256": "bfcbb30796b3b017562c7fdb7637d93e9c0e750dfa91f06cf90bdc70deaba82c"
+}

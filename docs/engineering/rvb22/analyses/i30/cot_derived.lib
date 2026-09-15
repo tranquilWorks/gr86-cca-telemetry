@@ -1,0 +1,40 @@
+* LM5164-Q1 functional COT DERIVATIVE, not TI's transistor/macromodel.
+* Manufacturer architectural parameters: 1.2V FB; 3ms nominal softstart;
+* t_on(us)=RON(kohm)/(2.5*VIN); minoff50ns (250ns below300ns ton).
+* External L, DCR, caps, feedback and type-3 ripple network are in the deck.
+* Conservative minimum peak/valley limits selected, not exact foldback state logic.
+* High-side resistance .725ohm, synchronous .34ohm are nominal typical values.
+* Bootstrap/VCC dynamics, charge storage, deadtime, sleep, thermal and IQ omitted.
+.subckt COT_DERIVED vin sw fb en ilmon params: ron=31600 ss=3m vref=1.2
++ hs=.725 ls=.34 peak=1.25 valley=.95
+Vone one 0 1
+Suv one uvok vin 0 SUV
+Ruv uvok 0 1k
+.model SUV sw ron=1 roff=1e12 vt=5.9 vh=.1
+Sen one enok en 0 SEN
+Ren enok 0 1k
+.model SEN sw ron=1 roff=1e12 vt=1.45 vh=.05
+Bgood good 0 v={v(uvok)>.5 && v(enok)>.5 ? 1 : 0}
+Css soft 0 1n ic=0
+Bss 0 soft i={v(good)>.5 ? 1n*min((1-v(soft))/10u,1/ss) : -v(soft)*1n/1u}
+Bton ton 0 v={max(.05,min(10,.0004*ron/max(v(vin),6)))}
+Btoff toff 0 v={v(ton)<.3 ? .25 : .05}
+Bpeak peak_raw 0 v={.5*(1+tanh((v(ilmon)-peak)/.001))}
+Rdelay peak_raw peak_del 1k
+Cdelay peak_del 0 144.27p
+Bclear clear 0 v={max(1-v(good),v(peak_del))}
+* Finite 0.1mV/1mA comparator transition widths are numerical assumptions.
+Btr tr0 0 v={.5*(1+tanh((vref*min(max(v(soft),0),1)-v(fb))/.0001))*.5*(1+tanh((.5-v(pwm))/.01))*.5*(1+tanh((.5-v(off))/.01))*v(good)*.5*(1+tanh((valley-v(ilmon))/.001))}
+Rtr tr0 tr 1k
+Ctr tr 0 2p
+Apulse tr ton clear pwm CPULSE
+.model CPULSE oneshot(cntl_array=[0 10] pw_array=[0 10u] clk_trig=.5 retrig=FALSE pos_edge_trig=TRUE out_low=0 out_high=1 rise_time=2n fall_time=2n rise_delay=2n fall_delay=2n)
+Aoff pwm toff null off COFF
+.model COFF oneshot(cntl_array=[0 10] pw_array=[0 10u] clk_trig=.5 retrig=FALSE pos_edge_trig=FALSE out_low=0 out_high=1 rise_time=2n fall_time=2n rise_delay=2n fall_delay=2n)
+Shigh vin sw pwm 0 HS
+.model HS sw ron={hs} roff=1e9 vt=.5 vh=.05
+* Idealized unidirectional synchronous freewheel path: ~zero knee plus Rds_on.
+* This is NOT a physical replacement diode specification or a deadtime model.
+Bfree 0 sw I={max(-v(sw),0)/ls}
+Csw sw 0 100p
+.ends COT_DERIVED

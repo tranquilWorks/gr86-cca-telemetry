@@ -1,0 +1,3961 @@
+{
+  "source_report": {
+    "source_report_sha256": "daa279f665dd6cad14f4ff36043abbce38c6ee51598e9ae7236d9974563476ac",
+    "source_pcb_sha256": "b6c704c0c97685a68ba708d320347148e5136c182c221d86627ff5b319954b3c",
+    "filled_pcb_sha256": "62c08e7050fe95df0a576ece85a051b4049e9684bf8ea5f73e8949657363276b"
+  },
+  "source_PCB_sha256": "a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936",
+  "reference_source_PCB_sha256": "5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8",
+  "filled_PCB_sha256": "11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1",
+  "count": 54,
+  "counts": {
+    "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION": 48,
+    "ISOLATED_TX_STUB_NO_RECEIVE_PATH": 6
+  },
+  "rows": [
+    {
+      "finding_id": "I20-GND-01",
+      "uuid": "045a8466-bd32-4eaa-b1f0-600ad27ea23b",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        25.5,
+        27.5
+      ],
+      "end": [
+        25.6,
+        27.4
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.14142135623731153,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "2c1f9978-0323-4c3f-beb7-0c87277e47cd",
+          "xy_mm": [
+            24.45,
+            29.5
+          ],
+          "distance_to_signal_segment_mm": 2.258871399615304,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 2.7570656176449626,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 4.555559789970932,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.369515966349035,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-02",
+      "uuid": "2af2bbcd-0762-43fc-990f-932f16c948dc",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        25.6,
+        25.8
+      ],
+      "end": [
+        24.9,
+        25.1
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.5748749846775447,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 2.5491420125210755,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "25db6a6e-8156-4d4a-a075-55ba4ac03d64",
+          "xy_mm": [
+            26.475,
+            22
+          ],
+          "distance_to_signal_segment_mm": 3.4771576035607037,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 3.865060260849757,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.5016227221466111,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-03",
+      "uuid": "3cb08c20-61e0-4499-9533-e8c53f87870f",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        25.6,
+        27.4
+      ],
+      "end": [
+        25.6,
+        25.8
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.5999999999999979,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "2c1f9978-0323-4c3f-beb7-0c87277e47cd",
+          "xy_mm": [
+            24.45,
+            29.5
+          ],
+          "distance_to_signal_segment_mm": 2.394263978762578,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 2.7570656176449626,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 3.5033020138149684,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.4454039999999963,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-04",
+      "uuid": "532a64af-95c7-4e97-8200-a2b6caad1c40",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        38.6,
+        38.6
+      ],
+      "end": [
+        38.5,
+        38.6
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.10000000000000142,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "26a746e1-ed74-46c6-bc72-9f53442825da",
+          "xy_mm": [
+            35.9,
+            40.5
+          ],
+          "distance_to_signal_segment_mm": 3.220248437620924,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "99a97c9e-a9fe-44be-93f8-58f5c7174c14",
+          "xy_mm": [
+            38.875,
+            34.2
+          ],
+          "distance_to_signal_segment_mm": 4.408585374017383,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "7b5cb19f-890e-4a23-a261-041b15d76e17",
+          "xy_mm": [
+            43.351,
+            37.999
+          ],
+          "distance_to_signal_segment_mm": 4.788862286597932,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.39644315947629805,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-05",
+      "uuid": "6b8bcaa8-cd83-445e-9672-248530cf9ab1",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        23.9,
+        31.0
+      ],
+      "end": [
+        25.1,
+        29.8
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.9913580503692976,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "2c1f9978-0323-4c3f-beb7-0c87277e47cd",
+          "xy_mm": [
+            24.45,
+            29.5
+          ],
+          "distance_to_signal_segment_mm": 0.6717514421272217,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 2.960302487922474,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d45fed1a-9561-44cf-9969-767765783376",
+          "xy_mm": [
+            20.93,
+            36.479
+          ],
+          "distance_to_signal_segment_mm": 6.232201938320033,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 3.004306617397885,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-06",
+      "uuid": "9e2e97fc-9590-4daf-80c6-69c69e27069f",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        25.1,
+        28.0
+      ],
+      "end": [
+        25.5,
+        27.6
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.354257668947336,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "2c1f9978-0323-4c3f-beb7-0c87277e47cd",
+          "xy_mm": [
+            24.45,
+            29.5
+          ],
+          "distance_to_signal_segment_mm": 1.6347782724271824,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 2.741866302356845,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 4.646302293222,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.443781387445555,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-07",
+      "uuid": "a7d99572-0ff2-4ca3-9f29-3ee86f5182bc",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        39.6,
+        39.6
+      ],
+      "end": [
+        38.6,
+        38.6
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.35425766894732597,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "26a746e1-ed74-46c6-bc72-9f53442825da",
+          "xy_mm": [
+            35.9,
+            40.5
+          ],
+          "distance_to_signal_segment_mm": 3.301514803843837,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "7b5cb19f-890e-4a23-a261-041b15d76e17",
+          "xy_mm": [
+            43.351,
+            37.999
+          ],
+          "distance_to_signal_segment_mm": 4.078382277325162,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "99a97c9e-a9fe-44be-93f8-58f5c7174c14",
+          "xy_mm": [
+            38.875,
+            34.2
+          ],
+          "distance_to_signal_segment_mm": 4.408585374017383,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.39644315947629805,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-08",
+      "uuid": "df746851-8e9b-46eb-9007-0b9aef9e0fc6",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        25.5,
+        27.6
+      ],
+      "end": [
+        25.5,
+        27.5
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.10000000000000142,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "2c1f9978-0323-4c3f-beb7-0c87277e47cd",
+          "xy_mm": [
+            24.45,
+            29.5
+          ],
+          "distance_to_signal_segment_mm": 2.17082933460924,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3a513935-e4c5-4e87-b330-c31c7fc24718",
+          "xy_mm": [
+            27.9179,
+            28.8929
+          ],
+          "distance_to_signal_segment_mm": 2.741866302356845,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "3ca881c1-23b3-4a9b-8650-0a450014aef6",
+          "xy_mm": [
+            22.625,
+            23.95
+          ],
+          "distance_to_signal_segment_mm": 4.5681642921418675,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.369515966349035,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-09",
+      "uuid": "e290dfec-5c37-43ea-8644-3d01c3213a09",
+      "net": "CAN_RX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        38.5,
+        38.6
+      ],
+      "end": [
+        36.8,
+        36.9
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.354257668947336,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U301 RXD through R302 1kohm into GPIO4; receive path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "26a746e1-ed74-46c6-bc72-9f53442825da",
+          "xy_mm": [
+            35.9,
+            40.5
+          ],
+          "distance_to_signal_segment_mm": 3.1819805153394642,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "99a97c9e-a9fe-44be-93f8-58f5c7174c14",
+          "xy_mm": [
+            38.875,
+            34.2
+          ],
+          "distance_to_signal_segment_mm": 3.4052349404996987,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "cafb2237-84ca-404d-9196-36700dd7f83f",
+          "xy_mm": [
+            32.4,
+            36
+          ],
+          "distance_to_signal_segment_mm": 4.491102314577122,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.42992209453430086,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-10",
+      "uuid": "072c6d8e-2a6f-4e7a-9f1b-b812ffe223f4",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.55,
+        15.95
+      ],
+      "end": [
+        80.45,
+        16.05
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.1414213562373065,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.655746159730274,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.2870959827787205,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 3.9996752368161146,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2797461974876871,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-11",
+      "uuid": "0eec71a5-dda0-408b-9559-9ccd0314bf57",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.75,
+        15.8
+      ],
+      "end": [
+        80.6,
+        15.95
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.21213203435596725,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.8096621678212451,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.2500000000000036,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.173703631069171,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.3298820633633359,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-12",
+      "uuid": "1e022bfe-d6e7-4f42-8d71-4fb4fd26698b",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.7,
+        16.45
+      ],
+      "end": [
+        74.65,
+        16.45
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.04999999999999716,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.1285210828178265,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.803876423759882,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.076664071489856,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.8704879041933699,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-13",
+      "uuid": "3cd9494b-1d5d-47a2-aa04-327840a5c89e",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.684766,
+        14.25
+      ],
+      "end": [
+        81.7,
+        14.25
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.015234000000006631,
+      "current_adjacent_gap_mm": 0.015234000000006631,
+      "current_gap_WKT": "LINESTRING (81.684766 14.25, 81.7 14.25)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 2.824786945374287,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.8711522555859017,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.743680006071236,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-14",
+      "uuid": "4f41a1a1-3925-4a4f-a382-cd3b39df0961",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.75,
+        16.4
+      ],
+      "end": [
+        74.7,
+        16.45
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.07071067811865325,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.103711482119158,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.803876423759882,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.076664071489856,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.9670804477519007,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-15",
+      "uuid": "6e2aaa09-c44c-4e4f-ba78-c2933e8e23ce",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.7,
+        14.25
+      ],
+      "end": [
+        81.2,
+        14.75
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.7071067811865476,
+      "current_adjacent_gap_mm": 0.7071067811865476,
+      "current_gap_WKT": "LINESTRING (81.7 14.25, 81.2 14.75)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 2.1510347337969717,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.7335873865673355,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.743680006071236,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-16",
+      "uuid": "72210dcc-1fd3-439b-9607-58e3dfff71d0",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.85,
+        15.5
+      ],
+      "end": [
+        80.8,
+        15.55
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.07071067811865325,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.2567227323483081,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.0516389039334255,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.503354527460613,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.27603426304806933,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-17",
+      "uuid": "725c830d-d2ae-4878-bbdc-56775aa17cc3",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.8,
+        16.4
+      ],
+      "end": [
+        74.75,
+        16.4
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.04999999999999716,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.058640813740949,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.78834788781643,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.0530747960777305,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.0895550416328514,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-18",
+      "uuid": "871a1d07-8555-46ec-8b60-8f49faecf1a8",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.15,
+        15.15
+      ],
+      "end": [
+        80.85,
+        15.45
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.4242640687119358,
+      "current_adjacent_gap_mm": 0.19869417708630266,
+      "current_gap_WKT": "LINESTRING (81.15 15.15, 81.009502 15.290498000000003)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.3685034987171194,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9706901555025977,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.588878076392962,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-19",
+      "uuid": "956c6792-0061-4c9c-8585-c63ebefd8fac",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.75,
+        15.75
+      ],
+      "end": [
+        80.75,
+        15.8
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.05000000000000071,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.0147918633892372,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.2070235421649183,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.3651806377285265,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.31451808786182567,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-20",
+      "uuid": "95963305-6d4d-40ef-a89e-319eb932f057",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.2,
+        14.75
+      ],
+      "end": [
+        81.2,
+        15.05
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.3000000000000007,
+      "current_adjacent_gap_mm": 0.3000000000000007,
+      "current_gap_WKT": "LINESTRING (81.2 14.75, 81.2 15.05)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.8893784761135093,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.7335873865673355,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.828301978956992,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-21",
+      "uuid": "ac66323b-6daf-456b-be43-527f22f87912",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.25,
+        16.1
+      ],
+      "end": [
+        75.1,
+        16.1
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 5.150000000000006,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.5619990000000001,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 1.200999999999997,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.1000000000000014,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2990039999999965,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-22",
+      "uuid": "af0da207-d5cb-4577-8a99-cb952df6384c",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.3,
+        16.05
+      ],
+      "end": [
+        80.25,
+        16.1
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.07071067811865325,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.5631191046315158,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.277575323314479,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 3.7941009475236713,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2799484400927594,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-23",
+      "uuid": "be7d2d0c-cb53-4982-a131-9d9c1571c818",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.8,
+        15.55
+      ],
+      "end": [
+        80.8,
+        15.7
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.14999999999999858,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.1261670950622735,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.064718584144393,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.447179105905225,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.27603426304806933,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-24",
+      "uuid": "c0e67caa-392c-4430-ad96-d9433202b6d0",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.8,
+        15.7
+      ],
+      "end": [
+        80.75,
+        15.75
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.07071067811865325,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.0575927505429497,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.1906112267087643,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.382625012478255,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.31451808786182567,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-25",
+      "uuid": "c40ec842-5bc6-4d58-a6d1-c5903c6221f3",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.45,
+        16.05
+      ],
+      "end": [
+        80.3,
+        16.05
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.15000000000000568,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.6179425750027266,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.277575323314479,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 3.857486487338614,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2799484400927594,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-26",
+      "uuid": "d792afe7-e69c-4a7d-a033-a2b995d506c1",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        75.1,
+        16.1
+      ],
+      "end": [
+        74.8,
+        16.4
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.42426406871192446,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 1.961632483417829,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.78834788781643,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.0530747960777305,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.1861475851913823,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-27",
+      "uuid": "d940ea9d-cb9c-43f3-a104-0c43f56d70f9",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.15,
+        15.1
+      ],
+      "end": [
+        81.15,
+        15.15
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.05000000000000071,
+      "current_adjacent_gap_mm": 0.05000000000000071,
+      "current_gap_WKT": "LINESTRING (81.15 15.1, 81.15 15.15)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.7780048442006597,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9347061181658454,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.839938016132022,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-28",
+      "uuid": "e40f0733-22d1-4330-8ecb-7f89cb97dde9",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.6,
+        16.5
+      ],
+      "end": [
+        74.0,
+        16.5
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.39133793507703274,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.2018633018423297,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.821947935716029,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.10259456499887,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.006827029174592455,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-29",
+      "uuid": "e763499f-993d-4103-b304-2d553d232aa2",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.65,
+        16.45
+      ],
+      "end": [
+        74.6,
+        16.5
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.0707106781186633,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.174442917162913,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 4.821947935716029,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eb93c0d7-3450-5704-8eca-1f9154b4f56c",
+          "xy_mm": [
+            77.919766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.10259456499887,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.7480133103123916,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-30",
+      "uuid": "eebb0223-b76c-4307-ac5f-534ba2222d94",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.85,
+        15.45
+      ],
+      "end": [
+        80.85,
+        15.5
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.05000000000000071,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.3244251303871408,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.010813843464919,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.568938826467255,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.3190040000000067,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-31",
+      "uuid": "fcc8fd83-008f-4b65-baf6-c8835bc41ffa",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        80.6,
+        15.95
+      ],
+      "end": [
+        80.55,
+        15.95
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.04999999999999716,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 0.7870850182801097,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.2870959827787205,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 4.126427268230958,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2797461974876871,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-32",
+      "uuid": "ff83a906-e673-4cf7-a47a-ba6b8551df15",
+      "net": "CAN_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        81.2,
+        15.05
+      ],
+      "end": [
+        81.15,
+        15.1
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.07071067811865199,
+      "current_adjacent_gap_mm": 0.07071067811865199,
+      "current_gap_WKT": "LINESTRING (81.2 15.05, 81.15 15.1)",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO5 launch; R301 DNP isolates this stub from TXD. No intended release transitions.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 1.8207144548228904,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 2.9344931419241798,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a9ac3d54-6f01-559f-9fa7-0573d258861d",
+          "xy_mm": [
+            85.7,
+            16.8
+          ],
+          "distance_to_signal_segment_mm": 4.828301978956992,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": null,
+      "current_disposition": "ISOLATED_TX_STUB_NO_RECEIVE_PATH",
+      "historical_gap_excess_return_detour_mm": null,
+      "historical_gap_excess_loop_inductance_nH": null,
+      "zero_excess_interpretation": "No numerical loop bound is claimed for the persistent void.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-33",
+      "uuid": "25582b89-db2e-43d7-981f-02020b9d8e1b",
+      "net": "GPS_PPS_RAW",
+      "layer": "F.Cu",
+      "start": [
+        66.1384,
+        20.35
+      ],
+      "end": [
+        65.2204,
+        19.432
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.2982480502585079,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D PPS into U402 LVC input; PPS repetition frequency is not edge rate.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.8877838475665109,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.1231684112367148,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 1.8124388431061624,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.23999321310757737,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-34",
+      "uuid": "8185e7db-ee07-4fd7-a826-8414a6865e61",
+      "net": "GPS_PPS_RAW",
+      "layer": "F.Cu",
+      "start": [
+        66.85,
+        20.35
+      ],
+      "end": [
+        66.1384,
+        20.35
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.4658564299294312,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D PPS into U402 LVC input; PPS repetition frequency is not edge rate.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 1.280624847486577,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.5884000000000071,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 2.1847229938827537,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.6366040000000055,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-35",
+      "uuid": "c4ce6319-1191-41be-aa07-efa4e330b188",
+      "net": "GPS_PPS_RAW",
+      "layer": "F.Cu",
+      "start": [
+        65.2204,
+        18.2666
+      ],
+      "end": [
+        64.6817,
+        17.7279
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.708515337894662,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D PPS into U402 LVC input; PPS repetition frequency is not edge rate.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.886570482251695,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 1.2337490506581954,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 2.1886049712088305,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.8721123935076307,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-36",
+      "uuid": "cc218c46-0308-40e5-9d51-4d705694dc81",
+      "net": "GPS_PPS_RAW",
+      "layer": "F.Cu",
+      "start": [
+        65.2204,
+        19.432
+      ],
+      "end": [
+        65.2204,
+        18.2666
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.18249799999999894,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D PPS into U402 LVC input; PPS repetition frequency is not edge rate.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.6704000000000008,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.1367322288032509,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 1.2337490506581954,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.0268645698843493,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-37",
+      "uuid": "96f6de5e-b182-4273-8f97-522f12d5181c",
+      "net": "GPS_RX_MODULE",
+      "layer": "F.Cu",
+      "start": [
+        48.608,
+        19.6
+      ],
+      "end": [
+        46.208,
+        17.2
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 2.1927353000323584,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U404 via R404 220ohm to PA1616D RX0.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 1.6850354595675416,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 2.811883532438709,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 4.071316402590196,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.37264644525818935,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-38",
+      "uuid": "d987c617-804a-4679-9bd8-28283068ff10",
+      "net": "GPS_RX_MODULE",
+      "layer": "F.Cu",
+      "start": [
+        46.208,
+        16.242
+      ],
+      "end": [
+        46.208,
+        17.2
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.34625717157287283,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U404 via R404 220ohm to PA1616D RX0.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 1.8920594599536242,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 1.9480639106559097,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 3.608119731937953,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.1681186397850458,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-39",
+      "uuid": "dd8c3ed9-3961-4d01-a35c-466b756a5d82",
+      "net": "GPS_RX_MODULE",
+      "layer": "F.Cu",
+      "start": [
+        46.208,
+        17.2
+      ],
+      "end": [
+        43.2,
+        17.2
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.0622577043446384,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U404 via R404 220ohm to PA1616D RX0.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 1.5565915488656623,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "ce26f401-7051-4574-8b1d-5173642e8f99",
+          "xy_mm": [
+            45.625,
+            19
+          ],
+          "distance_to_signal_segment_mm": 1.8000000000000007,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 2.625,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.1681186397850458,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-40",
+      "uuid": "41a7764a-5a47-4ef5-9c04-5601c37a983b",
+      "net": "GPS_TX_BUFFER",
+      "layer": "F.Cu",
+      "start": [
+        65.6221,
+        19.2838
+      ],
+      "end": [
+        65.6221,
+        17.4149
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.8399598611247576,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 0.802899999999994,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.072100000000006,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.5120121857974615,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.13534140949198084,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-41",
+      "uuid": "4c2c9bcc-465f-48f7-8aba-edc2c78e60f9",
+      "net": "GPS_TX_BUFFER",
+      "layer": "F.Cu",
+      "start": [
+        66.85,
+        19.85
+      ],
+      "end": [
+        66.1883,
+        19.85
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.6616999999999962,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 0.94339811320567,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.7129001401132535,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 1.8500000000000014,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.055034507086073,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-42",
+      "uuid": "7b76e172-33fa-481a-b7df-69239475d3cd",
+      "net": "GPS_TX_BUFFER",
+      "layer": "F.Cu",
+      "start": [
+        65.6221,
+        17.4149
+      ],
+      "end": [
+        65.2557,
+        17.0485
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.06317952046842774,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 0.9934739151079867,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.7913431887832156,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "9313a177-ce7e-4cfa-aa10-65b5226c2004",
+          "xy_mm": [
+            67.65,
+            19.35
+          ],
+          "distance_to_signal_segment_mm": 2.803032361568453,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.008982368555125343,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-43",
+      "uuid": "b07d2578-1af3-428d-b99a-5edf88c15e23",
+      "net": "GPS_TX_BUFFER",
+      "layer": "F.Cu",
+      "start": [
+        66.1883,
+        19.85
+      ],
+      "end": [
+        65.6221,
+        19.2838
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.8007277190156442,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "U402 LVC output BEFORE R402 220ohm.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.1565383045969602,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.5120121857974615,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "8b8f9a91-d4ad-46ec-9571-f5a4bf92d219",
+          "xy_mm": [
+            66.425,
+            18
+          ],
+          "distance_to_signal_segment_mm": 1.5141964370582797,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.017669251056539,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-44",
+      "uuid": "2ebc15b0-b51a-41bf-946c-ff6f3a81e3fd",
+      "net": "GPS_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        75.3348,
+        15.2617
+      ],
+      "end": [
+        74.5311,
+        16.0654
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.1366034400792617,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO17 output into U404 input; active GPS command path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.372696804271458,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 4.392267971105582,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 5.076643515099421,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.030551836784058,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-45",
+      "uuid": "b6cdb1a1-8e4b-4783-a3ca-8e1fe8b535a8",
+      "net": "GPS_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        75.3348,
+        14.25
+      ],
+      "end": [
+        75.3348,
+        15.2617
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.11219799999999935,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO17 output into U404 input; active GPS command path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.427164380506599,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c4b77cb8-d072-42b9-8301-53b10c615574",
+          "xy_mm": [
+            79.1,
+            13
+          ],
+          "distance_to_signal_segment_mm": 3.96726997316794,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "e8a99d91-f24f-4d78-bc80-1f5ee0f2c471",
+          "xy_mm": [
+            80.2145,
+            16.661999
+          ],
+          "distance_to_signal_segment_mm": 5.076643515099421,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 2.306830197142385,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-46",
+      "uuid": "c95780ba-0e27-468a-9cda-7a43529cb9ca",
+      "net": "GPS_TX_MCU",
+      "layer": "F.Cu",
+      "start": [
+        74.5311,
+        16.0654
+      ],
+      "end": [
+        71.8179,
+        16.0654
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 2.258211671214937,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "GPIO17 output into U404 input; active GPS command path.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "087b7dbe-edeb-419e-a078-5384a4b23b06",
+          "xy_mm": [
+            76.651,
+            17.301
+          ],
+          "distance_to_signal_segment_mm": 2.4537080857347315,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "d6f13485-203d-4e5f-9d6f-b55ecb7b9d4b",
+          "xy_mm": [
+            67.8,
+            15.525
+          ],
+          "distance_to_signal_segment_mm": 4.0540785105865895,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bfd86e59-5ad7-5341-82c0-a7a9fda47620",
+          "xy_mm": [
+            77.469766,
+            20.375
+          ],
+          "distance_to_signal_segment_mm": 5.216168135667798,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.2,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.008980657570106134,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-47",
+      "uuid": "5ab8b250-f249-46ef-9333-0ca5a0fd8853",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        43.9412,
+        15.4412
+      ],
+      "end": [
+        45.126,
+        15.4412
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.6835687909030312,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 0.8693551863306519,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 1.653203112143212,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 2.696819133720317,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.008968436368220978,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-48",
+      "uuid": "7340a8b1-5549-475e-b83e-7c513d27e970",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        63.0883,
+        20.4079
+      ],
+      "end": [
+        60.8967,
+        22.5995
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.5284057547768863,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 0.5629984191807262,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.4628463008805819,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c78a68c8-758f-4b03-8277-bb759062377e",
+          "xy_mm": [
+            62.35,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 1.7239893561156325,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.2391446849701652,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-49",
+      "uuid": "8e383894-8184-4892-bc76-56f1221146ca",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        41.784,
+        15.6812
+      ],
+      "end": [
+        42.7652,
+        14.7
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.22589103942463612,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 0.5524625281410507,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 2.4380065709509506,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 3.198079273564053,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 3.105052943383738,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-50",
+      "uuid": "9ca3e057-35fe-4351-b57b-00f28cbcf28c",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        63.75,
+        19.35
+      ],
+      "end": [
+        63.0883,
+        19.35
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.6617000000000033,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "c78a68c8-758f-4b03-8277-bb759062377e",
+          "xy_mm": [
+            62.35,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.8916764491675179,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bffc7fec-5edc-4445-b557-8eed950ea912",
+          "xy_mm": [
+            64.55,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.943398113205658,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.2430152412581243,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 2.9428371293674034,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-51",
+      "uuid": "aa15d57b-ad4e-4826-b670-9248d4b162aa",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        42.7652,
+        14.7
+      ],
+      "end": [
+        43.2,
+        14.7
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.43480000000000274,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 1.2645839987916974,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 2.003902442735175,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 2.8657459761814152,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 3.105052943383738,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-52",
+      "uuid": "c11d9b75-9d8c-4439-9f9c-4508fe69e679",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        43.2,
+        14.7
+      ],
+      "end": [
+        43.9412,
+        15.4412
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.0482150924309381,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "eeee06bb-7a2c-43c5-9f44-418ae3997e40",
+          "xy_mm": [
+            42.3515,
+            15.895
+          ],
+          "distance_to_signal_segment_mm": 1.4449727073547107,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "bc17732c-7fa9-4415-898c-aeac857741eb",
+          "xy_mm": [
+            45.2,
+            14.575
+          ],
+          "distance_to_signal_segment_mm": 1.5280313740234537,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "0231fcc5-e649-4b5f-9a8b-fedac48d0cdd",
+          "xy_mm": [
+            45.3,
+            12.75
+          ],
+          "distance_to_signal_segment_mm": 2.863782463805513,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 1.6424039999999993,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-53",
+      "uuid": "df4a467a-353f-453a-b068-ee9e3853c059",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        63.0883,
+        19.35
+      ],
+      "end": [
+        63.0883,
+        20.4079
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 0.4004979999999989,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 0.7382999999999952,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "c78a68c8-758f-4b03-8277-bb759062377e",
+          "xy_mm": [
+            62.35,
+            18.85
+          ],
+          "distance_to_signal_segment_mm": 0.8916764491675179,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "6df1e911-23cf-4a20-8920-9c54b12986ee",
+          "xy_mm": [
+            64.55,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 1.4617000000000004,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 2.1282586787758144,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    },
+    {
+      "finding_id": "I20-GND-54",
+      "uuid": "f10d72db-9df2-4749-8643-8c2518e40473",
+      "net": "GPS_TX_RAW",
+      "layer": "F.Cu",
+      "start": [
+        60.8967,
+        22.5995
+      ],
+      "end": [
+        51.1248,
+        22.5995
+      ],
+      "reference": "In1.Cu",
+      "historical_adjacent_gap_mm": 1.2919172919864366,
+      "current_adjacent_gap_mm": 0.0,
+      "current_gap_WKT": "LINESTRING EMPTY",
+      "current_both_plane_gap_mm": 0.0,
+      "source_scope": "PA1616D TX0 into U402 LVC input; raw UART source edge not specified.",
+      "edge_rate_class": "0.5/1/2/5ns source-edge sensitivity is pending, not a claimed silicon bound. Interface bit rate is not used as rise time.",
+      "same_layer_signal_at_finding": true,
+      "nearest_actual_ground_vias": [
+        {
+          "uuid": "ba214ee4-455a-417f-8302-9ce7b284ffdf",
+          "xy_mm": [
+            57.375,
+            21.5
+          ],
+          "distance_to_signal_segment_mm": 1.099499999999999,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "a5a21721-749d-48b9-846d-47be346ccaec",
+          "xy_mm": [
+            62.35,
+            20.35
+          ],
+          "distance_to_signal_segment_mm": 2.678120822517159,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        },
+        {
+          "uuid": "4c386a71-048e-4933-bce0-9c2d62ebb5b9",
+          "xy_mm": [
+            59.25,
+            19.85
+          ],
+          "distance_to_signal_segment_mm": 2.7494999999999976,
+          "layers": [
+            "F.Cu",
+            "B.Cu"
+          ],
+          "drill_mm": 0.3,
+          "pad_diameter_mm": 0.6
+        }
+      ],
+      "nominal_centerline_clearance_diameter_mm": 0.41118695146402495,
+      "current_disposition": "REMOVED_BY_PRIOR_COORDINATED_COPPER_REVISION",
+      "historical_gap_excess_return_detour_mm": 0,
+      "historical_gap_excess_loop_inductance_nH": 0,
+      "zero_excess_interpretation": "Only the incremental detour from this removed historical void is zero; trace/via loop inductance is NOT zero.",
+      "reference_transfer_proven": false,
+      "physical_test_claimed": false
+    }
+  ],
+  "gnd02_desktop_complete": false,
+  "physical_test_claimed": false
+}

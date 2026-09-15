@@ -1,0 +1,4889 @@
+[
+  {
+    "task": {
+      "id": "isolation_sns_upper",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "U152.10",
+      "z": "R160.1",
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        5.8
+      ],
+      [
+        44.65,
+        5.9
+      ],
+      [
+        45.6,
+        5.9
+      ],
+      [
+        46.175,
+        5.9
+      ],
+      [
+        46.9,
+        5.175
+      ]
+    ],
+    "length_mm": 2.691726188957805,
+    "diagnostics": {
+      "start_access": 55,
+      "end_access": 81,
+      "visited": 133,
+      "exact_edges_checked": 15
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_sns_pin",
+      "kind": "track",
+      "net": "3V3_ISO_SNS",
+      "a": "U152.8",
+      "z": "R160.2",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        4.8
+      ],
+      [
+        44.65,
+        4.7
+      ],
+      [
+        45.6,
+        4.7
+      ],
+      [
+        46.1,
+        5.2
+      ],
+      [
+        46.1,
+        5.4
+      ],
+      [
+        46.1,
+        6.025
+      ],
+      [
+        46.9,
+        6.825
+      ]
+    ],
+    "length_mm": 3.754898987322335,
+    "diagnostics": {
+      "start_access": 24,
+      "end_access": 81,
+      "visited": 142,
+      "exact_edges_checked": 23
+    }
+  },
+  {
+    "task": {
+      "id": "bulk_old_bridge",
+      "kind": "track",
+      "net": "+3V3",
+      "a": [
+        75.54,
+        18.7
+      ],
+      "z": [
+        77.06,
+        18.7
+      ],
+      "width": 0.6,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        75.54,
+        18.7
+      ],
+      [
+        77.06,
+        18.7
+      ]
+    ],
+    "length_mm": 1.519999999999996,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 105,
+      "exact_edges_checked": 8
+    }
+  },
+  {
+    "task": {
+      "id": "bulk_feed",
+      "kind": "track",
+      "net": "+3V3",
+      "a": [
+        78.88,
+        -6.8
+      ],
+      "z": "R158.1",
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.88,
+        -6.8
+      ],
+      [
+        78.88,
+        -4.1575
+      ],
+      [
+        79.0375,
+        -4.0
+      ]
+    ],
+    "length_mm": 2.8652386360737614,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 161,
+      "exact_edges_checked": 20
+    }
+  },
+  {
+    "task": {
+      "id": "bulk_damper_to_via",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": "R158.2",
+      "z": [
+        83,
+        -1.25
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        84.9625,
+        -4.0
+      ],
+      [
+        84.9625,
+        -3.2125
+      ],
+      [
+        83.0,
+        -1.25
+      ]
+    ],
+    "length_mm": 3.562894116157203,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 284,
+      "exact_edges_checked": 19
+    }
+  },
+  {
+    "task": {
+      "id": "bulk_via_to_cap",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": [
+        83,
+        -1.25
+      ],
+      "z": "C206.1",
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        83.0,
+        -1.25
+      ],
+      [
+        81.63,
+        -1.25
+      ],
+      [
+        78.88,
+        -4.0
+      ]
+    ],
+    "length_mm": 5.259087296526015,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 583,
+      "exact_edges_checked": 33
+    }
+  },
+  {
+    "task": {
+      "id": "raw_clamp_inner",
+      "kind": "track",
+      "net": "REV_BLOCKED_12V",
+      "a": [
+        25,
+        34.8
+      ],
+      "z": [
+        32,
+        41.8
+      ],
+      "width": 0.8,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        25.0,
+        34.8
+      ],
+      [
+        24.5,
+        34.3
+      ],
+      [
+        20.9,
+        34.3
+      ],
+      [
+        18.6,
+        36.6
+      ],
+      [
+        18.6,
+        38.9
+      ],
+      [
+        18.6,
+        39.3
+      ],
+      [
+        19.4,
+        40.1
+      ],
+      [
+        21.1,
+        41.8
+      ],
+      [
+        32.0,
+        41.8
+      ]
+    ],
+    "length_mm": 24.6953318805774,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 13108,
+      "exact_edges_checked": 219
+    }
+  },
+  {
+    "task": {
+      "id": "raw_clamp_feed",
+      "kind": "track",
+      "net": "REV_BLOCKED_12V",
+      "a": [
+        32,
+        41.8
+      ],
+      "z": "D105.1",
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        32.0,
+        41.8
+      ],
+      [
+        32.0,
+        42.4
+      ],
+      [
+        30.4,
+        44.0
+      ]
+    ],
+    "length_mm": 2.8627416997969557,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 204,
+      "exact_edges_checked": 14
+    }
+  },
+  {
+    "task": {
+      "id": "raw_clamp_return",
+      "kind": "track",
+      "net": "GND",
+      "a": "D105.2",
+      "z": [
+        23.6,
+        46.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        23.6,
+        44.0
+      ],
+      [
+        23.6,
+        46.8
+      ]
+    ],
+    "length_mm": 2.799999999999997,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 141,
+      "exact_edges_checked": 20
+    }
+  },
+  {
+    "task": {
+      "id": "fb_pin_to_lower",
+      "kind": "track",
+      "net": "3V3_FB_ADJ",
+      "a": "U151.9",
+      "z": "R156.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        37.8625,
+        10.725
+      ],
+      [
+        40.5,
+        10.725
+      ],
+      [
+        41.25,
+        9.975
+      ]
+    ],
+    "length_mm": 3.698160171779824,
+    "diagnostics": {
+      "start_access": 63,
+      "end_access": 79,
+      "visited": 228,
+      "exact_edges_checked": 25
+    }
+  },
+  {
+    "task": {
+      "id": "led_oil_escape_link",
+      "kind": "track",
+      "net": "LED_OIL",
+      "a": [
+        40.7801,
+        8.5229
+      ],
+      "z": [
+        41.1,
+        8.3
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        40.7801,
+        8.5229
+      ],
+      [
+        40.8771,
+        8.5229
+      ],
+      [
+        41.1,
+        8.3
+      ]
+    ],
+    "length_mm": 0.4122282030529656,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 81,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "led_oil_local_inner",
+      "kind": "track",
+      "net": "LED_OIL",
+      "a": [
+        41.1,
+        8.3
+      ],
+      "z": [
+        42.4138,
+        12.7247
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        41.1,
+        8.3
+      ],
+      [
+        41.1,
+        11.4109
+      ],
+      [
+        42.4138,
+        12.7247
+      ]
+    ],
+    "length_mm": 4.968893778245772,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 600,
+      "exact_edges_checked": 36
+    }
+  },
+  {
+    "task": {
+      "id": "fb_quiet_return",
+      "kind": "track",
+      "net": "GND",
+      "a": "R156.2",
+      "z": "U151.10",
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        41.25,
+        11.625
+      ],
+      [
+        41.0,
+        11.375
+      ],
+      [
+        37.8625,
+        11.375
+      ]
+    ],
+    "length_mm": 3.491053390593277,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 27,
+      "visited": 181,
+      "exact_edges_checked": 25
+    }
+  },
+  {
+    "task": {
+      "id": "input_link_feed",
+      "kind": "track",
+      "net": "+5V",
+      "a": [
+        40.2842,
+        9.7483
+      ],
+      "z": [
+        36.2375,
+        1.6
+      ],
+      "width": 0.6,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        40.2842,
+        9.7483
+      ],
+      [
+        36.2375,
+        5.7016
+      ],
+      [
+        36.2375,
+        1.6
+      ]
+    ],
+    "length_mm": 9.824498022855206,
+    "diagnostics": {
+      "start_access": 63,
+      "end_access": 81,
+      "visited": 1490,
+      "exact_edges_checked": 73
+    }
+  },
+  {
+    "task": {
+      "id": "input_link_feed_pad",
+      "kind": "track",
+      "net": "+5V",
+      "a": [
+        36.2375,
+        1.6
+      ],
+      "z": "R151.1",
+      "width": 0.6,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        36.2375,
+        1.6
+      ],
+      [
+        37.0375,
+        1.6
+      ],
+      [
+        37.1375,
+        1.7
+      ]
+    ],
+    "length_mm": 0.9414213562373147,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 84,
+      "exact_edges_checked": 1
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_input_cap",
+      "kind": "track",
+      "net": "3V3_ISO_IN",
+      "a": "R151.2",
+      "z": "C161.1",
+      "width": 0.6,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        40.0625,
+        1.7
+      ],
+      [
+        40.0625,
+        4.2625
+      ],
+      [
+        39.825,
+        4.5
+      ]
+    ],
+    "length_mm": 2.898375721063608,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 175,
+      "exact_edges_checked": 20
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_in12",
+      "kind": "track",
+      "net": "3V3_ISO_IN",
+      "a": "U152.1",
+      "z": "U152.2",
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.65,
+        5.8
+      ],
+      [
+        42.65,
+        5.3
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 54,
+      "end_access": 63,
+      "visited": 54,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_in23",
+      "kind": "track",
+      "net": "3V3_ISO_IN",
+      "a": "U152.2",
+      "z": "U152.3",
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.65,
+        5.3
+      ],
+      [
+        42.65,
+        4.8
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 63,
+      "end_access": 38,
+      "visited": 63,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_input_feed",
+      "kind": "track",
+      "net": "3V3_ISO_IN",
+      "a": "C161.1",
+      "z": "U152.1",
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        39.825,
+        4.5
+      ],
+      [
+        41.125,
+        5.8
+      ],
+      [
+        42.65,
+        5.8
+      ]
+    ],
+    "length_mm": 3.36347763108502,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 46,
+      "visited": 244,
+      "exact_edges_checked": 21
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_out",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "U152.9",
+      "z": "U152.10",
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        5.3
+      ],
+      [
+        44.55,
+        5.8
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 29,
+      "end_access": 63,
+      "visited": 29,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "isolation_slew_cap",
+      "kind": "track",
+      "net": "3V3_ISO_CT",
+      "a": "U152.6",
+      "z": "C159.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        3.8
+      ],
+      [
+        45.025,
+        3.8
+      ],
+      [
+        45.825,
+        3.0
+      ]
+    ],
+    "length_mm": 1.6063708498984803,
+    "diagnostics": {
+      "start_access": 50,
+      "end_access": 81,
+      "visited": 73,
+      "exact_edges_checked": 4
+    }
+  },
+  {
+    "task": {
+      "id": "sns_local",
+      "kind": "track",
+      "net": "3V3_ISO_SNS",
+      "a": "U152.8",
+      "z": [
+        45.2,
+        6.1
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        4.8
+      ],
+      [
+        44.65,
+        4.7
+      ],
+      [
+        45.6,
+        4.7
+      ],
+      [
+        45.9,
+        5.0
+      ],
+      [
+        45.9,
+        5.5
+      ],
+      [
+        45.8,
+        5.5
+      ],
+      [
+        45.2,
+        6.1
+      ]
+    ],
+    "length_mm": 2.964213562373094,
+    "diagnostics": {
+      "start_access": 24,
+      "end_access": 63,
+      "visited": 111,
+      "exact_edges_checked": 17
+    }
+  },
+  {
+    "task": {
+      "id": "sns_divider",
+      "kind": "track",
+      "net": "3V3_ISO_SNS",
+      "a": "R160.2",
+      "z": "R161.1",
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        27.825,
+        -7.5
+      ],
+      [
+        29.675,
+        -7.5
+      ]
+    ],
+    "length_mm": 1.8500000000000014,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 114,
+      "exact_edges_checked": 11
+    }
+  },
+  {
+    "task": {
+      "id": "sns_to_via",
+      "kind": "track",
+      "net": "3V3_ISO_SNS",
+      "a": "R161.1",
+      "z": [
+        28.6,
+        -6.2
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        29.675,
+        -7.5
+      ],
+      [
+        29.675,
+        -7.275
+      ],
+      [
+        28.6,
+        -6.2
+      ]
+    ],
+    "length_mm": 1.7452795795510765,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 107,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "sns_inner",
+      "kind": "track",
+      "net": "3V3_ISO_SNS",
+      "a": [
+        28.6,
+        -6.2
+      ],
+      "z": [
+        45.2,
+        6.1
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        28.6,
+        -6.2
+      ],
+      [
+        32.9,
+        -6.2
+      ],
+      [
+        45.2,
+        6.1
+      ]
+    ],
+    "length_mm": 21.69482681718907,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 76,
+      "visited": 7281,
+      "exact_edges_checked": 158
+    }
+  },
+  {
+    "task": {
+      "id": "u151_en_local",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "U151.11",
+      "z": [
+        39.1625,
+        12.025
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        37.8625,
+        12.025
+      ],
+      [
+        39.1625,
+        12.025
+      ]
+    ],
+    "length_mm": 1.3000000000000043,
+    "diagnostics": {
+      "start_access": 36,
+      "end_access": 58,
+      "visited": 51,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "u151_en_inner",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": [
+        39.1625,
+        12.025
+      ],
+      "z": [
+        46.825,
+        -0.1
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        39.1625,
+        12.025
+      ],
+      [
+        40.4375,
+        13.3
+      ],
+      [
+        42.7,
+        13.3
+      ],
+      [
+        46.825,
+        9.175
+      ],
+      [
+        46.825,
+        -0.1
+      ]
+    ],
+    "length_mm": 19.174253236814714,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 6449,
+      "exact_edges_checked": 161
+    }
+  },
+  {
+    "task": {
+      "id": "u151_en_cap",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "C165.1",
+      "z": [
+        26.225,
+        1.0
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        26.225,
+        -0.5
+      ],
+      [
+        26.225,
+        1.0
+      ]
+    ],
+    "length_mm": 1.5,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 102,
+      "exact_edges_checked": 7
+    }
+  },
+  {
+    "task": {
+      "id": "u151_en_cap_inner",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": [
+        26.225,
+        1.0
+      ],
+      "z": [
+        46.825,
+        -0.1
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        26.225,
+        1.0
+      ],
+      [
+        39.3,
+        1.0
+      ],
+      [
+        45.0,
+        6.7
+      ],
+      [
+        45.4,
+        6.7
+      ],
+      [
+        45.8,
+        6.3
+      ],
+      [
+        46.825,
+        5.275
+      ],
+      [
+        46.825,
+        -0.1
+      ]
+    ],
+    "length_mm": 28.9262716319083,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 23306,
+      "exact_edges_checked": 253
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_local",
+      "kind": "track",
+      "net": "3V3_ISO_ENABLE",
+      "a": "U152.4",
+      "z": [
+        42.75,
+        2.6
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.65,
+        4.3
+      ],
+      [
+        42.4,
+        4.3
+      ],
+      [
+        42.1,
+        4.0
+      ],
+      [
+        42.1,
+        3.25
+      ],
+      [
+        42.75,
+        2.6
+      ]
+    ],
+    "length_mm": 2.3435028842544368,
+    "diagnostics": {
+      "start_access": 21,
+      "end_access": 81,
+      "visited": 69,
+      "exact_edges_checked": 13
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_divider",
+      "kind": "track",
+      "net": "3V3_ISO_ENABLE",
+      "a": "R162.2",
+      "z": "R163.1",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        27.825,
+        -4.0
+      ],
+      [
+        29.675,
+        -4.0
+      ]
+    ],
+    "length_mm": 1.8500000000000014,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 114,
+      "exact_edges_checked": 11
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_tp",
+      "kind": "track",
+      "net": "3V3_ISO_ENABLE",
+      "a": "R163.1",
+      "z": "TP154.1",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        29.675,
+        -4.0
+      ],
+      [
+        30.0,
+        -4.0
+      ],
+      [
+        33.0,
+        -1.0
+      ]
+    ],
+    "length_mm": 4.567640687119284,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 268,
+      "exact_edges_checked": 25
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_tp_via",
+      "kind": "track",
+      "net": "3V3_ISO_ENABLE",
+      "a": "TP154.1",
+      "z": [
+        33,
+        -2.3
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        33.0,
+        -1.0
+      ],
+      [
+        33.0,
+        -2.3
+      ]
+    ],
+    "length_mm": 1.2999999999999998,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 96,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_inner",
+      "kind": "track",
+      "net": "3V3_ISO_ENABLE",
+      "a": [
+        33,
+        -2.3
+      ],
+      "z": [
+        42.75,
+        2.6
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        33.0,
+        -2.3
+      ],
+      [
+        31.7,
+        -2.3
+      ],
+      [
+        28.0,
+        -6.0
+      ],
+      [
+        28.0,
+        -6.4
+      ],
+      [
+        28.4,
+        -6.8
+      ],
+      [
+        33.35,
+        -6.8
+      ],
+      [
+        42.75,
+        2.6
+      ]
+    ],
+    "length_mm": 25.741883092036783,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 78,
+      "visited": 8039,
+      "exact_edges_checked": 196
+    }
+  },
+  {
+    "task": {
+      "id": "bulk_cap_via",
+      "kind": "via",
+      "net": "3V3_BULK_DAMPED",
+      "at": [
+        83,
+        -1.25
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "raw_clamp_feed_via",
+      "kind": "via",
+      "net": "REV_BLOCKED_12V",
+      "at": [
+        32,
+        41.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "raw_clamp_return_a",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        23.6,
+        46.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "raw_clamp_return_b",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        22.6,
+        46.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "led_oil_escape",
+      "kind": "via",
+      "net": "LED_OIL",
+      "at": [
+        41.1,
+        8.3
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "input_link_feed_via",
+      "kind": "via",
+      "net": "+5V",
+      "at": [
+        36.2375,
+        1.6
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "sns_local_via",
+      "kind": "via",
+      "net": "3V3_ISO_SNS",
+      "at": [
+        45.2,
+        6.1
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "sns_divider_via",
+      "kind": "via",
+      "net": "3V3_ISO_SNS",
+      "at": [
+        28.6,
+        -6.2
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "pg_local_via",
+      "kind": "via",
+      "net": "3V3_ENABLE",
+      "at": [
+        46.825,
+        -0.1
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "u151_en_via",
+      "kind": "via",
+      "net": "3V3_ENABLE",
+      "at": [
+        39.1625,
+        12.025
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "u151_en_cap_via",
+      "kind": "via",
+      "net": "3V3_ENABLE",
+      "at": [
+        26.225,
+        1.0
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_en_local_via",
+      "kind": "via",
+      "net": "3V3_ISO_ENABLE",
+      "at": [
+        42.75,
+        2.6
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_en_remote_via",
+      "kind": "via",
+      "net": "3V3_ISO_ENABLE",
+      "at": [
+        33,
+        -2.3
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_vin_local",
+      "kind": "via",
+      "net": "3V3_VIN",
+      "at": [
+        44.3,
+        6.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_vin_local_pin",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "U152.10",
+      "z": [
+        44.3,
+        6.8
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        5.8
+      ],
+      [
+        44.55,
+        6.55
+      ],
+      [
+        44.3,
+        6.8
+      ]
+    ],
+    "length_mm": 1.1035533905932737,
+    "diagnostics": {
+      "start_access": 32,
+      "end_access": 56,
+      "visited": 39,
+      "exact_edges_checked": 2
+    }
+  },
+  {
+    "task": {
+      "id": "iso_vin_c151_via",
+      "kind": "via",
+      "net": "3V3_VIN",
+      "at": [
+        43.9,
+        12.9
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_vin_c151",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": [
+        43.9,
+        12.9
+      ],
+      "z": "C151.1",
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        43.9,
+        12.9
+      ],
+      [
+        43.9,
+        13.125
+      ],
+      [
+        43.2,
+        13.825
+      ]
+    ],
+    "length_mm": 1.2149494936611627,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 84,
+      "exact_edges_checked": 1
+    }
+  },
+  {
+    "task": {
+      "id": "iso_vin_to_buck",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": [
+        44.3,
+        6.8
+      ],
+      "z": [
+        43.9,
+        12.9
+      ],
+      "width": 0.6,
+      "layer": "In1.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.3,
+        6.8
+      ],
+      [
+        43.9,
+        7.2
+      ],
+      [
+        43.9,
+        12.9
+      ]
+    ],
+    "length_mm": 6.265685424949237,
+    "diagnostics": {
+      "start_access": 76,
+      "end_access": 81,
+      "visited": 289,
+      "exact_edges_checked": 53
+    }
+  },
+  {
+    "task": {
+      "id": "iso_input_bulk_via",
+      "kind": "via",
+      "net": "3V3_VIN",
+      "at": [
+        35.88,
+        -2
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "iso_input_bulk_feed",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": [
+        35.88,
+        -2
+      ],
+      "z": [
+        44.3,
+        6.8
+      ],
+      "width": 0.8,
+      "layer": "In1.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.88,
+        -2.0
+      ],
+      [
+        44.3,
+        6.42
+      ],
+      [
+        44.3,
+        6.8
+      ]
+    ],
+    "length_mm": 12.287678195181456,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 71,
+      "visited": 833,
+      "exact_edges_checked": 80
+    }
+  },
+  {
+    "task": {
+      "id": "iso_en_supply",
+      "kind": "track",
+      "net": "+5V",
+      "a": "R162.1",
+      "z": [
+        36.2375,
+        1.6
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        26.175,
+        -4.0
+      ],
+      [
+        31.775,
+        1.6
+      ],
+      [
+        36.2375,
+        1.6
+      ]
+    ],
+    "length_mm": 12.38209594928933,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 2506,
+      "exact_edges_checked": 92
+    }
+  },
+  {
+    "task": {
+      "id": "feedback_source_via",
+      "kind": "via",
+      "net": "3V3_SOURCE",
+      "at": [
+        45.1,
+        13.5
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "feedback_source_sense",
+      "kind": "track",
+      "net": "3V3_SOURCE",
+      "a": [
+        45.1,
+        13.5
+      ],
+      "z": [
+        40.7,
+        24.8
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        45.1,
+        13.5
+      ],
+      [
+        44.4,
+        14.2
+      ],
+      [
+        44.4,
+        16.7
+      ],
+      [
+        40.2,
+        20.9
+      ],
+      [
+        40.2,
+        23.8
+      ],
+      [
+        40.2,
+        24.3
+      ],
+      [
+        40.7,
+        24.8
+      ]
+    ],
+    "length_mm": 13.536753236814713,
+    "diagnostics": {
+      "start_access": 70,
+      "end_access": 81,
+      "visited": 3267,
+      "exact_edges_checked": 105
+    }
+  },
+  {
+    "task": {
+      "id": "iso_ground_ep",
+      "kind": "track",
+      "net": "GND",
+      "a": "U152.11",
+      "z": [
+        43,
+        6.525
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        43.6,
+        4.8
+      ],
+      [
+        43.6,
+        5.925
+      ],
+      [
+        43.0,
+        6.525
+      ]
+    ],
+    "length_mm": 1.9735281374238585,
+    "diagnostics": {
+      "start_access": 79,
+      "end_access": 71,
+      "visited": 123,
+      "exact_edges_checked": 9
+    }
+  },
+  {
+    "task": {
+      "id": "iso_ground_pin",
+      "kind": "track",
+      "net": "GND",
+      "a": "U152.5",
+      "z": "U152.11",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.65,
+        3.8
+      ],
+      [
+        42.9,
+        3.8
+      ],
+      [
+        43.4,
+        4.3
+      ],
+      [
+        43.4,
+        4.6
+      ],
+      [
+        43.6,
+        4.8
+      ]
+    ],
+    "length_mm": 1.5399494936611684,
+    "diagnostics": {
+      "start_access": 42,
+      "end_access": 81,
+      "visited": 64,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "iso_ground_c161",
+      "kind": "track",
+      "net": "GND",
+      "a": "C161.2",
+      "z": "U152.5",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        41.375,
+        4.5
+      ],
+      [
+        41.375,
+        3.125
+      ],
+      [
+        42.5,
+        2.0
+      ],
+      [
+        43.1,
+        2.0
+      ],
+      [
+        43.3,
+        2.2
+      ],
+      [
+        43.4,
+        2.3
+      ],
+      [
+        43.4,
+        2.7
+      ],
+      [
+        43.4,
+        3.05
+      ],
+      [
+        42.65,
+        3.8
+      ]
+    ],
+    "length_mm": 5.800914498161481,
+    "diagnostics": {
+      "start_access": 80,
+      "end_access": 42,
+      "visited": 647,
+      "exact_edges_checked": 42
+    }
+  },
+  {
+    "task": {
+      "id": "iso_ground_ct",
+      "kind": "track",
+      "net": "GND",
+      "a": "C159.2",
+      "z": [
+        44.6,
+        1.625
+      ],
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        47.375,
+        3.0
+      ],
+      [
+        47.5,
+        2.875
+      ],
+      [
+        47.5,
+        -2.1
+      ],
+      [
+        47.3,
+        -2.3
+      ],
+      [
+        46.4,
+        -2.3
+      ],
+      [
+        45.9,
+        -1.8
+      ],
+      [
+        45.9,
+        -1.0
+      ],
+      [
+        45.9,
+        0.325
+      ],
+      [
+        44.6,
+        1.625
+      ]
+    ],
+    "length_mm": 11.005203820042825,
+    "diagnostics": {
+      "start_access": 54,
+      "end_access": 81,
+      "visited": 1707,
+      "exact_edges_checked": 93
+    }
+  },
+  {
+    "task": {
+      "id": "c162_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        52.12,
+        -2
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "fb_divider",
+      "kind": "track",
+      "net": "3V3_FB_ADJ",
+      "a": "R155.2",
+      "z": "R156.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        9.975
+      ],
+      [
+        41.25,
+        9.975
+      ]
+    ],
+    "length_mm": 3.299999999999997,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 79,
+      "visited": 156,
+      "exact_edges_checked": 25
+    }
+  },
+  {
+    "task": {
+      "id": "iso_input_bulk_local",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "C163.1",
+      "z": [
+        35.88,
+        -2
+      ],
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.88,
+        -5.0
+      ],
+      [
+        35.88,
+        -2.0
+      ]
+    ],
+    "length_mm": 3.0,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 147,
+      "exact_edges_checked": 22
+    }
+  },
+  {
+    "task": {
+      "id": "iso_input_bulk_parallel",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "C163.1",
+      "z": "C162.1",
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.88,
+        -5.0
+      ],
+      [
+        37.78,
+        -6.9
+      ],
+      [
+        43.5,
+        -6.9
+      ],
+      [
+        43.98,
+        -6.9
+      ],
+      [
+        45.88,
+        -5.0
+      ]
+    ],
+    "length_mm": 11.57401153701776,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 2916,
+      "exact_edges_checked": 92
+    }
+  },
+  {
+    "task": {
+      "id": "iso_sns_vin",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "C163.1",
+      "z": "R160.1",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.88,
+        -5.0
+      ],
+      [
+        28.675,
+        -5.0
+      ],
+      [
+        26.175,
+        -7.5
+      ]
+    ],
+    "length_mm": 10.74053390593274,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 1962,
+      "exact_edges_checked": 89
+    }
+  },
+  {
+    "task": {
+      "id": "feedback_source_local",
+      "kind": "track",
+      "net": "3V3_SOURCE",
+      "a": "R155.1",
+      "z": [
+        45.1,
+        13.5
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        11.625
+      ],
+      [
+        44.55,
+        12.95
+      ],
+      [
+        45.1,
+        13.5
+      ]
+    ],
+    "length_mm": 2.1028174593052054,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 63,
+      "visited": 136,
+      "exact_edges_checked": 11
+    }
+  },
+  {
+    "task": {
+      "id": "third_input_bulk",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "C164.1",
+      "z": "C163.1",
+      "width": 1,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        15.88,
+        -5.0
+      ],
+      [
+        17.78,
+        -6.9
+      ],
+      [
+        26.4,
+        -6.9
+      ],
+      [
+        28.1,
+        -5.2
+      ],
+      [
+        35.5,
+        -5.2
+      ],
+      [
+        35.68,
+        -5.2
+      ],
+      [
+        35.88,
+        -5.0
+      ]
+    ],
+    "length_mm": 21.574011537017764,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 5045,
+      "exact_edges_checked": 192
+    }
+  },
+  {
+    "task": {
+      "id": "c162_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C162.2",
+      "z": [
+        52.12,
+        -2
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        52.12,
+        -5.0
+      ],
+      [
+        52.12,
+        -2.0
+      ]
+    ],
+    "length_mm": 3.0,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 147,
+      "exact_edges_checked": 22
+    }
+  },
+  {
+    "task": {
+      "id": "c163_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        42.12,
+        -2.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "c163_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C163.2",
+      "z": [
+        42.12,
+        -2.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.12,
+        -5.0
+      ],
+      [
+        42.12,
+        -2.8
+      ]
+    ],
+    "length_mm": 2.2,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 123,
+      "exact_edges_checked": 14
+    }
+  },
+  {
+    "task": {
+      "id": "c164_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        22.12,
+        -2
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "c164_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C164.2",
+      "z": [
+        22.12,
+        -2
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        22.12,
+        -5.0
+      ],
+      [
+        22.12,
+        -2.0
+      ]
+    ],
+    "length_mm": 3.0,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 147,
+      "exact_edges_checked": 22
+    }
+  },
+  {
+    "task": {
+      "id": "r161_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        32.0,
+        -7.5
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "r161_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "R161.2",
+      "z": [
+        32.0,
+        -7.5
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        31.325,
+        -7.5
+      ],
+      [
+        32.0,
+        -7.5
+      ]
+    ],
+    "length_mm": 0.6750000000000007,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 81,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "r163_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        32.0,
+        -4.0
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "r163_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "R163.2",
+      "z": [
+        32.0,
+        -4.0
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        31.325,
+        -4.0
+      ],
+      [
+        32.0,
+        -4.0
+      ]
+    ],
+    "length_mm": 0.6750000000000007,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 81,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "c165_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        28.5,
+        -0.5
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "c165_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C165.2",
+      "z": [
+        28.5,
+        -0.5
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        27.775,
+        -0.5
+      ],
+      [
+        28.5,
+        -0.5
+      ]
+    ],
+    "length_mm": 0.7250000000000014,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 78,
+      "visited": 81,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_source_via",
+      "kind": "via",
+      "net": "3V3_SOURCE",
+      "at": [
+        35.5,
+        44
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "discharge_source",
+      "kind": "track",
+      "net": "3V3_SOURCE",
+      "a": "R165.1",
+      "z": [
+        35.5,
+        44
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        36.5375,
+        44.0
+      ],
+      [
+        35.5,
+        44.0
+      ]
+    ],
+    "length_mm": 1.0375000000000014,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 87,
+      "exact_edges_checked": 2
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_source_feed",
+      "kind": "track",
+      "net": "3V3_SOURCE",
+      "a": [
+        35.5,
+        44
+      ],
+      "z": [
+        40.7,
+        24.8
+      ],
+      "width": 0.5,
+      "layer": "In1.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.5,
+        44.0
+      ],
+      [
+        35.5,
+        41.6
+      ],
+      [
+        30.3,
+        36.4
+      ],
+      [
+        28.3,
+        34.4
+      ],
+      [
+        28.3,
+        33.2
+      ],
+      [
+        28.3,
+        32.9
+      ],
+      [
+        32.9,
+        28.3
+      ],
+      [
+        36.4,
+        24.8
+      ],
+      [
+        40.7,
+        24.8
+      ]
+    ],
+    "length_mm": 29.837467504308357,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 78,
+      "visited": 32720,
+      "exact_edges_checked": 228
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_drain",
+      "kind": "track",
+      "net": "3V3_DISCHARGE_DRAIN",
+      "a": "R165.2",
+      "z": "Q152.3",
+      "width": 0.5,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        42.4625,
+        44.0
+      ],
+      [
+        46.9375,
+        44.0
+      ]
+    ],
+    "length_mm": 4.475000000000001,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 189,
+      "exact_edges_checked": 36
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_gate",
+      "kind": "track",
+      "net": "3V3_DISCHARGE_GATE",
+      "a": "Q152.1",
+      "z": "Q153.3",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        45.0625,
+        43.05
+      ],
+      [
+        47.75,
+        43.05
+      ],
+      [
+        48.4,
+        43.7
+      ],
+      [
+        50.6375,
+        43.7
+      ],
+      [
+        50.9375,
+        44.0
+      ]
+    ],
+    "length_mm": 6.268502884254444,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 81,
+      "visited": 395,
+      "exact_edges_checked": 50
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_gate_pullup",
+      "kind": "track",
+      "net": "3V3_DISCHARGE_GATE",
+      "a": "R164.2",
+      "z": "Q153.3",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        48.825,
+        48.2
+      ],
+      [
+        50.9375,
+        46.0875
+      ],
+      [
+        50.9375,
+        44.0
+      ]
+    ],
+    "length_mm": 5.075026150513162,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 635,
+      "exact_edges_checked": 34
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_vin_via",
+      "kind": "via",
+      "net": "3V3_VIN",
+      "at": [
+        47.175,
+        46.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "discharge_vin_pin",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "R164.1",
+      "z": [
+        47.175,
+        46.8
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        47.175,
+        48.2
+      ],
+      [
+        47.175,
+        46.8
+      ]
+    ],
+    "length_mm": 1.4000000000000057,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 99,
+      "exact_edges_checked": 6
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_vin_feed",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": [
+        47.175,
+        46.8
+      ],
+      "z": [
+        43.9,
+        12.9
+      ],
+      "width": 0.2,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        47.175,
+        46.8
+      ],
+      [
+        45.1,
+        44.725
+      ],
+      [
+        45.1,
+        38.8
+      ],
+      [
+        40.0,
+        33.7
+      ],
+      [
+        39.4,
+        33.7
+      ],
+      [
+        33.8,
+        28.1
+      ],
+      [
+        28.8,
+        28.1
+      ],
+      [
+        23.8,
+        23.1
+      ],
+      [
+        23.8,
+        13.6
+      ],
+      [
+        17.3,
+        7.1
+      ],
+      [
+        17.3,
+        6.6
+      ],
+      [
+        18.1,
+        5.8
+      ],
+      [
+        22.5,
+        5.8
+      ],
+      [
+        23.6,
+        4.7
+      ],
+      [
+        25.9,
+        4.7
+      ],
+      [
+        27.0,
+        5.8
+      ],
+      [
+        29.0,
+        5.8
+      ],
+      [
+        31.2,
+        5.8
+      ],
+      [
+        33.7,
+        8.3
+      ],
+      [
+        34.5,
+        8.3
+      ],
+      [
+        38.8,
+        12.6
+      ],
+      [
+        39.9,
+        13.7
+      ],
+      [
+        42.9,
+        13.7
+      ],
+      [
+        43.1,
+        13.7
+      ],
+      [
+        43.9,
+        12.9
+      ]
+    ],
+    "length_mm": 87.3013329063721,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 66,
+      "visited": 167166,
+      "exact_edges_checked": 717
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_en_via",
+      "kind": "via",
+      "net": "3V3_ENABLE",
+      "at": [
+        50,
+        41.9
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "discharge_en_pin",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "Q153.1",
+      "z": [
+        50,
+        41.9
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        49.0625,
+        43.05
+      ],
+      [
+        49.0625,
+        42.8375
+      ],
+      [
+        50.0,
+        41.9
+      ]
+    ],
+    "length_mm": 1.5383252147247752,
+    "diagnostics": {
+      "start_access": 63,
+      "end_access": 81,
+      "visited": 81,
+      "exact_edges_checked": 4
+    }
+  },
+  {
+    "task": {
+      "id": "discharge_en_feed",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": [
+        50,
+        41.9
+      ],
+      "z": [
+        39.1625,
+        12.025
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        50.0,
+        41.9
+      ],
+      [
+        50.5,
+        41.9
+      ],
+      [
+        64.4,
+        28.0
+      ],
+      [
+        69.1,
+        28.0
+      ],
+      [
+        79.3,
+        17.8
+      ],
+      [
+        79.9,
+        17.8
+      ],
+      [
+        80.8,
+        16.9
+      ],
+      [
+        80.8,
+        16.7
+      ],
+      [
+        82.6,
+        14.9
+      ],
+      [
+        82.6,
+        13.2
+      ],
+      [
+        75.1,
+        5.7
+      ],
+      [
+        75.1,
+        5.2
+      ],
+      [
+        74.0,
+        4.1
+      ],
+      [
+        73.6,
+        3.7
+      ],
+      [
+        64.6,
+        3.7
+      ],
+      [
+        63.5,
+        4.8
+      ],
+      [
+        55.0,
+        4.8
+      ],
+      [
+        51.2,
+        4.8
+      ],
+      [
+        42.7,
+        13.3
+      ],
+      [
+        40.4375,
+        13.3
+      ],
+      [
+        39.1625,
+        12.025
+      ]
+    ],
+    "length_mm": 97.7709180237642,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 75,
+      "visited": 236938,
+      "exact_edges_checked": 781
+    }
+  },
+  {
+    "task": {
+      "id": "q152_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        45.0625,
+        46.4
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "q152_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "Q152.2",
+      "z": [
+        45.0625,
+        46.4
+      ],
+      "width": 0.5,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        45.0625,
+        44.95
+      ],
+      [
+        45.0625,
+        46.4
+      ]
+    ],
+    "length_mm": 1.4499999999999957,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 81,
+      "visited": 90,
+      "exact_edges_checked": 6
+    }
+  },
+  {
+    "task": {
+      "id": "q153_ground_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        49.0625,
+        46.4
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "q153_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "Q153.2",
+      "z": [
+        49.0625,
+        46.4
+      ],
+      "width": 0.5,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        49.0625,
+        44.95
+      ],
+      [
+        49.0625,
+        46.4
+      ]
+    ],
+    "length_mm": 1.4499999999999957,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 99,
+      "exact_edges_checked": 6
+    }
+  },
+  {
+    "task": {
+      "id": "pg_pin",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "U152.7",
+      "z": [
+        46.825,
+        -0.1
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        4.3
+      ],
+      [
+        45.8,
+        4.3
+      ],
+      [
+        46.5,
+        3.6
+      ],
+      [
+        46.6,
+        3.5
+      ],
+      [
+        46.6,
+        0.3
+      ],
+      [
+        46.6,
+        0.125
+      ],
+      [
+        46.825,
+        -0.1
+      ]
+    ],
+    "length_mm": 6.074568901432426,
+    "diagnostics": {
+      "start_access": 20,
+      "end_access": 72,
+      "visited": 226,
+      "exact_edges_checked": 48
+    }
+  },
+  {
+    "task": {
+      "id": "pg_to_via",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "R159.2",
+      "z": [
+        46.825,
+        -0.1
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        46.825,
+        -1.5
+      ],
+      [
+        46.825,
+        -0.1
+      ]
+    ],
+    "length_mm": 1.4,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 99,
+      "exact_edges_checked": 6
+    }
+  },
+  {
+    "task": {
+      "id": "pg_supply",
+      "kind": "track",
+      "net": "+5V",
+      "a": [
+        36.2375,
+        1.6
+      ],
+      "z": "R159.1",
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        36.2375,
+        1.6
+      ],
+      [
+        39.3375,
+        -1.5
+      ],
+      [
+        45.175,
+        -1.5
+      ]
+    ],
+    "length_mm": 10.221562043356595,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 2224,
+      "exact_edges_checked": 82
+    }
+  },
+  {
+    "task": {
+      "id": "source_return_close_via",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        38.6,
+        21.6
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "source_return_close_trace",
+      "kind": "track",
+      "net": "GND",
+      "a": "C157.2",
+      "z": [
+        38.6,
+        21.6
+      ],
+      "width": 0.6,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        37.675,
+        22.0
+      ],
+      [
+        38.2,
+        22.0
+      ],
+      [
+        38.6,
+        21.6
+      ]
+    ],
+    "length_mm": 1.0906854249492417,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 53,
+      "visited": 75,
+      "exact_edges_checked": 1
+    }
+  },
+  {
+    "task": {
+      "id": "cr_ct_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        46.0,
+        0.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_en_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        45.2,
+        7.3
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        77.6,
+        -6.55
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_cap_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        80.9,
+        0.4
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_main",
+      "kind": "via",
+      "net": "+3V3",
+      "at": [
+        78.0,
+        1.0
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_sns",
+      "kind": "via",
+      "net": "+3V3",
+      "at": [
+        81.0,
+        -3.5
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_enable_local",
+      "kind": "via",
+      "net": "3V3_BULK_ENABLE",
+      "at": [
+        77.6,
+        -1.5
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_enable_remote",
+      "kind": "via",
+      "net": "3V3_BULK_ENABLE",
+      "at": [
+        81.6,
+        0.1
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_damped",
+      "kind": "via",
+      "net": "3V3_BULK_DAMPED",
+      "at": [
+        80.2,
+        -6.1
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_bleed",
+      "kind": "via",
+      "net": "3V3_BULK_DAMPED",
+      "at": [
+        85.0,
+        0.3
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_bulk_div_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        86.8,
+        3.7
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_input_reservoir",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "C162.1",
+      "z": [
+        35.88,
+        -2
+      ],
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        45.88,
+        -5.0
+      ],
+      [
+        38.88,
+        -5.0
+      ],
+      [
+        35.88,
+        -2.0
+      ]
+    ],
+    "length_mm": 11.242640687119284,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 2735,
+      "exact_edges_checked": 92
+    }
+  },
+  {
+    "task": {
+      "id": "cr_iso_slew",
+      "kind": "track",
+      "net": "3V3_ISO_CT",
+      "a": "U152.6",
+      "z": "C159.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        44.55,
+        3.8
+      ],
+      [
+        44.55,
+        2.35
+      ],
+      [
+        43.6,
+        1.4
+      ],
+      [
+        43.6,
+        1.0
+      ],
+      [
+        43.3,
+        0.7
+      ]
+    ],
+    "length_mm": 3.6177669529663685,
+    "diagnostics": {
+      "start_access": 49,
+      "end_access": 81,
+      "visited": 249,
+      "exact_edges_checked": 23
+    }
+  },
+  {
+    "task": {
+      "id": "cr_iso_slew_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C159.2",
+      "z": [
+        46.0,
+        0.8
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        45.3,
+        0.7
+      ],
+      [
+        45.9,
+        0.7
+      ],
+      [
+        46.0,
+        0.8
+      ]
+    ],
+    "length_mm": 0.741421356237312,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 63,
+      "visited": 81,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_upper_ground",
+      "kind": "via",
+      "net": "GND",
+      "at": [
+        40.5,
+        -8.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_enable_upper_signal",
+      "kind": "via",
+      "net": "3V3_BUCK_ENABLE",
+      "at": [
+        36,
+        -8.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_pg_enable_divider",
+      "kind": "track",
+      "net": "3V3_ENABLE",
+      "a": "C165.1",
+      "z": "R166.1",
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        26.225,
+        -0.5
+      ],
+      [
+        25.5,
+        -1.225
+      ],
+      [
+        25.5,
+        -8.0
+      ],
+      [
+        25.8,
+        -8.3
+      ],
+      [
+        32.5,
+        -8.3
+      ],
+      [
+        33.375,
+        -8.3
+      ],
+      [
+        34.175,
+        -7.5
+      ]
+    ],
+    "length_mm": 16.9309397513309,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 5454,
+      "exact_edges_checked": 154
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_divider",
+      "kind": "track",
+      "net": "3V3_BUCK_ENABLE",
+      "a": "R166.2",
+      "z": "R167.1",
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.825,
+        -7.5
+      ],
+      [
+        38.175,
+        -7.5
+      ]
+    ],
+    "length_mm": 2.3499999999999943,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 129,
+      "exact_edges_checked": 16
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_from_divider",
+      "kind": "track",
+      "net": "3V3_BUCK_ENABLE",
+      "a": "R166.2",
+      "z": [
+        36,
+        -8.8
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        35.825,
+        -7.5
+      ],
+      [
+        35.825,
+        -8.625
+      ],
+      [
+        36.0,
+        -8.8
+      ]
+    ],
+    "length_mm": 1.37248737341529,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 96,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_inner",
+      "kind": "track",
+      "net": "3V3_BUCK_ENABLE",
+      "a": [
+        36,
+        -8.8
+      ],
+      "z": [
+        39.1625,
+        12.025
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        36.0,
+        -8.8
+      ],
+      [
+        29.9,
+        -8.8
+      ],
+      [
+        27.6,
+        -6.5
+      ],
+      [
+        25.6,
+        -4.5
+      ],
+      [
+        25.6,
+        1.1
+      ],
+      [
+        25.6,
+        1.3
+      ],
+      [
+        27.5,
+        3.2
+      ],
+      [
+        29.8,
+        3.2
+      ],
+      [
+        31.3,
+        4.7
+      ],
+      [
+        31.9,
+        4.7
+      ],
+      [
+        36.0,
+        8.8
+      ],
+      [
+        36.7,
+        8.8
+      ],
+      [
+        38.6,
+        10.7
+      ],
+      [
+        38.6,
+        11.4625
+      ],
+      [
+        39.1625,
+        12.025
+      ]
+    ],
+    "length_mm": 36.43272093334626,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 75,
+      "visited": 30585,
+      "exact_edges_checked": 298
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_pin",
+      "kind": "track",
+      "net": "3V3_BUCK_ENABLE",
+      "a": [
+        39.1625,
+        12.025
+      ],
+      "z": "U151.11",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        39.1625,
+        12.025
+      ],
+      [
+        37.8625,
+        12.025
+      ]
+    ],
+    "length_mm": 1.3000000000000043,
+    "diagnostics": {
+      "start_access": 58,
+      "end_access": 36,
+      "visited": 73,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "cr_enable_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "R167.2",
+      "z": [
+        40.5,
+        -8.8
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        39.825,
+        -7.5
+      ],
+      [
+        39.825,
+        -8.125
+      ],
+      [
+        40.5,
+        -8.8
+      ]
+    ],
+    "length_mm": 1.5795941546018377,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 112,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_in_pins",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "U153.1",
+      "z": "U153.2",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.15,
+        -2.5
+      ],
+      [
+        78.15,
+        -3.0
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 73,
+      "end_access": 72,
+      "visited": 73,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_bias",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "U153.2",
+      "z": "U153.3",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.15,
+        -3.0
+      ],
+      [
+        78.15,
+        -3.5
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 49,
+      "visited": 72,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_out_pins",
+      "kind": "track",
+      "net": "3V3_BULK_SWITCHED",
+      "a": "U153.9",
+      "z": "U153.10",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.05,
+        -3.0
+      ],
+      [
+        80.05,
+        -2.5
+      ]
+    ],
+    "length_mm": 0.5,
+    "diagnostics": {
+      "start_access": 42,
+      "end_access": 64,
+      "visited": 42,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_ground_pin",
+      "kind": "track",
+      "net": "GND",
+      "a": "U153.5",
+      "z": "U153.11",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.15,
+        -4.5
+      ],
+      [
+        78.4,
+        -4.5
+      ],
+      [
+        78.9,
+        -4.0
+      ],
+      [
+        78.9,
+        -3.7
+      ],
+      [
+        79.1,
+        -3.5
+      ]
+    ],
+    "length_mm": 1.5399494936611584,
+    "diagnostics": {
+      "start_access": 55,
+      "end_access": 81,
+      "visited": 77,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_ground_via",
+      "kind": "track",
+      "net": "GND",
+      "a": "U153.11",
+      "z": [
+        77.6,
+        -6.55
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        79.1,
+        -3.5
+      ],
+      [
+        79.1,
+        -5.05
+      ],
+      [
+        77.6,
+        -6.55
+      ]
+    ],
+    "length_mm": 3.671320343559642,
+    "diagnostics": {
+      "start_access": 63,
+      "end_access": 54,
+      "visited": 271,
+      "exact_edges_checked": 22
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_slew",
+      "kind": "track",
+      "net": "3V3_BULK_CT",
+      "a": "U153.6",
+      "z": "C166.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.05,
+        -4.5
+      ],
+      [
+        83.35,
+        -4.5
+      ],
+      [
+        85.85,
+        -2.0
+      ]
+    ],
+    "length_mm": 6.835533905932735,
+    "diagnostics": {
+      "start_access": 50,
+      "end_access": 81,
+      "visited": 921,
+      "exact_edges_checked": 50
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_slew_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C166.2",
+      "z": [
+        85.12,
+        -6.8
+      ],
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        85.85,
+        -4.0
+      ],
+      [
+        85.85,
+        -6.07
+      ],
+      [
+        85.12,
+        -6.8
+      ]
+    ],
+    "length_mm": 3.102375900532352,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 73,
+      "visited": 256,
+      "exact_edges_checked": 20
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_sns_pin",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "U153.8",
+      "z": [
+        81.0,
+        -3.5
+      ],
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.05,
+        -3.5
+      ],
+      [
+        81.0,
+        -3.5
+      ]
+    ],
+    "length_mm": 0.9500000000000028,
+    "diagnostics": {
+      "start_access": 21,
+      "end_access": 81,
+      "visited": 27,
+      "exact_edges_checked": 2
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_sns_inner",
+      "kind": "track",
+      "net": "+3V3",
+      "a": [
+        81.0,
+        -3.5
+      ],
+      "z": [
+        78.0,
+        1.0
+      ],
+      "width": 0.4,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        81.0,
+        -3.5
+      ],
+      [
+        81.0,
+        -2.0
+      ],
+      [
+        78.0,
+        1.0
+      ]
+    ],
+    "length_mm": 5.742640687119285,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 700,
+      "exact_edges_checked": 37
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_main_feed",
+      "kind": "track",
+      "net": "+3V3",
+      "a": [
+        78.88,
+        -6.8
+      ],
+      "z": [
+        78.0,
+        1.0
+      ],
+      "width": 0.6,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.88,
+        -6.8
+      ],
+      [
+        78.88,
+        0.12
+      ],
+      [
+        78.0,
+        1.0
+      ]
+    ],
+    "length_mm": 8.16450793488832,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 908,
+      "exact_edges_checked": 70
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_input_cap_feed",
+      "kind": "track",
+      "net": "+3V3",
+      "a": [
+        78.0,
+        1.0
+      ],
+      "z": "C167.1",
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        78.0,
+        1.0
+      ],
+      [
+        78.0,
+        -0.125
+      ],
+      [
+        77.725,
+        -0.4
+      ]
+    ],
+    "length_mm": 1.5139087296526053,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 68,
+      "visited": 102,
+      "exact_edges_checked": 6
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_input_feed",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "C167.1",
+      "z": "U153.1",
+      "width": 0.4,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        77.725,
+        -0.4
+      ],
+      [
+        78.3,
+        -0.975
+      ],
+      [
+        78.3,
+        -2.1
+      ],
+      [
+        78.3,
+        -2.35
+      ],
+      [
+        78.15,
+        -2.5
+      ]
+    ],
+    "length_mm": 2.4003048327204897,
+    "diagnostics": {
+      "start_access": 68,
+      "end_access": 61,
+      "visited": 110,
+      "exact_edges_checked": 13
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_input_cap_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "C167.2",
+      "z": [
+        80.9,
+        0.4
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        79.275,
+        -0.4
+      ],
+      [
+        80.1,
+        -0.4
+      ],
+      [
+        80.9,
+        0.4
+      ]
+    ],
+    "length_mm": 1.9563708498984729,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 62,
+      "visited": 139,
+      "exact_edges_checked": 8
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_en_supply",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "C167.1",
+      "z": "R169.1",
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        77.725,
+        -0.4
+      ],
+      [
+        77.725,
+        0.55
+      ],
+      [
+        79.175,
+        2.0
+      ]
+    ],
+    "length_mm": 3.00060966544099,
+    "diagnostics": {
+      "start_access": 75,
+      "end_access": 81,
+      "visited": 240,
+      "exact_edges_checked": 16
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_en_divider",
+      "kind": "track",
+      "net": "3V3_BULK_ENABLE",
+      "a": "R169.2",
+      "z": "R170.1",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.825,
+        2.0
+      ],
+      [
+        82.475,
+        2.0
+      ]
+    ],
+    "length_mm": 1.6499999999999915,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 108,
+      "exact_edges_checked": 9
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_en_to_via",
+      "kind": "track",
+      "net": "3V3_BULK_ENABLE",
+      "a": "R169.2",
+      "z": [
+        81.6,
+        0.1
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.825,
+        2.0
+      ],
+      [
+        81.6,
+        1.225
+      ],
+      [
+        81.6,
+        0.1
+      ]
+    ],
+    "length_mm": 2.2210155108391425,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 50,
+      "visited": 160,
+      "exact_edges_checked": 11
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_en_inner",
+      "kind": "track",
+      "net": "3V3_BULK_ENABLE",
+      "a": [
+        81.6,
+        0.1
+      ],
+      "z": [
+        77.6,
+        -1.5
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        81.6,
+        0.1
+      ],
+      [
+        81.3,
+        -0.2
+      ],
+      [
+        80.1,
+        -0.2
+      ],
+      [
+        78.3,
+        1.6
+      ],
+      [
+        77.8,
+        1.6
+      ],
+      [
+        77.4,
+        1.2
+      ],
+      [
+        77.4,
+        -1.1
+      ],
+      [
+        77.4,
+        -1.3
+      ],
+      [
+        77.6,
+        -1.5
+      ]
+    ],
+    "length_mm": 8.018376618407341,
+    "diagnostics": {
+      "start_access": 67,
+      "end_access": 63,
+      "visited": 1891,
+      "exact_edges_checked": 62
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_en_local",
+      "kind": "track",
+      "net": "3V3_BULK_ENABLE",
+      "a": [
+        77.6,
+        -1.5
+      ],
+      "z": "U153.4",
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        77.6,
+        -1.5
+      ],
+      [
+        77.6,
+        -3.7
+      ],
+      [
+        77.7,
+        -3.8
+      ],
+      [
+        77.9,
+        -4.0
+      ],
+      [
+        78.15,
+        -4.0
+      ]
+    ],
+    "length_mm": 2.8742640687119367,
+    "diagnostics": {
+      "start_access": 41,
+      "end_access": 25,
+      "visited": 108,
+      "exact_edges_checked": 19
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_to_damper",
+      "kind": "track",
+      "net": "3V3_BULK_SWITCHED",
+      "a": "U153.10",
+      "z": "R158.1",
+      "width": 0.6,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.05,
+        -2.5
+      ],
+      [
+        81.2375,
+        -2.5
+      ],
+      [
+        82.7,
+        -1.0375
+      ]
+    ],
+    "length_mm": 3.2557873349706554,
+    "diagnostics": {
+      "start_access": 45,
+      "end_access": 81,
+      "visited": 266,
+      "exact_edges_checked": 19
+    }
+  },
+  {
+    "task": {
+      "id": "cr_damper_to_via",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": "R158.2",
+      "z": [
+        80.2,
+        -6.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        82.7,
+        -6.9625
+      ],
+      [
+        81.0625,
+        -6.9625
+      ],
+      [
+        80.2,
+        -6.1
+      ]
+    ],
+    "length_mm": 2.857259197546796,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 81,
+      "visited": 238,
+      "exact_edges_checked": 17
+    }
+  },
+  {
+    "task": {
+      "id": "cr_via_to_reservoir",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": [
+        80.2,
+        -6.1
+      ],
+      "z": "C206.1",
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.2,
+        -6.1
+      ],
+      [
+        80.2,
+        -5.32
+      ],
+      [
+        78.88,
+        -4.0
+      ]
+    ],
+    "length_mm": 2.64676190233249,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 208,
+      "exact_edges_checked": 13
+    }
+  },
+  {
+    "task": {
+      "id": "cr_reservoir_bleed_inner",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": [
+        80.2,
+        -6.1
+      ],
+      "z": [
+        85.0,
+        0.3
+      ],
+      "width": 0.2,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        80.2,
+        -6.1
+      ],
+      [
+        85.0,
+        -1.3
+      ],
+      [
+        85.0,
+        0.3
+      ]
+    ],
+    "length_mm": 8.388225099390855,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 1167,
+      "exact_edges_checked": 56
+    }
+  },
+  {
+    "task": {
+      "id": "cr_reservoir_bleed",
+      "kind": "track",
+      "net": "3V3_BULK_DAMPED",
+      "a": [
+        85.0,
+        0.3
+      ],
+      "z": "R168.1",
+      "width": 0.2,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        85.0,
+        0.3
+      ],
+      [
+        85.0,
+        1.825
+      ],
+      [
+        85.175,
+        2.0
+      ]
+    ],
+    "length_mm": 1.7724873734152895,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 114,
+      "exact_edges_checked": 9
+    }
+  },
+  {
+    "task": {
+      "id": "cr_reservoir_bleed_ground",
+      "kind": "track",
+      "net": "GND",
+      "a": "R168.2",
+      "z": [
+        86.8,
+        3.7
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        86.825,
+        2.0
+      ],
+      [
+        86.825,
+        3.675
+      ],
+      [
+        86.8,
+        3.7
+      ]
+    ],
+    "length_mm": 1.7103553390593316,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 81,
+      "visited": 108,
+      "exact_edges_checked": 9
+    }
+  },
+  {
+    "task": {
+      "id": "cr_bulk_divider_return",
+      "kind": "track",
+      "net": "GND",
+      "a": "R170.2",
+      "z": [
+        86.8,
+        3.7
+      ],
+      "width": 0.3,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        84.125,
+        2.0
+      ],
+      [
+        84.125,
+        2.225
+      ],
+      [
+        84.7,
+        2.8
+      ],
+      [
+        85.9,
+        2.8
+      ],
+      [
+        86.8,
+        3.7
+      ]
+    ],
+    "length_mm": 3.5109650045003145,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 81,
+      "visited": 254,
+      "exact_edges_checked": 22
+    }
+  },
+  {
+    "task": {
+      "id": "cr_reset_delay_supply",
+      "kind": "track",
+      "net": "+3V3",
+      "a": "R204.1",
+      "z": [
+        74.99079999999996,
+        9.000000000000002
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        75.6,
+        7.725
+      ],
+      [
+        75.6,
+        8.3908
+      ],
+      [
+        74.9908,
+        9.0
+      ]
+    ],
+    "length_mm": 1.5273389021976909,
+    "diagnostics": {
+      "start_access": 81,
+      "end_access": 63,
+      "visited": 112,
+      "exact_edges_checked": 5
+    }
+  },
+  {
+    "task": {
+      "id": "cr_ct_reset_near",
+      "kind": "via",
+      "net": "SUP_RESET_DELAY",
+      "at": [
+        75.3,
+        6.8
+      ]
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_ct_reset_near_trace",
+      "kind": "track",
+      "net": "SUP_RESET_DELAY",
+      "a": "R204.2",
+      "z": [
+        75.3,
+        6.8
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        75.6,
+        6.075
+      ],
+      [
+        75.6,
+        6.5
+      ],
+      [
+        75.3,
+        6.8
+      ]
+    ],
+    "length_mm": 0.8492640687119262,
+    "diagnostics": {
+      "start_access": 80,
+      "end_access": 55,
+      "visited": 80,
+      "exact_edges_checked": 0
+    }
+  },
+  {
+    "task": {
+      "id": "cr_ct_reset_far",
+      "kind": "via",
+      "net": "SUP_RESET_DELAY",
+      "at": [
+        76.45,
+        15.5
+      ],
+      "size": 0.6,
+      "drill": 0.3
+    },
+    "status": "VIA_PREFLIGHT_PASS"
+  },
+  {
+    "task": {
+      "id": "cr_ct_reset_far_trace",
+      "kind": "track",
+      "net": "SUP_RESET_DELAY",
+      "a": "U202.4",
+      "z": [
+        76.45,
+        15.5
+      ],
+      "width": 0.15,
+      "layer": "B.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        76.5,
+        12.15
+      ],
+      [
+        76.2,
+        12.45
+      ],
+      [
+        76.2,
+        15.0
+      ],
+      [
+        76.2,
+        15.25
+      ],
+      [
+        76.45,
+        15.5
+      ]
+    ],
+    "length_mm": 3.5778174593052006,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 66,
+      "visited": 196,
+      "exact_edges_checked": 26
+    }
+  },
+  {
+    "task": {
+      "id": "cr_ct_reset_inner",
+      "kind": "track",
+      "net": "SUP_RESET_DELAY",
+      "a": [
+        75.3,
+        6.8
+      ],
+      "z": [
+        76.45,
+        15.5
+      ],
+      "width": 0.15,
+      "layer": "In2.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        75.3,
+        6.8
+      ],
+      [
+        76.45,
+        7.95
+      ],
+      [
+        76.45,
+        15.5
+      ]
+    ],
+    "length_mm": 9.176345596729064,
+    "diagnostics": {
+      "start_access": 70,
+      "end_access": 81,
+      "visited": 413,
+      "exact_edges_checked": 79
+    }
+  },
+  {
+    "task": {
+      "id": "cr_sns_reservoir_feed",
+      "kind": "track",
+      "net": "3V3_VIN",
+      "a": "R160.1",
+      "z": [
+        35.88,
+        -2
+      ],
+      "width": 0.2,
+      "layer": "F.Cu"
+    },
+    "status": "CONTINUOUS_CLEARANCE_PREFLIGHT_PASS",
+    "path_mm": [
+      [
+        26.175,
+        -7.5
+      ],
+      [
+        28.875,
+        -4.8
+      ],
+      [
+        31.7,
+        -4.8
+      ],
+      [
+        33.08,
+        -4.8
+      ],
+      [
+        35.88,
+        -2.0
+      ]
+    ],
+    "length_mm": 11.983174593052023,
+    "diagnostics": {
+      "start_access": 72,
+      "end_access": 81,
+      "visited": 1521,
+      "exact_edges_checked": 89
+    }
+  }
+]

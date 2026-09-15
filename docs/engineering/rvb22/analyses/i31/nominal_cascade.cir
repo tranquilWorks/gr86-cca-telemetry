@@ -1,0 +1,159 @@
+I31 U151 derivative startup; not TI encrypted model
+.include "lm63615_derivative.lib"
+
+.func if(c,a,b) {c ? a : b}
+.model d_small D(Is=1n N=1.5 Rs=.02)
+.model d_body D(Is=1n N=1.3 Rs=.02 Cjo=100p)
+.param CAP_SCALE=1 RDS_SCALE=1 IUP=35u TON=32m OVREF=.5 UVREF=.5 HYS=.025
+.param CABLE_L=1u CABLE_R=.1 CgsQ=910p CgdQ=100p
+VBAT BAT 0 PWL(0 0 1m 0 2m 12)
+Rcable BAT cable_r {CABLE_R}
+Lcable cable_r RAW_12V {CABLE_L}
+Rfuse RAW_12V FUSED_12V 0.05
+D101 FUSED_12V REV_BLOCKED_12V d_small
+R101 REV_BLOCKED_12V PROTECT_CTRL_VIN 6.81k
+C101 PROTECT_CTRL_VIN 0 {100n*CAP_SCALE}
+Bctrl PROTECT_CTRL_VIN 0 I={30u*clip(v(PROTECT_CTRL_VIN)/2.5,0,1)}
+Bctrlout PROTECTED_12V 0 I={40u*clip(v(PROTECTED_12V)/2.5,0,1)}
+BD102 PROTECT_CTRL_VIN 0 I={max((v(PROTECT_CTRL_VIN)-36.8)/1.4,0)}
+R102 REV_BLOCKED_12V INPUT_UV 549k
+R103 INPUT_UV INPUT_OV 24.3k
+R104 INPUT_OV 0 14.7k
+R105 PROTECT_CTRL_VIN INPUT_SHDN 510k
+Rshdn INPUT_SHDN 0 1e12
+Vlogic one 0 1
+S_input_uv one uv_ok INPUT_UV 0 input_uv_sw
+R_input_uv uv_ok 0 1k
+.model input_uv_sw SW(Ron=0.01 Roff=1e12 Vt={UVREF+HYS/2} Vh={HYS/2})
+Sov one ov_bad INPUT_OV 0 ov_sw
+Rov ov_bad 0 1k
+.model ov_sw SW(Ron=0.01 Roff=1e12 Vt={OVREF-HYS/2} Vh={HYS/2})
+Bpvalid pvalid 0 V={if(v(uv_ok)>0.5 && v(ov_bad)<0.5 && v(PROTECT_CTRL_VIN)>2.4 && v(INPUT_SHDN)>1.2,1,0)}
+* Charge ptimer is computational state, not an added physical capacitor.
+B_p_timer 0 ptimer I={if(v(pvalid)>0.5,if(v(ptimer)<1.02,1u,0),-v(ptimer)/1)}
+C_p_timer ptimer 0 {TON*1u} IC=0
+R_p_timer ptimer 0 1e12
+Ballow allow 0 V={if(v(pvalid)>0.5 && v(ptimer)>1,1,0)}
+* 2us assumed fast-path RC lag; 6us fast-off delay screened separately by parameter.
+Rdelay allow allow_d 1
+Cdelay allow_d 0 2.885u
+* Gate source follows the datasheet pullup current and 11V overdrive; fault discharges.
+Bgate 0 INPUT_GATE_DRIVE I={if(v(allow_d)>0.5,IUP*clip((v(PROTECTED_12V)+11-v(INPUT_GATE_DRIVE)),0,1),-clip(v(INPUT_GATE_DRIVE,PROTECTED_12V)/10,0,0.06))}
+R106 INPUT_GATE_DRIVE INPUT_GATE 10
+R107 INPUT_GATE_DRIVE INPUT_GATE_SLEW 5.1k
+C102 INPUT_GATE_SLEW 0 {10n*CAP_SCALE}
+Rgate INPUT_GATE PROTECTED_12V 1e9
+* Level-1 MOS fit to typical Rds_on/Vth. NOT ST's proprietary transistor model.
+M_Q101 REV_BLOCKED_12V INPUT_GATE qsrc qsrc n_q101 W=1 L=1
+.model n_q101 NMOS(LEVEL=1 VTO=3 KP=5 LAMBDA=0)
+Rq101 qsrc PROTECTED_12V {0.075*RDS_SCALE}
+Cqgs INPUT_GATE qsrc {CgsQ}
+Cqgd INPUT_GATE REV_BLOCKED_12V {CgdQ}
+Cqds REV_BLOCKED_12V qsrc 167p
+Dqbody qsrc REV_BLOCKED_12V d_body
+BD104 INPUT_GATE PROTECTED_12V I={max((v(INPUT_GATE,PROTECTED_12V)-15)/2,0)}
+D104forward PROTECTED_12V INPUT_GATE d_small
+BD103 PROTECTED_12V 0 I={max((v(PROTECTED_12V)-29.5)/0.244,0)}
+C103 PROTECTED_12V 0 {2.2u*CAP_SCALE}
+R111 PROTECTED_12V 0 100k
+R109 PROTECTED_12V BUCK_FEED 0.005
+R110 BUCK_FEED VIN5 0.47
+C121 VIN5 0 {2.2u*CAP_SCALE}
+C122 VIN5 0 {2.2u*CAP_SCALE}
+C123 VIN5 0 {100n*CAP_SCALE}
+C129 VIN5 0 {2.2u*CAP_SCALE}
+
+R125 VIN5 EN5 100k
+R126 EN5 0 26.1k
+S5en one on5 EN5 0 en5_sw
+R5en on5 0 1k
+.model en5_sw SW(Ron=.01 Roff=1e12 Vt=1.45 Vh=.05)
+* U121 fitted compensation/ripple passives retained, but averaged switch waveform.
+* Effective reference 5/4.09 is calibrated to vendor REPLAY at 10.688V, not TI Vref.
+XU121 VIN5 sw5 source5 fb5 on5 U151_DERIV PARAMS: VREF=1.2224938875305624 TSS=.003 TDELAY=0
++ TFPWM=.008 KP=32 FZ=3000 FP=80000 TI=2.5u LNOM=47u IPOS=1.05 INEG=0 ETA=.8
+L121 sw5 winding5 4.7e-05
+R_L121 winding5 source5 0.187
+C127 source5 c127r 2.2e-05
+R_C127 c127r 0 .01
+C128 source5 c128r 2.2e-05
+R_C128 c128r 0 .01
+R122 source5 fb5 309k
+R123 fb5 0 100k
+R124 sw5 ripple5 43.2k
+C125 ripple5 source5 3.3n
+C126 ripple5 fb5 100p
+R128 source5 rail5 .005
+R151 rail5 vin .005
+C151 vin C151_esr 2.2e-05
+R_C151 C151_esr 0 .01
+C152 vin 0 2.2e-07
+* Other 5V consumers and known decoupling aggregate, enabled by available voltage.
+C_OTHER5 vin 0 4.41e-05
+Bother5 vin 0 I={.0792*clip(v(vin)/4.5,0,1)}
+* shared 1V computational logic reference
+Suv one enable vin 0 uv_sw
+Ruv enable 0 1k
+.model uv_sw SW(Ron=.01 Roff=1e12 Vt=3.25 Vh=0.25)
+XU151 vin sw source fb enable U151_DERIV PARAMS: VREF=1.0 TSS=0.0016 TDELAY=0.001
++ TFPWM=0.008 KP=14.4 FZ=1000 FP=80000 TI=3e-06 IPOS=1.7 INEG=0.75
+L151 sw winding 1.5e-05
+R_L151 winding source 0.0771
+C155 source C155_ESR 2.2e-05
+R_C155 C155_ESR 0 0.01
+C156 source C156_ESR 2.2e-05
+R_C156 C156_ESR 0 0.01
+C157 source C157_ESR 2.2e-05
+R_C157 C157_ESR 0 0.01
+C158 source C158_ESR 1e-07
+R_C158 C158_ESR 0 0.01
+C201 main C201_ESR 2.2e-05
+R_C201 C201_ESR 0 0.01
+C204 main C204_ESR 2.2e-05
+R_C204 C204_ESR 0 0.01
+C202 main C202_ESR 1e-07
+R_C202 C202_ESR 0 0.01
+C205 main C205_ESR 1e-07
+R_C205 C205_ESR 0 0.01
+C301 main C301_ESR 1e-07
+R_C301 C301_ESR 0 0.01
+C302 main C302_ESR 1e-06
+R_C302 C302_ESR 0 0.01
+C404 main C404_ESR 1e-07
+R_C404 C404_ESR 0 0.01
+C531 main C531_ESR 1e-07
+R_C531 C531_ESR 0 0.01
+R158 main damped 0.082
+C206 damped C206_ESR 0.00047
+R_C206 C206_ESR 0 0.025
+R155 source fb 11800
+R156 fb 0 4990
+R153 source main 0.01
+R154 main 0 1k
+Vload requested 0 DC .45
+Bload main 0 I={v(requested)*(v(ready)>.5 ? 1 : .020/.45)*clip(v(main)/2.7,0,1)}
+* TPS3808G33 CT=open; normalized delay/logic is an approximation, no actual MCU.
+Svalid one valid main 0 valid_sw
+Rvalid valid 0 1k
+.model valid_sw SW(Ron=.01 Roff=1e12 Vt=3.08535 Vh=0.01535)
+Btimer 0 timer I={v(valid)>.5 ? (v(timer)<1.01 ? 1u : 0) : -v(timer)}
+Ctimer timer 0 2e-08 IC=0
+Rtimer timer 0 1e12
+Bready ready 0 V={v(valid)>.5 && v(timer)>1 ? 1 : 0}
+Breset reset_ctl 0 V={1-v(ready)}
+Sreset reset_raw 0 reset_ctl 0 reset_sw
+.model reset_sw SW(Ron=400 Roff=1e12 Vt=.5 Vh=.01)
+R203 reset_raw en 1k
+R201 main en 10k
+Cen en 0 20p
+.options method=gear maxord=2 reltol=0.0002 abstol=1n vntol=1u
+.control
+set wr_vecnames
+set wr_singlescale
+save v(vin) v(source) v(main) i(L151) v(fb) v(en) v(ready) v(xu151.ref) v(xu151.cmd) i(VBAT) v(enable) v(VIN5) v(source5) i(L121) v(BAT) v(PROTECTED_12V)
+tran 2e-06 0.12 0 2e-06
+wrdata waveform.tsv v(vin) v(source) v(main) i(L151) v(fb) v(en) v(ready) v(xu151.ref) v(xu151.cmd) i(VBAT) v(enable) v(VIN5) v(source5) i(L121) v(BAT) v(PROTECTED_12V)
+echo I31_FINISHED
+quit
+.endc
+.end

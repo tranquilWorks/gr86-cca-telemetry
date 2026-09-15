@@ -1,0 +1,539 @@
+{
+  "base_commit": "4c3e54395e84483298e453468a65ff2646e9de4e",
+  "parts": {
+    "U152": {
+      "mpn": "TPS22953QDQCRQ1",
+      "value": "TPS22953-Q1 REVERSE BLOCKING",
+      "manufacturer": "Texas Instruments",
+      "lib": "RevB:TPS22953QDQCRQ1",
+      "fp": "RevB:TI_DQC0010A_I32",
+      "pcb": [
+        43.6,
+        4.8,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        490.22,
+        63.5
+      ],
+      "nets": {
+        "1": "3V3_ISO_IN",
+        "2": "3V3_ISO_IN",
+        "3": "3V3_ISO_IN",
+        "4": "3V3_ISO_ENABLE",
+        "5": "GND",
+        "6": "3V3_ISO_CT",
+        "7": "3V3_ENABLE",
+        "8": "3V3_ISO_SNS",
+        "9": "3V3_VIN",
+        "10": "3V3_VIN",
+        "11": "GND"
+      },
+      "url": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf"
+    },
+    "C159": {
+      "mpn": "CGA3E2C0G1H682J080AA",
+      "value": "6.8n /50V C0G 5% CT",
+      "manufacturer": "TDK",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        46.6,
+        3.0,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        533.4,
+        127
+      ],
+      "nets": {
+        "1": "3V3_ISO_CT",
+        "2": "GND"
+      },
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E2C0G1H682J080AA"
+    },
+    "C161": {
+      "mpn": "GCM188R71H104KA57D",
+      "value": "100n /50V X7R ISO INPUT",
+      "manufacturer": "Murata",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        40.6,
+        4.5,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        533.4,
+        355.6
+      ],
+      "nets": {
+        "1": "3V3_ISO_IN",
+        "2": "GND"
+      },
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71H104KA57D"
+    },
+    "R159": {
+      "mpn": "CRCW0603100KFKEA",
+      "value": "100k /1% PG PULLUP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        46,
+        -1.5,
+        0,
+        "B.Cu"
+      ],
+      "sch": [
+        449.58,
+        177.8
+      ],
+      "nets": {
+        "1": "+5V",
+        "2": "3V3_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R160": {
+      "mpn": "CRCW0603634KFKEA",
+      "value": "634k /1% SNS TOP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        27,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        228.6
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "3V3_ISO_SNS"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R161": {
+      "mpn": "CRCW0603100KFKEA",
+      "value": "100k /1% SNS BOTTOM",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        30.5,
+        -7.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        533.4,
+        228.6
+      ],
+      "nets": {
+        "1": "3V3_ISO_SNS",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R162": {
+      "mpn": "CRCW0603470KFKEA",
+      "value": "470k /1% ISO ENABLE TOP",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        27,
+        -4,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        127
+      ],
+      "nets": {
+        "1": "+5V",
+        "2": "3V3_ISO_ENABLE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R163": {
+      "mpn": "CRCW0603100KFKEA",
+      "value": "100k /1% ISO ENABLE BOTTOM",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        30.5,
+        -4,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        533.4,
+        177.8
+      ],
+      "nets": {
+        "1": "3V3_ISO_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "TP154": {
+      "mpn": "BARE PCB PAD",
+      "value": "TP_ISO_ENABLE",
+      "manufacturer": "PCB",
+      "lib": "Connector:TestPoint",
+      "fp": "RevB:TestPoint_Pad_D1.5mm",
+      "pcb": [
+        33,
+        -1,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        279.4
+      ],
+      "nets": {
+        "1": "3V3_ISO_ENABLE"
+      },
+      "url": ""
+    },
+    "C162": {
+      "mpn": "T598X477M010ATE025",
+      "value": "470u /10V POLYMER INPUT",
+      "manufacturer": "KEMET",
+      "lib": "Device:C",
+      "fp": "RevB:KEMET_T598_X_7343_Median",
+      "pcb": [
+        49,
+        -5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        110.49,
+        386.08
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "GND"
+      },
+      "url": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf"
+    },
+    "C163": {
+      "mpn": "T598X477M010ATE025",
+      "value": "470u /10V POLYMER INPUT",
+      "manufacturer": "KEMET",
+      "lib": "Device:C",
+      "fp": "RevB:KEMET_T598_X_7343_Median",
+      "pcb": [
+        39,
+        -5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        210.82,
+        386.08
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "GND"
+      },
+      "url": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf"
+    },
+    "C164": {
+      "mpn": "T598X477M010ATE025",
+      "value": "470u /10V POLYMER INPUT",
+      "manufacturer": "KEMET",
+      "lib": "Device:C",
+      "fp": "RevB:KEMET_T598_X_7343_Median",
+      "pcb": [
+        19,
+        -5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        311.15,
+        386.08
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "GND"
+      },
+      "url": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+      "sheet_path": "/4108b523-946e-532e-b734-a3b8d9b0fa0b/4593baa2-c851-5487-8bf2-51d129d528a1"
+    },
+    "C165": {
+      "mpn": "CGA3E3X7R1H224K080AB",
+      "value": "220n /50V X7R EN DELAY",
+      "manufacturer": "TDK",
+      "lib": "Device:C",
+      "fp": "RevB:C_0603_1608Metric",
+      "pcb": [
+        27,
+        -0.5,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        449.58,
+        386.08
+      ],
+      "nets": {
+        "1": "3V3_ENABLE",
+        "2": "GND"
+      },
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224K080AB"
+    },
+    "Q152": {
+      "mpn": "DMG2302UKQ-7",
+      "value": "DMG2302UKQ /DISCHARGE",
+      "manufacturer": "Diodes Incorporated",
+      "lib": "RevB:DMG2302UKQ",
+      "fp": "RevB:SOT-23",
+      "pcb": [
+        46,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        490.22,
+        330.2
+      ],
+      "nets": {
+        "1": "3V3_DISCHARGE_GATE",
+        "2": "GND",
+        "3": "3V3_DISCHARGE_DRAIN"
+      },
+      "url": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf"
+    },
+    "Q153": {
+      "mpn": "DMG2302UKQ-7",
+      "value": "DMG2302UKQ /DISCHARGE",
+      "manufacturer": "Diodes Incorporated",
+      "lib": "RevB:DMG2302UKQ",
+      "fp": "RevB:SOT-23",
+      "pcb": [
+        50,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        541.02,
+        330.2
+      ],
+      "nets": {
+        "1": "3V3_ENABLE",
+        "2": "GND",
+        "3": "3V3_DISCHARGE_GATE"
+      },
+      "url": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf"
+    },
+    "R164": {
+      "mpn": "CRCW06034K70FKEA",
+      "value": "4.7k /DISCHARGE GATE FEED",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_0603_1608Metric",
+      "pcb": [
+        48,
+        48.2,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        508,
+        355.6
+      ],
+      "nets": {
+        "1": "3V3_VIN",
+        "2": "3V3_DISCHARGE_GATE"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "R165": {
+      "mpn": "CRCW25124R70FKEG",
+      "value": "4.7R /1W SWITCHED DISCHARGE",
+      "manufacturer": "Vishay",
+      "lib": "Device:R",
+      "fp": "RevB:R_2512_6332Metric",
+      "pcb": [
+        39.5,
+        44,
+        0,
+        "F.Cu"
+      ],
+      "sch": [
+        558.8,
+        355.6
+      ],
+      "nets": {
+        "1": "3V3_SOURCE",
+        "2": "3V3_DISCHARGE_DRAIN"
+      },
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "D105": {
+      "mpn": "SMCJ110AHE3_A/H",
+      "value": "SMCJ110A /RAW OV CLAMP",
+      "manufacturer": "Vishay",
+      "lib": "Device:D_Zener",
+      "fp": "RevB:D_SMC",
+      "pcb": [
+        27,
+        44,
+        180,
+        "F.Cu"
+      ],
+      "sch": [
+        190.5,
+        269.24
+      ],
+      "sheet": "Input_Protection.kicad_sch",
+      "nets": {
+        "1": "REV_BLOCKED_12V",
+        "2": "GND"
+      },
+      "url": "https://www.vishay.com/docs/88394/smcj.pdf"
+    }
+  },
+  "property_changes": {
+    "C206": {
+      "MPN": "T598X337M010ATE025",
+      "Value": "330u /10V POLYMER",
+      "Capacitance_Condition": "Ceff>=147.84uF stacked engineering bound through125C"
+    },
+    "R101": {
+      "MPN": "CRCW251210K0FKEG",
+      "Value": "10k /1W CTRL SURGE FEED",
+      "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    "D101": {
+      "MPN": "S5JHE3_A/H",
+      "Value": "S5J /600V REVERSE BLOCK",
+      "Datasheet": "https://www.vishay.com/docs/88931/s5a.pdf"
+    },
+    "R155": {
+      "MPN": "TNPU060311K3HWEA00",
+      "Value": "11.3k /0.02% 2ppm FB TOP"
+    },
+    "R158": {
+      "MPN": "WSL2512R4700FEA",
+      "Value": "470m /1% BULK DAMPING",
+      "Footprint": "RevB:R_2512_6332Metric",
+      "Datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+    }
+  },
+  "removed_copper_uuids": [
+    "3db5b38e-33d3-453f-bb8b-27dafa92c950",
+    "cd01b19d-26c4-42db-8571-ac0f543b8b9f",
+    "4eabd859-1c65-44f0-b0f2-197b528fff61",
+    "9dada98e-9744-4f7b-825e-06ca18936914",
+    "187b93f8-9af0-43ef-a25c-3f3a1e4948f9",
+    "8a18f5c9-b653-479a-ab2c-ba4cf304f17a",
+    "bd103345-0362-494f-aef7-fb00ca3734aa",
+    "c080f7dc-6d81-41f2-a277-ea4084872eff",
+    "01b80c6a-68db-53c7-8815-cd2238159557",
+    "0352c3c6-7bd0-54a4-82c9-97c296ba9c16",
+    "0c374b0c-2ab1-5c2c-a038-77948c461466",
+    "107898ee-3767-5e39-b4c8-a3f7d4bca833",
+    "12769914-0373-5e3c-972f-5ec335aa186a",
+    "173345c1-f7a7-59d1-8eeb-95311d874217",
+    "1c53e913-1a94-535c-aa3a-78544b6e6c4b",
+    "221ccbbd-23fe-5c97-8544-b2a5f4ea251d",
+    "466b2ba5-6e4e-5337-be6c-822c245abdb6",
+    "49d65f02-3318-5df1-8885-593051c599d2",
+    "4c002a5a-71b8-560d-a853-5dd34bc359ec",
+    "56e585ee-c8e8-5909-ac37-e09fc1b79958",
+    "61e75f19-1f50-509f-8350-02161093f9a7",
+    "62a3059a-1f09-5f72-86a7-6b3fcba511a2",
+    "6bafeac8-66d5-5776-8390-086d09ac818b",
+    "70849dce-f027-53f5-81fb-448694c6de51",
+    "719baa8a-a726-5831-ae61-bdbd9c27d885",
+    "764e7ded-f10e-5361-bee4-5d73060b6d15",
+    "77c61541-9fa9-58bc-98dd-72b99e84b4e5",
+    "81964358-c875-5690-9ad5-dc24ea1a1f8a",
+    "8cb33166-2699-5311-b448-a141ed5f9309",
+    "97c90e33-382f-5f49-86ef-1b2d3e908c36",
+    "a557fde0-38c8-50c0-b8ca-7e76b9a0b3c3",
+    "bbee3297-b4a3-5671-92af-5b4c8496ea0f",
+    "c2b00111-d396-5af3-831f-14d480b98761",
+    "c4400418-fb0b-5ab1-8948-b20646d52b9a",
+    "c65b71f9-6e3c-5ddc-a5a5-220ad88d70bb",
+    "c8d191f2-bcc3-579c-88ff-a860a2ab03bf",
+    "cb023a40-b18f-53fe-b6bc-3762b53b0c61",
+    "d1d79775-b7e1-5921-a35a-58cd70687e3a",
+    "d26c2ef2-a0c6-5fad-8448-6c1fad63cd69",
+    "d29cfb89-3cf2-5c23-8d90-fed01f68a3da",
+    "d6fff314-ef8e-5ca4-b730-5006f1572128",
+    "d8850e2e-bb55-54b9-8383-1159a27bce5e",
+    "e1a3bb40-91af-55ae-b62b-986a3ae98689",
+    "eebfa473-3ec1-55f2-acd6-52e582e0f3fa",
+    "ef2d11af-358a-58b3-a686-7ad266e23881",
+    "f4e3fcb4-8ff0-5795-88a5-45aea949378f",
+    "793f2128-9826-5fe1-842b-15470c4341ee",
+    "f0df633f-e3b6-59b1-914b-9d01843b7eab",
+    "f97f92ef-3d93-5500-8f49-8e6314eb783c",
+    "4a733732-08cf-5a5b-a240-374e22683149",
+    "f9517480-7f7b-5deb-87fe-cc0478eb77f8",
+    "7a60b661-26f6-59e4-9300-850f0e6b8985",
+    "4ce15ee4-d4ca-5a35-a9b5-80b5ad129d96",
+    "708921f8-a64a-517c-9bb4-1443cce66230",
+    "12f09638-f1ea-50b1-b0ab-ba94f357cdda",
+    "b1393a42-5661-5e35-9f6d-6d2181691279",
+    "d9e79b11-5438-5acf-90bf-8a2c13217e3d",
+    "c754b292-a9f3-5c3a-b87c-9321c4796d40",
+    "77bc3300-629a-57e8-a004-24ca374c3ba8",
+    "2fc6279a-7268-5420-98df-05cb287b69b1",
+    "3c0dd586-931e-5500-94f1-2401b02cc000",
+    "56d1add0-163e-5f7a-96a5-0dcca69ae18a",
+    "e93aa308-5e8a-5ae1-9ed1-450ac6a12eb3",
+    "e490f685-0812-5b31-85dc-83246209abf5",
+    "d22ce8d0-b524-5893-92d7-679fcff349f0",
+    "f9060ce6-e804-5457-9d60-48812bf9c794",
+    "eb6c2cd1-4fab-511c-9e6f-bd8fab04a767",
+    "69dd7a03-5b54-5949-9104-6696fdd621c9",
+    "b1007289-3d5e-5c3c-8df7-58934d409f31",
+    "462d2965-f282-5459-8f01-61b2dc7ea8cb",
+    "3b5a214f-b976-58c7-b6c1-9b8af8916b5d",
+    "55689f09-0a7a-5ddb-b549-51a569ff5c72",
+    "5a895ae2-2eb6-5fce-a100-e5b0e519d81d",
+    "26fdc819-7f69-5f4c-a9a1-381a997819bf",
+    "4ee3542e-461a-5473-971f-92d0ef40deb8",
+    "e727d7b4-8e33-52c4-a3d1-e4e926b87def",
+    "fd819119-4f0c-5c65-90b3-0e3cd5281fda",
+    "878d0cf3-f0f7-5ef6-9ab8-6b2a503193d2",
+    "0dde3765-4134-50c4-8e48-99f199819281",
+    "72c8f979-55d5-5a43-8a53-53997c88c0c7",
+    "f3e6eb7e-f827-559d-92e7-38fb62cd27a2",
+    "e3885896-dea2-5941-ac80-c11430b71375",
+    "7de65710-e2b3-52ce-8106-149ed4fb5568",
+    "803f93c1-7aa9-53d3-9054-92d685a4ebcc",
+    "038fdbe9-8400-5c0a-b474-7c57a1552ef8",
+    "3bba2a2e-9d85-558e-9d42-2ce4a1d79d4c",
+    "5409a10b-dd02-5750-8a69-ab1f3a6400b6",
+    "d8236db8-5027-55e7-aec1-4c8f6d6e7790",
+    "d973fff4-fa91-5a49-8960-df92726e18d2",
+    "7d934a17-95c7-55bd-97a9-c64e0386d87e",
+    "ab562c81-9e3f-5fe5-a894-77105460f65a",
+    "33a0b238-9770-5f41-8c30-845557c8c21c",
+    "0771f713-d72b-5d35-a9bc-a77c31b7fa63",
+    "4a836a6c-f6eb-5283-bfec-53191ac2fd7d",
+    "342e38b4-e385-56d1-b322-372bdce44d2b",
+    "c59ff2f7-91dc-5e62-98e1-71fcfcf5f19c"
+  ],
+  "status": "PLACEMENT_AND_SCHEMATIC_STAGED_ROUTING_REQUIRED"
+}

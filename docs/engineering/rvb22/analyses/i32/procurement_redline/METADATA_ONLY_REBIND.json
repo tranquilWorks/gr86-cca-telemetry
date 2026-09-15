@@ -1,0 +1,18 @@
+{
+  "status": "PASS_EXACT_PHYSICS_GEOMETRY_AND_MODEL_IDENTITY",
+  "qualified_source_PCB_sha256": "177454910e8699749c42599a13c613f3155a52760af65763f2c7982ffec90e66",
+  "final_source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "changed_fields": [
+    "13 frozen footprint descriptive texts/tags corrected",
+    "R151 missing PCB LCSC copied from existing schematic: C190124; MPN unchanged",
+    "README rail-label correction: R155/R156 are the 3.3 V feedback divider"
+  ],
+  "pad_nets_values_models_placement_routing_stackup_rules_exactly_unchanged": true,
+  "qualification_rerun_required": false,
+  "reason": "These are descriptive/source-code fields only. Strict whole-board comparison excludes only descr/tags and the R151 LCSC property; every other source token is identical.",
+  "library_changes": "Equivalent normalized library metadata synchronized from source",
+  "native_filled_boards_exactly_equal_excluding_same_metadata_and_generated_property_UUIDs": true,
+  "qualified_filled_PCB_sha256": "020d5a7e739f65f24e50bff894fa8ea9cf0114b37ef197560a8c09cd1aa4c54f",
+  "final_filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "filled_polygon_geometry_exactly_unchanged": true
+}

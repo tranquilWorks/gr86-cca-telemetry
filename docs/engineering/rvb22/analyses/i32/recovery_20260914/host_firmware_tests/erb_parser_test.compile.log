@@ -1,0 +1,7 @@
+/usr/bin/ld: /tmp/ccoEuRmd.o: in function `main':
+erb_parser_test.cpp:(.text.startup+0x19a): undefined reference to `gps::parseRmcSentence(char*, gps::RmcData&)'
+/usr/bin/ld: erb_parser_test.cpp:(.text.startup+0x49d): undefined reference to `gps::parseRmcSentence(char*, gps::RmcData&)'
+/usr/bin/ld: erb_parser_test.cpp:(.text.startup+0x7ee): undefined reference to `gps::parseRmcSentence(char*, gps::RmcData&)'
+/usr/bin/ld: erb_parser_test.cpp:(.text.startup+0x989): undefined reference to `gps::parseGgaSentence(char*, gps::GgaData&)'
+/usr/bin/ld: erb_parser_test.cpp:(.text.startup+0xc61): undefined reference to `gps::parseGgaSentence(char*, gps::GgaData&)'
+collect2: error: ld returned 1 exit status

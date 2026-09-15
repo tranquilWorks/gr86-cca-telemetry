@@ -1,0 +1,22 @@
+{
+  "query": "CGA5L1C0G2A683J160AE",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:17.102293+00:00",
+  "response_sha256": "21f379f2e5863165a8d1d1fc9d01a605ed0bfc01435c4e79db9324279d7e1e1d",
+  "rows": [
+    {
+      "componentCode": "C3869625",
+      "componentModelEn": "CGA5L1C0G2A683J160AE",
+      "componentBrandEn": "TDK",
+      "stockCount": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 40,
+      "urlSuffix": "TDK-CGA5L1C0G2A683J160AE/C3869625",
+      "componentSpecificationEn": "1206",
+      "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401181511_TDK-CGA5L1C0G2A683J160AE_C3869625.pdf"
+    }
+  ]
+}

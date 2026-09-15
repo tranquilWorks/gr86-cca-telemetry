@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "name": "c1000_ct2.2",
+    "bulk": 470,
+    "damp": 0.47,
+    "top": 11300,
+    "bleed": 330,
+    "c160": 0.001,
+    "constant": 0.75,
+    "slew": 0.000814
+  },
+  "returncode": 0,
+  "deck_sha256": "3cefd98511e00c0f59423d3ed83695c6fe6aeee568949632654d0499025be52d",
+  "completed": false,
+  "error": ""
+}

@@ -1,3 +1,15 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [../analyses/i32/procurement_redline/README.md](../analyses/i32/procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/current/THERMAL_REVIEW.md`.
+
+---
+
+# Current checkpoint: convergence 01
+
+See `analyses/convergence_01/README.md` relative to the rvb22 root and `current/CONVERGENCE_01_EFFECTIVITY.json`. The former 6.5/7 mm exposed-shoe whole-path selection is withdrawn. New native-copper trial refinement gives 111.533 C board maximum at 0.25 mm; no thermal/mechanical acceptance or new PCB fabrication release is claimed. Earlier numerical statements below retain their historical configuration and scope.
+
+## Historical review
+
 # I22 thermal applicability and retained I21 refinement
 
 The 0.125 mm four-layer finite-volume solve was completed in I21. I22 retains that result.  It uses actual I18 native copper, with geometric equivalence to I20 established in `SOURCE_EFFECTIVITY.json`. No power, environment, conductivity, contact area or plating assumption was relaxed. Total dissipated power is 4.815 W; bulk air is 65°C at 70 kPa; cold landings are 70°C; minimum plated wall is 15 µm. Copper conductivity is 300 W/m·K and FR4 is 0.25 W/m·K. The declared carrier shadow, contact and natural convection/radiation terms remain active.

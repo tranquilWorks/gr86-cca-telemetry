@@ -1,0 +1,18 @@
+{
+  "componentCode": "C864499",
+  "componentModelEn": "RT0805BRB076K34L",
+  "componentBrandEn": "YAGEO",
+  "componentSpecificationEn": "0805",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404241522_YAGEO-RT0805BRB076K34L_C864499.pdf",
+  "describe": "-55\u2103~+155\u2103 125mW 6.34k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0805 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 72,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C864499",
+  "retrieved_at_UTC": "2026-09-15T21:05:50.380315+00:00",
+  "response_sha256": "3131e946268274ed7ad69539c7e92ab59960c360af28760b2829b99bac38aa88"
+}

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844863",
+  "componentModelEn": "CRCW1206100KFKEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "1206",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-CRCW1206100KFKEA_C844863.pdf",
+  "describe": "-55\u2103~+155\u2103 100k\u03a9 200V 250mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 1206 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 7626,
+  "preMinPurchaseNum": 495,
+  "canPresaleNumber": 7606,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844863",
+  "retrieved_at_UTC": "2026-09-15T21:03:45.952373+00:00",
+  "response_sha256": "d25c8357ecc605c854cce68a9b07dcac359b5463771e8cebeab72243878156ac"
+}
