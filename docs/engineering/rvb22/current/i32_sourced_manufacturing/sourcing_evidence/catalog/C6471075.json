@@ -1,0 +1,18 @@
+{
+  "componentCode": "C6471075",
+  "componentModelEn": "BPCI00121280470M00",
+  "componentBrandEn": "Chilisin Elec",
+  "componentSpecificationEn": "SMD,12x12mm",
+  "assemblyMode": "manualWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2312120515_Chilisin-Elec-BPCI00121280470M00_C6471075.pdf",
+  "describe": "100m\u03a9 2.5A 2.5A 47uH Magnetic Shielded Inductor \u00b120% SMD,12x12mm Power Inductors ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 35,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C6471075",
+  "retrieved_at_UTC": "2026-09-15T21:03:44.842836+00:00",
+  "response_sha256": "50e5f3dcda1bce5d6d6b64b4790baa37975fe373509b1a75f29034fbc8b84d89"
+}

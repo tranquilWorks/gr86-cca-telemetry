@@ -1,0 +1,18 @@
+{
+  "componentCode": "C844679",
+  "componentModelEn": "TNPW08051M00BEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0805",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312131902_Vishay-Intertech-TNPW08051M00BEEA_C844679.pdf",
+  "describe": "-55\u2103~+155\u2103 125mW 1M\u03a9 Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0805 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 19078,
+  "preMinPurchaseNum": 36,
+  "canPresaleNumber": 17016,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C844679",
+  "retrieved_at_UTC": "2026-09-15T21:03:45.983177+00:00",
+  "response_sha256": "327dedf2c2afde526609bcf631d2aaf0bf30642f28f3648a9fb79a9f19555aff"
+}

@@ -1,0 +1,18 @@
+{
+  "componentCode": "C544399",
+  "componentModelEn": "TPS26600PWPR",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "HTSSOP-16-EP",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2007161516_Texas-Instruments-TPS26600PWPR_C544399.pdf",
+  "describe": "-40\u2103~+125\u2103 1 1.2mm 100mA~2.23A 150m\u03a9 1V 4.2V~60V 4.4mm 5mm Integrated FET Overcurrent Protection\u3001Short-Circuit  Protection\u3001Under-voltage lockout\u3001Thermal Protection\u3001Overvoltage clamping protection Surface Mount HTSSOP-16-EP Surge Protection Devices (SPDs) ROHS",
+  "overseasStockCount": 4928,
+  "preMinPurchaseNum": 6,
+  "canPresaleNumber": 4851,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C544399",
+  "retrieved_at_UTC": "2026-09-15T21:03:44.706456+00:00",
+  "response_sha256": "701d099134d11cdbdd082c0e79eed21f7125f505cc4855f5cf0e0c76b016165d"
+}

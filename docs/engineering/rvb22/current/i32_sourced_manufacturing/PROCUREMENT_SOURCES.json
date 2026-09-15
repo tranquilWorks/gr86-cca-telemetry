@@ -1,0 +1,897 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "ad507920488976ff03e4598e79c9bbe5e9f0ba3b",
+  "scope": "All factory references require JLC catalog purchase/preorder assignments. No Global Sourcing or consignment. F101 and U401 retain local installation.",
+  "parts": {
+    "0430451200": {
+      "LCSC": "C277636",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "430451200",
+      "url": "https://jlcpcb.com/partdetail/C277636",
+      "identity": "DOCUMENTED_FORMAT_ALIAS",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open.",
+      "alias_evidence": "https://www.molex.com/en-us/products/part-detail/43045-1200"
+    },
+    "0885001.DR": {
+      "LCSC": "C2879865",
+      "route": "LOCAL_INSTALL",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "0885001.DR",
+      "url": "https://jlcpcb.com/partdetail/C2879865",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "61300211121": {
+      "LCSC": "C2915055",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "61300211121",
+      "url": "https://jlcpcb.com/partdetail/C2915055",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "AA0603FR-07220RL": {
+      "LCSC": "C2100485",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "AA0603FR-07220RL",
+      "url": "https://jlcpcb.com/partdetail/C2100485",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "APT1608SGC": {
+      "LCSC": "C5875754",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "APT1608SGC",
+      "url": "https://jlcpcb.com/partdetail/C5875754",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "BPCI00121280470M00": {
+      "LCSC": "C6471075",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "BPCI00121280470M00",
+      "url": "https://jlcpcb.com/partdetail/C6471075",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "BZT52H-B15-QX": {
+      "LCSC": "C7507926",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "BZT52H-B15-QX",
+      "url": "https://jlcpcb.com/partdetail/C7507926",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "C1210C106K5RACTU": {
+      "LCSC": "C2167688",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "C1210C106K5RACTU",
+      "url": "https://jlcpcb.com/partdetail/C2167688",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA3E2C0G1H101J080AA": {
+      "LCSC": "C76709",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E2C0G1H101JT0Y0N",
+      "url": "https://jlcpcb.com/partdetail/C76709",
+      "identity": "DOCUMENTED_CATALOG_ALIAS",
+      "status": "CATALOG_STOCK",
+      "alias_evidence": "https://www.digikey.com/en/products/detail/tdk/CGA3E2C0G1H101J080AA/2443118",
+      "nomenclature_evidence": "https://www.farnell.com/datasheets/1683658.pdf",
+      "note": "Exact catalog-to-item-description alias, explicitly listed by distributor. TDK explains that catalog and label suffixes differ. No electrical or mechanical substitution."
+    },
+    "CGA3E2C0G1H222J080AA": {
+      "LCSC": "C2169200",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E2C0G1H222J080AA",
+      "url": "https://jlcpcb.com/partdetail/C2169200",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA3E2C0G2A332J080AA": {
+      "LCSC": "C2171993",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E2C0G2A332J080AA",
+      "url": "https://jlcpcb.com/partdetail/C2171993",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA3E2X7R1H223K080AE": {
+      "LCSC": "C2176922",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E2X7R1H223K080AE",
+      "url": "https://jlcpcb.com/partdetail/C2176922",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA3E2X7R2A103K080AE": {
+      "LCSC": "C3858696",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E2X7R2A103K080AE",
+      "url": "https://jlcpcb.com/partdetail/C3858696",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA3E3X7R1H224KT0Y0N": {
+      "LCSC": "C342967",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA3E3X7R1H224KT0Y0N",
+      "url": "https://jlcpcb.com/partdetail/C342967",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA4J1C0G2A333J125AE": {
+      "LCSC": "C2181132",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA4J1C0G2A333J125AE",
+      "url": "https://jlcpcb.com/partdetail/C2181132",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CGA4J2X7R2A104K125AA": {
+      "LCSC": "C342919",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA4J2X7R2A104KT0Y0U",
+      "url": "https://jlcpcb.com/partdetail/C342919",
+      "identity": "DOCUMENTED_CATALOG_ALIAS",
+      "status": "CATALOG_STOCK",
+      "alias_evidence": "https://www.newark.com/tdk/cga4j2x7r2a104k125aa/cap-0-1uf-100v-mlcc-0805/dp/40Y2282",
+      "nomenclature_evidence": "https://www.farnell.com/datasheets/1683658.pdf",
+      "note": "Exact catalog-to-item-description alias, explicitly listed by distributor. TDK explains that catalog and label suffixes differ. No electrical or mechanical substitution."
+    },
+    "CGA5L1C0G2A683J160AE": {
+      "LCSC": "C3869625",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA5L1C0G2A683J160AE",
+      "url": "https://jlcpcb.com/partdetail/C3869625",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "CGA6N3X7R2A225K230AB": {
+      "LCSC": "C342652",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CGA6N3X7R2A225KT0Y0U",
+      "url": "https://jlcpcb.com/partdetail/C342652",
+      "identity": "DOCUMENTED_CATALOG_ALIAS",
+      "status": "CATALOG_STOCK",
+      "alias_evidence": "https://www.digikey.com/en/products/detail/tdk-corporation/CGA6N3X7R2A225K230AB/2443344",
+      "nomenclature_evidence": "https://www.farnell.com/datasheets/1683658.pdf",
+      "note": "Exact catalog-to-item-description alias, explicitly listed by distributor. TDK explains that catalog and label suffixes differ. No electrical or mechanical substitution."
+    },
+    "CRCW06030000Z0EA": {
+      "LCSC": "C844915",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW06030000Z0EA",
+      "url": "https://jlcpcb.com/partdetail/C844915",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW0603100KFKEA": {
+      "LCSC": "C844916",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW0603100KFKEA",
+      "url": "https://jlcpcb.com/partdetail/C844916",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW060310K0FKEA": {
+      "LCSC": "C844918",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW060310K0FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844918",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW060310R0FKEA": {
+      "LCSC": "C844919",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW060310R0FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844919",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW06031K00FKEA": {
+      "LCSC": "C844920",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW06031K00FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844920",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW0603330KFKEA": {
+      "LCSC": "C844776",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW0603330KFKEA",
+      "url": "https://jlcpcb.com/partdetail/C844776",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW060347K0FKEA": {
+      "LCSC": "C844929",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW060347K0FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844929",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW06034K70FKEA": {
+      "LCSC": "C844931",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW06034K70FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844931",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW06035K10FKEA": {
+      "LCSC": "C844933",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW06035K10FKEA",
+      "url": "https://jlcpcb.com/partdetail/C844933",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW12060000Z0EA": {
+      "LCSC": "C190124",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW12060000Z0EA",
+      "url": "https://jlcpcb.com/partdetail/C190124",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW1206100KFKEA": {
+      "LCSC": "C844863",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW1206100KFKEA",
+      "url": "https://jlcpcb.com/partdetail/C844863",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW1206510KFKEA": {
+      "LCSC": "C843859",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW1206510KFKEA",
+      "url": "https://jlcpcb.com/partdetail/C843859",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW251212K1FKEG": {
+      "LCSC": "C4263918",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW251212K1FKEG",
+      "url": "https://jlcpcb.com/partdetail/C4263918",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "CRCW25124R70FKEGHP": {
+      "LCSC": "C2075852",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "CRCW25124R70FKEGHP",
+      "url": "https://jlcpcb.com/partdetail/C2075852",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "DMG2302UKQ-7": {
+      "LCSC": "C5224573",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "DMG2302UKQ-7",
+      "url": "https://jlcpcb.com/partdetail/C5224573",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "ERA3AEB1472V": {
+      "LCSC": "C2074591",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "ERA-3AEB1472V",
+      "url": "https://jlcpcb.com/partdetail/C2074591",
+      "identity": "DOCUMENTED_FORMAT_ALIAS",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open.",
+      "alias_evidence": "https://industrial.panasonic.com/ww/products/pt/high-precision-chip-resistors/models/ERA3AEB1472V"
+    },
+    "ERA3AEB2612V": {
+      "LCSC": "C491123",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "ERA3AEB2612V",
+      "url": "https://jlcpcb.com/partdetail/C491123",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "ESD2CAN24DBZRQ1": {
+      "LCSC": "C5736151",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "ESD2CAN24DBZRQ1",
+      "url": "https://jlcpcb.com/partdetail/C5736151",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "ESP32-S3-WROOM-1-N8R2": {
+      "LCSC": "C2913204",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "ESP32-S3-WROOM-1-N8R2",
+      "url": "https://jlcpcb.com/partdetail/C2913204",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "GCM188R71C105KA64D": {
+      "LCSC": "C161212",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "GCM188R71C105KA64D",
+      "url": "https://jlcpcb.com/partdetail/C161212",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "GCM188R71H104KA57D": {
+      "LCSC": "C85864",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "GCM188R71H104KA57D",
+      "url": "https://jlcpcb.com/partdetail/C85864",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "GRM1885C1H103JA01D": {
+      "LCSC": "C85973",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "GRM1885C1H103JA01D",
+      "url": "https://jlcpcb.com/partdetail/C85973",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "LM5164QDDARQ1": {
+      "LCSC": "C2072225",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "LM5164QDDARQ1",
+      "url": "https://jlcpcb.com/partdetail/C2072225",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "LM63615DQPWPRQ1": {
+      "LCSC": "C2867799",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "LM63615DQPWPRQ1",
+      "url": "https://jlcpcb.com/partdetail/C2867799",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "LQW18AS1N6J0ZD": {
+      "LCSC": "C7295894",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "LQW18AS1N6J0ZD",
+      "url": "https://jlcpcb.com/partdetail/C7295894",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "LTC4367HMS8#PBF": {
+      "LCSC": "C688370",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "LTC4367HMS8#PBF",
+      "url": "https://jlcpcb.com/partdetail/C688370",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "MCAST32MSB7226KPNA01": {
+      "LCSC": "C5372271",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "MCAST32MSB7226KPNA01",
+      "url": "https://jlcpcb.com/partdetail/C5372271",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "MIC5504-3.3YM5-TR": {
+      "LCSC": "C88419",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "MIC5504-3.3YM5-TR",
+      "url": "https://jlcpcb.com/partdetail/C88419",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "OPA2333AIDR": {
+      "LCSC": "C38732",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "OPA2333AIDR",
+      "url": "https://jlcpcb.com/partdetail/C38732",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PA1616D": {
+      "LCSC": "",
+      "route": "LOCAL_INSTALL",
+      "supplier": "GlobalTop exact-module RFQ",
+      "supplier_mpn": "PA1616D",
+      "url": "https://www.gtop-tech.com/",
+      "supplier_sku": "",
+      "identity": "EXACT_MPN_REQUEST",
+      "status": "SUPPLIER_QUOTE_REQUIRED",
+      "note": "Local installation only. Exact PA1616D module supply and lot identity require confirmation; no generic GPS module substitution."
+    },
+    "PLT1206Z5051LBTS": {
+      "LCSC": "C4074185",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PLT1206Z5051LBTS",
+      "url": "https://jlcpcb.com/partdetail/C4074185",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PMEG2010BEA,115": {
+      "LCSC": "C455041",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PMEG2010BEA,115",
+      "url": "https://jlcpcb.com/partdetail/C455041",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PTFR0603B11K8N9": {
+      "LCSC": "C19679768",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PTFR0603B11K8N9",
+      "url": "https://jlcpcb.com/partdetail/C19679768",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PTFR0603B3K01N9": {
+      "LCSC": "C2692830",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PTFR0603B3K01N9",
+      "url": "https://jlcpcb.com/partdetail/C2692830",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PTFR0603Q1K00N9": {
+      "LCSC": "C23067434",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PTFR0603Q1K00N9",
+      "url": "https://jlcpcb.com/partdetail/C23067434",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "PTFR0603Q4K70N9": {
+      "LCSC": "C23067437",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "PTFR0603Q4K70N9",
+      "url": "https://jlcpcb.com/partdetail/C23067437",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "RT0805BRB076K34L": {
+      "LCSC": "C864499",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "RT0805BRB076K34L",
+      "url": "https://jlcpcb.com/partdetail/C864499",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "S5JHE3_A/H": {
+      "LCSC": "C511410",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "S5JHE3_A/H",
+      "url": "https://jlcpcb.com/partdetail/C511410",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "SMAJ30AHE3_A/H": {
+      "LCSC": "C1978408",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "SMAJ30AHE3_A/H",
+      "url": "https://jlcpcb.com/partdetail/C1978408",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "SMCJ110AHE3_A/H": {
+      "LCSC": "C1982070",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "SMCJ110AHE3_A/H",
+      "url": "https://jlcpcb.com/partdetail/C1982070",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "SMCJ24AHE3_A/H": {
+      "LCSC": "C1981952",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "SMCJ24AHE3_A/H",
+      "url": "https://jlcpcb.com/partdetail/C1981952",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "SN74LVC2G125DCUR": {
+      "LCSC": "C21404",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "SN74LVC2G125DCUR",
+      "url": "https://jlcpcb.com/partdetail/C21404",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "SS16HE3_B/H": {
+      "LCSC": "C266798",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "SS16HE3_B/H",
+      "url": "https://jlcpcb.com/partdetail/C266798",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "STD25NF20": {
+      "LCSC": "C388326",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "STD25NF20",
+      "url": "https://jlcpcb.com/partdetail/C388326",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "T598X477M010ATE025": {
+      "LCSC": "C19941093",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "T598X477M010ATE025",
+      "url": "https://jlcpcb.com/partdetail/C19941093",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "T598X687M006ATE025": {
+      "LCSC": "C4951511",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "T598X687M006ATE025",
+      "url": "https://jlcpcb.com/partdetail/C4951511",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TCAN3403DRBRQ1": {
+      "LCSC": "C32921356",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TCAN3403DRBRQ1",
+      "url": "https://jlcpcb.com/partdetail/C32921356",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW0603100KBEEA": {
+      "LCSC": "C844888",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW0603100KBEEA",
+      "url": "https://jlcpcb.com/partdetail/C844888",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW060310K0BEEA": {
+      "LCSC": "C844890",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060310K0BEEA",
+      "url": "https://jlcpcb.com/partdetail/C844890",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW06031K00BEEA": {
+      "LCSC": "C844891",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW06031K00BEEA",
+      "url": "https://jlcpcb.com/partdetail/C844891",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW060324K3BEEA": {
+      "LCSC": "C4269123",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060324K3BEEA",
+      "url": "https://jlcpcb.com/partdetail/C4269123",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "TNPW060327K4BEEA": {
+      "LCSC": "C2079063",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060327K4BEEA",
+      "url": "https://jlcpcb.com/partdetail/C2079063",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW060331K6BEEA": {
+      "LCSC": "C843870",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060331K6BEEA",
+      "url": "https://jlcpcb.com/partdetail/C843870",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW060336K5BEEA": {
+      "LCSC": "C2089518",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060336K5BEEA",
+      "url": "https://jlcpcb.com/partdetail/C2089518",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW060343K2BEEA": {
+      "LCSC": "C2089718",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW060343K2BEEA",
+      "url": "https://jlcpcb.com/partdetail/C2089718",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW06034K02BEEA": {
+      "LCSC": "C844459",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW06034K02BEEA",
+      "url": "https://jlcpcb.com/partdetail/C844459",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW0805118KBEEA": {
+      "LCSC": "C1709453",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW0805118KBEEA",
+      "url": "https://jlcpcb.com/partdetail/C1709453",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW0805124KBEEA": {
+      "LCSC": "C1709494",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW0805124KBEEA",
+      "url": "https://jlcpcb.com/partdetail/C1709494",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW08051M00BEEA": {
+      "LCSC": "C844679",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW08051M00BEEA",
+      "url": "https://jlcpcb.com/partdetail/C844679",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW0805309KBEEA": {
+      "LCSC": "C1710754",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW0805309KBEEA",
+      "url": "https://jlcpcb.com/partdetail/C1710754",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TNPW1206549KBEEA": {
+      "LCSC": "C4328168",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TNPW1206549KBEEA",
+      "url": "https://jlcpcb.com/partdetail/C4328168",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "TPD1E05U06DPYR": {
+      "LCSC": "C436349",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TPD1E05U06DPYR",
+      "url": "https://jlcpcb.com/partdetail/C436349",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TPS22953QDQCRQ1": {
+      "LCSC": "C5219894",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TPS22953QDQCRQ1",
+      "url": "https://jlcpcb.com/partdetail/C5219894",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Exact specified part. Public purchase/preorder snapshot; stock allocation and supplier assembly acceptance remain open."
+    },
+    "TPS26600PWPR": {
+      "LCSC": "C544399",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TPS26600PWPR",
+      "url": "https://jlcpcb.com/partdetail/C544399",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "TPS3808G33QDBVRQ1": {
+      "LCSC": "C414616",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "TPS3808G33QDBVRQ1",
+      "url": "https://jlcpcb.com/partdetail/C414616",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "U.FL-R-SMT-1(80)": {
+      "LCSC": "C88374",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "U.FL-R-SMT-1(80)",
+      "url": "https://jlcpcb.com/partdetail/C88374",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "WSL2512R3000FEA": {
+      "LCSC": "C2076134",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "WSL2512R3000FEA",
+      "url": "https://jlcpcb.com/partdetail/C2076134",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "WSL2512R4700FEA": {
+      "LCSC": "C4273015",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "WSL2512R4700FEA",
+      "url": "https://jlcpcb.com/partdetail/C4273015",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "WSLP0603R0100FEA": {
+      "LCSC": "C5334451",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "WSLP0603R0100FEA",
+      "url": "https://jlcpcb.com/partdetail/C5334451",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_STOCK",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    },
+    "XGL5030-153MEC": {
+      "LCSC": "C3911485",
+      "route": "JLC_CATALOG",
+      "supplier": "JLCPCB",
+      "supplier_mpn": "XGL5030-153MEC",
+      "url": "https://jlcpcb.com/partdetail/C3911485",
+      "identity": "EXACT_MPN",
+      "status": "CATALOG_PREORDER",
+      "note": "Snapshot only; supplier acceptance, stock allocation and attrition remain open."
+    }
+  },
+  "factory_sourcing_policy": "JLC_CATALOG_ONLY"
+}

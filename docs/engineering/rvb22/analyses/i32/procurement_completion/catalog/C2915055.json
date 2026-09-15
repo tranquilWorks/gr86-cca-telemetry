@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2915055",
+  "componentModelEn": "61300211121",
+  "componentBrandEn": "Wurth Elektronik",
+  "componentSpecificationEn": "Plugin,P=2.54mm",
+  "assemblyMode": "manualWeld",
+  "dataManualUrl": null,
+  "describe": "-40\u2103~+105\u2103 1 1x2P 2.54mm 250V 2P 3A 6mm Black Copper alloy Pin Header Through Hole \u63d2\u4ef6,P=2.54mm Pin Headers ROHS",
+  "overseasStockCount": 17774,
+  "preMinPurchaseNum": 87,
+  "canPresaleNumber": 16107,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2915055",
+  "retrieved_at_UTC": "2026-09-15T21:03:42.185594+00:00",
+  "response_sha256": "a8afad432ebf5127cb0d7d9b8ebec0f99e5238261a29d39c909d388e968b19d7"
+}

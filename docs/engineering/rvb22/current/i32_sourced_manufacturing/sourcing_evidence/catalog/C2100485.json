@@ -1,0 +1,17 @@
+{
+  "componentCode": "C2100485",
+  "componentModelEn": "AA0603FR-07220RL",
+  "componentBrandEn": "YAGEO",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251211_YAGEO-AA0603FR-07220RL_C2100485.pdf",
+  "describe": "-55\u2103~+155\u2103 100mW 200V 220\u03a9 Thick Film Resistor \u00b11% \u00b1150ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 2357,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C2100485",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.849459+00:00",
+  "response_sha256": "9e9fb70cf319f116014fc45de2b9d14e7bf69ffd837ac99a2bb6fae511bb7dd4"
+}

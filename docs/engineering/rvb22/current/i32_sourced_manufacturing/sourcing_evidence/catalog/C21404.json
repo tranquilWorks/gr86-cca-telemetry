@@ -1,0 +1,17 @@
+{
+  "componentCode": "C21404",
+  "componentModelEn": "SN74LVC2G125DCUR",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "VSSOP-8",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1806090840_Texas-Instruments-SN74LVC2G125DCUR_C21404.pdf",
+  "describe": "-40\u2103~+85\u2103 1 1.65V~5.5V 10uA 2 32mA 32mA 4.3ns@3.3V,50pF 74LVC Tri-State Unidirectional VSSOP-8 Buffers, Drivers, Receivers, Transceivers ROHS",
+  "overseasStockCount": 40486,
+  "preMinPurchaseNum": 44,
+  "canPresaleNumber": 40238,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C21404",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.923624+00:00",
+  "response_sha256": "c68067ee674862a63009c32da5b73c787db793aa0fcfd1106adedef3b563796b"
+}

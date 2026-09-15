@@ -1,0 +1,18 @@
+{
+  "componentCode": "C414616",
+  "componentModelEn": "TPS3808G33QDBVRQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "SOT-23-6",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2004021703_Texas-Instruments-TPS3808G33QDBVRQ1_C414616.pdf",
+  "describe": "-40\u2103~+125\u2103@(Tj) 1 1.8V~6.5V 2.4uA 20ms 3.07V Active Low Open Drain Voltage Monitor Yes SOT-23-6 Supervisor and Reset ICs ROHS",
+  "overseasStockCount": 1340,
+  "preMinPurchaseNum": 15,
+  "canPresaleNumber": 1339,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C414616",
+  "retrieved_at_UTC": "2026-09-15T21:05:19.111091+00:00",
+  "response_sha256": "8b49a31c4fc77958d6c6a246f677aeb64be896d2612dd2c7173693ad47138e63"
+}

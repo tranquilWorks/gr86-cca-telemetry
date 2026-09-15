@@ -1,4 +1,16 @@
-# Current I32 procurement redline — 2026-09-15
+# Current I32 sourced ECAD and manufacturing — 2026-09-15
+
+Use the [sourced manufacturing handoff](product/PRODUCT_HANDOFF.md) and
+[sourced native project/package](current/i32_sourced_manufacturing/README.md).
+All 175 factory references have verified JLC catalog assignments; all 29 missing
+assignments are resolved using the exact specified parts. Native schematic/PCB
+procurement fields, BOM, CPL and fabrication outputs are regenerated. Fresh
+ERC/DRC/parity/unconnected findings are zero. The qualified circuit, geometry,
+models and simulation bindings are preserved. Preorders, supplier process
+acceptance and physical qualification remain open. Earlier procurement counts
+and package pointers below are historical.
+
+## Qualified frozen-parts baseline — 2026-09-15
 
 The native frozen-parts redline is completed and desktop-verified. Current source, BOM/CPL, manufacturing files and affected verification are controlled by [the redline report](analyses/i32/procurement_redline/README.md), [final verification](analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json), and [source effectivity](current/SOURCE_EFFECTIVITY.json). Supplier and physical gates remain open. Earlier source hashes, active parts, numerical results and package pointers below are historical where superseded; the original document is preserved under `analyses/i32/procurement_redline/history/pre_redline/`.
 

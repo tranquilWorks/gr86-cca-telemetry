@@ -1,0 +1,17 @@
+{
+  "componentCode": "C2867799",
+  "componentModelEn": "LM63615DQPWPRQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "HTSSOP-16-EP",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010500_Texas-Instruments-LM63615DQPWPRQ1_C2867799.pdf",
+  "describe": "-40\u2103~+125\u2103@(TA) 1 1.5A 1V~20V 23uA 250kHz~2.2MHz 3.5V~36V Adjustable Buck Buck Built-in Yes HTSSOP-16-EP DC-DC Converters ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 2,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C2867799",
+  "retrieved_at_UTC": "2026-09-15T21:03:41.984275+00:00",
+  "response_sha256": "8cedfec388ae53154ad60215acae05e7efaacc4d93f6b8abd61a66b188a66510"
+}

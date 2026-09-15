@@ -1,0 +1,17 @@
+{
+  "componentCode": "C1981952",
+  "componentModelEn": "SMCJ24AHE3_A/H",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "DO-214AB(SMCJ)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-SMCJ24AHE3-A-H_C1981952.pdf",
+  "describe": "-55\u2103~+150\u2103 1.5kW@10/1000us 24V 26.7V 38.6A 38.9V TVS Unidirectional DO-214AB(SMCJ) ESD and Surge Protection (TVS/ESD) ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 18,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C1981952",
+  "retrieved_at_UTC": "2026-09-15T21:03:39.647357+00:00",
+  "response_sha256": "008baccf14aadd5f3ceb39e9fb1b11ea547d1721c39015af480e409ab198ec7b"
+}

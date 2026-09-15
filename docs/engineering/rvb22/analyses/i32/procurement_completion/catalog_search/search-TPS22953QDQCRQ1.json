@@ -1,0 +1,22 @@
+{
+  "query": "TPS22953QDQCRQ1",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:32.723551+00:00",
+  "response_sha256": "c7daacf865dc19fce78a9105af8bcaabae41108c418dd24ec76844e1fb5e9081",
+  "rows": [
+    {
+      "componentCode": "C5219894",
+      "componentModelEn": "TPS22953QDQCRQ1",
+      "componentBrandEn": "Texas Instruments",
+      "stockCount": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 14,
+      "urlSuffix": "TexasInstruments-TPS22953QDQCRQ1/C5219894",
+      "componentSpecificationEn": "WSON-10",
+      "dataManualUrl": "https://www.ti.com/cn/lit/gpn/tps22953-q1"
+    }
+  ]
+}

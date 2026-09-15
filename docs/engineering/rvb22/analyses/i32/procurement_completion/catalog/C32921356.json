@@ -1,0 +1,17 @@
+{
+  "componentCode": "C32921356",
+  "componentModelEn": "TCAN3403DRBRQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "SON-8-EP(3x3)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": null,
+  "describe": "-40\u2103~+150\u2103 1 15uA 3.3V 60mA 8Mbps CAN FD Transceiver SON-8-EP(3x3) CAN Transceivers ROHS",
+  "overseasStockCount": 753,
+  "preMinPurchaseNum": 7,
+  "canPresaleNumber": 737,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C32921356",
+  "retrieved_at_UTC": "2026-09-15T21:03:42.475983+00:00",
+  "response_sha256": "6ea782946456be73aa1d34d91311fba069163c3d5303a45fe1c60c00171d22fe"
+}

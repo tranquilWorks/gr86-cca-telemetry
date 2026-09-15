@@ -1,0 +1,18 @@
+{
+  "componentCode": "C4273015",
+  "componentModelEn": "WSL2512R4700FEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "2512",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312131128_Vishay-Intertech-WSL2512R4700FEA_C4273015.pdf",
+  "describe": "-65\u2103~+170\u2103 1W 470m\u03a9 \u00b11% \u00b175ppm/\u2103 2512 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 8,
+  "preMinPurchaseNum": 20,
+  "canPresaleNumber": 5,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C4273015",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.559099+00:00",
+  "response_sha256": "6c29ea55b563951361623332ea03fb8e17366e46051c181f4f1cf6d89118b979"
+}

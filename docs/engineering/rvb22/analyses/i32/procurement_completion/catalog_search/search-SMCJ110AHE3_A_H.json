@@ -1,0 +1,22 @@
+{
+  "query": "SMCJ110AHE3_A/H",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:22.308110+00:00",
+  "response_sha256": "abb49e2f0011a8b2b386476f1d61fdf049c6893ebb29fede2d10c704bd67cbe8",
+  "rows": [
+    {
+      "componentCode": "C1982070",
+      "componentModelEn": "SMCJ110AHE3_A/H",
+      "componentBrandEn": "Vishay Intertech",
+      "stockCount": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 23,
+      "urlSuffix": "VishayIntertech-SMCJ110AHE3_AH/C1982070",
+      "componentSpecificationEn": "DO-214AB(SMCJ)",
+      "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-SMCJ110AHE3-A-H_C1982070.pdf"
+    }
+  ]
+}

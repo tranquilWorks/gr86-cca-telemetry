@@ -1,0 +1,18 @@
+{
+  "componentCode": "C688370",
+  "componentModelEn": "LTC4367HMS8#PBF",
+  "componentBrandEn": "Analog Devices",
+  "componentSpecificationEn": "MSOP-8",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Analog-Devices-LTC4367HMS8-PBF_C688370.pdf",
+  "describe": "-40\u2103~+125\u2103 2.5V~60V MSOP-8 Surge Protection Devices (SPDs) ROHS",
+  "overseasStockCount": 2,
+  "preMinPurchaseNum": 2,
+  "canPresaleNumber": 1,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C688370",
+  "retrieved_at_UTC": "2026-09-15T21:03:45.174841+00:00",
+  "response_sha256": "4ab40f2b7b8515459f6a1456ea43b5f727ee7be47913a8077f1a66429e778905"
+}

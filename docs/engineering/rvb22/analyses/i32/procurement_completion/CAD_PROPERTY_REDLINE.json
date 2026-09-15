@@ -1,0 +1,6020 @@
+[
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "U301",
+    "MPN": "TCAN3403DRBRQ1",
+    "before": {
+      "LCSC": "C32921356",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C32921356",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C32921356",
+      "SupplierMPN": "TCAN3403DRBRQ1"
+    }
+  },
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "R302",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "R303",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "C301",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "C302",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "CAN.kicad_sch",
+    "reference": "D301",
+    "MPN": "ESD2CAN24DBZRQ1",
+    "before": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5736151",
+      "SupplierMPN": "ESD2CAN24DBZRQ1"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "U201",
+    "MPN": "ESP32-S3-WROOM-1-N8R2",
+    "before": {
+      "LCSC": "C2913204",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2913204",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2913204",
+      "SupplierMPN": "ESP32-S3-WROOM-1-N8R2"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "C201",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "C202",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "R201",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "R202",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "C204",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "U202",
+    "MPN": "TPS3808G33QDBVRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C414616",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C414616",
+      "SupplierMPN": "TPS3808G33QDBVRQ1"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "R203",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "C205",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "ESP32.kicad_sch",
+    "reference": "R204",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "U401",
+    "MPN": "PA1616D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "",
+      "ProcurementRoute": "LOCAL_INSTALL",
+      "ProcurementURL": "https://www.gtop-tech.com/",
+      "SupplierMPN": "PA1616D"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "U403",
+    "MPN": "MIC5504-3.3YM5-TR",
+    "before": {
+      "LCSC": "C88419",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C88419",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C88419",
+      "SupplierMPN": "MIC5504-3.3YM5-TR"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R401",
+    "MPN": "CRCW06030000Z0EA",
+    "before": {
+      "LCSC": "C844915",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844915",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844915",
+      "SupplierMPN": "CRCW06030000Z0EA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "C401",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "C402",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "C403",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "U402",
+    "MPN": "SN74LVC2G125DCUR",
+    "before": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C21404",
+      "SupplierMPN": "SN74LVC2G125DCUR"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "C404",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R402",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R403",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "U404",
+    "MPN": "SN74LVC2G125DCUR",
+    "before": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C21404",
+      "SupplierMPN": "SN74LVC2G125DCUR"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "C405",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R404",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R405",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "D401",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "L406",
+    "MPN": "LQW18AS1N6J0ZD",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C7295894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C7295894",
+      "SupplierMPN": "LQW18AS1N6J0ZD"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "J401",
+    "MPN": "U.FL-R-SMT-1(80)",
+    "before": {
+      "LCSC": "C88374",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C88374",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C88374",
+      "SupplierMPN": "U.FL-R-SMT-1(80)"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R407",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R408",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R409",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R410",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "R411",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GPS.kicad_sch",
+    "reference": "D402",
+    "MPN": "TPD1E05U06DPYR",
+    "before": {
+      "LCSC": "C436349",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C436349",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C436349",
+      "SupplierMPN": "TPD1E05U06DPYR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R162",
+    "MPN": "PTFR0603Q4K70N9",
+    "before": {
+      "LCSC": "C23067437",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067437",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067437",
+      "SupplierMPN": "PTFR0603Q4K70N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R126",
+    "MPN": "ERA3AEB2612V",
+    "before": {
+      "LCSC": "C491123",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C491123",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C491123",
+      "SupplierMPN": "ERA3AEB2612V"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C204",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D606",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R167",
+    "MPN": "CRCW0603330KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844776",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844776",
+      "SupplierMPN": "CRCW0603330KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R403",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R165",
+    "MPN": "CRCW25124R70FKEGHP",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2075852",
+      "SupplierMPN": "CRCW25124R70FKEGHP"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R604",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R110",
+    "MPN": "WSL2512R4700FEA",
+    "before": {
+      "LCSC": "C4273015",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4273015",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4273015",
+      "SupplierMPN": "WSL2512R4700FEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C202",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R124",
+    "MPN": "TNPW060343K2BEEA",
+    "before": {
+      "LCSC": "C2089718",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2089718",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2089718",
+      "SupplierMPN": "TNPW060343K2BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D604",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D511",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C532",
+    "MPN": "GRM1885C1H103JA01D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85973",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85973",
+      "SupplierMPN": "GRM1885C1H103JA01D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C523",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U201",
+    "MPN": "ESP32-S3-WROOM-1-N8R2",
+    "before": {
+      "LCSC": "C2913204",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2913204",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2913204",
+      "SupplierMPN": "ESP32-S3-WROOM-1-N8R2"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C506",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R128",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D502",
+    "MPN": "SS16HE3_B/H",
+    "before": {
+      "LCSC": "C266798",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C266798",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C266798",
+      "SupplierMPN": "SS16HE3_B/H"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R603",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C128",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R125",
+    "MPN": "CRCW1206100KFKEA",
+    "before": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844863",
+      "SupplierMPN": "CRCW1206100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U403",
+    "MPN": "MIC5504-3.3YM5-TR",
+    "before": {
+      "LCSC": "C88419",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C88419",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C88419",
+      "SupplierMPN": "MIC5504-3.3YM5-TR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R201",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D522",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R402",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R121",
+    "MPN": "TNPW060331K6BEEA",
+    "before": {
+      "LCSC": "C843870",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C843870",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C843870",
+      "SupplierMPN": "TNPW060331K6BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D104",
+    "MPN": "BZT52H-B15-QX",
+    "before": {
+      "LCSC": "C7507926",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C7507926",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C7507926",
+      "SupplierMPN": "BZT52H-B15-QX"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R163",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "J202",
+    "MPN": "61300211121",
+    "before": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2915055",
+      "SupplierMPN": "61300211121"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "Q153",
+    "MPN": "DMG2302UKQ-7",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5224573",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5224573",
+      "SupplierMPN": "DMG2302UKQ-7"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C125",
+    "MPN": "CGA3E2C0G2A332J080AA",
+    "before": {
+      "LCSC": "C2171993",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2171993",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2171993",
+      "SupplierMPN": "CGA3E2C0G2A332J080AA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R166",
+    "MPN": "CRCW0603330KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844776",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844776",
+      "SupplierMPN": "CRCW0603330KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C401",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C504",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "F101",
+    "MPN": "0885001.DR",
+    "before": {
+      "LCSC": "C2879865",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2879865",
+      "ProcurementRoute": "LOCAL_INSTALL",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2879865",
+      "SupplierMPN": "0885001.DR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "J203",
+    "MPN": "61300211121",
+    "before": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2915055",
+      "SupplierMPN": "61300211121"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R404",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C162",
+    "MPN": "T598X477M010ATE025",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C19941093",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C19941093",
+      "SupplierMPN": "T598X477M010ATE025"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D605",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C402",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R606",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R202",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R602",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R123",
+    "MPN": "TNPW0603100KBEEA",
+    "before": {
+      "LCSC": "C844888",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844888",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844888",
+      "SupplierMPN": "TNPW0603100KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U402",
+    "MPN": "SN74LVC2G125DCUR",
+    "before": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C21404",
+      "SupplierMPN": "SN74LVC2G125DCUR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D105",
+    "MPN": "SMCJ110AHE3_A/H",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1982070",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1982070",
+      "SupplierMPN": "SMCJ110AHE3_A/H"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D512",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R160",
+    "MPN": "RT0805BRB076K34L",
+    "before": {
+      "LCSC": "C864499",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C864499",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C864499",
+      "SupplierMPN": "RT0805BRB076K34L"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R601",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R159",
+    "MPN": "CRCW060347K0FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844929",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844929",
+      "SupplierMPN": "CRCW060347K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C513",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C403",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C103",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R111",
+    "MPN": "CRCW1206100KFKEA",
+    "before": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844863",
+      "SupplierMPN": "CRCW1206100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R401",
+    "MPN": "CRCW06030000Z0EA",
+    "before": {
+      "LCSC": "C844915",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844915",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844915",
+      "SupplierMPN": "CRCW06030000Z0EA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R164",
+    "MPN": "CRCW06034K70FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844931",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844931",
+      "SupplierMPN": "CRCW06034K70FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C123",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D103",
+    "MPN": "SMCJ24AHE3_A/H",
+    "before": {
+      "LCSC": "C1981952",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1981952",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1981952",
+      "SupplierMPN": "SMCJ24AHE3_A/H"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R405",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R507",
+    "MPN": "CRCW25124R70FKEGHP",
+    "before": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2075852",
+      "SupplierMPN": "CRCW25124R70FKEGHP"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U121",
+    "MPN": "LM5164QDDARQ1",
+    "before": {
+      "LCSC": "C2072225",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2072225",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2072225",
+      "SupplierMPN": "LM5164QDDARQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D401",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U404",
+    "MPN": "SN74LVC2G125DCUR",
+    "before": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C21404",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C21404",
+      "SupplierMPN": "SN74LVC2G125DCUR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D602",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C206",
+    "MPN": "T598X687M006ATE025",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4951511",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4951511",
+      "SupplierMPN": "T598X687M006ATE025"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C405",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D601",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C201",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D521",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C505",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R605",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C126",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R109",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U401",
+    "MPN": "PA1616D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "",
+      "ProcurementRoute": "LOCAL_INSTALL",
+      "ProcurementURL": "https://www.gtop-tech.com/",
+      "SupplierMPN": "PA1616D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "L121",
+    "MPN": "BPCI00121280470M00",
+    "before": {
+      "LCSC": "C6471075",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C6471075",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C6471075",
+      "SupplierMPN": "BPCI00121280470M00"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C404",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C121",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D603",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D101",
+    "MPN": "S5JHE3_A/H",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C511410",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C511410",
+      "SupplierMPN": "S5JHE3_A/H"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R157",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "Q101",
+    "MPN": "STD25NF20",
+    "before": {
+      "LCSC": "C388326",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C388326",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C388326",
+      "SupplierMPN": "STD25NF20"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C165",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R122",
+    "MPN": "TNPW0805309KBEEA",
+    "before": {
+      "LCSC": "C1710754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1710754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1710754",
+      "SupplierMPN": "TNPW0805309KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "F1",
+    "MPN": "0430451200",
+    "before": {
+      "LCSC": "C277636",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C277636",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C277636",
+      "SupplierMPN": "430451200"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R127",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C124",
+    "MPN": "CGA3E2C0G1H222J080AA",
+    "before": {
+      "LCSC": "C2169200",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2169200",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2169200",
+      "SupplierMPN": "CGA3E2C0G1H222J080AA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R161",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "Q152",
+    "MPN": "DMG2302UKQ-7",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5224573",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5224573",
+      "SupplierMPN": "DMG2302UKQ-7"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C127",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R511",
+    "MPN": "TNPW08051M00BEEA",
+    "before": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844679",
+      "SupplierMPN": "TNPW08051M00BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C511",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "L151",
+    "MPN": "XGL5030-153MEC",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3911485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3911485",
+      "SupplierMPN": "XGL5030-153MEC"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R168",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R204",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R408",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C102",
+    "MPN": "CGA3E2X7R2A103K080AE",
+    "before": {
+      "LCSC": "C3858696",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3858696",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3858696",
+      "SupplierMPN": "CGA3E2X7R2A103K080AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C167",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C159",
+    "MPN": "CGA4J1C0G2A333J125AE",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2181132",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2181132",
+      "SupplierMPN": "CGA4J1C0G2A333J125AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C122",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R104",
+    "MPN": "ERA3AEB1472V",
+    "before": {
+      "LCSC": "C2074591",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2074591",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2074591",
+      "SupplierMPN": "ERA-3AEB1472V"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C158",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R169",
+    "MPN": "PTFR0603B3K01N9",
+    "before": {
+      "LCSC": "C2692830",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2692830",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2692830",
+      "SupplierMPN": "PTFR0603B3K01N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D501",
+    "MPN": "ESD2CAN24DBZRQ1",
+    "before": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5736151",
+      "SupplierMPN": "ESD2CAN24DBZRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C301",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D402",
+    "MPN": "TPD1E05U06DPYR",
+    "before": {
+      "LCSC": "C436349",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C436349",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C436349",
+      "SupplierMPN": "TPD1E05U06DPYR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R525",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C151",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R515",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R154",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R513",
+    "MPN": "TNPW0805124KBEEA",
+    "before": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709494",
+      "SupplierMPN": "TNPW0805124KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R504",
+    "MPN": "TNPW060310K0BEEA",
+    "before": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844890",
+      "SupplierMPN": "TNPW060310K0BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C101",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R158",
+    "MPN": "WSL2512R3000FEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2076134",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2076134",
+      "SupplierMPN": "WSL2512R3000FEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R102",
+    "MPN": "TNPW1206549KBEEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4328168",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4328168",
+      "SupplierMPN": "TNPW1206549KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R153",
+    "MPN": "WSLP0603R0100FEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5334451",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5334451",
+      "SupplierMPN": "WSLP0603R0100FEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R155",
+    "MPN": "PTFR0603B11K8N9",
+    "before": {
+      "LCSC": "C19679768",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C19679768",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C19679768",
+      "SupplierMPN": "PTFR0603B11K8N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C501",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R151",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C166",
+    "MPN": "CGA5L1C0G2A683J160AE",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3869625",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3869625",
+      "SupplierMPN": "CGA5L1C0G2A683J160AE"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C302",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R156",
+    "MPN": "PLT1206Z5051LBTS",
+    "before": {
+      "LCSC": "C4074185",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4074185",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4074185",
+      "SupplierMPN": "PLT1206Z5051LBTS"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C155",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C512",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C522",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R505",
+    "MPN": "TNPW0805118KBEEA",
+    "before": {
+      "LCSC": "C1709453",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709453",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709453",
+      "SupplierMPN": "TNPW0805118KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R170",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R106",
+    "MPN": "CRCW060310R0FKEA",
+    "before": {
+      "LCSC": "C844919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844919",
+      "SupplierMPN": "CRCW060310R0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C502",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R105",
+    "MPN": "CRCW1206510KFKEA",
+    "before": {
+      "LCSC": "C843859",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C843859",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C843859",
+      "SupplierMPN": "CRCW1206510KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U301",
+    "MPN": "TCAN3403DRBRQ1",
+    "before": {
+      "LCSC": "C32921356",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C32921356",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C32921356",
+      "SupplierMPN": "TCAN3403DRBRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C524",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R103",
+    "MPN": "TNPW060324K3BEEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4269123",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4269123",
+      "SupplierMPN": "TNPW060324K3BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D301",
+    "MPN": "ESD2CAN24DBZRQ1",
+    "before": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5736151",
+      "SupplierMPN": "ESD2CAN24DBZRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R101",
+    "MPN": "CRCW251212K1FKEG",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4263918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4263918",
+      "SupplierMPN": "CRCW251212K1FKEG"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C161",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C205",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R521",
+    "MPN": "TNPW08051M00BEEA",
+    "before": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844679",
+      "SupplierMPN": "TNPW08051M00BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "L406",
+    "MPN": "LQW18AS1N6J0ZD",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C7295894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C7295894",
+      "SupplierMPN": "LQW18AS1N6J0ZD"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C503",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R411",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R506",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R522",
+    "MPN": "TNPW06034K02BEEA",
+    "before": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844459",
+      "SupplierMPN": "TNPW06034K02BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U502",
+    "MPN": "OPA2333AIDR",
+    "before": {
+      "LCSC": "C38732",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C38732",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C38732",
+      "SupplierMPN": "OPA2333AIDR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C153",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R152",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R409",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U501",
+    "MPN": "TPS26600PWPR",
+    "before": {
+      "LCSC": "C544399",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C544399",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C544399",
+      "SupplierMPN": "TPS26600PWPR"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C129",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R410",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R107",
+    "MPN": "CRCW06035K10FKEA",
+    "before": {
+      "LCSC": "C844933",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844933",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844933",
+      "SupplierMPN": "CRCW06035K10FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C531",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U202",
+    "MPN": "TPS3808G33QDBVRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C414616",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C414616",
+      "SupplierMPN": "TPS3808G33QDBVRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R303",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U152",
+    "MPN": "TPS22953QDQCRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5219894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5219894",
+      "SupplierMPN": "TPS22953QDQCRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C154",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "J401",
+    "MPN": "U.FL-R-SMT-1(80)",
+    "before": {
+      "LCSC": "C88374",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C88374",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C88374",
+      "SupplierMPN": "U.FL-R-SMT-1(80)"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "D102",
+    "MPN": "SMAJ30AHE3_A/H",
+    "before": {
+      "LCSC": "C1978408",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1978408",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1978408",
+      "SupplierMPN": "SMAJ30AHE3_A/H"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R203",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C514",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R302",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C152",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R503",
+    "MPN": "TNPW060336K5BEEA",
+    "before": {
+      "LCSC": "C2089518",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2089518",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2089518",
+      "SupplierMPN": "TNPW060336K5BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R502",
+    "MPN": "TNPW060310K0BEEA",
+    "before": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844890",
+      "SupplierMPN": "TNPW060310K0BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C157",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U101",
+    "MPN": "LTC4367HMS8#PBF",
+    "before": {
+      "LCSC": "C688370",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C688370",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C688370",
+      "SupplierMPN": "LTC4367HMS8#PBF"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R523",
+    "MPN": "TNPW0805124KBEEA",
+    "before": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709494",
+      "SupplierMPN": "TNPW0805124KBEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R514",
+    "MPN": "TNPW06031K00BEEA",
+    "before": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844891",
+      "SupplierMPN": "TNPW06031K00BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R501",
+    "MPN": "TNPW060327K4BEEA",
+    "before": {
+      "LCSC": "C2079063",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2079063",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2079063",
+      "SupplierMPN": "TNPW060327K4BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R407",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R108",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U153",
+    "MPN": "TPS22953QDQCRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5219894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5219894",
+      "SupplierMPN": "TPS22953QDQCRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R512",
+    "MPN": "TNPW06034K02BEEA",
+    "before": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844459",
+      "SupplierMPN": "TNPW06034K02BEEA"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "U151",
+    "MPN": "LM63615DQPWPRQ1",
+    "before": {
+      "LCSC": "C2867799",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2867799",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2867799",
+      "SupplierMPN": "LM63615DQPWPRQ1"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C521",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "C156",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "GR86_CCA_RevB.kicad_pcb",
+    "reference": "R524",
+    "MPN": "TNPW06031K00BEEA",
+    "before": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844891",
+      "SupplierMPN": "TNPW06031K00BEEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "F101",
+    "MPN": "0885001.DR",
+    "before": {
+      "LCSC": "C2879865",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2879865",
+      "ProcurementRoute": "LOCAL_INSTALL",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2879865",
+      "SupplierMPN": "0885001.DR"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "D101",
+    "MPN": "S5JHE3_A/H",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C511410",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C511410",
+      "SupplierMPN": "S5JHE3_A/H"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "Q101",
+    "MPN": "STD25NF20",
+    "before": {
+      "LCSC": "C388326",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C388326",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C388326",
+      "SupplierMPN": "STD25NF20"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "D103",
+    "MPN": "SMCJ24AHE3_A/H",
+    "before": {
+      "LCSC": "C1981952",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1981952",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1981952",
+      "SupplierMPN": "SMCJ24AHE3_A/H"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R101",
+    "MPN": "CRCW251212K1FKEG",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4263918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4263918",
+      "SupplierMPN": "CRCW251212K1FKEG"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "D102",
+    "MPN": "SMAJ30AHE3_A/H",
+    "before": {
+      "LCSC": "C1978408",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1978408",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1978408",
+      "SupplierMPN": "SMAJ30AHE3_A/H"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "C101",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "U101",
+    "MPN": "LTC4367HMS8#PBF",
+    "before": {
+      "LCSC": "C688370",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C688370",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C688370",
+      "SupplierMPN": "LTC4367HMS8#PBF"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R102",
+    "MPN": "TNPW1206549KBEEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4328168",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4328168",
+      "SupplierMPN": "TNPW1206549KBEEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R103",
+    "MPN": "TNPW060324K3BEEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4269123",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4269123",
+      "SupplierMPN": "TNPW060324K3BEEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R104",
+    "MPN": "ERA3AEB1472V",
+    "before": {
+      "LCSC": "C2074591",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2074591",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2074591",
+      "SupplierMPN": "ERA-3AEB1472V"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R105",
+    "MPN": "CRCW1206510KFKEA",
+    "before": {
+      "LCSC": "C843859",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C843859",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C843859",
+      "SupplierMPN": "CRCW1206510KFKEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R106",
+    "MPN": "CRCW060310R0FKEA",
+    "before": {
+      "LCSC": "C844919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844919",
+      "SupplierMPN": "CRCW060310R0FKEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R107",
+    "MPN": "CRCW06035K10FKEA",
+    "before": {
+      "LCSC": "C844933",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844933",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844933",
+      "SupplierMPN": "CRCW06035K10FKEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "C102",
+    "MPN": "CGA3E2X7R2A103K080AE",
+    "before": {
+      "LCSC": "C3858696",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3858696",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3858696",
+      "SupplierMPN": "CGA3E2X7R2A103K080AE"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R108",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R109",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R110",
+    "MPN": "WSL2512R4700FEA",
+    "before": {
+      "LCSC": "C4273015",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4273015",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4273015",
+      "SupplierMPN": "WSL2512R4700FEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "C103",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "R111",
+    "MPN": "CRCW1206100KFKEA",
+    "before": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844863",
+      "SupplierMPN": "CRCW1206100KFKEA"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "D104",
+    "MPN": "BZT52H-B15-QX",
+    "before": {
+      "LCSC": "C7507926",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C7507926",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C7507926",
+      "SupplierMPN": "BZT52H-B15-QX"
+    }
+  },
+  {
+    "file": "Input_Protection.kicad_sch",
+    "reference": "D105",
+    "MPN": "SMCJ110AHE3_A/H",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1982070",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1982070",
+      "SupplierMPN": "SMCJ110AHE3_A/H"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R601",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D601",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R602",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D602",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R603",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D603",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R604",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D604",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R605",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D605",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "R606",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "LEDs_Status.kicad_sch",
+    "reference": "D606",
+    "MPN": "APT1608SGC",
+    "before": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5875754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5875754",
+      "SupplierMPN": "APT1608SGC"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "U501",
+    "MPN": "TPS26600PWPR",
+    "before": {
+      "LCSC": "C544399",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C544399",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C544399",
+      "SupplierMPN": "TPS26600PWPR"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R501",
+    "MPN": "TNPW060327K4BEEA",
+    "before": {
+      "LCSC": "C2079063",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2079063",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2079063",
+      "SupplierMPN": "TNPW060327K4BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R502",
+    "MPN": "TNPW060310K0BEEA",
+    "before": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844890",
+      "SupplierMPN": "TNPW060310K0BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R503",
+    "MPN": "TNPW060336K5BEEA",
+    "before": {
+      "LCSC": "C2089518",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2089518",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2089518",
+      "SupplierMPN": "TNPW060336K5BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R504",
+    "MPN": "TNPW060310K0BEEA",
+    "before": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844890",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844890",
+      "SupplierMPN": "TNPW060310K0BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R505",
+    "MPN": "TNPW0805118KBEEA",
+    "before": {
+      "LCSC": "C1709453",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709453",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709453",
+      "SupplierMPN": "TNPW0805118KBEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C501",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C502",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C503",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R506",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D501",
+    "MPN": "ESD2CAN24DBZRQ1",
+    "before": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5736151",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5736151",
+      "SupplierMPN": "ESD2CAN24DBZRQ1"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "U502",
+    "MPN": "OPA2333AIDR",
+    "before": {
+      "LCSC": "C38732",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C38732",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C38732",
+      "SupplierMPN": "OPA2333AIDR"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R511",
+    "MPN": "TNPW08051M00BEEA",
+    "before": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844679",
+      "SupplierMPN": "TNPW08051M00BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R512",
+    "MPN": "TNPW06034K02BEEA",
+    "before": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844459",
+      "SupplierMPN": "TNPW06034K02BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C511",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R513",
+    "MPN": "TNPW0805124KBEEA",
+    "before": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709494",
+      "SupplierMPN": "TNPW0805124KBEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R514",
+    "MPN": "TNPW06031K00BEEA",
+    "before": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844891",
+      "SupplierMPN": "TNPW06031K00BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C512",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R515",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C513",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R521",
+    "MPN": "TNPW08051M00BEEA",
+    "before": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844679",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844679",
+      "SupplierMPN": "TNPW08051M00BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R522",
+    "MPN": "TNPW06034K02BEEA",
+    "before": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844459",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844459",
+      "SupplierMPN": "TNPW06034K02BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C521",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R523",
+    "MPN": "TNPW0805124KBEEA",
+    "before": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1709494",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1709494",
+      "SupplierMPN": "TNPW0805124KBEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R524",
+    "MPN": "TNPW06031K00BEEA",
+    "before": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844891",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844891",
+      "SupplierMPN": "TNPW06031K00BEEA"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C522",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R525",
+    "MPN": "AA0603FR-07220RL",
+    "before": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2100485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2100485",
+      "SupplierMPN": "AA0603FR-07220RL"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C523",
+    "MPN": "CGA3E2X7R1H223K080AE",
+    "before": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2176922",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2176922",
+      "SupplierMPN": "CGA3E2X7R1H223K080AE"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C531",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C514",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C524",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D511",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D512",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D521",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D522",
+    "MPN": "PMEG2010BEA,115",
+    "before": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C455041",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C455041",
+      "SupplierMPN": "PMEG2010BEA,115"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C504",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C505",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C506",
+    "MPN": "C1210C106K5RACTU",
+    "before": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2167688",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2167688",
+      "SupplierMPN": "C1210C106K5RACTU"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "R507",
+    "MPN": "CRCW25124R70FKEGHP",
+    "before": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2075852",
+      "SupplierMPN": "CRCW25124R70FKEGHP"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "D502",
+    "MPN": "SS16HE3_B/H",
+    "before": {
+      "LCSC": "C266798",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C266798",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C266798",
+      "SupplierMPN": "SS16HE3_B/H"
+    }
+  },
+  {
+    "file": "Oil_Pressure.kicad_sch",
+    "reference": "C532",
+    "MPN": "GRM1885C1H103JA01D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85973",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85973",
+      "SupplierMPN": "GRM1885C1H103JA01D"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "U151",
+    "MPN": "LM63615DQPWPRQ1",
+    "before": {
+      "LCSC": "C2867799",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2867799",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2867799",
+      "SupplierMPN": "LM63615DQPWPRQ1"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R151",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C151",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C152",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C153",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C154",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "L151",
+    "MPN": "XGL5030-153MEC",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3911485",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3911485",
+      "SupplierMPN": "XGL5030-153MEC"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C155",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C156",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C157",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C158",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R152",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R153",
+    "MPN": "WSLP0603R0100FEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5334451",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5334451",
+      "SupplierMPN": "WSLP0603R0100FEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R154",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R155",
+    "MPN": "PTFR0603B11K8N9",
+    "before": {
+      "LCSC": "C19679768",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C19679768",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C19679768",
+      "SupplierMPN": "PTFR0603B11K8N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C206",
+    "MPN": "T598X687M006ATE025",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4951511",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4951511",
+      "SupplierMPN": "T598X687M006ATE025"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R158",
+    "MPN": "WSL2512R3000FEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2076134",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2076134",
+      "SupplierMPN": "WSL2512R3000FEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R157",
+    "MPN": "CRCW060310K0FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844918",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844918",
+      "SupplierMPN": "CRCW060310K0FKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R156",
+    "MPN": "PLT1206Z5051LBTS",
+    "before": {
+      "LCSC": "C4074185",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C4074185",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C4074185",
+      "SupplierMPN": "PLT1206Z5051LBTS"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "U152",
+    "MPN": "TPS22953QDQCRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5219894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5219894",
+      "SupplierMPN": "TPS22953QDQCRQ1"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C161",
+    "MPN": "GCM188R71H104KA57D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C85864",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C85864",
+      "SupplierMPN": "GCM188R71H104KA57D"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R160",
+    "MPN": "RT0805BRB076K34L",
+    "before": {
+      "LCSC": "C864499",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C864499",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C864499",
+      "SupplierMPN": "RT0805BRB076K34L"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R161",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R162",
+    "MPN": "PTFR0603Q4K70N9",
+    "before": {
+      "LCSC": "C23067437",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067437",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067437",
+      "SupplierMPN": "PTFR0603Q4K70N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R163",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C165",
+    "MPN": "CGA3E3X7R1H224KT0Y0N",
+    "before": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342967",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342967",
+      "SupplierMPN": "CGA3E3X7R1H224KT0Y0N"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "Q152",
+    "MPN": "DMG2302UKQ-7",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5224573",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5224573",
+      "SupplierMPN": "DMG2302UKQ-7"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "Q153",
+    "MPN": "DMG2302UKQ-7",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5224573",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5224573",
+      "SupplierMPN": "DMG2302UKQ-7"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R164",
+    "MPN": "CRCW06034K70FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844931",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844931",
+      "SupplierMPN": "CRCW06034K70FKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R165",
+    "MPN": "CRCW25124R70FKEGHP",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2075852",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2075852",
+      "SupplierMPN": "CRCW25124R70FKEGHP"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C159",
+    "MPN": "CGA4J1C0G2A333J125AE",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2181132",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2181132",
+      "SupplierMPN": "CGA4J1C0G2A333J125AE"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C162",
+    "MPN": "T598X477M010ATE025",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C19941093",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C19941093",
+      "SupplierMPN": "T598X477M010ATE025"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C166",
+    "MPN": "CGA5L1C0G2A683J160AE",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C3869625",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C3869625",
+      "SupplierMPN": "CGA5L1C0G2A683J160AE"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "C167",
+    "MPN": "GCM188R71C105KA64D",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C161212",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C161212",
+      "SupplierMPN": "GCM188R71C105KA64D"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R159",
+    "MPN": "CRCW060347K0FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844929",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844929",
+      "SupplierMPN": "CRCW060347K0FKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R166",
+    "MPN": "CRCW0603330KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844776",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844776",
+      "SupplierMPN": "CRCW0603330KFKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R167",
+    "MPN": "CRCW0603330KFKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844776",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844776",
+      "SupplierMPN": "CRCW0603330KFKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R168",
+    "MPN": "CRCW06031K00FKEA",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844920",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844920",
+      "SupplierMPN": "CRCW06031K00FKEA"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R169",
+    "MPN": "PTFR0603B3K01N9",
+    "before": {
+      "LCSC": "C2692830",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2692830",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2692830",
+      "SupplierMPN": "PTFR0603B3K01N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "R170",
+    "MPN": "PTFR0603Q1K00N9",
+    "before": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C23067434",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C23067434",
+      "SupplierMPN": "PTFR0603Q1K00N9"
+    }
+  },
+  {
+    "file": "Power_3V3.kicad_sch",
+    "reference": "U153",
+    "MPN": "TPS22953QDQCRQ1",
+    "before": {
+      "LCSC": "",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5219894",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5219894",
+      "SupplierMPN": "TPS22953QDQCRQ1"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "U121",
+    "MPN": "LM5164QDDARQ1",
+    "before": {
+      "LCSC": "C2072225",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2072225",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2072225",
+      "SupplierMPN": "LM5164QDDARQ1"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C121",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C122",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C129",
+    "MPN": "CGA6N3X7R2A225K230AB",
+    "before": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342652",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342652",
+      "SupplierMPN": "CGA6N3X7R2A225KT0Y0U"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C123",
+    "MPN": "CGA4J2X7R2A104K125AA",
+    "before": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C342919",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C342919",
+      "SupplierMPN": "CGA4J2X7R2A104KT0Y0U"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C124",
+    "MPN": "CGA3E2C0G1H222J080AA",
+    "before": {
+      "LCSC": "C2169200",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2169200",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2169200",
+      "SupplierMPN": "CGA3E2C0G1H222J080AA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "L121",
+    "MPN": "BPCI00121280470M00",
+    "before": {
+      "LCSC": "C6471075",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C6471075",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C6471075",
+      "SupplierMPN": "BPCI00121280470M00"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R121",
+    "MPN": "TNPW060331K6BEEA",
+    "before": {
+      "LCSC": "C843870",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C843870",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C843870",
+      "SupplierMPN": "TNPW060331K6BEEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R122",
+    "MPN": "TNPW0805309KBEEA",
+    "before": {
+      "LCSC": "C1710754",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C1710754",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C1710754",
+      "SupplierMPN": "TNPW0805309KBEEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R123",
+    "MPN": "TNPW0603100KBEEA",
+    "before": {
+      "LCSC": "C844888",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844888",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844888",
+      "SupplierMPN": "TNPW0603100KBEEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R124",
+    "MPN": "TNPW060343K2BEEA",
+    "before": {
+      "LCSC": "C2089718",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2089718",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2089718",
+      "SupplierMPN": "TNPW060343K2BEEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C125",
+    "MPN": "CGA3E2C0G2A332J080AA",
+    "before": {
+      "LCSC": "C2171993",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2171993",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2171993",
+      "SupplierMPN": "CGA3E2C0G2A332J080AA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C126",
+    "MPN": "CGA3E2C0G1H101J080AA",
+    "before": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C76709",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C76709",
+      "SupplierMPN": "CGA3E2C0G1H101JT0Y0N"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C127",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "C128",
+    "MPN": "MCAST32MSB7226KPNA01",
+    "before": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C5372271",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C5372271",
+      "SupplierMPN": "MCAST32MSB7226KPNA01"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R125",
+    "MPN": "CRCW1206100KFKEA",
+    "before": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844863",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844863",
+      "SupplierMPN": "CRCW1206100KFKEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R126",
+    "MPN": "ERA3AEB2612V",
+    "before": {
+      "LCSC": "C491123",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C491123",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C491123",
+      "SupplierMPN": "ERA3AEB2612V"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R127",
+    "MPN": "CRCW0603100KFKEA",
+    "before": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C844916",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C844916",
+      "SupplierMPN": "CRCW0603100KFKEA"
+    }
+  },
+  {
+    "file": "Power_5V.kicad_sch",
+    "reference": "R128",
+    "MPN": "CRCW12060000Z0EA",
+    "before": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C190124",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C190124",
+      "SupplierMPN": "CRCW12060000Z0EA"
+    }
+  },
+  {
+    "file": "Programming_Debug.kicad_sch",
+    "reference": "J202",
+    "MPN": "61300211121",
+    "before": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2915055",
+      "SupplierMPN": "61300211121"
+    }
+  },
+  {
+    "file": "Programming_Debug.kicad_sch",
+    "reference": "J203",
+    "MPN": "61300211121",
+    "before": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C2915055",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C2915055",
+      "SupplierMPN": "61300211121"
+    }
+  },
+  {
+    "file": "Vehicle_Interconnect.kicad_sch",
+    "reference": "F1",
+    "MPN": "0430451200",
+    "before": {
+      "LCSC": "C277636",
+      "ProcurementRoute": "",
+      "ProcurementURL": "",
+      "SupplierMPN": ""
+    },
+    "after": {
+      "LCSC": "C277636",
+      "ProcurementRoute": "JLC_CATALOG",
+      "ProcurementURL": "https://jlcpcb.com/partdetail/C277636",
+      "SupplierMPN": "430451200"
+    }
+  }
+]

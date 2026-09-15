@@ -1,0 +1,17 @@
+{
+  "componentCode": "C161212",
+  "componentModelEn": "GCM188R71C105KA64D",
+  "componentBrandEn": "Murata Electronics",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Murata-Electronics-GCM188R71C105KA64D_C161212.pdf",
+  "describe": "16V 1uF X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 72820,
+  "preMinPurchaseNum": 287,
+  "canPresaleNumber": 63761,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C161212",
+  "retrieved_at_UTC": "2026-09-15T21:03:39.528313+00:00",
+  "response_sha256": "8befc4081dd46038ac8073ea4a94f2123e7e459861cc2e0cfa5109c0ef072d99"
+}

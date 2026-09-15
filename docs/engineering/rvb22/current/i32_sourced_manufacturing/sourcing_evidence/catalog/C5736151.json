@@ -1,0 +1,18 @@
+{
+  "componentCode": "C5736151",
+  "componentModelEn": "ESD2CAN24DBZRQ1",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "SOT-23",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309210115_Texas-Instruments-ESD2CAN24DBZRQ1_C5736151.pdf",
+  "describe": "-55\u2103~+150\u2103 2 210W@8/20us 24V 35.5V 37V 3pF 5.7A@8/20us 50nA Bidirectional ESD IEC 61000-4-2 SOT-23 ESD and Surge Protection (TVS/ESD) ROHS",
+  "overseasStockCount": 2299,
+  "preMinPurchaseNum": 26,
+  "canPresaleNumber": 2364,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C5736151",
+  "retrieved_at_UTC": "2026-09-15T21:03:44.546313+00:00",
+  "response_sha256": "025d1f421b65ad68405183a150da65ade521dff775c7764b20b796479607ed67"
+}

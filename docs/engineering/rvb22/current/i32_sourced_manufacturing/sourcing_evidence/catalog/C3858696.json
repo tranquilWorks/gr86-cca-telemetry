@@ -1,0 +1,18 @@
+{
+  "componentCode": "C3858696",
+  "componentModelEn": "CGA3E2X7R2A103K080AE",
+  "componentBrandEn": "TDK",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401181635_TDK-CGA3E2X7R2A103K080AE_C3858696.pdf",
+  "describe": "100V 10nF X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 48,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C3858696",
+  "retrieved_at_UTC": "2026-09-15T21:05:11.618567+00:00",
+  "response_sha256": "2e07b21d7bdb1a318c474cbf5b3d4ff9913f74b6d8bc8ce71759743f954d97d9"
+}

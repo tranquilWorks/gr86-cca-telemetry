@@ -1,0 +1,22 @@
+{
+  "query": "LQW18AS1N6J0ZD",
+  "url": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "total": 1,
+  "retrieved_at_UTC": "2026-09-15T21:27:24.906372+00:00",
+  "response_sha256": "8439d0ad264ce60bae1c607013ee25e8f6d03648e3547d60652df45407028e6e",
+  "rows": [
+    {
+      "componentCode": "C7295894",
+      "componentModelEn": "LQW18AS1N6J0ZD",
+      "componentBrandEn": "Murata Electronics",
+      "stockCount": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "preMinPurchaseNum": 113,
+      "urlSuffix": "MurataElectronics-LQW18AS1N6J0ZD/C7295894",
+      "componentSpecificationEn": "0603",
+      "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111534_Murata-Electronics-LQW18AS1N6J0ZD_C7295894.pdf"
+    }
+  ]
+}

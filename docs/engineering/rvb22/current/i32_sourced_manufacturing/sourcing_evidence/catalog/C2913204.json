@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2913204",
+  "componentModelEn": "ESP32-S3-WROOM-1-N8R2",
+  "componentBrandEn": "Espressif Systems",
+  "componentSpecificationEn": "SMD,25.5x18mm",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1-N8R2_C2913204.pdf",
+  "describe": "-40\u2103~+85\u2103 -98.2dBm 2.4GHz 20.5dBm 355mA 3V~3.6V 97mA Bluetooth5.0 ESP32-S3 Chip On-board PCB Antenna UART\u3001SPI\u3001I2C\u3001I2S\u3001USB SMD,25.5x18mm WiFi Modules ROHS",
+  "overseasStockCount": 13122,
+  "preMinPurchaseNum": 3,
+  "canPresaleNumber": 12643,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2913204",
+  "retrieved_at_UTC": "2026-09-15T21:03:42.369328+00:00",
+  "response_sha256": "adc19da7521e11044b5822fb5b372717bac90c782450b75dd11183a1684204f2"
+}

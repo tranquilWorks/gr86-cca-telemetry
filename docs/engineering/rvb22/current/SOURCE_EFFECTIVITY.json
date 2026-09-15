@@ -1,49 +1,33 @@
 {
-  "status": "I32_FROZEN_PROCUREMENT_REDLINE_DESKTOP_VERIFIED",
-  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
-  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
-  "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+  "status": "ALL_FACTORY_PARTS_JLC_CATALOG_NATIVE_PACKAGE_COHERENT",
+  "source_PCB_sha256": "9093b8011304a3e6b53bf98be5a016718cee65d4595e5eb9ad92f93560b9cf56",
+  "filled_PCB_sha256": "641e32f74826ab091e5370394c3f92ef189bef4c19dbc3c0942e7c5f38698212",
+  "native_schematic_XML_sha256": "014e01cb3b286accb717f770fd67179175e1bbb5480da60920d166c015093f8e",
   "fitted_BOM_count": 177,
   "position_rows": 175,
   "CAD_inputs": 157,
-  "firmware_inputs_reused": 32,
-  "source_binding": "../analyses/i32/procurement_redline/SOURCE_BINDING.json",
-  "full_evidence": "../analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json",
-  "old_effectivity_preserved": "../analyses/i32/procurement_redline/history/pre_redline/current/SOURCE_EFFECTIVITY.json",
-  "mechanics": "C05/W02/T03; rechecked177parts+38probes;1.71mm complete height stack",
-  "thermal": {
-    "release_heat_W": 2.940859375,
-    "old_112p88298_C_correlation_trigger_retained": true,
-    "actual_loss_one_step_board_screen_C": 113.27169786553404,
-    "board_temperature_is_not_junction_or_air": true,
-    "gate": "../analyses/i32/QUALIFICATION_AND_SERVICE.md",
-    "required_U121_efficiency_at_U151_80pct": 0.8346306359288465,
-    "stacked_one_step_board_screen_C": 113.763359283458,
-    "evidence": "../analyses/i32/procurement_redline/THERMAL_RESULTS.json"
+  "source": "i32_sourced_manufacturing/editable_source/cad/",
+  "source_binding": "i32_sourced_manufacturing/COHERENCE.json",
+  "full_evidence": "../analyses/i32/procurement_completion/VERIFICATION.json",
+  "manufacturing_manifest": "i32_sourced_manufacturing/SOURCE_MANIFEST.json",
+  "package": "../product/GR86_I32_SOURCED_MANUFACTURING.zip",
+  "package_sha256": "56e40f0d812b9e60fbdfa5a4ec411c8b0f83b74c169ddad7727ae7615210f611",
+  "factory_catalog_references": 175,
+  "factory_unique_catalog_parts": 86,
+  "original_missing_assignments_resolved": 29,
+  "unchanged_factory_references_without_LCSC": 0,
+  "factory_global_sourcing_or_consignment_references": 0,
+  "sourceability": "../analyses/i32/procurement_completion/SOURCES.json",
+  "documented_alias_references": 12,
+  "native_findings": {
+    "ERC": 0,
+    "DRC": 0,
+    "unconnected": 0,
+    "schematic_PCB_parity": 0
   },
-  "model_carry_forward": {
-    "firmware": "All 32 adopted source files are unchanged. A genuine Arduino-ESP32 3.3.6/NimBLE 2.3.6 build used CPUFreq=160 and passed 28/28 release checks; prior 240 MHz images remain historical only.",
-    "RF_CAN_GPS_oil": "Fitted signal components/nets/copper and firmware contracts unchanged; power rail now separately re-evaluated.",
-    "input_power_thermal_mechanics": "Frozen-set power replay, native manufacturing and affected thermal/mechanical models rechecked. Descriptive-only post-replay changes explicitly bound in METADATA_ONLY_REBIND.json; old source-specific evidence is historical."
-  },
-  "supplier_acceptance": false,
-  "physical_measurement_claimed": false,
-  "C166": {
-    "MPN": "CGA5L1C0G2A683J160AE",
-    "value_nF": 68,
-    "maximum_body_mm": [
-      3.6,
-      1.9,
-      1.9
-    ],
-    "position_mm": [
-      85.85,
-      -3.0
-    ],
-    "rotation_deg": 90,
-    "copper_edge_clearance_mm": 0.3,
-    "body_nominal_tab_edge_clearance_mm": 0.1
-  },
+  "qualified_physics_unchanged": true,
+  "new_SPICE_run": false,
+  "new_thermal_run": false,
   "firmware_release": {
     "status": "160MHZ_TARGET_BUILD_AND_BINARY_CHECKS_PASS",
     "finding": "../analyses/i32/recovery_20260914/FIRMWARE_BUILD_MISMATCH.json",
@@ -58,8 +42,72 @@
     "flashed": false,
     "executed_on_target": false
   },
-  "manufacturing_manifest": "i32_manufacturing/SOURCE_MANIFEST.json",
-  "unchanged_factory_references_without_LCSC": 29,
-  "sourceability": "../analyses/i32/procurement_redline/LIVE_JLC_SOURCEABILITY.json",
-  "U101_pedigree": "Owner accepted #W controlled-manufacturing option downgrade to functional H-grade #PBF; pedigree is not equivalent."
+  "supplier_acceptance": false,
+  "physical_measurement_claimed": false,
+  "order_ready": false,
+  "qualified_engineering_baseline": {
+    "status": "I32_FROZEN_PROCUREMENT_REDLINE_DESKTOP_VERIFIED",
+    "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+    "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+    "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+    "fitted_BOM_count": 177,
+    "position_rows": 175,
+    "CAD_inputs": 157,
+    "firmware_inputs_reused": 32,
+    "source_binding": "../analyses/i32/procurement_redline/SOURCE_BINDING.json",
+    "full_evidence": "../analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+    "old_effectivity_preserved": "../analyses/i32/procurement_redline/history/pre_redline/current/SOURCE_EFFECTIVITY.json",
+    "mechanics": "C05/W02/T03; rechecked177parts+38probes;1.71mm complete height stack",
+    "thermal": {
+      "release_heat_W": 2.940859375,
+      "old_112p88298_C_correlation_trigger_retained": true,
+      "actual_loss_one_step_board_screen_C": 113.27169786553404,
+      "board_temperature_is_not_junction_or_air": true,
+      "gate": "../analyses/i32/QUALIFICATION_AND_SERVICE.md",
+      "required_U121_efficiency_at_U151_80pct": 0.8346306359288465,
+      "stacked_one_step_board_screen_C": 113.763359283458,
+      "evidence": "../analyses/i32/procurement_redline/THERMAL_RESULTS.json"
+    },
+    "model_carry_forward": {
+      "firmware": "All 32 adopted source files are unchanged. A genuine Arduino-ESP32 3.3.6/NimBLE 2.3.6 build used CPUFreq=160 and passed 28/28 release checks; prior 240 MHz images remain historical only.",
+      "RF_CAN_GPS_oil": "Fitted signal components/nets/copper and firmware contracts unchanged; power rail now separately re-evaluated.",
+      "input_power_thermal_mechanics": "Frozen-set power replay, native manufacturing and affected thermal/mechanical models rechecked. Descriptive-only post-replay changes explicitly bound in METADATA_ONLY_REBIND.json; old source-specific evidence is historical."
+    },
+    "supplier_acceptance": false,
+    "physical_measurement_claimed": false,
+    "C166": {
+      "MPN": "CGA5L1C0G2A683J160AE",
+      "value_nF": 68,
+      "maximum_body_mm": [
+        3.6,
+        1.9,
+        1.9
+      ],
+      "position_mm": [
+        85.85,
+        -3.0
+      ],
+      "rotation_deg": 90,
+      "copper_edge_clearance_mm": 0.3,
+      "body_nominal_tab_edge_clearance_mm": 0.1
+    },
+    "firmware_release": {
+      "status": "160MHZ_TARGET_BUILD_AND_BINARY_CHECKS_PASS",
+      "finding": "../analyses/i32/recovery_20260914/FIRMWARE_BUILD_MISMATCH.json",
+      "evidence": "../analyses/i32/recovery_20260914/firmware_160mhz/RESULT.json",
+      "old_images": "Historical only; excluded from release use",
+      "new_target_build_run": true,
+      "candidate_source_files_unchanged": true,
+      "release_checks_passed": 28,
+      "release_check_count": 28,
+      "application_image_sha256": "67ef9d2d5ee0d2627d0a2452e0f3d13ce966dfb44fee0602a5e0ef1a011fc673",
+      "merged_image_sha256": "94bffbeb3361a97afb41c5560ec111be1e9aa5280c2701868bd05191c7b5936f",
+      "flashed": false,
+      "executed_on_target": false
+    },
+    "manufacturing_manifest": "i32_manufacturing/SOURCE_MANIFEST.json",
+    "unchanged_factory_references_without_LCSC": 29,
+    "sourceability": "../analyses/i32/procurement_redline/LIVE_JLC_SOURCEABILITY.json",
+    "U101_pedigree": "Owner accepted #W controlled-manufacturing option downgrade to functional H-grade #PBF; pedigree is not equivalent."
+  }
 }

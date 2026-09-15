@@ -1,0 +1,17 @@
+{
+  "componentCode": "C2879865",
+  "componentModelEn": "0885001.DR",
+  "componentBrandEn": "Littelfuse",
+  "componentSpecificationEn": "SMD,10.9x4.8mm",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-0885001-DR_C2879865.pdf",
+  "describe": "-40\u2103~+105\u2103 0.8 1.5kA 10.86mm 1A 4.78mm 4.78mm 500V Surface Mount Fuse SMD,10.9x4.8mm Disposable fuses ROHS",
+  "overseasStockCount": 82,
+  "preMinPurchaseNum": 2,
+  "canPresaleNumber": 82,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C2879865",
+  "retrieved_at_UTC": "2026-09-15T21:03:42.111711+00:00",
+  "response_sha256": "12ddf6c61d6ef9a8b1101208e780aa9a828d842fecad50dc2677578a52b4aedc"
+}

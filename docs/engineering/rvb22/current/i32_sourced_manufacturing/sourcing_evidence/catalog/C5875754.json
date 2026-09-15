@@ -1,0 +1,18 @@
+{
+  "componentCode": "C5875754",
+  "componentModelEn": "APT1608SGC",
+  "componentBrandEn": "Kingbright",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "",
+  "describe": "-40\u2103~+85\u2103 12mcd 150\u00b0 2.2V 20mA 565nm 568nm 62.5mW Discrete Diode Water Clear Yellow Green 0603 LED Indication - Discrete ROHS",
+  "overseasStockCount": 4731,
+  "preMinPurchaseNum": 91,
+  "canPresaleNumber": 4631,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C5875754",
+  "retrieved_at_UTC": "2026-09-15T21:05:26.108951+00:00",
+  "response_sha256": "1cb23e39135536949a6804eb361e1734040bbcf74b043aa4b800eda83132805d"
+}

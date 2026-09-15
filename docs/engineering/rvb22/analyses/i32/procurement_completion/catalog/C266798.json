@@ -1,0 +1,18 @@
+{
+  "componentCode": "C266798",
+  "componentModelEn": "SS16HE3_B/H",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "SMA(DO-214AC)",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231517_Vishay-Intertech-SS16HE3-B-H_C266798.pdf",
+  "describe": "-65\u2103~+150\u2103 1 Independent 1A 200uA@60V 40A 60V 750mV@1A SMA(DO-214AC) Schottky Diodes ROHS",
+  "overseasStockCount": 5929,
+  "preMinPurchaseNum": 69,
+  "canPresaleNumber": 5536,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C266798",
+  "retrieved_at_UTC": "2026-09-15T21:05:09.281847+00:00",
+  "response_sha256": "0ecec03143f3da1233f7928e13bd4fb0092ffb7fcac6d7bc258b52fb4b824457"
+}

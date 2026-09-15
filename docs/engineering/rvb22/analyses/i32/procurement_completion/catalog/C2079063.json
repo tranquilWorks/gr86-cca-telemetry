@@ -1,0 +1,18 @@
+{
+  "componentCode": "C2079063",
+  "componentModelEn": "TNPW060327K4BEEA",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-TNPW060327K4BEEA_C2079063.pdf",
+  "describe": "-55\u2103~+155\u2103 125mW 27.4k\u03a9 75V Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 281,
+  "preMinPurchaseNum": 41,
+  "canPresaleNumber": 281,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C2079063",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.685659+00:00",
+  "response_sha256": "f6053ba31c2ed73724910199e40fc370298ac6655f6b294bf209c398c08028b7"
+}

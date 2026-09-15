@@ -1,5 +1,8 @@
 # CCA Telemetry (GR86 / BRZ Gen2)
 
+**Current Rev B ECAD and manufacturing:** [sourced I32 handoff](docs/engineering/rvb22/product/PRODUCT_HANDOFF.md).
+The native project, BOM, CPL and fabrication files are reconciled; supplier sourcing and physical qualification gates remain open.
+
 CCA Telemetry is a RaceChrono-compatible telemetry stack for the Toyota GR86 / Subaru BRZ (ZN8/ZD8) platform. An ESP32-S3 collects CAN, GPS, and auxiliary analog data, then streams it over Bluetooth Low Energy using RaceChrono's DIY device profile. The codebase is designed for track reliability: aggressive BLE reconnects, TWAI burst handling, persistent configuration, and configurable CAN filtering are all built in.
 
 Hardware bring-up (CAN transceiver wiring, GPS, OLEDs, etc.) is intentionally out of scope here—assume those pieces are already handled. This repository focuses on the firmware, documentation, and validation artifacts you need to build, modify, and deploy the project.

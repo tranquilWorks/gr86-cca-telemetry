@@ -1,0 +1,17 @@
+{
+  "componentCode": "C2074591",
+  "componentModelEn": "ERA-3AEB1472V",
+  "componentBrandEn": "PANASONIC",
+  "componentSpecificationEn": "0603",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202011630_PANASONIC-ERA-3AEB1472V_C2074591.pdf",
+  "describe": "-55\u2103~+155\u2103 100mW 14.7k\u03a9 75V Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+  "overseasStockCount": 1706,
+  "preMinPurchaseNum": 125,
+  "canPresaleNumber": 1700,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C2074591",
+  "retrieved_at_UTC": "2026-09-15T21:03:40.176211+00:00",
+  "response_sha256": "3939b60725de72cdf6925850508e231db5815be09ca28bc2e135b7bfe72126e1"
+}

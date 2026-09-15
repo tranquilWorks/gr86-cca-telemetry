@@ -1,0 +1,18 @@
+{
+  "componentCode": "C4074185",
+  "componentModelEn": "PLT1206Z5051LBTS",
+  "componentBrandEn": "Vishay Intertech",
+  "componentSpecificationEn": "1206",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312130952_Vishay-Intertech-PLT1206Z5051LBTS_C4074185.pdf",
+  "describe": "-55\u2103~+125\u2103 400mW 5.05k\u03a9 Thin Film Resistor \u00b10.01% \u00b15ppm/\u2103 1206 Chip Resistor - Surface Mount",
+  "overseasStockCount": 0,
+  "preMinPurchaseNum": 2,
+  "canPresaleNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "noBuyReason": null,
+  "url": "https://jlcpcb.com/partdetail/C4074185",
+  "retrieved_at_UTC": "2026-09-15T21:03:43.448202+00:00",
+  "response_sha256": "ed751b0398c3ef6e4384054011a815f6956ca73ea6520c227e21dfa25c629628"
+}

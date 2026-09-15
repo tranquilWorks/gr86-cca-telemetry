@@ -1,0 +1,17 @@
+{
+  "componentCode": "C38732",
+  "componentModelEn": "OPA2333AIDR",
+  "componentBrandEn": "Texas Instruments",
+  "componentSpecificationEn": "SOP-8",
+  "assemblyMode": "smtWeld",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1809200040_Texas-Instruments-OPA2333AIDR_C38732.pdf",
+  "describe": "-2.75V~-900mV\u3001900mV~2.75V -40\u2103~+125\u2103 0.16V/us 1.8V~5.5V 10uV 130dB 150pA 17uA 2 350kHz 50nV/\u2103 5mA 70pA Rail-to-Rail Input, Rail-to-Rail Output Zero drift / auto-zero\u3001Built-in compensation\u3001Overvoltage protection\u3001Reverse-phase input protection SOP-8 Precision Op Amps ROHS",
+  "overseasStockCount": 8129,
+  "preMinPurchaseNum": 14,
+  "canPresaleNumber": 8036,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "url": "https://jlcpcb.com/partdetail/C38732",
+  "retrieved_at_UTC": "2026-09-15T21:05:14.069776+00:00",
+  "response_sha256": "ebcb4b08690d0ff6627db86c66785b0113f1a4eadc8081097583248a196fcc0c"
+}

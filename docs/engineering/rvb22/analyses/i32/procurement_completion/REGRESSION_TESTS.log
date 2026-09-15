@@ -1,0 +1,12 @@
+test_alias_url_cannot_approve_unrelated_part (test_build.ProcurementTests.test_alias_url_cannot_approve_unrelated_part) ... ok
+test_catalog_code_cannot_select_another_value (test_build.ProcurementTests.test_catalog_code_cannot_select_another_value) ... ok
+test_factory_part_cannot_bypass_catalog_through_local_route (test_build.ProcurementTests.test_factory_part_cannot_bypass_catalog_through_local_route) ... ok
+test_frozen_part_cannot_be_downgraded_to_unassigned (test_build.ProcurementTests.test_frozen_part_cannot_be_downgraded_to_unassigned) ... ok
+test_job_stackup_not_erased_with_date (test_build.ProcurementTests.test_job_stackup_not_erased_with_date) ... ok
+test_only_generation_headers_ignored_in_fabrication (test_build.ProcurementTests.test_only_generation_headers_ignored_in_fabrication) ... ok
+test_unknown_part_cannot_enter_registry (test_build.ProcurementTests.test_unknown_part_cannot_enter_registry) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.843s
+
+OK
