@@ -5577,5 +5577,10 @@
       ],
       "waveform_sha256": "f3184096358f4f3acea5a50e353733c4c64f25122e1ae11a71542ccc7143aeff"
     }
-  ]
+  ],
+  "procurement_redline_applicability": {
+    "final_source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+    "source_audit": "procurement_redline/SOURCE_AUDIT.json",
+    "basis": "Unchanged input circuitry, pad nets and copper; U101 remains the same H-grade electrical device. Ordering option pedigree downgrade explicitly accepted. Existing input-model results retained with original executed source hash; no fresh input-model run claimed."
+  }
 }

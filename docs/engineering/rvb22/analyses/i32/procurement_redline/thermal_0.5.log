@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/5b5c59eb3fe5/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/thermal_check.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/5b5c59eb3fe5/gr86-cca-telemetry/docs/engineering/rvb22/analyses/i32/thermal_check.py", line 19, in main
+    ex,b=tn.extract_native(a.native_dir/'candidate_kicad/GR86_CCA_RevB.kicad_pcb',source_pcb=a.source_pcb,expected_source_hash=a.source_hash)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_native() got an unexpected keyword argument 'source_pcb'

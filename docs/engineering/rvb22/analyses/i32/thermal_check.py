@@ -20,9 +20,9 @@ def main():
  profile=json.loads((D.parent/'convergence_04/RELEASE_POWER_PROFILE.json').read_text())
  names={'U201':'u201_heat_allocation_W','U151':'u151_loss_allocation_W','U121':'u121_heat_allocation_W','U403':'gps_5v_allocation_W','U401':'oil_5v_allocation_W','other5V_allocation':'other_5v_allocation_W'}
  old=[(n,profile[names[n]],g)for n,_,g in tn.model.heat]
- # TNPU H/W: .02% initial +2ppm/K x100K +.1% 8000h qualification
- # envelope. Full-temperature U151 reference bound; not an unlimited life claim.
- vmax=1.0156*(1+11800*1.0014/(5050*.9986));pload=.45*vmax
+ # Frozen procurement bounds: R155 0.1% +10ppm/K*130K +0.1% drift;
+ # R156 0.01% +5ppm/K*100K +0.1% drift. No life/temperature extension.
+ vmax=1.0156*(1+11800*1.0033/(5050*.9984));pload=.45*vmax
  # Source-local heat regions from the final footprint positions. Conversion
  # efficiency includes each converter's inductor loss, so do not count it twice.
  fps={tn.c.prop(f)['Reference']:f for f in tn.c.child(b,'footprint')}
@@ -33,13 +33,15 @@ def main():
            ('U152',.012,region('U152',1,1.5)),
            ('U153',.001,region('U153',1,1.5)),
            ('R168',vmax*vmax/940,region('R168')),
-           ('R169',vmax*vmax/4004.386*3010/4010,region('R169')),
-           ('R170',vmax*vmax/4004.386*1000/4010,region('R170')),
+           ('R169',vmax*vmax/(3010*.9970+1000*.9975)*3010/4010,region('R169')),
+           ('R170',vmax*vmax/(3010*.9970+1000*.9975)*1000/4010,region('R170')),
            ('R164',.006,region('R164')),
-           ('R160',5.25**2/7329.724*6340/7340,region('R160')),
-           ('R161',5.25**2/7329.724*1000/7340,region('R161')),
-           ('R162',5.25**2/5692.02*4700/5700,region('R162')),
-           ('R163',5.25**2/5692.02*1000/5700,region('R163')),
+           ('R155',vmax*vmax/(11800*.9967+5050*.9984)*11800/16850,region('R155',.5,.9)),
+           ('R156',vmax*vmax/(11800*.9967+5050*.9984)*5050/16850,region('R156',.8636,1.7016)),
+           ('R160',5.25**2/(6340*.9967+1000*.9975)*6340/7340,region('R160',1.05,.675)),
+           ('R161',5.25**2/(6340*.9967+1000*.9975)*1000/7340,region('R161')),
+           ('R162',5.25**2/(4700*.9975+1000*.9975)*4700/5700,region('R162')),
+           ('R163',5.25**2/(4700*.9975+1000*.9975)*1000/5700,region('R163')),
            ('other_sequence_loss',.003,region('R159'))]
  extra=sum(p for _,p,_ in newparts)
  p151=pload*(1/.8-1);burden=pload+p151+.396+extra;p121=burden*(1/.8-1)+.025

@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [procurement_redline/README.md](procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/analyses/i32/DESIGN_AND_MODEL_BASIS.md`.
+
+---
+
 # I32 design decisions and evidence limits
 
 This supplement controls the I32 power changes. Current numerical results and source identity are in `FINAL_EVIDENCE.json`; a historical run is not promoted to the selected source by sharing a filename. The complete older I31 archive has SHA256 `92788424fa8389690963c58553d177a2e55a9ba1fec3674175d1477569b8f1ca` and 61 cases. The newer repository core reports 132 cases, but its named full archive (`740fe6b6ba41065643569e2d20c0a6af0fe544fb3a8e421d8490c89d245df21e`) remains unavailable. These are separate datasets.

@@ -1,0 +1,162 @@
+(footprint "I32_PROCUREMENT_R163"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+	(tags "resistor")
+	(property "Reference" "R163"
+		(at 4 0 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "20b5e024-b2c7-48ab-80da-239156ac3905")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "1k /0.02% 10ppm ISO EN BOTTOM"
+		(at 0 1.43 0)
+		(layer "F.Fab")
+		(uuid "65a4adde-c642-402c-87d7-9ef726538ef4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/partdetail/C19679768"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "adc03ae3-5970-4e81-a5e7-debc9e5c1cb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b81ce9a0-5fae-47f8-bdfb-2d8dcd431137")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "PTFR0603Q1K00N9"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "775e1acf-5d54-4a06-a411-3332bca8ca72")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Resistor.Today"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aebcfc42-b4e7-4515-ba70-759d22cca6df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fb1938b1-b873-4e91-9892-c139151fc1a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Qualification" "I32 source candidate; native evidence and qualification conditions control"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b17a3dc-ab79-41fc-92d6-a1dc5be99258")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C23067434"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2cd8f839-71ae-47f7-b5d8-42866e0c5396")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.65 -0.9)
+		(end 1.65 0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6c0e696c-0d25-5fe9-b630-b823bfefee7a")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f8177007-1a3f-59ac-be85-12a5d5a01a17")
+	)
+	(pad "1" smd rect
+		(at -0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f7b276be-878b-527a-b720-fbd0c33be26b")
+	)
+	(pad "2" smd rect
+		(at 0.95 0)
+		(size 0.9 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "706e8b7a-643a-5768-89a4-1f8d75ea2595")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_R163.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

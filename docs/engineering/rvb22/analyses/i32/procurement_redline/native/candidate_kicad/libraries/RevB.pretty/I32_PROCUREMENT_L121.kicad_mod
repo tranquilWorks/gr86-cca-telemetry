@@ -1,0 +1,160 @@
+(footprint "I32_PROCUREMENT_L121"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Coilcraft540-2 Rev01/28/22 recommended lands5.5x4mm at8.5mm centers. Pad1 highdvdt/shortlead. Manufacturer electrical part is nonpolar.")
+	(property "Reference" "L121"
+		(at 0 -4 0)
+		(layer "F.Fab")
+		(uuid "e530116c-c77d-5dfa-b692-cf87cbfd0047")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "47u /100mOhm 2.5A BPCI"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed841b15-3e22-5cc8-95ba-b01352522afa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/partdetail/ChilisinElec-BPCI00121280470M00/C6471075"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc6e1f6d-6b3c-5641-ad9e-d02f91f2a740")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80f0a461-cc72-53e7-aa05-e32ee5a5d379")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "BPCI00121280470M00"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5c5b6343-3248-5587-96b5-ee75dbba91dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Chilisin / Pulse"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "10c15f8a-47e5-4961-9ca7-1698b75693b5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C6471075"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8055fe66-c3d7-4123-984b-18de6f386010")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b1113ed5-1142-47d9-abcf-28107ffcba9c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 6.75 -6)
+		(end 6.75 -5.8)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "48523c72-6756-5852-8d29-527540dfad2b")
+	)
+	(fp_rect
+		(start -6.55 -6.55)
+		(end 6.55 6.55)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e4106e88-b7f3-5880-b5a3-b2f431396ddc")
+	)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8404cb67-4701-577f-8299-513122efb1f4")
+	)
+	(pad "1" smd rect
+		(at 0 -4.9)
+		(size 5.4 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9edbc75e-bbba-5ed8-857d-e7a2512e5d01")
+	)
+	(pad "2" smd rect
+		(at 0 4.9)
+		(size 5.4 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "506c4fd9-e8f4-56ed-b993-1534c62bdddd")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_I32_PROCUREMENT_L121.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

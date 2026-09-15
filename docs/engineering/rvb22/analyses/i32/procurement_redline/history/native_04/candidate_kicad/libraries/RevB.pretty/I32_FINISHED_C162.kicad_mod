@@ -1,0 +1,210 @@
+(footprint "I32_FINISHED_C162"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "C162"
+		(at 0 -3.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "abecad48-2463-41f0-8f9e-9cbf43dc7037")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "470u /10V POLYMER INPUT"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ca4408bd-dbbe-492b-b4ac-e8092fb59450")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76b8ef5c-8352-4009-9383-92254e90641f")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d63222a-6046-41a2-a576-e3597aa45b65")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "T598X477M010ATE025"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56c6f543-ac9a-40d7-9872-4cb9ee4ce4ff")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Manufacturer" "KEMET"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2c19c82-8767-4011-a63b-fa5d0830043a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "978d18ec-1461-44d9-83ea-ac43ea8e5f4f")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abbf2574-2e3f-4cef-a2cc-12a38ae62e78")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Qualification" "I32 selected source; native evidence and physical gates control"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "243e02f0-3023-4673-b9c7-021eb8001c42")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Height" "4.3mm maximum"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2cbfb2bb-84ef-4fc9-8138-281fc0c08edc")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Polarity" "Positive terminal1; negative terminal2"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "54c045bc-82e6-47e9-9ac6-374d0a14c824")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Capacitance_Condition" "Ceff>=210.56uF each stacked engineering bound through125C"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48203c73-24bc-4513-9020-e6695ef4da04")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -4.56 -2.55)
+		(end 4.56 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e71606d4-6f24-48ed-83ab-469a508bdb24")
+	)
+	(fp_rect
+		(start -3.65 -2.15)
+		(end 3.65 2.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "261a149e-e105-4be3-b7ce-117f2f6f0bb0")
+	)
+	(fp_text user "+"
+		(at -3.05 0 0)
+		(layer "F.Fab")
+		(uuid "c0c4ee83-9f88-41c0-bc0f-7d5cbc28fec8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.12 0)
+		(size 2.37 2.43)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "416457ec-a505-5d44-b6fd-61a689f66d4b")
+	)
+	(pad "2" smd roundrect
+		(at 3.12 0)
+		(size 2.37 2.43)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "5845adef-c9ad-5c33-aa9b-85ed68344a13")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

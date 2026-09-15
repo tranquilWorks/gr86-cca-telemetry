@@ -1,0 +1,1400 @@
+{
+  "status": "ADOPTED_AND_NATIVE_VERIFIED",
+  "base_commit": "4c3e54395e84483298e453468a65ff2646e9de4e",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "parts": {
+    "C159": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C159",
+          "Value": "33n /100V C0G 5% CT",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA4J1C0G2A333J125AE",
+          "Description": "",
+          "MPN": "CGA4J1C0G2A333J125AE",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "Height": "1.50mm maximum"
+        },
+        "footprint": "RevB:I32_FINISHED_C159",
+        "position": [
+          44.3,
+          0.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_ISO_CT",
+          "2": "GND"
+        }
+      }
+    },
+    "C161": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C161",
+          "Value": "100n /50V X7R ISO INPUT",
+          "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71H104KA57D",
+          "Description": "",
+          "MPN": "GCM188R71H104KA57D",
+          "Manufacturer": "Murata",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_C161",
+        "position": [
+          40.6,
+          4.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_ISO_IN",
+          "2": "GND"
+        }
+      }
+    },
+    "C162": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C162",
+          "Value": "470u /10V POLYMER INPUT",
+          "Datasheet": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+          "Description": "",
+          "MPN": "T598X477M010ATE025",
+          "Manufacturer": "KEMET",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "Height": "4.3mm maximum",
+          "Polarity": "Positive terminal1; negative terminal2",
+          "Capacitance_Condition": "Ceff>=210.56uF each stacked engineering bound through125C"
+        },
+        "footprint": "RevB:I32_FINISHED_C162",
+        "position": [
+          49,
+          -5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "GND"
+        }
+      }
+    },
+    "C165": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C165",
+          "Value": "220n /50V X7R EN DELAY",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E3X7R1H224K080AB",
+          "Description": "",
+          "MPN": "CGA3E3X7R1H224K080AB",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_C165",
+        "position": [
+          27,
+          -0.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "C166": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C166",
+          "Value": "68n /100V C0G 5% BULK CT",
+          "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA5L1C0G2A683J160AE",
+          "Description": "",
+          "MPN": "CGA5L1C0G2A683J160AE",
+          "Manufacturer": "TDK",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control",
+          "Height": "1.90mm maximum"
+        },
+        "footprint": "RevB:I32_FINISHED_C166",
+        "position": [
+          85.85,
+          -3,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_CT",
+          "2": "GND"
+        }
+      }
+    },
+    "C167": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "C167",
+          "Value": "1u /16V X7R BULK INPUT",
+          "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71C105KA64D",
+          "Description": "",
+          "MPN": "GCM188R71C105KA64D",
+          "Manufacturer": "Murata",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_C167",
+        "position": [
+          78.5,
+          -0.4
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      }
+    },
+    "C205": {
+      "before": {
+        "properties": {
+          "Reference": "C205",
+          "Value": "100n /50V X7R",
+          "MPN": "GCM188R71H104KA57D",
+          "Manufacturer": "Murata",
+          "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71H104KA57D",
+          "LCSC": "C85864",
+          "Assembly": "FACTORY",
+          "Description": "RVB21 staged reset correction; native validation pending"
+        },
+        "footprint": "RevB:C_0603_1608Metric_RVB22_C205",
+        "position": [
+          76.2,
+          13.9,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C205",
+          "Value": "100n /50V X7R",
+          "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GCM188R71H104KA57D",
+          "Description": "RVB21 staged reset correction; native validation pending",
+          "MPN": "GCM188R71H104KA57D",
+          "Manufacturer": "Murata",
+          "LCSC": "C85864",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:C_0603_1608Metric_RVB22_C205",
+        "position": [
+          76.2,
+          13.9
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      }
+    },
+    "C206": {
+      "before": {
+        "properties": {
+          "Reference": "C206",
+          "Value": "470u /6.3V POLYMER",
+          "MPN": "T598X477M006ATE025",
+          "Manufacturer": "KEMET",
+          "Datasheet": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions",
+          "Height": "4.3mm maximum",
+          "Polarity": "Positive terminal1; negative terminal2",
+          "Capacitance_Condition": "Ceff>=210.56uF stacked engineering bound through125C"
+        },
+        "footprint": "RevB:KEMET_T598_X_7343_Median_RVB22_C206",
+        "position": [
+          82.0,
+          -4.0,
+          0
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_BULK_DAMPED",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "C206",
+          "Value": "680u /6.3V POLYMER",
+          "Datasheet": "https://content.kemet.com/datasheets/KEM_T2073_T59X.pdf",
+          "Description": "",
+          "MPN": "T598X687M006ATE025",
+          "Manufacturer": "KEMET",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions",
+          "Height": "4.3mm maximum",
+          "Polarity": "Positive terminal1; negative terminal2",
+          "Capacitance_Condition": "304.64uF minimum,1432.08uF maximum stacked envelope; <=3.78V steady at125C"
+        },
+        "footprint": "RevB:KEMET_T598_X_7343_Median_RVB22_C206",
+        "position": [
+          82,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_BULK_DAMPED",
+          "2": "GND"
+        }
+      }
+    },
+    "D101": {
+      "before": {
+        "properties": {
+          "Reference": "D101",
+          "Value": "S5D /200V 5A",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "S5DHE3_A/H",
+          "Manufacturer": "Vishay",
+          "LCSC": "C17442489",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:D_SMC",
+        "position": [
+          23.4,
+          32.5,
+          180
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "REV_BLOCKED_12V",
+          "2": "FUSED_12V"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "D101",
+          "Value": "S5J /600V REVERSE BLOCK",
+          "Datasheet": "https://www.vishay.com/docs/88931/s5a.pdf",
+          "Description": "",
+          "MPN": "S5JHE3_A/H",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:D_SMC",
+        "position": [
+          23.4,
+          32.5,
+          180
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "REV_BLOCKED_12V",
+          "2": "FUSED_12V"
+        }
+      }
+    },
+    "D105": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "D105",
+          "Value": "SMCJ110A /RAW OV CLAMP",
+          "Datasheet": "https://www.vishay.com/docs/88394/smcj.pdf",
+          "Description": "",
+          "MPN": "SMCJ110AHE3_A/H",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:D_SMC",
+        "position": [
+          27,
+          44,
+          180
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "REV_BLOCKED_12V",
+          "2": "GND"
+        }
+      }
+    },
+    "MH901": {
+      "before": {
+        "properties": {
+          "Reference": "MH901",
+          "Value": "4.4mm NPTH"
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          6.2,
+          -4.0
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      },
+      "after": {
+        "properties": {
+          "Reference": "MH901",
+          "Value": "4.4mm NPTH",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          6.2,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      }
+    },
+    "MH902": {
+      "before": {
+        "properties": {
+          "Reference": "MH902",
+          "Value": "4.4mm NPTH"
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          63.0,
+          -4.0
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      },
+      "after": {
+        "properties": {
+          "Reference": "MH902",
+          "Value": "4.4mm NPTH",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          63,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      }
+    },
+    "MH903": {
+      "before": {
+        "properties": {
+          "Reference": "MH903",
+          "Value": "4.4mm NPTH"
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          6.2,
+          45.287354898
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      },
+      "after": {
+        "properties": {
+          "Reference": "MH903",
+          "Value": "4.4mm NPTH",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          6.2,
+          45.287355
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      }
+    },
+    "MH904": {
+      "before": {
+        "properties": {
+          "Reference": "MH904",
+          "Value": "4.4mm NPTH"
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          63.0,
+          45.263840608
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      },
+      "after": {
+        "properties": {
+          "Reference": "MH904",
+          "Value": "4.4mm NPTH",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "footprint": "RevB:MountingHole_4.4mm_Outboard",
+        "position": [
+          63,
+          45.263841
+        ],
+        "side": "F.Cu",
+        "pads": {}
+      }
+    },
+    "Q152": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "Q152",
+          "Value": "DMG2302UKQ /DISCHARGE",
+          "Datasheet": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf",
+          "Description": "",
+          "MPN": "DMG2302UKQ-7",
+          "Manufacturer": "Diodes Incorporated",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_Q152",
+        "position": [
+          46,
+          44
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_DISCHARGE_GATE",
+          "2": "GND",
+          "3": "3V3_DISCHARGE_DRAIN"
+        }
+      }
+    },
+    "Q153": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "Q153",
+          "Value": "DMG2302UKQ /DISCHARGE",
+          "Datasheet": "https://www.diodes.com/assets/Datasheets/DMG2302UKQ.pdf",
+          "Description": "",
+          "MPN": "DMG2302UKQ-7",
+          "Manufacturer": "Diodes Incorporated",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_Q153",
+        "position": [
+          50,
+          44
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "GND",
+          "3": "3V3_DISCHARGE_GATE"
+        }
+      }
+    },
+    "R101": {
+      "before": {
+        "properties": {
+          "Reference": "R101",
+          "Value": "6.81k /1W",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW25126K81FKEG",
+          "Manufacturer": "Vishay",
+          "LCSC": "C4207450",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:R_2512_6332Metric",
+        "position": [
+          26,
+          37
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "REV_BLOCKED_12V",
+          "2": "PROTECT_CTRL_VIN"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R101",
+          "Value": "12.1k /1W CTRL SURGE FEED",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW251212K1FKEG",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:R_2512_6332Metric",
+        "position": [
+          26,
+          37
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "REV_BLOCKED_12V",
+          "2": "PROTECT_CTRL_VIN"
+        }
+      }
+    },
+    "R151": {
+      "before": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "LCSC": "C190124",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:R_1206_3216Metric",
+        "position": [
+          43,
+          11
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_VIN"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R151",
+          "Value": "0R MAIN INPUT ISOLATION",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "CRCW12060000Z0EA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R151",
+        "position": [
+          38.6,
+          1.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_IN"
+        }
+      }
+    },
+    "R155": {
+      "before": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.02% 2ppm FB TOP",
+          "MPN": "TNPU060311K8HWEA00",
+          "Manufacturer": "Vishay",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpue3.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R155",
+        "position": [
+          39.1,
+          25.9,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R155",
+          "Value": "11.8k /0.02% 2ppm FB TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU060311K8HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R155",
+        "position": [
+          44.55,
+          10.8,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_FB_ADJ"
+        }
+      }
+    },
+    "R156": {
+      "before": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "4.99k /0.02% 2ppm FB BOTTOM",
+          "MPN": "TNPU06034K99HWEA00",
+          "Manufacturer": "Vishay",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpue3.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R156",
+        "position": [
+          32.7,
+          25.3,
+          270
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R156",
+          "Value": "5.05k /0.02% 2ppm FB BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06035K05HWEA00",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R156",
+        "position": [
+          41.25,
+          10.8,
+          -90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_FB_ADJ",
+          "2": "GND"
+        }
+      }
+    },
+    "R157": {
+      "before": {
+        "properties": {
+          "Reference": "R157",
+          "Value": "10k /1% VSEL ADJUST",
+          "MPN": "CRCW060310K0FKEA",
+          "Manufacturer": "Vishay",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R157",
+        "position": [
+          35.9,
+          13.7,
+          0
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VSEL_ADJ",
+          "2": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R157",
+          "Value": "10k /1% VSEL ADJUST",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW060310K0FKEA",
+          "Manufacturer": "Vishay",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R157",
+        "position": [
+          35.9,
+          13.7
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VSEL_ADJ",
+          "2": "GND"
+        }
+      }
+    },
+    "R158": {
+      "before": {
+        "properties": {
+          "Reference": "R158",
+          "Value": "82m /1% BULK DAMPING",
+          "MPN": "WSLP0603R0820FEA",
+          "Manufacturer": "Vishay",
+          "Datasheet": "https://www.vishay.com/docs/30122/wslp.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Qualification": "RVB22 engineering candidate; see current native evidence and acceptance conditions"
+        },
+        "footprint": "RevB:WSLP0603_MANUFACTURER",
+        "position": [
+          76.3,
+          18.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_DAMPED"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R158",
+          "Value": "300m /1% BULK DAMPING",
+          "Datasheet": "https://www.vishay.com/docs/30100/wsl.pdf",
+          "Description": "",
+          "MPN": "WSL2512R3000FEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R158",
+        "position": [
+          82.7,
+          -4,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_SWITCHED",
+          "2": "3V3_BULK_DAMPED"
+        }
+      }
+    },
+    "R159": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R159",
+          "Value": "47k /1% PG PULLUP",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW060347K0FKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R159",
+        "position": [
+          46,
+          -1.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ENABLE"
+        }
+      }
+    },
+    "R160": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R160",
+          "Value": "6.34k /0.02% SNS TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06036K34HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R160",
+        "position": [
+          27,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_ISO_SNS"
+        }
+      }
+    },
+    "R161": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R161",
+          "Value": "1k /0.02% SNS BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R161",
+        "position": [
+          30.5,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_SNS",
+          "2": "GND"
+        }
+      }
+    },
+    "R162": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R162",
+          "Value": "4.7k /0.02% ISO EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06034K70HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R162",
+        "position": [
+          27,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "+5V",
+          "2": "3V3_ISO_ENABLE"
+        }
+      }
+    },
+    "R163": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R163",
+          "Value": "1k /0.02% ISO EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R163",
+        "position": [
+          30.5,
+          -4
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "R164": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R164",
+          "Value": "4.7k /DISCHARGE GATE FEED",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW06034K70FKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R164",
+        "position": [
+          48,
+          48.2
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_VIN",
+          "2": "3V3_DISCHARGE_GATE"
+        }
+      }
+    },
+    "R165": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R165",
+          "Value": "4.7R /1.5W PULSE DISCHARGE",
+          "Datasheet": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+          "Description": "",
+          "MPN": "CRCW25124R70FKEGHP",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_R165",
+        "position": [
+          39.5,
+          44
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_SOURCE",
+          "2": "3V3_DISCHARGE_DRAIN"
+        }
+      }
+    },
+    "R166": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R166",
+          "Value": "330k /1% U151 EN DIVIDER",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW0603330KFKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R166",
+        "position": [
+          35,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ENABLE",
+          "2": "3V3_BUCK_ENABLE"
+        }
+      }
+    },
+    "R167": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R167",
+          "Value": "330k /1% U151 EN DIVIDER",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW0603330KFKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R167",
+        "position": [
+          39,
+          -7.5
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_BUCK_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "R168": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R168",
+          "Value": "1k /1% RESERVOIR BLEED",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW06031K00FKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R168",
+        "position": [
+          86.35,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_DAMPED",
+          "2": "GND"
+        }
+      }
+    },
+    "R169": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R169",
+          "Value": "3.01k /0.02% BULK EN TOP",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06033K01HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R169",
+        "position": [
+          80,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "3V3_BULK_ENABLE"
+        }
+      }
+    },
+    "R170": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R170",
+          "Value": "1k /0.02% BULK EN BOTTOM",
+          "Datasheet": "https://www.vishay.com/docs/28779/tnpu-e3.pdf",
+          "Description": "",
+          "MPN": "TNPU06031K00HWEA00",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R170",
+        "position": [
+          83.3,
+          2
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_BULK_ENABLE",
+          "2": "GND"
+        }
+      }
+    },
+    "R203": {
+      "before": {
+        "properties": {
+          "Reference": "R203",
+          "Value": "1k 1% RESET LIMIT",
+          "MPN": "CRCW06031K00FKEA",
+          "Manufacturer": "Vishay",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "LCSC": "C844920",
+          "Assembly": "FACTORY",
+          "Description": "RVB21 staged reset correction; native validation pending"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R203",
+        "position": [
+          72.8,
+          9.7,
+          0
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "SUP_RESET_RAW",
+          "2": "ESP_EN"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "R203",
+          "Value": "1k 1% RESET LIMIT",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "RVB21 staged reset correction; native validation pending",
+          "MPN": "CRCW06031K00FKEA",
+          "Manufacturer": "Vishay",
+          "LCSC": "C844920",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:R_0603_1608Metric_RVB22_R203",
+        "position": [
+          72.8,
+          9.7
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "SUP_RESET_RAW",
+          "2": "ESP_EN"
+        }
+      }
+    },
+    "R204": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "R204",
+          "Value": "100k /1% RESET DELAY",
+          "Datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+          "Description": "",
+          "MPN": "CRCW0603100KFKEA",
+          "Manufacturer": "Vishay",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_R204",
+        "position": [
+          75.6,
+          6.9,
+          90
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "SUP_RESET_DELAY"
+        }
+      }
+    },
+    "TP154": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "TP154",
+          "Value": "TP_ISO_ENABLE",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "BARE PCB PAD",
+          "Manufacturer": "PCB",
+          "Assembly": "BARE PCB",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_TP154",
+        "position": [
+          33,
+          -1
+        ],
+        "side": "F.Cu",
+        "pads": {
+          "1": "3V3_ISO_ENABLE"
+        }
+      }
+    },
+    "U151": {
+      "before": {
+        "properties": {
+          "Reference": "U151",
+          "Value": "LM63615DQPWPRQ1",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "LM63615DQPWPRQ1",
+          "Manufacturer": "Texas Instruments",
+          "LCSC": "C2867799",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151",
+        "position": [
+          35,
+          13
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SW",
+          "2": "3V3_SW",
+          "3": "3V3_BOOT",
+          "4": "3V3_VCC_INTERNAL",
+          "5": "3V3_VCC_INTERNAL",
+          "6": "3V3_VSEL_ADJ",
+          "7": "3V3_VCC_INTERNAL",
+          "8": "3V3_PGOOD",
+          "9": "3V3_FB_ADJ",
+          "10": "GND",
+          "11": "3V3_VIN",
+          "12": "3V3_VIN",
+          "13": "3V3_VIN",
+          "14": "unconnected-(U151-NC-Pad14)",
+          "15": "GND",
+          "16": "GND",
+          "17": "GND"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "U151",
+          "Value": "LM63615DQPWPRQ1",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "LM63615DQPWPRQ1",
+          "Manufacturer": "Texas Instruments",
+          "LCSC": "C2867799",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151",
+        "position": [
+          35,
+          13
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_SW",
+          "2": "3V3_SW",
+          "3": "3V3_BOOT",
+          "4": "3V3_VCC_INTERNAL",
+          "5": "3V3_VCC_INTERNAL",
+          "6": "3V3_VSEL_ADJ",
+          "7": "3V3_VCC_INTERNAL",
+          "8": "3V3_PGOOD",
+          "9": "3V3_FB_ADJ",
+          "10": "GND",
+          "11": "3V3_BUCK_ENABLE",
+          "12": "3V3_VIN",
+          "13": "3V3_VIN",
+          "14": "unconnected-(U151-NC-Pad14)",
+          "15": "GND",
+          "16": "GND",
+          "17": "GND"
+        }
+      }
+    },
+    "U152": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "U152",
+          "Value": "TPS22953-Q1 REVERSE BLOCKING",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf",
+          "Description": "",
+          "MPN": "TPS22953QDQCRQ1",
+          "Manufacturer": "Texas Instruments",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 source candidate; native evidence and qualification conditions control"
+        },
+        "footprint": "RevB:I32_FINISHED_U152",
+        "position": [
+          43.6,
+          4.8
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "3V3_ISO_IN",
+          "2": "3V3_ISO_IN",
+          "3": "3V3_ISO_IN",
+          "4": "3V3_ISO_ENABLE",
+          "5": "GND",
+          "6": "3V3_ISO_CT",
+          "7": "3V3_ENABLE",
+          "8": "3V3_ISO_SNS",
+          "9": "3V3_VIN",
+          "10": "3V3_VIN",
+          "11": "GND"
+        }
+      }
+    },
+    "U153": {
+      "before": null,
+      "after": {
+        "properties": {
+          "Reference": "U153",
+          "Value": "TPS22953-Q1 BULK CHARGER",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf",
+          "Description": "",
+          "MPN": "TPS22953QDQCRQ1",
+          "Manufacturer": "Texas Instruments",
+          "Assembly": "FACTORY",
+          "Qualification": "I32 selected source; native evidence and physical gates control"
+        },
+        "footprint": "RevB:I32_FINISHED_U153",
+        "position": [
+          79.1,
+          -3.5
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "+3V3",
+          "2": "+3V3",
+          "3": "+3V3",
+          "4": "3V3_BULK_ENABLE",
+          "5": "GND",
+          "6": "3V3_BULK_CT",
+          "7": "unconnected-(U153-PG-Pad7)",
+          "8": "+3V3",
+          "9": "3V3_BULK_SWITCHED",
+          "10": "3V3_BULK_SWITCHED",
+          "11": "GND"
+        }
+      }
+    },
+    "U202": {
+      "before": {
+        "properties": {
+          "Reference": "U202",
+          "Value": "TPS3808G33-Q1 3.07V RESET",
+          "MPN": "TPS3808G33QDBVRQ1",
+          "Manufacturer": "Texas Instruments",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808-q1.pdf",
+          "LCSC": "",
+          "Assembly": "FACTORY",
+          "Description": "RVB21 staged reset correction; native validation pending"
+        },
+        "footprint": "RevB:TPS3808_DBV0006A",
+        "position": [
+          77.8,
+          11.2,
+          180
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "SUP_RESET_RAW",
+          "2": "GND",
+          "3": "+3V3",
+          "4": "unconnected-(U202-CT-Pad4)",
+          "5": "+3V3",
+          "6": "+3V3"
+        }
+      },
+      "after": {
+        "properties": {
+          "Reference": "U202",
+          "Value": "TPS3808G33-Q1 3.07V RESET",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808-q1.pdf",
+          "Description": "RVB21 staged reset correction; native validation pending",
+          "MPN": "TPS3808G33QDBVRQ1",
+          "Manufacturer": "Texas Instruments",
+          "LCSC": "",
+          "Assembly": "FACTORY"
+        },
+        "footprint": "RevB:TPS3808_DBV0006A",
+        "position": [
+          77.8,
+          11.2,
+          180
+        ],
+        "side": "B.Cu",
+        "pads": {
+          "1": "SUP_RESET_RAW",
+          "2": "GND",
+          "3": "+3V3",
+          "4": "SUP_RESET_DELAY",
+          "5": "+3V3",
+          "6": "+3V3"
+        }
+      }
+    }
+  },
+  "copper_counts": {
+    "added": 325,
+    "removed": 97,
+    "modified": 52
+  },
+  "detail": "SOURCE_AUDIT.json"
+}

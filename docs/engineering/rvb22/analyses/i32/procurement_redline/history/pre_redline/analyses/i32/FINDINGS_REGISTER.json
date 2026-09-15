@@ -1,0 +1,82 @@
+{
+  "revision": "I32",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "status": "RECOVERY_VERIFIED_NO_ACTIONABLE_DIGITAL_CORRECTIONS",
+  "known_actionable_digital_corrections_remaining": 0,
+  "meaning": "The recovered I32 board remains source-bound and the 160 MHz target-build mismatch is digitally closed. Supplier, construction, first-article, vehicle and physical qualification gates remain open.",
+  "rows": [
+    {
+      "id": "I32-A",
+      "topic": "U151 reverse discharge",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "U152 TPS22953 isolated470uF input, SNS at isolated VIN; Q152/Q153/R165 source discharge.34 completed derivative cases including service/fault/restart and measured discharge-route allowance.",
+      "remaining_gate": "Actual TPS reverse blocking, fault timing and MOS transfer behavior; no vendor177-part validation."
+    },
+    {
+      "id": "I32-B",
+      "topic": "Startup/load-release/reset margin",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "Fitted U121 nominal 4.908 V; retained 4.75..5.25 V bounds. C166 68 nF C0G limits bulk charging demand; exact timing bounds and cold 750 mA corners now complete without normal SNS retry. Final 34 cases: main 3.13255965..3.57139192 V, reset margin 16.50965 mV, overshoot margin 28.60808 mV. Longer PG delay and extra input capacitance alone were rejected; no controller gain or load-limit relaxation.",
+      "remaining_gate": "Correlate startup current limit, CT timing, load transient and reset sequencing with actual silicon over temperature and supplier tolerances."
+    },
+    {
+      "id": "I32-C",
+      "topic": "Power placement and routes",
+      "status": "CORRECTED_AND_NATIVE_VERIFIED",
+      "disposition": "80 measured pad pairs,7 views,23 filled-ground connections; improved C157 return, explicit branch/discharge lead allocations; native0 ERC/DRC/unconnected/parity.",
+      "remaining_gate": "Switch-node ringing, CT noise and EMC are physical correlation gates."
+    },
+    {
+      "id": "I32-D",
+      "topic": "Automotive input component stresses",
+      "status": "CORRECTED_SOURCE_AND_CONDITIONALLY_BOUNDED",
+      "disposition": "D101600V S5J, R10112.1k/1W, raw110V SMCJ clamp.17 completed defined-envelope input cases plus one incomplete record retained. Q101VDS130.493V and SOA utilization0.52235 at allocated125C.",
+      "remaining_gate": "Actual OEM/source envelope, MOSFET/clamp trajectory, local thermal impedance, repetition and fuse coordination."
+    },
+    {
+      "id": "I32-E",
+      "topic": "Exact parts and mechanical access",
+      "status": "CORRECTED_AND_NATIVE_VERIFIED",
+      "disposition": "177 fitted parts, 175 automatic placements; C159 33 nF and C166 68 nF C0G maximum body/land/STEP, valid 2 ppm dividers, HP discharge resistor; full 1.71 mm stack, 1837 populated/mated checks and 38 probes. Final C166 copper-edge clearance 0.30 mm; body-to-nominal-tab-edge 0.10 mm requires supplier/installed-fit acceptance.",
+      "remaining_gate": "Exact supplier dimensions, solder process, installed mechanical fit and supplier placement conventions."
+    },
+    {
+      "id": "I32-F",
+      "topic": "Ground resistance allocation",
+      "status": "ANALYTICALLY_BOUNDED_WITH_EXPLICIT_MARGIN",
+      "disposition": "Actual restricted In1 copper at0.1/0.075mm, all drills,15um barrel,10% matrix inflation;11.282mohm<15mohm main and10.919mohm<11mohm reservoir.",
+      "remaining_gate": "Numerical finite-volume model and contact/plating/etch allocations require construction and measurement correlation."
+    },
+    {
+      "id": "I32-G",
+      "topic": "Added steady heat and thermal correlation",
+      "status": "PHYSICAL_ACCEPTANCE_REMAINS_AFTER_DIGITAL_RECHECK",
+      "disposition": "Two meshes and three heat vectors on current source/fill. Fixed 2.940859375 W retained; both-80% worst-leakage result 3.062581616 W is not accepted. Same-budget case requires U121 83.3396% if U151 80%. Local conditional U152/U153 peak Tj screens 105.2742/105.2076 C using allocated 51 K/W; not guaranteed junction metrics.",
+      "remaining_gate": "Retain 112.8829809018675 C physical correlation trigger despite new 113.220731 C one-step board screen; actual heat/contact/air data must resolve the difference. U201 immediate air 85 C and 851 local 60 C remain."
+    },
+    {
+      "id": "I32-H",
+      "topic": "Vendor model execution limits",
+      "status": "IRREDUCIBLE_SILICON_CORRELATION_GATE",
+      "disposition": "Unmodified LM5164 isolated baseline completed.170-part closed attempts on ngspice42/47 aborted near21.3ms; full records retained. Transparent derivatives include fixed controller and slow sensitivity without tuned gains.",
+      "remaining_gate": "Final silicon correlation; timestep agreement does not validate unknown controller equations."
+    },
+    {
+      "id": "I32-I",
+      "topic": "Evidence lineage and manufacturing effectivity",
+      "status": "CAD_AND_FIRMWARE_EFFECTIVITY_VERIFIED",
+      "disposition": "Current native evidence binds 135 CAD inputs and the 177-part authored/filled CAD. All 32 firmware files remain byte-identical to adopted commit 4c3e543; a genuine Arduino-ESP32 3.3.6/NimBLE 2.3.6 target build records CPUFreq=160 and passes all 28 preserved source/image/ELF release checks. Historical 240 MHz images remain quarantined.",
+      "remaining_gate": "Supplier DFM, sourcing and first-article acceptance remain unperformed."
+    },
+    {
+      "id": "I32-RCV-FW-01",
+      "topic": "Firmware compiler options versus thermal effectivity",
+      "status": "CLOSED_DIGITAL_TARGET_BUILD_VERIFIED",
+      "disposition": "Closed by a genuine unchanged-source ESP32-S3 build at CPUFreq=160. The full FQBN, -DF_CPU=160000000L compiler log, source/dependency/image hashes, split and merged images, ELF/map and 28/28 release checks are preserved under recovery_20260914/firmware_160mhz/.",
+      "remaining_gate": "No digital rebuild remains. Firmware was not flashed or executed on target; physical thermal, EMC, silicon, first-article and vehicle acceptance remain open."
+    }
+  ],
+  "physical_tests": 0,
+  "supplier_approvals": 0,
+  "full_product_qualified": false
+}

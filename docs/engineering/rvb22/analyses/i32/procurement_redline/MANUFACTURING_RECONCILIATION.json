@@ -1,0 +1,183 @@
+{
+  "status": "PASS_NATIVE_SOURCE_BOM_CPL_MANUFACTURING_BINDING",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+  "native_postconditions": 13,
+  "fitted": 177,
+  "factory_CPL_rows": 175,
+  "local_install": [
+    "F101",
+    "U401"
+  ],
+  "DNP": [
+    "C203",
+    "R301",
+    "R306"
+  ],
+  "frozen_changed_refs": 13,
+  "frozen_MPN_Cnumber_binding": true,
+  "old_frozen_MPNs_in_active_BOM": 0,
+  "other_unchanged_factory_refs_without_LCSC": 29,
+  "unchanged_unassigned_refs": [
+    "C159",
+    "C161",
+    "C162",
+    "C166",
+    "C167",
+    "C206",
+    "C532",
+    "D101",
+    "D105",
+    "L151",
+    "L406",
+    "Q152",
+    "Q153",
+    "R101",
+    "R102",
+    "R103",
+    "R153",
+    "R157",
+    "R158",
+    "R159",
+    "R164",
+    "R165",
+    "R166",
+    "R167",
+    "R168",
+    "R204",
+    "U152",
+    "U153",
+    "U202"
+  ],
+  "aux_drill_origin_mm": [
+    0,
+    41.288863
+  ],
+  "changed_CPL": [
+    {
+      "ref": "C152",
+      "board_X_mm": 40,
+      "board_Y_mm": 13.975,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 40.0,
+      "CPL_Y_mm": 27.313863
+    },
+    {
+      "ref": "C154",
+      "board_X_mm": 30.3,
+      "board_Y_mm": 15.2,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 30.3,
+      "CPL_Y_mm": 26.088863
+    },
+    {
+      "ref": "R155",
+      "board_X_mm": 44.0,
+      "board_Y_mm": 10.8,
+      "side": "bottom",
+      "native_rotation_deg": 90.0,
+      "CPL_X_mm": 44.0,
+      "CPL_Y_mm": 30.488863
+    },
+    {
+      "ref": "R156",
+      "board_X_mm": 41.25,
+      "board_Y_mm": 10.101,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 41.25,
+      "CPL_Y_mm": 31.187863
+    },
+    {
+      "ref": "R169",
+      "board_X_mm": 79.8,
+      "board_Y_mm": 1.7,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 79.8,
+      "CPL_Y_mm": 39.588863
+    },
+    {
+      "ref": "R170",
+      "board_X_mm": 83.2,
+      "board_Y_mm": 1.7,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 83.2,
+      "CPL_Y_mm": 39.588863
+    },
+    {
+      "ref": "U101",
+      "board_X_mm": 33,
+      "board_Y_mm": 30.5,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 33.0,
+      "CPL_Y_mm": 10.788863
+    },
+    {
+      "ref": "C165",
+      "board_X_mm": 27,
+      "board_Y_mm": -0.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 41.788863
+    },
+    {
+      "ref": "L121",
+      "board_X_mm": 59.8,
+      "board_Y_mm": 29.05,
+      "side": "top",
+      "native_rotation_deg": 90.0,
+      "CPL_X_mm": 59.8,
+      "CPL_Y_mm": 12.238863
+    },
+    {
+      "ref": "R160",
+      "board_X_mm": 27,
+      "board_Y_mm": -7.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 48.788863
+    },
+    {
+      "ref": "R161",
+      "board_X_mm": 30.5,
+      "board_Y_mm": -7.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 30.5,
+      "CPL_Y_mm": 48.788863
+    },
+    {
+      "ref": "R162",
+      "board_X_mm": 27,
+      "board_Y_mm": -4,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 45.288863
+    },
+    {
+      "ref": "R163",
+      "board_X_mm": 30.5,
+      "board_Y_mm": -4,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 30.5,
+      "CPL_Y_mm": 45.288863
+    }
+  ],
+  "gerber_layers": 11,
+  "drill_files": 2,
+  "gerber_job_files": 1,
+  "special_vias": 49,
+  "stock_or_capacity_reserved": false,
+  "physical_tests": 0,
+  "L121_process": "JLC catalog manualWeld/wave handling; supplier process approval required. Remains factory supplied, not a third local-install exception."
+}

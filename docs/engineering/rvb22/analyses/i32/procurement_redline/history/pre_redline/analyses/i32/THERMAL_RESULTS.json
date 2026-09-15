@@ -1,0 +1,57 @@
+{
+  "release_heat_W": 2.940859375,
+  "stacked_80pct_heat_W": 3.062581616386441,
+  "required_U121_efficiency_at_U151_80pct": 0.8333959154354461,
+  "cases": [
+    {
+      "case": "retained_I25_vector_on_I32_copper",
+      "coarse_board_max_C": 101.63906705816667,
+      "fine_board_max_C": 107.51905854350258,
+      "one_step_allowance_C": 5.879991485335907,
+      "board_screen_with_one_step_C": 113.39905002883849,
+      "source_heat_W": 2.940859375
+    },
+    {
+      "case": "I32_measured_loss_allocation",
+      "coarse_board_max_C": 101.50781575777226,
+      "fine_board_max_C": 107.36427337996871,
+      "one_step_allowance_C": 5.856457622196444,
+      "board_screen_with_one_step_C": 113.22073100216515,
+      "source_heat_W": 2.940859375
+    },
+    {
+      "case": "I32_stacked_80pct_sensitivity",
+      "coarse_board_max_C": 101.96630566483533,
+      "fine_board_max_C": 107.83172215739599,
+      "one_step_allowance_C": 5.865416492560655,
+      "board_screen_with_one_step_C": 113.69713864995664,
+      "source_heat_W": 3.062581616386441
+    }
+  ],
+  "local_package_screen": {
+    "U152": {
+      "coarse_board_max_C": 77.7095277793387,
+      "fine_board_max_C": 77.88739779757303,
+      "one_step_local_board_C": 78.06526781580736,
+      "RthetaJB_allocation_K_W": 51,
+      "peak_dissipation_W": 0.533508552711265,
+      "conditional_Tj_screen_C": 105.27420400408187,
+      "minimum_TSD_C": 130,
+      "margin_C": 24.725795995918133
+    },
+    "U153": {
+      "coarse_board_max_C": 87.00414878001614,
+      "fine_board_max_C": 89.5661304736405,
+      "one_step_local_board_C": 92.12811216726486,
+      "RthetaJB_allocation_K_W": 51,
+      "peak_dissipation_W": 0.2564605363158863,
+      "conditional_Tj_screen_C": 105.20759951937507,
+      "minimum_TSD_C": 130,
+      "margin_C": 24.792400480624934
+    }
+  },
+  "mesh_convergence_proven": false,
+  "junction_temperature_proven": false,
+  "immediate_air_proven": false,
+  "physical_tests": 0
+}

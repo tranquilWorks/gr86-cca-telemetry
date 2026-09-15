@@ -1,0 +1,59 @@
+{
+  "status": "I32_BOARD_DFM_CANDIDATE_FIRMWARE_160MHZ_BUILD_VERIFIED",
+  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "filled_PCB_sha256": "249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30",
+  "native_schematic_XML_sha256": "f2394512c684bbf5eedb75730429004d8b92e1b834973b5ff7db300a618f1908",
+  "fitted_BOM_count": 177,
+  "position_rows": 175,
+  "CAD_inputs": 135,
+  "firmware_inputs_reused": 32,
+  "source_binding": "../analyses/i32/SOURCE_BINDING.json",
+  "full_evidence": "../analyses/i32/FINAL_EVIDENCE.json",
+  "old_effectivity_preserved": "../analyses/i32/history/PRE_I32_SOURCE_EFFECTIVITY.json",
+  "mechanics": "C05/W02/T03; rechecked177parts+38probes;1.71mm complete height stack",
+  "thermal": {
+    "release_heat_W": 2.940859375,
+    "old_112p88298_C_correlation_trigger_retained": true,
+    "actual_loss_one_step_board_screen_C": 113.22073100216515,
+    "board_temperature_is_not_junction_or_air": true,
+    "gate": "../analyses/i32/QUALIFICATION_AND_SERVICE.md",
+    "required_U121_efficiency_at_U151_80pct": 0.8333959154354461
+  },
+  "model_carry_forward": {
+    "firmware": "All 32 adopted source files are unchanged. A genuine Arduino-ESP32 3.3.6/NimBLE 2.3.6 build used CPUFreq=160 and passed 28/28 release checks; prior 240 MHz images remain historical only.",
+    "RF_CAN_GPS_oil": "Fitted signal components/nets/copper and firmware contracts unchanged; power rail now separately re-evaluated.",
+    "input_power_thermal_mechanics": "Affected models regenerated on I32; prior source-specific passes are superseded."
+  },
+  "supplier_acceptance": false,
+  "physical_measurement_claimed": false,
+  "C166": {
+    "MPN": "CGA5L1C0G2A683J160AE",
+    "value_nF": 68,
+    "maximum_body_mm": [
+      3.6,
+      1.9,
+      1.9
+    ],
+    "position_mm": [
+      85.85,
+      -3.0
+    ],
+    "rotation_deg": 90,
+    "copper_edge_clearance_mm": 0.3,
+    "body_nominal_tab_edge_clearance_mm": 0.1
+  },
+  "firmware_release": {
+    "status": "160MHZ_TARGET_BUILD_AND_BINARY_CHECKS_PASS",
+    "finding": "../analyses/i32/recovery_20260914/FIRMWARE_BUILD_MISMATCH.json",
+    "evidence": "../analyses/i32/recovery_20260914/firmware_160mhz/RESULT.json",
+    "old_images": "Historical only; excluded from release use",
+    "new_target_build_run": true,
+    "candidate_source_files_unchanged": true,
+    "release_checks_passed": 28,
+    "release_check_count": 28,
+    "application_image_sha256": "67ef9d2d5ee0d2627d0a2452e0f3d13ce966dfb44fee0602a5e0ef1a011fc673",
+    "merged_image_sha256": "94bffbeb3361a97afb41c5560ec111be1e9aa5280c2701868bd05191c7b5936f",
+    "flashed": false,
+    "executed_on_target": false
+  }
+}

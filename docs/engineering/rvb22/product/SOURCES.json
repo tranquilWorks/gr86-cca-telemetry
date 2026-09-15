@@ -1,5 +1,5 @@
 {
-  "reviewed_date": "2026-09-12",
+  "reviewed_date": "2026-09-15",
   "supplier_formats": [
     "https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly",
     "https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad"
@@ -9,10 +9,10 @@
   "LM63615_Q1_model": "https://www.ti.com/lit/zip/snvmbr6",
   "LM63615_Q1_product": "https://www.ti.com/product/LM63615-Q1",
   "primary_product_evidence": [
-    "../I25_THERMAL_MILESTONE.json",
-    "../I27_FABRICATION_READINESS.json",
-    "../analyses/i28/I28_POWER_SIGNOFF.json",
-    "../analyses/i26/QUALIFICATION_GATES.json"
+    "../analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+    "../current/i32_manufacturing/SOURCE_MANIFEST.json",
+    "../analyses/i32/procurement_redline/PACKAGE_QUALIFICATION.json",
+    "../analyses/i32/procurement_redline/LIVE_JLC_SOURCEABILITY.json"
   ],
-  "note": "Stock, supplier approval and physical testing are not asserted."
+  "note": "Public live frozen-source/preorder snapshot retained; supplier approval, reserved stock and physical testing are not asserted."
 }

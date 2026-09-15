@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "status": "PASS_NATIVE_SOURCE_BOM_CPL_MANUFACTURING_BINDING",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "filled_PCB_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "native_schematic_XML_sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+  "native_postconditions": 13,
+  "fitted": 177,
+  "factory_CPL_rows": 175,
+  "local_install": [
+    "F101",
+    "U401"
+  ],
+  "DNP": [
+    "C203",
+    "R301",
+    "R306"
+  ],
+  "frozen_changed_refs": 13,
+  "frozen_MPN_Cnumber_binding": true,
+  "old_frozen_MPNs_in_active_BOM": 0,
+  "other_unchanged_factory_refs_without_LCSC": 29,
+  "unchanged_unassigned_refs": [
+    "C159",
+    "C161",
+    "C162",
+    "C166",
+    "C167",
+    "C206",
+    "C532",
+    "D101",
+    "D105",
+    "L151",
+    "L406",
+    "Q152",
+    "Q153",
+    "R101",
+    "R102",
+    "R103",
+    "R153",
+    "R157",
+    "R158",
+    "R159",
+    "R164",
+    "R165",
+    "R166",
+    "R167",
+    "R168",
+    "R204",
+    "U152",
+    "U153",
+    "U202"
+  ],
+  "aux_drill_origin_mm": [
+    0,
+    41.288863
+  ],
+  "changed_CPL": [
+    {
+      "ref": "C152",
+      "board_X_mm": 40,
+      "board_Y_mm": 13.975,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 40.0,
+      "CPL_Y_mm": 27.313863
+    },
+    {
+      "ref": "C154",
+      "board_X_mm": 30.3,
+      "board_Y_mm": 15.2,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 30.3,
+      "CPL_Y_mm": 26.088863
+    },
+    {
+      "ref": "R155",
+      "board_X_mm": 44.0,
+      "board_Y_mm": 10.8,
+      "side": "bottom",
+      "native_rotation_deg": 90.0,
+      "CPL_X_mm": 44.0,
+      "CPL_Y_mm": 30.488863
+    },
+    {
+      "ref": "R156",
+      "board_X_mm": 41.25,
+      "board_Y_mm": 10.101,
+      "side": "bottom",
+      "native_rotation_deg": -90.0,
+      "CPL_X_mm": 41.25,
+      "CPL_Y_mm": 31.187863
+    },
+    {
+      "ref": "R169",
+      "board_X_mm": 79.8,
+      "board_Y_mm": 1.7,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 79.8,
+      "CPL_Y_mm": 39.588863
+    },
+    {
+      "ref": "R170",
+      "board_X_mm": 83.2,
+      "board_Y_mm": 1.7,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 83.2,
+      "CPL_Y_mm": 39.588863
+    },
+    {
+      "ref": "U101",
+      "board_X_mm": 33,
+      "board_Y_mm": 30.5,
+      "side": "bottom",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 33.0,
+      "CPL_Y_mm": 10.788863
+    },
+    {
+      "ref": "C165",
+      "board_X_mm": 27,
+      "board_Y_mm": -0.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 41.788863
+    },
+    {
+      "ref": "L121",
+      "board_X_mm": 59.8,
+      "board_Y_mm": 29.05,
+      "side": "top",
+      "native_rotation_deg": 90.0,
+      "CPL_X_mm": 59.8,
+      "CPL_Y_mm": 12.238863
+    },
+    {
+      "ref": "R160",
+      "board_X_mm": 27,
+      "board_Y_mm": -7.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 48.788863
+    },
+    {
+      "ref": "R161",
+      "board_X_mm": 30.5,
+      "board_Y_mm": -7.5,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 30.5,
+      "CPL_Y_mm": 48.788863
+    },
+    {
+      "ref": "R162",
+      "board_X_mm": 27,
+      "board_Y_mm": -4,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 27.0,
+      "CPL_Y_mm": 45.288863
+    },
+    {
+      "ref": "R163",
+      "board_X_mm": 30.5,
+      "board_Y_mm": -4,
+      "side": "top",
+      "native_rotation_deg": 0.0,
+      "CPL_X_mm": 30.5,
+      "CPL_Y_mm": 45.288863
+    }
+  ],
+  "gerber_layers": 11,
+  "drill_files": 2,
+  "gerber_job_files": 1,
+  "special_vias": 49,
+  "stock_or_capacity_reserved": false,
+  "physical_tests": 0,
+  "L121_process": "JLC catalog manualWeld/wave handling; supplier process approval required. Remains factory supplied, not a third local-install exception.",
+  "excludes": [
+    "SOURCE_MANIFEST.json"
+  ],
+  "files": {
+    "ASSEMBLY_AND_ACCEPTANCE.md": {
+      "sha256": "32200eabec176b7a924d5aefb101dac9ee89abfa0f73e28455ff1213dafd63fb",
+      "bytes": 7062
+    },
+    "FIRMWARE_EFFECTIVITY.json": {
+      "sha256": "f9a13b60124c54668e0ae2e1c1755f97b7fed82ea36bc1ae5e28b8a2abb1128c",
+      "bytes": 12592
+    },
+    "README.md": {
+      "sha256": "b5de27c2c80d35207f032d51ec3b4e5b02ef4a79110d44ab1218e42c1a1b1314",
+      "bytes": 1510
+    },
+    "assembly/COMPLETE_FITTED_BOM.csv": {
+      "sha256": "f386d10862fc42cfdc0d9b396fe6cf5fa3f88d2cb47a0680dcb104b493e07516",
+      "bytes": 14202
+    },
+    "assembly/DO_NOT_POPULATE.json": {
+      "sha256": "c30f3ef1074ab04b5f5a92ff46cbbe41a39b0c7196d03c316ec533e42ac7d009",
+      "bytes": 129
+    },
+    "assembly/JLCPCB_BOM.csv": {
+      "sha256": "6c82aa1fa9d9709db8a9779d14562a0e110b2d78648901d1c669a13b7ad07397",
+      "bytes": 13703
+    },
+    "assembly/JLCPCB_CPL.csv": {
+      "sha256": "0813784eeb86d0b511c6d2a34c70e22c25b02718677d328114180a72a050683e",
+      "bytes": 7721
+    },
+    "assembly/LOCAL_ASSEMBLY_BOM.csv": {
+      "sha256": "40aed4e3893af026f049e9b59d04b9735013255a98ce86b87fa0a3d42a1dc6c5",
+      "bytes": 207
+    },
+    "assembly/SOURCING_REQUIRED.csv": {
+      "sha256": "a27519fd4e0b32ed96afd86deee3c310833075047e62990dbd1dda0d83f1285a",
+      "bytes": 2390
+    },
+    "documentation/POPULATED_COMPONENTS.step": {
+      "sha256": "0c96d9c15b13e07f9175a70c370a670a301cfeb1780adda07554cefff9334c6b",
+      "bytes": 3555904
+    },
+    "documentation/SCHEMATIC.pdf": {
+      "sha256": "fcb1d309715da26c984a64a130bc26d5480f68df10bf0d3139bce87e880b06e8",
+      "bytes": 1912808
+    },
+    "documentation/SCHEMATIC_NETLIST.xml": {
+      "sha256": "3a3ac0ad2e7acc75bd5690a128a7d47e28859e017c66fe01276025dfa7dda93d",
+      "bytes": 416562
+    },
+    "editable_source/cad/CAN.kicad_sch": {
+      "sha256": "ea1c080399a0066b8ff71deea8e129f5b3515e3787fed44052969215f2e5e1a1",
+      "bytes": 43883
+    },
+    "editable_source/cad/CANDIDATE_README.md": {
+      "sha256": "ff3843a841327679068eec915b7a6adcd9f0dde061717c81d74bf05044bc12bb",
+      "bytes": 1194
+    },
+    "editable_source/cad/ESP32.kicad_sch": {
+      "sha256": "51d1cb4706eacc4408e3f4a275f077c7d2fcb6497423b18136061760a2962d84",
+      "bytes": 57897
+    },
+    "editable_source/cad/FITTED_REFERENCES.json": {
+      "sha256": "4dd4364369eb3d63ae88437972165a9f787c97bdeb3c42c1535494856dbcda6a",
+      "bytes": 2717
+    },
+    "editable_source/cad/GPS.kicad_sch": {
+      "sha256": "55a9d87b7fac9f5c218104c7d5f063411c8f9ac93436b913c260918982f7ecaf",
+      "bytes": 92247
+    },
+    "editable_source/cad/GR86_CCA_RevB.kicad_dru": {
+      "sha256": "156050fc0fd321f299a2db28d9cda78f453029e537d201247cc71d9abf7d65da",
+      "bytes": 2349
+    },
+    "editable_source/cad/GR86_CCA_RevB.kicad_pcb": {
+      "sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+      "bytes": 1361348
+    },
+    "editable_source/cad/GR86_CCA_RevB.kicad_prl": {
+      "sha256": "4a3e8bf6f0f966c07be53473d0d7162aa6e1c144cf48237c3c29a8ef0cf0e78e",
+      "bytes": 2123
+    },
+    "editable_source/cad/GR86_CCA_RevB.kicad_pro": {
+      "sha256": "52d0a52f7bb8ae57320f6d059c3539fd628a3cb9c84d66192c2cf9916142171f",
+      "bytes": 12221
+    },
+    "editable_source/cad/GR86_CCA_RevB.kicad_sch": {
+      "sha256": "3993d2b279b3041cf1ea64515656e1980fd30249d07c9c3b9c3a0f36e5c3b281",
+      "bytes": 6084
+    },
+    "editable_source/cad/Input_Protection.kicad_sch": {
+      "sha256": "e0ea1b1d55284bf017a4ba89241d450fe1214002199d3a2e719a5fb7dea9633b",
+      "bytes": 73358
+    },
+    "editable_source/cad/LEDs_Status.kicad_sch": {
+      "sha256": "62919551d080dc2172fb7f6894287fbf606264cf2a185d8e7480ac66f78d9a6e",
+      "bytes": 31640
+    },
+    "editable_source/cad/Oil_Pressure.kicad_sch": {
+      "sha256": "de0c8f81adbcb074200e27a78609317bd0667109c7538589fed6a4b4b9f59c27",
+      "bytes": 134491
+    },
+    "editable_source/cad/Power_3V3.kicad_sch": {
+      "sha256": "fff7397d69f9cb437d69b4e8e5ac65aab9a14afe5ef7e4f0aa813c73babd79b4",
+      "bytes": 132707
+    },
+    "editable_source/cad/Power_5V.kicad_sch": {
+      "sha256": "3ec5893f41d5716fb1e71c44ffe3ebd2a9634cf7ba5ef0e4be317a709a1d0fe3",
+      "bytes": 62563
+    },
+    "editable_source/cad/Programming_Debug.kicad_sch": {
+      "sha256": "486de6f9c5b7d04bba917926c68ba5ea9dbc3d4116f4a3578988283b7a2fe61f",
+      "bytes": 20257
+    },
+    "editable_source/cad/RVB22_POWER_CANDIDATE_ONLY.txt": {
+      "sha256": "5f5d506776d25fad066c6c63591de12e4a791c4d2f3d636e933943f1a5781f07",
+      "bytes": 309
+    },
+    "editable_source/cad/Test_Points.kicad_sch": {
+      "sha256": "b6263cca62138a2d94ee13314f1163d50c92c5d8e27f48cb935fb0e38b539ba4",
+      "bytes": 1006
+    },
+    "editable_source/cad/Vehicle_Interconnect.kicad_sch": {
+      "sha256": "bf55946e04486d888dc3ee126e71d68ff2826af1ceb2286277e4d4e99a7e4c40",
+      "bytes": 9672
+    },
+    "editable_source/cad/fp-lib-table": {
+      "sha256": "7b517306e8b610c928fc6371b9c96d9d2df8fbad166a38894c914d7b8bb51fc7",
+      "bytes": 172
+    },
+    "editable_source/cad/libraries/RevB.kicad_sym": {
+      "sha256": "143d32eef40c2e2f001666445b0f6994f97c10474759e83ce1268e5946df0e45",
+      "bytes": 63558
+    },
+    "editable_source/cad/libraries/RevB.pretty/CDTop_PA1616D_20Pad_v06.kicad_mod": {
+      "sha256": "595453e700993350c3e2154261109550fd90dd2e8323077911daf3340a1fb430",
+      "bytes": 3402
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_0402_1005Metric.kicad_mod": {
+      "sha256": "1aec3acfe8de50f53c01fa2f4735284e5027424485d0cf154a868f441e4436bc",
+      "bytes": 2627
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_0603_1608Metric.kicad_mod": {
+      "sha256": "608e18fb80450783fac25cc58c9252747b9ea2194cf45d152599bf23170afeb6",
+      "bytes": 2613
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_0603_1608Metric_RVB22_C154.kicad_mod": {
+      "sha256": "9c580f28840a78576acd1b62b1b1cba3d74d5a3577a0dff1f2c59068acd034bb",
+      "bytes": 4440
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_0603_1608Metric_RVB22_C205.kicad_mod": {
+      "sha256": "3634037f681da9a06a7ff5b4dab2349650dfb638e951fde6438c475867caf6d0",
+      "bytes": 2361
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_0805_2012Metric.kicad_mod": {
+      "sha256": "f9821eb1d391e3d2bc6c77832e3dcb89c12eb239a84b32afe731e7e2e61509bb",
+      "bytes": 2709
+    },
+    "editable_source/cad/libraries/RevB.pretty/C_1210_3225Metric.kicad_mod": {
+      "sha256": "01a9cf0760a69faa989db0ff756daa38df9941e218e5f8a06ba1a5cd5ec2c37d",
+      "bytes": 2615
+    },
+    "editable_source/cad/libraries/RevB.pretty/Coilcraft_MSS1246T_12x12.kicad_mod": {
+      "sha256": "374a5e52bb92199e80c7cf60b615f4ae3c2b600cba74612aa8f5a2b8f990cd05",
+      "bytes": 1010
+    },
+    "editable_source/cad/libraries/RevB.pretty/Coilcraft_MSS1246T_12x12_RVB22_L121.kicad_mod": {
+      "sha256": "4dc10090e2f615024b53139aafe2b754ab5c105de094d3fee4304f1db60aa045",
+      "bytes": 2532
+    },
+    "editable_source/cad/libraries/RevB.pretty/D_SMA.kicad_mod": {
+      "sha256": "08e475ba157dfd29f03602ae785bc21faee2586a20f96edeb9c19cb42868948f",
+      "bytes": 2155
+    },
+    "editable_source/cad/libraries/RevB.pretty/D_SMB.kicad_mod": {
+      "sha256": "3fe2352afdcb9d3c333fd57aba59a4eac88464beb338c81b2422b7b931073f73",
+      "bytes": 2155
+    },
+    "editable_source/cad/libraries/RevB.pretty/D_SMC.kicad_mod": {
+      "sha256": "ef70d411a94053ae633f6b30a5146218b0bf144e91ba1b4b20bdc2451864a860",
+      "bytes": 2159
+    },
+    "editable_source/cad/libraries/RevB.pretty/D_SMC_RVB22_D103.kicad_mod": {
+      "sha256": "e944bb83714e7c8bcd1b95c36a43a4f16cc250dbcd1532af8c0a2660ec1c28a8",
+      "bytes": 5327
+    },
+    "editable_source/cad/libraries/RevB.pretty/D_SOD-123F.kicad_mod": {
+      "sha256": "aa24a7d6bbbac5a2c0eb536a1ba5c0f023c3b35272e8a03f914873b48b3b0c07",
+      "bytes": 2127
+    },
+    "editable_source/cad/libraries/RevB.pretty/ESP32-S3-WROOM-1.kicad_mod": {
+      "sha256": "65145e12e0f08bb8c126a3915e7f641b1c79c7b0ae5aaa4c0d5bc278a18c4c04",
+      "bytes": 13819
+    },
+    "editable_source/cad/libraries/RevB.pretty/ESP32-S3-WROOM-1_RVB22_U201.kicad_mod": {
+      "sha256": "d6feca1219e0ee0cdd576b1fbdb003d4a9262fa38926a54b8109db2090cb2750",
+      "bytes": 14707
+    },
+    "editable_source/cad/libraries/RevB.pretty/ESP32-S3-WROOM-1_RVB22_U201_TH48.kicad_mod": {
+      "sha256": "16c83584927c2242aa0557c4ff150689f6605724fe9f2a6246875d297f21a4be",
+      "bytes": 12477
+    },
+    "editable_source/cad/libraries/RevB.pretty/Fuse_Littelfuse-NANO2-885.kicad_mod": {
+      "sha256": "b041f0e9d16bafb9f833640d4f6fc49e2ba71f90d21fed23638d10ba696c0b4a",
+      "bytes": 3913
+    },
+    "editable_source/cad/libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm.kicad_mod": {
+      "sha256": "64ad83fbdbf19255a150892c28ccc38dac47fc9d30ae5d5ca4c791b321f6f623",
+      "bytes": 4518
+    },
+    "editable_source/cad/libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.kicad_mod": {
+      "sha256": "cbc4631b4f422e67d772176af27ac1af4c2f5ce5a1431a3409f2df58bae9d482",
+      "bytes": 7319
+    },
+    "editable_source/cad/libraries/RevB.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm.kicad_mod": {
+      "sha256": "22e9c999c6c9bcd47b01724cc6b99207c24f0c7c4107a9b23347aa559fc923ab",
+      "bytes": 4588
+    },
+    "editable_source/cad/libraries/RevB.pretty/Hirose_UFL_R_SMT_1_80_RevB.kicad_mod": {
+      "sha256": "04a28fbb207e977e5eedea4d3d0f43952de1da7b014e0c80ceb839aaee695eee",
+      "bytes": 8008
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C159.kicad_mod": {
+      "sha256": "5d5eca9131524a542379e8d2042f53f410982bac445f4ae0c863da55b7838c52",
+      "bytes": 3585
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C161.kicad_mod": {
+      "sha256": "9d423e019868a16a264fc91b188472fcffe8baa803607012a8dac0fb70882233",
+      "bytes": 4238
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C162.kicad_mod": {
+      "sha256": "86efbb6591be237669b564c1887b1108a4fb42c050d4873d7a7ed901fdc97e87",
+      "bytes": 3777
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C165.kicad_mod": {
+      "sha256": "adda4b8406aaf9ef915940aab8875dc93949ac38738abd00536ae204112ab986",
+      "bytes": 4152
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C166.kicad_mod": {
+      "sha256": "61430cddecf7ca2343efd68a11d099520156d132d18ba9ad0647e1160ebb6056",
+      "bytes": 3586
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_C167.kicad_mod": {
+      "sha256": "2ac72773c3f75930451cd4b77069eb4be627301021467188c932c540b54dd357",
+      "bytes": 4230
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_Q152.kicad_mod": {
+      "sha256": "0dbce307dde0790e5f2a07cd83769003d91f64efa4cf2f6c157c61bfb35fef8e",
+      "bytes": 4378
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_Q153.kicad_mod": {
+      "sha256": "8f5813cf9d59f3b170c96cf69b338c4b86ddaadf676addf179980023ab076af6",
+      "bytes": 4374
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R151.kicad_mod": {
+      "sha256": "b1ca57e0bc91fe3cb3abee5981801f60146afafb7901af4ec7c52f0bbaa57476",
+      "bytes": 4383
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R155.kicad_mod": {
+      "sha256": "ada5bc60e24b145b9e9d53ed87242baeba8b3427a980b3ef8ceab07e14f1f016",
+      "bytes": 2948
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R156.kicad_mod": {
+      "sha256": "69e4f6c28ba2ac8f0bca2986701b3296cc7364be4fc8ecef036998c2e1dcdc6b",
+      "bytes": 2938
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R158.kicad_mod": {
+      "sha256": "d9bf484e90a944a5a1c20bcf47821af0b45fff646223075b75d8cc74b6272db4",
+      "bytes": 4184
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R159.kicad_mod": {
+      "sha256": "150e9efb9c39dd381d92b19fa64c0d756c131f5efc672ae2712b0fc0beddbc03",
+      "bytes": 4121
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R160.kicad_mod": {
+      "sha256": "96a4cc7d14e744cbd7a547c9534ab59683e392dcea5824004a618981d5bcbef1",
+      "bytes": 4127
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R161.kicad_mod": {
+      "sha256": "2662b975393a8568709965c294cf053b2c06c44e415ad995f9e663849193c8bf",
+      "bytes": 4128
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R162.kicad_mod": {
+      "sha256": "405a7214aafebe1fdd8ec0ae8ce5a27bca8ec9ad0c3a3bfe98702a90f95de136",
+      "bytes": 4137
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R163.kicad_mod": {
+      "sha256": "fd1ed58e87e8b15a6d47ef44564ca4e8c768c67a75756391a294c2f6a0d32bc7",
+      "bytes": 4128
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R164.kicad_mod": {
+      "sha256": "faff87b4d3bd1a38fd1618a1da709229dcecc06a096e067a5becdc39a4eefdab",
+      "bytes": 4129
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R165.kicad_mod": {
+      "sha256": "635dfda7a0d15ea0a7a1ebbf22657bec1325e0b774c82781b6ead917f16e6a0d",
+      "bytes": 4125
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R166.kicad_mod": {
+      "sha256": "7d665a90cfe447970a7c9040888d85b9e00ee148b3d1c4b3b6587dd09270d592",
+      "bytes": 4215
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R167.kicad_mod": {
+      "sha256": "9ecc9cf9db55d9029f0bb33c5ed434c174538ac8a48bf297972dc412a874c0cc",
+      "bytes": 4216
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R168.kicad_mod": {
+      "sha256": "1ca55924c37f14231f0a0a4922840c4e542c42afbdba9999579ca2bbad95c9af",
+      "bytes": 4222
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R169.kicad_mod": {
+      "sha256": "af82fbd4188ec7e7e3001f17550eeb4121f1c8ee770f773d4fc4c5f070261b46",
+      "bytes": 4221
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R170.kicad_mod": {
+      "sha256": "eeefc79c48487ef3893914f91cb17fd7a7f21e37bb4dd1be9682d3caf24618ed",
+      "bytes": 4220
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_R204.kicad_mod": {
+      "sha256": "b45ec3a8e090d8668756adef4eaae80438b972d1f4b78b56d7ffbc03a198beeb",
+      "bytes": 4196
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_TP154.kicad_mod": {
+      "sha256": "0ce73bcc2f8ccb20c44edf93b163b7a6d26a12fd1dae666f0220f22f7a465c4b",
+      "bytes": 2357
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_U152.kicad_mod": {
+      "sha256": "950b4be43868fae383a0f9e4c687e34fa5097336c99ccf75cc7e7e1f239463ec",
+      "bytes": 4957
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_FINISHED_U153.kicad_mod": {
+      "sha256": "0007c9f60a4fec8cae58fbbf201d24e2e63ccdd4d2410e8c56716da8dac8e242",
+      "bytes": 4953
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_C152.kicad_mod": {
+      "sha256": "d711d389534110c5ebc73377e0b15717147ee7e41dbb0fdd7f7c90c92267c137",
+      "bytes": 4438
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_C154.kicad_mod": {
+      "sha256": "e5b58c15bf09ad77c8b0a20ba7e2c1a389b5f9dd28b4410eb84de58769332ba8",
+      "bytes": 4434
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_C165.kicad_mod": {
+      "sha256": "1da1589440318b7bfdfc43aba48ad3fef37136d9e978c8bb053ecb90114c813e",
+      "bytes": 4247
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_L121.kicad_mod": {
+      "sha256": "62791325f5cbda2be4dd82985cbcd4bf73d3b33a36b9617956ccf05d027d84ae",
+      "bytes": 2934
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R155.kicad_mod": {
+      "sha256": "e745f6962bd7cb45168e46cd9d55f7f27aab8b08847c987403969f2514b18506",
+      "bytes": 3065
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R156.kicad_mod": {
+      "sha256": "28732fba82235982b73ab64d514f4111891ac94a5ccb22203d85729ed7219919",
+      "bytes": 3079
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R160.kicad_mod": {
+      "sha256": "a40cecb94598ee48a551434e110cd3a64b8a129f15cb94575c0f686983737fd5",
+      "bytes": 2975
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R161.kicad_mod": {
+      "sha256": "29fdfa1d402144d9fe2b5be5d77303f8f326deb94fb80250aaf7bb3ef1046900",
+      "bytes": 2985
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R162.kicad_mod": {
+      "sha256": "245865c88806d8bd38a74de4204e7ddd84f62eb9c1996a0059684240e621fcce",
+      "bytes": 2994
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R163.kicad_mod": {
+      "sha256": "89be3d784917df9fd203a6955e99c685c05d1c36fef8025aa01cbf6e7d2c031f",
+      "bytes": 2985
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R169.kicad_mod": {
+      "sha256": "5982422f075aca0574a5652566236df4892c2c62ae82766795506e4004f5def3",
+      "bytes": 3094
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_R170.kicad_mod": {
+      "sha256": "aecd819e47b40cd34d437d17736b0705f55570bcdf8e8a358f0fd02143dc3734",
+      "bytes": 3097
+    },
+    "editable_source/cad/libraries/RevB.pretty/I32_PROCUREMENT_U101.kicad_mod": {
+      "sha256": "7e817ec6efab09650e473b5191069bc9cf42c3340cebab83b9c1919930a913f8",
+      "bytes": 6511
+    },
+    "editable_source/cad/libraries/RevB.pretty/KEMET_C1210_10u50V.kicad_mod": {
+      "sha256": "bf19c7f0ff60f7a10572bca286f824c29a0974bfc6de0183ff90ac6c2eaf5e16",
+      "bytes": 1284
+    },
+    "editable_source/cad/libraries/RevB.pretty/KEMET_T598_X_7343_Median.kicad_mod": {
+      "sha256": "e2638c7b17476fe21a06134809c9dd9aa26ba048d554a17f9a344de5de941a5e",
+      "bytes": 3127
+    },
+    "editable_source/cad/libraries/RevB.pretty/KEMET_T598_X_7343_Median_RVB22_C206.kicad_mod": {
+      "sha256": "3abe092b5475ee38f326e36f846186a9b839d0c11d01485e7f443a21769e888c",
+      "bytes": 3294
+    },
+    "editable_source/cad/libraries/RevB.pretty/LED_0603_1608Metric.kicad_mod": {
+      "sha256": "fc97fced1536541b16bae010b22d0204b3c6e7680ebf76507c56f7dff2c16649",
+      "bytes": 2810
+    },
+    "editable_source/cad/libraries/RevB.pretty/L_Coilcraft_XAL5030-XXX.kicad_mod": {
+      "sha256": "fb4554ae1d45c37ef0d8d21d86e363d74469b39a559860253100c06ab7e08bad",
+      "bytes": 1919
+    },
+    "editable_source/cad/libraries/RevB.pretty/MSOP-8_3x3mm_P0.65mm.kicad_mod": {
+      "sha256": "1f7eac14be14b4813bbc1654935e31bf0a7b37885911b1811b8e7b861cc5bb35",
+      "bytes": 3148
+    },
+    "editable_source/cad/libraries/RevB.pretty/Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal.kicad_mod": {
+      "sha256": "8d286e81ef8f67d655dc450516580447da744920eb73b6bea226b7707c8fa837",
+      "bytes": 5957
+    },
+    "editable_source/cad/libraries/RevB.pretty/Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.kicad_mod": {
+      "sha256": "e84beb0320bccedf7a1f971c3bbb7f367a862dd8206247d51e913b34cf9e7633",
+      "bytes": 7580
+    },
+    "editable_source/cad/libraries/RevB.pretty/MountingHole_4.4mm_Outboard.kicad_mod": {
+      "sha256": "b257de739a84ff80cc31716db935e7e3e4baa453841d9ad9eb434b14472caf43",
+      "bytes": 544
+    },
+    "editable_source/cad/libraries/RevB.pretty/Murata_LQW18AS_1608.kicad_mod": {
+      "sha256": "bbc27566d1eda3ed63ed86d856e53e674ac58bb51aa4d60edd2994096d537fcf",
+      "bytes": 3205
+    },
+    "editable_source/cad/libraries/RevB.pretty/Nexperia_SOD323_PMEG2010BEA.kicad_mod": {
+      "sha256": "15eff0adf9f4fa564660b60e6cb1cbfeaab635638d6b332c366a891214eeb0a4",
+      "bytes": 1771
+    },
+    "editable_source/cad/libraries/RevB.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": {
+      "sha256": "2f3abce1a47e344cff1be30f002410ea46d00c52eb239a2e5cc8b7fe46e5acc9",
+      "bytes": 3080
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0603_1608Metric.kicad_mod": {
+      "sha256": "c9cacb54994c0aa1d42dfe9c3fb385868f53f5a8d826a51a7f08056f34d871b4",
+      "bytes": 2646
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0603_1608Metric_RVB22_R155.kicad_mod": {
+      "sha256": "73c41c8ed8b62bcf4c6baba606b61bce664d31fc130a50d9a5df7b67e9bcbef6",
+      "bytes": 2535
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0603_1608Metric_RVB22_R156.kicad_mod": {
+      "sha256": "c18c6b45214d5b6c56f645b69f6568d25275bd872bcf56f588dd9a7e1e5f9fd6",
+      "bytes": 2528
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0603_1608Metric_RVB22_R157.kicad_mod": {
+      "sha256": "ccc18a2be92a75b0406d9842522773aa5fd4767eda9419f28f497afd9796b008",
+      "bytes": 2503
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0603_1608Metric_RVB22_R203.kicad_mod": {
+      "sha256": "f7916796ae7c2c9092f7a1ad71856a38d7b8ec22461bf40846903e745aa7e311",
+      "bytes": 2332
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_0805_2012Metric.kicad_mod": {
+      "sha256": "c9e065246f39a319f005b381e48e92fe0cf15ef93d474e17a8c210566693cd97",
+      "bytes": 2630
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_1206_3216Metric.kicad_mod": {
+      "sha256": "fc7e92d4991b06a68d33544a7eab13e18224773057bc9e6bafdd6744529e3f71",
+      "bytes": 2628
+    },
+    "editable_source/cad/libraries/RevB.pretty/R_2512_6332Metric.kicad_mod": {
+      "sha256": "29b787a14a222b380ee2f0308002d95acec37074f13708a80c0b4531dbc01138",
+      "bytes": 2632
+    },
+    "editable_source/cad/libraries/RevB.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod": {
+      "sha256": "c7cfe70e1d1fdc430d5bee68c1c48c8ac9b976c676d5181211167f569fdd117e",
+      "bytes": 3185
+    },
+    "editable_source/cad/libraries/RevB.pretty/SOT-23-5.kicad_mod": {
+      "sha256": "428744bf0ef6b4f15c735b90c0119d7ae4b9eef99642e9ecca7ec1a32d4240e0",
+      "bytes": 2766
+    },
+    "editable_source/cad/libraries/RevB.pretty/SOT-23.kicad_mod": {
+      "sha256": "fab9dbbbc894bef856de100bd88ce1195435b9223f660f4021c15e00f9be8237",
+      "bytes": 2559
+    },
+    "editable_source/cad/libraries/RevB.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": {
+      "sha256": "f4ea754c90fccf90ab5b622758f985cd938cbfcba7ecb1009a1b6ff89256c933",
+      "bytes": 2043
+    },
+    "editable_source/cad/libraries/RevB.pretty/TDK_CGA4J1_33N_I32.kicad_mod": {
+      "sha256": "ba06b9d248aceb13951256083b693c18c4ffa25681ffa4cd9b0ad878c99ef60f",
+      "bytes": 1613
+    },
+    "editable_source/cad/libraries/RevB.pretty/TI_DDA0008B_4214849B.kicad_mod": {
+      "sha256": "d7153eb7b6245784529bd34fa265eea9dde51380969793584c2ce3c50f121016",
+      "bytes": 2384
+    },
+    "editable_source/cad/libraries/RevB.pretty/TI_DPY0002A_TPD1E05U06_SMDMask.kicad_mod": {
+      "sha256": "99cf73073a296cbd9a26c6fe36d9de9b5c4cb72b3b62a6f2da18cc611a614ee2",
+      "bytes": 1941
+    },
+    "editable_source/cad/libraries/RevB.pretty/TI_DQC0010A_I32.kicad_mod": {
+      "sha256": "8a8832f6078089142a54a71baf2b90ddf49c522287f1489780be2776812fe3ae",
+      "bytes": 3018
+    },
+    "editable_source/cad/libraries/RevB.pretty/TI_DRB0008J_TCAN3403.kicad_mod": {
+      "sha256": "6a087c283c7dfdf04838e90b35b49f0c323ece348600c172c0c3a64cf9e1202e",
+      "bytes": 3045
+    },
+    "editable_source/cad/libraries/RevB.pretty/TI_PWP0016A_TPS2660.kicad_mod": {
+      "sha256": "fac4eb28211a9a50ee25bbf26f3b9032ac18f7995e4f76bff63cf6a3ba873931",
+      "bytes": 3402
+    },
+    "editable_source/cad/libraries/RevB.pretty/TO-252-2.kicad_mod": {
+      "sha256": "4db74601b723f842b0e423dbfb2fae7b8717859c27c2219feae089447a985e29",
+      "bytes": 5549
+    },
+    "editable_source/cad/libraries/RevB.pretty/TPS3808_DBV0006A.kicad_mod": {
+      "sha256": "2481f3a84725b6069d69c7b9b66d3281b5dfc7bef5ee133835a96124cfacac04",
+      "bytes": 1511
+    },
+    "editable_source/cad/libraries/RevB.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": {
+      "sha256": "57c6d35b43e1b88a36581eba48f1ea77345677124233631fb1b3fce3abab76c3",
+      "bytes": 3483
+    },
+    "editable_source/cad/libraries/RevB.pretty/TestPoint_Pad_D1.5mm.kicad_mod": {
+      "sha256": "15befb4e91182778cd505b79123962fdf11fe396349ca7f788ba430d0d20ca10",
+      "bytes": 1113
+    },
+    "editable_source/cad/libraries/RevB.pretty/U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod": {
+      "sha256": "ecb0d4bf28d78d48e82afb246edd1724537b3f37576d5564404e724bdf309fcb",
+      "bytes": 7661
+    },
+    "editable_source/cad/libraries/RevB.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": {
+      "sha256": "e123bce97bda0be995e78f9feab2277e8edfc92577e089028da2f2702d0603c4",
+      "bytes": 3757
+    },
+    "editable_source/cad/libraries/RevB.pretty/WSLP0603_MANUFACTURER.kicad_mod": {
+      "sha256": "d762689855c072c352dba0202e4780af14db25b4964e44973fc6bbc9f03d5fbb",
+      "bytes": 2291
+    },
+    "editable_source/cad/libraries/RevB.pretty/WSLP0603_MANUFACTURER_R153.kicad_mod": {
+      "sha256": "e221b11feb82caf78a35d9d9c47d12b962a172eaf38e412357424943ca373165",
+      "bytes": 2507
+    },
+    "editable_source/cad/libraries/RevB.pretty/Wurth_61300211121_1x02.kicad_mod": {
+      "sha256": "fae196d64558ce050e0d2caf740f7864cc78b44944d3a8f8552b6a8353dc0b8c",
+      "bytes": 3078
+    },
+    "editable_source/cad/models/ENVELOPE_CDTop_PA1616D_20Pad_v06.step": {
+      "sha256": "d3c27aeb3da18df56e080db9947eb015a1967d558c9aecd4dc6f93c79d42a8ca",
+      "bytes": 15530
+    },
+    "editable_source/cad/models/ENVELOPE_C_0603_1608Metric_RVB22_C205.step": {
+      "sha256": "6f635d6a798f5b396801338bd09c561cb28c5ed77b3f3b28248ae6934f3ca326",
+      "bytes": 15584
+    },
+    "editable_source/cad/models/ENVELOPE_Coilcraft_MSS1246T_12x12_RVB22_L121.step": {
+      "sha256": "ddd6949e37a4949979fcbfd33b7194073cb8d9f20713a929af460e011db336ed",
+      "bytes": 15504
+    },
+    "editable_source/cad/models/ENVELOPE_Fuse_Littelfuse-NANO2-885.step": {
+      "sha256": "9d36a9abf86fe279bf6de0a69d7bd60e729853d406d1523e3406362177cb6003",
+      "bytes": 15534
+    },
+    "editable_source/cad/models/ENVELOPE_HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_RVB22_U151.step": {
+      "sha256": "b30c2bf603e43d6fd52a5532c80196e6ad8df4c1de639250321851f114fefc6f",
+      "bytes": 15498
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_L121.step": {
+      "sha256": "012827c008c724df60c1e5c3be7b19e7256c292075d3cf10b0846c84b075f756",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R155.step": {
+      "sha256": "0f0c8defdcd9cffd023581c836e61cbc068773961e7c442b740bcc510300c875",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R156.step": {
+      "sha256": "a93960ff860ceb9a15c4834c0f4ad3597ca07c5d0935c50a705f1761b92ef198",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R160.step": {
+      "sha256": "e20321a795b07c624dba2ebb1a7727554907337c5a03993c7013fb14abf358cb",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R161.step": {
+      "sha256": "c4d10ae18fa4b3d448bd15992b8d00860cea42566ef9e77320e533a6d1eb5375",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R162.step": {
+      "sha256": "0b3a847fd13707e5ff8ea19bd0827e81b2618212671f6bc720590729f96d1a5c",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R163.step": {
+      "sha256": "707c3ed5248ee4f3edaa481145a9332ac49b1a179a976739869f149554e69e3a",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R169.step": {
+      "sha256": "1c192d1898eca17b8fa1cfeb62195cc3eac08e6c4a6dd1c5ad2e6ae0650c63c7",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_I32_PROCUREMENT_R170.step": {
+      "sha256": "ea72a49cbb923093490d12d1367e18481f262080f9b88974f5d955cfb8a710ec",
+      "bytes": 2460
+    },
+    "editable_source/cad/models/ENVELOPE_KEMET_C1210_10u50V.step": {
+      "sha256": "5b0d225bb2c29ee9132422fdcf2b1dfbc044cedcc181e102344f0d5dd34e274d",
+      "bytes": 15522
+    },
+    "editable_source/cad/models/ENVELOPE_KEMET_T598_X_7343_Median_RVB22_C206.step": {
+      "sha256": "70e116f6b72779d9d18e13b3f39b807c8d55337d3b94d25107a7c972fe799330",
+      "bytes": 15528
+    },
+    "editable_source/cad/models/ENVELOPE_Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal_RVB22_F1.step": {
+      "sha256": "2243353fd26661c62429727755fdc6f236a303e3b37a78bfb77d7062a91ec91e",
+      "bytes": 15560
+    },
+    "editable_source/cad/models/ENVELOPE_Murata_LQW18AS_1608.step": {
+      "sha256": "8dc9860d48f1f310cbb4fedd0859e36f6b22350e2f1eb7ca433e5d2465fc130d",
+      "bytes": 15485
+    },
+    "editable_source/cad/models/ENVELOPE_R_0603_1608Metric_RVB22_R155.step": {
+      "sha256": "9fa8ccd8941ac41b5cfcbfe19e4b8e011285245410a56c75a4f1b4916fcfc785",
+      "bytes": 15597
+    },
+    "editable_source/cad/models/ENVELOPE_R_0603_1608Metric_RVB22_R156.step": {
+      "sha256": "34333acbfbf21749f6c9601043337101b7c1790e7a5a69842e37599ae3f07d2c",
+      "bytes": 15597
+    },
+    "editable_source/cad/models/ENVELOPE_R_0603_1608Metric_RVB22_R157.step": {
+      "sha256": "24d98fde147dda86b6eaf5e60d7412babffba9fab808ba53cab12091fc09aabb",
+      "bytes": 15584
+    },
+    "editable_source/cad/models/ENVELOPE_R_0603_1608Metric_RVB22_R203.step": {
+      "sha256": "379bf1889a646b97bd6172624f5cb82ead3c68097b0693b15d2cca55e3ab3494",
+      "bytes": 15584
+    },
+    "editable_source/cad/models/ENVELOPE_TDK_CGA4J1_33N_I32.step": {
+      "sha256": "3f0cc244fadb333bd5f2920199b75927959fe7631b790fe337f43f97019e2d5a",
+      "bytes": 15552
+    },
+    "editable_source/cad/models/ENVELOPE_TDK_CGA5L1_68N_I32.step": {
+      "sha256": "4119dfcb505646dbbf35e24561821d78b1fe48c39f2976c2d720f4682f4fe0e0",
+      "bytes": 15496
+    },
+    "editable_source/cad/models/ENVELOPE_TI_DDA0008B_4214849B.step": {
+      "sha256": "9ef46c4d078c5bbb9982618e3c80d58590fa2dbcb052185ee7728a010ad4d931",
+      "bytes": 15496
+    },
+    "editable_source/cad/models/ENVELOPE_TI_DPY0002A_TPD1E05U06_SMDMask.step": {
+      "sha256": "c9d865a8b06d5de7e49b609d88e16493b0842f8623eda2073718034e07a2e374",
+      "bytes": 15509
+    },
+    "editable_source/cad/models/ENVELOPE_TI_DQC0010A_I32.step": {
+      "sha256": "0e31d372d70b467870b210500d68efae39ab4210a8c369898da962a3db259cfb",
+      "bytes": 15522
+    },
+    "editable_source/cad/models/ENVELOPE_TI_DRB0008J_TCAN3403.step": {
+      "sha256": "c0ce404df93ae34fa583617fb70a787b163f8d3d2e0537580652a5badf4ff737",
+      "bytes": 15496
+    },
+    "editable_source/cad/models/ENVELOPE_TI_PWP0016A_TPS2660.step": {
+      "sha256": "5f4c1b37c0a8362ddb61c8228a7233d601c78a2878029a100b67c8091b11d35c",
+      "bytes": 15498
+    },
+    "editable_source/cad/models/ENVELOPE_TPS3808_DBV0006A.step": {
+      "sha256": "49c7af653bd28289a781dbc22e2974042c1ad314726f6d6ab4da24e6050d048d",
+      "bytes": 15485
+    },
+    "editable_source/cad/models/ENVELOPE_WSL2512_I32_R158.step": {
+      "sha256": "a634eccea572b463a321f368eb39ee4bdba37d1907f60f5567cd9a34e34957b3",
+      "bytes": 15616
+    },
+    "editable_source/cad/models/ENVELOPE_WSLP0603_MANUFACTURER.step": {
+      "sha256": "41b3fb49317d8023ba3e55d02a8d568e7a99ef293928d5ba4e69f481a00438b6",
+      "bytes": 15610
+    },
+    "editable_source/cad/models/ENVELOPE_WSLP0603_MANUFACTURER_R153.step": {
+      "sha256": "5d3ddd582dc72c78ad5910dd196a105247bfef40a94cd49eaad1a28116cfd740",
+      "bytes": 15526
+    },
+    "editable_source/cad/sym-lib-table": {
+      "sha256": "4668006fdd85a6fbfd2e8d258275ac0881c762a223afce22626785f03b2c718f",
+      "bytes": 1008
+    },
+    "fabrication/FILL_CAP_PLANARIZE_49_VIAS.csv": {
+      "sha256": "2e0ff03d3917ea5816ce7e6616527b1849803c7e36ea9b2664a5328dcf1e68f2",
+      "bytes": 3470
+    },
+    "fabrication/JLCPCB_GERBERS.zip": {
+      "sha256": "fe17b66ac0ba7e1229a0db47abddfec99d91bb72b71927b215826b0bd5be1d20",
+      "bytes": 569818
+    },
+    "fabrication/PCB_NETLIST.d356": {
+      "sha256": "de00395c9217735d0e740bff5295e2bd3d817c8831e71dbf0854c919d39f9461",
+      "bytes": 69977
+    },
+    "fabrication/STACKUP_AND_PROCESS.json": {
+      "sha256": "bdb415f5334898b4f2f8865b1bf504910ea57d607491859adca81811a149abd4",
+      "bytes": 394
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-B_Cu.gbl": {
+      "sha256": "feaea528a59f47b09bc77113802769fddf014bc6973c742e77ffd4ad8cd1a425",
+      "bytes": 453469
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-B_Mask.gbs": {
+      "sha256": "cdac2a8031e243bc8d6dd1e5aa0936cb77cf9e75804fcfc4f5722dba72100854",
+      "bytes": 327996
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-B_Paste.gbp": {
+      "sha256": "dd85442aed3f05ce2f1f4dcde510abce38cf301b8319cbe3ef555eb86763903e",
+      "bytes": 13060
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-B_Silkscreen.gbo": {
+      "sha256": "ef9611064853e2b3c0a04867f819664659627780690b9249828e6e17a61f505d",
+      "bytes": 119953
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-Edge_Cuts.gm1": {
+      "sha256": "21e6b5e300934b9dec59676199fbd91be9704f5693f94fcbe265177103e9e7db",
+      "bytes": 3224
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-F_Cu.gtl": {
+      "sha256": "ba32619f6db615079e83ea216ac8ecaecb4dae0d8f721e15915291ddf2cdaae3",
+      "bytes": 454678
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-F_Mask.gts": {
+      "sha256": "3ac41a6819b15c417ef40f2d63175466d5e3f48c23162b7fc6d88b8ea0e7387a",
+      "bytes": 306251
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-F_Paste.gtp": {
+      "sha256": "a202b07daf8f0d148c02e611950016a21818f59d75da8497559f156e320107bf",
+      "bytes": 13008
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-F_Silkscreen.gto": {
+      "sha256": "b6ca94159cf936eef6955a3e6eb2b4c9dc34e67d6c0bdd1af160d2fd2f6cb4d7",
+      "bytes": 122602
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-In1_Cu.g1": {
+      "sha256": "06b4b307f518f91ee84f96face51b1f2d4b0350080ff06f7c6350427994fae48",
+      "bytes": 281213
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-In2_Cu.g2": {
+      "sha256": "40e48a7f76d631285c062197fd5c8d8acacbea6f3676151bbe2b49185b70b21e",
+      "bytes": 293102
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-NPTH.drl": {
+      "sha256": "5997e471f556e1aa1d5333d05ecf95ad7ce6f1d48f92442687c27bc081d29e8e",
+      "bytes": 689
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-PTH.drl": {
+      "sha256": "d7a95d1f68badce280f76efbcd4faf35a3a8ad894bfb5fa04fbf6d1c904478a6",
+      "bytes": 5630
+    },
+    "fabrication/gerbers/GR86_CCA_RevB-job.gbrjob": {
+      "sha256": "15550645c793e7ea1caa6ffd6e288adde768ccca68eb3f636e93d879c15801fd",
+      "bytes": 3556
+    }
+  }
+}

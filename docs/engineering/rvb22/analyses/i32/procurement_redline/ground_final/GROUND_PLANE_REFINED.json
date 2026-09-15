@@ -1,0 +1,109 @@
+{
+  "source_filled_pcb_sha256": "896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
+  "analyzer_sha256": "274dba412a3dc1ea41b4769d45c55ccd8b3080dcfe94fb34183558359cf7b7fc",
+  "terminal_geometry_signature_sha256": "a59c5beb79db81b1a2e1aa03f730bf446788f3aa7a241f9603bcc65874f7a7f2",
+  "explicit_footprint_bores_removed": 26,
+  "total_bores_removed": 385,
+  "removed_drill_copper_area_mm2": 14.15598478930724,
+  "layer": "In1.Cu",
+  "temperature_C": 150,
+  "copper_um": 24,
+  "sheet_R_ohm": 0.0010853298333333332,
+  "rows": [
+    {
+      "mesh_mm": 0.1,
+      "status": "SOLVED_RESTRICTED_GROUND_SUBSET",
+      "nodes": 395448,
+      "retained_area_mm2": 3954.4800000000005,
+      "ports": {
+        "source_via": 208006,
+        "source_old_via": 222188,
+        "load_EP_via": 203920,
+        "C206_ground_via": 13418
+      },
+      "measurements": [
+        {
+          "from": "source_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.00983827527823393,
+          "max_KCL_residual_A": 1.4301448914011416e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.00983827527823393,
+            "source_old_via": 0.003860698188458076
+          }
+        },
+        {
+          "from": "source_old_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.009355240754147004,
+          "max_KCL_residual_A": 1.3312906332885177e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.003860698188353873,
+            "source_old_via": 0.009355240754147004
+          }
+        },
+        {
+          "from": "C206_ground_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.009063559349709838,
+          "max_KCL_residual_A": 3.335021148132e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.0016942156191409158,
+            "source_old_via": 0.0017511914653967117
+          }
+        }
+      ]
+    },
+    {
+      "mesh_mm": 0.075,
+      "status": "SOLVED_RESTRICTED_GROUND_SUBSET",
+      "nodes": 708144,
+      "retained_area_mm2": 3983.3099999999995,
+      "ports": {
+        "source_via": 371744,
+        "source_old_via": 398735,
+        "load_EP_via": 363372,
+        "C206_ground_via": 23115
+      },
+      "measurements": [
+        {
+          "from": "source_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.009876954407559242,
+          "max_KCL_residual_A": 1.5489831639570184e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.009876954407559242,
+            "source_old_via": 0.0039466425232195105
+          }
+        },
+        {
+          "from": "source_old_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.009109202774852667,
+          "max_KCL_residual_A": 1.1155076862223723e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.003946642523154628,
+            "source_old_via": 0.009109202774852667
+          }
+        },
+        {
+          "from": "C206_ground_via",
+          "to": "load_EP_via",
+          "restricted_plane_R_ohm": 0.009225405151265667,
+          "max_KCL_residual_A": 1.3081091765343444e-11,
+          "source_port_potentials_V_per_A": {
+            "source_via": 0.0017477055223741164,
+            "source_old_via": 0.0018047861426141775
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Includes only actual In1 ground subset. No removed copper, layer parallel paths or extra contacts are credited.",
+    "No disconnected pieces are joined within a cell. All cells fit entirely in source copper by half-diagonal erosion.",
+    "Point current injection represents one retained cell of the actual via land. Via barrels and source/terminal tracks are added separately.",
+    "Numerical centre-to-centre finite volume is not a strict continuum upper-bound theorem; use two-mesh result and explicit numerical margin."
+  ]
+}

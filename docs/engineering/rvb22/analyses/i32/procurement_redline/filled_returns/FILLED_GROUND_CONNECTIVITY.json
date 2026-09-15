@@ -1,0 +1,476 @@
+{
+  "filled_PCB_sha256": "020d5a7e739f65f24e50bff894fa8ea9cf0114b37ef197560a8c09cd1aa4c54f",
+  "ground_net": 30,
+  "layer_islands": {
+    "F.Cu": 19,
+    "In1.Cu": 2,
+    "In2.Cu": 11,
+    "B.Cu": 31
+  },
+  "physical_bridges": 176,
+  "rows": [
+    {
+      "path": "U121 input bypass ground",
+      "start": "C123.2",
+      "end": "U121.1",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "end_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "unobstructed_ground_lines": [
+        {
+          "layer": "F.Cu",
+          "pad_center_line_mm": 2.275417544100398
+        }
+      ]
+    },
+    {
+      "path": "U121 input bypass exposed pad",
+      "start": "C123.2",
+      "end": "U121.9",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "end_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U121 output cap return",
+      "start": "C127.2",
+      "end": "U121.1",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          14
+        ]
+      ],
+      "end_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U121 FB ground",
+      "start": "R123.2",
+      "end": "U121.1",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "end_islands": [
+        [
+          "F.Cu",
+          9
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U151 input bypass PGND15",
+      "start": "C152.2",
+      "end": "U151.15",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": [
+        {
+          "layer": "B.Cu",
+          "pad_center_line_mm": 2.1411518512239702
+        }
+      ]
+    },
+    {
+      "path": "U151 input bypass PGND16",
+      "start": "C152.2",
+      "end": "U151.16",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": [
+        {
+          "layer": "B.Cu",
+          "pad_center_line_mm": 2.2010295886243263
+        }
+      ]
+    },
+    {
+      "path": "U151 input bypass exposed pad",
+      "start": "C152.2",
+      "end": "U151.17",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U151 VCC ground",
+      "start": "C153.2",
+      "end": "U151.10",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U151 cap ground to PGND",
+      "start": "C155.2",
+      "end": "U151.16",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          7
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U151 cap ground to EP",
+      "start": "C157.2",
+      "end": "U151.17",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          14
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U151 quiet feedback return",
+      "start": "R156.2",
+      "end": "U151.10",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": [
+        {
+          "layer": "B.Cu",
+          "pad_center_line_mm": 3.3967125651134906
+        }
+      ]
+    },
+    {
+      "path": "U152 local bypass ground",
+      "start": "C161.2",
+      "end": "U152.5",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U152 ground to exposed pad",
+      "start": "U152.5",
+      "end": "U152.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "C162 reservoir ground",
+      "start": "C162.2",
+      "end": "U151.17",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          0
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          12
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U152 timing return",
+      "start": "C159.2",
+      "end": "U152.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U153 input bypass return",
+      "start": "C167.2",
+      "end": "U153.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": [
+        {
+          "layer": "B.Cu",
+          "pad_center_line_mm": 3.104935587093552
+        }
+      ]
+    },
+    {
+      "path": "U153 timing return",
+      "start": "C166.2",
+      "end": "U153.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "U153 ground to EP",
+      "start": "U153.5",
+      "end": "U153.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "Reservoir bleed return",
+      "start": "R168.2",
+      "end": "U153.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "Bulk enable divider return",
+      "start": "R170.2",
+      "end": "U153.11",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          6
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "D105 return to input controller",
+      "start": "D105.2",
+      "end": "U101.4",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          0
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          8
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "Input clamp controller return",
+      "start": "D103.2",
+      "end": "U101.4",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "F.Cu",
+          0
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          8
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    },
+    {
+      "path": "Input controller bypass return",
+      "start": "C101.2",
+      "end": "U101.4",
+      "connected_by_actual_filled_ground": true,
+      "start_islands": [
+        [
+          "B.Cu",
+          9
+        ]
+      ],
+      "end_islands": [
+        [
+          "B.Cu",
+          8
+        ]
+      ],
+      "unobstructed_ground_lines": []
+    }
+  ],
+  "scope": "Connectivity and direct copper visibility only; no zero impedance or AC return proof. Original pads/tracks plus actual native fill. Drill bores are handled by the separate resistance solver."
+}

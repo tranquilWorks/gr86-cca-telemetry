@@ -1,0 +1,206 @@
+{
+  "status": "PASS_EXACT_MPN_CNUMBER_AND_PUBLIC_PURCHASE_PATHS",
+  "unique_parts": 9,
+  "changed_fitted_references": 13,
+  "rows": [
+    {
+      "refs": [
+        "R155"
+      ],
+      "MPN": "PTFR0603B11K8N9",
+      "LCSC": "C19679768",
+      "url": "https://jlcpcb.com/partdetail/C19679768",
+      "retrieved_at_UTC": "2026-09-14T23:04:32.466636+00:00",
+      "response_sha256": "9a42b7010332da879c5d4c56f0d3f962a3d9ffce845f65b6e3cad54d9657086c",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+155\u2103 100V 100mW 11.8k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheet_url": null,
+      "stock": 3984,
+      "preorder_minimum": 85,
+      "canPresaleNumber": 3969,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R161",
+        "R163",
+        "R170"
+      ],
+      "MPN": "PTFR0603Q1K00N9",
+      "LCSC": "C23067434",
+      "url": "https://jlcpcb.com/partdetail/C23067434",
+      "retrieved_at_UTC": "2026-09-14T23:04:38.601266+00:00",
+      "response_sha256": "57d4ccfa615394cf9a48568695dbadef1ff712b2725d63746061150dea19059f",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+155\u2103 100V 100mW 1k\u03a9 Thin Film Resistor \u00b10.02% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280131_RESI-PTFR0603Q1K00N9_C23067434.pdf",
+      "stock": 12948,
+      "preorder_minimum": 19,
+      "canPresaleNumber": 12825,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R162"
+      ],
+      "MPN": "PTFR0603Q4K70N9",
+      "LCSC": "C23067437",
+      "url": "https://jlcpcb.com/partdetail/C23067437",
+      "retrieved_at_UTC": "2026-09-14T23:04:48.994128+00:00",
+      "response_sha256": "756e532ab541e91efb4c883088d43765a922b9ab83c3831e800548999b7065b7",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+155\u2103 100V 100mW 4.7k\u03a9 Thin Film Resistor \u00b10.02% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409280131_RESI-PTFR0603Q4K70N9_C23067437.pdf",
+      "stock": 6817,
+      "preorder_minimum": 20,
+      "canPresaleNumber": 6812,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R169"
+      ],
+      "MPN": "PTFR0603B3K01N9",
+      "LCSC": "C2692830",
+      "url": "https://jlcpcb.com/partdetail/C2692830",
+      "retrieved_at_UTC": "2026-09-14T23:04:48.722518+00:00",
+      "response_sha256": "1e6d12ee5674c9bee558089747af0a0bdb55993b2ca5663c970dd4a8f9ce1ce7",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+125\u2103 100V 100mW 3.01k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405061537_RESI-PTFR0603B3K01N9_C2692830.pdf",
+      "stock": 317,
+      "preorder_minimum": 66,
+      "canPresaleNumber": 316,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "C152",
+        "C154",
+        "C165"
+      ],
+      "MPN": "CGA3E3X7R1H224KT0Y0N",
+      "LCSC": "C342967",
+      "url": "https://jlcpcb.com/partdetail/C342967",
+      "retrieved_at_UTC": "2026-09-14T23:04:32.174394+00:00",
+      "response_sha256": "fda05a37df1bfd633a2cd4d69019c90daab4021e2bbf31a1bf1a0a9843e997d5",
+      "package": "0603",
+      "assemblyMode": "smtWeld",
+      "description": "220nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X7R1H224KT0Y0N_C342967.pdf",
+      "stock": 3670,
+      "preorder_minimum": 390,
+      "canPresaleNumber": 3655,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R156"
+      ],
+      "MPN": "PLT1206Z5051LBTS",
+      "LCSC": "C4074185",
+      "url": "https://jlcpcb.com/partdetail/C4074185",
+      "retrieved_at_UTC": "2026-09-14T23:04:32.209867+00:00",
+      "response_sha256": "b96e1c2fdc9d95bf244037ef2cc99c1c488ce67809aa8fe7650ab5253d710139",
+      "package": "1206",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+125\u2103 400mW 5.05k\u03a9 Thin Film Resistor \u00b10.01% \u00b15ppm/\u2103 1206 Chip Resistor - Surface Mount",
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312130952_Vishay-Intertech-PLT1206Z5051LBTS_C4074185.pdf",
+      "stock": 0,
+      "preorder_minimum": 2,
+      "canPresaleNumber": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+    },
+    {
+      "refs": [
+        "L121"
+      ],
+      "MPN": "BPCI00121280470M00",
+      "LCSC": "C6471075",
+      "url": "https://jlcpcb.com/partdetail/C6471075",
+      "retrieved_at_UTC": "2026-09-14T23:01:16.537041+00:00",
+      "response_sha256": "b6d1536aed842a79cca52bb314d36532d0e6103c1b4ba8d8958b651ed5a3405a",
+      "package": "SMD,12x12mm",
+      "assemblyMode": "manualWeld",
+      "description": "100m\u03a9 2.5A 2.5A 47uH Magnetic Shielded Inductor \u00b120% SMD,12x12mm Power Inductors ROHS",
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2312120515_Chilisin-Elec-BPCI00121280470M00_C6471075.pdf",
+      "stock": 0,
+      "preorder_minimum": 35,
+      "canPresaleNumber": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+    },
+    {
+      "refs": [
+        "U101"
+      ],
+      "MPN": "LTC4367HMS8#PBF",
+      "LCSC": "C688370",
+      "url": "https://jlcpcb.com/partdetail/C688370",
+      "retrieved_at_UTC": "2026-09-14T23:04:49.111353+00:00",
+      "response_sha256": "03e2210145ad29ab2f2f6b9828e8fc9f2c07d0ef4332ab2538615d331434acd2",
+      "package": "MSOP-8",
+      "assemblyMode": "smtWeld",
+      "description": "-40\u2103~+125\u2103 2.5V~60V MSOP-8 Surge Protection Devices (SPDs) ROHS",
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Analog-Devices-LTC4367HMS8-PBF_C688370.pdf",
+      "stock": 2,
+      "preorder_minimum": 2,
+      "canPresaleNumber": 1,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PURCHASABLE_STOCK"
+    },
+    {
+      "refs": [
+        "R160"
+      ],
+      "MPN": "RT0805BRB076K34L",
+      "LCSC": "C864499",
+      "url": "https://jlcpcb.com/partdetail/C864499",
+      "retrieved_at_UTC": "2026-09-14T23:04:32.542143+00:00",
+      "response_sha256": "b5a32b8d19c27df8bd2a397b0180baf5c70212cb52a6abf45efe739b4d0e899e",
+      "package": "0805",
+      "assemblyMode": "smtWeld",
+      "description": "-55\u2103~+155\u2103 125mW 6.34k\u03a9 Thin Film Resistor \u00b10.1% \u00b110ppm/\u2103 0805 Chip Resistor - Surface Mount ROHS",
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404241522_YAGEO-RT0805BRB076K34L_C864499.pdf",
+      "stock": 0,
+      "preorder_minimum": 72,
+      "canPresaleNumber": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "status": "CATALOG_PREORDER_PATH_AVAILABLE"
+    }
+  ],
+  "stock_reserved": false,
+  "order_placed": false,
+  "authenticated_orderability_test": false,
+  "physical_assembly_validated": false,
+  "L121_factory_process_note": "JLC lists this SMD part as manualWeld (public UI: Wave Soldering). It remains a factory-supplied placement in the 175-row CPL. This is not proof of automatic SMT handling; exact supplier process and orientation approval remain required before ordering. F101/U401 remain the only local-install exceptions.",
+  "scope": "Public exact-identity catalog/sourceability and preorder availability snapshot; inventory and supplier process acceptance are not guaranteed."
+}

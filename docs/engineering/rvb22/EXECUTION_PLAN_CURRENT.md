@@ -1,3 +1,9 @@
+# Current I32 procurement redline — 2026-09-15
+
+The native frozen-parts redline is completed and desktop-verified. Current source, BOM/CPL, manufacturing files and affected verification are controlled by [the redline report](analyses/i32/procurement_redline/README.md), [final verification](analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json), and [source effectivity](current/SOURCE_EFFECTIVITY.json). Supplier and physical gates remain open. Earlier source hashes, active parts, numerical results and package pointers below are historical where superseded; the original document is preserved under `analyses/i32/procurement_redline/history/pre_redline/`.
+
+---
+
 # I26 current execution plan — pre-hardware closure
 
 Date: 2026-09-11

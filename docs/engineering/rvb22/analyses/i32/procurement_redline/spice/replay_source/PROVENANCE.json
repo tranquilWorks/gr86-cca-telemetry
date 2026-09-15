@@ -1,0 +1,14 @@
+{
+  "status": "EXECUTED_REPLAY_SOURCE_PRESERVED",
+  "files": {
+    "power_chain.py": "70d84db48ae10e327a7a4191b42ebf47ddeb81dfafa46fd83ce78fea65fa60c0",
+    "substitution_spice_qual.py": "7d662867c542aebb5e0c4ac1dcd1532a7b17b3b3c335ab305a7913e6a13bbe07",
+    "final_procurement_spice_qual.py": "8c3a75a57480117da7742bc663575daec3f4211c586d5640591638f4cc9f8188",
+    "selected_power_cases.py": "55546103fe26c419f50bd65e91002caf189744a5329b3ac2fbd8000117b7d315"
+  },
+  "solver": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+  "recovered_script_branch": "agent/i32-jlc-substitution-spice",
+  "previous_hosted_run": 34899316734,
+  "post_run_cleanup": "Common-runner defaults now match exact frozen bounds already applied by the executed final wrapper. Executed scripts, decks and numerical results are preserved without modification.",
+  "hardware_tests": 0
+}

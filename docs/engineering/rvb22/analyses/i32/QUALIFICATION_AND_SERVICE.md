@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [procurement_redline/README.md](procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/analyses/i32/QUALIFICATION_AND_SERVICE.md`.
+
+---
+
 # I32 qualification and service conditions
 
 No hardware, vehicle connection, programming, supplier approval or physical test was performed. These are deterministic first-article acceptance instructions. Retained I26 oil, GPS, RF, CAN, installation and mechanical criteria continue to apply. The uncertainty rule is unchanged: a measured value plus its relevant uncertainty must stay inside an upper limit; subtract uncertainty for a lower limit. Model assumptions are not measurement tolerances.

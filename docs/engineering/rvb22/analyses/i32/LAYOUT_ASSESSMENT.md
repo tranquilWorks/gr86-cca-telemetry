@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [procurement_redline/README.md](procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/analyses/i32/LAYOUT_ASSESSMENT.md`.
+
+---
+
 # I32 power placement and copper assessment
 
 The source PCB is `45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7`; native filled PCB is `249d7b584af71605ee160c1ff425fda16a11b3ba93458bb243a722214c66ab30`. `evidence/layout/LAYOUT_MEASUREMENTS.json` records 80 pad pairs with actual coordinates, layer sets, track/via UUIDs, neck widths and routed distances. Seven annotated views accompany it. Twenty-three ground pairs are separately connected through actual native fill in `evidence/filled_returns/`. An explicit-route graph reporting “zone return required” is not an open circuit when that filled-ground check passes.

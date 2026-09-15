@@ -1,0 +1,246 @@
+(footprint "I32_FINISHED_U152"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TI DQC0010A; datasheet drawing 4223098/A 07/2016; 2x3mm WSON, 0.8mm max body")
+	(tags "WSON NoLead")
+	(property "Reference" "U152"
+		(at 3.2 0 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bd32270d-cd30-400d-9305-b69a8e62a514")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TPS22953-Q1 REVERSE BLOCKING"
+		(at 0 2.45 180)
+		(layer "F.Fab")
+		(uuid "44616d93-e7e5-44b2-bba4-79d5efb30837")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps22953-q1.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30d249c5-2d22-4cdd-98c5-53559cb4763c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09b1cdf8-3ad3-463c-89f4-5e327e8876b3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "TPS22953QDQCRQ1"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe235304-811c-4e61-b29b-d15de0cc402c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Manufacturer" "Texas Instruments"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bab1eb8f-40cb-459d-84a7-7805e9289ac8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Assembly" "FACTORY"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b1d2b1d-bd25-4ba9-b8fb-3632c035cff2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Qualification" "I32 source candidate; native evidence and qualification conditions control"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf15e95a-801f-430c-9e50-5259af0ead7e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.45 -1.8)
+		(end 1.45 1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9ee97028-926c-4f5c-bc3e-6e9a4739dd2e")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -1.5) (xy 1 -1.5) (xy 1 1.5) (xy -1 1.5) (xy -1 -1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9f226833-6898-4a1f-8b24-35411630767c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(uuid "4e3aa35b-13de-4e21-ac5a-ff4b42890a99")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.11)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at 0 -0.6)
+		(size 0.8 1)
+		(layers "F.Paste")
+		(roundrect_rratio 0.0625)
+		(uuid "87de3f7e-d337-45b7-b642-55585752cde9")
+	)
+	(pad "" smd roundrect
+		(at 0 0.6)
+		(size 0.8 1)
+		(layers "F.Paste")
+		(roundrect_rratio 0.0625)
+		(uuid "1c287007-1436-4d0d-bfd2-8b09dfb499dd")
+	)
+	(pad "1" smd roundrect
+		(at -0.95 -1)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "22bf9e09-bcd5-5ddb-8894-3b11c9dc7266")
+	)
+	(pad "2" smd roundrect
+		(at -0.95 -0.5)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "af62b8de-9600-5545-b131-94babba9aba6")
+	)
+	(pad "3" smd roundrect
+		(at -0.95 0)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "662789a7-e5b1-5244-aeb7-bc88ba0dd320")
+	)
+	(pad "4" smd roundrect
+		(at -0.95 0.5)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "58b272c1-e2fb-5757-8d14-98015e24d0e6")
+	)
+	(pad "5" smd roundrect
+		(at -0.95 1)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "5d8bdd18-aa51-5b8e-9abe-766df62b13fb")
+	)
+	(pad "6" smd roundrect
+		(at 0.95 1)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "1bbb45e7-0095-5ee2-89bb-4b8260973be7")
+	)
+	(pad "7" smd roundrect
+		(at 0.95 0.5)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "52cee400-15b3-545f-9a56-8d9be52f0926")
+	)
+	(pad "8" smd roundrect
+		(at 0.95 0)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "3e7e27cd-745c-54cd-8540-379e31e4e22f")
+	)
+	(pad "9" smd roundrect
+		(at 0.95 -0.5)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "559a2dbe-1dc1-546c-9d95-22dcd1e1704e")
+	)
+	(pad "10" smd roundrect
+		(at 0.95 -1)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "2a6cac73-6220-5474-bbad-68bf4a948fb2")
+	)
+	(pad "11" smd rect
+		(at 0 0)
+		(size 0.84 2.4)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "d8f8d5a6-3999-5961-9af0-d2a5291a241c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ENVELOPE_TI_DQC0010A_I32.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

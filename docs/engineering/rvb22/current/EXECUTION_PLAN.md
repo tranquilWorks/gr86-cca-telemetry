@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [../analyses/i32/procurement_redline/README.md](../analyses/i32/procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/current/EXECUTION_PLAN.md`.
+
+---
+
 # I22 closure plan and current source
 
 This iteration starts at I21 commit `550d87fea69147e131fd71603d02204a44c903f1` on PR #45. The user confirmed Adafruit 851 and 960 and requested another iteration. The complete I21 redline/criterion state was frozen before the checks. I22 corrects the accessory model, adds the omitted mechanical height allowance, completes independent package overlays and bounded via/RF reviews, and reevaluates all 290 original criteria. It closes six: LIB-02, LIB-08, VIA-06, SI-12, GPS-01 and MECH-03. Counts become 140 closed, 146 open and four not applicable. All 357 recorded redline identities remain visible; that history count is not the count of open criteria.

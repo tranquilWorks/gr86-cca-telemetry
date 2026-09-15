@@ -1,0 +1,8 @@
+{
+  "native_schematic": "native_final/REVIEW_SCHEMATIC.pdf",
+  "reviewed_page": 5,
+  "page_image": "review_register/Power_3V3_native.png",
+  "result": "Power_3V3 schematic rendered and inspected; R155/R156/R160/PTFR values visible and native structure retained.",
+  "other_review": "Manufacturer dimensional drawings and affected annotated PCB/layout views inspected during authoring; review-register summary preserves its template.",
+  "physical_validation": false
+}

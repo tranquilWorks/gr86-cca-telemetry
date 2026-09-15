@@ -1,6 +1,6 @@
 {
-  "revision": "I32",
-  "source_PCB_sha256": "45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7",
+  "revision": "I32 frozen procurement redline",
+  "source_PCB_sha256": "52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312",
   "status": "RECOVERY_VERIFIED_NO_ACTIONABLE_DIGITAL_CORRECTIONS",
   "known_actionable_digital_corrections_remaining": 0,
   "meaning": "The recovered I32 board remains source-bound and the 160 MHz target-build mismatch is digitally closed. Supplier, construction, first-article, vehicle and physical qualification gates remain open.",
@@ -74,9 +74,19 @@
       "status": "CLOSED_DIGITAL_TARGET_BUILD_VERIFIED",
       "disposition": "Closed by a genuine unchanged-source ESP32-S3 build at CPUFreq=160. The full FQBN, -DF_CPU=160000000L compiler log, source/dependency/image hashes, split and merged images, ELF/map and 28/28 release checks are preserved under recovery_20260914/firmware_160mhz/.",
       "remaining_gate": "No digital rebuild remains. Firmware was not flashed or executed on target; physical thermal, EMC, silicon, first-article and vehicle acceptance remain open."
+    },
+    {
+      "id": "I32-PROCUREMENT-REDLINE",
+      "status": "CLOSED_DESKTOP_SCOPE",
+      "finding": "Apply frozen nine-MPN set to thirteen fitted references, including R156 1206/R160 0805/L121 BPCI package, exact BOM/CPL and native output regeneration.",
+      "evidence": "procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+      "desktop_gate_categories_passed": 14,
+      "scope": "No supplier process approval, order or physical validation claimed. 29 unrelated source assignments and L121 factory process acceptance remain open."
     }
   ],
   "physical_tests": 0,
   "supplier_approvals": 0,
-  "full_product_qualified": false
+  "full_product_qualified": false,
+  "current_redline_evidence": "procurement_redline/FINAL_REDLINE_VERIFICATION.json",
+  "prior_rows_effectivity": "Earlier row wording is retained; affected numerical/source assertions are superseded by the procurement-redline evidence. Supplier and physical gates remain open."
 }

@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [../analyses/i32/procurement_redline/README.md](../analyses/i32/procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/current/THERMAL_REVIEW.md`.
+
+---
+
 # Current checkpoint: convergence 01
 
 See `analyses/convergence_01/README.md` relative to the rvb22 root and `current/CONVERGENCE_01_EFFECTIVITY.json`. The former 6.5/7 mm exposed-shoe whole-path selection is withdrawn. New native-copper trial refinement gives 111.533 C board maximum at 0.25 mm; no thermal/mechanical acceptance or new PCB fabrication release is claimed. Earlier numerical statements below retain their historical configuration and scope.

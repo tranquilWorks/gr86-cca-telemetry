@@ -102,9 +102,15 @@ def describe_path(root,path):
         tag=_tag(node) or "[]";parts.append(f"{tag}[{p}]");node=node[p]
     return "/".join(parts)
 
-def verify_filled(path):
-    source_data=SOURCE_PCB.read_bytes();source_raw=hashlib.sha256(source_data).hexdigest()
-    if source_raw!=SOURCE_HASH:raise ValueError("Controlled PCB source advanced: explicit engineering rebind required")
+def verify_filled(path, *, source_pcb=None, expected_source_hash=None):
+    # Explicit source and digest must travel together. Historical callers keep
+    # their immutable default; a new run cannot silently adopt the current file.
+    if (source_pcb is None) != (expected_source_hash is None):
+        raise ValueError("Explicit source PCB requires its expected SHA256")
+    controlled = SOURCE_PCB if source_pcb is None else Path(source_pcb)
+    expected = SOURCE_HASH if expected_source_hash is None else expected_source_hash
+    source_data=controlled.read_bytes();source_raw=hashlib.sha256(source_data).hexdigest()
+    if source_raw!=expected:raise ValueError("Controlled PCB source advanced: explicit engineering rebind required")
     source_tree=sx.loads(source_data.decode());source_canon=canonicalize(source_tree);reference_content=content_hash(source_tree)
     data=Path(path).read_bytes();raw=hashlib.sha256(data).hexdigest();native_tree=sx.loads(data.decode());native_canon=canonicalize(native_tree);stable=content_hash(native_tree)
     if stable!=reference_content:
@@ -115,6 +121,6 @@ def verify_filled(path):
 
 if __name__=="__main__":
     import argparse
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument("pcb",type=Path);parser.add_argument("--out",type=Path);args=parser.parse_args();result=verify_filled(args.pcb);text=json.dumps(result,indent=2)+"\n"
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument("pcb",type=Path);parser.add_argument("--out",type=Path);parser.add_argument("--source-pcb",type=Path);parser.add_argument("--expected-source-hash");args=parser.parse_args();result=verify_filled(args.pcb,source_pcb=args.source_pcb,expected_source_hash=args.expected_source_hash);text=json.dumps(result,indent=2)+"\n"
     if args.out:args.out.parent.mkdir(parents=True,exist_ok=True);args.out.write_text(text)
     print(text)

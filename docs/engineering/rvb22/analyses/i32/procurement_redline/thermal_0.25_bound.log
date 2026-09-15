@@ -1,0 +1,6 @@
+Initial mesh clipped by row;257 direct cells and total material area verified
+Mesh geometry ready: 75716 cells per layer; 13410 multicomponent copper cells
+In-plane conductance assembled
+retained_I25_vector_on_I32_copper 107.5179680978438
+I32_measured_loss_allocation 107.40959656476468
+I32_stacked_80pct_sensitivity 107.89241522060256

@@ -28,10 +28,12 @@ P=N/'candidate_kicad/GR86_CCA_RevB.kicad_pcb';b,items,unsupported=c.collect(P);a
 names={n[1]:n[2]for n in c.child(b,'net')};pcbsha=hashlib.sha256(P.read_bytes()).hexdigest()
 native=json.loads((N/'RESULT.json').read_text());dr=json.loads((N/'DRC.json').read_text());er=json.loads((N/'ERC.json').read_text())
 assert native['inputs']['cad']['GR86_CCA_RevB.kicad_pcb']==args.expected_source_hash,'Native input differs from candidate'
-assert len(native['output_postconditions'])==14 and all(v['pass']for v in native['output_postconditions'].values()),'Native postcondition failure'
+required={'refilled_copper','erc_report','drc_report','schematic_netlist','pcb_netlist','requested_gerbers','separate_drills','schematic_bom','component_positions','schematic_pdf','component_step_file','component_model_log','fitted_component_step_inventory'}
+if native.get('firmware_build_run'):required.add('firmware_artifacts')
+assert set(native['output_postconditions'])==required and all(v['pass']for v in native['output_postconditions'].values()),'Native postcondition failure'
 assert native['native_report_finding_count']==0,'Native reports contain findings'
 report={'filled_PCB_sha256':pcbsha,'source_PCB_sha256':native['inputs']['cad']['GR86_CCA_RevB.kicad_pcb'],'native_status':native['status'],'native_DRC':len(dr['violations']),'native_unconnected':len(dr['unconnected_items']),'native_parity':len(dr['schematic_parity']),'native_ERC':sum(len(s['violations'])for s in er['sheets']),'scope':'Intended CAD and matched export evidence; no manufactured continuity, plating, solder or cable-contact measurement.'}
-report['iteration']='I24'
+report['iteration']='Source supplied explicitly; see SHA256 binding'
 report['native_directory']=str(N.relative_to(W)) if N.is_relative_to(W) else str(N)
 report['analyzer_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 report['native_postconditions_passed']=len(native['output_postconditions'])
@@ -131,7 +133,7 @@ for f in c.child(b,'footprint'):
  if len(nn)==2:two.append({'reference':ref,'nodes':nn,'distinct':len(set(nn.values()))==2})
 missing_schematic_pads=sorted(set(pcb_pad_map)-set(nmap));missing_PCB_pads=sorted(set(nmap)-set(pcb_pad_map))
 report['netlist']={'pcb_net_bearing_pads':len(pcb_pad_map),'schematic_net_nodes':len(nmap),'PCB_pads_absent_from_schematic':missing_schematic_pads,'schematic_nodes_absent_from_PCB':missing_PCB_pads,'critical_component_pads':critical_component_pads,'schematic_components':len(netxml.findall('./components/comp')),'schematic_nets':len(netxml.findall('./nets/net')),'pad_net_mismatches':mismatch,'two_terminal_same_node':[q for q in two if not q['distinct']],'two_terminal_checked':len(two)}
-failed=bool(missing_schematic_pads or missing_PCB_pads or len(groups)!=133 or report['native_DRC']or report['native_unconnected']or report['native_parity']or report['native_ERC']or disconnected or padless or mismatch or report['netlist']['two_terminal_same_node']or any(x['missing']or x['unexpected']for x in drills)or any(x['missing_segments']or x['unexpected_segments']or x['missing_flashes']or x['unexpected_flashes']or x['filled_zone_difference_mm2']>1e-6 for x in exports))
+failed=bool(missing_schematic_pads or missing_PCB_pads or set(groups)!={n.attrib['name']for n in netxml.findall('./nets/net')} or report['native_DRC']or report['native_unconnected']or report['native_parity']or report['native_ERC']or disconnected or padless or mismatch or report['netlist']['two_terminal_same_node']or any(x['missing']or x['unexpected']for x in drills)or any(x['missing_segments']or x['unexpected_segments']or x['missing_flashes']or x['unexpected_flashes']or x['filled_zone_difference_mm2']>1e-6 for x in exports))
 report['independent_manufacturing_status']='FINDINGS'if failed else'PASS_INTENDED_COPPER_AND_EXPORTS'
 (D/'RESULTS.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items()if k not in ['reference','Gerbers','continuity']},indent=2),flush=True)
 

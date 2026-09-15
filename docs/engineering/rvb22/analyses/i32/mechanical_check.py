@@ -16,12 +16,12 @@ def main():
     fps={c.prop(f)['Reference']:f for f in c.child(b,'footprint')}
     old=json.loads((HERE.parent/'mated_i22/RESULTS.json').read_text())
     rows={r['ref']:copy.deepcopy(r)for r in old['body_rows']}
-    heights={'U152':.8,'U153':.8,'C159':1.5,'C166':1.9,'R151':.6,'R155':.55,'R156':.55,'R158':.889,'R165':.7,'D105':2.62,'Q152':1.10,'Q153':1.10}
+    heights={'U152':.8,'U153':.8,'C159':1.5,'C166':1.9,'R151':.6,'R155':.5,'R156':.8382,'R160':.6,'R161':.5,'R162':.5,'R163':.5,'R169':.5,'R170':.5,'L121':8.0,'C152':.9,'C154':.9,'C165':.9,'U101':1.1,'R158':.889,'R165':.7,'D105':2.62,'Q152':1.10,'Q153':1.10}
     parts=json.loads((HERE/'CONTROLLED_RESERVOIR_CHANGES.json').read_text())['parts']
     # Only newly fitted or physically moved I32 bodies need their old envelope
     # replaced. Metadata-only changes (including mounting-hole silk) retain the
     # exact existing supplier maximum-height model.
-    changed=sorted({'U152','U153','C159','C161','C162','C165','C166','C167','D105','Q152','Q153','R151','R155','R156','R158','R159','R160','R161','R162','R163','R164','R165','R166','R167','R168','R169','R170','R204'})
+    changed=sorted({'L121','C152','C154','U101','U152','U153','C159','C161','C162','C165','C166','C167','D105','Q152','Q153','R151','R155','R156','R158','R159','R160','R161','R162','R163','R164','R165','R166','R167','R168','R169','R170','R204'})
     for ref in ['C163','C164']:rows.pop(ref,None)
     for ref in changed:
         f=fps[ref];x,y,*aa=c.get(f,'at');theta=math.radians(aa[0]if aa else 0);pts=[]

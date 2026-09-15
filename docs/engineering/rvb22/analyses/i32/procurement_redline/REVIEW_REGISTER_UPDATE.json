@@ -1,0 +1,317 @@
+{
+  "status": "TARGETED_CURRENT_EFFECTIVITY_UPDATE",
+  "sheets_preserved": 19,
+  "unrelated_cell_values_and_formulas_unchanged": true,
+  "edits": [
+    {
+      "sheet": "Start Here",
+      "cell": "A1",
+      "before": "GR86 CCA I22 corrective engineering",
+      "after": "GR86 CCA I32 procurement redline"
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A3",
+      "before": "RVB22 applies source corrections, bounded equivalent models and criterion-by-criterion review to the recovered engineering checkpoint. See RVB22 Current for the controlling review and RVB22 Gates for remaining actions.",
+      "after": "Current authority: analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json and README.md. Earlier source-specific review records are historical."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A4",
+      "before": "Six more design criteria closed; thermal engineering and qualification remain open",
+      "after": "Desktop redline verified. Supplier process acceptance and physical qualification remain open."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "C6",
+      "before": "CRITERIA CLOSED",
+      "after": "HISTORICAL CLOSED"
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "E6",
+      "before": "CRITERIA OPEN",
+      "after": "HISTORICAL OPEN"
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A9",
+      "before": "NET CRITERIA CLOSED SINCE USER BASELINE",
+      "after": "HISTORICAL CRITERION CLOSURES"
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A11",
+      "before": "I22: confirmed Adafruit 851/960; all 12 package orientation overlays; complete 1.71 mm height stack; 1,154 populated and 776 mated checks; via heating and board RF review. I20 CAD and firmware remain current.",
+      "after": "I32: 13 frozen substitutions, qualified package changes, 177 fitted parts, 175 factory CPL rows. F101 and U401 remain local/manual installation."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A13",
+      "before": "POWER / RF: source-bound numerical results and exact component/route revisions are recorded in RVB22 Inputs and the evidence paths. Native tool execution and physical correlation are identified separately; passing finite cases are not unlimited guarantees.",
+      "after": "Fresh ngspice 42: 32/32 completed, 17/17 normal sequences. Reset margin +11.81634 mV; upper-rail margin +23.39023 mV."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A15",
+      "before": "FIRMWARE: current source tests, configuration and build disposition are recorded per criterion. The existing historical tabs do not establish the current firmware image or build acceptance.",
+      "after": "Firmware: 32 source files unchanged. Retain the verified 160 MHz recovery build and its 28/28 release checks. No hardware was flashed."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A19",
+      "before": "ASSEMBLY / RELEASE: supplier process, filled/capped vias, component handling, mechanical fit and thermal installation requirements are controlled in current source and gates. Historical cost and qualification estimates are not current supplier acceptance.",
+      "after": "Factory BOM/CPL and fabrication outputs regenerated. Nine exact frozen MPN/C-number purchase paths verified; L121 supplier process approval remains open."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A21",
+      "before": "ORIGINAL CRITERIA: 114 closed / 172 open / 4 N/A. 7 additional requirements close against original wording. Source/model estimates, implemented candidates and actual hardware/supplier acceptance have distinct statuses; open count has not been forced to zero.",
+      "after": "The original 290-criterion ledger and its wording are retained. Historical counts are not a new product-level qualification or a re-adjudication of every criterion."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A23",
+      "before": "CURRENT SOURCE: canonical RVB-19 retains source-bound zero-unconnected/unwaived-electrical findings and compiled 2.1.2. Combined corrective CAD and final 2.1.3 source remain pending native/target gates, output regeneration and adoption.",
+      "after": "Current native source: candidate/cad/. Source/hash authority: current/SOURCE_EFFECTIVITY.json. ERC, DRC, unconnected and parity findings are zero."
+    },
+    {
+      "sheet": "Start Here",
+      "cell": "A27",
+      "before": "REMAINING: native/embedded execution and matching outputs; exact device/process/antenna/installation limits; physical and supplier acceptance. Review failed and uncertain model cases before adoption. No physical pass, source promotion or order is recorded.",
+      "after": "Remaining: supplier DFM/assembly acceptance, first-article fit and thermal correlation, electrical/EMC tests, installed vehicle validation and unit acceptance."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A1",
+      "before": "GR86 CCA I22 engineering review",
+      "after": "GR86 CCA I32 procurement redline"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A2",
+      "before": "Six criteria close in I22. Open criteria decrease from 152 to 146. Counts below calculate from the original review register.",
+      "after": "Original criterion ledger retained. Counts below are historical; the current redline evidence is in analyses/i32/procurement_redline/."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "C4",
+      "before": "CLOSED",
+      "after": "HISTORICAL CLOSED"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "E4",
+      "before": "OPEN",
+      "after": "HISTORICAL OPEN"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A8",
+      "before": "Six more design criteria closed; thermal engineering and qualification remain open",
+      "after": "Native, procurement, manufacturing and package screens pass. Supplier and physical validation remain open."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A11",
+      "before": "Change since user baseline",
+      "after": "Historical change since user baseline"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D15",
+      "before": "All 290 current observations, desktop dispositions and remaining conditions.",
+      "after": "Historical 290-criterion dispositions. Current redline: procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D16",
+      "before": "Every aggregated finding, correction, evidence reference and residual status.",
+      "after": "Earlier findings retained. New package, route and sourcing evidence: procurement_redline/."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D17",
+      "before": "Exact selected interfaces, numerical assumptions and source bounds.",
+      "after": "Earlier numerical inputs are historical where superseded by the frozen procurement set."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D20",
+      "before": "Criterion-by-criterion source paths and supplied SHA256 identities.",
+      "after": "Current exact source and output hashes: current/SOURCE_EFFECTIVITY.json."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A28",
+      "before": "Dashboard thermal load (W)",
+      "after": "I25 fixed heat budget (W)"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D28",
+      "before": 4.815,
+      "after": 2.940859375
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D29",
+      "before": "R155 11.8 kohm / R156 4.99 kohm TNPU, 0.02%, 2 ppm/K with independent 0.1% drift bound",
+      "after": "R155 PTFR0603B11K8N9, 11.8k; R156 PLT1206Z5051LBTS, 5.05k."
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D30",
+      "before": 3.121028568,
+      "after": 3.12786634
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D32",
+      "before": 0.125,
+      "after": 0.25
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "A33",
+      "before": "Maximum board-region temperature (C)",
+      "after": "Stacked one-step board screen (C)"
+    },
+    {
+      "sheet": "RVB22 Current",
+      "cell": "D33",
+      "before": 143.79976755011293,
+      "after": 113.763359283458
+    },
+    {
+      "sheet": "Review Register",
+      "cell": "A1",
+      "before": "RVB22 current criterion disposition | original questions and required evidence preserved",
+      "after": "Review Register \u2014 historical ledger"
+    },
+    {
+      "sheet": "Review Register",
+      "cell": "A2",
+      "before": "RVB-21 | Original questions and required evidence A\u2013F preserved. Evidence status G is distinct from criterion closure N. Candidate source corrections require native/target verification; see RVB21 Changes.",
+      "after": "Pre-redline records retained. Current I32 substitutions, source hashes and affected verification supersede these records: analyses/i32/procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Criteria",
+      "cell": "A1",
+      "before": "RVB22 I22 current criteria",
+      "after": "RVB22 Criteria \u2014 historical ledger"
+    },
+    {
+      "sheet": "RVB22 Criteria",
+      "cell": "A2",
+      "before": "Each original criterion retains its own closure. Desktop/model work and remaining native, physical or supplier conditions are explicit.",
+      "after": "Pre-redline records retained. Current I32 substitutions, source hashes and affected verification supersede these records: analyses/i32/procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Redlines",
+      "cell": "A1",
+      "before": "RVB22 I22 redline dispositions",
+      "after": "RVB22 Redlines \u2014 historical ledger"
+    },
+    {
+      "sheet": "RVB22 Redlines",
+      "cell": "A2",
+      "before": "Findings and their actual corrections remain visible; a bounded model is identified separately from a native or supplier acceptance gate.",
+      "after": "Pre-redline records retained. Current I32 substitutions, source hashes and affected verification supersede these records: analyses/i32/procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Inputs",
+      "cell": "A1",
+      "before": "RVB22 I22 inputs and operating bounds",
+      "after": "RVB22 Inputs \u2014 historical ledger"
+    },
+    {
+      "sheet": "RVB22 Inputs",
+      "cell": "A2",
+      "before": "Values and model conditions are source inputs. Edit with traceability; changing an assumption can invalidate its dependent closure.",
+      "after": "Pre-redline records retained. Current I32 substitutions, source hashes and affected verification supersede these records: analyses/i32/procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Evidence",
+      "cell": "A1",
+      "before": "RVB22 I22 evidence hashes",
+      "after": "RVB22 Evidence \u2014 historical ledger"
+    },
+    {
+      "sheet": "RVB22 Evidence",
+      "cell": "A2",
+      "before": "One source reference per criterion. SHA256 values are supplied by the controlled consolidation; an absent hash is shown explicitly.",
+      "after": "Pre-redline records retained. Current I32 substitutions, source hashes and affected verification supersede these records: analyses/i32/procurement_redline/README.md."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "A1",
+      "before": "RVB22 I22 remaining gates",
+      "after": "I32 supplier and physical acceptance gates"
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "A2",
+      "before": "Gate actions identify the remaining qualification or native evidence. They do not erase completed source corrections or model results.",
+      "after": "Native/source gates below use I32 procurement evidence. Retained physical conditions require actual supplier or first-article acceptance."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "B5",
+      "before": "CLOSED NATIVE I20",
+      "after": "CLOSED NATIVE I32"
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "C5",
+      "before": "KiCad 9.0.9 native refill/ERC/DRC/parity pass with zero findings. Current Gerber, drill, netlist, BOM, placement and 153-model STEP output match.",
+      "after": "KiCad 9.0.9: zero ERC/DRC/unconnected/parity findings; 177 fitted STEP components; matching BOM, CPL, Gerber and drill outputs."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "B6",
+      "before": "CLOSED TARGET BUILD I20",
+      "after": "CLOSED BUILD 160 MHZ"
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "C6",
+      "before": "Pinned Arduino/core/NimBLE build produced verified target ELF/BIN outputs.",
+      "after": "Unchanged 32-file firmware source. The recovered 160 MHz target build retains 28/28 release checks."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "B7",
+      "before": "OPEN THERMAL ENGINEERING",
+      "after": "PHYSICAL THERMAL CORRELATION"
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "C7",
+      "before": "The completed 0.125 mm actual-copper solve gives 143.800 C maximum board region and 105.171 C near C206 at 4.815 W, 65 C bulk air and 70 C landings. Refinement changes the hotspot by 8.376 C. Local ambient and package paths remain unresolved. I22 also establishes that passive boundaries>=65 C cannot meet the selected 851 adapter 60 Cceiling.",
+      "after": "Updated 0.5/0.25 mm actual-copper screens retain the 2.940859375 W budget. Package, junction and immediate-air temperatures require physical correlation."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "D7",
+      "before": "Establish a converged actual-source thermal bound and package/local-ambient margins. Evaluate cooling geometry before changing source. Retain the full 4.815 W, 65 C air and 70 C landing requirements unless a documented enforceable alternative is adopted. Resolve exact accessory temperature applicability; passive contact changes alone cannot close its 5 Kboundary conflict.",
+      "after": "Retain the I25 workload, 65 C cabin, U201 air <=85 C and Adafruit 851 local <=60 C. Verify measured converter losses, cooling and package temperatures."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "C11",
+      "before": "Current construction has 49 filled/capped/planarized vias: 48 under U201 pad 41 and one at R153. Minimum finished plated wall is a 15 um engineering condition. F101 needs a separate local solder process.",
+      "after": "49 special vias and 15 um minimum finished plating retained. F101/U401 local; L121 factory catalog manual/wave process needs supplier approval."
+    },
+    {
+      "sheet": "RVB22 Gates",
+      "cell": "C14",
+      "before": "All 153 models,1154 full 1.71 mmstack populated checks,776 revised 851 mated checks and 37 retainedprobeapproaches pass declared envelopes. Minimum modeledR408/T03 clearance 0.120 mm. Actual hot material strength, retained clamp load, creep/fatigue, plug dimensions and installation remain conditions.",
+      "after": "177 fitted parts; 1,308 populated and 529 mated checks; 38 probe approaches. Full 1.71 mm height stack; no modeled interference."
+    }
+  ],
+  "native_XLSX_sheet_order_tables_merges_formulas_preserved": true,
+  "tables_preserved": 15,
+  "formula_error_scan_findings": 0,
+  "visual_QA": "Current summary preview inspected; original template retained."
+}

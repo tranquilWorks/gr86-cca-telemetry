@@ -1,3 +1,9 @@
+# I32 procurement redline effectivity — 2026-09-15
+
+The completed native procurement redline and affected numerical results are controlled by [procurement_redline/README.md](procurement_redline/README.md). Earlier source hashes, substitutions, power/thermal values and native-output pointers below are historical where superseded. Physical acceptance requirements remain in force; no historical criterion ledger is re-adjudicated by this update. The original text is preserved in `analyses/i32/procurement_redline/history/pre_redline/analyses/i32/README.md`.
+
+---
+
 # Recovery addendum — 2026-09-14 UTC
 
 **Digital closure update:** I32-RCV-FW-01 is closed by a genuine unchanged-source ESP32-S3 build at `CPUFreq=160`; the compiler log contains `-DF_CPU=160000000L` and all 28 preserved release checks pass. Evidence is under `recovery_20260914/firmware_160mhz/`. Historical 240 MHz images remain quarantined. Nothing was flashed or executed on hardware, and supplier, thermal-correlation, EMC, silicon, first-article, vehicle, and manufacturing-acceptance gates remain open.

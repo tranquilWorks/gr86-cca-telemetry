@@ -1,3 +1,9 @@
+# Current I32 procurement redline — 2026-09-15
+
+The native frozen-parts redline is completed and desktop-verified. Current source, BOM/CPL, manufacturing files and affected verification are controlled by [the redline report](analyses/i32/procurement_redline/README.md), [final verification](analyses/i32/procurement_redline/FINAL_REDLINE_VERIFICATION.json), and [source effectivity](current/SOURCE_EFFECTIVITY.json). Supplier and physical gates remain open. Earlier source hashes, active parts, numerical results and package pointers below are historical where superseded; the original document is preserved under `analyses/i32/procurement_redline/history/pre_redline/`.
+
+---
+
 # I32 recovery and digital closure — 2026-09-14 UTC
 
 The authoritative 177-part I32 recovery overlay is applied. The authored PCB remains SHA-256 `45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7`; preserved KiCad 9.0.9 evidence reports zero ERC, DRC, unconnected, parity, and exclusion findings with 177 resolved STEP components.

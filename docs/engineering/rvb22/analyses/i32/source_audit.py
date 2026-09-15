@@ -31,7 +31,13 @@ def items(tree):
             out[uid]=dict(kind=kind,net=names.get((c.get(q,'net')or[0])[0],''),record=record)
     return out
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--native-dir',type=Path,required=True);ap.add_argument('--out',type=Path,default=D);a=ap.parse_args()
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--native-dir',type=Path,required=True);ap.add_argument('--out',type=Path,default=D);ap.add_argument('--procurement-redline',action='store_true');ap.add_argument('--expected-source-sha');ap.add_argument('--expected-filled-sha');a=ap.parse_args()
+    global BASE, PCB_SHA, FILLED_SHA
+    if a.procurement_redline:
+        assert a.expected_source_sha and a.expected_filled_sha
+        BASE='1c934f9ddd7a1b823e5136484f525485472528f6'
+        PCB_SHA=a.expected_source_sha;FILLED_SHA=a.expected_filled_sha
+    else:assert not a.expected_source_sha and not a.expected_filled_sha
     cad=W/'candidate/cad';pcb=cad/'GR86_CCA_RevB.kicad_pcb'
     assert sha(pcb.read_bytes())==PCB_SHA
     native=json.loads((a.native_dir/'RESULT.json').read_text());inv=json.loads((a.native_dir/'COPIED_SOURCE_INVENTORY.json').read_text())
@@ -39,7 +45,7 @@ def main():
     assert all(v['pass'] for v in native['output_postconditions'].values()) and len(native['output_postconditions'])==13
     assert native['refilled_pcb_sha256']==FILLED_SHA
     for name,digest in inv['cad_before_native'].items():assert sha((cad/name).read_bytes())==digest,name
-    assert len(inv['cad_before_native'])==135
+    assert len(inv['cad_before_native'])==(157 if a.procurement_redline else 135)
     b=c.sx.loads(pcb.read_text());old=c.sx.loads(base(pcb).decode());fp=footprints(b);bf=footprints(old)
     fitted={r for r,f in fp.items() if c.prop(f).get('Assembly') in ['FACTORY','MANUAL_GPS']}
     assert len(fitted)==177
@@ -47,6 +53,18 @@ def main():
     bom={r['Reference']:r for r in csv.DictReader((a.native_dir/'REVIEW_BOM.csv').open())}
     assert set(bom)==fitted and all(bom[r]['MPN']==c.prop(fp[r])['MPN'] for r in fitted)
     changes={r:dict(before=describe(bf[r]) if r in bf else None,after=describe(fp[r]) if r in fp else None) for r in sorted(set(fp)|set(bf)) if r not in fp or r not in bf or describe(fp[r])!=describe(bf[r])}
+    if a.procurement_redline:
+        from procurement_redline.apply_redline import SPEC
+        assert set(changes)==set(SPEC)|{'R151'}, 'Frozen references plus the proven R151 source-code omission only'
+        old_r151=describe(bf['R151']);new_r151=describe(fp['R151'])
+        assert old_r151['properties'].get('LCSC','')=='' and new_r151['properties']['LCSC']=='C190124'
+        old_r151['properties']['LCSC']='C190124'
+        assert old_r151==new_r151, 'R151 MPN, package, value and placement must be unchanged'
+        assert set(fp)==set(bf)
+        assert all(nets(fp[r])==nets(bf[r]) for r in fp), 'Every original pad/net must survive'
+        for ref,part in SPEC.items():
+            assert c.prop(fp[ref])['MPN']==part['MPN'] and c.prop(fp[ref])['LCSC']==part['LCSC']
+            assert str(fp[ref][1])=='RevB:I32_PROCUREMENT_'+ref
     assert c.prop(fp['U301'])['MPN']=='TCAN3403DRBRQ1'
     gpio={'5':'CAN_TX_MCU','4':'CAN_RX_MCU','18':'GPS_UART_RX','17':'GPS_UART_TX','16':'GPS_PPS','1':'OIL_ADC'}
     # Preserve complete module pin/net assignment (also EN/GPIO0/UART0), not a remembered alias.
@@ -94,7 +112,7 @@ def main():
         keepout_review.append(dict(uuid=ident,hausdorff_mm=hd,symmetric_difference_mm2=area,rule_and_layer_sets_identical=True))
     out=dict(status='PASS_CURRENT_SOURCE_BINDING_AND_PRESERVED_CONTRACTS',base_commit=BASE,source_PCB_sha256=PCB_SHA,filled_PCB_sha256=FILLED_SHA,native_CAD_inputs_verified=len(inv['cad_before_native']),native_schematic_XML_sha256=sha((a.native_dir/'SCHEMATIC_NETLIST.xml').read_bytes()),fitted_parts=177,new_references=sorted(set(fp)-set(bf)),removed_references=sorted(set(bf)-set(fp)),part_changes=changes,copper_delta=delta,firmware_unchanged_from_base=True,firmware_files=fw,U201_pin_nets=nets(fp['U201']),receive_only_CAN=dict(transceiver='TCAN3403DRBRQ1',R301='DNP_OPEN',R306='DNP',bus='Classical 500kbit/s',source_and_firmware_unchanged=True),RF_CAN_GPS_oil_signal_copper_unchanged=True,keepout_rules_preserved=True,keepout_native_nanometre_quantization=keepout_review,stackup_and_native_rules_unchanged=True,new_ordinary_vias=len(newvia),filled_capped_planarized_vias=vip,physical_tests=0)
     put(a.out/'SOURCE_AUDIT.json',out)
-    put(a.out/'SOURCE_BINDING.json',dict(status='CURRENT_I32',source_PCB_sha256=PCB_SHA,filled_PCB_sha256=FILLED_SHA,native_schematic_XML_sha256=out['native_schematic_XML_sha256'],cad_files=inv['cad_before_native'],firmware_files=fw))
+    put(a.out/'SOURCE_BINDING.json',dict(status='CURRENT_I32_PROCUREMENT_REDLINE' if a.procurement_redline else 'CURRENT_I32',source_PCB_sha256=PCB_SHA,filled_PCB_sha256=FILLED_SHA,native_schematic_XML_sha256=out['native_schematic_XML_sha256'],cad_files=inv['cad_before_native'],firmware_files=fw))
     put(a.out/'AUTHORED_CHANGES.json',dict(status='ADOPTED_AND_NATIVE_VERIFIED',base_commit=BASE,source_PCB_sha256=PCB_SHA,parts=changes,copper_counts={k:len(v)for k,v in delta.items()},detail='SOURCE_AUDIT.json'))
     # Only extant task UUIDs are accepted. Earlier routing attempts remain history.
     tasks=json.loads((D/'history/STAGE170_ROUTE_TASKS.json').read_text())+json.loads((D/'CONTROLLED_ROUTE_TASKS.json').read_text())
