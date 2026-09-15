@@ -13,9 +13,11 @@ sys.path.insert(0,str(D/'support'))
 import sexpdata as sx
 import check_combined_copper as c
 W=D.parents[1]
-PCB_HASH='a04f42b358fa65a332128115a7b648e1a2297531ecb47466ac24697de536a936'
+PCB_HASH='52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312'
+I32=W/'analyses/i32/procurement_redline'
+FROZEN_REFS={'C152','C154','C165','L121','R155','R156','R160','R161','R162','R163','R169','R170','U101'}
 REFERENCE_PCB_HASH=('5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8')
-FILLED_HASH='11533ea91c3bc4c61dd7066e0001914a72bc90b27afb38d321c43b8feb90e3b1'
+FILLED_HASH='896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92'
 
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def read(path):return json.loads(Path(path).read_text())
@@ -65,35 +67,61 @@ def led_review(tree,header):
     return {'status':'PASS_ELECTRICAL_CHAIN_AND_FINITE_CURRENT_BOUND_OPTICAL_ACCEPTANCE_SEPARATE','rows':rows,'all_six_current_upper_mA':sum(r['hard_current_upper_mA']for r in rows),'allocation_notes':['3.6V operating ceiling; LED Vf is conservatively set to zero for the current upper bound.','Resistor minimum includes 1% initial tolerance and an additional 2% thermal decrease, an engineering allowance rather than a measured resistor temperature.','Current upper bounds do not assert a guaranteed loaded GPIO high voltage or light output.'],'respin_disposition':'Existing current-limited standard 0603 resistor/LED footprints permit assembly-value or optical-bin tuning without a new PCB layout. No brightness-dependent safety or measurement function is credited.','original_WCA_07_closed':False}
 
 def current_handling(tree,old):
+    """Bind the exact 177-part I32 inventory; retain unknown supplier limits."""
+    inventory={r['Reference']:r for r in csv.DictReader((W/'current/i32_manufacturing/assembly/COMPLETE_FITTED_BOM.csv').open())}
     previous_by_ref={ref:r for r in old['rows']for ref in r['references'].split()}
-    by_mpn={r['mpn']:r for r in old['rows']}; groups={};excluded=[];changed=[]
+    by_mpn={r['mpn']:r for r in old['rows']};groups={};excluded=[];historical=[]
+    actual={ref:f for ref,f in fp_map(tree).items() if fitted(f)}
+    require(len(inventory)==177 and set(actual)==set(inventory),'Unexpected fitted reference count or identity')
     for ref,f in fp_map(tree).items():
         p=c.prop(f);mpn=p.get('MPN','')
-        if not fitted(f):excluded.append({'reference':ref,'assembly':p.get('Assembly'),'mpn':mpn});continue
-        require(bool(mpn),'Missing fitted MPN '+ref)
+        if ref not in actual:excluded.append({'reference':ref,'assembly':p.get('Assembly'),'mpn':mpn});continue
+        require(mpn==inventory[ref]['MPN'],'New fitted MPN needs explicit handling review: '+mpn)
         groups.setdefault(mpn,[]).append(ref)
-        if ref not in previous_by_ref or previous_by_ref[ref]['mpn']!=mpn:changed.append({'reference':ref,'before':previous_by_ref.get(ref,{}).get('mpn'),'after':mpn})
+        if ref not in previous_by_ref or previous_by_ref[ref]['mpn']!=mpn:
+            historical.append({'reference':ref,'before':previous_by_ref.get(ref,{}).get('mpn'),'after':mpn})
     rows=[]
     for mpn,refs in sorted(groups.items()):
         if mpn in by_mpn:r=copy.deepcopy(by_mpn[mpn])
         elif mpn=='LM5164QDDARQ1':
             r={'mpn':mpn,'manufacturer':'Texas Instruments','process':'GLOBAL_REFLOW','msl':2,'manufacturer_peak_C':260,'source':'https://www.ti.com/product/LM5164-Q1/part-details/LM5164QDDARQ1','source_evidence':'TI_CURRENT_QUALITY_INFO_AUTOMOTIVE_DDA8_MSL2_260C_1YEAR_REVIEWED_2026_09_12','handling':'TI lists this active automotive DDA-8 option with NiPdAuAg lead finish, MSL Level 2, 260C peak reflow and one-year floor life. Preserve dry-pack/MSL controls and the incoming lot label as the assembly-process authority.','current_release_condition':'Use the board-wide compatible lead-free reflow process within the package limit. Incoming lot labeling and assembler process controls remain authoritative; no physical solder-joint acceptance is claimed here.'}
-        elif mpn in ('TNPU060311K8HWEA00','TNPU06034K99HWEA00'):
-            r={'mpn':mpn,'manufacturer':'Vishay','process':'GLOBAL_REFLOW','msl':None,'manufacturer_peak_C':None,'source':'https://www.vishay.com/docs/28779/tnpue3.pdf','source_evidence':'PRIMARY_FAMILY_DATASHEET_28779_REV_04_MAR_2025_REVIEWED','handling':'TNPU e3 manufacturer Assembly section permits automatic wave/reflow/vapor-phase processing and common electronics cleaning solvents. Coating/potting compatibility remains application-specific. Numeric MSL and a numeric production peak are not stated here and are not invented.','current_release_condition':'Use the board-wide compatible process and incoming lot label. TNPU film limit125C and power derating apply; part-family solvent compatibility does not authorize cleaning the full assembly.'}
-        else:raise ValueError('New fitted MPN needs explicit handling review: '+mpn)
+        else:
+            r={'mpn':mpn,'manufacturer':inventory[refs[0]]['Manufacturer'],
+               'process':'FACTORY_PROCESS_REQUIRES_INCOMING_LOT_APPROVAL','msl':None,'manufacturer_peak_C':None,
+               'source':'docs/engineering/rvb22/current/i32_manufacturing/assembly/COMPLETE_FITTED_BOM.csv',
+               'source_evidence':'EXACT_CURRENT_I32_IDENTITY; PACKAGE_QUALIFICATION.json; supplier limits remain explicit',
+               'handling':'Exact native MPN and package are controlled. No numeric MSL or production peak is inferred from package size or a related ordering option.',
+               'current_release_condition':'Assembler must apply the exact incoming lot MSL, floor-life, peak-temperature and cleaning restrictions. Unknown limits remain supplier acceptance gates.'}
+        if set(refs)&{'F101','U401'}:
+            require(set(refs)<= {'F101','U401'},'Local/factory handling grouping changed')
+            r.update(process='LOCAL_MANUAL_INSTALLATION',current_release_condition='Retain F101/U401 local installation after factory assembly.')
+        if mpn=='BPCI00121280470M00':
+            r.update(process='FACTORY_MANUAL_OR_WAVE',msl=None,manufacturer_peak_C=None,
+                     source='https://jlcpcb.com/partdetail/C6471075',
+                     source_evidence='LIVE_JLC_SOURCEABILITY.json: manualWeld / public Wave Soldering',
+                     current_release_condition='Factory supplied; supplier process and orientation approval required. This is not proof of machine SMT handling or a third local-install exception.')
+        if mpn=='LTC4367HMS8#PBF':
+            r['ordering_pedigree']='Owner accepts loss of #W controlled-manufacturing pedigree; functional H-grade equivalence only.'
         r.update(references=' '.join(sorted(refs)),quantity=len(refs));rows.append(r)
-    require(sum(r['quantity']for r in rows)==153,'Unexpected fitted reference count')
-    return {'status':'CURRENT_SOURCE_MPN_INVENTORY_RECONCILED','unique_fitted_MPNs':len(rows),'fitted_references':153,'rows':rows,'excluded':excluded,'corrected_references':changed,'MSL_primary_known_MPNs':sum(r['msl']is not None for r in rows),'numeric_MSL_primary_known_MPNs':sum(isinstance(r['msl'],int)for r in rows),'unknown_msl_MPNs':sum(r['msl']is None for r in rows),'physical_assembly_acceptance':False}
+    changes=read(I32/'SOURCE_AUDIT.json')['part_changes']
+    changed=[{'reference':ref,'before':changes[ref]['before']['properties']['MPN'],'after':inventory[ref]['MPN']}for ref in sorted(FROZEN_REFS)]
+    return {'status':'CURRENT_I32_SOURCE_MPN_INVENTORY_RECONCILED','unique_fitted_MPNs':len(rows),'fitted_references':177,
+            'factory_placements':175,'local_install':['F101','U401'],'rows':rows,'excluded':excluded,
+            'corrected_references':changed,'historical_changes_since_I22':historical,
+            'MSL_primary_known_MPNs':sum(r['msl']is not None for r in rows),
+            'numeric_MSL_primary_known_MPNs':sum(isinstance(r['msl'],int)for r in rows),
+            'unknown_msl_MPNs':sum(r['msl']is None for r in rows),
+            'physical_assembly_acceptance':False,'automatic_turnkey_PCBA_order_ready':False}
 
 def verify_regressions(pcb,firmware):
-    n=read(D/'results/NATIVE_RECHECK.json');f=read(D/'results/FIRMWARE_REGRESSION.json')
+    n=read(I32/'manufacturing_audit_final/RESULTS.json');f=read(D/'results/FIRMWARE_REGRESSION.json')
     require(digest(pcb)==PCB_HASH,'Candidate PCB changed; invalidate/re-run affected evidence')
-    require(n['source_PCB_sha256']==REFERENCE_PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Historical native reference binding mismatch')
+    require(n['source_PCB_sha256']==PCB_HASH and n['filled_PCB_sha256']==FILLED_HASH,'Current I32 native reference binding mismatch')
     require(n['independent_manufacturing_status']=='PASS_INTENDED_COPPER_AND_EXPORTS','Independent native/export review failed')
     require(all(n[x]==0 for x in ['native_DRC','native_unconnected','native_parity','native_ERC']),'Native findings present')
     require(f['status']=='PASS' and len(f['results'])==9 and all(x['passed']for x in f['results']),'Firmware regression failure')
     for path,sha in f['source_files_sha256'].items():require(digest(firmware/path)==sha,'Firmware changed since regression: '+path)
-    return {'native_postconditions':n['native_postconditions_passed'],'intended_nets':n['continuity']['nets'],'disconnected_pad_nets':n['continuity']['disconnected_pad_nets'],'firmware_suites':len(f['results']),'firmware_exact_source_files_bound':len(f['source_files_sha256']),'CAD_native_run_reused':34499455561,'native_copper_and_exports_independently_recomputed_this_iteration':False,'current_source_hash_binding_verified_this_execution':True,'fresh_KiCad_execution_this_iteration':False,'ASan':True,'UBSan':True,'physical_testing':False}
+    return {'native_postconditions':n['native_postconditions_passed'],'intended_nets':n['continuity']['nets'],'disconnected_pad_nets':n['continuity']['disconnected_pad_nets'],'firmware_suites':len(f['results']),'firmware_exact_source_files_bound':len(f['source_files_sha256']),'CAD_native_run_reused':'I32 procurement_redline/native_final','native_copper_and_exports_independently_recomputed_this_iteration':False,'current_source_hash_binding_verified_this_execution':True,'fresh_KiCad_execution_this_iteration':False,'ASan':True,'UBSan':True,'physical_testing':False}
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=D/'results/review');ap.add_argument('--evidence-root',type=Path,default=W);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
@@ -102,6 +130,22 @@ def main():
     rx=receive_only(tree,(fw/'cca_telemetry/cca_telemetry.ino').read_text());led=led_review(tree,(fw/'cca_telemetry/src/led_status.h').read_text())
     old=read(D/'support/HANDLING_I22.json');handling=current_handling(tree,old);handling['pcb_sha256']=digest(pcb)
     for name,data in [('RECEIVE_ONLY_DISPOSITION',rx),('LED_REVIEW',led),('CURRENT_HANDLING_REGISTER',handling),('REGRESSION_BINDING',evidence)]:save(a.out/(name+'.json'),data)
+    # I32 supersedes the historical 153-part review recipe below. Preserve its
+    # logic for traceability, while current output is bound to the actual redline.
+    final=read(I32/'FINAL_REDLINE_VERIFICATION.json')
+    require(final['source_PCB_sha256']==PCB_HASH and len(final['gates'])==14 and all(final['gates'].values()),'I32 aggregate gates incomplete')
+    require(len(reg['rows'])==290 and len({r['id']for r in reg['rows']})==290,'Criterion identity loss')
+    coverage=[{'id':r['id'],'original_status':r['closure'],'retained_desktop_status':r['desktop_status'],
+               'remaining_original_condition':r.get('remaining',''),'physical_test_claimed':False}for r in reg['rows']]
+    save(a.out/'ALL_CRITERIA_COVERAGE.json',{'criterion_count':290,'original_counts':dict(Counter(r['closure']for r in reg['rows'])),
+         'rows':coverage,'meaning':'Original 290-row ledger retained; affected I32 gates are in FINAL_REDLINE_VERIFICATION.json. No fresh adjudication of all 290 criteria is claimed.'})
+    summary={'status':'PASS_CURRENT_I32_SOURCE_AND_EXECUTED_FIRMWARE_REGRESSIONS','source_PCB_sha256':PCB_HASH,
+             'original_criteria':dict(Counter(r['closure']for r in reg['rows'])),'all_290_rows_retained':True,
+             'regression':evidence,'corrected_handling_refs':handling['corrected_references'],
+             'current_redline_desktop_gates':final['gates'],'remaining_supplier_gates':final['remaining_supplier_gates'],
+             'remaining_physical_gates':final['remaining_physical_gates'],'physical_tests':0,'fabrication_release':False}
+    save(a.out/'SUMMARY.json',summary);print(json.dumps(summary,indent=2))
+    return
     original_counts=Counter(r['closure']for r in reg['rows']);coverage=[];filechecks={}
     for r in reg['rows']:
         files=[]

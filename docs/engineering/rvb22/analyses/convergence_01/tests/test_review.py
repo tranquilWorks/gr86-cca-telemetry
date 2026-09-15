@@ -45,24 +45,24 @@ class ProductGuards(unittest.TestCase):
  def test_optical_guarantee_not_invented(self):
   x=r.led_review(self.b,self.header);self.assertTrue(all(v['brightness_lower_bound_mcd']==0 for v in x['rows']));self.assertFalse(x['original_WCA_07_closed'])
  def test_handling_updates_exact_intentional_parts(self):
-  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));self.assertEqual({v['reference']for v in x['corrected_references']},{'R155','R156','U121'});self.assertEqual(x['fitted_references'],153)
+  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));self.assertEqual({v['reference']for v in x['corrected_references']},{'C152','C154','C165','L121','R155','R156','R160','R161','R162','R163','R169','R170','U101'});self.assertEqual(x['fitted_references'],177)
  def test_Q1_buck_handling_is_explicit(self):
   x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));q=next(v for v in x['rows']if v['mpn']=='LM5164QDDARQ1');self.assertEqual(q['manufacturer'],'Texas Instruments');self.assertEqual(q['msl'],2);self.assertEqual(q['manufacturer_peak_C'],260)
  def test_unknown_new_MPN_fails_closed(self):
   b=copy.deepcopy(self.b);self.change_property(b,'R155','MPN','UNREVIEWED')
   with self.assertRaisesRegex(ValueError,'handling review'):r.current_handling(b,r.read(D/'support/HANDLING_I22.json'))
- def test_TNPU_unknown_MSL_not_invented(self):
-  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));self.assertTrue(all(v['msl']is None for v in x['rows']if v['mpn'].startswith('TNPU')))
+ def test_PTFR_unknown_MSL_not_invented(self):
+  x=r.current_handling(self.b,r.read(D/'support/HANDLING_I22.json'));parts=[v for v in x['rows']if v['mpn'].startswith('PTFR')];self.assertEqual(len(parts),4);self.assertTrue(all(v['msl']is None for v in parts))
  def test_thermal_empty_native_not_accepted(self):
   with tempfile.TemporaryDirectory() as x:
    p=Path(x)/'wrong.kicad_pcb';p.write_text('(kicad_pcb)')
-   with self.assertRaisesRegex(ValueError,'differs'):t.extract_native(p)
+   with self.assertRaisesRegex(ValueError,'differs'):t.extract_native(p,source_pcb=r.W/'candidate/cad/GR86_CCA_RevB.kicad_pcb',expected_source_hash=r.PCB_HASH)
  def test_contact_is_not_a_bare_land(self):
   g,x=t.contact_screen(self.b);self.assertGreater(g.area,0);self.assertIn('insulating TIM',x['electrical']);self.assertEqual(x['status'],'INSULATED_CONTACT_FEASIBILITY_NOT_ADOPTED')
  def test_contact_contains_complete_path_terms(self):
   _,x=t.contact_screen(self.b);self.assertGreater(x['path_terms_K_W']['axial_bridge_25x12x3_mm'],0);self.assertAlmostEqual(sum(x['path_terms_K_W'].values()),x['total_to_landing_K_W'])
  def test_real_component_notch_is_present(self):
-  _,x=t.contact_screen(self.b);self.assertIn('R158',{v['ref']for v in x['courtyard_exclusions']})
+  g,x=t.contact_screen(self.b);self.assertEqual({'C531','R525'},{v['ref']for v in x['courtyard_exclusions']});self.assertTrue(all(g.intersection(t.sh.from_wkt(v['keepout_WKT'])).area<1e-9 for v in x['courtyard_exclusions']))
  def test_regression_binds_current_source(self):
   x=r.verify_regressions(r.W/'candidate/cad/GR86_CCA_RevB.kicad_pcb',r.W/'candidate/firmware');self.assertEqual(x['firmware_suites'],9)
  def test_altered_PCB_invalidates_evidence(self):

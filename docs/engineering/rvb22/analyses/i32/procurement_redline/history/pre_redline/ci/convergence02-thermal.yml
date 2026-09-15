@@ -1,5 +1,4 @@
-name: Convergence02 analytic history and current I32 thermal
-# The unadopted C02 contact replay is archival; current thermal verification uses adopted I32 C05/W02/T03.
+name: Convergence02 shared-sink thermal verification
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -20,8 +19,6 @@ jobs:
         mesh: [0.5, 0.25]
     runs-on: ubuntu-24.04
     timeout-minutes: 30
-    env:
-      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -41,9 +38,9 @@ jobs:
       - name: Provision isolated numeric environment
         run: |
           python3 -m venv "$RUNNER_TEMP/c02-env"
-          "$RUNNER_TEMP/c02-env/bin/python" -m pip install -r docs/engineering/rvb22/analyses/i32/procurement_redline/requirements.txt
+          "$RUNNER_TEMP/c02-env/bin/python" -m pip install -r docs/engineering/rvb22/analyses/convergence_02/requirements.txt
           "$RUNNER_TEMP/c02-env/bin/python" -m pip freeze > c02-evidence/packages.txt
-      - name: Check retained analytic networks and current I32 evidence
+      - name: Check analytic networks and exact contact exclusions
         env:
           OPENBLAS_NUM_THREADS: '1'
           OMP_NUM_THREADS: '1'
@@ -52,17 +49,15 @@ jobs:
           PY="$RUNNER_TEMP/c02-env/bin/python"
           D=docs/engineering/rvb22/analyses/convergence_02
           "$PY" -m unittest discover -s "$D/tests" -v 2>&1 | tee c02-evidence/tests.log
-          "$PY" docs/engineering/rvb22/analyses/i32/procurement_redline/ci_verify.py --out c02-evidence/current
-      - name: Solve adopted I32 release and stress allocations
+          "$PY" "$D/check_contacts.py" --pcb c02-native/candidate_kicad/GR86_CCA_RevB.kicad_pcb --out c02-evidence/CONTACT_CHECKS.json
+      - name: Solve common-shoe and finite-sink cases
         env:
           OPENBLAS_NUM_THREADS: '1'
           OMP_NUM_THREADS: '1'
         run: |
           set -euo pipefail
-          "$RUNNER_TEMP/c02-env/bin/python" docs/engineering/rvb22/analyses/i32/thermal_check.py \
-            --native-dir c02-native --mesh '${{ matrix.mesh }}' --output c02-evidence/thermal \
-            --source-pcb docs/engineering/rvb22/candidate/cad/GR86_CCA_RevB.kicad_pcb \
-            --source-hash 52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312 \
+          "$RUNNER_TEMP/c02-env/bin/python" docs/engineering/rvb22/analyses/convergence_02/run_screen.py \
+            --native-dir c02-native --mesh '${{ matrix.mesh }}' --out c02-evidence/thermal \
             2>&1 | tee c02-evidence/thermal.log
       - name: Preserve outputs and failures
         if: always()

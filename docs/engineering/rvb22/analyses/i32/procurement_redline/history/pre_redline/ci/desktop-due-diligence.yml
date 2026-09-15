@@ -32,12 +32,11 @@ jobs:
       - name: Provision isolated analysis dependencies
         run: |
           python3 -m venv "$RUNNER_TEMP/convergence-env"
-          "$RUNNER_TEMP/convergence-env/bin/python" -m pip install -r docs/engineering/rvb22/analyses/i32/procurement_redline/requirements.txt
+          "$RUNNER_TEMP/convergence-env/bin/python" -m pip install -r docs/engineering/rvb22/analyses/convergence_01/requirements.txt
           "$RUNNER_TEMP/convergence-env/bin/python" -m pip freeze > desktop_evidence/python-packages.txt
       - name: Run actual host firmware regressions and negative-path tests
         env:
           OPENBLAS_NUM_THREADS: '1'
-          PYTHONDONTWRITEBYTECODE: '1'
         run: |
           set -euo pipefail
           PY="$RUNNER_TEMP/convergence-env/bin/python"

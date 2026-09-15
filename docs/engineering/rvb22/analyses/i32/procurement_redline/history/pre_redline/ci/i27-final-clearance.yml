@@ -1,44 +1,36 @@
-name: I27 historical ledger and current I32 clearance
-# I32 replaces the historical auto-authoring/publication recipe with read-only current-source verification.
+name: I27 final pre-hardware clearance
 on:
   pull_request:
     branches: [main]
     paths:
       - '.github/workflows/i27-final-clearance.yml'
-      - 'docs/engineering/rvb22/analyses/i32/**'
-      - 'docs/engineering/rvb22/candidate/**'
-      - 'docs/engineering/rvb22/current/i32_manufacturing/**'
-      - 'docs/engineering/rvb22/product/**'
+      - 'docs/engineering/rvb22/analyses/i26/i27_finalize.py'
+      - 'docs/engineering/rvb22/analyses/i26/i27_publish_cleanup.py'
 permissions:
-  contents: read
+  contents: write
 jobs:
   finalize:
     if: github.event.pull_request.number == 46 && github.head_ref == 'codex/rvb24-coordinated-closure' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-24.04
     timeout-minutes: 20
-    env:
-      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 3
-          persist-credentials: false
-      - name: Provision pinned I32 analysis dependencies
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Provision pinned analysis dependencies
         run: |
-          python3 -m venv "$RUNNER_TEMP/i32-clearance-env"
-          "$RUNNER_TEMP/i32-clearance-env/bin/pip" install -r docs/engineering/rvb22/analyses/i32/procurement_redline/requirements.txt
-          echo "$RUNNER_TEMP/i32-clearance-env/bin" >> "$GITHUB_PATH"
-      - name: Reproduce all current I32 evidence and package checks
-        run: python docs/engineering/rvb22/analyses/i32/procurement_redline/ci_verify.py --out i32-clearance/evidence
-      - name: Audit current source against the preserved handoff
-        run: |
-          python docs/engineering/rvb22/analyses/i32/source_audit.py \
-            --native-dir docs/engineering/rvb22/analyses/i32/procurement_redline/native_final \
-            --out i32-clearance/source --procurement-redline \
-            --expected-source-sha 52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312 \
-            --expected-filled-sha 896ca56bf4ad836d63b84537cfd20bfcbf1783c60ac5d92ab7c7783d54f57e92
-      - name: Verify retained I27 review invariants and physical boundaries
+          python3 -m venv .i27-venv
+          .i27-venv/bin/pip install -r docs/engineering/rvb22/analyses/convergence_01/requirements.txt
+          echo "$PWD/.i27-venv/bin" >> "$GITHUB_PATH"
+      - name: Reproduce I26 source-bound evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python docs/engineering/rvb22/analyses/i26/prepare_publication.py verify
+      - name: Adjudicate GND-02 and finalize zero-actionable register
+        run: python docs/engineering/rvb22/analyses/i26/i27_finalize.py
+      - name: Verify release invariants
         run: |
           python - <<'PY'
           import json
@@ -61,11 +53,15 @@ jobs:
           print(json.dumps(f,indent=2))
           PY
           python docs/engineering/rvb22/i26_audit_open_rows.py
-      - name: Retain current verification and failures
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: i32-clearance-${{ github.event.pull_request.head.sha }}
-          path: i32-clearance/
-          retention-days: 14
-          if-no-files-found: error
+      - name: Normalize publication-only runtime state
+        run: python docs/engineering/rvb22/analyses/i26/i27_publish_cleanup.py
+      - name: Publish verified I27 evidence to PR branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/engineering/rvb22
+          git diff --cached --check
+          git diff --cached --quiet && { echo 'No generated changes'; exit 0; }
+          git commit -m 'I27: close pre-hardware engineering and release fabrication request'
+          git push origin HEAD:${GITHUB_HEAD_REF}

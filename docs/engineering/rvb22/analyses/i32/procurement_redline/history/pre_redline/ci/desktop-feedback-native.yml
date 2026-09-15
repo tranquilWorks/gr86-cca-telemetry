@@ -31,14 +31,14 @@ jobs:
           import hashlib, json, pathlib
           pcb=pathlib.Path('feedback_evidence/cad/GR86_CCA_RevB.kicad_pcb')
           actual=hashlib.sha256(pcb.read_bytes()).hexdigest()
-          expected='52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312'
+          expected='45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7'
           assert actual==expected, (actual,expected)
           record={
             'status':'SUPERSEDED_BY_ADOPTED_SOURCE',
             'adopted_source_sha256':actual,
             'historical_trial_base_sha256':'5b373f6033fdbd18f126f8ca054b619abada2568778c5a8fc303c4e756fb06c8',
             'historical_trial_scripts':['apply_feedback.py','thermal_access.py'],
-            'reason':'The I24 isolated feedback/thermal-window trial is archival and must not be replayed onto later adopted revisions. I32 directly native-verifies the controlled candidate instead.',
+            'reason':'The I24 isolated feedback/thermal-window trial is archival and must not be replayed onto later adopted revisions. I28 directly native-verifies the controlled candidate instead.',
             'fabrication_release':False
           }
           pathlib.Path('feedback_evidence/TRIAL_SUPERSESSION.json').write_text(json.dumps(record,indent=2)+'\n')
@@ -70,7 +70,7 @@ jobs:
           assert result['inputs_unchanged'] is True
           assert len(checks)==14 and all(v['pass'] for v in checks.values()), checks
           source=(root/'cad/GR86_CCA_RevB.kicad_pcb').read_bytes()
-          expected='52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312'
+          expected='45a2a679d9893d51fa641e539af45bc6ec1324169ea5f2226ecdea0ae2464da7'
           assert hashlib.sha256(source).hexdigest()==expected
           record={'source_sha256':expected,'native_postconditions':14,'branch_modified':False,'fabrication_release':False}
           (root/'ADOPTED_SOURCE_VERIFICATION.json').write_text(json.dumps(record,indent=2)+'\n')
