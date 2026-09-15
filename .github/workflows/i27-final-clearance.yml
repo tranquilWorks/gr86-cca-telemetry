@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 3
+          fetch-depth: 8
           persist-credentials: false
       - name: Provision pinned I32 analysis dependencies
         run: |
@@ -44,7 +44,9 @@ jobs:
           import json
           from pathlib import Path
           w=Path('docs/engineering/rvb22')
-          r=json.loads((w/'FINAL_REVIEW_REGISTER.json').read_text())
+          current=json.loads((w/'FINAL_REVIEW_REGISTER.json').read_text())
+          assert current['PCB_sha256']=='52ca35cf8cb4e2b4a27d053686ee3a85564f1e94dfdb7dcb4bca4083dd527312' and len(current['rows'])==11
+          r=json.loads((w/current['historical_290_row_register']).read_text())
           a=json.loads((w/'analyses/i26/RECONCILIATION_AUDIT.json').read_text())
           b=json.loads((w/'analyses/i26/GND02_DESKTOP_CLOSURE.json').read_text())
           f=json.loads((w/'I27_FABRICATION_READINESS.json').read_text())

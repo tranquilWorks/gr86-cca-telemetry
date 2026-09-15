@@ -14,3 +14,5 @@ The follow-up changes only verification code, workflow bindings and this evidenc
 - Original workflow bytes are archived under `history/pre_redline/ci/`. Historical analysis scripts and results remain intact.
 
 `ci_verify.py` recomputes existing evidence checks and requires aggregate and package verification outputs to be byte-identical. It is evidence verification, not a new ngspice or hardware-test claim. Current hosted run outcomes are recorded on PR #46 and its commit checks; initial stale-workflow failures are retained in Actions for traceability.
+
+The current root register is an eleven-row I32 supplement; the original 290-row ledger remains at its explicit historical path. Hosted checks validate both scopes separately. Root register/gate descriptions and affected I32 finding rows now reflect the current source, counts, margins and thermal conditions; their prior bytes are preserved under `history/pre_ci_binding/`. No original criterion, acceptance limit, native source or manufacturing artifact is changed by that documentation refresh.

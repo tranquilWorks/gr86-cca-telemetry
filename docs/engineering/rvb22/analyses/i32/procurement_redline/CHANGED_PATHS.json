@@ -34,10 +34,10 @@
     },
     {
       "action": "M",
-      "bytes": 3904,
-      "group": "Other evidence/review and verification code",
       "path": ".github/workflows/i27-final-clearance.yml",
-      "sha256": "7db44666caa62530299e9eb27c9d0d418c32b3950e946d8f95ef8f35a79d93cd"
+      "bytes": 4125,
+      "sha256": "823dd4b08abf91b74df2da784d20768414465f702440655d03ada2a7c60987cf",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "M",
@@ -52,6 +52,20 @@
       "group": "Other evidence/review and verification code",
       "path": "docs/engineering/rvb22/EXECUTION_PLAN_CURRENT.md",
       "sha256": "6b4736ac153d8a58799b256d912a57831405eed1d9894f173e5145a62c51a370"
+    },
+    {
+      "action": "M",
+      "path": "docs/engineering/rvb22/FINAL_GATES.json",
+      "bytes": 10279,
+      "sha256": "b4e535f7cf7a157d0dcfca3428801ae587952cf5f16cfd0e0fbe6ae2c5a39c65",
+      "group": "Other evidence/review and verification code"
+    },
+    {
+      "action": "M",
+      "path": "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json",
+      "bytes": 7749,
+      "sha256": "183f15973d3e2c5b234b9a938ecdf007ceea07710625d39e69e48a37699d7f5c",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "M",
@@ -83,10 +97,10 @@
     },
     {
       "action": "M",
-      "bytes": 19678,
-      "group": "Other evidence/review and verification code",
       "path": "docs/engineering/rvb22/analyses/convergence_01/run_review.py",
-      "sha256": "02d443feb8b1f603d058ee5624a116a5629b00a163a73bf1ba81f6decfe77981"
+      "bytes": 19876,
+      "sha256": "84fa4f847cecba164c97ce011a6f7d9f2f71adbed4f2f2448ac342a2a7493601",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "M",
@@ -132,10 +146,10 @@
     },
     {
       "action": "M",
-      "bytes": 7100,
-      "group": "Other evidence/review and verification code",
       "path": "docs/engineering/rvb22/analyses/i32/FINDINGS_REGISTER.json",
-      "sha256": "93e3ff88368bb925557df6f0ff3ce4c9648afa48fcc551a1fd578fc420e56acb"
+      "bytes": 7765,
+      "sha256": "fcea57050f7bd473e801519893e85e9cac8583a4ce58a3bcc35f05a748339376",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "M",
@@ -237,10 +251,10 @@
     },
     {
       "action": "A",
-      "bytes": 2813,
-      "group": "Other evidence/review and verification code",
       "path": "docs/engineering/rvb22/analyses/i32/procurement_redline/CI_BINDINGS.md",
-      "sha256": "32d6c13086356bc48b64fc3f2c5c13b26a6cd2aaf613bcaa45c349b24ea7690d"
+      "bytes": 3311,
+      "sha256": "5827365aca279b0863c9093ead36b5b5178d4ef905a1d7ec14bf661873c04964",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "A",
@@ -6261,6 +6275,27 @@
       "group": "Other evidence/review and verification code",
       "path": "docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_05/review_gerbers/GR86_CCA_RevB-job.gbrjob",
       "sha256": "8c6366fc9be3d10e06d81b9aa4d9bbc93fab1c3523ff58a0664b1279879bf915"
+    },
+    {
+      "action": "A",
+      "path": "docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/FINAL_GATES.json",
+      "bytes": 7961,
+      "sha256": "4a98b835cecbe9e7febe813276fa27fa33ed31ec27ac2db9fe82c445f4775760",
+      "group": "Other evidence/review and verification code"
+    },
+    {
+      "action": "A",
+      "path": "docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/FINAL_REVIEW_REGISTER.json",
+      "bytes": 6400,
+      "sha256": "35d2854d489a8d1d8d450d0544e9e1e38ce54ee1fa6e523c0d2ec458328a7445",
+      "group": "Other evidence/review and verification code"
+    },
+    {
+      "action": "A",
+      "path": "docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/I32_FINDINGS_REGISTER.json",
+      "bytes": 7100,
+      "sha256": "93e3ff88368bb925557df6f0ff3ce4c9648afa48fcc551a1fd578fc420e56acb",
+      "group": "Other evidence/review and verification code"
     },
     {
       "action": "A",

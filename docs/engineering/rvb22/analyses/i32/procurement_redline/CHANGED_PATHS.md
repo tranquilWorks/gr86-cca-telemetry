@@ -34,7 +34,7 @@ Compared with starting remote `1c934f9ddd7a1b823e5136484f525485472528f6`. Every 
 - `docs/engineering/rvb22/candidate/cad/models/ENVELOPE_I32_PROCUREMENT_R169.step`
 - `docs/engineering/rvb22/candidate/cad/models/ENVELOPE_I32_PROCUREMENT_R170.step`
 
-## Other evidence/review and verification code (1577)
+## Other evidence/review and verification code (1582)
 
 - `.github/workflows/convergence02-thermal.yml`
 - `.github/workflows/convergence04-release-thermal.yml`
@@ -43,6 +43,8 @@ Compared with starting remote `1c934f9ddd7a1b823e5136484f525485472528f6`. Every 
 - `.github/workflows/i27-final-clearance.yml`
 - `.github/workflows/rvb22-native.yml`
 - `docs/engineering/rvb22/EXECUTION_PLAN_CURRENT.md`
+- `docs/engineering/rvb22/FINAL_GATES.json`
+- `docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json`
 - `docs/engineering/rvb22/GR86_CCA_RevB_Board_Vetting_Summary.md`
 - `docs/engineering/rvb22/README.md`
 - `docs/engineering/rvb22/analyses/convergence_01/native_binding.py`
@@ -930,6 +932,9 @@ Compared with starting remote `1c934f9ddd7a1b823e5136484f525485472528f6`. Every 
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_05/review_gerbers/GR86_CCA_RevB-NPTH.drl`
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_05/review_gerbers/GR86_CCA_RevB-PTH.drl`
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/native_05/review_gerbers/GR86_CCA_RevB-job.gbrjob`
+- `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/FINAL_GATES.json`
+- `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/FINAL_REVIEW_REGISTER.json`
+- `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_ci_binding/I32_FINDINGS_REGISTER.json`
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_redline/EXECUTION_PLAN_CURRENT.md`
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_redline/GR86_CCA_RevB_Board_Vetting_Summary.md`
 - `docs/engineering/rvb22/analyses/i32/procurement_redline/history/pre_redline/README.md`

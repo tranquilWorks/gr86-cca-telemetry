@@ -125,7 +125,7 @@ def verify_regressions(pcb,firmware):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=D/'results/review');ap.add_argument('--evidence-root',type=Path,default=W);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
-    pcb=W/'candidate/cad/GR86_CCA_RevB.kicad_pcb';fw=W/'candidate/firmware';tree=sx.loads(pcb.read_text());reg=read(W/'FINAL_REVIEW_REGISTER.json')
+    pcb=W/'candidate/cad/GR86_CCA_RevB.kicad_pcb';fw=W/'candidate/firmware';tree=sx.loads(pcb.read_text());current=read(W/'FINAL_REVIEW_REGISTER.json');reg=read(W/current['historical_290_row_register'])
     evidence=verify_regressions(pcb,fw)
     rx=receive_only(tree,(fw/'cca_telemetry/cca_telemetry.ino').read_text());led=led_review(tree,(fw/'cca_telemetry/src/led_status.h').read_text())
     old=read(D/'support/HANDLING_I22.json');handling=current_handling(tree,old);handling['pcb_sha256']=digest(pcb)
@@ -134,13 +134,14 @@ def main():
     # logic for traceability, while current output is bound to the actual redline.
     final=read(I32/'FINAL_REDLINE_VERIFICATION.json')
     require(final['source_PCB_sha256']==PCB_HASH and len(final['gates'])==14 and all(final['gates'].values()),'I32 aggregate gates incomplete')
+    require(current['PCB_sha256']==PCB_HASH and len(current['rows'])==11,'Current I32 supplement identity mismatch')
     require(len(reg['rows'])==290 and len({r['id']for r in reg['rows']})==290,'Criterion identity loss')
     coverage=[{'id':r['id'],'original_status':r['closure'],'retained_desktop_status':r['desktop_status'],
                'remaining_original_condition':r.get('remaining',''),'physical_test_claimed':False}for r in reg['rows']]
     save(a.out/'ALL_CRITERIA_COVERAGE.json',{'criterion_count':290,'original_counts':dict(Counter(r['closure']for r in reg['rows'])),
          'rows':coverage,'meaning':'Original 290-row ledger retained; affected I32 gates are in FINAL_REDLINE_VERIFICATION.json. No fresh adjudication of all 290 criteria is claimed.'})
     summary={'status':'PASS_CURRENT_I32_SOURCE_AND_EXECUTED_FIRMWARE_REGRESSIONS','source_PCB_sha256':PCB_HASH,
-             'original_criteria':dict(Counter(r['closure']for r in reg['rows'])),'all_290_rows_retained':True,
+             'original_criteria':dict(Counter(r['closure']for r in reg['rows'])),'all_290_rows_retained':True,'current_I32_findings':11,
              'regression':evidence,'corrected_handling_refs':handling['corrected_references'],
              'current_redline_desktop_gates':final['gates'],'remaining_supplier_gates':final['remaining_supplier_gates'],
              'remaining_physical_gates':final['remaining_physical_gates'],'physical_tests':0,'fabrication_release':False}
