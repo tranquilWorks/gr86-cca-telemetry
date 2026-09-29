@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "meaning": "Review routing only. Existing requirement/finding IDs and source approval remain authoritative; no automatic numeric criteria or closure.",
+  "obligations": [
+    {
+      "id": "GR86-REVIEW-AUTHORITY",
+      "role": "requirements",
+      "statement": "Reconcile current I32 supplement, original criteria and explicit source effectivity; separate prior digital closure, approval, physical qualification and new assurance coverage.",
+      "source_paths": [
+        "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json",
+        "docs/engineering/rvb22/FINAL_GATES.json",
+        "docs/engineering/rvb22/I32_REDLINE_READINESS_FINAL.json"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-VEHICLE-HARNESS",
+      "role": "interfaces",
+      "statement": "Verify exact ASC/F1 cavity, mating view, single full-current return, fused switched feed, sensor return, polarity and populated/empty cavities across applicable vehicle variants and fault states.",
+      "source_paths": [
+        "docs/engineering/rvb22/interfaces/HARNESS_INTERFACE_CONTRACT.json",
+        "docs/engineering/rvb22/interfaces/SINGLE_RETURN_EFFECTIVITY.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/Vehicle_Interconnect.kicad_sch"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-INPUT-PROTECTION",
+      "role": "electrical",
+      "statement": "Bound current selected input protection, U101 ordering pedigree, reverse battery, transient/fault and partial-power behavior against exact primary sources; preserve limited model and physical acceptance claims.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/Input_Protection.kicad_sch",
+        "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/ASSEMBLY_AND_ACCEPTANCE.md"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-POWER-RESET",
+      "role": "electrical",
+      "statement": "Bound 5 V/3.3 V startup, load release, reverse discharge, current limits and reset/enable timing across sourced corners without relaxing the retained small margins or substituting ideal silicon behavior.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/Power_5V.kicad_sch",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/Power_3V3.kicad_sch",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/ESP32.kicad_sch",
+        "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-CAN-PASSIVE",
+      "role": "interfaces",
+      "statement": "Independently verify current CAN transceiver pin/package mapping, bus loading, protection, optional termination population and listen-only/no-transmit behavior including boot, fault, reset, stale configuration and bus-off states.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/CAN.kicad_sch",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/cca_telemetry.ino",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/config.h"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-GPS-PPS",
+      "role": "interfaces",
+      "statement": "Verify actual PA1616D pin-one/orientation, local-install acceptance, TX/RX/PPS, supplies/backup, antenna interface and source-bound 115200/10 Hz firmware assumptions; initial Rev A mappings are not authority.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/GPS.kicad_sch",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/gps_mode_config.h",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/ASSEMBLY_AND_ACCEPTANCE.md"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-OIL-ADC",
+      "role": "electrical",
+      "statement": "Bound exact Honeywell ratiometric sensor excitation, dedicated return, gain/offset/filter/ADC acquisition and calibration across open/short/overvoltage/partial-power states; do not treat fault recovery or virtual BLE oil frames as permission to transmit vehicle CAN.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/Oil_Pressure.kicad_sch",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/oil_model.cpp",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/oil_fault_recovery.h",
+        "docs/engineering/rvb22/interfaces/HARNESS_INTERFACE_CONTRACT.json"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-FIRMWARE-BLE",
+      "role": "interfaces",
+      "statement": "Bind only the effective 160 MHz firmware, real GPIO mapping, sample/time budgets, watchdog/reset, BLE/RaceChrono framing and data-age/loss behavior; distinguish host checks, compile and on-target results.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/FIRMWARE_EFFECTIVITY.json",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/io_budget.h",
+        "docs/engineering/rvb22/candidate/firmware/cca_telemetry/src/racechrono_codec.h"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-LAYOUT-RETURN",
+      "role": "layout",
+      "statement": "Inspect actual multilayer forward/return paths, reference discontinuities, switching and RF/analog coupling, exposed-pad net isolation and current/thermal assumptions; unsupported native extraction remains blocked.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/GR86_CCA_RevB.kicad_pcb",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/GR86_CCA_RevB.kicad_pro",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/GR86_CCA_RevB.kicad_dru"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-THERMAL-MECHANICAL",
+      "role": "mechanical",
+      "statement": "Resolve current C05/W02/T03 effectivity, exact envelopes/stack/tolerances/cable restraint and thermal interfaces; preserve I25 budget and device/local-air limits, including Adafruit 851, with physical loss/contact correlation open.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/ASSEMBLY_AND_ACCEPTANCE.md",
+        "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/GR86_CCA_RevB.kicad_pcb"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-PARTS-POPULATION",
+      "role": "manufacturing",
+      "statement": "Reconcile all 177 fitted, 175 factory, two local and three DNP references; preserve exact 13 frozen bindings, package/pad identities and only documented supplier aliases. Historical stock/preorder records are not present availability.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/assembly/COMPLETE_FITTED_BOM.csv",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/assembly/DO_NOT_POPULATE.json",
+        "docs/engineering/rvb22/analyses/i32/procurement_completion/SOURCES.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/IDENTITY_ALIASES.md"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-JLC-PROCESS",
+      "role": "manufacturing",
+      "statement": "Verify source-bound four-layer stack, copper/dielectric/plating/finish/stencil, all 49 special vias, native CPL origin/angle/side and manual-wave/local process requirements with explicit supplier acceptance; never apply Z1 rules.",
+      "source_paths": [
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/ASSEMBLY_AND_ACCEPTANCE.md",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/assembly/JLCPCB_BOM.csv",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/assembly/JLCPCB_CPL.csv"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-SOURCE-MODEL",
+      "role": "requirements",
+      "statement": "Check maintained candidate CAD and procurement registry to generated sourced-CAD/package bindings without executing generators on canonical inputs; preserve historical reports and exact firmware/source effectivity.",
+      "source_paths": [
+        "docs/engineering/rvb22/analyses/i32/procurement_completion/build.py",
+        "docs/engineering/rvb22/analyses/i32/procurement_completion/VERIFICATION.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/SOURCE_MANIFEST.json"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    },
+    {
+      "id": "GR86-REVIEW-COVERAGE",
+      "role": "requirements",
+      "statement": "Account for every native instance, variant, interface state and required method; retain exact-source gaps, unsupported KiCad 9 coverage, candidate mappings, reviewer isolation, held-out and supplier/physical/vehicle acceptance states.",
+      "source_paths": [
+        "docs/engineering/rvb22/FINAL_REVIEW_REGISTER.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad/FITTED_REFERENCES.json",
+        "docs/engineering/rvb22/current/i32_sourced_manufacturing/COHERENCE.json"
+      ],
+      "required_methods": [
+        "inspection"
+      ]
+    }
+  ]
+}

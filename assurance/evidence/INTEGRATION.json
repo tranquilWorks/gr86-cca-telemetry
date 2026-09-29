@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-29T17:58:55.915189+00:00",
+  "repository": "tranquilWorks/gr86-cca-telemetry",
+  "branch": "codex/gr86-assurance-integration",
+  "source_commit": "2258e48fc9397b64154747cf04adf97da5974f07",
+  "intended_pr_base": "codex/rvb24-coordinated-closure",
+  "implemented": [
+    "same external pcb-design-assurance 0.2.0 engine; reused custody foundation",
+    "GR86 project/repository/native-root binding",
+    "219 source bindings: 156 native and 63 context including 32 firmware",
+    "14 candidate obligation routes, 14 local prompts and six draft reviewer packet routes",
+    "source/code/config/framework pin enforcement and external append-only run custody",
+    "real CLI and optional single-project MCP; software-only CI workflow"
+  ],
+  "verification": {
+    "custody_tests": {
+      "status": "PASS",
+      "tests": 24
+    },
+    "existing_procurement_regressions": {
+      "status": "PASS",
+      "tests": 7
+    },
+    "existing_source_cad_equivalence": "PASS; 177 fitted, 354 schematic/PCB property records; 88 source registry parts",
+    "selected_sources_unchanged": 219,
+    "installed_smoke": {
+      "tools": [
+        "capabilities",
+        "doctor",
+        "get_findings",
+        "get_report",
+        "get_requirements",
+        "get_sources",
+        "get_supported_checks",
+        "run_assessment",
+        "validate_project"
+      ],
+      "mcp_run_id": "86ac085da2434273a1bbfa13a4ab6f78",
+      "snapshot_id": "88f21d0928cfea6763ffd368b0fd0ffd3661e42f6c95ffd6eecec1382ac4f148",
+      "engineering_result": "BLOCKED",
+      "native_compatibility": "BLOCKED",
+      "native_blocker": "unsupported PCB format; no automatic migration",
+      "fresh_native_erc_drc": "NOT_RUN",
+      "project_id": "gr86-revb-jlcpcb",
+      "integration_smoke": "PASS",
+      "transport_checks": "PASS",
+      "final_custody": "PASS",
+      "packet_exits": {
+        "requirements": 0,
+        "electrical": 0,
+        "interfaces": 0,
+        "layout": 0,
+        "manufacturing": 0,
+        "mechanical": 0
+      },
+      "cli_commands": 12,
+      "mcp_calls": 14,
+      "altered_framework_pin_rejected": true,
+      "independent_sessions": 0,
+      "release_authorized": false,
+      "note": "Transport/custody success only; retain actual engineering FAIL/BLOCKED gates."
+    },
+    "final_evidence_seals": {
+      "status": "PASS",
+      "runs": 2,
+      "packets": 6
+    },
+    "ruff_F_E9": "PASS",
+    "CI": "NOT_RUN at evidence capture; consult the actual PR check for this commit"
+  },
+  "engineering_gates": {
+    "bounded_case_checks": "BLOCKED",
+    "controlled_observation_checks": "BLOCKED",
+    "declared_instance_coverage": "BLOCKED",
+    "exact_datasheet_pin_footprint_audit": "NOT_RUN",
+    "exact_part_map_checks": "BLOCKED",
+    "held_out_mutation_qualification": "NOT_RUN",
+    "independent_sme_review": "NOT_RUN",
+    "inventory_completeness": "BLOCKED",
+    "manufacturing_package_consistency": "BLOCKED",
+    "manufacturing_profile_conformance": "BLOCKED",
+    "native_erc_drc_parity": "BLOCKED",
+    "native_exclusion_review": "BLOCKED",
+    "native_extraction": "BLOCKED",
+    "physical_verification": "NOT_RUN",
+    "production_approval": "NOT_RUN",
+    "project_layout_rules": "BLOCKED",
+    "runtime_contract": "BLOCKED",
+    "vendor_preview": "NOT_RUN",
+    "worst_case_coverage": "NOT_RUN",
+    "z1_digital_feasibility": "BLOCKED"
+  },
+  "engineering_overall": "BLOCKED",
+  "machine_findings_count": 15,
+  "disclaimer": "Machine findings include incomplete mappings/unsupported native checks; not a claim of 15 newly established electrical defects.",
+  "blocked": [
+    "KiCad 9.0.9 / PCB 20241229 unsupported by pinned KiCad 10.0.6 / PCB 20260206 backend",
+    "approved source/criteria/part/case/coverage/BOM/CPL runtime mappings and source completeness",
+    "JLC applicability of required empty CANDIDATE Z1 slot",
+    "qualified independent reviewer isolation and held-out adequacy",
+    "framework remote tranquilWorks/pcb-design-assurance returned 404 at handoff; use exact saved wheel",
+    "supplier process/sourcing acceptance and applicable physical/vehicle/unit acceptance"
+  ],
+  "unperformed": [
+    "fresh native ERC/DRC (only kicad-cli --version ran)",
+    "independent review sessions (0)",
+    "full package build/verify, fresh firmware compile, SPICE and thermal solves",
+    "supplier upload/order, flash, power, vehicle access, CAN transmission",
+    "release/merge/portfolio registration"
+  ],
+  "canonical_design_firmware_manufacturing_criteria_unchanged": true,
+  "archive": {
+    "path": "installed-smoke-01.tar.gz",
+    "sha256": "4fd19951be89f1d167587abd8bb4121da356fdd70658c02624c49d0fe7d50775",
+    "bytes": 6630219,
+    "contents": "Complete original installed run: capture, 2 assessments, 6 draft packets, all raw commands/MCP, rejected pin/overwrite/output probes and original seals. No resealing.",
+    "archive_members": 2099,
+    "archive_files": 1910,
+    "verified": "All archived file bytes compared with original run before publication; full gzip/tar readback passed"
+  },
+  "packaging_note": "An initial local archive transfer was incomplete and rejected before publication. Archive rebuilt from untouched original run; every member compared, complete readback passed. No run or packet was resealed."
+}

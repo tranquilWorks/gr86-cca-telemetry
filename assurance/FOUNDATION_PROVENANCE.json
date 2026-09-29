@@ -1,0 +1,17 @@
+{
+  "repository": "tranquilWorks/analog-camera-tweaker",
+  "commit": "a7e0668b2c960d57a345a8e46a448fb45143e22e",
+  "files": {
+    "assurance/bridge_core.py": "8f2fb0b7ee4671202707b15c4e486853d8ebb85c68509e451b8bbb096e29dd6c",
+    "assurance/installed_smoke.py": "a2dd97203945f66e51da9a22c1260c816b599612e5954699ae1cb274c1895777",
+    "hardware/kicad/rev_a11/assurance/bridge.py": "e49e5b0ac099ceb3bd552036a2d7d544941824bb05a3e116796a2290bbe6babf",
+    "adapter/assurance/framework.lock.json": "e34458c4f6f9ba4df78b42b0c226696edd38993cd8db6bbc53e995bf9fce9236"
+  },
+  "meaning": "Custody/configuration layer derived from the supplied integration foundation; all engineering detectors remain in the same external pinned pcb-design-assurance 0.2.0 package. No ACT source data is copied or enrolled.",
+  "specializations": [
+    "One GR86 repository/project/board/native-root binding and JLC profile context",
+    "GR86 entry points, input catalog, candidate routes and prompts",
+    "Installed smoke explicitly asserts native compatibility is blocked and no CAD command ran",
+    "No detector or shared framework behavior was changed"
+  ]
+}

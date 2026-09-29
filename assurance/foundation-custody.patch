@@ -1,0 +1,32 @@
+--- ACT@a7e0668/assurance/bridge_core.py
++++ GR86/assurance/custody.py
+@@ -16,4 +16,3 @@
+ SCOPES = {
+-    'act-adapter-z1': ('adapter/ecad', 'MAKERA_Z1', 'ADAPTER', '/process.json'),
+-    'act-effects-jlcpcb': ('hardware/kicad/rev_a11/source', 'JLCPCB', 'EFFECTS', '/ORDER_SETTINGS.json'),
++    'gr86-revb-jlcpcb': ('docs/engineering/rvb22/current/i32_sourced_manufacturing/editable_source/cad', 'JLCPCB', 'GR86-REVB', '/ASSEMBLY_AND_ACCEPTANCE.md'),
+ }
+@@ -29,4 +28,4 @@
+     PROFILE_NOTE = (
+-        'Historical frozen JLC main-board settings only; current process limits require controlled approval. '
+-        'Ignore the obsolete adapter subsection; never infer current limits or supplier acceptance.'
++        'Source-bound I32 JLC manufacturing context; runtime criteria require controlled source/approval mapping. '
++        'Never infer current stock, supplier acceptance or physical qualification from retained package records.'
+         if PROCESS == 'JLCPCB' else
+@@ -131,5 +130,5 @@
+         if (cfg.get('schema_version') != 1 or cfg.get('project_id') != PROJECT_ID
+-                or cfg.get('repository') != 'tranquilWorks/analog-camera-tweaker'
++                or cfg.get('repository') != 'tranquilWorks/gr86-cca-telemetry'
+                 or cfg.get('native_root') != NATIVE_ROOT
+-                or cfg.get('board_id') != 'ACT-' + PREFIX):
++                or cfg.get('board_id') != PREFIX):
+             raise Blocked('Unexpected board domain scope')
+@@ -168,5 +167,5 @@
+         remote = git(repo, 'remote', 'get-url', 'origin')
+-        if remote not in ('https://github.com/tranquilWorks/analog-camera-tweaker.git',
+-                          'https://github.com/tranquilWorks/analog-camera-tweaker',
+-                          'git@github.com:tranquilWorks/analog-camera-tweaker.git'):
++        if remote not in ('https://github.com/tranquilWorks/gr86-cca-telemetry.git',
++                          'https://github.com/tranquilWorks/gr86-cca-telemetry',
++                          'git@github.com:tranquilWorks/gr86-cca-telemetry.git'):
+             raise Blocked('Canonical repository identity is not configured on origin')

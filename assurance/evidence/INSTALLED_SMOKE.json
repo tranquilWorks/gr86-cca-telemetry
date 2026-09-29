@@ -1,0 +1,37 @@
+{
+  "tools": [
+    "capabilities",
+    "doctor",
+    "get_findings",
+    "get_report",
+    "get_requirements",
+    "get_sources",
+    "get_supported_checks",
+    "run_assessment",
+    "validate_project"
+  ],
+  "mcp_run_id": "86ac085da2434273a1bbfa13a4ab6f78",
+  "snapshot_id": "88f21d0928cfea6763ffd368b0fd0ffd3661e42f6c95ffd6eecec1382ac4f148",
+  "engineering_result": "BLOCKED",
+  "native_compatibility": "BLOCKED",
+  "native_blocker": "unsupported PCB format; no automatic migration",
+  "fresh_native_erc_drc": "NOT_RUN",
+  "project_id": "gr86-revb-jlcpcb",
+  "integration_smoke": "PASS",
+  "transport_checks": "PASS",
+  "final_custody": "PASS",
+  "packet_exits": {
+    "requirements": 0,
+    "electrical": 0,
+    "interfaces": 0,
+    "layout": 0,
+    "manufacturing": 0,
+    "mechanical": 0
+  },
+  "cli_commands": 12,
+  "mcp_calls": 14,
+  "altered_framework_pin_rejected": true,
+  "independent_sessions": 0,
+  "release_authorized": false,
+  "note": "Transport/custody success only; retain actual engineering FAIL/BLOCKED gates."
+}

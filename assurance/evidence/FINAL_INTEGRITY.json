@@ -1,0 +1,114 @@
+[
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/cli-run"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 464,\n  \"root_hash\": \"4a1448a341591909128655ebec8863cc58c2a3d568438f767626b3fae924df90\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/mcp-runs/86ac085da2434273a1bbfa13a4ab6f78"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 464,\n  \"root_hash\": \"4e51bc17200f104ec5589ba397a641e07c6a239ad4dcab237abaf907519aeadf\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-electrical"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"d14f2f0afa032f79941dc0cf86d7131751ed4e034bc9fd037b3742acfbb28355\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-interfaces"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"aa7e9fd4b1506d29ac0e3e4ebe67c7000a8d2109c87da118c4993debe12344b3\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-layout"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"82f1d77b62d48121673c5bf449f03cf0d23609a6346888f7a01a5265773194b5\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-manufacturing"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"eeeebf301522d5e2a529cc34c96fa3cb6a42908f358b242f80e374d06e6771fd\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-mechanical"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"71acfd29dbac5aa6759d64e36d2fde1886f70872b8a2c56a2300961e9678f609\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/workspace/scratch/1f18afd08847/recovery/venv/bin/python",
+      "-I",
+      "-m",
+      "pcb_assure",
+      "verify-evidence",
+      "--run",
+      "/workspace/scratch/1f18afd08847/gr-work/installed-01/packet-requirements"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"integrity\": \"PASS\",\n  \"files\": 123,\n  \"root_hash\": \"2c9b5b82c802d35b4e80e28196b85521f4e68d6b58f29a541893490b1a9860e5\",\n  \"meaning\": \"Byte integrity only. Not authorship, authority, engineering validity, or external trust.\"\n}\n",
+    "stderr": ""
+  }
+]
