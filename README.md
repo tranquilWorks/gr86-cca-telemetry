@@ -1,5 +1,13 @@
 # CCA Telemetry (GR86 / BRZ Gen2)
 
+## GR86 CCA assurance
+
+The findings-only integration and local Codex prompts are in
+[assurance/README.md](assurance/README.md). It binds the current I32 sourced
+Rev B package to the shared framework. Fresh native assessment is blocked by
+the KiCad 9/10 compatibility gap; software checks do not approve the board.
+See [source effectivity](assurance/DISCOVERY.md) before using older descriptions below.
+
 **Current Rev B ECAD and manufacturing:** [sourced I32 handoff](docs/engineering/rvb22/product/PRODUCT_HANDOFF.md).
 The native project, BOM, CPL and fabrication files are reconciled; supplier sourcing and physical qualification gates remain open.
 

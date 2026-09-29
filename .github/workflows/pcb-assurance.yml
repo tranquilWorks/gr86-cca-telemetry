@@ -1,0 +1,26 @@
+name: PCB assurance integration
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'assurance/**'
+      - '.github/workflows/pcb-assurance.yml'
+permissions:
+  contents: read
+jobs:
+  custody:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Synthetic custody guards and source-catalog binding
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python3 -m unittest discover -s assurance/tests -p 'test_*.py' -v
+      - name: State the verification boundary
+        run: |
+          echo 'Software custody tests only. Native KiCad 9 compatibility, independent review and board approval remain blocked.'
+          echo 'Installed CLI/MCP smoke is retained in assurance/evidence; its external pinned wheel is not downloaded by this workflow.'

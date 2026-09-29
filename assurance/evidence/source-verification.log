@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-29T17:53:08.650937+00:00",
+  "source_count": 219,
+  "native_count": 156,
+  "firmware_count": 32,
+  "fitted_references": 177,
+  "procurement_property_records": 354,
+  "source_registry_parts": 88,
+  "canonical_inputs_unchanged": true,
+  "checks": [
+    "existing validate_sources(): exact archived supplier capture hashes/identity/route, not fresh stock",
+    "existing verify_cad(): maintained candidate to current sourced native equivalence, four procurement properties only",
+    "all 219 selected source bytes match discovery hashes before and after"
+  ],
+  "unperformed": [
+    "full manufacturing package verify/build (writes outputs and requires full archived payload)",
+    "fresh KiCad 9 ERC/DRC",
+    "firmware compile",
+    "SPICE rerun",
+    "thermal/mechanical solves",
+    "physical/supplier/vehicle acceptance"
+  ]
+}
